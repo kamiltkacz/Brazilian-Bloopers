@@ -2,3 +2,4 @@ Hello Everyone! This a project to help Brazilian-Portuguese speakers learn Engli
 Once finished the website will have a About Us section, Contact Form and a Multiple Choice style test. 
 I'm using HTML, CSS, Javascript and I'd like to use React for my test and survey. I'm writing backend code with PHP and MYSQL.
 Thanks!
+Feel free to contribute!
