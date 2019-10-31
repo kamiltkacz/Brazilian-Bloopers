@@ -174,111 +174,33 @@ require_once('./dbconn.php');
       success: function(result) {
        
   // After recieving confirmation on submit Do STUFF HERE:
- 
-	switch (true) {
-          
-	case result.validFormName === "empty" && result.validFormEmail === "empty" && result.validFormMessage === "empty":
-        alert ("Name, Email and Message are required");
-             $("#yname").css({"border":"5px solid red"});
-             $("#nameSpan").text(" must only contain letters and whitespace, ex.\"Paulo Sousa\"");
-             $("#yemail").css({"border": "5px solid red"});
-             $("#emailSpan").text(" enter a valid email address, ex.\"paulo@brazil.com\"");
-             $("#ymessage").css({"border":"10px solid red"});
-             $("#messageSpan").text(" type something, anything!");
-  
-  break;
-  
-  
-  case result.validFormName === "empty" && result.validFormEmail === "empty":   
-         alert ("Name and Email are required");
-             $("#yname").css({"border":"5px solid red"});
-             $("#nameSpan").text(" must only contain letters and whitespace, ex.\"Paulo Sousa\"");
-             $("#yemail").css({"border": "5px solid red"});
-             $("#emailSpan").text(" enter a valid email address, ex.\"paulo@brazil.com\"");
-  
-  
-  break;
-  
-	
-  case result.validFormName === "empty" && result.validFormMessage === "empty":  
-         alert ("Name and Message are required");
-            $("#yname").css({"border":"5px solid red"});
-            $("#nameSpan").text(" must only contain letters and whitespace");
-            $("#ymessage").css({"border":"10px solid red"});
-            $("#messageSpan").text(" type something, anything!");
-         
-          
-  break;
-  
-  
-  case result.validFormName === "empty": 
-          alert ("Name is required");
-            $("#yname").css({"border":"5px solid red"});
-            $("#nameSpan").text(" must only contain letters and whitespace, ex.\"Paulo Sousa\"");
-        
-	break;
-  
- 
-   case result.validFormEmail === "empty" && result.validFormMessage === "empty": 
-          alert ("Email and Message are required");
-            $("#yemail").css({"border": "5px solid red"});
-            $("#emailSpan").text(" enter a valid email address, ex.\"paulo@brazil.com\"");
-            $("#ymessage").css({"border": "10px solid red"});
-            $("#messageSpan").text(" type something, anything!");
-  
-  
-  break;
- 
-   case result.validFormEmail === "empty": 
-          alert ("Email is required");
-            $("#yemail").css({"border": "5px solid red"});
-            $("#emailSpan").text(" enter a valid email address, ex.\"paulo@brazil.com\"");
-           
-  
-  break;
    
-   
-   case result.validFormMessage === "empty": 
-          alert ("Message is required");
-            $("#ymessage").css({"border": "10px solid red"});
-            $("#messageSpan").text(" write something, anything!");
-         
-  
- 
-  break;
-  
-	
+    if(result.validFormName == "empty"){
+      $("#yname").css({"border":"5px solid red"});
+      $("#nameSpan").text(" must only contain letters and whitespace, ex.\"Paulo Sousa\"");
+  }
 
- 
-   case result.validName === "no" && result.validEmail === "email0":
-          alert ("Please enter a valid Name and Email");
-            $("#yname").css({"border":"5px solid red"});
-            $("#nameSpan").text(" must only contain letters and whitespace, ex.\"Paulo Sousa\"");
-            $("#yemail").css({"border": "5px solid red"});
-            $("#emailSpan").text(" enter a valid email address, ex.\"paulo@brazil.com\""); 
-          
- 
-  break;
-  
- 
-   case result.validEmail === "email0": 
-          alert ("Please enter a valid Email");
-           $("#yemail").css({"border":"5px solid red"});
-           $("#emailSpan").text(" enter a valid email address, ex.\"paulo@brazil.com\"");
-         
-  
-  break;
+    if(result.validFormEmail == "empty"){
+      $("#yemail").css({"border": "5px solid red"});
+      $("#emailSpan").text("enter a valid email address, ex.\"paulo@brazil.com\"");
 
- case result.validName === "no":
-        alert("Please enter a valid Name");
-          $("#yname").css({"border":"5px solid red"});
-          $("#nameSpan").text(" must only contain letters and whitespace, ex.\"Paulo Sousa\"");
-         
-   break;
- 
- 
+  }
+    if(result.validFormMessage == "empty"){
+      $("#ymessage").css({"border": "5px solid red"});
+      $("#messageSpan").text("type something, anything!");
+
+  }
+    if(result.validName == "no"){
+      $("#yname").css({"border": "5px solid red"});
+      $("#nameSpan").text("must only contain letters and whitespace, ex.\"Paulo Sousa\"");
+
  }
- 
+    if(result.validEmail == "email0"){
+      $("#yemail").css({"border": "5px solid red"});
+      $("#emailSpan").text("enter a valid email address, ex.\"paulo@brazil.com\"");
+}
+
+
  
 // If all is good do stuff
       if(result.result == 1) {
