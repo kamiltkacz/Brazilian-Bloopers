@@ -78,20 +78,22 @@ require_once('./dbconn.php');
 
            }
 			    }		 	
-		 
-		 } else { 
+	 } else { 
 			   //validate all empty
-		   if (empty ($name) && empty ($email) && empty ($message)){
-				$export['validAllEmpty'] = "allEmpty";
-		   }
+		   
 				if (empty($name)){
 					
 					$export['validFormName'] = "empty";
 					
 					} else { 
-				   
-					$export['validFormName'] = "notEmpty";
-					
+				   		
+					if (!preg_match("/^[æøåa-z ÆØÅA-Z]*$/",$name)){
+				     // Name is wrong
+				     $export['validName'] = "no";
+		          
+		           } else {
+				    $export['validName'] = "yes";
+			       }
 					}
 				
 				if (empty($email)){
@@ -120,10 +122,5 @@ require_once('./dbconn.php');
 	   echo json_encode($export);
 	
 	 }
-	 
-  
-  
-
-   
-?>
-	   
+	 	 
+		
