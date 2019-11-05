@@ -155,53 +155,47 @@ require_once('./dbconn.php');
        
 
 
-    <script>
+ <script>
       
-      // Reset bordercolor & text in span element for name validation
-        $("#yname").focus(function(){
-        $("#yname").css({"border":""});
-        $("#nameSpan").text("");
-        });
+  // Reset bordercolor & text in span element for name validation
+  $("#yname").focus(function(){
+  $("#yname").css({"border":""});
+  $("#nameSpan").text("");
+  });   
         
         
-        // Reset bordercolor & text in span element for email validation
-        $("#yemail").focus(function(){
-        $("#yemail").css({"border":""});
-        $("#emailSpan").text("");
-        });
+  // Reset bordercolor & text in span element for email validation
+  $("#yemail").focus(function(){
+  $("#yemail").css({"border":""});
+  $("#emailSpan").text("");
+  });
       
-       // Reset bordercolor & text in span element for message validation
+  // Reset bordercolor & text in span element for message validation
+  $("#ymessage").focus(function(){ 
+  $("#ymessage").css({"border": ""});
+  $("#messageSpan").text("");
+  });     
        
-        $("#ymessage").focus(function(){ 
-        $("#ymessage").css({"border": ""});
-        $("#messageSpan").text("");
-        });
-       
+  $("#contact").submit(function(){
+   return false;
+  });     
     
-       $("#contact").submit(function(){
-         return false;
-       });
-       
-        
-        // Submit form contact 
-       $("#submit_contact").on("click", function(){
-           
-   	     var formData = $("#contact :input").serializeArray();
-             formData[formData.length] = { name: "action", value: "submit_contact"};
-             formData.push({});
-          
-       
-       $.ajax({ 
-        type: "POST",
-        url: $("#contact").attr("action"), 
-	       data: formData,
-        dataType: 'json', 
-	       async: true,	   
-        success: function(result){ 
-      
-       
-       
-  // After recieving confirmation on submit Do STUFF HERE:
+  // Submit form contact 
+  $("#submit_contact").on("click", function(){
+    var formData = $("#contact :input").serializeArray();
+        formData[formData.length] = { name: "action", value: "submit_contact"};
+        formData.push({});         
+   	    
+    
+  $.ajax({ 
+    type: "POST",
+    url: $("#contact").attr("action"), 
+	   data: formData,
+    dataType: 'json', 
+	   async: true,	   
+    success: function(result){      
+              
+    // After recieving confirmation on submit Do STUFF HERE:
     
     if(result.validFormName == "empty"){
       $("#yname").css({"border":"5px solid red"});
@@ -250,17 +244,16 @@ require_once('./dbconn.php');
     
   } //ajax, success function//
   }); //ajax//
-  }); //submit on.click fuction//
-         
+  }); //submit on.click fuction//    
       
-        function openPage(pageName, elmnt, color) {
+    function openPage(pageName, elmnt, color) {
           var i, tabcontent, tablinks;
             tabcontent = document.getElementsByClassName("tabcontent");
-          for (i = 0; i < tabcontent.length; i++) {
+              for (i = 0; i < tabcontent.length; i++) {
             tabcontent[i].style.display = "none";
         }
             tablinks = document.getElementsByClassName("tablink");
-          for (i = 0; i < tablinks.length; i++) {
+              for (i = 0; i < tablinks.length; i++) {
             tablinks[i].style.backgroundColor = "";
         }
             document.getElementById(pageName).style.display = "block";
@@ -275,7 +268,14 @@ require_once('./dbconn.php');
      
   </body>
 </html>         
+         
      
+       
+       
+
+         
+      
+       
    
         
                      
@@ -296,16 +296,6 @@ require_once('./dbconn.php');
        
              
        
-
-
-  
-  
-   
-   
-  
-  
- 
-
  
  
  
