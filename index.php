@@ -67,7 +67,32 @@ require_once('./dbconn.php');
  
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
 
-   </head>
+  </head>
+	<style>
+     
+     @media (min-width: 1030px){
+       .tablink {
+       font-size:30px;
+       overflow: hidden;
+       white-space: nowrap; 
+      }
+     
+     
+  }
+ 
+     /* Mobile screen */
+     @media (max-width: 1030px){ 
+       .tablink {
+        font-size:15px;
+        overflow: hidden;                  
+        white-space: nowrap;       
+      }
+   
+ }    
+                    
+  </style>                 
+	
+	
   <body>
     <button class="tablink" onclick="openPage('Home', this ,'green')"id="defaultOpen">
       Home
