@@ -222,7 +222,7 @@ require_once('./dbconn.php');
       $("#emailSpan").text("enter a valid email address, ex.\"paulo@brazil.com\"");
     }
 
-  // If all is good do stuff
+  // If all is good do stuff here
     if(result.result == 1) {
       Swal.fire({
         icon: "success",
