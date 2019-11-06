@@ -221,17 +221,24 @@ require_once('./dbconn.php');
       $("#yemail").css({"border": "5px solid red"});
       $("#emailSpan").text("enter a valid email address, ex.\"paulo@brazil.com\"");
     }
-
-  // If all is good do stuff here
+	    
+// If all is good do stuff
     if(result.result == 1) {
       Swal.fire({
-        icon: "success",
         title: "Yay!",
+        width: 400,
+        heightAuto: false,
+        padding: "0.15em",
+        background: "#ffffff",
+        icon: "success",
         text: "Your form has been submitted, Thanks!",
-        footer: "<a href>Home</a>"
+        footer: "<a href>Home</a>",
+        allowOutsideClick: false,
      });
       $("#contact")[0].reset();
     }    
+       
+       
       
     if(result.result == 2) {
       Swal.fire({
@@ -241,6 +248,7 @@ require_once('./dbconn.php');
         footer: '<a href>Home</a>'
      });
     }     
+
     
   } //ajax, success function//
   }); //ajax//
