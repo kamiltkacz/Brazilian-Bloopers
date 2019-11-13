@@ -12,8 +12,7 @@ require_once('./dbconn.php');
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"/>
           
-          
-           <link href="https://fonts.googleapis.com/css?family=Bangers"
+            <link href="https://fonts.googleapis.com/css?family=Bangers"
             rel="stylesheet"/>
            <link rel="stylesheet" href="styles.css" />
            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
@@ -21,36 +20,30 @@ require_once('./dbconn.php');
             
             <!--SweetAlert 2 -->
            <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
-            <script src="sweetalert2.all.min.js"></script>
-            <!-- Optional: include a polyfill for ES6 Promises for IE11 -->
-            <script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
+           <script src="sweetalert2.all.min.js"></script>
+           <!-- Optional: include a polyfill for ES6 Promises for IE11 -->
+           <script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
          
            
             <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
-		          <!--<script defer src=".test/js/all.min.js"></script> <!--load all styles -->
-		          <script src="https://unpkg.com/babel-polyfill@6.2.0/dist/polyfill.js"></script>
+		          
+	    <script src="https://unpkg.com/babel-polyfill@6.2.0/dist/polyfill.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/rome/2.1.22/rome.standalone.js"></script>
 
             <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-            <!-- <script type="text/javascript" src="//cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script> -->
+           
             <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
   
             <script src="https://cdnjs.cloudflare.com/ajax/libs/rome/2.1.22/rome.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.js"></script>
             <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
-            <!--<script src="//code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+           
             <script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-            <script src="//stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-            <!--<script src="//code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script> -->
-      
+           
      
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-            <!--[if IE]>
-            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-            <![endif]-->
- 
+            
             <!--Datatable link -->
             <script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
             <script type="text/javascript" src="https://cdn.datatables.net/buttons/1.5.2/js/dataTables.buttons.min.js"></script>
@@ -63,11 +56,13 @@ require_once('./dbconn.php');
             <script type="text/javascript" src="https://cdn.datatables.net/select/1.2.7/js/dataTables.select.min.js"></script>
   
             <!-- Draggeble effect -->
-            <!--<script src="https://code.jquery.com/jquery-1.12.4.js"></script> -->
+            
             <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
             <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
             <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
 
+ 
+          
  
  </head>
            
