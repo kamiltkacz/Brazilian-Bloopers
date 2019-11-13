@@ -1,56 +1,125 @@
+
 /* Set height of body and the document to 100% */
 body,
-html {
+ html {
   height: 100%;
   margin: 0;
-  background-color: #32cd32;
+  background-color: #2c2933;
   font-family: Bangers, Geneva, Tahoma, sans-serif;
-  font-size: 20px;
+  font-size: 20px;    
+}    
+
+/* All a links */
+a {
+text-decoration: none;
+    color: #eee;
+    font-weight: 300;             
 }
 
 /* Style tab links */
 .tablink {
-  background-color: yellow;
-  color: black;
+  background-color: #264E;
+  color: #f0f0f0;
   float: left;
   border: none;
   outline: none;
   cursor: pointer;
-  padding: 14px 16px;
-  font-size: 30px;
+  padding: 10px 12px;
   font-family: Bangers, Geneva, Tahoma, sans-serif;
   width: 25%;
-}
-
-.tablink:hover {
-  background-color: blue;
-}
-
-/* Style the tab content (and add height:100% for full page content) */
+ }
+ 
+  /* Style the tab content (and add height:100% for full page content) */
 .tabcontent {
-  color: #000000;
+  color: #eee;
   display: none;
   padding: 100px 20px;
   height: 100%;
 }
 
-#Home {
-  background-color: green;
+/* Outer */
+.popup {
+	width:100%;
+	height:100%;
+	display:none;
+	position:fixed;
+	top:0px;
+	left:0px;
+	background:rgba(0,0,0,0.75);
+}
+
+/* Inner */
+.popup-inner {
+	max-width:700px;
+	width:90%;
+	padding:40px;
+	position:absolute;
+	top:50%;
+	left:50%;
+	-webkit-transform:translate(-50%, -50%);
+	transform:translate(-50%, -50%);
+	box-shadow:0px 2px 6px rgba(0,0,0,1);
+	border-radius:3px;
+	background:#2c2933;
+	text-align:center;
+	
+  
+
+}
+
+  div > p {
+  text-align: right;
+  word-spacing: 4px;
+
+}
+
+
+  
+
+/* Close Button */
+.popup-close {
+	width:30px;
+	height:30px;
+	padding-top:4px;
+	display:inline-block;
+	position:absolute;
+	top:0px;
+	right:0px;
+	transition:ease 0.25s all;
+	-webkit-transform:translate(50%, -50%);
+	transform:translate(50%, -50%);
+	border-radius:1000px;
+	background:rgba(0,0,0,0.8);
+	font-family:Arial, Sans-Serif;
+	font-size:20px;
+	text-align:center;
+	line-height:100%;
+	color:#fff;
+}
+
+.popup-close:hover {
+	-webkit-transform:translate(50%, -50%) rotate(180deg);
+	transform:translate(50%, -50%) rotate(180deg);
+	background:rgba(0,0,0,1);
+	text-decoration:none;
+}
+/*#Home {
+  background-color: #d4cdcd;
 }
 #About {
-  background-color: green;
+  background-color: #d4cdcd;
 }
 #TheTest {
-  background-color: green;
+  background-color: #d4cdcd;
 }
 #ContactUs {
-  background-color: green;
-}
+  background-color: #d4cdcd;
+}*/
 /* CONTACT FORM Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
-  width: 50%; /* Full width */
+  width: 100%; /* Full width */
   padding: 12px; /* Some padding */
-  border: 1px solid #ccc; /* Gray border */
+  border: 5px solid #ccc; /* Gray border */
   border-radius: 4px; /* Rounded borders */
   box-sizing: border-box; /* Make sure that padding and width stays in place */
   margin-top: 6px; /* Add a top margin */
@@ -65,7 +134,7 @@ input[type=submit] {
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
-  cursor: pointer;
+  cursor: pointer;  
 }
 
 /* When moving the mouse over the submit button, add a darker green color */
@@ -76,7 +145,7 @@ input[type=submit]:hover {
 /* Add a background color and some padding around the form */
 .container {
   border-radius: 5px;
-  background-color: #FFFF1A;
+  background-color: #264E;
   padding: 20px;
 }
 /* Style the drop down menu in the subject area */
@@ -86,3 +155,34 @@ font-size: 20px;
 font-style: oblique;
 font-weight: bolder;
 }
+
+
+@media (min-width: 1030px){
+ 
+  .tablink {
+  
+  font-size:30px;
+  overflow: hidden;
+  white-space: nowrap; 
+  
+}
+    
+}
+
+
+@media (max-width: 1030px){ 
+ 
+  
+
+.tablink {
+  
+  font-size:15px;
+  overflow: hidden;
+  white-space: nowrap; 
+  
+}
+
+}
+
+
+
