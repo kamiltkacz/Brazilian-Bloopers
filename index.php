@@ -71,29 +71,7 @@ require_once('./dbconn.php');
 
  
  </head>
-  <style>
-     
-     @media (min-width: 1030px){
-       .tablink {
-       font-size:30px;
-       overflow: hidden;
-       white-space: nowrap; 
-      }
-     
-     
- }
- 
-     /* Mobile screen */
-     @media (max-width: 1030px){ 
-       .tablink {
-        font-size:15px;
-        overflow: hidden;                  
-        white-space: nowrap;       
-      }
-   
- }    
-                    
-  </style>                      
+           
   
 
   <body>
