@@ -1,5 +1,4 @@
-
-     <!DOCTYPE html>
+<!DOCTYPE html>
 
 <?php
 require_once('./dbconn.php');
@@ -80,130 +79,132 @@ require_once('./dbconn.php');
 
 
 
-      <div class="popup" data-popup="popup-1">
-        <div class="popup-inner">
+        <div class="popup" data-popup="popup-1">
+         <div class="popup-inner">
+              
+        <form id="survey" method="post" action="actions.php">
 
 
 
 
-<form id="survey" method="post" action="actions.php">
+            <div class="tab" ><p>1)What gender are you?</p>
+                  <br>
 
-         <div class="tab" ><p>1)What gender are you?</p>
-          <br>
+                   <input type="radio" class="radios" name="" value="none" style="display:none;" checked/>
+                   <input type="radio" class="radios" name="gender" value="male" onclick="this.className = ''" required/>Male<br>
+                   <input type="radio" class="radios" name="gender" value="female" onclick="this.className = ''"/>Female<br>
+                   <input type="radio" class="radios" name="gender" value="other" onclick="this.className = ''"/>Other<br>
 
-           <input type="radio" class="radios" name="" value="none" style="display:none;" checked/>
-           <input type="radio" class="radios" name="gender" value="male" onclick="this.className = ''" required/>Male<br>
-           <input type="radio" class="radios" name="gender" value="female" onclick="this.className = ''"/>Female<br>
-           <input type="radio" class="radios" name="gender" value="other" onclick="this.className = ''"/>Other<br>
-
-           <a class="popup-close" data-popup-close="popup-1" href="#">x</a>
-         <!--  <button id="submit_survey" name="submit">Next</button>-->
-        <!--     </form>-->
-         </div>
-
-
-
-         <div class="tab"><p>2)How old are you?</p>
-          <br><br>
-        <!--  <form id="survey" method="post" action="actions.php">-->
-         <select id="ageselect"><option value="">Please select</option></select>
-        <!-- <button id="submit_survey" name="submit">Next</button>-->
-
-
-
-         <!--  <a class="popup-close" data-popup-close="popup-1" href="#">x</a>-->
-         <!--     </form>-->
-         </div>
-
-
-           <div class="tab"><p>3)English student for:</p><br><br>
-         <!--   <form id="survey" method="post" action="actions.php">-->
-            <input type="radio" class="radios" name="years" value="0-2" required/>0-2years<br>
-            <input type="radio" class="radios" name="years" value="2-5"/>2-5years<br>
-            <input type="radio" class="radios" name="years" value="5-10"/>5-10years<br>
-            <input type="radio" class="radios" name="years" value="allmylife"/>all my life<br>
-            <input type="radio" class="radios" name="years" value="never studied"/>never studied<br>
-
-          <a class="popup-close" data-popup-close="popup-1" href="#">x</a>
-         <!-- <button id="submit_survey" name="submit">Next</button>-->
-         <!--   </form>-->
-         </div>
-
-
-
-
-
-            <div class="tab"><p>4)Experience with English abroad</p>
-            <!--   <form id="survey" method="post" action="actions.php">-->
-              <input type="radio" class="radios" name="abroad" value="less than a year"/>less than a year<br>
-              <input type="radio" class="radios" name="abroad" value="1-3 years"/>1-3 years<br>
-              <input type="radio" class="radios" name="abroad" value="3-6 years"/>3-6 years<br>
-              <input type="radio" class="radios" name="abroad" value="6-10 years"/>6-10 years<br>
-              <input type="radio" class="radios" name="abroad" value="all my life"/>all my life<br>
-              <input type="radio" class="radios" name="abroad" value="never lived abroad"/>never lived abroad<br>
-          <a class="popup-close" data-popup-close="popup-1" href="#">x</a>
-        <!--  <button id="submit_survey" name="submit">Next</button>-->
-          <!--    </form>-->
+                   <a class="popup-close" data-popup-close="popup-1" href="#">x</a>
+                 <!--  <button id="submit_survey" name="submit">Next</button>-->
+                <!--     </form>-->
             </div>
 
-           <div class="tab"><p>5)How do you learn English? Choose all that apply</p>
-           <!-- <form id="survey" method="post" action="actions.php">-->
-             <input type="radio" class="radios" name="way" value="in-person"/>in-person course<br>
-             <input type="radio" class="radios" name="way" value="private teacher"/>private teacher<br>
-             <input type="radio" class="radios" name="way" value="self-learner"/>self-learner<br>
-             <input type="radio" class="radios" name="way" value="online course"/>online course<br>
-             <input type="radio" class="radios" name="way" value="online teacher"/>online teacher<br>
-             <input type="radio" class="radios" name="way" value="video games"/>video games<br>
-             <input type="radio" class="radios" name="way" value="other"/>other<br>
 
-          <a class="popup-close" data-popup-close="popup-1" href="#">x</a>
-         <!-- <button id="submit_survey" name="submit">Next</button>-->
-         <!-- </form>-->
+
+            <div class="tab"><p>2)How old are you?</p>
+                  <br><br>
+                <!--  <form id="survey" method="post" action="actions.php">-->
+                 <select id="ageselect"><option value="">Please select</option></select>
+                <!-- <button id="submit_survey" name="submit">Next</button>-->
+
+
+
+                 <!--  <a class="popup-close" data-popup-close="popup-1" href="#">x</a>-->
+                 <!--     </form>-->
+            </div>
+
+
+            <div class="tab"><p>3)English student for:</p><br><br>
+                 <!--   <form id="survey" method="post" action="actions.php">-->
+                    <input type="radio" class="radios" name="years" value="0-2" required/>0-2years<br>
+                    <input type="radio" class="radios" name="years" value="2-5"/>2-5years<br>
+                    <input type="radio" class="radios" name="years" value="5-10"/>5-10years<br>
+                    <input type="radio" class="radios" name="years" value="allmylife"/>all my life<br>
+                    <input type="radio" class="radios" name="years" value="never studied"/>never studied<br>
+
+                  <a class="popup-close" data-popup-close="popup-1" href="#">x</a>
+                 <!-- <button id="submit_survey" name="submit">Next</button>-->
+                 <!--   </form>-->
+            </div>
+
+            <div class="tab"><p>4)Experience with English abroad</p>
+                 <!--   <form id="survey" method="post" action="actions.php">-->
+                   <input type="radio" class="radios" name="abroad" value="less than a year"/>less than a year<br>
+                   <input type="radio" class="radios" name="abroad" value="1-3 years"/>1-3 years<br>
+                   <input type="radio" class="radios" name="abroad" value="3-6 years"/>3-6 years<br>
+                   <input type="radio" class="radios" name="abroad" value="6-10 years"/>6-10 years<br>
+                   <input type="radio" class="radios" name="abroad" value="all my life"/>all my life<br>
+                   <input type="radio" class="radios" name="abroad" value="never lived abroad"/>never lived abroad<br>
+               <a class="popup-close" data-popup-close="popup-1" href="#">x</a>
+             <!--  <button id="submit_survey" name="submit">Next</button>-->
+               <!--    </form>-->
+            </div>
+
+
+            <div class="tab"><p>5)How do you learn English? Choose all that apply</p>
+                 <!-- <form id="survey" method="post" action="actions.php">-->
+                   <input type="radio" class="radios" name="way" value="in-person"/>in-person course<br>
+                   <input type="radio" class="radios" name="way" value="private teacher"/>private teacher<br>
+                   <input type="radio" class="radios" name="way" value="self-learner"/>self-learner<br>
+                   <input type="radio" class="radios" name="way" value="online course"/>online course<br>
+                   <input type="radio" class="radios" name="way" value="online teacher"/>online teacher<br>
+                   <input type="radio" class="radios" name="way" value="video games"/>video games<br>
+                   <input type="radio" class="radios" name="way" value="other"/>other<br>
+
+                <a class="popup-close" data-popup-close="popup-1" href="#">x</a>
+               <!-- <button id="submit_survey" name="submit">Next</button>-->
+               <!-- </form>-->
+            </div>
+
+            <div class="tab"><p>6)How many foreign languages do you speak?</p>
+              <!-- <form id="survey" method="post" action="actions.php">-->
+                <input type="radio" class="radios" name="other" value="one"/>One<br>
+                <input type="radio" class="radios" name="other" value="two"/>Two<br>
+                <input type="radio" class="radios" name="other" value="I'm a polyglot">I'm a polyglot<br>
+
+              <a class="popup-close" data-popup-close="popup-1" href="#">x</a>
+              <!-- <button id="submit_survey" name="submit">Next</button>-->
+              <!--   </form>-->
+            </div>
+
+            <div class="tab"><p>7)Where do you live?</p>
+              <!--<form id="survey" method="post" action="actions.php">-->
+               <input type="radio" class="radios" name="country" value="Brazil"/>Brazil<br>
+               <input type="radio" class="radios" name="country" value="Abroad"/>Abroad<br>
+
+              <a class="popup-close" data-popup-close="popup-1" href="#">x</a>
+              <!--<button id="submit_survey" name="submit">Next</button>-->
+              <!--</form>-->
+            </div>
+            <div style="block;">
+            <div style="none;">
+             <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+             <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+            </div>
+            </div>
+
+            <!-- Circles which indicates the steps of the form: -->
+            <div style="text-align:center;margin-top:40px;">
+              <span class="step"></span>
+              <span class="step"></span>
+              <span class="step"></span>
+              <span class="step"></span>
+              <span class="step"></span>
+              <span class="step"></span>
+              <span class="step"></span>
+            </div>
+
+
+
+              
+        </form>
+            </div>
+          </div>
         </div>
 
-           <div class="tab"><p>6)How many foreign languages do you speak?</p>
-           <!-- <form id="survey" method="post" action="actions.php">-->
-             <input type="radio" class="radios" name="other" value="one"/>One<br>
-             <input type="radio" class="radios" name="other" value="two"/>Two<br>
-             <input type="radio" class="radios" name="other" value="I'm a polyglot">I'm a polyglot<br>
 
-          <a class="popup-close" data-popup-close="popup-1" href="#">x</a>
-         <!-- <button id="submit_survey" name="submit">Next</button>-->
-         <!--   </form>-->
-          </div>
-
-          <div class="tab"><p>7)Where do you live?</p>
-          <!--<form id="survey" method="post" action="actions.php">-->
-            <input type="radio" class="radios" name="country" value="Brazil"/>Brazil<br>
-            <input type="radio" class="radios" name="country" value="Abroad"/>Abroad<br>
-
-          <a class="popup-close" data-popup-close="popup-1" href="#">x</a>
-          <!--<button id="submit_survey" name="submit">Next</button>-->
-<!--</form>-->
-
-           </div>
-           <div style="block;">
-  <div style="none;">
-    <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
-    <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
-  </div>
-</div>
-
-<!-- Circles which indicates the steps of the form: -->
-<div style="text-align:center;margin-top:40px;">
-  <span class="step"></span>
-  <span class="step"></span>
-  <span class="step"></span>
-  <span class="step"></span>
-  <span class="step"></span>
-  <span class="step"></span>
-  <span class="step"></span>
-</div>
- </form>
-           </div>
-      </div>
-    </div>
-    <script>
+<script>
 
 
 // Select Age, How old are you//
@@ -255,34 +256,33 @@ function nextPrev(n) {
 }
 
  function validateForm() {
-        var gens = document.getElementsByName('gender');
+      var gens = document.getElementsByName('gender');
+      var validForm = false;
 
-        var validForm = false;
 
-
-     for  (var i = 0; i < gens.length; i++){
+  for  (var i = 0; i < gens.length; i++){
         if (gens[i].checked == true) {
           validForm = true;
            alert('you chose'+ gens[i].value);
-          }
+        }
 
     }
+        if (!validForm) {
+          alert('Must check something');
+          return false;
+}
 
-          if (!validForm) {
-            alert('Must check something');
-            return false;
-      }
 
 
   var valid = true;
-   //If the valid status is true, mark the step as finished and valid:
+
   if (valid) {
 
-    valid = document.getElementsByClassName("step")[currentTab].className += " finish";
+  valid = document.getElementsByClassName("step")[currentTab].className += " finish";
+    }
 
+  return valid; // return the valid status
 
-  }
-return valid; // return the valid status
  }
 
 
@@ -297,390 +297,233 @@ function fixStepIndicator(n) {
   //... and adds the "active" class to the current step:
   x[n].className += " active";
 }
+ </script>
+
+ <div id="Contact Us" class="tabcontent">
+ <div class="container">
+  <div style="text-align:center">
+     <h2>Shoot us an e-mail directly at</h2>
+     <h3><a href="mailto:hello@brazilianbloopers.com">hello@brazilianbloopers.com</a></h3>
+     <h3>or</h3>
+ </div>
+ <div class="row">
+  <div class="column">
+   <form id="contact" method="post" action="actions.php">
+    <label for="name">Name*<span id="nameSpan"></span></label>
+     <input type="text" id="yname" name="name" placeholder="Your name.." font-family="cursive">
+    <label for="email">E-mail*<span id="emailSpan"></span></label>
+     <input type="text" id="yemail" name="email" placeholder="Your e-mail..">
+    <label for="subject">Subject</label>
+     <input type="text" id="ysubject" name="subject" placeholder="e.g.,suggestion for a blooper, comment, etc...">
+    <label for="message">Message*<span id="messageSpan"></span></label>
+     <textarea id="ymessage" name="message" placeholder="Write your message here!" style="height:170px"></textarea>
+      <button id="submit_contact" name="submit">Submit</button>
+   </form>
+ </div>
+ </div>
+ </div>
+ </div>
+
+ <script>
+
+ // Reset bordercolor & text in span element for name validation
+ $("#yname").focus(function(){
+ $("#yname").css({"border":""});
+ $("#nameSpan").text("");
+ });
+
+ // Reset bordercolor & text in span element for email validation
+ $("#yemail").focus(function(){
+ $("#yemail").css({"border":""});
+ $("#emailSpan").text("");
+ });
+
+ // Reset bordercolor & text in span element for message validation
+ $("#ymessage").focus(function(){
+ $("#ymessage").css({"border":""});
+ $("#messageSpan").text("");
+ });
+
+ $("#contact").submit(function(){
+ return false;
+ });
+
+ // Submit form contact
+ $("#submit_contact").on("click", function(){
+ var formData = $("#contact :input").serializeArray();
+  formData[formData.length] = { name: "action", value: "submit_contact"};
+  formData.push({});
+
+ $.ajax({
+ type: "POST",
+ url: $("#contact").attr("action"),
+ data: formData,
+ dataType: 'json',
+ async: true,
+ success: function(result){
+
+ // After recieving confirmation on submit Do STUFF HERE:
+ if(result.validFormName == "empty"){
+ $("#yname").css({"border":"5px solid red"});
+ $("#nameSpan").text(" must only contain letters and whitespace ex.\"Paulo Sousa\"");
+ }
+
+ if(result.validFormEmail == "empty"){
+ $("#yemail").css({"border": "5px solid red"});
+ $("#emailSpan").text("enter a valid email address ex.\"paulo@brazil.com\"");
+ }
+
+ if(result.validFormMessage == "empty"){
+ $("#ymessage").css({"border": "5px solid red"});
+ $("#messageSpan").text("type something, anything!");
+ }
+
+ if(result.validName == "no"){
+ $("#yname").css({"border": "5px solid red"});
+ $("#nameSpan").text("must only contain letters and whitespace ex.\"Paulo Sousa\"");
+ }
+
+ if(result.validEmail == "email0"){
+ $("#yemail").css({"border": "5px solid red"});
+ $("#emailSpan").text("enter a valid email address ex.\"paulo@brazil.com\"");
+ }
+
+ // If all is good do stuff
+ if(result.result == 1) {
+ Swal.fire({
+ title: "Yay!",
+ width: 400,
+ heightAuto: false,
+ padding: "0.15em",
+ background: "#000000",
+ icon: "success",
+ text: "Your form has been submitted, Thanks!",
+ footer: "<a href>Home</a>",
+ allowOutsideClick: false,
+ customClass: {
+ footer: 'sweet-footer',
+
+ }
+ });
+ $("#contact")[0].reset();
+ }
+
+ if(result.result == 2) {
+ Swal.fire({
+  icon: 'error',
+  title: 'Hmmm...',
+  text: 'Something went wrong, Try again!',
+  footer: '<a href><strong>Home</strong></a>'
+ });
+ }
+
+ } //ajax, success function//
+ }); //ajax//
+ }); //submit on.click fuction//
+
+ $("#survey").submit(function(){
+ return true;
+
+ });
+
+
+ $("#submit_survey").on("click", function(){
+ var formData = $("#survey :input").serializeArray();
+     formData[formData.length] = { name: "action", value: "submit_survey"};
+     formData.push({});
 
 
 
 
 
-         </script>
+ $.ajax({
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-       <div id="Contact Us" class="tabcontent">
-       <div class="container">
-        <div style="text-align:center">
-           <h2>Shoot us an e-mail directly at</h2>
-           <h3><a href="mailto:hello@brazilianbloopers.com">hello@brazilianbloopers.com</a></h3>
-           <h3>or</h3>
-       </div>
-       <div class="row">
-        <div class="column">
-         <form id="contact" method="post" action="actions.php">
-          <label for="name">Name*<span id="nameSpan"></span></label>
-           <input type="text" id="yname" name="name" placeholder="Your name.." font-family="cursive">
-          <label for="email">E-mail*<span id="emailSpan"></span></label>
-           <input type="text" id="yemail" name="email" placeholder="Your e-mail..">
-          <label for="subject">Subject</label>
-           <input type="text" id="ysubject" name="subject" placeholder="e.g.,suggestion for a blooper, comment, etc...">
-          <label for="message">Message*<span id="messageSpan"></span></label>
-           <textarea id="ymessage" name="message" placeholder="Write your message here!" style="height:170px"></textarea>
-            <button id="submit_contact" name="submit">Submit</button>
-         </form>
-       </div>
-       </div>
-       </div>
-       </div>
-
-       <script>
-
-       // Reset bordercolor & text in span element for name validation
-       $("#yname").focus(function(){
-       $("#yname").css({"border":""});
-       $("#nameSpan").text("");
-       });
-
-       // Reset bordercolor & text in span element for email validation
-       $("#yemail").focus(function(){
-       $("#yemail").css({"border":""});
-       $("#emailSpan").text("");
-       });
-
-       // Reset bordercolor & text in span element for message validation
-       $("#ymessage").focus(function(){
-       $("#ymessage").css({"border":""});
-       $("#messageSpan").text("");
-       });
-
-       $("#contact").submit(function(){
-       return false;
-       });
-
-       // Submit form contact
-       $("#submit_contact").on("click", function(){
-       var formData = $("#contact :input").serializeArray();
-        formData[formData.length] = { name: "action", value: "submit_contact"};
-        formData.push({});
-
-       $.ajax({
-       type: "POST",
-       url: $("#contact").attr("action"),
-       data: formData,
-       dataType: 'json',
-       async: true,
-       success: function(result){
-
-       // After recieving confirmation on submit Do STUFF HERE:
-       if(result.validFormName == "empty"){
-       $("#yname").css({"border":"5px solid red"});
-       $("#nameSpan").text(" must only contain letters and whitespace ex.\"Paulo Sousa\"");
-       }
-
-       if(result.validFormEmail == "empty"){
-       $("#yemail").css({"border": "5px solid red"});
-       $("#emailSpan").text("enter a valid email address ex.\"paulo@brazil.com\"");
-       }
-
-       if(result.validFormMessage == "empty"){
-       $("#ymessage").css({"border": "5px solid red"});
-       $("#messageSpan").text("type something, anything!");
-       }
-
-       if(result.validName == "no"){
-       $("#yname").css({"border": "5px solid red"});
-       $("#nameSpan").text("must only contain letters and whitespace ex.\"Paulo Sousa\"");
-       }
-
-       if(result.validEmail == "email0"){
-       $("#yemail").css({"border": "5px solid red"});
-       $("#emailSpan").text("enter a valid email address ex.\"paulo@brazil.com\"");
-       }
-
-       // If all is good do stuff
-       if(result.result == 1) {
-       Swal.fire({
-       title: "Yay!",
-       width: 400,
-       heightAuto: false,
-       padding: "0.15em",
-       background: "#000000",
-       icon: "success",
-       text: "Your form has been submitted, Thanks!",
-       footer: "<a href>Home</a>",
-       allowOutsideClick: false,
-       customClass: {
-       footer: 'sweet-footer',
-
-       }
-       });
-       $("#contact")[0].reset();
-       }
-
-       if(result.result == 2) {
-       Swal.fire({
-        icon: 'error',
-        title: 'Hmmm...',
-        text: 'Something went wrong, Try again!',
-        footer: '<a href><strong>Home</strong></a>'
-       });
-       }
-
-       } //ajax, success function//
-       }); //ajax//
-       }); //submit on.click fuction//
-
-       $("#survey").submit(function(){
-       return true;
-
-       });
-
-
-       $("#submit_survey").on("click", function(){
-       var formData = $("#survey :input").serializeArray();
-           formData[formData.length] = { name: "action", value: "submit_survey"};
-           formData.push({});
-
-
-
-
-
-       $.ajax({
-
-       type: "POST",
-       url: $("#survey").attr("action"),
-       data: formData,
-       dataType: 'json',
-       async: true,
-       success: function(result){
+ type: "POST",
+ url: $("#survey").attr("action"),
+ data: formData,
+ dataType: 'json',
+ async: true,
+ success: function(result){
 
 
 alert("boo");
 
 
-       // If all is good do stuff
-      if(result.result == 1) {
+ // If all is good do stuff
+if(result.result == 1) {
 
 
-        Swal.fire({
-         title: "Yay!",
-         width: 400,
-         heightAuto: false,
-         padding: "0.15em",
-         background: "#000000",
-         icon: "success",
-         text: "Continue to next question",
-         footer: "<a href>Home</a>",
-         allowOutsideClick: false,
-         customClass: {
-          footer: 'sweet-footer',
+  Swal.fire({
+   title: "Yay!",
+   width: 400,
+   heightAuto: false,
+   padding: "0.15em",
+   background: "#000000",
+   icon: "success",
+   text: "Continue to next question",
+   footer: "<a href>Home</a>",
+   allowOutsideClick: false,
+   customClass: {
+    footer: 'sweet-footer',
 
-           }
-         });
-          $("#survey")[0].reset();
-        }
+     }
+   });
+    $("#survey")[0].reset();
+  }
 
-        if(result.result == 2) {
-          Swal.fire({
-            icon: 'error',
-            title: 'Hmmm...',
-            text: 'Something went wrong, Try again!',
-            footer: '<a href><strong>Home</strong></a>'
-         });
-        }
+  if(result.result == 2) {
+    Swal.fire({
+      icon: 'error',
+      title: 'Hmmm...',
+      text: 'Something went wrong, Try again!',
+      footer: '<a href><strong>Home</strong></a>'
+   });
+  }
 
-       } // success ajax function
-       }); //ajax//
-       }); //submit on.click fuction//
-
-
-       function openPage(pageName, elmnt, color) {
-       var i, tabcontent, tablinks;
-       tabcontent = document.getElementsByClassName("tabcontent");
-        for (i = 0; i < tabcontent.length; i++) {
-         tabcontent[i].style.display = "none";
-       }
-       tablinks = document.getElementsByClassName("tablink");
-        for (i = 0; i < tablinks.length; i++) {
-         tablinks[i].style.backgroundColor = "";
-       }
-         document.getElementById(pageName).style.display = "block";
-         elmnt.style.backgroundColor = color;
-       }
-       // Get the element with id="defaultOpen" and click on it
-         document.getElementById("defaultOpen").click();
-
-       $(function() {
-       //----- OPEN
-       $('[data-popup-open]').on('click', function(e) {
-        var targeted_popup_class = jQuery(this).attr('data-popup-open');
-         $('[data-popup="' + targeted_popup_class + '"]').fadeIn(350);
-
-       event.preventDefault();
-       });
-
-       //----- CLOSE
-       $('[data-popup-close]').on('click', function(e) {
-        var targeted_popup_class = jQuery(this).attr('data-popup-close');
-        $('[data-popup="' + targeted_popup_class + '"]').fadeOut(350);
-
-        event.preventDefault();
-        });
-        });
-
-       </script>
-       <footer>
-       <p>&copy; 2019 - BrazilianBloopers</p>
-
-       </footer>
-       </body>
-       </html>
-    
-     
-       
-       
-
-         
-      
-       
-   
-        
-                     
-            
-               
- 
-
- 
- 
-
-             
-               
- 
-
-       
-     
-       
-       
-             
-       
- 
- 
- 
- 
-           
- 
-            
-
- 
- 
- 
-    
-	
- 
- 
-             
-	
-	
+ } // success ajax function
+ }); //ajax//
+ }); //submit on.click fuction//
 
 
-  
+ function openPage(pageName, elmnt, color) {
+ var i, tabcontent, tablinks;
+ tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+   tabcontent[i].style.display = "none";
+ }
+ tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+   tablinks[i].style.backgroundColor = "";
+ }
+   document.getElementById(pageName).style.display = "block";
+   elmnt.style.backgroundColor = color;
+ }
+ // Get the element with id="defaultOpen" and click on it
+   document.getElementById("defaultOpen").click();
 
-         
-         
+ $(function() {
+ //----- OPEN
+ $('[data-popup-open]').on('click', function(e) {
+  var targeted_popup_class = jQuery(this).attr('data-popup-open');
+   $('[data-popup="' + targeted_popup_class + '"]').fadeIn(350);
 
-              
-      
-       
-  
-       
-        
-      
-        
-      
- 
-   
-           
-               
-        
-   
-  
-             
-       
-           
-       
-       
-          
-       
-        
-                    
-           
-       
-                
-      
-   
-     
-     
+ event.preventDefault();
+ });
 
-      
-         
-      
-        
-          
-      
-    
-            
-       
-        
-           
-      
-        
-          
-        
+ //----- CLOSE
+ $('[data-popup-close]').on('click', function(e) {
+  var targeted_popup_class = jQuery(this).attr('data-popup-close');
+  $('[data-popup="' + targeted_popup_class + '"]').fadeOut(350);
 
-          
-        
-     
-       
-   
-            
-        
-       
-       
-          
+  event.preventDefault();
+  });
+  });
 
-       
-     
-       
-          
-       
-        
-       
-        
-      
-        
-      
- 
+ </script>
+ <footer>
+ <p>&copy; 2019 - BrazilianBloopers</p>
 
-  
+ </footer>
+ </body>
+ </html>
 
-   
-    
-    	
-   
-
-
-           
-           
-           
-           
-  
