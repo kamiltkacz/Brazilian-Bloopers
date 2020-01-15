@@ -10,10 +10,14 @@ $action = "";
 	  $action = $_POST["action"];
 
 
+
+
+
 	 if ($action == "nextBtn"){
 			$export = Array();
 			$gender = $_POST["gender"];
-			$ageselect = $_POST["ageselect"];
+			//$export["ageselect"] = "";
+   		//$ageselect = $_POST[""];
 			$years = $_POST["years"];
 			$abroad = $_POST["abroad"];
 			$way = $_POST["way"];
@@ -21,7 +25,8 @@ $action = "";
 			$country = $_POST["country"];
 
 
-			$sql = "INSERT INTO survey (Radio_1, Checkbox_2, Radio_3, Radio_4, Radio_5, Radio_6, Radio_7) VALUES ('$gender', '$ageselect', '$years', '$abroad', '$way', '$others', '$country')";
+			$sql = "INSERT INTO survey (Radio_1, Radio_3, Radio_4, Radio_5, Radio_6, Radio_7) VALUES ('$gender', '$years', '$abroad', '$way', '$others', '$country')";
+
 
 
 	 if (mysqli_query($conn, $sql) === TRUE){
