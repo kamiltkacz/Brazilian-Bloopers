@@ -261,10 +261,10 @@ require_once('./dbconn.php');
          async: true,
          success: function(result){
           if (result.result == 1)
-           alert('booyah');
+           alert('yes');
 
            if (result.result == 2)
-           alert('no can do');
+           alert('no');
 
 
      }// success ajax function
