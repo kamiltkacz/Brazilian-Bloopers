@@ -1,24 +1,23 @@
-
 /* Set height of body and the document to 100% */
 body,
- html {
+html {
   height: 100%;
   margin: 0;
-  background-color: #2c2933;
+  background-color: #000;
   font-family: Bangers, Geneva, Tahoma, sans-serif;
-  font-size: 20px;    
-}    
+  font-size: 20px;
+}
 
 /* All a links */
 a {
-text-decoration: none;
-    color: #eee;
-    font-weight: 300;             
+  text-decoration: none;
+  color: #eee;
+  font-weight: 200;
 }
 
 /* Style tab links */
 .tablink {
-  background-color: #264E;
+  background-color: #b9ff3b69;
   color: #f0f0f0;
   float: left;
   border: none;
@@ -27,162 +26,227 @@ text-decoration: none;
   padding: 10px 12px;
   font-family: Bangers, Geneva, Tahoma, sans-serif;
   width: 25%;
- }
- 
-  /* Style the tab content (and add height:100% for full page content) */
+  border-radius: 20px;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
 .tabcontent {
   color: #eee;
   display: none;
   padding: 100px 20px;
   height: 100%;
+  text-align: center;
 }
+/*
+.checkbox-round {
+  width: 1.3em;
+  height: 1.3em;
+  background-color: white;
+  border-radius: 50%;
+  vertical-align: middle;
+  border: 1px solid #ddd;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.checkbox-round:checked {
+  background-color: gray;
+}*/
+
+#surveyname {
+  color: #b9ff3b69;
+  word-spacing: 4px;
+}
+
 
 /* Outer */
 .popup {
-	width:100%;
-	height:100%;
-	display:none;
-	position:fixed;
-	top:0px;
-	left:0px;
-	background:rgba(0,0,0,0.75);
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background: rgba(0, 0, 0, 0.75);
 }
 
 /* Inner */
 .popup-inner {
-	max-width:700px;
-	width:90%;
-	padding:40px;
-	position:absolute;
-	top:50%;
-	left:50%;
-	-webkit-transform:translate(-50%, -50%);
-	transform:translate(-50%, -50%);
-	box-shadow:0px 2px 6px rgba(0,0,0,1);
-	border-radius:3px;
-	background:#2c2933;
-	text-align:center;
-	
-  
-
+  max-width: 500px;
+  max-height: 400px;
+  width: 90%;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 1);
+  border-radius: 20px;
+  background: #2c2933;
+  text-align: center;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
-  div > p {
-  text-align: right;
-  word-spacing: 4px;
-
+p {
+  word-spacing: 3px;
 }
-
-
-  
-
 /* Close Button */
 .popup-close {
-	width:30px;
-	height:30px;
-	padding-top:4px;
-	display:inline-block;
-	position:absolute;
-	top:0px;
-	right:0px;
-	transition:ease 0.25s all;
-	-webkit-transform:translate(50%, -50%);
-	transform:translate(50%, -50%);
-	border-radius:1000px;
-	background:rgba(0,0,0,0.8);
-	font-family:Arial, Sans-Serif;
-	font-size:20px;
-	text-align:center;
-	line-height:100%;
-	color:#fff;
+  width: 30px;
+  height: 30px;
+  padding-top: 4px;
+  display: inline-block;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  transition: ease 0.25s all;
+  -webkit-transform: translate(50%, -50%);
+  transform: translate(50%, -50%);
+  border-radius: 1000px;
+  background: rgba(0, 0, 0, 0.8);
+  font-family: Arial, Sans-Serif;
+  font-size: 20px;
+  text-align: center;
+  line-height: 100%;
+  color: #fff;
 }
 
 .popup-close:hover {
-	-webkit-transform:translate(50%, -50%) rotate(180deg);
-	transform:translate(50%, -50%) rotate(180deg);
-	background:rgba(0,0,0,1);
-	text-decoration:none;
+  -webkit-transform: translate(50%, -50%) rotate(180deg);
+  transform: translate(50%, -50%) rotate(180deg);
+  background: rgba(0, 0, 0, 1);
+  text-decoration: none;
 }
-/*#Home {
-  background-color: #d4cdcd;
-}
-#About {
-  background-color: #d4cdcd;
-}
-#TheTest {
-  background-color: #d4cdcd;
-}
-#ContactUs {
-  background-color: #d4cdcd;
-}*/
+
 /* CONTACT FORM Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */
-  border: 5px solid #ccc; /* Gray border */
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  font-family: Bangers;
+  font-size: 20px;
+  border: 5px solid #ccc; /*grey*/
   border-radius: 4px; /* Rounded borders */
   box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
-/* Style the submit button with a specific background color etc */
-input[type=submit] {
-  background-color: #4CAF50;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;  
+#ageselect {
+
+width: 200px;
+padding: 7px;
+border-radius: 20px;
+
 }
 
-/* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
-  background-color: #45a049;
+
+#submit_survey {
+
+    background-color: whitesmoke;
+    color: #62645e;
+    font-family: Bangers;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 90px;
 }
+
+
+/* Submit button */
+input[type="submit"],
+#submit_contact {
+  background-color: whitesmoke;
+  color: #62645e;
+  font-family: Bangers;
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
 
 /* Add a background color and some padding around the form */
 .container {
-  border-radius: 5px;
-  background-color: #264E;
+  border-radius: 20px;
+  background-color: #b9ff3b69;
   padding: 20px;
-}
-/* Style the drop down menu in the subject area */
-option {
-font-family: verdana;
-font-size: 20px;
-font-style: oblique;
-font-weight: bolder;
+  text-align: left;
 }
 
+.sweet-footer {
+  text-align: left;
+}
 
-@media (min-width: 1030px){
- 
+/* Multi Step form */
+
+
+/*#survey {
+  background-color: black;
+  margin: 100px auto;
+  padding: 40px;
+  width: 70%;
+  min-width: 300px;
+}*/
+
+/* Style the input fields */
+/*input {
+  padding: 10px;
+  width: 5%;
+
+}
+
+/* Mark input boxes that gets an error on validation: */
+/*input.invalid {
+  background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+/*.tab {
+  display: none;
+}
+
+/* Make circles that indicate the steps of the form: */
+/*.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+/* Mark the active step: */
+/*.step.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+/*.step.finish {
+  background-color: #4caf50;
+}
+*/
+@media (min-width: 1030px) {
   .tablink {
-  
-  font-size:30px;
-  overflow: hidden;
-  white-space: nowrap; 
-  
-}
-    
+    font-size: 30px;
+    overflow: hidden;
+    white-space: nowrap;
+  }
 }
 
-
-@media (max-width: 1030px){ 
- 
-  
-
-.tablink {
-  
-  font-size:15px;
-  overflow: hidden;
-  white-space: nowrap; 
-  
+@media (max-width: 1030px) {
+  .tablink {
+    font-size: 18px;
+    overflow: hidden;
+    white-space: nowrap;
+  }
 }
-
-}
-
-
-
