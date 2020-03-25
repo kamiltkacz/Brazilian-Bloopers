@@ -65,7 +65,7 @@ require_once('./dbconn.php');
     <a href="#" class="active">Home</a>
   </button>
   <button class="tablink" onclick="openPage('About', this);">
-    <a href="#" class="active">About</a>
+    <a href="#" class="active">About Us</a>
   </button>
   <button class="tablink" onclick="openPage('The Test', this);">
     <a href="#" class="active">The Test</a>
@@ -76,7 +76,7 @@ require_once('./dbconn.php');
 
   <div id="Home" class="tabcontent">
     <h1>Hello, Welcome to Brazilian Bloopers.</h1><br>
-    <p>Here we tell you what gives you away as Brazilian</p>
+    <p>Here we tell you what gives you away as Brazilian!</p>
   </div>
 
   <div id="About" class="tabcontent">
