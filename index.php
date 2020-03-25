@@ -80,7 +80,7 @@ require_once('./dbconn.php');
   </div>
 
   <div id="About" class="tabcontent">
-    <p>Who we are and what we do</p>
+    <p>Coming Soon</p>
   </div>
 
   <div id="The Test" class="tabcontent">
