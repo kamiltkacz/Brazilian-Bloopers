@@ -130,17 +130,6 @@ if (isset($_POST["action"])) {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
   if ($action == "submit_contact") {
     $export = Array();
     $name = htmlspecialchars($_POST["name"]);

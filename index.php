@@ -199,7 +199,7 @@ require_once('./dbconn.php');
 
             if(result.genderErr == "empty"){
             $("#bor_gender").css({"border":"5px solid red"});
-            $("#span_gender").text(" must only contain letters and whitespace ex.\"Paulo Sousa\"");
+            $("#span_gender").text("Musct check something");
 
            }
 
