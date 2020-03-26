@@ -92,7 +92,7 @@ require_once('./dbconn.php');
 
         <div class="popup-inner">
 
-
+       <a class="popup-close" data-popup-close="popup-1" href="#">x</a>
           <div id="question1">
             <p id="bor_gender"><label for="gender">1) What gender are you?<span id="span_gender"></span></label></p>
               <input type="radio" class="radios" name="gender" value="male">Male<br>
