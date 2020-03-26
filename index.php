@@ -68,7 +68,7 @@ require_once('./dbconn.php');
     <a href="#" class="active">About Us</a>
   </button>
   <button class="tablink" onclick="openPage('The Test', this);">
-    <a href="#" class="active">The Test</a>
+    <a href="#" class="active">Test</a>
   </button>
   <button class="tablink" onclick="openPage('Contact Us', this);">
     <a href="#" class="active">Contact Us</a>
