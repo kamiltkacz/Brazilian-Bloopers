@@ -24,123 +24,123 @@ if (isset($_POST["action"])) {
     $export['wayErr'] = "";
     $export['othersErr'] = "";
     $export['countryErr'] = "";
-    
-  
+
+
       if (empty($gender) || $ageselect == 0 || empty($years) || empty($abroad) || empty($others) || empty($country))  {
-   
-           
-            
+
+
+
        // Set "gender" validation ( Survey - question1)
        if (empty($gender)) {
-        
+
         $export['genderErr'] = "empty";
         $export['gender'] = 0;
         } else {
-        $export['gender'] = 1;  
+        $export['gender'] = 1;
        }
-       
+
        // Set "age" validation ( Survey - question2)
 
        if ($ageselect == 0) {
         $export['ageErr'] = "empty";
         $export['ageselect'] = 0;
         } else {
-        $export['ageselect'] = 1;  
+        $export['ageselect'] = 1;
        }
-       
+
        // Set "years" validation ( Survey - question3)
 
        if (empty($years)) {
-        
+
         $export['yearsErr'] = "empty";
         $export['years'] = 0;
         } else {
-        $export['years'] = 1;  
+        $export['years'] = 1;
        }
-       
+
         // Set "abroad" validation ( Survey - question4)
 
        if (empty($abroad)) {
-        
+
         $export['abroadErr'] = "empty";
         $export['abroad'] = 0;
         } else {
-        $export['abroad'] = 1;  
+        $export['abroad'] = 1;
        }
         // Set "way" validation ( Survey - question5)
        if ($way == 'null'){
-        
+
         $export['wayErr'] = "empty";
-        
+
         $export['way'] = 0;
-        
+
        } else {
-          
+
           $export['way'] = 1;
-          
+
         }
-        
+
          // Set "others" validation ( Survey - question6)
        if (empty($others)) {
-        
+
         $export['othersErr'] = "empty";
         $export['others'] = 0;
         } else {
-        $export['others'] = 1;  
+        $export['others'] = 1;
        }
         // Set "country" validation ( Survey - 7)
        if (empty($country)) {
-        
+
         $export['countryErr'] = "empty";
         $export['country'] = 0;
         } else {
-        $export['country'] = 1;  
+        $export['country'] = 1;
        }
-       
-      
-     
-       
-       
-       
-       
-     
-            
-            
+
+
+
+
+
+
+
+
+
+
     } else {
 
-  
+
     $sql = "INSERT INTO survey (Radio_1, Age, Radio_3, Radio_4, Radio_5, Radio_6, Radio_7)
-    
+
     VALUES ('$gender', '$ageselect', '$years', '$abroad', '$way', '$others', '$country')";
 
     if (mysqli_query($conn, $sql) === TRUE) {
-     
+
       $export['result'] = "1";
     } else {
-      
+
       $export['result'] = "2";
     }
-    
-    
-  }
-  
-   
+
+
   }
 
- 
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   if ($action == "submit_contact") {
     $export = Array();
     $name = htmlspecialchars($_POST["name"]);
