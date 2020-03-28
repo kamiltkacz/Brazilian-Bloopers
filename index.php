@@ -16,13 +16,12 @@ require_once('./dbconn.php');
   <!--Bangers Font-->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
     integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-  <!--MyJavascript-->
-  <!--<script src="#.js"></script>-->
+
   <!--SweetAlert2 -->
-  <!--<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>-->
-  <!--<script src="sweetalert2.all.min.js"></script>-->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+  <script src="sweetalert2.all.min.js"></script>
      <!-- Optional: include a polyfill for ES6 Promises for IE11 -->
-  <!--<script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>-->
+  <script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"
@@ -169,8 +168,6 @@ require_once('./dbconn.php');
       }
     }
 
-
-
    /*  // Reset border color & text in span element for name validation
     $("#ygender").focus(function(){
     $("#ygender").css({"border":""});
@@ -199,63 +196,80 @@ require_once('./dbconn.php');
 
             if(result.genderErr == "empty"){
             $("#bor_gender").css({"border":"5px solid red"});
-            $("#span_gender").text("Musct check something");
+            $("#span_gender").text("Must check something");
 
            }
 
             if(result.ageErr == "empty"){
             $("#bor_age").css({"border":"5px solid red"});
-            $("#span_age").text(" Must check something");
+            $("#span_age").text("Must check something");
 
            }
 
             if(result.yearsErr == "empty"){
             $("#bor_years").css({"border":"5px solid red"});
-            $("#span_years").text(" Must check something");
+            $("#span_years").text("Must check something");
 
            }
             if(result.abroadErr == "empty"){
             $("#bor_abroad").css({"border":"5px solid red"});
-            $("#span_abroad").text(" Must check something");
+            $("#span_abroad").text("Must check something");
 
            }
             if(result.wayErr == "empty"){
             $("#bor_way").css({"border":"5px solid red"});
-            $("#span_way").text(" Must check something");
+            $("#span_way").text("Must check something");
 
            }
 
            if(result.othersErr == "empty"){
             $("#bor_others").css({"border":"5px solid red"});
-            $("#span_others").text(" Must check something");
+            $("#span_others").text("Must check something");
 
            }
             if(result.countryErr == "empty"){
             $("#bor_country").css({"border":"5px solid red"});
-            $("#span_country").text(" Must check something");
+            $("#span_country").text("Must check something");
 
            }
 
 
-
-
-
-
-
-
-          // After data submitted do stuff here
+      // After data submitted do stuff here
 
           if (result.result == 1) {
-            alert("Your survey has been submitted, thank you");
-            //$("#survey")[0].reset();
+            //alert("Your survey has been submitted, thank you");
+            Swal.fire({
+              title: "Yay!",
+              width: 400,
+              heightAuto: false,
+              padding: "0.15em",
+              background: "#000000",
+              icon: "success",
+              text: "Your survey has been submitted, thanks!",
+              footer: "<a href>Home</a>",
+              allowOutsideClick: false,
+              customClass: {
+              footer: 'sweet-footer',
+              }
+              });
+              $("#survey").slideUp();
           }
+
+
+
           if (result.result == 2) {
-            alert("Please Try again");
-          }
+            Swal.fire({
+             icon: 'error',
+             title: 'Hmmm...',
+             text: 'Something went wrong, Try again!',
+             footer: '<a href><strong>Home</strong></a>'
+            });
+            }
 
 
 
-       }//ajax, success function//
+
+       } //ajax, success function//
       }); //ajax//
     }); //submit on.click function//
 
@@ -342,13 +356,11 @@ require_once('./dbconn.php');
             $("#bor_email").css({"border": "5px solid red"});
             $("#span_email").text("enter a valid email address ex.\"paulo@brazil.com\"");
            }
-          // If all is good do stuff
+
+          // If data is sent do stuff here
            if (result.result == 1) {
 
-            alert("Your form was sent");
-
-
-            /*Swal.fire({
+            Swal.fire({
               title: "Yay!",
               width: 400,
               heightAuto: false,
@@ -361,18 +373,17 @@ require_once('./dbconn.php');
               customClass: {
               footer: 'sweet-footer',
               }
-             });*/
+             });
             $("#contact")[0].reset();
             }
             if (result.result == 2) {
 
-            alert("Your form was not sent");
-            /* Swal.fire({
+             Swal.fire({
               icon: 'error',
               title: 'Hmmm...',
               text: 'Something went wrong, Try again!',
               footer: '<a href><strong>Home</strong></a>'
-            });*/
+            });
           }
         } //ajax, success function//
       }); //ajax//
@@ -408,10 +419,16 @@ require_once('./dbconn.php');
       });
     });
   </script>
+<div id="footer">
+  <footer id="footer">
+    <ul class="copyright">
+    <li>@ 2020 - BrazilianBloopers</li>
+  </ul>
 
-  <footer>
-    <p>&copy; 2019 - BrazilianBloopers</p>
   </footer>
+
+
+</div>
 
 
 </body>
