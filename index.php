@@ -147,7 +147,7 @@ require_once('./dbconn.php');
           </div>
 
           <div id="question7">
-            <p id="bor_country"><label>7) Where do you live?<span id="span_country"></span></label></p>
+            <p><label id="bor_country">7) Where do you live?<span id="span_country"></span></label></p>
               <input type="radio" class="radios" name="country" value="Brazil">Brazil<br>
               <input type="radio" class="radios" name="country" value="Abroad">Abroad
           </div>
@@ -223,13 +223,15 @@ require_once('./dbconn.php');
            }
 
            if(result.othersErr == "empty"){
-            $("#bor_others").css({"border":"5px solid red"});
+            $("#bor_others").css({"border":"3px solid red", "border-radius": "12px"});
             $("#span_others").text("Must check something");
 
            }
             if(result.countryErr == "empty"){
-            $("#bor_country").css({"border":"5px solid red"});
+            $("#bor_country").css({"border-bottom": "4px solid red", "padding": "8px"});
+
             $("#span_country").text("Must check something");
+              $("#bor_country").before("*");
 
            }
 
