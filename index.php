@@ -139,17 +139,17 @@ require_once('./dbconn.php');
          </div>
 
           <div id="question6">
-            <p id="bor_others"><label>6) How many foreign languages do you speak?<span id="span_others"></span></label></p>
-              <input type="radio" class="radios" name="others" value="one">One<br>
+            <p><label id="bor_others">6) How many foreign languages do you speak?</label></p>
+              <input type="radio" class="radios" name="others" value="one">One<span id="span_others"></span><br>
               <input type="radio" class="radios" name="others" value="two">Two<br>
-              <input type="radio" class="radios" name="others" value="three">I'm a polyglot
+              <input type="radio" class="radios" name="others" value="polyglot">I'm a polyglot
 
           </div>
 
           <div id="question7">
             <p><label id="bor_country">7) Where do you live?<span id="span_country"></span></label></p>
-              <input type="radio" class="radios" name="country" value="Brazil">Brazil<br>
-              <input type="radio" class="radios" name="country" value="Abroad">Abroad
+              <input type="radio" class="radios" name="country" value="brazil">Brazil<br>
+              <input type="radio" class="radios" name="country" value="abroad">Abroad
           </div>
       <button id="submit_survey" type="submit" name="submitsurvey">Submit</button>
      <!-- <p></p>-->
@@ -167,16 +167,23 @@ require_once('./dbconn.php');
         selectElement.add(new Option(agenum));
       }
     }
+    // Reset border color & text in span element for question6 validation
+   $("input[type='radio'][name='others']").click(function(){
+   $("input[type='radio'][name='others']").focus();
+   $("#bor_others").css({"border":""});
+   $("#span_others").text("");
+   });
 
-   /*  // Reset border color & text in span element for name validation
-    $("#ygender").focus(function(){
-    $("#ygender").css({"border":""});
-    $("#genderSpan").text("");
+
+     // Reset border color & text in span element for question7 validation
+    $("input[type='radio'][name='country']").focus(function(){
+    $("#bor_country").css({"border":""});
+    $("#span_country").text("");
     });
-   */
+
    // Survey Data - on(click)
    $("#survey").submit(function(){
-        return false;
+       return false;
     });
 
    $("#submit_survey").on("click", function(){
@@ -223,15 +230,14 @@ require_once('./dbconn.php');
            }
 
            if(result.othersErr == "empty"){
-            $("#bor_others").css({"border":"3px solid red", "border-radius": "12px"});
-            $("#span_others").text("Must check something");
+            $("#bor_others").css({"border-bottom": "5px solid red", "padding": "10px"});
+            $("#span_others").text(" * ");
 
            }
             if(result.countryErr == "empty"){
-            $("#bor_country").css({"border-bottom": "4px solid red", "padding": "8px"});
+            $("#bor_country").css({"border-bottom": "5px solid red", "padding": "8px"});
+            $("#span_country").text(" * Please check something");
 
-            $("#span_country").text("Must check something");
-              $("#bor_country").before("*");
 
            }
 
@@ -344,19 +350,19 @@ require_once('./dbconn.php');
            }
            if (result.validFormEmail == "empty"){
             $("#bor_email").css({"border": "5px solid red"});
-            $("#span_email").text("enter a valid email address ex.\"paulo@brazil.com\"");
+            $("#span_email").text(" enter a valid email address ex.\"paulo@brazil.com\"");
            }
            if (result.validFormMessage == "empty") {
             $("#bor_message").css({"border": "5px solid red"});
-            $("#span_message").text("type something, anything!");
+            $("#span_message").text(" type something, anything!");
            }
            if (result.validName == "no") {
             $("#bor_name").css({"border": "5px solid red"});
-            $("#span_name").text("must only contain letters and whitespace ex.\"Paulo Sousa\"");
+            $("#span_name").text(" must only contain letters and whitespace ex.\"Paulo Sousa\"");
            }
            if (result.validEmail == "email0") {
             $("#bor_email").css({"border": "5px solid red"});
-            $("#span_email").text("enter a valid email address ex.\"paulo@brazil.com\"");
+            $("#span_email").text(" enter a valid email address ex.\"paulo@brazil.com\"");
            }
 
           // If data is sent do stuff here
