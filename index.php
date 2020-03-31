@@ -139,32 +139,19 @@ require_once('./dbconn.php');
          </div>
 
           <div id="question6">
-<<<<<<< HEAD
             <p><label id="bor_others">6) How many foreign languages do you speak?<span id="span_others" style="color:#ff0000"></span></label></p>
               <input type="radio" id="oth1" class="radios" name="others" value="one"><label for="oth1">One</label><br>
               <input type="radio" id="oth2" class="radios" name="others" value="two"><label for="oth2">Two</label><br>
               <input type="radio" id="oth3" class="radios" name="others" value="polyglot"><label for="oth3">I'm a polyglot</label>
-=======
-            <p><label id="bor_others">6) How many foreign languages do you speak?</label></p>
-              <input type="radio" class="radios" name="others" value="one">One<span id="span_others"></span><br>
-              <input type="radio" class="radios" name="others" value="two">Two<br>
-              <input type="radio" class="radios" name="others" value="polyglot">I'm a polyglot
->>>>>>> a630aa58e4afc122a9ef1cbcef6e82bd74858822
 
           </div>
 
           <div id="question7">
-<<<<<<< HEAD
             <p><label id="bor_country">7) Where do you live?<span id="span_country" style="color:#ff0000"></span></label></p>
 
               <input type="radio" id="ctr1" class="radios" name="country" value="brazil"><label for="ctr1">Brazil</label><br>
               <input type="radio" id="ctr2" class="radios" name="country" value="abroad"><label for="ctr2">Abroad</label>
 
-=======
-            <p><label id="bor_country">7) Where do you live?<span id="span_country"></span></label></p>
-              <input type="radio" class="radios" name="country" value="brazil">Brazil<br>
-              <input type="radio" class="radios" name="country" value="abroad">Abroad
->>>>>>> a630aa58e4afc122a9ef1cbcef6e82bd74858822
           </div>
       <button id="submit_survey" type="submit" name="submitsurvey">Submit</button>
        <p id="valmsg" hidden style="color:#ff0000"> * Please fill in all required fields</p>
@@ -183,7 +170,6 @@ require_once('./dbconn.php');
         selectElement.add(new Option(agenum));
       }
     }
-<<<<<<< HEAD
 
     // Reset border color & text in span element for question1 validation
    $("input[type='radio'][name='gender']").click(function(){
@@ -234,21 +220,6 @@ require_once('./dbconn.php');
     $("#bor_country").css({"border":""});
     $("#span_country").text("");
     });
-=======
-    // Reset border color & text in span element for question6 validation
-   $("input[type='radio'][name='others']").click(function(){
-   $("input[type='radio'][name='others']").focus();
-   $("#bor_others").css({"border":""});
-   $("#span_others").text("");
-   });
-
-
-     // Reset border color & text in span element for question7 validation
-    $("input[type='radio'][name='country']").focus(function(){
-    $("#bor_country").css({"border":""});
-    $("#span_country").text("123");
-    });
->>>>>>> a630aa58e4afc122a9ef1cbcef6e82bd74858822
 
    // Survey Data - on(click)
    $("#survey").submit(function(){
@@ -299,22 +270,13 @@ require_once('./dbconn.php');
            }
 
            if(result.othersErr == "empty"){
-<<<<<<< HEAD
             $("#bor_others").css({"border-bottom": "5px solid red", "padding": "6px"});
-=======
-            $("#bor_others").css({"border-bottom": "5px solid red", "padding": "10px"});
->>>>>>> a630aa58e4afc122a9ef1cbcef6e82bd74858822
             $("#span_others").text(" * ");
 
            }
             if(result.countryErr == "empty"){
-<<<<<<< HEAD
             $("#bor_country").css({"border-bottom": "5px solid red", "padding": "6px"});
             $("#span_country").text(" * ");
-=======
-            $("#bor_country").css({"border-bottom": "5px solid red", "padding": "8px"});
-            $("#span_country").text(" * Please check something");
->>>>>>> a630aa58e4afc122a9ef1cbcef6e82bd74858822
 
 
            }
