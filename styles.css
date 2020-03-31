@@ -37,6 +37,7 @@ a {
   height: 100%;
   text-align: center;
 }
+
 /*
 .checkbox-round {
   width: 1.3em;
@@ -53,12 +54,10 @@ a {
 .checkbox-round:checked {
   background-color: gray;
 }*/
-
 #surveyname {
   color: #b9ff3b69;
   word-spacing: 4px;
 }
-
 
 /* Outer */
 .popup {
@@ -86,13 +85,14 @@ a {
   border-radius: 20px;
   background: #2c2933;
   text-align: center;
-  overflow-x: hidden; 
+  overflow-x: hidden;
   overflow-y: scroll;
 }
 
 p {
   word-spacing: 3px;
 }
+
 /* Close Button */
 .popup-close {
   width: 30px;
@@ -129,38 +129,41 @@ textarea {
   padding: 12px;
   font-family: Bangers;
   font-size: 20px;
-  border: 5px solid #ccc; /*grey*/
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  border: 5px solid #ccc;
+  /*grey*/
+  border-radius: 4px;
+  /* Rounded borders */
+  box-sizing: border-box;
+  /* Make sure that padding and width stays in place */
   margin-top: 6px;
   margin-bottom: 16px;
-  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+  resize: vertical;
+  /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
 #ageselect {
-
-width: 200px;
-padding: 7px;
-border-radius: 20px;
-
+  width: 200px;
+  padding: 7px;
+  border-radius: 20px;
 }
-
 
 #submit_survey {
-    
-    background-color: whitesmoke;
-    color: #62645e;
-    font-family: Bangers;
-    font-size: 20px;
-    padding: 5px;
-    border-radius: 8px;
-    cursor: pointer;
-    margin-top: 20px;
-    width: 90px;
+  background-color: whitesmoke;
+  color: #62645e;
+  font-family: Bangers;
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 90px;
+}
+/* mouseover pointer survey */
+label, #age, .radios, .check:hover {
+  cursor: pointer;
 }
 
-
-/* Submit button */ 
+/* Submit button */
 input[type="submit"],
 #submit_contact {
   background-color: whitesmoke;
@@ -171,7 +174,6 @@ input[type="submit"],
   border-radius: 8px;
   cursor: pointer;
 }
-
 
 /* Add a background color and some padding around the form */
 .container {
@@ -185,56 +187,6 @@ input[type="submit"],
   text-align: left;
 }
 
-/* Multi Step form */
-
-
-/*#survey {
-  background-color: black;
-  margin: 100px auto;
-  padding: 40px;
-  width: 70%;
-  min-width: 300px;
-}*/
-
-/* Style the input fields */
-/*input {
-  padding: 10px;
-  width: 5%;
-
-}
-
-/* Mark input boxes that gets an error on validation: */
-/*input.invalid {
-  background-color: #ffdddd;
-}
-
-/* Hide all steps by default: */
-/*.tab {
-  display: none;
-}
-
-/* Make circles that indicate the steps of the form: */
-/*.step {
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbbbbb;
-  border: none;
-  border-radius: 50%;
-  display: inline-block;
-  opacity: 0.5;
-}
-
-/* Mark the active step: */
-/*.step.active {
-  opacity: 1;
-}
-
-/* Mark the steps that are finished and valid: */
-/*.step.finish {
-  background-color: #4caf50;
-}
-*/
 @media (min-width: 1030px) {
   .tablink {
     font-size: 30px;

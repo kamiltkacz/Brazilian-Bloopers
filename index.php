@@ -93,66 +93,68 @@ require_once('./dbconn.php');
 
        <a class="popup-close" data-popup-close="popup-1" href="#">x</a>
           <div id="question1">
-            <p id="bor_gender"><label for="gender">1) What gender are you?<span id="span_gender"></span></label></p>
-              <input type="radio" class="radios" name="gender" value="male">Male<br>
-              <input type="radio" class="radios" name="gender" value="female">Female<br>
-              <input type="radio" class="radios" name="gender" value="other">Other
+            <p><label id="bor_gender">1) What gender are you?<span id="span_gender" style="color:#ff0000"></span></label></p>
+              <input type="radio" id="male" class="radios" name="gender" value="male"><label for="male">Male</label><br>
+              <input type="radio" id="female" class="radios" name="gender" value="female"><label for="female">Female</label><br>
+              <input type="radio" id="other" class="radios" name="gender" value="other"><label for="other">Other</label><br>
           </div>
 
         <div id="question2">
-            <p id="bor_age"><label>2) How old are you?<span id="span_age"></span></label></p>
+            <p><label id="bor_age">2) How old are you?<span id="span_age" style="color:#ff0000"></span></label></p>
               <select id="age" name="ageselect">
-                <option value="0">Please select</option>
+                <option id="opt" value="0">Please select</option>
               </select>
           </div>
 
 
           <div id="question3">
-            <p id="bor_years"><label>3) English student for:<span id="span_years"></span></label></p>
-              <input type="radio" class="radios" name="years" value="0-2">0-2years<br>
-              <input type="radio" class="radios" name="years" value="2-5">2-5years<br>
-              <input type="radio" class="radios" name="years" value="5-10">5-10years<br>
-              <input type="radio" class="radios" name="years" value="allmylife">all my life<br>
-              <input type="radio" class="radios" name="years" value="never studied">never studied
+            <p><label id="bor_years">3) English student for:<span id="span_years" style="color:#ff0000"></span></label></p>
+              <input type="radio" id="y1" class="radios" name="years" value="0-2"><label for="y1">0-2years</label><br>
+              <input type="radio" id="y2" class="radios" name="years" value="2-5"><label for="y2">2-5years</label><br>
+              <input type="radio" id="y3" class="radios" name="years" value="5-10"><label for="y3">5-10years</label><br>
+              <input type="radio" id="y4" class="radios" name="years" value="allmylife"><label for="y4">all my life</label><br>
+              <input type="radio" id="y5" class="radios" name="years" value="never studied"><label for="y5">never studied</label>
           </div>
 
           <div id="question4">
-            <p id="bor_abroad"><label>4) Experience with English abroad<span id="span_abroad"></span></label></p>
-              <input type="radio" class="radios" name="abroad" value="less than a year">less than a year<br>
-              <input type="radio" class="radios" name="abroad" value="1-3 years">1-3 years<br>
-              <input type="radio" class="radios" name="abroad" value="3-6 years">3-6 years<br>
-              <input type="radio" class="radios" name="abroad" value="6-10 years">6-10 years<br>
-              <input type="radio" class="radios" name="abroad" value="all my life">all my life<br>
-              <input type="radio" class="radios" name="abroad" value="never lived abroad">never lived abroad
+            <p><label id="bor_abroad">4) Experience with English abroad<span id="span_abroad" style="color:#ff0000"></span></label></p>
+              <input type="radio" id="abr1" class="radios" name="abroad" value="less than a year"><label for="abr1">less than a year</label><br>
+              <input type="radio" id="abr2"class="radios" name="abroad" value="1-3 years"><label for="abr2">1-2 years</label><br>
+              <input type="radio" id="abr3"class="radios" name="abroad" value="3-6 years"><label for="abr3">3-5 years</label><br>
+              <input type="radio" id="abr4"class="radios" name="abroad" value="6-10 years"><label for="abr4">6-10 years</label><br>
+              <input type="radio" id="abr5"class="radios" name="abroad" value="all my life"><label for="abr5">all my life</label><br>
+              <input type="radio" id="abr6"class="radios" name="abroad" value="never lived abroad"><label for="abr6">never lived abroad</label>
           </div>
 
          <div id="question5">
-           <p id="bor_way"><label>5) How do you learn English?<i>Choose all that apply</i><span id="span_way"><br></span></label></p>
-            <input type="checkbox" class="check" name="way[]" value="inperson">in-person course<br>
-            <input type="checkbox" class="check" name="way[]" value="privateteacher">private teacher<br>
-            <input type="checkbox" class="check" name="way[]" value="selflearner">self-learner<br>
-            <input type="checkbox" class="check" name="way[]" value="onlinecourse">online course<br>
-            <input type="checkbox" class="check" name="way[]" value="onlineteacher">onlineteacher<br>
-            <input type="checkbox" class="check" name="way[]" value="videogames">video games<br>
-            <input type="checkbox" class="check" name="way[]" value="other">other
+           <p><label id="bor_way">5) How do you learn English?<i>Choose all that apply</i><span id="span_way" style="color:#ff0000"><br></span></label></p>
+            <input type="checkbox" id="way1" class="check" name="way[]" value="inperson"><label for="way1">in-person course</label><br>
+            <input type="checkbox" id="way2" class="check" name="way[]" value="privateteacher"><label for="way2">private teacher</label><br>
+            <input type="checkbox" id="way3" class="check" name="way[]" value="selftaught"><label for="way3">self-taught</label><br>
+            <input type="checkbox" id="way4" class="check" name="way[]" value="onlinecourse"><label for="way4">on-line course</label><br>
+            <input type="checkbox" id="way5" class="check" name="way[]" value="onlineteacher"><label for="way5">on-line teacher</label><br>
+            <input type="checkbox" id="way6" class="check" name="way[]" value="videogames"><label for="way6">video games</label><br>
+            <input type="checkbox" id="way7" class="check" name="way[]" value="other"><label for="way6">other</label>
 
          </div>
 
           <div id="question6">
-            <p><label id="bor_others">6) How many foreign languages do you speak?</label></p>
-              <input type="radio" class="radios" name="others" value="one">One<span id="span_others"></span><br>
-              <input type="radio" class="radios" name="others" value="two">Two<br>
-              <input type="radio" class="radios" name="others" value="polyglot">I'm a polyglot
+            <p><label id="bor_others">6) How many foreign languages do you speak?<span id="span_others" style="color:#ff0000"></span></label></p>
+              <input type="radio" id="oth1" class="radios" name="others" value="one"><label for="oth1">One</label><br>
+              <input type="radio" id="oth2" class="radios" name="others" value="two"><label for="oth2">Two</label><br>
+              <input type="radio" id="oth3" class="radios" name="others" value="polyglot"><label for="oth3">I'm a polyglot</label>
 
           </div>
 
           <div id="question7">
-            <p><label id="bor_country">7) Where do you live?<span id="span_country"></span></label></p>
-              <input type="radio" class="radios" name="country" value="brazil">Brazil<br>
-              <input type="radio" class="radios" name="country" value="abroad">Abroad
+            <p><label id="bor_country">7) Where do you live?<span id="span_country" style="color:#ff0000"></span></label></p>
+
+              <input type="radio" id="ctr1" class="radios" name="country" value="brazil"><label for="ctr1">Brazil</label><br>
+              <input type="radio" id="ctr2" class="radios" name="country" value="abroad"><label for="ctr2">Abroad</label>
+
           </div>
       <button id="submit_survey" type="submit" name="submitsurvey">Submit</button>
-     <!-- <p></p>-->
+       <p id="valmsg" hidden style="color:#ff0000"> * Please fill in all required fields</p>
         </div>
 
       </div>
@@ -160,6 +162,7 @@ require_once('./dbconn.php');
   </div>
 
   <script>
+
    // Age Select Menu
    var selectElement = document.getElementById("age");
     if (selectElement !== undefined) {
@@ -167,6 +170,43 @@ require_once('./dbconn.php');
         selectElement.add(new Option(agenum));
       }
     }
+
+    // Reset border color & text in span element for question1 validation
+   $("input[type='radio'][name='gender']").click(function(){
+   $("input[type='radio'][name='gender']").focus();
+   $("#bor_gender").css({"border":""});
+   $("#span_gender").text("");
+   });
+
+   // Reset border color & text in span element for question2 validation
+  $("#age").click(function(){
+  $("#age").focus();
+  $("#bor_age").css({"border":""});
+  $("#span_age").text("");
+  });
+
+    // Reset border color & text in span element for question3 validation
+   $("input[type='radio'][name='years']").click(function(){
+   $("input[type='radio'][name='years']").focus();
+   $("#bor_years").css({"border":""});
+   $("#span_years").text("");
+   });
+
+
+    // Reset border color & text in span element for question4 validation
+   $("input[type='radio'][name='abroad']").click(function(){
+   $("input[type='radio'][name='abroad']").focus();
+   $("#bor_abroad").css({"border":""});
+   $("#span_abroad").text("");
+   });
+
+
+    // Reset border color & text in span element for question5 validation
+    $(".check").click(function(){
+    $(".check").focus();
+    $("#bor_way").css({"border":""});
+    $("#span_way").text("");
+    });
     // Reset border color & text in span element for question6 validation
    $("input[type='radio'][name='others']").click(function(){
    $("input[type='radio'][name='others']").focus();
@@ -202,41 +242,41 @@ require_once('./dbconn.php');
 
 
             if(result.genderErr == "empty"){
-            $("#bor_gender").css({"border":"5px solid red"});
-            $("#span_gender").text("Must check something");
+            $("#bor_gender").css({"border-bottom": "5px solid red", "padding": "8px"});
+            $("#span_gender").text(" * ");
 
            }
 
             if(result.ageErr == "empty"){
-            $("#bor_age").css({"border":"5px solid red"});
-            $("#span_age").text("Must check something");
+            $("#bor_age").css({"border-bottom": "5px solid red", "padding": "8px"});
+            $("#span_age").text(" * ");
 
            }
 
             if(result.yearsErr == "empty"){
-            $("#bor_years").css({"border":"5px solid red"});
-            $("#span_years").text("Must check something");
+            $("#bor_years").css({"border-bottom": "5px solid red", "padding": "8px"});
+            $("#span_years").text(" * ");
 
            }
             if(result.abroadErr == "empty"){
-            $("#bor_abroad").css({"border":"5px solid red"});
-            $("#span_abroad").text("Must check something");
+            $("#bor_abroad").css({"border-bottom": "5px solid red", "padding": "6px"});
+            $("#span_abroad").text(" * ");
 
            }
             if(result.wayErr == "empty"){
-            $("#bor_way").css({"border":"5px solid red"});
-            $("#span_way").text("Must check something");
+            $("#bor_way").css({"border-bottom": "5px solid red", "padding": "6px"});
+            $("#span_way").text(" * ");
 
            }
 
            if(result.othersErr == "empty"){
-            $("#bor_others").css({"border-bottom": "5px solid red", "padding": "10px"});
+            $("#bor_others").css({"border-bottom": "5px solid red", "padding": "6px"});
             $("#span_others").text(" * ");
 
            }
             if(result.countryErr == "empty"){
-            $("#bor_country").css({"border-bottom": "5px solid red", "padding": "8px"});
-            $("#span_country").text(" * Please check something");
+            $("#bor_country").css({"border-bottom": "5px solid red", "padding": "6px"});
+            $("#span_country").text(" * ");
 
 
            }
