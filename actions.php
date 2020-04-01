@@ -14,9 +14,10 @@ if (isset($_POST["action"])) {
     $years = $_POST["years"];
     $abroad = $_POST["abroad"];
     $way[] = $_POST["way"];
+    $way = json_encode($_POST["way"]);
     $others = $_POST["others"];
     $country = $_POST["country"];
-    $way = json_encode($_POST['way']);
+
     $export['genderErr'] = "";
     $export['ageErr'] = "";
     $export['yearsErr'] = "";
@@ -24,10 +25,14 @@ if (isset($_POST["action"])) {
     $export['wayErr'] = "";
     $export['othersErr'] = "";
     $export['countryErr'] = "";
+  //  $export['allErr'] = "";
 
 
-      if (empty($gender) || $ageselect == 0 || empty($years) || empty($abroad) || empty($others) || empty($country))  {
 
+
+      if (empty($gender) || $ageselect == 0 || empty($years) || empty($abroad) || $way == null || empty($others) || empty($country))  {
+
+      //  $export['allErr'] = "empty";
 
 
        // Set "gender" validation ( Survey - question1)
@@ -107,6 +112,7 @@ if (isset($_POST["action"])) {
 
 
     } else {
+
 
 
     $sql = "INSERT INTO survey (Radio_1, Age, Radio_3, Radio_4, Radio_5, Radio_6, Radio_7)

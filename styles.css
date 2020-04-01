@@ -38,22 +38,6 @@ a {
   text-align: center;
 }
 
-/*
-.checkbox-round {
-  width: 1.3em;
-  height: 1.3em;
-  background-color: white;
-  border-radius: 50%;
-  vertical-align: middle;
-  border: 1px solid #ddd;
-  -webkit-appearance: none;
-  outline: none;
-  cursor: pointer;
-}
-
-.checkbox-round:checked {
-  background-color: gray;
-}*/
 #surveyname {
   color: #b9ff3b69;
   word-spacing: 4px;

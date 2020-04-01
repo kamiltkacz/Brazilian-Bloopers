@@ -154,7 +154,7 @@ require_once('./dbconn.php');
 
           </div>
       <button id="submit_survey" type="submit" name="submitsurvey">Submit</button>
-       <p id="valmsg" hidden style="color:#ff0000"> * Please fill in all required fields</p>
+       <p id="valmsg" hidden style="color:#ff0000">* Please fill in all required fields</p>
         </div>
 
       </div>
@@ -170,6 +170,23 @@ require_once('./dbconn.php');
         selectElement.add(new Option(agenum));
       }
     }
+    function valMsg(){
+
+     var x = document.getElementsByClassName('radios');
+     var validForm = false;
+
+     for(var i=0; i<x.length; i++){
+         if(x[i].checked == true){
+             validForm = true;
+                $("#valmsg").hide();
+         }
+     }
+     if(!validForm){
+           $("#valmsg").show();
+         return false;
+     }
+
+ }
 
     // Reset border color & text in span element for question1 validation
    $("input[type='radio'][name='gender']").click(function(){
@@ -240,16 +257,24 @@ require_once('./dbconn.php');
           async: true,
           success: function(result){
 
+          /*  if(result.allErr == "empty"){
+
+              $("#valmsg").show();
+            }*/
+
 
             if(result.genderErr == "empty"){
             $("#bor_gender").css({"border-bottom": "5px solid red", "padding": "8px"});
             $("#span_gender").text(" * ");
+
+
 
            }
 
             if(result.ageErr == "empty"){
             $("#bor_age").css({"border-bottom": "5px solid red", "padding": "8px"});
             $("#span_age").text(" * ");
+            //$("#valmsg").show();
 
            }
 
@@ -257,15 +282,18 @@ require_once('./dbconn.php');
             $("#bor_years").css({"border-bottom": "5px solid red", "padding": "8px"});
             $("#span_years").text(" * ");
 
+
            }
             if(result.abroadErr == "empty"){
             $("#bor_abroad").css({"border-bottom": "5px solid red", "padding": "6px"});
             $("#span_abroad").text(" * ");
 
+
            }
             if(result.wayErr == "empty"){
             $("#bor_way").css({"border-bottom": "5px solid red", "padding": "6px"});
             $("#span_way").text(" * ");
+
 
            }
 
@@ -273,13 +301,19 @@ require_once('./dbconn.php');
             $("#bor_others").css({"border-bottom": "5px solid red", "padding": "6px"});
             $("#span_others").text(" * ");
 
+
            }
             if(result.countryErr == "empty"){
             $("#bor_country").css({"border-bottom": "5px solid red", "padding": "6px"});
             $("#span_country").text(" * ");
 
+         }
 
-           }
+
+
+
+
+
 
 
       // After data submitted do stuff here
