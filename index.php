@@ -84,7 +84,7 @@ require_once('./dbconn.php');
 
   <div id="The Test" class="tabcontent">
     <h1>Before You get to test your level, here's a short&nbsp;<a class="btn" data-popup-open="popup-1" href="#"><span
-          id="surveyname">survey</span></a></h1>
+          id="surveyname">survey!</span></a></h1>
 
     <form id="survey" method="post" action="actions.php">
       <div id="survey-close-button" class="popup" data-popup="popup-1">
