@@ -148,13 +148,13 @@ require_once('./dbconn.php');
 
           <div id="question7">
             <p><label id="bor_country">7) Where do you live?<span id="span_country" style="color:#ff0000"></span></label></p>
-
+            <!--<h5 id="valmsg" hidden style="color:#ff0000">* Please check this question</h5>-->
               <input type="radio" id="ctr1" class="radios" name="country" value="brazil"><label for="ctr1">Brazil</label><br>
               <input type="radio" id="ctr2" class="radios" name="country" value="abroad"><label for="ctr2">Abroad</label>
 
           </div>
       <button id="submit_survey" type="submit" name="submitsurvey">Submit</button>
-       <p id="valmsg" hidden style="color:#ff0000">* Please fill in all required fields</p>
+
         </div>
 
       </div>
@@ -170,29 +170,14 @@ require_once('./dbconn.php');
         selectElement.add(new Option(agenum));
       }
     }
-    function valMsg(){
 
-     var x = document.getElementsByClassName('radios');
-     var validForm = false;
-
-     for(var i=0; i<x.length; i++){
-         if(x[i].checked == true) {
-             validForm = true;
-                $("#valmsg").hide();
-         }
-     }
-     if(!validForm){
-           $("#valmsg").show();
-         return false;
-     }
-
- }
 
     // Reset border color & text in span element for question1 validation
    $("input[type='radio'][name='gender']").click(function(){
    $("input[type='radio'][name='gender']").focus();
    $("#bor_gender").css({"border":""});
    $("#span_gender").text("");
+  // $("#valmsg").hide();
    });
 
    // Reset border color & text in span element for question2 validation
@@ -200,6 +185,7 @@ require_once('./dbconn.php');
   $("#age").focus();
   $("#bor_age").css({"border":""});
   $("#span_age").text("");
+  //$("#valmsg").hide();
   });
 
     // Reset border color & text in span element for question3 validation
@@ -207,6 +193,7 @@ require_once('./dbconn.php');
    $("input[type='radio'][name='years']").focus();
    $("#bor_years").css({"border":""});
    $("#span_years").text("");
+   //$("#valmsg").hide();
    });
 
 
@@ -215,6 +202,7 @@ require_once('./dbconn.php');
    $("input[type='radio'][name='abroad']").focus();
    $("#bor_abroad").css({"border":""});
    $("#span_abroad").text("");
+   //$("#valmsg").hide();
    });
 
 
@@ -223,20 +211,25 @@ require_once('./dbconn.php');
     $(".check").focus();
     $("#bor_way").css({"border":""});
     $("#span_way").text("");
+    //$("#valmsg").hide();
     });
     // Reset border color & text in span element for question6 validation
    $("input[type='radio'][name='others']").click(function(){
    $("input[type='radio'][name='others']").focus();
    $("#bor_others").css({"border":""});
    $("#span_others").text("");
+   //$("#valmsg").hide();
    });
 
 
      // Reset border color & text in span element for question7 validation
-    $("input[type='radio'][name='country']").focus(function(){
+    $("input[type='radio'][name='country']").click(function(){
+    $("input[type='radio'][name='country']").focus();
     $("#bor_country").css({"border":""});
     $("#span_country").text("");
+    $("#valmsg").hide();
     });
+
 
    // Survey Data - on(click)
    $("#survey").submit(function(){
@@ -257,60 +250,62 @@ require_once('./dbconn.php');
           async: true,
           success: function(result){
 
-          /*  if(result.allErr == "empty"){
-
-              $("#valmsg").show();
-            }*/
 
 
             if(result.genderErr == "empty"){
             $("#bor_gender").css({"border-bottom": "5px solid red", "padding": "8px"});
             $("#span_gender").text(" * ");
+            $("#valmsg").show();
 
-
-
-           }
+          }
 
             if(result.ageErr == "empty"){
             $("#bor_age").css({"border-bottom": "5px solid red", "padding": "8px"});
             $("#span_age").text(" * ");
-            //$("#valmsg").show();
+            $("#valmsg").show();
 
-           }
+          }
+
+
 
             if(result.yearsErr == "empty"){
             $("#bor_years").css({"border-bottom": "5px solid red", "padding": "8px"});
             $("#span_years").text(" * ");
+            $("#valmsg").show();
 
 
-           }
+            }
+
             if(result.abroadErr == "empty"){
             $("#bor_abroad").css({"border-bottom": "5px solid red", "padding": "6px"});
             $("#span_abroad").text(" * ");
+            $("#valmsg").show();
 
 
-           }
+            }
+
             if(result.wayErr == "empty"){
             $("#bor_way").css({"border-bottom": "5px solid red", "padding": "6px"});
             $("#span_way").text(" * ");
+            $("#valmsg").show();
 
 
-           }
+          }
 
            if(result.othersErr == "empty"){
             $("#bor_others").css({"border-bottom": "5px solid red", "padding": "6px"});
             $("#span_others").text(" * ");
+            $("#valmsg").show();
 
 
-           }
+            }
+
             if(result.countryErr == "empty"){
             $("#bor_country").css({"border-bottom": "5px solid red", "padding": "6px"});
             $("#span_country").text(" * ");
+            $("#valmsg").show();
 
          }
-
-
-
 
 
 

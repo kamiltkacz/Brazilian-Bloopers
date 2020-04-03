@@ -38,6 +38,7 @@ a {
   text-align: center;
 }
 
+
 #surveyname {
   color: #b9ff3b69;
   word-spacing: 4px;
@@ -125,11 +126,15 @@ textarea {
   /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
+
+
 #ageselect {
   width: 200px;
   padding: 7px;
   border-radius: 20px;
 }
+
+
 
 #submit_survey {
   background-color: whitesmoke;
@@ -144,7 +149,16 @@ textarea {
 }
 /* mouseover pointer survey */
 label, #age, .radios, .check:hover {
+
   cursor: pointer;
+}
+
+#bor_country, #bor_others,
+#bor_abroad, #bor_way,
+#bor_age, #bor_gender,
+#bor_years {
+
+  cursor: default;
 }
 
 /* Submit button */
