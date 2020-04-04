@@ -14,6 +14,9 @@ a {
   color: #eee;
   font-weight: 200;
 }
+p {
+  word-spacing: 3px;
+}
 
 /* Style tab links */
 .tablink {
@@ -52,7 +55,7 @@ a {
   position: fixed;
   top: 0px;
   left: 0px;
-  background: rgba(0, 0, 0, 0.75);
+  background: rgba(3, 3, 3, 0.75);
 }
 
 /* Inner */
@@ -72,30 +75,29 @@ a {
   text-align: center;
   overflow-x: hidden;
   overflow-y: scroll;
+
 }
 
-p {
-  word-spacing: 3px;
-}
 
-/* Close Button */
+
+/* Pop up Close Button */
 .popup-close {
-  width: 30px;
-  height: 30px;
-  padding-top: 4px;
+  width: 20px;
+  height: 20px;
+  padding-top: 2px;
   display: inline-block;
   position: absolute;
-  top: 0px;
-  right: 0px;
+  top: 20px;
+  right: 545px;
   transition: ease 0.25s all;
   -webkit-transform: translate(50%, -50%);
   transform: translate(50%, -50%);
   border-radius: 1000px;
   background: rgba(0, 0, 0, 0.8);
   font-family: Arial, Sans-Serif;
-  font-size: 20px;
+  font-size: 15px;
   text-align: center;
-  line-height: 100%;
+  line-height: 90%;
   color: #fff;
 }
 
@@ -134,19 +136,72 @@ textarea {
   border-radius: 20px;
 }
 
-
-
 #submit_survey {
   background-color: whitesmoke;
   color: #62645e;
   font-family: Bangers;
   font-size: 20px;
-  padding: 5px;
+  padding: 4px;
   border-radius: 8px;
   cursor: pointer;
   margin-top: 20px;
   width: 90px;
 }
+
+#go_home {
+  background-color: whitesmoke;
+  color: #62645e;
+  font-family: Bangers;
+  font-size: 20px;
+  padding: 4px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 90px;
+
+
+}
+
+#go_test {
+  background-color: whitesmoke;
+  color: #62645e;
+  font-family: Bangers;
+  font-size: 20px;
+  padding: 4px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 90px;
+
+
+}
+
+#btn_home {
+
+ margin-align: left;
+ width: inherit;
+
+}
+
+
+#btn_submit {
+
+ margin-align: center;
+ width:inherit;
+
+}
+
+#btn_test {
+
+ margin-align: right;
+ width: inherit;
+
+
+}
+
+
+
+
 /* mouseover pointer survey */
 label, #age, .radios, .check:hover {
 

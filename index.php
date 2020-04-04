@@ -148,15 +148,23 @@ require_once('./dbconn.php');
 
           <div id="question7">
             <p><label id="bor_country">7) Where do you live?<span id="span_country" style="color:#ff0000"></span></label></p>
-            <!--<h5 id="valmsg" hidden style="color:#ff0000">* Please check this question</h5>-->
+
               <input type="radio" id="ctr1" class="radios" name="country" value="brazil"><label for="ctr1">Brazil</label><br>
               <input type="radio" id="ctr2" class="radios" name="country" value="abroad"><label for="ctr2">Abroad</label>
-
           </div>
-      <button id="submit_survey" type="submit" name="submitsurvey">Submit</button>
+
+
+      <!--  <div id="btn_home">
+          <button type="button"  id="go_home" a href="#" name="gohome">Home</button>
+        </div> -->
+      <!--  <div id="btn_submit">-->
+          <button type="button" id="submit_survey" type="submit" name="submitsurvey">Submit</button>
+      <!--  </div>-->
+      <!--  <div id="btn_test">
+          <button type="button" id="go_test" a href="#" name="gotest">Go to Test</button>
+        </div>-->
 
         </div>
-
       </div>
     </form>
   </div>
@@ -177,7 +185,7 @@ require_once('./dbconn.php');
    $("input[type='radio'][name='gender']").focus();
    $("#bor_gender").css({"border":""});
    $("#span_gender").text("");
-  // $("#valmsg").hide();
+
    });
 
    // Reset border color & text in span element for question2 validation
@@ -185,7 +193,7 @@ require_once('./dbconn.php');
   $("#age").focus();
   $("#bor_age").css({"border":""});
   $("#span_age").text("");
-  //$("#valmsg").hide();
+
   });
 
     // Reset border color & text in span element for question3 validation
@@ -202,7 +210,7 @@ require_once('./dbconn.php');
    $("input[type='radio'][name='abroad']").focus();
    $("#bor_abroad").css({"border":""});
    $("#span_abroad").text("");
-   //$("#valmsg").hide();
+
    });
 
 
@@ -211,14 +219,14 @@ require_once('./dbconn.php');
     $(".check").focus();
     $("#bor_way").css({"border":""});
     $("#span_way").text("");
-    //$("#valmsg").hide();
+
     });
     // Reset border color & text in span element for question6 validation
    $("input[type='radio'][name='others']").click(function(){
    $("input[type='radio'][name='others']").focus();
    $("#bor_others").css({"border":""});
    $("#span_others").text("");
-   //$("#valmsg").hide();
+
    });
 
 
@@ -227,7 +235,7 @@ require_once('./dbconn.php');
     $("input[type='radio'][name='country']").focus();
     $("#bor_country").css({"border":""});
     $("#span_country").text("");
-    $("#valmsg").hide();
+
     });
 
 
@@ -496,16 +504,14 @@ require_once('./dbconn.php');
       });
     });
   </script>
-<div id="footer">
-  <footer id="footer">
-    <ul class="copyright">
-    <li>@ 2020 - BrazilianBloopers</li>
-  </ul>
 
-  </footer>
+    <footer id="footer">
+      <ul class="copyright">
+      <p>&copy;2020 - BrazilianBloopers</p>
+      </ul>
+    </footer>
 
 
-</div>
 
 
 </body>
