@@ -70,7 +70,7 @@ require_once('./dbconn.php');
     <a href="#" class="active">Test</a>
   </button>
   <button class="tablink" onclick="openPage('Contact Us', this);">
-    <a href="#" class="active">Contact Us</a>
+    <a href="#" class="active">Contact</a>
   </button>
 
   <div id="Home" class="tabcontent">
