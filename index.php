@@ -155,7 +155,7 @@ require_once('./dbconn.php');
 
 
       <!--  <div id="btn_home">
-          <button type="button"  id="go_home" a href="#" name="gohome">Home</button>
+          <button type="button"  id="go_home" a href="home" name="gohome">Home</button>
         </div> -->
       <!--  <div id="btn_submit">-->
           <button type="button" id="submit_survey" type="submit" name="submitsurvey">Submit</button>
