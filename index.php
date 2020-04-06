@@ -172,9 +172,9 @@ require_once('./dbconn.php');
   <script>
 
    // Age Select Menu
-   var selectElement = document.getElementById("age");
+   let selectElement = document.getElementById("age");
     if (selectElement !== undefined) {
-      for (var agenum = 1; agenum <= 100; agenum++) {
+      for (let agenum = 1; agenum <= 100; agenum++) {
         selectElement.add(new Option(agenum));
       }
     }
