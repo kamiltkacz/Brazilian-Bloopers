@@ -83,7 +83,7 @@ require_once('./dbconn.php');
   </div>
 
   <div id="The Test" class="tabcontent">
-    <h1>Before You get to test your level, here's a short&nbsp;<a class="btn" data-popup-open="popup-1" href="#"><span
+    <h1>Before You get to test your level, here is a short&nbsp;<a class="btn" data-popup-open="popup-1" href="#"><span
           id="surveyname">survey</span></a></h1>
 
     <form id="survey" method="post" action="actions.php">

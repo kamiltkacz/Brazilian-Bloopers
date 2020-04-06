@@ -35,7 +35,7 @@ if (isset($_POST["action"])) {
       //  $export['allErr'] = "empty";
 
 
-       // Set "gender" validation ( Survey - question1)
+       // Set "gender" validation( Survey - question1)
        if (empty($gender)) {
 
         $export['genderErr'] = "empty";
