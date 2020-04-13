@@ -360,6 +360,7 @@ require_once('./dbconn.php');
               footer: "<a href>Home</a>",
               allowOutsideClick: false,
               showConfirmButton: false,
+              showCloseButton: true,
 
 
 
