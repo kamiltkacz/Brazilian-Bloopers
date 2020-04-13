@@ -25,17 +25,17 @@ if (isset($_POST["action"])) {
     $export['wayErr'] = "";
     $export['othersErr'] = "";
     $export['countryErr'] = "";
-  //  $export['allErr'] = "";
+
 
 
 
 
       if (empty($gender) || $ageselect == 0 || empty($years) || empty($abroad) || $way == null || empty($others) || empty($country))  {
 
-      //  $export['allErr'] = "empty";
 
 
-       // Set "gender" validation( Survey - question1)
+
+       // Set "gender" validation ( Survey - question1)
        if (empty($gender)) {
 
         $export['genderErr'] = "empty";
