@@ -357,7 +357,7 @@ require_once('./dbconn.php');
               background: "#000000",
               icon: "success",
               text: "Your survey has been submitted, thanks!",
-              footer: "<a href>Home</a>",
+              footer: "<a href>Go to test</a>",
               allowOutsideClick: false,
               showConfirmButton: false,
               showCloseButton: true,
