@@ -148,57 +148,6 @@ textarea {
   width: 90px;
 }
 
-#go_home {
-  background-color: whitesmoke;
-  color: #62645e;
-  font-family: Bangers;
-  font-size: 20px;
-  padding: 4px;
-  border-radius: 8px;
-  cursor: pointer;
-  margin-top: 20px;
-  width: 90px;
-
-
-}
-
-#go_test {
-  background-color: whitesmoke;
-  color: #62645e;
-  font-family: Bangers;
-  font-size: 20px;
-  padding: 4px;
-  border-radius: 8px;
-  cursor: pointer;
-  margin-top: 20px;
-  width: 90px;
-
-
-}
-/*
-#btn_home {
-
- margin-align: left;
- width: inherit;
-
-}
-
-
-#btn_submit {
-
- margin-align: center;
- width:inherit;
-
-}
-
-#btn_test {
-
- margin-align: right;
- width: inherit;
-
-
-}*/
-
 
 
 
@@ -236,9 +185,7 @@ input[type="submit"],
   text-align: left;
 }
 
-.sweet-footer {
-  text-align: left;
-}
+
 
 @media (min-width: 1030px) {
   .tablink {

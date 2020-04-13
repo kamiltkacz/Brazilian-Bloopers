@@ -59,11 +59,11 @@ require_once('./dbconn.php');
   <button class="tablink" onclick="openPage('Home', this)" ; id="defaultOpen">
     <a href="#" class="active">Home</a>
   </button>
+   <button class="tablink" onclick="openPage('The Test', this);">
+    <a href="#" class="active">Test</a>
+  </button>
   <button class="tablink" onclick="openPage('About', this);">
     <a href="#" class="active">About Us</a>
-  </button>
-  <button class="tablink" onclick="openPage('The Test', this);">
-    <a href="#" class="active">Test</a>
   </button>
   <button class="tablink" onclick="openPage('Contact Us', this);">
     <a href="#" class="active">Contact</a>
@@ -149,15 +149,9 @@ require_once('./dbconn.php');
           </div>
 
 
-         <!-- <div id="btn_home">
-          <button type="button"  id="go_home" a href="defaultOpen" name="gohome">Home</button>
-        </div>-->
-          <!--  <div id="btn_submit">-->
+
           <button type="button" id="submit_survey" type="submit" name="submitsurvey">Submit</button>
-          <!--  </div>-->
-          <!--  <div id="btn_test">
-          <button type="button" id="go_test" a href="#" name="gotest">Go to Test</button>
-        </div>-->
+
 
         </div>
       </div>
@@ -354,7 +348,7 @@ require_once('./dbconn.php');
           // After data submitted do stuff here
 
           if (result.result == 1) {
-            //alert("Your survey has been submitted, thank you");
+
             Swal.fire({
               title: "Yay!",
               width: 400,
@@ -365,9 +359,11 @@ require_once('./dbconn.php');
               text: "Your survey has been submitted, thanks!",
               footer: "<a href>Home</a>",
               allowOutsideClick: false,
-              customClass: {
-                footer: 'sweet-footer',
-              }
+              showConfirmButton: false,
+
+
+
+
             });
             $("#survey").slideUp();
           }
