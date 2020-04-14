@@ -59,8 +59,8 @@ require_once('./dbconn.php');
   <button class="tablink" onclick="openPage('Home', this)" ; id="defaultOpen">
     <a href="#" class="active">Home</a>
   </button>
-   <button class="tablink" onclick="openPage('The Test', this);">
-    <a href="#" class="active">Test</a>
+   <button class="tablink" onclick="openPage('The Quiz', this);">
+    <a href="#" class="active">The Quiz</a>
   </button>
   <button class="tablink" onclick="openPage('About', this);">
     <a href="#" class="active">About Us</a>
@@ -78,8 +78,11 @@ require_once('./dbconn.php');
     <p>Coming Soon</p>
   </div>
 
-  <div id="The Test" class="tabcontent">
+  <div id="The Quiz" class="tabcontent">
     <h1>Before You get to test your level, here is a spectacularly short&nbsp;<a class="btn" data-popup-open="popup-1" href="#"><span id="surveyname">survey</span></a></h1>
+
+    <!--REACT DIV-->
+    <div id="quiz_popup"></div>
 
     <form id="survey" method="post" action="actions.php">
       <div id="survey-close-button" class="popup" data-popup="popup-1">
@@ -554,6 +557,13 @@ require_once('./dbconn.php');
     </ul>
   </footer>
 
+ <!-- Load React. -->
+  <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+  <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+
+  <!-- Load our React component. -->
+ <script src="quiz_popup.js"></script>
 
 
 
