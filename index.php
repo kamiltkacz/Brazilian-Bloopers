@@ -52,6 +52,7 @@ require_once('./dbconn.php');
   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
 
+
 </head>
 
 <body>
@@ -75,14 +76,13 @@ require_once('./dbconn.php');
   </div>
 
   <div id="About" class="tabcontent">
-    <p>Coming Soon</p>
+    <p>We are a group of English teachers in Brasilia, Brazil determined to sharpen your skills</p>
   </div>
 
   <div id="The Quiz" class="tabcontent">
     <h1>Before You get to test your level, here is a spectacularly short&nbsp;<a class="btn" data-popup-open="popup-1" href="#"><span id="surveyname">survey</span></a></h1>
 
-    <!--REACT DIV-->
-    <div id="quiz_popup"></div>
+
 
     <form id="survey" method="post" action="actions.php">
       <div id="survey-close-button" class="popup" data-popup="popup-1">
@@ -159,7 +159,10 @@ require_once('./dbconn.php');
         </div>
       </div>
     </form>
-  </div>
+
+</div>
+
+
 
   <script>
     // Age Select Menu
@@ -352,23 +355,6 @@ require_once('./dbconn.php');
 
           if (result.result == 1) {
 
-            Swal.fire({
-              title: "Yay!",
-              width: 400,
-              heightAuto: false,
-              padding: "0.15em",
-              background: "#000000",
-              icon: "success",
-              text: "Your survey has been submitted, thanks!",
-              footer: "<a href>Go to test</a>",
-              allowOutsideClick: false,
-              showConfirmButton: false,
-              showCloseButton: true,
-
-
-
-
-            });
             $("#survey").slideUp();
           }
 
@@ -379,6 +365,7 @@ require_once('./dbconn.php');
               icon: 'error',
               title: 'Hmmm...',
               text: 'Something went wrong, Try again!',
+              showCloseButton: true,
               footer: '<a href><strong>Home</strong></a>'
             });
           }
@@ -519,6 +506,7 @@ require_once('./dbconn.php');
         } //ajax, success function//
       }); //ajax//
     }); //submit on.click fuction//
+
     function openPage(pageName, elmnt, color) {
       var i, tabcontent, tablinks;
       tabcontent = document.getElementsByClassName("tabcontent");
@@ -534,6 +522,7 @@ require_once('./dbconn.php');
     }
     // Get the element with id="defaultOpen" and click on it
     document.getElementById("defaultOpen").click();
+
     //POP UP
     $(function() {
       //----- OPEN
@@ -551,21 +540,16 @@ require_once('./dbconn.php');
     });
   </script>
 
-  <footer id="footer">
+
+
+
+<div id="footerdiv">
+ <footer id="footer">
     <ul class="copyright">
       <p>&copy;2020 - BrazilianBloopers</p>
     </ul>
   </footer>
-
- <!-- Load React. -->
-  <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
-  <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
-  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
-
-  <!-- Load our React component. -->
- <script src="quiz_popup.js"></script>
-
-
+  </div>
 
 </body>
 
