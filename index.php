@@ -76,16 +76,16 @@ require_once('./dbconn.php');
   </div>
 
   <div id="About" class="tabcontent">
-    <p>We are a group of English teachers in Brasilia, Brazil determined to sharpen your skills</p>
+    <p>We are a group of English teachers based in Brasilia, Brazil who are determined to sharpen your skills</p>
   </div>
 
   <div id="The Quiz" class="tabcontent">
-    <h1>Before You get to test your level, here is a spectacularly short&nbsp;<a class="btn" data-popup-open="popup-1" href="#"><span id="surveyname">survey</span></a></h1>
+    <h1>Before You get to test your level, start with our spectacularly short&nbsp;<a class="btn" data-popup-open="popup-1" href="#"><span id="surveyname">survey</span></a><br>It will take you to the quiz</h1>
 
 
 
     <form id="survey" method="post" action="actions.php">
-      <div id="survey-close-button" class="popup" data-popup="popup-1">
+      <div class="popup" data-popup="popup-1">
 
         <div class="popup-inner">
 
@@ -355,7 +355,10 @@ require_once('./dbconn.php');
 
           if (result.result == 1) {
 
-            $("#survey").slideUp();
+
+
+
+           // $("#survey").slideUp();
           }
 
 
