@@ -87,7 +87,10 @@ require_once('./dbconn.php');
     <form id="survey" method="post" action="actions.php">
       <div class="popup" data-popup="popup-1">
 
+
+
         <div class="popup-inner">
+        <div id="popup-empty">
 
           <a class="popup-close" data-popup-close="popup-1" href="#">x</a>
           <div id="question1">
@@ -156,6 +159,8 @@ require_once('./dbconn.php');
           <button type="button" id="submit_survey" type="submit" name="submitsurvey">Submit</button>
 
 
+
+          </div>
         </div>
       </div>
     </form>
@@ -355,10 +360,34 @@ require_once('./dbconn.php');
 
           if (result.result == 1) {
 
+            function addStart() {
+
+              $("#popup-inner").remove();
 
 
 
-           // $("#survey").slideUp();
+          let startScreen = $(`
+
+
+           <div id="start">
+            <p><label id="start">7) Welcome to the Quiz! Get ready. If you need to check out the instruction they will always be by your side<span id="span_strart" style="color:#ff0000"></span></label></p>
+
+
+          </div>
+
+
+
+          <button type="button" id="start_quiz" type="submit" name="startquiz">Start</button>
+
+          `)
+
+
+
+
+          $("#popup-inner").append.startScreen;
+            }
+
+
           }
 
 
