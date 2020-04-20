@@ -360,32 +360,34 @@ require_once('./dbconn.php');
 
           if (result.result == 1) {
 
-            function addStart() {
-
-              $("#popup-inner").remove();
 
 
 
-          let startScreen = $(`
+         $("#popup-empty").slideUp(10000).slideDown(10000, function() {
 
 
-           <div id="start">
-            <p><label id="start">7) Welcome to the Quiz! Get ready. If you need to check out the instruction they will always be by your side<span id="span_strart" style="color:#ff0000"></span></label></p>
-
-
-          </div>
+          $("#this").remove();
 
 
 
-          <button type="button" id="start_quiz" type="submit" name="startquiz">Start</button>
+          $("#popup-empty").append(`
 
-          `)
+          <div id="start">\
+            <p><label id="start">\
+            7) Welcome to the Quiz! Get ready. If you need to check out the instructions they will always be by your side\
+            <span id="span_start" style="color:#ff0000"></span></label></p>\
+            </div>\
+          <button type="button" id="start_quiz" type="submit" name="startquiz">Start</button>\
+
+          `);
 
 
 
 
-          $("#popup-inner").append.startScreen;
-            }
+         });
+
+
+
 
 
           }
