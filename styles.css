@@ -41,7 +41,6 @@ p {
   text-align: center;
 }
 
-
 #surveyname {
   color: #b9ff3b69;
   word-spacing: 4px;
@@ -75,10 +74,7 @@ p {
   text-align: center;
   overflow-x: hidden;
   overflow-y: scroll;
-
 }
-
-
 
 /* Pop up Close Button */
 .popup-close {
@@ -108,6 +104,26 @@ p {
   text-decoration: none;
 }
 
+#start_quiz {
+  background-color: whitesmoke;
+  color: #62645e;
+  font-family: Bangers;
+  font-size: 15px;
+  padding: 5px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#instr {
+  background-color: whitesmoke;
+  color: #62645e;
+  font-family: Bangers;
+  font-size: 15px;
+  padding: 5px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
 /* CONTACT FORM Style inputs with type="text", select elements and textareas */
 input[type="text"],
 select,
@@ -128,8 +144,6 @@ textarea {
   /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
-
-
 #ageselect {
   width: 200px;
   padding: 7px;
@@ -148,20 +162,21 @@ textarea {
   width: 90px;
 }
 
-
-
-
 /* mouseover pointer survey */
-label, #age, .radios, .check:hover {
-
+label,
+#age,
+.radios,
+.check:hover {
   cursor: pointer;
 }
 
-#bor_country, #bor_others,
-#bor_abroad, #bor_way,
-#bor_age, #bor_gender,
+#bor_country,
+#bor_others,
+#bor_abroad,
+#bor_way,
+#bor_age,
+#bor_gender,
 #bor_years {
-
   cursor: default;
 }
 
@@ -184,8 +199,6 @@ input[type="submit"],
   padding: 20px;
   text-align: left;
 }
-
-
 
 @media (min-width: 1030px) {
   .tablink {
