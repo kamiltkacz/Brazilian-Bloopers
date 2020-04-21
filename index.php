@@ -37,21 +37,6 @@ require_once('./dbconn.php');
   </script>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <!--Datatable link -->
-  <script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
-  <script type="text/javascript" src="https://cdn.datatables.net/buttons/1.5.2/js/dataTables.buttons.min.js"></script>
-  <script type="text/javascript" src="https://cdn.datatables.net/buttons/1.5.2/js/buttons.flash.min.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/pdfmake.min.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/vfs_fonts.js"></script>
-  <script type="text/javascript" src="https://cdn.datatables.net/buttons/1.5.2/js/buttons.html5.min.js"></script>
-  <script type="text/javascript" src="https://cdn.datatables.net/buttons/1.5.2/js/buttons.print.min.js"></script>
-  <script type="text/javascript" src="https://cdn.datatables.net/select/1.2.7/js/dataTables.select.min.js"></script>
-  <!-- Draggeble effect -->
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
-  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
-
 
 </head>
 
@@ -259,108 +244,108 @@ require_once('./dbconn.php');
 
     $("#submit_survey").on("click", function() {
 
-      var formData = $("#survey :input").serializeArray();
+          var formData = $("#survey :input").serializeArray();
 
-      formData[formData.length] = {
-        name: "action",
-        value: "submit_survey"
-      };
-      formData.push({});
-      $.ajax({
-        type: "POST",
-        url: $("#survey").attr("action"),
-        data: formData,
-        dataType: 'json',
-        async: true,
-        success: function(result) {
-
-
-
-          if (result.genderErr == "empty") {
-            $("#bor_gender").css({
-              "border-bottom": "5px solid red",
-              "padding": "8px"
-            });
-            $("#span_gender").text(" * ");
-            $("#valmsg").show();
-
-          }
-
-          if (result.ageErr == "empty") {
-            $("#bor_age").css({
-              "border-bottom": "5px solid red",
-              "padding": "8px"
-            });
-            $("#span_age").text(" * ");
-            $("#valmsg").show();
-
-          }
+          formData[formData.length] = {
+            name: "action",
+            value: "submit_survey"
+          };
+          formData.push({});
+          $.ajax({
+            type: "POST",
+            url: $("#survey").attr("action"),
+            data: formData,
+            dataType: 'json',
+            async: true,
+            success: function(result) {
 
 
 
-          if (result.yearsErr == "empty") {
-            $("#bor_years").css({
-              "border-bottom": "5px solid red",
-              "padding": "8px"
-            });
-            $("#span_years").text(" * ");
-            $("#valmsg").show();
+              if (result.genderErr == "empty") {
+                $("#bor_gender").css({
+                  "border-bottom": "5px solid red",
+                  "padding": "8px"
+                });
+                $("#span_gender").text(" * ");
+                $("#valmsg").show();
 
+              }
 
-          }
+              if (result.ageErr == "empty") {
+                $("#bor_age").css({
+                  "border-bottom": "5px solid red",
+                  "padding": "8px"
+                });
+                $("#span_age").text(" * ");
+                $("#valmsg").show();
 
-          if (result.abroadErr == "empty") {
-            $("#bor_abroad").css({
-              "border-bottom": "5px solid red",
-              "padding": "6px"
-            });
-            $("#span_abroad").text(" * ");
-            $("#valmsg").show();
-
-
-          }
-
-          if (result.wayErr == "empty") {
-            $("#bor_way").css({
-              "border-bottom": "5px solid red",
-              "padding": "6px"
-            });
-            $("#span_way").text(" * ");
-            $("#valmsg").show();
-
-
-          }
-
-          if (result.othersErr == "empty") {
-            $("#bor_others").css({
-              "border-bottom": "5px solid red",
-              "padding": "6px"
-            });
-            $("#span_others").text(" * ");
-            $("#valmsg").show();
-
-
-          }
-
-          if (result.countryErr == "empty") {
-            $("#bor_country").css({
-              "border-bottom": "5px solid red",
-              "padding": "6px"
-            });
-            $("#span_country").text(" * ");
-            $("#valmsg").show();
-
-          }
+              }
 
 
 
+              if (result.yearsErr == "empty") {
+                $("#bor_years").css({
+                  "border-bottom": "5px solid red",
+                  "padding": "8px"
+                });
+                $("#span_years").text(" * ");
+                $("#valmsg").show();
 
 
-          // After data submitted do stuff here
+              }
 
-          if (result.result == 1) {
+              if (result.abroadErr == "empty") {
+                $("#bor_abroad").css({
+                  "border-bottom": "5px solid red",
+                  "padding": "6px"
+                });
+                $("#span_abroad").text(" * ");
+                $("#valmsg").show();
 
-            let startHtml = $(`
+
+              }
+
+              if (result.wayErr == "empty") {
+                $("#bor_way").css({
+                  "border-bottom": "5px solid red",
+                  "padding": "6px"
+                });
+                $("#span_way").text(" * ");
+                $("#valmsg").show();
+
+
+              }
+
+              if (result.othersErr == "empty") {
+                $("#bor_others").css({
+                  "border-bottom": "5px solid red",
+                  "padding": "6px"
+                });
+                $("#span_others").text(" * ");
+                $("#valmsg").show();
+
+
+              }
+
+              if (result.countryErr == "empty") {
+                $("#bor_country").css({
+                  "border-bottom": "5px solid red",
+                  "padding": "6px"
+                });
+                $("#span_country").text(" * ");
+                $("#valmsg").show();
+
+              }
+
+
+
+
+
+              // After data submitted do stuff here
+
+              if (result.result == 1) {
+
+                let startHtml = $(`
 
               <div id="start">\
               <p><label id="start">\
@@ -374,41 +359,34 @@ require_once('./dbconn.php');
               `);
 
 
-            $("#popup-empty").replaceWith(startHtml);
+                $("#popup-empty").replaceWith(startHtml);
 
-            $(document).ready(function() {
-              $("#start_quiz").on("click", function() {
+                $(document).ready(function() {
+                  $("#start_quiz").on("click", function() {
 
-                alert("Coming soon");
-
-
+                    alert("Coming soon");
 
 
+                  });
+
+                });
+
+              }
+
+                  if (result.result == 2) {
+                    Swal.fire({
+                      icon: 'error',
+                      title: 'Hmmm...',
+                      text: 'Something went wrong, Try again!',
+                      showCloseButton: true,
+                      footer: '<a href><strong>Home</strong></a>'
+                    });
+                  }
 
 
-              });
-
-            });
-
-
-          }
-
-
-
-          if (result.result == 2) {
-            Swal.fire({
-              icon: 'error',
-              title: 'Hmmm...',
-              text: 'Something went wrong, Try again!',
-              showCloseButton: true,
-              footer: '<a href><strong>Home</strong></a>'
-            });
-          }
-
-
-        } //ajax, success function//
-      }); //ajax//
-    }); //submit on.click function//
+                } //ajax, success function//
+              }); //ajax//
+          }); //submit on.click function//
   </script>
 
   <div id="Contact Us" class="tabcontent">
