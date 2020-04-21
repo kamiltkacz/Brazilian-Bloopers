@@ -108,7 +108,7 @@ p {
   background-color: whitesmoke;
   color: #62645e;
   font-family: Bangers;
-  font-size: 15px;
+  font-size: 17px;
   padding: 5px;
   border-radius: 8px;
   cursor: pointer;
@@ -118,10 +118,13 @@ p {
   background-color: whitesmoke;
   color: #62645e;
   font-family: Bangers;
-  font-size: 15px;
+  font-size: 17px;
   padding: 5px;
   border-radius: 8px;
   cursor: pointer;
+  position: relative;
+  margin-top: 30px;
+  margin-right: 30px;
 }
 
 /* CONTACT FORM Style inputs with type="text", select elements and textareas */
