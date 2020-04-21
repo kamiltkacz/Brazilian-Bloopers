@@ -13,6 +13,10 @@ require_once('./dbconn.php');
 
   <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <!--JQuery UI-->
+  <link rel="stylesheet" href="jquery-ui.min.css">
+  <script src="external/jquery/jquery.js"></script>
+  <script src="jquery-ui.min.js"></script>
   <!--Bangers Font-->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 
@@ -37,6 +41,7 @@ require_once('./dbconn.php');
   </script>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 
 </head>
 
