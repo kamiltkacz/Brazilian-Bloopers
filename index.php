@@ -10,15 +10,17 @@ require_once('./dbconn.php');
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 
-
-  <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
   <!--JQuery UI-->
   <link rel="stylesheet" href="jquery-ui.min.css">
   <script src="external/jquery/jquery.js"></script>
   <script src="jquery-ui.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+
   <!--Bangers Font-->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
 
   <!--SweetAlert2 -->
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
