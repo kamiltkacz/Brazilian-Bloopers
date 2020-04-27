@@ -9,16 +9,30 @@ require_once('./dbconn.php');
   <title>brazilianbloopers</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+
   <!-- JQuery -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
-  <!--JQuery UI-->
+  <!-- JQuery UI -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha256-KM512VNnjElC30ehFwehXjx1YCHPiQkOPmqnrWtpccM=" crossorigin="anonymous"></script>
 
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/3.3.0/js/jquery.tooltipster.min.js" integrity="sha256-lenj6loHcdfu6tFQPUHN6S2O7G2gv7yX/P9OnRc8lno=" crossorigin="anonymous"></script>
 
-  <!-- JQuery UI internal-->
-  <link rel="stylesheet" href="jquery-ui.min.css">
-  <script src="jquery.js"></script>
-  <script src="jquery-ui.min.js"></script>
+  <script>
+   $( function() {
+    $( document ).tooltip();
+
+
+
+  });
+  </script>
+
+
+
 
   <!-- My CSS -->
   <link rel="stylesheet" href="styles.css">
@@ -37,6 +51,15 @@ require_once('./dbconn.php');
   <script src="https://unpkg.com/babel-polyfill@6.2.0/dist/polyfill.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/rome/3.0.2/rome.standalone.js"></script>
+
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+
+
+
+
+
+
+
 
 
 
@@ -63,7 +86,7 @@ require_once('./dbconn.php');
     <h1>Hello, Welcome to Brazilian Bloopers.</h1><br>
     <p>Here we tell you what gives you away as Brazilian!</p>
 
-</div>
+  </div>
 
 
   <div id="About" class="tabcontent">
@@ -161,11 +184,6 @@ require_once('./dbconn.php');
 
 
   <script>
-
-
-
-
-
     // Age Select Menu
     let selectElement = document.getElementById("age");
     if (selectElement !== undefined) {
@@ -363,15 +381,18 @@ require_once('./dbconn.php');
 
               <div id="start">\
               <p><label id="start">\
-              7) Welcome to the Quiz! Get ready. If you need to check out the instructions they will always be by your side\
+              7) Welcome to the Quiz!\
               <span id="span_start" style="color:#ff0000"></span></label></p>\
               </div>\
-              <button type="button" id="instr" name="instructions">Rules</button>
 
+
+              <button type="button" id="instr" name="instructions"> <a href="#" data-html="true" title="Rules &#013; Are &#013; here &#013; to &#013; help &#013; you">instructions</a></button>\
               <button type="button" id="start_quiz" type="submit" name="startquiz">Start</button>\
 
 
                           `);
+
+
 
 
             $("#popup-empty").replaceWith(startHtml);
@@ -579,6 +600,7 @@ require_once('./dbconn.php');
       </ul>
     </footer>
   </div>
+
 
 
 </body>
