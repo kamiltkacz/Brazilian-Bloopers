@@ -17,7 +17,7 @@ require_once('./dbconn.php');
 
   <!-- JQuery UI internal-->
   <link rel="stylesheet" href="jquery-ui.min.css">
- <!-- <script src="jquery.js"></script>-->
+  <script src="jquery.js"></script>
   <script src="jquery-ui.min.js"></script>
 
   <!-- My CSS -->
