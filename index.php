@@ -11,8 +11,8 @@ require_once('./dbconn.php');
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <!-- JQuery -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
-  <!--JQuery UI
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha256-KM512VNnjElC30ehFwehXjx1YCHPiQkOPmqnrWtpccM=" crossorigin="anonymous"></script>-->
+  <!--JQuery UI-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha256-KM512VNnjElC30ehFwehXjx1YCHPiQkOPmqnrWtpccM=" crossorigin="anonymous"></script>
 
 
   <!-- JQuery UI internal-->
@@ -62,14 +62,9 @@ require_once('./dbconn.php');
   <div id="Home" class="tabcontent">
     <h1>Hello, Welcome to Brazilian Bloopers.</h1><br>
     <p>Here we tell you what gives you away as Brazilian!</p>
-    <!-- Tooltip -->
-    <h2 class="demoHeaders">Tooltip</h2>
-            <p id="tooltip">
-              <a href="#" title="That&apos;s what this widget is">Tooltips</a> can be attached to any element. When you hover
-              the element with your mouse, the title attribute is displayed in a little box next to the element, just like a native tooltip.
-            </p>
 
-  </div>
+</div>
+
 
   <div id="About" class="tabcontent">
     <p>We are a group of English teachers based in Brasilia, Brazil who are determined to sharpen your skills</p>
@@ -167,7 +162,8 @@ require_once('./dbconn.php');
 
   <script>
 
-     $( "#tooltip" ).tooltip();
+
+
 
 
     // Age Select Menu
@@ -360,6 +356,9 @@ require_once('./dbconn.php');
 
           if (result.result == 1) {
 
+
+
+
             let startHtml = $(`
 
               <div id="start">\
@@ -367,11 +366,12 @@ require_once('./dbconn.php');
               7) Welcome to the Quiz! Get ready. If you need to check out the instructions they will always be by your side\
               <span id="span_start" style="color:#ff0000"></span></label></p>\
               </div>\
-              <button type="button" id="instr" name="instructions">Instructions</button>
+              <button type="button" id="instr" name="instructions">Rules</button>
+
               <button type="button" id="start_quiz" type="submit" name="startquiz">Start</button>\
 
 
-              `);
+                          `);
 
 
             $("#popup-empty").replaceWith(startHtml);
