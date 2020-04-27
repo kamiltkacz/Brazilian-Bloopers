@@ -9,17 +9,18 @@ require_once('./dbconn.php');
   <title>brazilianbloopers</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-<!-- JQuery -->
+  <!-- JQuery -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
-<!-- JQuery UI -->
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha256-KM512VNnjElC30ehFwehXjx1YCHPiQkOPmqnrWtpccM=" crossorigin="anonymous"></script>-->
+  <!--JQuery UI
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha256-KM512VNnjElC30ehFwehXjx1YCHPiQkOPmqnrWtpccM=" crossorigin="anonymous"></script>-->
 
 
-<!-- JQuery UI internal
+  <!-- JQuery UI internal-->
   <link rel="stylesheet" href="jquery-ui.min.css">
-  <script src="jquery-ui-1.12.1/external/jquery/jquery.js"></script>
-  <script src="jquery-ui-1.12.1/jquery-ui.min.js"></script>-->
-   <!-- My CSS -->
+ <!-- <script src="jquery.js"></script>-->
+  <script src="jquery-ui.min.js"></script>
+
+  <!-- My CSS -->
   <link rel="stylesheet" href="styles.css">
 
   <!--Bangers Font-->
@@ -56,9 +57,18 @@ require_once('./dbconn.php');
     <a href="#" class="active">Contact</a>
   </button>
 
+
+
   <div id="Home" class="tabcontent">
     <h1>Hello, Welcome to Brazilian Bloopers.</h1><br>
     <p>Here we tell you what gives you away as Brazilian!</p>
+    <!-- Tooltip -->
+    <h2 class="demoHeaders">Tooltip</h2>
+            <p id="tooltip">
+              <a href="#" title="That&apos;s what this widget is">Tooltips</a> can be attached to any element. When you hover
+              the element with your mouse, the title attribute is displayed in a little box next to the element, just like a native tooltip.
+            </p>
+
   </div>
 
   <div id="About" class="tabcontent">
@@ -156,6 +166,10 @@ require_once('./dbconn.php');
 
 
   <script>
+
+     $( "#tooltip" ).tooltip();
+
+
     // Age Select Menu
     let selectElement = document.getElementById("age");
     if (selectElement !== undefined) {
@@ -245,108 +259,108 @@ require_once('./dbconn.php');
 
     $("#submit_survey").on("click", function() {
 
-          var formData = $("#survey :input").serializeArray();
+      var formData = $("#survey :input").serializeArray();
 
-          formData[formData.length] = {
-            name: "action",
-            value: "submit_survey"
-          };
-          formData.push({});
-          $.ajax({
-            type: "POST",
-            url: $("#survey").attr("action"),
-            data: formData,
-            dataType: 'json',
-            async: true,
-            success: function(result) {
-
-
-
-              if (result.genderErr == "empty") {
-                $("#bor_gender").css({
-                  "border-bottom": "5px solid red",
-                  "padding": "8px"
-                });
-                $("#span_gender").text(" * ");
-                $("#valmsg").show();
-
-              }
-
-              if (result.ageErr == "empty") {
-                $("#bor_age").css({
-                  "border-bottom": "5px solid red",
-                  "padding": "8px"
-                });
-                $("#span_age").text(" * ");
-                $("#valmsg").show();
-
-              }
+      formData[formData.length] = {
+        name: "action",
+        value: "submit_survey"
+      };
+      formData.push({});
+      $.ajax({
+        type: "POST",
+        url: $("#survey").attr("action"),
+        data: formData,
+        dataType: 'json',
+        async: true,
+        success: function(result) {
 
 
 
-              if (result.yearsErr == "empty") {
-                $("#bor_years").css({
-                  "border-bottom": "5px solid red",
-                  "padding": "8px"
-                });
-                $("#span_years").text(" * ");
-                $("#valmsg").show();
+          if (result.genderErr == "empty") {
+            $("#bor_gender").css({
+              "border-bottom": "5px solid red",
+              "padding": "8px"
+            });
+            $("#span_gender").text(" * ");
+            $("#valmsg").show();
 
+          }
 
-              }
+          if (result.ageErr == "empty") {
+            $("#bor_age").css({
+              "border-bottom": "5px solid red",
+              "padding": "8px"
+            });
+            $("#span_age").text(" * ");
+            $("#valmsg").show();
 
-              if (result.abroadErr == "empty") {
-                $("#bor_abroad").css({
-                  "border-bottom": "5px solid red",
-                  "padding": "6px"
-                });
-                $("#span_abroad").text(" * ");
-                $("#valmsg").show();
-
-
-              }
-
-              if (result.wayErr == "empty") {
-                $("#bor_way").css({
-                  "border-bottom": "5px solid red",
-                  "padding": "6px"
-                });
-                $("#span_way").text(" * ");
-                $("#valmsg").show();
-
-
-              }
-
-              if (result.othersErr == "empty") {
-                $("#bor_others").css({
-                  "border-bottom": "5px solid red",
-                  "padding": "6px"
-                });
-                $("#span_others").text(" * ");
-                $("#valmsg").show();
-
-
-              }
-
-              if (result.countryErr == "empty") {
-                $("#bor_country").css({
-                  "border-bottom": "5px solid red",
-                  "padding": "6px"
-                });
-                $("#span_country").text(" * ");
-                $("#valmsg").show();
-
-              }
+          }
 
 
 
+          if (result.yearsErr == "empty") {
+            $("#bor_years").css({
+              "border-bottom": "5px solid red",
+              "padding": "8px"
+            });
+            $("#span_years").text(" * ");
+            $("#valmsg").show();
 
 
-              // After data submitted do stuff here
+          }
 
-              if (result.result == 1) {
+          if (result.abroadErr == "empty") {
+            $("#bor_abroad").css({
+              "border-bottom": "5px solid red",
+              "padding": "6px"
+            });
+            $("#span_abroad").text(" * ");
+            $("#valmsg").show();
 
-                let startHtml = $(`
+
+          }
+
+          if (result.wayErr == "empty") {
+            $("#bor_way").css({
+              "border-bottom": "5px solid red",
+              "padding": "6px"
+            });
+            $("#span_way").text(" * ");
+            $("#valmsg").show();
+
+
+          }
+
+          if (result.othersErr == "empty") {
+            $("#bor_others").css({
+              "border-bottom": "5px solid red",
+              "padding": "6px"
+            });
+            $("#span_others").text(" * ");
+            $("#valmsg").show();
+
+
+          }
+
+          if (result.countryErr == "empty") {
+            $("#bor_country").css({
+              "border-bottom": "5px solid red",
+              "padding": "6px"
+            });
+            $("#span_country").text(" * ");
+            $("#valmsg").show();
+
+          }
+
+
+
+
+
+          // After data submitted do stuff here
+
+          if (result.result == 1) {
+
+            let startHtml = $(`
 
               <div id="start">\
               <p><label id="start">\
@@ -360,34 +374,34 @@ require_once('./dbconn.php');
               `);
 
 
-                $("#popup-empty").replaceWith(startHtml);
+            $("#popup-empty").replaceWith(startHtml);
 
-                $(document).ready(function() {
-                  $("#start_quiz").on("click", function() {
+            $(document).ready(function() {
+              $("#start_quiz").on("click", function() {
 
-                    alert("Coming soon");
-
-
-                  });
-
-                });
-
-              }
-
-                  if (result.result == 2) {
-                    Swal.fire({
-                      icon: 'error',
-                      title: 'Hmmm...',
-                      text: 'Something went wrong, Try again!',
-                      showCloseButton: true,
-                      footer: '<a href><strong>Home</strong></a>'
-                    });
-                  }
+                alert("Coming soon");
 
 
-                } //ajax, success function//
-              }); //ajax//
-          }); //submit on.click function//
+              });
+
+            });
+
+          }
+
+          if (result.result == 2) {
+            Swal.fire({
+              icon: 'error',
+              title: 'Hmmm...',
+              text: 'Something went wrong, Try again!',
+              showCloseButton: true,
+              footer: '<a href><strong>Home</strong></a>'
+            });
+          }
+
+
+        } //ajax, success function//
+      }); //ajax//
+    }); //submit on.click function//
   </script>
 
   <div id="Contact Us" class="tabcontent">
@@ -414,6 +428,7 @@ require_once('./dbconn.php');
       </div>
     </div>
   </div>
+
 
   <script>
     // Reset border color & text in span element for name validation
