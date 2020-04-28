@@ -16,18 +16,6 @@ require_once('./dbconn.php');
   <!-- JQuery UI -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha256-KM512VNnjElC30ehFwehXjx1YCHPiQkOPmqnrWtpccM=" crossorigin="anonymous"></script>
 
-  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-  <link rel="stylesheet" href="/resources/demos/style.css">
-  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-
-  <script>
-
-  </script>
-
-
-
-
   <!-- My CSS -->
   <link rel="stylesheet" href="styles.css">
 
@@ -45,15 +33,8 @@ require_once('./dbconn.php');
   <script src="https://unpkg.com/babel-polyfill@6.2.0/dist/polyfill.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/rome/3.0.2/rome.standalone.js"></script>
-
+  <!--Popper-->
   <script src="https://unpkg.com/@popperjs/core@2"></script>
-
-
-
-
-
-
-
 
 
 
@@ -77,7 +58,7 @@ require_once('./dbconn.php');
 
 
   <div id="Home" class="tabcontent">
-    <h1>Hello, Welcome to Brazilian Bloopers.</h1><br>
+    <h3>Hello, Welcome to Brazilian Bloopers.</h3><br>
     <p>Here we tell you what gives you away as Brazilian!</p>
 
   </div>
@@ -88,9 +69,31 @@ require_once('./dbconn.php');
   </div>
 
   <div id="The Quiz" class="tabcontent">
-    <h1>Before You get to test your level, start with our spectacularly short&nbsp;<a class="btn" data-popup-open="popup-1" href="#"><span id="surveyname">survey</span></a><br>It will take you to the quiz</h1>
 
+    <div class="container" id="aboutqz">
 
+      <fieldset id="field_about">
+        <legend>About the quiz</legend>
+        <h4>The quiz is the fruit of labor of a group of English teachers who noticed the various Brazilian mistakes that students make when speaking English. Among the bloopers you'll find false cognates, idiomatic expressions, incomplete phrases, etc.<br><br> questions range in difficulty and get harder progressively. Some mistakes are more common and some less frequent but all of them share the peculiarity of the Portuguese language that sometimes does not translate well into common English. Even though many of the bloopers are intelligible to English speakers, you would be better off finding a more common alternative.<br><br> But don't be too hard on yourself - It's okay if you have a piece of Brazil never leaving your side, plus why not let the gringo do some thinking? <br><br> Let's do it! </h4>
+      </fieldset>
+    </div>
+
+    <div class="container" id="steps">
+      <fieldset id="field_steps">
+        <legend>Follow these 3 simple steps:</legend>
+        <ol>
+          <li>
+            <p>Fill out our spectacularly short&nbsp;<a class="btn" data-popup-open="popup-1" href="#"><span id="surveyname" style="color: yellowgreen"><u>survey</u></span></a><br>and click submit</p>
+          </li>
+          <li>
+            <p>Click "Start" to begin the quiz</p>
+          </li>
+          <li>
+            <p>Have fun!</p>
+          </li>
+        </ol>
+      </fieldset>
+    </div>
 
     <form id="survey" method="post" action="actions.php">
       <div class="popup" data-popup="popup-1">
@@ -174,6 +177,19 @@ require_once('./dbconn.php');
     </form>
 
   </div>
+
+  <!--mouseover instructions in a HIDDEN DIV -->
+
+              <div id="inst_popup">
+              <p>General Instructions</p>
+              <ul>
+              <li>Each question is worth 2 points</li>
+              <li>Only one answer is correct</li>
+              <li>The explanations pop up after each answer</li>
+
+              </ul>
+
+              </div>
 
 
 
@@ -361,32 +377,26 @@ require_once('./dbconn.php');
           }
 
 
-
-
-
           // After data submitted do stuff here
 
           if (result.result == 1) {
 
 
-
-
             let startHtml = $(`
 
-              <div id="start">\
+              <div id="start" data-popup="popup-2">\
+              <a class="popup-close" data-popup-close="popup-2" href="#">x</a>\
               <p><label id="start">\
               7) Welcome to the Quiz!\
               <span id="span_start" style="color:#ff0000"></span></label></p>\
               </div>\
 
 
-              <button type="button" id="instr" name="instructions"> <a href="#" data-html="true" title="Rules &#013; Are &#013; here &#013; to &#013; help &#013; you">instructions</a></button>\
+              <p id="instr" name="instructions">Instructions</p>\
               <button type="button" id="start_quiz" type="submit" name="startquiz">Start</button>\
 
 
                           `);
-
-
 
 
             $("#popup-empty").replaceWith(startHtml);
@@ -395,11 +405,35 @@ require_once('./dbconn.php');
               $("#start_quiz").on("click", function() {
 
                 alert("Coming soon");
+                $(".popup").slideUp(3000);
 
 
               });
 
+
+            $(function() {
+                var moveLeft = 20;
+                var moveDown = 10;
+
+                $('#instr').hover(function(e) {
+                  $('#inst_popup').show();
+                  //.css('top', e.pageY + moveDown)
+                  //.css('left', e.pageX + moveLeft)
+                  //.appendTo('body');
+                }, function() {
+                  $('#inst_popup').hide();
+                });
+
+                $('#instr').mousemove(function(e) {
+                  $("#inst_popup").css('top', e.pageY + moveDown).css('left', e.pageX + moveLeft);
+                });
+
+              });
+
+
+
             });
+
 
           }
 
@@ -567,7 +601,7 @@ require_once('./dbconn.php');
     // Get the element with id="defaultOpen" and click on it
     document.getElementById("defaultOpen").click();
 
-    //POP UP
+    //MAIN POP UP
     $(function() {
       //----- OPEN
       $('[data-popup-open]').on('click', function(e) {
