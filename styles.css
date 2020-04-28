@@ -11,7 +11,7 @@ html {
 /* All a links */
 a {
   text-decoration: none;
-  color: rgb(15, 1, 1);
+  color: #eee;
   font-weight: 200;
 }
 p {
@@ -40,6 +40,26 @@ p {
   height: 100%;
   text-align: center;
 }
+
+legend {
+  display: block;
+  padding-left: 2px;
+  padding-right: 2px;
+  border: none;
+}
+
+#field_steps {
+
+border-radius: 15px 50px 30px 15px;
+
+}
+
+ol {
+
+list-style-position: outside;
+
+}
+
 
 #surveyname {
   color: #b9ff3b69;
@@ -114,9 +134,9 @@ p {
   cursor: pointer;
 }
 
-#instr {
+p#instr {
   background-color: whitesmoke;
-  color: #62645e;
+  color: #0f1403;
   font-family: Bangers;
   font-size: 17px;
   padding: 5px;
@@ -201,7 +221,28 @@ input[type="submit"],
   background-color: #b9ff3b69;
   padding: 20px;
   text-align: left;
+  margin-top: 30px;
 }
+
+#field_about {
+
+  border-radius: 15px 50px 30px 15px;
+
+}
+
+ /* HOVER STYLES */
+
+ #inst_popup {
+  display: none;
+  position: absolute;
+  width: 280px;
+  padding: 10px;
+  background: #eeeeee;
+  color: #000000;
+  border: 1px solid #1a1a1a;
+  font-size: 90%;
+}
+
 
 @media (min-width: 1030px) {
   .tablink {
