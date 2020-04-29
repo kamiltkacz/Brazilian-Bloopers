@@ -74,7 +74,7 @@ require_once('./dbconn.php');
 
       <fieldset id="field_about">
         <legend>About the quiz</legend>
-        <h4>The quiz is the fruit of labor of a group of English teachers who noticed the various Brazilian mistakes that students make when speaking English. Among the bloopers you'll find false cognates, idiomatic expressions, incomplete phrases, etc.<br><br> questions range in difficulty and get harder progressively. Some mistakes are more common and some less frequent but all of them share the peculiarity of the Portuguese language that sometimes does not translate well into common English. Even though many of the bloopers are intelligible to English speakers, you would be better off finding a more common alternative.<br><br> But don't be too hard on yourself - It's okay if you have a piece of Brazil never leaving your side, plus why not let the gringo do some thinking? <br><br> Let's do it! </h4>
+        <h4>The quiz is the fruit of labor of a group of English teachers who noticed the various Brazilian mistakes that students make when speaking English. Among the bloopers you'll find false cognates, idiomatic expressions, incomplete phrases, etc.<br><br> questions range in difficulty and get harder progressively. Some mistakes are more common and some less frequent but all of them share the peculiarity of the Portuguese language that sometimes does not translate well into common English. Even though many of the bloopers are intelligible to English speakers, you would be better off finding a more common alternative.<br><br> But don't be too hard on yourself - It's okay if you have a piece of Brazil, which never leaves your brain, plus why not let the gringo do some thinking? <br><br> Let's do it! </h4>
       </fieldset>
     </div>
 
@@ -399,16 +399,19 @@ require_once('./dbconn.php');
                           `);
 
 
-            $("#popup-empty").replaceWith(startHtml);
+            $("#popup-empty").html('');
+            getQuestions();
 
             $(document).ready(function() {
               $("#start_quiz").on("click", function() {
 
-                alert("Coming soon");
-                $(".popup").slideUp(3000);
+
+               // alert("Coming soon");
+                //$(".popup").slideUp(3000);
 
 
               });
+
 
 
             $(function() {
@@ -451,6 +454,32 @@ require_once('./dbconn.php');
         } //ajax, success function//
       }); //ajax//
     }); //submit on.click function//
+
+
+    function getQuestions(){
+
+var formData = {
+'test'  : 'test'
+
+ };
+ $.ajax({
+ type: "GET",
+ url: "https://brazilianbloopers.com/quiz.php",
+ data: formData,
+ //dataType: 'json',
+ async: true,
+ success: function(data) {
+
+ $("#popup-empty").html(data);
+
+
+ }
+});
+
+
+}
+
+
   </script>
 
   <div id="Contact Us" class="tabcontent">
