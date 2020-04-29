@@ -402,12 +402,14 @@ require_once('./dbconn.php');
             $("#popup-empty").html('');
             getQuestions();
 
+
+           //$(".popup").slideUp(3000);
             $(document).ready(function() {
               $("#start_quiz").on("click", function() {
 
 
-               // alert("Coming soon");
-                //$(".popup").slideUp(3000);
+
+
 
 
               });
