@@ -4,7 +4,7 @@ html {
   height: 100%;
   margin: 0;
   background-color: #000;
-  font-family: Bangers, Geneva, Tahoma, sans-serif;
+  font-family: 'Squada One', cursive;
   font-size: 20px;
 }
 
@@ -27,7 +27,7 @@ p {
   outline: none;
   cursor: pointer;
   padding: 10px 12px;
-  font-family: Bangers, Geneva, Tahoma, sans-serif;
+  font-family: 'Squada One', cursive;
   width: 25%;
   border-radius: 20px;
 }
@@ -110,7 +110,7 @@ list-style-position: outside;
   transform: translate(50%, -50%);
   border-radius: 1000px;
   background: rgba(0, 0, 0, 0.8);
-  font-family: Arial, Sans-Serif;
+  font-family: 'Squada One', cursive;
   font-size: 15px;
   text-align: center;
   line-height: 90%;
@@ -127,7 +127,7 @@ list-style-position: outside;
 #start_quiz {
   background-color: whitesmoke;
   color: #62645e;
-  font-family: Bangers;
+  font-family: 'Squada One', cursive;
   font-size: 17px;
   padding: 5px;
   border-radius: 8px;
@@ -137,7 +137,7 @@ list-style-position: outside;
 p#instr {
   background-color: whitesmoke;
   color: #0f1403;
-  font-family: Bangers;
+  font-family: 'Squada One', cursive;
   font-size: 17px;
   padding: 5px;
   border-radius: 8px;
@@ -153,7 +153,7 @@ select,
 textarea {
   width: 100%;
   padding: 12px;
-  font-family: Bangers;
+  font-family: 'Squada One', cursive;
   font-size: 20px;
   border: 5px solid #ccc;
   /*grey*/
@@ -176,7 +176,7 @@ textarea {
 #submit_survey {
   background-color: whitesmoke;
   color: #62645e;
-  font-family: Bangers;
+  font-family: 'Squada One', cursive;
   font-size: 20px;
   padding: 4px;
   border-radius: 8px;
@@ -208,7 +208,7 @@ input[type="submit"],
 #submit_contact {
   background-color: whitesmoke;
   color: #62645e;
-  font-family: Bangers;
+  font-family: 'Squada One', cursive;
   font-size: 20px;
   padding: 5px;
   border-radius: 8px;
@@ -239,6 +239,7 @@ input[type="submit"],
   padding: 10px;
   background: #eeeeee;
   color: #000000;
+  border-radius: 20mm;
   border: 1px solid #1a1a1a;
   font-size: 90%;
 }
