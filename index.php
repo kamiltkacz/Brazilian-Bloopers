@@ -19,9 +19,9 @@ require_once('./dbconn.php');
   <!-- My CSS -->
   <link rel="stylesheet" href="styles.css">
 
-  <!--Bangers Font-->
+  <!--Squada One Font-->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Squada+One&display=swap" rel="stylesheet">
 
   <!--SweetAlert2 -->
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
@@ -74,7 +74,7 @@ require_once('./dbconn.php');
 
       <fieldset id="field_about">
         <legend>About the quiz</legend>
-        <h4>The quiz is the fruit of labor of a group of English teachers who noticed the various Brazilian mistakes that students make when speaking English. Among the bloopers you'll find false cognates, idiomatic expressions, incomplete phrases, etc.<br><br> questions range in difficulty and get harder progressively. Some mistakes are more common and some less frequent but all of them share the peculiarity of the Portuguese language that sometimes does not translate well into common English. Even though many of the bloopers are intelligible to English speakers, you would be better off finding a more common alternative.<br><br> But don't be too hard on yourself - It's okay if you have a piece of Brazil, which never leaves your brain, plus why not let the gringo do some thinking? <br><br> Let's do it! </h4>
+        <h4>The quiz is the fruit of labor of a group of English teachers who noticed the various Brazilian mistakes that students make when speaking English. Among the bloopers you'll find false cognates, idiomatic expressions, incomplete phrases, etc.<br><br> questions range in difficulty and get harder progressively. Some mistakes are more common and some less frequent but all of them share the peculiarity of the Portuguese language that sometimes does not translate well into common English. Even though many of the bloopers are intelligible to English speakers, you would be better off finding a more common alternative.<br><br> But don't be too hard on yourself - It's okay if you have a piece of Brazil that never leaves your brain, plus why not let the gringo do some thinking? <br><br> Let's do it! </h4>
       </fieldset>
     </div>
 
@@ -180,16 +180,16 @@ require_once('./dbconn.php');
 
   <!--mouseover instructions in a HIDDEN DIV -->
 
-              <div id="inst_popup">
-              <p>General Instructions</p>
-              <ul>
-              <li>Each question is worth 2 points</li>
-              <li>Only one answer is correct</li>
-              <li>The explanations pop up after each answer</li>
+  <div id="inst_popup">
+    <p>General Instructions</p>
+    <ul>
+      <li>Each question is worth 2 points</li>
+      <li>Only one answer is correct</li>
+      <li>The explanations pop up after each answer</li>
 
-              </ul>
+    </ul>
 
-              </div>
+  </div>
 
 
 
@@ -387,36 +387,27 @@ require_once('./dbconn.php');
               <div id="start" data-popup="popup-2">\
               <a class="popup-close" data-popup-close="popup-2" href="#">x</a>\
               <p><label id="start">\
-              7) Welcome to the Quiz!\
+              Welcome to the Quiz!\
               <span id="span_start" style="color:#ff0000"></span></label></p>\
-              </div>\
+
 
 
               <p id="instr" name="instructions">Instructions</p>\
               <button type="button" id="start_quiz" type="submit" name="startquiz">Start</button>\
-
+              </div>\
 
                           `);
 
 
-            $("#popup-empty").html('');
-            getQuestions();
+            $("#popup-empty").replaceWith(startHtml);
 
 
-           //$(".popup").slideUp(3000);
             $(document).ready(function() {
-              $("#start_quiz").on("click", function() {
 
 
 
 
-
-
-              });
-
-
-
-            $(function() {
+              $(function() {
                 var moveLeft = 20;
                 var moveDown = 10;
 
@@ -434,6 +425,30 @@ require_once('./dbconn.php');
                 });
 
               });
+            /*  $("#start_quiz").on("click", function getQuestions() {
+console.log(hi);
+                var formData = {
+                  'test': 'test'
+                };
+
+                $.ajax({
+                  type: "GET",
+                  url: "https://brazilianbloopers.com/quiz.php",
+                  data: formData,
+                  //dataType: 'json',
+                  async: true,
+                  success: function(data) {
+
+                    $("#start").html(data);
+                  }
+                });
+
+
+                getQuestions();
+
+              });*/
+
+
 
 
 
@@ -458,30 +473,8 @@ require_once('./dbconn.php');
     }); //submit on.click function//
 
 
-    function getQuestions(){
-
-var formData = {
-'test'  : 'test'
-
- };
- $.ajax({
- type: "GET",
- url: "https://brazilianbloopers.com/quiz.php",
- data: formData,
- //dataType: 'json',
- async: true,
- success: function(data) {
-
- $("#popup-empty").html(data);
-
-
- }
-});
-
-
-}
-
-
+    /*  xx
+     */
   </script>
 
   <div id="Contact Us" class="tabcontent">
