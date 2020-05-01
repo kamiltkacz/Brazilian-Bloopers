@@ -140,11 +140,33 @@ p#instr {
   font-family: 'Squada One', cursive;
   font-size: 17px;
   padding: 5px;
-  border-radius: 8px;
+  border-radius: 5px;
   cursor: pointer;
-  position: relative;
+  position: fixed;
   margin-top: 30px;
   margin-right: 30px;
+}
+
+
+
+#gen_instr {
+
+ text-align: center;
+
+}
+
+ /* HOVER STYLES */
+
+ #inst_popup {
+  display: none;
+  position: absolute;
+  width: 280px;
+  padding: 10px;
+  background: #eeeeee;
+  color: #000000;
+  border-radius: 20mm;
+  border: 1px solid #1a1a1a;
+  font-size: 90%;
 }
 
 /* CONTACT FORM Style inputs with type="text", select elements and textareas */
@@ -230,19 +252,7 @@ input[type="submit"],
 
 }
 
- /* HOVER STYLES */
 
- #inst_popup {
-  display: none;
-  position: absolute;
-  width: 280px;
-  padding: 10px;
-  background: #eeeeee;
-  color: #000000;
-  border-radius: 20mm;
-  border: 1px solid #1a1a1a;
-  font-size: 90%;
-}
 
 
 @media (min-width: 1030px) {
