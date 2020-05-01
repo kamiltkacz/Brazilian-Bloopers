@@ -58,14 +58,62 @@ require_once('./dbconn.php');
 
 
   <div id="Home" class="tabcontent">
-    <h3>Hello, Welcome to Brazilian Bloopers.</h3><br>
-    <p>Here we tell you what gives you away as Brazilian!</p>
+    <header>
+      <h3>Hello, Welcome to Brazilian Bloopers.<br>Here we tell you what gives you away as Brazilian!</h3>
+    </header>
+
+    <div class="grid-five">
+      <div class="container"><p>If you look up English defintion of the word <a href="https://www.dictionary.com/browse/blooper"><span style="color:yellowgreen">"blooper"</a></span> what you'll get is that it's an embarassing error you make publicly. We don't belive the mistkes you'll find here are a big problem but we belive in taking small steps to language learning. Enjoy the process </p></div>
+      <div class="container"><p>Let's face it. To learn another language and communicate your ideas in it, is not an easy task. English, however ubiquotus in the world, is no exception. No worries We're here to help a little with that.</p></div>
+      <div class="container">
+        <Picture><p> Dialog between a teacher and student: A) Did you like the movie?<br>B) Yes, I liked!<br> A)Hmmm</p></Picture>
+      </div>
+      <div class="container"></p>Michel Telo</p></div>
+      <div class="container"><p>Marilia Gabriela vid</p></div>
+    </div>
+
+    <style>
+      .grid-five {
+
+        /* Activate grid layout */
+        display: grid;
+
+        /* Create 3 columns, each 1 "fractional unit" wide */
+        grid-template-columns: 1fr 1fr 1fr;
+
+        /* Add a 10px gap between columns and rows */
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+
+      }
+
+      .grid-two {
+
+        display: grid;
+        grid-template-columns: 4fr 3fr 0fr;
+        grid-gap: 10px;
+
+      }
+
+    </style>
 
   </div>
 
 
   <div id="About" class="tabcontent">
-    <p>We are a group of English teachers based in Brasilia, Brazil who are determined to sharpen your skills</p>
+
+
+    <div class="grid-two">
+      <div class="container">
+        <p>We are a group of English teachers based in Brasilia, Brazil who are determined to sharpen your skills. We've compiled this quiz based on years of experience. One day, fascinated by various "Brazilianisms" that students kept throwing at our ears we decided that this phenomenon deserves its own website. Thus project Brazilian Bloopers came to life.</p>
+      </div>
+
+      <div class="container">
+        <p>Here's what we look like</p>
+      </div>
+
+    </div>
+
   </div>
 
   <div id="The Quiz" class="tabcontent">
@@ -74,7 +122,7 @@ require_once('./dbconn.php');
 
       <fieldset id="field_about">
         <legend>About the quiz</legend>
-        <h4>The quiz is the fruit of labor of a group of English teachers who noticed the various Brazilian mistakes that students make when speaking English. Among the bloopers you'll find false cognates, idiomatic expressions, incomplete phrases, etc.<br><br> questions range in difficulty and get harder progressively. Some mistakes are more common and some less frequent but all of them share the peculiarity of the Portuguese language that sometimes does not translate well into common English. Even though many of the bloopers are intelligible to English speakers, you would be better off finding a more common alternative.<br><br> But don't be too hard on yourself - It's okay if you have a piece of Brazil that never leaves your brain, plus why not let the gringo do some thinking? <br><br> Let's do it! </h4>
+        <h4>The quiz is the fruit of labor of a group of English teachers who noticed the various Brazilian mistakes that students make when speaking English. Among the bloopers you'll find false cognates, idiomatic expressions, incomplete phrases, etc.<br><br> questions range in difficulty and get harder progressively. Some mistakes are more common and some less frequent but all of them share the peculiarity of the Portuguese language that sometimes does not translate well into common English. Even though many of the bloopers are intelligible to English speakers, you would be better off finding a more common alternative.<br><br> But don't be too hard on yourself - It's okay if you have a piece of Brazil that never leaves your brain, plus why not let the gringo do some thinking? <br><br> Ready? </h4>
       </fieldset>
     </div>
 
@@ -181,7 +229,7 @@ require_once('./dbconn.php');
   <!--mouseover instructions in a HIDDEN DIV -->
 
   <div id="inst_popup">
-    <p>General Instructions</p>
+    <p id="gen_instr">General Instructions</p>
     <ul>
       <li>Each question is worth 2 points</li>
       <li>Only one answer is correct</li>
@@ -425,7 +473,7 @@ require_once('./dbconn.php');
                 });
 
               });
-            /*  $("#start_quiz").on("click", function getQuestions() {
+              /*  $("#start_quiz").on("click", function getQuestions() {
 console.log(hi);
                 var formData = {
                   'test': 'test'
