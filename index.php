@@ -36,8 +36,6 @@ require_once('./dbconn.php');
   <!--Popper-->
   <script src="https://unpkg.com/@popperjs/core@2"></script>
 
-
-
 </head>
 
 <body>
@@ -66,7 +64,7 @@ require_once('./dbconn.php');
       <div class="container"><p>If you look up English defintion of the word <a href="https://www.dictionary.com/browse/blooper"><span style="color:yellowgreen">"blooper"</a></span> what you'll get is that it's an embarassing error you make publicly. We don't belive the mistkes you'll find here are a big problem but we belive in taking small steps to language learning. Enjoy the process </p></div>
       <div class="container"><p>Let's face it. To learn another language and communicate your ideas in it, is not an easy task. English, however ubiquotus in the world, is no exception. No worries We're here to help a little with that.</p></div>
       <div class="container">
-        <Picture><p> Dialog between a teacher and student: A) Did you like the movie?<br>B) Yes, I liked!<br> A)Hmmm</p></Picture>
+        <Picture><p> Dialog between a teacher(A) and student(B): A) Did you like the movie?<br>B) Yes, I liked!<br> A)Hmmm...</p></Picture>
       </div>
       <div class="container"></p>Michel Telo</p></div>
       <div class="container"><p>Marilia Gabriela vid</p></div>
@@ -432,30 +430,23 @@ require_once('./dbconn.php');
 
             let startHtml = $(`
 
-              <div id="start" data-popup="popup-2">\
-              <a class="popup-close" data-popup-close="popup-2" href="#">x</a>\
+              <div id="start">\
+
               <p><label id="start">\
               Welcome to the Quiz!\
               <span id="span_start" style="color:#ff0000"></span></label></p>\
 
-
-
-              <p id="instr" name="instructions">Instructions</p>\
+             <p id="instr" name="instructions">Instructions</p>\
               <button type="button" id="start_quiz" type="submit" name="startquiz">Start</button>\
               </div>\
 
                           `);
 
 
-            $("#popup-empty").replaceWith(startHtml);
+        $("#popup-empty").html(startHtml);
 
-
-            $(document).ready(function() {
-
-
-
-
-              $(function() {
+         /* Mosemove function for the instructions*/
+         $(function() {
                 var moveLeft = 20;
                 var moveDown = 10;
 
@@ -473,8 +464,11 @@ require_once('./dbconn.php');
                 });
 
               });
-              /*  $("#start_quiz").on("click", function getQuestions() {
-console.log(hi);
+
+       $(document).ready(function() {
+
+          $("#start_quiz").on("click", function() {
+                  console.log("hi");
                 var formData = {
                   'test': 'test'
                 };
@@ -487,20 +481,14 @@ console.log(hi);
                   async: true,
                   success: function(data) {
 
-                    $("#start").html(data);
+                 $("#start").html(data);
                   }
                 });
 
-
-                getQuestions();
-
-              });*/
+              });
 
 
-
-
-
-            });
+       });
 
 
           }
@@ -521,8 +509,7 @@ console.log(hi);
     }); //submit on.click function//
 
 
-    /*  xx
-     */
+
   </script>
 
   <div id="Contact Us" class="tabcontent">

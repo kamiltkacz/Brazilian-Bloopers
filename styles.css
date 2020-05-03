@@ -141,7 +141,7 @@ p#instr {
   font-size: 17px;
   padding: 5px;
   border-radius: 5px;
-  cursor: pointer;
+  cursor: help;
   position: fixed;
   margin-top: 30px;
   margin-right: 30px;
