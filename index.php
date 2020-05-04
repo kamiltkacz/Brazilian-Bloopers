@@ -21,7 +21,7 @@ require_once('./dbconn.php');
 
   <!--Squada One Font-->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css2?family=Squada+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
 
   <!--SweetAlert2 -->
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
@@ -61,13 +61,37 @@ require_once('./dbconn.php');
     </header>
 
     <div class="grid-five">
-      <div class="container"><p>If you look up English defintion of the word <a href="https://www.dictionary.com/browse/blooper"><span style="color:yellowgreen">"blooper"</a></span> what you'll get is that it's an embarassing error you make publicly. We don't belive the mistkes you'll find here are a big problem but we belive in taking small steps to language learning. Enjoy the process </p></div>
-      <div class="container"><p>Let's face it. To learn another language and communicate your ideas in it, is not an easy task. English, however ubiquotus in the world, is no exception. No worries We're here to help a little with that.</p></div>
       <div class="container">
-        <Picture><p> Dialog between a teacher(A) and student(B): A) Did you like the movie?<br>B) Yes, I liked!<br> A)Hmmm...</p></Picture>
+        <p>If you look up English defintion of the word <a href="https://www.dictionary.com/browse/blooper"><span style="color:yellowgreen">"blooper"</a></span> what you'll get is that it's an embarassing error you make publicly. Although we don't belive the mistakes you'll find here are embarrasing, we do belive correcting them will be a small step forward in your language learning. Think of this quiz as a nice amo to your arsenal on your English learning journey. Dont' forget to enjoy the process! </p>
       </div>
-      <div class="container"></p>Michel Telo</p></div>
-      <div class="container"><p>Marilia Gabriela vid</p></div>
+      <div class="container">
+        <p>Let's face it. To learn another language and communicate your ideas in it, is not an easy task. English, however ubiquotus in the world, is no exception. No worries We're here to help a little with that.</p>
+      </div>
+      <div class="container">
+        <Picture>
+          <p> Dialog between a teacher (A) and student (B): A)Did you like the movie?<br>B)Yes, I liked!<br> A)Hmmm...</p>
+        </Picture>
+      </div>
+      <div class="container">
+        <header>Case Studies</header>
+        </p>Case 1) The example of Michel Telo's hit</p>
+        <p> In this case, a hugely popular Brazilian song has a bit of a rough reading in English. Among other smaller bloopers the title "If I catch you" gives it away as something clumsily translated from Portuguese. Even the mainstream showbusiness is not free from an occasional blunder</p>
+        <iframe width="380" height="250" src="https://www.youtube.com/embed/CwC5BFX7rqQ">
+        </iframe>
+        <p> Below is a much better version where the American singer Pitbull gives the lyrics his own spin. "If I catch you" becomes "If I get you" and "this way you're gonna kill me" translates into "you're playing hard to get". Good job Pitubull! </p>
+        <iframe width="380" height="250" src="https://www.youtube.com/embed/bMMnn2kA_HY">
+        </iframe>
+
+
+      </div>
+      <div class="container">
+      <header>Case Studies</header>
+        <p> Case 2)Marilia Gabriela's interview with the one and only Madonna</p>
+        <p> This interview is plainly awkward and actually some part of it is the inability of the Brazilian Jouranalist to get her English on the right track. Madonna certainly was not in the mood to help her.
+        <iframe width="380" height="250" src="https://www.youtube.com/embed/zHMhLd4MUC4">
+        </iframe>
+
+      </div>
     </div>
 
     <style>
@@ -92,7 +116,6 @@ require_once('./dbconn.php');
         grid-gap: 10px;
 
       }
-
     </style>
 
   </div>
@@ -443,32 +466,32 @@ require_once('./dbconn.php');
                           `);
 
 
-        $("#popup-empty").html(startHtml);
+            $("#popup-empty").html(startHtml);
 
-         /* Mosemove function for the instructions*/
-         $(function() {
-                var moveLeft = 20;
-                var moveDown = 10;
+            /* Mosemove function for the instructions*/
+            $(function() {
+              var moveLeft = 20;
+              var moveDown = 10;
 
-                $('#instr').hover(function(e) {
-                  $('#inst_popup').show();
-                  //.css('top', e.pageY + moveDown)
-                  //.css('left', e.pageX + moveLeft)
-                  //.appendTo('body');
-                }, function() {
-                  $('#inst_popup').hide();
-                });
-
-                $('#instr').mousemove(function(e) {
-                  $("#inst_popup").css('top', e.pageY + moveDown).css('left', e.pageX + moveLeft);
-                });
-
+              $('#instr').hover(function(e) {
+                $('#inst_popup').show();
+                //.css('top', e.pageY + moveDown)
+                //.css('left', e.pageX + moveLeft)
+                //.appendTo('body');
+              }, function() {
+                $('#inst_popup').hide();
               });
 
-       $(document).ready(function() {
+              $('#instr').mousemove(function(e) {
+                $("#inst_popup").css('top', e.pageY + moveDown).css('left', e.pageX + moveLeft);
+              });
 
-          $("#start_quiz").on("click", function() {
-                  console.log("hi");
+            });
+
+            $(document).ready(function() {
+
+              $("#start_quiz").on("click", function() {
+                console.log("hi");
                 var formData = {
                   'test': 'test'
                 };
@@ -481,14 +504,14 @@ require_once('./dbconn.php');
                   async: true,
                   success: function(data) {
 
-                 $("#start").html(data);
+                    $("#start").html(data);
                   }
                 });
 
               });
 
 
-       });
+            });
 
 
           }
@@ -507,9 +530,6 @@ require_once('./dbconn.php');
         } //ajax, success function//
       }); //ajax//
     }); //submit on.click function//
-
-
-
   </script>
 
   <div id="Contact Us" class="tabcontent">
@@ -680,16 +700,6 @@ require_once('./dbconn.php');
 
 
 
-  <div id="footerdiv">
-    <footer id="footer">
-      <ul class="copyright">
-        <p>&copy;2020 - BrazilianBloopers</p>
-      </ul>
-    </footer>
-  </div>
-
-
-
-</body>
+  </body>
 
 </html>
