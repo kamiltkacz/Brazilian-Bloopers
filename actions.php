@@ -104,13 +104,6 @@ if (isset($_POST["action"])) {
 
 
 
-
-
-
-
-
-
-
     } else {
 
 
@@ -122,6 +115,7 @@ if (isset($_POST["action"])) {
     if (mysqli_query($conn, $sql) === TRUE) {
 
       $export['result'] = "1";
+
     } else {
 
       $export['result'] = "2";
