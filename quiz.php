@@ -5,7 +5,8 @@ require_once('./dbconn.php');
 
 $sql = "SELECT * FROM questions";
 $result = mysqli_query($conn, $sql) or die(mysqli_error($conn));
-$num = mysqli_num_rows($result);
+
+
 
 while ($r = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
 
@@ -18,11 +19,12 @@ while ($r = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
 
     $ex = explode($target, $r['question']);
 
-    echo '<br>' . $ex[0];
+    echo '<br><br>' . $ex[0];
+
 
     echo '<select>';
 
-    while ($r2 = mysqli_fetch_array($result2, MYSQLI_ASSOC)) {
+   while ($r2 = mysqli_fetch_array($result2, MYSQLI_ASSOC)) {
 
 
         echo '<option>' . $r2['offeredAnswer'] . '</option>';
@@ -30,6 +32,7 @@ while ($r = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
 
     echo '</select>';
 
+/* end of question*/
     echo $ex[1];
 }
 
