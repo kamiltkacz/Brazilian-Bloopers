@@ -65,7 +65,7 @@ require_once('./dbconn.php');
         <p>If you look up English defintion of the word <a href="https://www.dictionary.com/browse/blooper"><span style="color:yellowgreen">"blooper"</a></span> what you'll get is that it's an embarassing error you make publicly. Although we don't belive the mistakes you'll find here are embarrasing, we do belive correcting them will be a small step forward in your language learning. Think of this quiz as a nice amo to your arsenal on your English learning journey. Dont' forget to enjoy the process! </p>
       </div>
       <div class="container">
-        <p>Let's face it. To learn another language and communicate your ideas in it, is not an easy task. English, however ubiquotus in the world, is no exception. No worries We're here to help a little with that.</p>
+        <p>Let's face it. It's not an easy task to learn another language and communicate your ideas in it. English, however omnipresent in this world, is no exception. No worries, we're here to help a little with that.</p>
       </div>
       <div class="container">
         <Picture>
@@ -250,7 +250,7 @@ require_once('./dbconn.php');
   <!--mouseover instructions in a HIDDEN DIV -->
 
   <div id="inst_popup">
-    <p id="gen_instr">General Instructions</p>
+    <p id="gen_instr"><u>General Instructions</u></p>
     <ul>
       <li>Each question is worth 2 points</li>
       <li>Only one answer is correct</li>
@@ -512,6 +512,7 @@ require_once('./dbconn.php');
 
 
             });
+
 
 
           }
