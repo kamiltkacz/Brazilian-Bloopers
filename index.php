@@ -451,6 +451,8 @@ require_once('./dbconn.php');
               Welcome to the Quiz!\
               <span id="span_start" style="color:#ff0000"></span></label></p>\
 
+              <button id='backHome-1'><a href='https://www.brazilianbloopers.com'>Home</a></button>\
+
              <p id="instr" name="instructions">Instructions</p>\
               <button type="button" id="start_quiz" type="submit" name="startquiz">Start</button>\
               </div>\
@@ -499,7 +501,7 @@ require_once('./dbconn.php');
 
                     $("#start").html(data);
                     $("#start").prepend("<p><b><u><i>Choose the correct answer:</u></i></b></p>");
-                    $("#start").append("<button id='nextBtn'>Next</button>");
+                    $("#start").append("<button id='backHome-2'><a href='https://www.brazilianbloopers.com'>Home</a></button>", "<button id='nextBtn'>Next</button>");
 
 
                   }
