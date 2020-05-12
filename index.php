@@ -491,7 +491,7 @@ require_once('./dbconn.php');
             $(document).ready(function() {
 
               $("#start_quiz").on("click", function() {
-                console.log("hi");
+
                 var formData = {
                   'test': 'test'
                 };
@@ -504,8 +504,14 @@ require_once('./dbconn.php');
                   async: true,
                   success: function(data) {
 
+
                     $("#start").html(data);
+                    $("#start").prepend("<p><b>Fill in the blanks:</b> </p>");
+                    $("#start").append("<button> Next </button>");
+
+
                   }
+
                 });
 
               });
