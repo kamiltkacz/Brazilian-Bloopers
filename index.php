@@ -62,7 +62,7 @@ require_once('./dbconn.php');
 
     <div class="grid-five">
       <div class="container">
-        <p>If you look up English defintion of the word <a href="https://www.dictionary.com/browse/blooper"><span style="color:yellowgreen">"blooper"</a></span> what you'll get is that it's an embarassing error you make publicly. Although we don't belive the mistakes you'll find here are embarrasing, we do belive correcting them will be a small step forward in your language learning. Think of this quiz as a nice amo to your arsenal on your English learning journey. Dont' forget to enjoy the process! </p>
+        <p>If you look up English defintion of the word <a href="https://www.dictionary.com/browse/blooper"><span style="color:yellowgreen">"blooper"</a></span> what you'll get is that it's an embarassing error you make publicly. Although we don't think the mistakes you'll find here are embarrasing, we do believe correcting them will be a small step forward in your language learning. Think of this quiz as a nice amo to your arsenal on your English learning journey. Dont' forget to enjoy the process! </p>
       </div>
       <div class="container">
         <p>Let's face it. It's not an easy task to learn another language and communicate your ideas in it. English, however omnipresent in this world, is no exception. No worries, we're here to help a little with that.</p>
@@ -76,11 +76,15 @@ require_once('./dbconn.php');
         <header>Case Studies</header>
         </p>Case 1) The example of Michel Telo's hit</p>
         <p> In this case, a hugely popular Brazilian song has a bit of a rough reading in English. Among other smaller bloopers the title "If I catch you" gives it away as something clumsily translated from Portuguese. Even the mainstream showbusiness is not free from an occasional blunder</p>
-        <iframe width="380" height="250" src="https://www.youtube.com/embed/CwC5BFX7rqQ">
+        <div class="yt-resp">
+        <iframe class="iframe-resp" src="https://www.youtube.com/embed/CwC5BFX7rqQ">
         </iframe>
-        <p> Below is a much better version where the American singer Pitbull gives the lyrics his own spin. "If I catch you" becomes "If I get you" and "this way you're gonna kill me" translates into "you're playing hard to get". Good job Pitubull! </p>
-        <iframe width="380" height="250" src="https://www.youtube.com/embed/bMMnn2kA_HY">
+        </div>
+        <p> Below is a much better version where the American singer Pitbull gives the lyrics his own spin. "If I catch you" becomes "If I get you" and "this way you're gonna kill me" translates into "you're playing hard to get". Good job Pitubull!</p>
+        <div class="yt-resp">
+        <iframe class="iframe-resp" src="https://www.youtube.com/embed/bMMnn2kA_HY">
         </iframe>
+        </div>
 
 
       </div>
@@ -88,35 +92,12 @@ require_once('./dbconn.php');
       <header>Case Studies</header>
         <p> Case 2)Marilia Gabriela's interview with the one and only Madonna</p>
         <p> This interview is plainly awkward and actually some part of it is the inability of the Brazilian Jouranalist to get her English on the right track. Madonna certainly was not in the mood to help her.
-        <iframe width="380" height="250" src="https://www.youtube.com/embed/zHMhLd4MUC4">
+        <div class="yt-resp">
+        <iframe class="iframe-resp" src="https://www.youtube.com/embed/zHMhLd4MUC4">
         </iframe>
-
+        </div>
       </div>
     </div>
-
-    <style>
-      .grid-five {
-
-        /* Activate grid layout */
-        display: grid;
-
-        /* Create 3 columns, each 1 "fractional unit" wide */
-        grid-template-columns: 1fr 1fr 1fr;
-
-        /* Add a 10px gap between columns and rows */
-        grid-column-gap: 10px;
-        grid-row-gap: 10px;
-
-      }
-
-      .grid-two {
-
-        display: grid;
-        grid-template-columns: 4fr 3fr 0fr;
-        grid-gap: 10px;
-
-      }
-    </style>
 
   </div>
 
@@ -254,11 +235,22 @@ require_once('./dbconn.php');
     <ul>
       <li>Each question is worth 2 points</li>
       <li>Only one answer is correct</li>
-      <li>The explanations pop up after each answer</li>
+      <li>The explanations pop up after each segment</li>
 
     </ul>
 
   </div>
+
+  <!--explanation pop up
+
+  <div id='exp-1'>
+
+  <p>We use 'wear' to talk about things we put on our body, like clothes makeup, perfume</p>
+  <p>We use 'use' to talk about things we use to do something, for a purpose like phones,influence </p>
+
+
+
+  </div>-->
 
 
 
@@ -506,8 +498,8 @@ require_once('./dbconn.php');
 
 
                     $("#start").html(data);
-                    $("#start").prepend("<p><b>Fill in the blanks:</b> </p>");
-                    $("#start").append("<button> Next </button>");
+                    $("#start").prepend("<p><b><u><i>Choose the correct answer:</u></i></b></p>");
+                    $("#start").append("<button id='nextBtn'>Next</button>");
 
 
                   }
