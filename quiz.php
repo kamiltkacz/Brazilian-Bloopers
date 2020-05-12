@@ -19,21 +19,27 @@ while ($r = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
 
     $ex = explode($target, $r['question']);
 
-    echo '<br><br>' . $ex[0];
+    echo '<br><br>'. $ex[0];
+
+    echo '<hr>';
 
 
-    echo '<select>';
 
    while ($r2 = mysqli_fetch_array($result2, MYSQLI_ASSOC)) {
+/* $r2 [0]. [1] etc
 
-
-        echo '<option>' . $r2['offeredAnswer'] . '</option>';
+        echo '<input type="radio">'
+        . $r2['offeredAnswer']
+        . '</input>';
     }
 
-    echo '</select>';
+    echo '<hr style="width:50%">';
 
-/* end of question*/
+
     echo $ex[1];
 }
+
+
+
 
 ?>
