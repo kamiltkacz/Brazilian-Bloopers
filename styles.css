@@ -171,6 +171,33 @@ p#instr {
   border-radius: 8px;
   cursor: pointer;
 }
+#backHome-1 {
+  background-color: whitesmoke;
+  color: #0f1403;
+  font-family: inherit;
+  font-size: 17px;
+  padding: 5px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-right: 10px;
+
+}
+#backHome-2 {
+  background-color: whitesmoke;
+  color: #0f1403;
+  font-family: inherit;
+  font-size: 17px;
+  padding: 5px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-right: 10px;
+
+}
+
+
+
 
 
 
