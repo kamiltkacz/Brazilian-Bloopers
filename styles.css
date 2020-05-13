@@ -63,15 +63,15 @@ list-style-position: outside;
 .yt-resp {
   position: relative;
   overflow: hidden;
-  padding-top: 56.25%;
+  padding-top: 46.25%;
 }
 
 .iframe-resp {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 80%;
   border: 0;
 }
 
@@ -173,7 +173,7 @@ p#instr {
 }
 #backHome-1 {
   background-color: whitesmoke;
-  color: #0f1403;
+  color: #000000;
   font-family: inherit;
   font-size: 17px;
   padding: 5px;
@@ -185,7 +185,7 @@ p#instr {
 }
 #backHome-2 {
   background-color: whitesmoke;
-  color: #0f1403;
+  color: #000000;
   font-family: inherit;
   font-size: 17px;
   padding: 5px;
