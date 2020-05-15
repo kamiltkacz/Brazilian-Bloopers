@@ -39,7 +39,7 @@ require_once('./dbconn.php');
 </head>
 
 <body>
-
+<div class="tabs">
   <button class="tablink" onclick="openPage('Home', this)" ; id="defaultOpen">
     <a href="#" class="active">Home</a>
   </button>
@@ -52,7 +52,7 @@ require_once('./dbconn.php');
   <button class="tablink" onclick="openPage('Contact Us', this);">
     <a href="#" class="active">Contact</a>
   </button>
-
+</div>
 
 
   <div id="Home" class="tabcontent">
@@ -686,6 +686,17 @@ require_once('./dbconn.php');
     }
     // Get the element with id="defaultOpen" and click on it
     document.getElementById("defaultOpen").click();
+
+    // flex tabs
+
+    const flextab = document.querySelectorAll('.tablink');
+
+    function toggleOpen() {
+      console.log('hello');
+      this.classList.toggle('open');
+
+    }
+    flextab.forEach(tablink => tablink.addEventListener('onmouseover', toggleOpen()));
 
     //MAIN POP UP
     $(function() {

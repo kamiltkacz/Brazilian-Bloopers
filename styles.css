@@ -30,6 +30,27 @@ p {
   font-family: 'Patua One', cursive;
   width: 25%;
   border-radius: 20px;
+  display: flex;
+  transition:
+  font-size 0.7s cubic-bezier cubic-bezier(0.61,-0.19, 0.7,-0.11),
+  flex 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+  background 0.2s;
+  flex: 1;
+  flex-direction: column;
+}
+
+.tabs {
+
+  display: flex;
+
+
+
+}
+
+.tablink.open {
+  /*it will get bigger!!*/
+  flex: 5;
+  font-size: 30px;
 }
 
 /* Style the tab content (and add height:100% for full page content) */
