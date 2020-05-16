@@ -37,15 +37,15 @@ p {
   background 0.2s;
   flex: 1;
   flex-direction: column;
+
 }
 
 .tabs {
 
   display: flex;
 
-
-
 }
+/* Doesn not work - check
 
 .tablink.open {
   /*it will get bigger!!*/

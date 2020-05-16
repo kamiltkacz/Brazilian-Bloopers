@@ -512,13 +512,6 @@ require_once('./dbconn.php');
 
 
             });
-          /*  console.log("here");
-            $('.q-1').on("click", function(){
-
-              $(this).remove();
-
-            });*/
-
 
 
           }
@@ -673,6 +666,7 @@ require_once('./dbconn.php');
 
     function openPage(pageName, elmnt, color) {
       var i, tabcontent, tablinks;
+
       tabcontent = document.getElementsByClassName("tabcontent");
       for (i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display = "none";
@@ -687,16 +681,14 @@ require_once('./dbconn.php');
     // Get the element with id="defaultOpen" and click on it
     document.getElementById("defaultOpen").click();
 
-    // flex tabs
+    // flex tabs /05/16 try individual tablinks effect
 
-    const flextab = document.querySelectorAll('.tablink');
+   /* $(".tabs").mouseover(function(){
+    $(".tablink").toggle(".tablink-open");
+    });*/
 
-    function toggleOpen() {
-      console.log('hello');
-      this.classList.toggle('open');
 
-    }
-    flextab.forEach(tablink => tablink.addEventListener('onmouseover', toggleOpen()));
+
 
     //MAIN POP UP
     $(function() {
