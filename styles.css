@@ -225,6 +225,13 @@ p#instr {
   font-size: 90%;
 }
 
+ #quiz {
+
+  display: none;
+
+
+}
+
 /* CONTACT FORM Style inputs with type="text", select elements and textareas */
 input[type="text"],
 select,
