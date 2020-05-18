@@ -39,20 +39,20 @@ require_once('./dbconn.php');
 </head>
 
 <body>
-<div class="tabs">
-  <button class="tablink" onclick="openPage('Home', this)" ; id="defaultOpen">
-    <a href="#" class="active">Home</a>
-  </button>
-  <button class="tablink" onclick="openPage('The Quiz', this);">
-    <a href="#" class="active">The Quiz</a>
-  </button>
-  <button class="tablink" onclick="openPage('About', this);">
-    <a href="#" class="active">About Us</a>
-  </button>
-  <button class="tablink" onclick="openPage('Contact Us', this);">
-    <a href="#" class="active">Contact</a>
-  </button>
-</div>
+  <div class="tabs">
+    <button class="tablink" onclick="openPage('Home', this)" ; id="defaultOpen">
+      <a href="#" class="active">Home</a>
+    </button>
+    <button class="tablink" onclick="openPage('The Quiz', this);">
+      <a href="#" class="active">The Quiz</a>
+    </button>
+    <button class="tablink" onclick="openPage('About', this);">
+      <a href="#" class="active">About Us</a>
+    </button>
+    <button class="tablink" onclick="openPage('Contact Us', this);">
+      <a href="#" class="active">Contact</a>
+    </button>
+  </div>
 
 
   <div id="Home" class="tabcontent">
@@ -77,25 +77,25 @@ require_once('./dbconn.php');
         </p>Case 1) The example of Michel Telo's hit</p>
         <p> In this case, a hugely popular Brazilian song has a bit of a rough reading in English. Among other smaller bloopers the title "If I catch you" gives it away as something clumsily translated from Portuguese. Even the mainstream showbusiness is not free from an occasional blunder</p>
         <div class="yt-resp">
-        <iframe class="iframe-resp" src="https://www.youtube.com/embed/CwC5BFX7rqQ">
-        </iframe>
+          <iframe class="iframe-resp" src="https://www.youtube.com/embed/CwC5BFX7rqQ">
+          </iframe>
         </div>
         <p> Below is a much better version where the American singer Pitbull gives the lyrics his own spin. "If I catch you" becomes "If I get you" and "this way you're gonna kill me" translates into "you're playing hard to get". Good job Pitubull!</p>
         <div class="yt-resp">
-        <iframe class="iframe-resp" src="https://www.youtube.com/embed/bMMnn2kA_HY">
-        </iframe>
+          <iframe class="iframe-resp" src="https://www.youtube.com/embed/bMMnn2kA_HY">
+          </iframe>
         </div>
 
 
       </div>
       <div class="container">
-      <header>Case Studies</header>
+        <header>Case Studies</header>
         <p> Case 2)Marilia Gabriela's interview with the one and only Madonna</p>
         <p> This interview is plainly awkward and actually some part of it is the inability of the Brazilian Jouranalist to get her English on the right track. Madonna certainly was not in the mood to help her.
-        <div class="yt-resp">
-        <iframe class="iframe-resp" src="https://www.youtube.com/embed/zHMhLd4MUC4">
-        </iframe>
-        </div>
+          <div class="yt-resp">
+            <iframe class="iframe-resp" src="https://www.youtube.com/embed/zHMhLd4MUC4">
+            </iframe>
+          </div>
       </div>
     </div>
 
@@ -238,20 +238,54 @@ require_once('./dbconn.php');
       <li>The explanations pop up after each segment</li>
 
     </ul>
-
   </div>
 
-  <!--explanation pop up
+  <!-- QUIZ Display None-->
+<div id="quiz">
+  <form id="quiz" method="post" action="actions.php">
 
-  <div id='exp-1'>
+    <div id="dialogue_1">
 
-  <p>We use 'wear' to talk about things we put on our body, like clothes makeup, perfume</p>
-  <p>We use 'use' to talk about things we use to do something, for a purpose like phones,influence </p>
+      <h3>Read the dialogue between two co-workers and choose the best option in a-k</h3>
+
+      <p>1)Liz: Today is casual Friday. Why are you ..(a).. a suit?</p>
+      <p>2)Mike: Right after work I'm going on a date with Mary from Accounting.
+        <p>Lix I saw her down the hallway. That's why she's ..(b).. all this makeup!
+          <p>Mike: Yes, I like women who ..(c).. tons of lipstick and perfume.
+            <p>Liz: Do you like it when women ..(d).. high heels too?
+              <p>Mike: Yeah, I do. I'm happy she's ..(e).. them today.
+                <p>Liz: They're quite uncomfortable, you know. I usually prefer to ..(f).. flat shoes, even on dates.
+                  <p>Mike: I can imagine. I have to thank Mary for making this sacrifice for me</p>
+                  <p>Liz: Does Mary like to ..(g).. jewelry?
+                    <p>Mike: Oh, yeah she really enjoys ..(h).. rings and neckleces.
+                      <p>Liz: What about women who ..(l).. sunglasses everywhere?</p>
+
+                      <p>Mike: No, not my thing. When they ..(k).. glasses everywhere I can't see their eyes</p>
+                      <p>Liz: Well, you seem to have a type. Have a good time tonight!
+    </div>
+
+    <div id="ques_1">
+      <input type="radio" id="wear1" class="q1" name="wear" value="onlywear"><label for="wear1">Only "To Wear" is correct</label>
+      <input type="radio" id="wear2" class="q1" name="wear" value="onlyuse"><label for="wear2">Only "To Use" is correct</label>
+      <input type="radio" id="wear3" class="q1" name="wear" value="both fine"><label for="wear3">Both are fine</label>
+
+    </div>
+
+    <button type="button" id="check" type="submit" name="check_first">Check</button>
 
 
 
-  </div>-->
+    <!--explanation pop up
 
+           <div id="exp_1">
+             <p>We use 'wear' to talk about things we put on our body, like clothes makeup, perfume</p>
+               <p>We use 'use' to talk about things we use to do something, for a purpose like phones,influence </p>
+           </div>-->
+
+
+
+  </form>
+</div>
 
 
   <script>
@@ -345,12 +379,12 @@ require_once('./dbconn.php');
     $("#submit_survey").on("click", function() {
 
       var formData = $("#survey :input").serializeArray();
-
       formData[formData.length] = {
         name: "action",
         value: "submit_survey"
       };
       formData.push({});
+
       $.ajax({
         type: "POST",
         url: $("#survey").attr("action"),
@@ -359,8 +393,6 @@ require_once('./dbconn.php');
         async: true,
         success: function(result) {
 
-
-
           if (result.genderErr == "empty") {
             $("#bor_gender").css({
               "border-bottom": "5px solid red",
@@ -368,7 +400,6 @@ require_once('./dbconn.php');
             });
             $("#span_gender").text(" * ");
             $("#valmsg").show();
-
           }
 
           if (result.ageErr == "empty") {
@@ -480,31 +511,14 @@ require_once('./dbconn.php');
 
             });
 
+           //let page_one = $("#quiz");
+
             $(document).ready(function() {
 
               $("#start_quiz").on("click", function() {
 
-                var formData = {
-                  'test': 'test'
-                };
+                $("#quiz").show();
 
-                $.ajax({
-                  type: "GET",
-                  url: "https://brazilianbloopers.com/quiz.php",
-                  data: formData,
-                  //dataType: 'json',
-                  async: true,
-                  success: function(data) {
-
-
-                    $("#start").html(data);
-                    $("#start").prepend("<p><b><u><i>Choose the correct answer:</u></i></b></p>");
-                    $("#start").append("<button id='backHome-2'><a href='https://www.brazilianbloopers.com' style='color: black'>Home</a></button>", "<button id='nextBtn'>Next</button>");
-
-
-                  }
-
-                });
 
               });
 
@@ -681,9 +695,9 @@ require_once('./dbconn.php');
 
     // flex tabs /05/16 try individual tablinks effect
 
-   /* $(".tabs").mouseover(function(){
-    $(".tablink").toggle(".tablink-open");
-    });*/
+    /* $(".tabs").mouseover(function(){
+     $(".tablink").toggle(".tablink-open");
+     });*/
 
 
 
@@ -708,6 +722,6 @@ require_once('./dbconn.php');
 
 
 
-  </body>
+</body>
 
 </html>
