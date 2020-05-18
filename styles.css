@@ -6,12 +6,13 @@ html {
   background-color: #000;
   font-family: 'Patua One', cursive;
   font-size: 20px;
+  color: #f5f5dc;
 }
 
-/* All a links */
+/* All 'a' links */
 a {
   text-decoration: none;
-  color: #eee;
+  color: #f5f5dc;
   font-weight: 200;
 }
 p {
@@ -21,7 +22,7 @@ p {
 /* Style tab links */
 .tablink {
   background-color: #b9ff3b69;
-  color: #f0f0f0;
+  color: #f5f5dc;
   float: left;
   border: none;
   outline: none;
@@ -30,28 +31,10 @@ p {
   font-family: 'Patua One', cursive;
   width: 25%;
   border-radius: 20px;
-  display: flex;
-  transition:
-  font-size 0.7s cubic-bezier cubic-bezier(0.61,-0.19, 0.7,-0.11),
-  flex 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
-  background 0.2s;
-  flex: 1;
-  flex-direction: column;
 
 }
 
-.tabs {
 
-  display: flex;
-
-}
-/* Doesn not work - check
-
-.tablink.open {
-  /*it will get bigger!!*/
-  flex: 5;
-  font-size: 30px;
-}
 
 /* Style the tab content (and add height:100% for full page content) */
 .tabcontent {
