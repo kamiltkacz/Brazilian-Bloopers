@@ -62,7 +62,7 @@ require_once('./dbconn.php');
 
     <div class="grid-five">
       <div class="container">
-        <p>If you look up English defintion of the word <a href="https://www.dictionary.com/browse/blooper"><span style="color:yellowgreen">"blooper"</a></span> what you'll get is that it's an embarassing error you make publicly. Although we don't think the mistakes you'll find here are embarrasing, we do believe correcting them will be a small step forward in your language learning. Think of this quiz as a nice amo to your arsenal on your English learning journey. Dont' forget to enjoy the process! </p>
+        <p>If you look up English defintion of the word <a href="https://www.dictionary.com/browse/blooper"><span style="color:yellowgreen">'blooper'</a></span> what you'll get is that it's an embarassing error you make publicly. Although we don't think the mistakes you'll find here are embarrasing, we do believe correcting them will be a small step forward in your language learning. Think of this quiz as a nice amo to your arsenal on your English learning journey. Dont' forget to enjoy the process! </p>
       </div>
       <div class="container">
         <p>Let's face it. It's not an easy task to learn another language and communicate your ideas in it. English, however omnipresent in this world, is no exception. No worries, we're here to help a little with that.</p>
@@ -469,9 +469,7 @@ require_once('./dbconn.php');
 
               $('#instr').hover(function(e) {
                 $('#inst_popup').show();
-                //.css('top', e.pageY + moveDown)
-                //.css('left', e.pageX + moveLeft)
-                //.appendTo('body');
+
               }, function() {
                 $('#inst_popup').hide();
               });
