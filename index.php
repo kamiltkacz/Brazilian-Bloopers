@@ -69,7 +69,7 @@ require_once('./dbconn.php');
       </div>
       <div class="container">
         <Picture>
-          <p> Dialog between a teacher (A) and student (B): A)Did you like the movie?<br>B)Yes, I liked!<br> A)Hmmm...</p>
+          <p> Dialog between a teacher (A) and student (B). A) Did you like the movie?<br>B) Yes, I liked!<br> A) Hmmm...</p>
         </Picture>
       </div>
       <div class="container">
@@ -124,7 +124,7 @@ require_once('./dbconn.php');
 
       <fieldset id="field_about">
         <legend>About the quiz</legend>
-        <h4>The quiz is the fruit of labor of a group of English teachers who noticed the various Brazilian mistakes that students make when speaking English. Among the bloopers you'll find false cognates, idiomatic expressions, incomplete phrases, etc.<br><br> questions range in difficulty and get harder progressively. Some mistakes are more common and some less frequent but all of them share the peculiarity of the Portuguese language that sometimes does not translate well into common English. Even though many of the bloopers are intelligible to English speakers, you would be better off finding a more common alternative.<br><br> But don't be too hard on yourself - It's okay if you have a piece of Brazil that never leaves your brain, plus why not let the gringo do some thinking? <br><br> Ready? </h4>
+        <h4>The quiz is the fruit of labor of a group of English teachers who noticed the various Brazilian mistakes that students make when speaking English. Among the bloopers you'll find false cognates, idiomatic expressions, incomplete phrases, etc. You'll be presented witha series of dialogues. You have to use your judgement when picking the only one correct answer.<br><br> We won't grade your performance on the quiz using a conventional point-score system. We think it's kind of boring. Instead we'll match your result with a Brazilian public persona and their English skills. These celebrieties' English chops vary somewhat drastically, so beware. Questions range in difficulty and get harder progressively. Some mistakes are more common and some less frequent but all of them share the peculiarity of the Portuguese language that sometimes does not translate well into common English. Even though many of the bloopers are intelligible to English speakers, you would be better off finding a more common alternative.<br><br> But don't be too hard on yourself - It's okay if you have a piece of Brazil that never leaves your brain, plus why not let the gringo do some thinking? <br><br> Ready? </h4>
       </fieldset>
     </div>
 
@@ -221,71 +221,29 @@ require_once('./dbconn.php');
 
 
 
-          </div>
+            </div>
+
         </div>
-      </div>
+      </div>s
     </form>
 
   </div>
 
-  <!--mouseover instructions in a HIDDEN DIV -->
+  <!--mouseover instructions in CSS: Dispaly None DIV -->
 
   <div id="inst_popup">
     <p id="gen_instr"><u>General Instructions</u></p>
     <ul>
-      <li>Each question is worth 2 points</li>
+
       <li>Only one answer is correct</li>
       <li>The explanations pop up after each segment</li>
 
     </ul>
   </div>
 
-  <!-- QUIZ Display None-->
-<div id="quiz">
-  <form id="quiz" method="post" action="actions.php">
-
-    <div id="dialogue_1">
-
-      <h3>Read the dialogue between two co-workers and choose the best option in a-k</h3>
-
-      <p>1)Liz: Today is casual Friday. Why are you ..(a).. a suit?</p>
-      <p>2)Mike: Right after work I'm going on a date with Mary from Accounting.
-        <p>Lix I saw her down the hallway. That's why she's ..(b).. all this makeup!
-          <p>Mike: Yes, I like women who ..(c).. tons of lipstick and perfume.
-            <p>Liz: Do you like it when women ..(d).. high heels too?
-              <p>Mike: Yeah, I do. I'm happy she's ..(e).. them today.
-                <p>Liz: They're quite uncomfortable, you know. I usually prefer to ..(f).. flat shoes, even on dates.
-                  <p>Mike: I can imagine. I have to thank Mary for making this sacrifice for me</p>
-                  <p>Liz: Does Mary like to ..(g).. jewelry?
-                    <p>Mike: Oh, yeah she really enjoys ..(h).. rings and neckleces.
-                      <p>Liz: What about women who ..(l).. sunglasses everywhere?</p>
-
-                      <p>Mike: No, not my thing. When they ..(k).. glasses everywhere I can't see their eyes</p>
-                      <p>Liz: Well, you seem to have a type. Have a good time tonight!
-    </div>
-
-    <div id="ques_1">
-      <input type="radio" id="wear1" class="q1" name="wear" value="onlywear"><label for="wear1">Only "To Wear" is correct</label>
-      <input type="radio" id="wear2" class="q1" name="wear" value="onlyuse"><label for="wear2">Only "To Use" is correct</label>
-      <input type="radio" id="wear3" class="q1" name="wear" value="both fine"><label for="wear3">Both are fine</label>
-
-    </div>
-
-    <button type="button" id="check" type="submit" name="check_first">Check</button>
 
 
 
-    <!--explanation pop up
-
-           <div id="exp_1">
-             <p>We use 'wear' to talk about things we put on our body, like clothes makeup, perfume</p>
-               <p>We use 'use' to talk about things we use to do something, for a purpose like phones,influence </p>
-           </div>-->
-
-
-
-  </form>
-</div>
 
 
   <script>
@@ -485,7 +443,7 @@ require_once('./dbconn.php');
               <button id='backHome-1'><a href='https://www.brazilianbloopers.com' style='color: black'>Home</a></button>\
 
              <p id="instr" name="instructions">Instructions</p>\
-              <button type="button" id="start_quiz" type="submit" name="startquiz">Start</button>\
+              <button type="submit" id="start_quiz" name="startquiz">Start</button>\
               </div>\
 
                           `);
@@ -499,10 +457,10 @@ require_once('./dbconn.php');
               var moveDown = 10;
 
               $('#instr').hover(function(e) {
-                $('#inst_popup').show();
+                $('#inst_popup').show("slow");
 
               }, function() {
-                $('#inst_popup').hide();
+                $('#inst_popup').hide("slow");
               });
 
               $('#instr').mousemove(function(e) {
@@ -511,14 +469,61 @@ require_once('./dbconn.php');
 
             });
 
-           //let page_one = $("#quiz");
+
+               let page_one = $(`
+                  <div class="quiz">
+                    <form id="quiz_form" method="post" action="actions.php">
+
+                      <div id="dialogue_1">
+
+                        <h3>Read the dialogues and select the best option for the blank spaces</h3>
+
+                        <h5>Situation 1</h5>
+
+                          <p>Liz: Today is casual Friday. Why are you .... a suit?</p>
+                          <p>Mike: Right after work I'm going on a date with Mary from Accounting.
+                          <p>Liz: I saw her down the hallway. That's why she's .... all this makeup!
+
+                          <h5>Situation 2</h5>
+
+
+                          <p>Mike: Headphones.
+                          <p>Liz: Do you like it when women ... high heels too?
+                          <p>Mike: Yeah, I do. I'm happy she's .... them today.
+                          <p>Liz: They're quite uncomfortable, you know. I usually prefer to .... flat shoes, even on dates.
+
+                          <h5>Situation 3</h5>
+
+
+                          <p>Mike: Perfume </p>
+                          <p>Liz: .... jewelry?
+                          <p>Mike: .... rings and neckleces.
+                          <p>Liz: .</p>
+
+                          <p>Mike: No, not my thing. When they ..(k).. glasses everywhere I can't see their eyes</p>
+                          <p>Liz: Well, you seem to have a type. Have a good time tonight!
+                      </div>
+
+                      <div id="ques_1">
+                            <input type="radio" id="wear1" class="q1" name="wear" value="onlywear"><label for="wear1">Only "To Wear" is correct</label>
+                            <input type="radio" id="wear2" class="q1" name="wear" value="onlyuse"><label for="wear2">Only "To Use" is correct</label>
+                            <input type="radio" id="wear3" class="q1" name="wear" value="both fine"><label for="wear3">Both are fine</label>
+
+                      </div>
+                              <button id='backHome-1'><a href='https://www.brazilianbloopers.com' style='color: black'>Home</a></button>
+                              <button type="button" id="checkBtn" type="submit" name="check_first">Check</button>
+
+                    </form>
+                    </div>
+
+
+                              `);
 
             $(document).ready(function() {
 
               $("#start_quiz").on("click", function() {
 
-                $("#quiz").show();
-
+                $("#popup-empty").html(page_one);
 
               });
 
