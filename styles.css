@@ -19,6 +19,18 @@ p {
   word-spacing: 3px;
 }
 
+h4 {
+
+  font-weight: normal;
+
+
+}
+
+h3 {
+color: #f5f5dc;
+
+}
+
 /* Style tab links */
 .tablink {
   background-color: #b9ff3b69;
@@ -38,7 +50,7 @@ p {
 
 /* Style the tab content (and add height:100% for full page content) */
 .tabcontent {
-  color: #eee;
+  color: #f5f5dc;
   display: none;
   padding: 100px 19px;
   height: 100%;
@@ -225,10 +237,17 @@ p#instr {
   font-size: 90%;
 }
 
- #quiz {
 
-  display: none;
-
+#checkBtn {
+background-color: whitesmoke;
+color: #000000;
+font-family: inherit;
+font-size: 17px;
+padding: 5px;
+border-radius: 8px;
+cursor: pointer;
+margin-top: 10px;
+margin-right: 10px;
 
 }
 
