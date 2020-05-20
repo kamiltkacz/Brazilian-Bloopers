@@ -145,6 +145,13 @@ require_once('./dbconn.php');
       </fieldset>
     </div>
 
+  <!--QUIZZ TESTS-->
+
+
+
+
+
+
     <form id="survey" method="post" action="actions.php">
       <div class="popup" data-popup="popup-1">
 
@@ -224,10 +231,25 @@ require_once('./dbconn.php');
             </div>
 
         </div>
-      </div>s
+      </div>
     </form>
 
   </div>
+  <!-- Quiz -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   <!--mouseover instructions in CSS: Dispaly None DIV -->
 
@@ -470,8 +492,7 @@ require_once('./dbconn.php');
             });
 
 
-               let page_one = $(`
-                  <div class="quiz">
+               let page_one = $(`<div class="quiz">
                     <form id="quiz_form" method="post" action="actions.php">
 
                       <div id="dialogue_1">
@@ -480,36 +501,49 @@ require_once('./dbconn.php');
 
                         <h5>Situation 1</h5>
 
-                          <p>Liz: Today is casual Friday. Why are you .... a suit?</p>
+                          <p>Liz: Today is casual Friday. Why are you<select id="wear_one" name="sit_one">
+                            <option value="using">using</option>
+                            <option value="wearing">wearing</option>
+                            <option value="both_fine">both are fine</option>
+                          </select>a suit?</p>
                           <p>Mike: Right after work I'm going on a date with Mary from Accounting.
-                          <p>Liz: I saw her down the hallway. That's why she's .... all this makeup!
+                          <p>Liz: I saw her down the hallway. That's why she's <select id="wear_two" name="sit_one">
+                            <option value="wearing">wearing</option>
+                            <option value="using">using</option>
+                            <option value="both_fine">both are fine</option>
+                          </select> all this perfume and makeup!</p>
 
                           <h5>Situation 2</h5>
 
 
-                          <p>Mike: Headphones.
-                          <p>Liz: Do you like it when women ... high heels too?
-                          <p>Mike: Yeah, I do. I'm happy she's .... them today.
-                          <p>Liz: They're quite uncomfortable, you know. I usually prefer to .... flat shoes, even on dates.
+                          <p>Mother: Can you stop <select id="sit_two" name="sit_one">
+                            <option value="wearing">wearing</option>
+                            <option value="using">using</option>
+                            <option value="both_fine">both are fine</option></select> your phone during dinner?</p>
+                          <p>Son: I can't, the world is too interesting!</p>
+                          <p>Mother: Well, can you at least stop <select id="wear_two" name="sit_one">
+                            <option value="wearing">wearing</option>
+                            <option value="using">using</option>
+                            <option value="both_fine">both are fine</option></select> while we're eating.</p>
+
 
                           <h5>Situation 3</h5>
 
 
-                          <p>Mike: Perfume </p>
-                          <p>Liz: .... jewelry?
-                          <p>Mike: .... rings and neckleces.
-                          <p>Liz: .</p>
-
-                          <p>Mike: No, not my thing. When they ..(k).. glasses everywhere I can't see their eyes</p>
-                          <p>Liz: Well, you seem to have a type. Have a good time tonight!
-                      </div>
-
-                      <div id="ques_1">
-                            <input type="radio" id="wear1" class="q1" name="wear" value="onlywear"><label for="wear1">Only "To Wear" is correct</label>
-                            <input type="radio" id="wear2" class="q1" name="wear" value="onlyuse"><label for="wear2">Only "To Use" is correct</label>
-                            <input type="radio" id="wear3" class="q1" name="wear" value="both fine"><label for="wear3">Both are fine</label>
+                          <p>Foreigner: Do many people <select id="wear_two" name="sit_one">
+                            <option value="wear">wearing</option>
+                            <option value="use">using</option>
+                            <option value="both_fine">both are fine</option> </select> in Brazil </p>
+                          <p>Brazilian: Yes, it's quite common for children and adults.</p>
+                          <p>Foreigner: Do you guys <select id="wear_two" name="sit_one">
+                            <option value="wear">wear</option>
+                            <option value="use">use</option>
+                            <option value="both_fine">both are fine</option></select> a special toothpaste too. Everybody's teeth are so white!</p>
+                          <p>brazilian: No, the tootpaste is standard.</p>
 
                       </div>
+
+
                               <button id='backHome-1'><a href='https://www.brazilianbloopers.com' style='color: black'>Home</a></button>
                               <button type="button" id="checkBtn" type="submit" name="check_first">Check</button>
 
