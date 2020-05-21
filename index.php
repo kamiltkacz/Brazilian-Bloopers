@@ -69,7 +69,7 @@ require_once('./dbconn.php');
       </div>
       <div class="container">
         <Picture>
-          <p> Dialog between a teacher (A) and student (B). A) Did you like the movie?<br>B) Yes, I liked!<br> A) Hmmm...</p>
+          <p> Dialog between an English teacher (A) and student (B). A) Did you like the movie?<br>B) Yes, I liked!<br> A) Hmmm...&#129300;</p>
         </Picture>
       </div>
       <div class="container">
@@ -124,7 +124,7 @@ require_once('./dbconn.php');
 
       <fieldset id="field_about">
         <legend>About the quiz</legend>
-        <h4>The quiz is the fruit of labor of a group of English teachers who noticed the various Brazilian mistakes that students make when speaking English. Among the bloopers you'll find false cognates, idiomatic expressions, incomplete phrases, etc. You'll be presented witha series of dialogues. You have to use your judgement when picking the only one correct answer.<br><br> We won't grade your performance on the quiz using a conventional point-score system. We think it's kind of boring. Instead we'll match your result with a Brazilian public persona and their English skills. These celebrieties' English chops vary somewhat drastically, so beware. Questions range in difficulty and get harder progressively. Some mistakes are more common and some less frequent but all of them share the peculiarity of the Portuguese language that sometimes does not translate well into common English. Even though many of the bloopers are intelligible to English speakers, you would be better off finding a more common alternative.<br><br> But don't be too hard on yourself - It's okay if you have a piece of Brazil that never leaves your brain, plus why not let the gringo do some thinking? <br><br> Ready? </h4>
+        <h4>The quiz is the fruit of labor of a group of English teachers who noticed the various Brazilian mistakes that students make when speaking English. Among the bloopers you'll find false cognates, idiomatic expressions, incomplete phrases, etc. You'll be presented witha series of dialogues. You have to use your judgement when picking the only one correct answer.<br><br> We won't grade your performance on the quiz using a conventional point-score system. We think that's kind of boring. Instead we'll match your result with a Brazilian public persona and their English skills. These celebrieties' English chops vary somewhat drastically, so beware. Questions range in difficulty and get harder progressively. Some mistakes are more common and some less frequent but all of them share the peculiarity of the Portuguese language that sometimes does not translate well into common English. Even though many of the bloopers are intelligible to English speakers, you would be better off finding a more common alternative.<br><br> But don't be too hard on yourself - It's okay if you have a piece of Brazil that never leaves your brain, plus why not let the gringo do some thinking? <br><br> Ready? </h4>
       </fieldset>
     </div>
 
@@ -392,8 +392,6 @@ require_once('./dbconn.php');
 
           }
 
-
-
           if (result.yearsErr == "empty") {
             $("#bor_years").css({
               "border-bottom": "5px solid red",
@@ -491,8 +489,9 @@ require_once('./dbconn.php');
 
             });
 
+            // Quiz - First Page
 
-               let page_one = $(`<div class="quiz">
+            var page_one = $(`<div class="quiz">
                     <form id="quiz_form" method="post" action="actions.php">
 
                       <div id="dialogue_1">
@@ -561,11 +560,57 @@ require_once('./dbconn.php');
 
               });
 
-
             });
 
+            // Check Button => Submit first page
 
-          }
+             // Survey Data - on(click)
+
+            //  $("#quiz_form").submit(function() {
+            //  return false;
+            // });
+
+            // $("#checkBtn").on("click", function() {
+
+            //   var formData = $("#quiz_form :input").serializeArray();
+            //   formData[formData.length] = {
+            //   name: "action",
+            //   value: "checkBtn"
+            //   };
+            //   formData.push({});
+
+            //   $.ajax({
+            //   type: "POST",
+            //   url: $("#quiz_form").attr("action"),
+            //   data: formData,
+            //   dataType: 'json',
+            //   async: true,
+            //   success: function(result) {
+
+            //     if (result.check1 == 1) {
+            //       var checkToNxt = $('#checkBtn').replace("#submit_pg1")
+            //       return true;
+
+            //     }
+
+
+        //     } //ajax, success function 2//
+        //   }); //ajax 2//
+        // }); //submit on.click function 2//
+
+
+
+
+
+
+
+
+
+
+
+
+
+          } // (result.result == 1)
 
           if (result.result == 2) {
             Swal.fire({
@@ -581,6 +626,19 @@ require_once('./dbconn.php');
         } //ajax, success function//
       }); //ajax//
     }); //submit on.click function//
+
+
+
+
+
+
+
+
+
+
+
+
+
   </script>
 
   <div id="Contact Us" class="tabcontent">
