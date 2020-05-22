@@ -237,20 +237,6 @@ require_once('./dbconn.php');
   </div>
   <!-- Quiz -->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   <!--mouseover instructions in CSS: Dispaly None DIV -->
 
   <div id="inst_popup">
@@ -262,10 +248,6 @@ require_once('./dbconn.php');
 
     </ul>
   </div>
-
-
-
-
 
 
   <script>
@@ -498,21 +480,21 @@ require_once('./dbconn.php');
 
                         <h3>Read the dialogues and select the best option for the blank spaces</h3>
 
-                        <h5>Situation 1</h5>
+                        <h4>Situation 1</h4>
 
                           <p>Liz: Today is casual Friday. Why are you<select id="wear_one" name="sit_one">
                             <option value="using">using</option>
                             <option value="wearing">wearing</option>
                             <option value="both_fine">both are fine</option>
                           </select>a suit?</p>
-                          <p>Mike: Right after work I'm going on a date with Mary from Accounting.
-                          <p>Liz: I saw her down the hallway. That's why she's <select id="wear_two" name="sit_one">
+                          <p>Mike: I'm going on a date with Mary from Accounting, right after work.
+                          <p>Liz: I just saw her down the hallway. That's why she's <select id="wear_two" name="sit_one">
                             <option value="wearing">wearing</option>
                             <option value="using">using</option>
                             <option value="both_fine">both are fine</option>
                           </select> all this perfume and makeup!</p>
 
-                          <h5>Situation 2</h5>
+                          <h4>Situation 2</h4>
 
 
                           <p>Mother: Can you stop <select id="sit_two" name="sit_one">
@@ -600,16 +582,6 @@ require_once('./dbconn.php');
 
 
 
-
-
-
-
-
-
-
-
-
-
           } // (result.result == 1)
 
           if (result.result == 2) {
@@ -626,15 +598,6 @@ require_once('./dbconn.php');
         } //ajax, success function//
       }); //ajax//
     }); //submit on.click function//
-
-
-
-
-
-
-
-
-
 
 
 
