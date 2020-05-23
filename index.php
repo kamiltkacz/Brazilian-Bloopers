@@ -473,54 +473,59 @@ require_once('./dbconn.php');
 
             // Quiz - First Page
 
-            var page_one = $(`<div class="quiz">
+            var page_one = $(` <div class="quiz">
                     <form id="quiz_form" method="post" action="actions.php">
 
                       <div id="dialogue_1">
 
-                        <h3>Read the dialogues and select the best option for the blank spaces</h3>
+                        <h3><u>Read the dialogues and choose the best option for the blank spaces</u></h3>
 
-                        <h4>Situation 1</h4>
+                        <h4><b>SITUATION 1</b></h4>
 
-                          <p>Liz: Today is casual Friday. Why are you<select id="wear_one" name="sit_one">
-                            <option value="using">using</option>
-                            <option value="wearing">wearing</option>
-                            <option value="both_fine">both are fine</option>
-                          </select>a suit?</p>
-                          <p>Mike: I'm going on a date with Mary from Accounting, right after work.
-                          <p>Liz: I just saw her down the hallway. That's why she's <select id="wear_two" name="sit_one">
-                            <option value="wearing">wearing</option>
-                            <option value="using">using</option>
-                            <option value="both_fine">both are fine</option>
-                          </select> all this perfume and makeup!</p>
+                          <p>Liz: Do you watch the news everyday?</p>
+                          <p>Mike: Yes, I think (a) is important to know what's going on.</p>
+                          <p>Liz: I agree but sometimes (b) is difficult. There is a lot of negativity in the news.</p>
 
-                          <h4>Situation 2</h4>
+                          <p><i><u>What is missing in (a) and (b) :</i></u></p>
 
+                            <input type="radio" class="rads" name="news"> a) Contraction - " 's "</input><br>
+                            <input type="radio" class="rads" name="news"> b) The neuter subject "It" </input><br>
+                            <input type="radio" class="rads" name="news">c) Nothing is missing </input><br>
+                            <input type="radio" class="rads" name="news"> d) The word "pizza"</input>
 
-                          <p>Mother: Can you stop <select id="sit_two" name="sit_one">
-                            <option value="wearing">wearing</option>
-                            <option value="using">using</option>
-                            <option value="both_fine">both are fine</option></select> your phone during dinner?</p>
-                          <p>Son: I can't, the world is too interesting!</p>
-                          <p>Mother: Well, can you at least stop <select id="wear_two" name="sit_one">
-                            <option value="wearing">wearing</option>
-                            <option value="using">using</option>
-                            <option value="both_fine">both are fine</option></select> while we're eating.</p>
+                          <h4><b>SITUATION 2</b></h4>
 
 
-                          <h5>Situation 3</h5>
+                          <p>Cris: Look out the window! I can't believe it! (c) was sunny 5 minute ago, now (d) is raining!</p>
+                          <p>Natalie: (e) is like that here in January.
+                          <p>Cris: Wow, some weather! </p>
+
+                          <p><i><u>What is missing in (c),(d),(e):</i></u></p>
+
+                            <input type="radio" class="rads" name="weather"> a) The masculine subject - "He"</input><br>
+                            <input type="radio" class="rads" name="weather"> b) The neuter subject "It" </input><br>
+                            <input type="radio" class="rads" name="weather"> c) Nothing is missing </input><br>
+                            <input type="radio" class="rads" name="weather"> d) The subject "I"</input>
 
 
-                          <p>Foreigner: Do many people <select id="wear_two" name="sit_one">
-                            <option value="wear">wearing</option>
-                            <option value="use">using</option>
-                            <option value="both_fine">both are fine</option> </select> in Brazil </p>
-                          <p>Brazilian: Yes, it's quite common for children and adults.</p>
-                          <p>Foreigner: Do you guys <select id="wear_two" name="sit_one">
-                            <option value="wear">wear</option>
-                            <option value="use">use</option>
-                            <option value="both_fine">both are fine</option></select> a special toothpaste too. Everybody's teeth are so white!</p>
-                          <p>brazilian: No, the tootpaste is standard.</p>
+
+                          <h4>SITUATION 3</h4>
+
+                          <p>John: How far is (f) from Sao Paulo to Brasilia?</p>
+                          <p>Pedro: I don't know but (g) must be a solid 10 hour drive.</p>
+                          <p>John: I didn't know (h) takes this long.</p>
+                          <p>Pedro: How long does (l) take to get from New York to Detroit.</p>
+                          <p>John: (m) is about the same.</p>
+
+
+                          <p><i><u>What is missing in (f),(g),(h),(l),(m):</i></u></p>
+
+                          <input type="radio" class="rads" name="dist"> a) The feminine subject - "She"</input><br>
+                          <input type="radio" class="rads" name="dist"> b) The subject "It" </input><br>
+                          <input type="radio" class="rads" name="dist"> c) Nothing is missing </input><br>
+                          <input type="radio" class="rads" name="dist"> d) The word "car"</input><br>
+
+
 
                       </div>
 
@@ -529,10 +534,7 @@ require_once('./dbconn.php');
                               <button type="button" id="checkBtn" type="submit" name="check_first">Check</button>
 
                     </form>
-                    </div>
-
-
-                              `);
+                    </div>  `);
 
             $(document).ready(function() {
 
