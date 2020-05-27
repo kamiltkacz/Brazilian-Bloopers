@@ -431,160 +431,126 @@ require_once('./dbconn.php');
 
           // After data submitted do stuff here
 
-          if (result.result == 1) {
-
-
+           if (result.result == 1) {
             let startHtml = $(`
 
-              <div id="start">\
+<div id="start">\
 
-              <p><label id="start">\
-              Welcome to the Quiz!\
-              <span id="span_start" style="color:#ff0000"></span></label></p>\
+<p><label id="start">\
+Welcome to the Quiz!\
+<span id="span_start" style="color:#ff0000"></span></label></p>\
 
-              <button id='backHome-1'><a href='https://www.brazilianbloopers.com' style='color: black'>Home</a></button>\
+<button id='backHome-1'><a href='https://www.brazilianbloopers.com' style='color: black'>Home</a></button>\
 
-             <p id="instr" name="instructions">Instructions</p>\
-              <button type="submit" id="start_quiz" name="startquiz">Start</button>\
-              </div>\
+<p id="instr" name="instructions">Instructions</p>\
+<button type="submit" id="start_quiz" name="startquiz">Start</button>\
+</div>\
 
-                          `);
-
-
-            $("#popup-empty").html(startHtml);
-
-            /* Mosemove function for the instructions*/
-            $(function() {
-              var moveLeft = 20;
-              var moveDown = 10;
-
-              $('#instr').hover(function(e) {
-                $('#inst_popup').show("slow");
-
-              }, function() {
-                $('#inst_popup').hide("slow");
-              });
-
-              $('#instr').mousemove(function(e) {
-                $("#inst_popup").css('top', e.pageY + moveDown).css('left', e.pageX + moveLeft);
-              });
-
-            });
-
-            // Quiz - First Page
-
-            var page_one = $(` <div class="quiz">
-                    <form id="quiz_form" method="post" action="actions.php">
-
-                      <div id="dialogue_1">
-
-                        <h3><u>Read the dialogues and choose the best option for the blank spaces</u></h3>
-
-                        <h4><b>SITUATION 1</b></h4>
-
-                          <p>Liz: Do you watch the news everyday?</p>
-                          <p>Mike: Yes, I think (a) is important to know what's going on.</p>
-                          <p>Liz: I agree but sometimes (b) is difficult. There is a lot of negativity in the news.</p>
-
-                          <p><i><u>What is missing in (a) and (b) :</i></u></p>
-
-                            <input type="radio" class="rads" name="news"> a) Contraction - " 's "</input><br>
-                            <input type="radio" class="rads" name="news"> b) The neuter subject "It" </input><br>
-                            <input type="radio" class="rads" name="news">c) Nothing is missing </input><br>
-                            <input type="radio" class="rads" name="news"> d) The word "pizza"</input>
-
-                          <h4><b>SITUATION 2</b></h4>
+            `);
 
 
-                          <p>Cris: Look out the window! I can't believe it! (c) was sunny 5 minute ago, now (d) is raining!</p>
-                          <p>Natalie: (e) is like that here in January.
-                          <p>Cris: Wow, some weather! </p>
+$("#popup-empty").html(startHtml);
 
-                          <p><i><u>What is missing in (c),(d),(e):</i></u></p>
+/* Mosemove function for the instructions*/
+$(function() {
+var moveLeft = 20;
+var moveDown = 10;
 
-                            <input type="radio" class="rads" name="weather"> a) The masculine subject - "He"</input><br>
-                            <input type="radio" class="rads" name="weather"> b) The neuter subject "It" </input><br>
-                            <input type="radio" class="rads" name="weather"> c) Nothing is missing </input><br>
-                            <input type="radio" class="rads" name="weather"> d) The subject "I"</input>
+$('#instr').hover(function(e) {
+  $('#inst_popup').show("slow");
+
+}, function() {
+  $('#inst_popup').hide("slow");
+});
+
+$('#instr').mousemove(function(e) {
+  $("#inst_popup").css('top', e.pageY + moveDown).css('left', e.pageX + moveLeft);
+});
+
+});
+
+// Quiz - First Page
+
+var page_one = $(` <div class="quiz">
+      <form id="quiz_form" method="post" action="actions.php">
+
+        <div id="dialogue_1">
+
+          <h3><u>Read the dialogues and choose the best option for the blank spaces</u></h3>
+
+          <h4><b>SITUATION 1</b></h4>
+
+            <p>Liz: Do you watch the news everyday?</p>
+            <p>Mike: Yes, I think___is important to know what's going on.</p>
+            <p>Liz: I agree but sometimes___is difficult. There is a lot of negativity in the news.</p>
+
+            <p><i><u>What is missing?</u></i></p>
+
+              <input type="radio" class="rads" name="news"> a )Contraction - " 's "</input><br>
+              <input type="radio" class="rads" name="news"> b) The word "pizza" </input><br>
+              <input type="radio" class="rads" name="news">c) Nothing is missing </input><br>
+              <input type="radio" class="rads" name="news">d) The neuter subject "It" </input>
+
+            <h4><b>SITUATION 2</b></h4>
 
 
+            <p>Cris: Look out the window! I can't believe it!___was sunny 5 minute ago, now___is raining!</p>
+            <p>Natalie:___is like that here in January.
+            <p>Cris: Wow, some weather! </p>
 
-                          <h4>SITUATION 3</h4>
+            <p><i><u>What is missing?</u></i></p>
 
-                          <p>John: How far is (f) from Sao Paulo to Brasilia?</p>
-                          <p>Pedro: I don't know but (g) must be a solid 10 hour drive.</p>
-                          <p>John: I didn't know (h) takes this long.</p>
-                          <p>Pedro: How long does (l) take to get from New York to Detroit.</p>
-                          <p>John: (m) is about the same.</p>
-
-
-                          <p><i><u>What is missing in (f),(g),(h),(l),(m):</i></u></p>
-
-                          <input type="radio" class="rads" name="dist"> a) The feminine subject - "She"</input><br>
-                          <input type="radio" class="rads" name="dist"> b) The subject "It" </input><br>
-                          <input type="radio" class="rads" name="dist"> c) Nothing is missing </input><br>
-                          <input type="radio" class="rads" name="dist"> d) The word "car"</input><br>
+              <input type="radio" class="rads" name="weather"> a) The masculine subject - "He"</input><br>
+              <input type="radio" class="rads" name="weather"> b) The neuter subject "It" </input><br>
+              <input type="radio" class="rads" name="weather"> c) Nothing is missing </input><br>
+              <input type="radio" class="rads" name="weather"> d) The subject "I"</input>
 
 
 
-                      </div>
+            <h4>SITUATION 3</h4>
+
+            <p>John: How far is___from Sao Paulo to Brasilia?</p>
+            <p>Pedro: I don't know but___ must be a solid 10 hour drive.</p>
+            <p>John: I didn't know___takes this long.</p>
+            <p>Pedro: How long does___take to get from New York to Detroit.</p>
+            <p>John:___is about the same.</p>
 
 
-                              <button id='backHome-1'><a href='https://www.brazilianbloopers.com' style='color: black'>Home</a></button>
-                              <button type="button" id="checkBtn" type="submit" name="check_first">Check</button>
+            <p><i><u>What is missing?</u></i></p>
 
-                    </form>
-                    </div>  `);
-
-            $(document).ready(function() {
-
-              $("#start_quiz").on("click", function() {
-
-                $("#popup-empty").html(page_one);
-
-              });
-
-            });
-
-            // Check Button => Submit first page
-
-             // Survey Data - on(click)
-
-            //  $("#quiz_form").submit(function() {
-            //  return false;
-            // });
-
-            // $("#checkBtn").on("click", function() {
-
-            //   var formData = $("#quiz_form :input").serializeArray();
-            //   formData[formData.length] = {
-            //   name: "action",
-            //   value: "checkBtn"
-            //   };
-            //   formData.push({});
-
-            //   $.ajax({
-            //   type: "POST",
-            //   url: $("#quiz_form").attr("action"),
-            //   data: formData,
-            //   dataType: 'json',
-            //   async: true,
-            //   success: function(result) {
-
-            //     if (result.check1 == 1) {
-            //       var checkToNxt = $('#checkBtn').replace("#submit_pg1")
-            //       return true;
-
-            //     }
-
-
-        //     } //ajax, success function 2//
-        //   }); //ajax 2//
-        // }); //submit on.click function 2//
+            <input type="radio" class="rads" name="dist"> a)The neuter subject "It" </input><br>
+            <input type="radio" class="rads" name="dist"> b)The feminine subject - "She"</input><br>
+            <input type="radio" class="rads" name="dist">c) The word "car" </input><br>
+            <input type="radio" class="rads" name="dist"> d)Nothing is missing  </input><br>
 
 
 
-          } // (result.result == 1)
+        </div>
+
+       <button id='backHome-1'><a href='https://www.brazilianbloopers.com' style='color: black'>Home</a></button>
+       <button type="submit" id="check_Btn" name="check_first">Check</button>
+
+      </form>
+      </div>  `);
+
+$(document).ready(function() {
+
+$("#start_quiz").on("click", function() {
+
+  $("#popup-empty").html(page_one);
+
+});
+
+});
+
+
+
+
+
+
+
+
+          } // End of first success (result.result == 1)
 
           if (result.result == 2) {
             Swal.fire({
@@ -600,6 +566,56 @@ require_once('./dbconn.php');
         } //ajax, success function//
       }); //ajax//
     }); //submit on.click function//
+
+    // Check Button => Submit first page
+
+// Quiz Data - on(click)
+
+$("#quiz_form").submit(function() {
+  console.log('Here');
+return false;
+});
+
+$("#check_Btn").on("click", function() {
+
+var formDataQuiz = $("#quiz_form :input").serializeArray();
+formDataQuiz[formDataQuiz.length] = {
+name: "action",
+value: "check_Btn"
+};
+formDataQuiz.push({});
+
+$.ajax({
+type: "POST",
+url: $("#quiz_form").attr("action"),
+data: formDataQuiz,
+dataType: 'json',
+async: true,
+success: function(result) {
+
+
+
+  alert('success');
+
+
+  if (result.result == 1) {
+    // var checkToNxt = $('#check_Btn').replace("#submit_pg1");
+    // return true;
+    alert('yes');
+
+  }
+
+  if (result.result == 2) {
+
+    alert('no');
+  }
+
+
+} //ajax, success function 2//
+}); //ajax 2//
+}); //submit on.click function 2//
+
+
 
 
 
