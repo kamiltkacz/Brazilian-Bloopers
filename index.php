@@ -40,7 +40,7 @@ require_once('./dbconn.php');
 
 <body>
   <div class="tabs">
-    <button class="tablink" onclick="openPage('Home', this)" ; id="defaultOpen">
+    <button id="defaultOpen" class="tablink" onclick="openPage('Home', this);">
       <a href="#" class="active">Home</a>
     </button>
     <button class="tablink" onclick="openPage('The Quiz', this);">
@@ -224,7 +224,7 @@ require_once('./dbconn.php');
 
 
 
-            <button type="button" id="submit_survey" type="submit" name="submitsurvey">Submit</button>
+            <button id="submit_survey" type="submit" name="submitsurvey">Submit</button>
 
 
 
@@ -434,44 +434,45 @@ require_once('./dbconn.php');
            if (result.result == 1) {
             let startHtml = $(`
 
-<div id="start">\
+             <div id="start">\
 
-<p><label id="start">\
-Welcome to the Quiz!\
-<span id="span_start" style="color:#ff0000"></span></label></p>\
+             <p><label id="start">\
+             Welcome to the Quiz!\
+             <span id="span_start" style="color:#ff0000"></span></label></p>\
 
-<button id='backHome-1'><a href='https://www.brazilianbloopers.com' style='color: black'>Home</a></button>\
+             <button id='backHome-1'><a href='https://www.brazilianbloopers.com' style='color: black'>Home</a></button>\
 
-<p id="instr" name="instructions">Instructions</p>\
-<button type="submit" id="start_quiz" name="startquiz">Start</button>\
-</div>\
+             <p id="instr" name="instructions">Instructions</p>\
+             <button type="submit" id="start_quiz" name="startquiz">Start</button>\
+             </div>\
 
-            `);
+                       `);
 
 
-$("#popup-empty").html(startHtml);
+                 $("#popup-empty").html(startHtml);
 
-/* Mosemove function for the instructions*/
-$(function() {
-var moveLeft = 20;
-var moveDown = 10;
+                 /* Mosemove function for the instructions*/
+                 $(function() {
+                 var moveLeft = 20;
+                 var moveDown = 10;
 
-$('#instr').hover(function(e) {
-  $('#inst_popup').show("slow");
+                 $('#instr').hover(function(e) {
+                   $('#inst_popup').show("slow");
 
-}, function() {
-  $('#inst_popup').hide("slow");
-});
+                 }, function() {
+                   $('#inst_popup').hide("slow");
+                 });
 
-$('#instr').mousemove(function(e) {
-  $("#inst_popup").css('top', e.pageY + moveDown).css('left', e.pageX + moveLeft);
-});
+                 $('#instr').mousemove(function(e) {
+                   $("#inst_popup").css('top', e.pageY + moveDown).css('left', e.pageX + moveLeft);
+                 });
 
-});
+                 });
 
 // Quiz - First Page
 
 var page_one = $(` <div class="quiz">
+
       <form id="quiz_form" method="post" action="actions.php">
 
         <div id="dialogue_1">
@@ -486,10 +487,10 @@ var page_one = $(` <div class="quiz">
 
             <p><i><u>What is missing?</u></i></p>
 
-              <input type="radio" class="rads" name="news"> a )Contraction - " 's "</input><br>
-              <input type="radio" class="rads" name="news"> b) The word "pizza" </input><br>
-              <input type="radio" class="rads" name="news">c) Nothing is missing </input><br>
-              <input type="radio" class="rads" name="news">d) The neuter subject "It" </input>
+              <input type="radio" class="rads" name="news" value="err_contrct"> a )Contraction - " 's "<br>
+              <input type="radio" class="rads" name="news" value="err_pizz"> b) The word "pizza"<br>
+              <input type="radio" class="rads" name="news" value="err_noth">c) Nothing is missing<br>
+              <input type="radio" class="rads" name="news" value="corr_it">d) The neuter subject "It"
 
             <h4><b>SITUATION 2</b></h4>
 
@@ -500,10 +501,10 @@ var page_one = $(` <div class="quiz">
 
             <p><i><u>What is missing?</u></i></p>
 
-              <input type="radio" class="rads" name="weather"> a) The masculine subject - "He"</input><br>
-              <input type="radio" class="rads" name="weather"> b) The neuter subject "It" </input><br>
-              <input type="radio" class="rads" name="weather"> c) Nothing is missing </input><br>
-              <input type="radio" class="rads" name="weather"> d) The subject "I"</input>
+              <input type="radio" class="rads" name="weather" value="err_he"> a) The masculine subject - "He"<br>
+              <input type="radio" class="rads" name="weather" value="corr_it"> b) The neuter subject "It"<br>
+              <input type="radio" class="rads" name="weather" value="err_noth"> c) Nothing is missing<br>
+              <input type="radio" class="rads" name="weather" value="err_i"> d) The subject "I">
 
 
 
@@ -518,37 +519,30 @@ var page_one = $(` <div class="quiz">
 
             <p><i><u>What is missing?</u></i></p>
 
-            <input type="radio" class="rads" name="dist"> a)The neuter subject "It" </input><br>
-            <input type="radio" class="rads" name="dist"> b)The feminine subject - "She"</input><br>
-            <input type="radio" class="rads" name="dist">c) The word "car" </input><br>
-            <input type="radio" class="rads" name="dist"> d)Nothing is missing  </input><br>
+            <input type="radio" class="rads" name="dist" value="corr_it"> a)The neuter subject "It"<br>
+            <input type="radio" class="rads" name="dist" value="err_she"> b)The feminine subject - "She"<br>
+            <input type="radio" class="rads" name="dist" value="err_car">c) The word "car"<br>
+            <input type="radio" class="rads" name="dist" value="err_noth"> d)Nothing is missing <br>
 
 
 
         </div>
 
        <button id='backHome-1'><a href='https://www.brazilianbloopers.com' style='color: black'>Home</a></button>
-       <button type="submit" id="check_Btn" name="check_first">Check</button>
+       <button id="check_Btn" type="submit" name="check_first">Check</button>
 
       </form>
       </div>  `);
 
-$(document).ready(function() {
+             $(document).ready(function() {
 
-$("#start_quiz").on("click", function() {
+             $("#start_quiz").on("click", function() {
 
-  $("#popup-empty").html(page_one);
+               $("#popup-empty").html(page_one);
 
-});
+             });
 
-});
-
-
-
-
-
-
-
+             });
 
           } // End of first success (result.result == 1)
 
@@ -561,62 +555,52 @@ $("#start_quiz").on("click", function() {
               footer: '<a href><strong>Home</strong></a>'
             });
           }
-
+          console.log('Here 1');
 
         } //ajax, success function//
       }); //ajax//
     }); //submit on.click function//
 
-    // Check Button => Submit first page
+    //// Check Button => Submit first page
 
-// Quiz Data - on(click)
+        $("#quiz_form").submit(function() {
 
-$("#quiz_form").submit(function() {
-  console.log('Here');
-return false;
-});
+        console.log('Here 2');
 
-$("#check_Btn").on("click", function() {
+        return false;
+        });
 
-var formDataQuiz = $("#quiz_form :input").serializeArray();
-formDataQuiz[formDataQuiz.length] = {
-name: "action",
-value: "check_Btn"
-};
-formDataQuiz.push({});
+        $("#check_Btn").on("click", function() {
+        var formData = $("#quiz_form :input").serializeArray();
+        formDataQuiz[formData.length] = {
+        name: "action",
+        value: "check_Btn"
+        };
+        formData.push({});
 
-$.ajax({
-type: "POST",
-url: $("#quiz_form").attr("action"),
-data: formDataQuiz,
-dataType: 'json',
-async: true,
-success: function(result) {
+        $.ajax({
+        type: "POST",
+        url: $("#quiz_form").attr("action"),
+        data: formData,
+        dataType: 'json',
+        async: true,
+        success: function(result) {
 
+        alert('success');
 
+        if (result.result == 1) {
+          // var checkToNxt = $('#check_Btn').replace("#submit_pg1");
+          // return true;
+          alert('yes');
+        }
 
-  alert('success');
+        if (result.result == 2) {
+          alert('no way');
+        }
 
-
-  if (result.result == 1) {
-    // var checkToNxt = $('#check_Btn').replace("#submit_pg1");
-    // return true;
-    alert('yes');
-
-  }
-
-  if (result.result == 2) {
-
-    alert('no');
-  }
-
-
-} //ajax, success function 2//
-}); //ajax 2//
-}); //submit on.click function 2//
-
-
-
+        } //ajax, success function 2//
+        }); //ajax 2//
+        }); //submit on.click function 2//
 
 
 
