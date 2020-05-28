@@ -177,7 +177,7 @@ p#instr {
   margin-top: 3px;
   margin-right: 30px;
 }
-
+/*
 #nextBtn {
   background-color: whitesmoke;
   color: #0f1403;
@@ -186,7 +186,7 @@ p#instr {
   padding: 5px;
   border-radius: 8px;
   cursor: pointer;
-}
+}*/
 #backHome-1 {
   background-color: whitesmoke;
   color: #000000;
@@ -237,8 +237,9 @@ p#instr {
   font-size: 90%;
 }
 
+/*check button*/
 
-#check_Btn {
+#check_first {
 background-color: whitesmoke;
 color: #000000;
 font-family: inherit;
