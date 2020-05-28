@@ -91,7 +91,7 @@ require_once('./dbconn.php');
       <div class="container">
         <header>Case Studies</header>
         <p> Case 2)Marilia Gabriela's interview with the one and only Madonna</p>
-        <p> This interview is plainly awkward and actually some part of it is the inability of the Brazilian Jouranalist to get her English on the right track. Madonna certainly was not in the mood to help her.
+        <p> This interview is plainly awkward and actually some part of it is the inability of the Brazilian Journalist to get her English on the right track. Madonna certainly was not in the mood to help her.
           <div class="yt-resp">
             <iframe class="iframe-resp" src="https://www.youtube.com/embed/zHMhLd4MUC4">
             </iframe>
@@ -158,7 +158,7 @@ require_once('./dbconn.php');
 
 
         <div class="popup-inner">
-          <div id="popup-empty">
+         <div id="popup-empty">
 
             <a class="popup-close" data-popup-close="popup-1" href="#">x</a>
             <div id="question1">
@@ -228,7 +228,7 @@ require_once('./dbconn.php');
 
 
 
-            </div>
+           </div>
 
         </div>
       </div>
@@ -338,6 +338,8 @@ require_once('./dbconn.php');
       return false;
     });
 
+
+
     $("#submit_survey").on("click", function() {
 
       var formData = $("#survey :input").serializeArray();
@@ -432,6 +434,11 @@ require_once('./dbconn.php');
           // After data submitted do stuff here
 
            if (result.result == 1) {
+
+            console.log('Here 1');
+
+              //// Welcome + Instructions
+
             let startHtml = $(`
 
              <div id="start">\
@@ -443,43 +450,68 @@ require_once('./dbconn.php');
              <button id='backHome-1'><a href='https://www.brazilianbloopers.com' style='color: black'>Home</a></button>\
 
              <p id="instr" name="instructions">Instructions</p>\
-             <button type="submit" id="start_quiz" name="startquiz">Start</button>\
+             <button id="start_quiz" type="submit" name="startquiz">Start</button>\
              </div>\
 
                        `);
 
+             $("#popup-empty").html(startHtml);
 
-                 $("#popup-empty").html(startHtml);
+             /* Mousemove function for the instructions*/
+             $(function() {
+             let moveLeft = 20;
+             let moveDown = 10;
 
-                 /* Mosemove function for the instructions*/
-                 $(function() {
-                 var moveLeft = 20;
-                 var moveDown = 10;
+             $('#instr').hover(function(e) {
+             $('#inst_popup').show("slow");
 
-                 $('#instr').hover(function(e) {
-                   $('#inst_popup').show("slow");
+             }, function() {
+             $('#inst_popup').hide("slow");
+             });
 
-                 }, function() {
-                   $('#inst_popup').hide("slow");
-                 });
+             $('#instr').mousemove(function(e) {
+             $("#inst_popup").css('top', e.pageY + moveDown).css('left', e.pageX + moveLeft);
+             });
 
-                 $('#instr').mousemove(function(e) {
-                   $("#inst_popup").css('top', e.pageY + moveDown).css('left', e.pageX + moveLeft);
-                 });
+             });
 
-                 });
+             $("#start_quiz").on("click", function() {
 
-// Quiz - First Page
+             console.log('here 1,5');
 
-var page_one = $(` <div class="quiz">
+             $("#popup-empty").html(page_one);
 
-      <form id="quiz_form" method="post" action="actions.php">
+             });
 
-        <div id="dialogue_1">
+          } // End of first success (result.result == 1)
 
-          <h3><u>Read the dialogues and choose the best option for the blank spaces</u></h3>
+          if (result.result == 2) {
+            Swal.fire({
+              icon: 'error',
+              title: 'Hmmm...',
+              text: 'Something went wrong, Try again!',
+              showCloseButton: true,
+              footer: '<a href><strong>Home</strong></a>'
+            });
+          }
 
-          <h4><b>SITUATION 1</b></h4>
+
+        } //ajax, success function//
+      }); //ajax//
+    }); //submit on.click function//
+
+
+        // Quiz - First Page
+
+         let page_one = $(` <div class="quiz">
+
+           <form id="quiz_form" method="post" action="actions.php">
+
+          <div id="dialogue_1">
+
+           <h3><u>Read the dialogues and choose the best option for the blank spaces</u></h3>
+
+           <h4><b>SITUATION 1</b></h4>
 
             <p>Liz: Do you watch the news everyday?</p>
             <p>Mike: Yes, I think___is important to know what's going on.</p>
@@ -529,39 +561,10 @@ var page_one = $(` <div class="quiz">
         </div>
 
        <button id='backHome-1'><a href='https://www.brazilianbloopers.com' style='color: black'>Home</a></button>
-       <button id="check_Btn" type="submit" name="check_first">Check</button>
+       <button id="check_first" type="submit" name="checkfirst">Check</button>
 
       </form>
       </div>  `);
-
-             $(document).ready(function() {
-
-             $("#start_quiz").on("click", function() {
-
-               $("#popup-empty").html(page_one);
-
-             });
-
-             });
-
-          } // End of first success (result.result == 1)
-
-          if (result.result == 2) {
-            Swal.fire({
-              icon: 'error',
-              title: 'Hmmm...',
-              text: 'Something went wrong, Try again!',
-              showCloseButton: true,
-              footer: '<a href><strong>Home</strong></a>'
-            });
-          }
-          console.log('Here 1');
-
-        } //ajax, success function//
-      }); //ajax//
-    }); //submit on.click function//
-
-    //// Check Button => Submit first page
 
         $("#quiz_form").submit(function() {
 
@@ -570,11 +573,11 @@ var page_one = $(` <div class="quiz">
         return false;
         });
 
-        $("#check_Btn").on("click", function() {
+        $("#check_first").on("click", function() {
         var formData = $("#quiz_form :input").serializeArray();
         formDataQuiz[formData.length] = {
         name: "action",
-        value: "check_Btn"
+        value: "check_first"
         };
         formData.push({});
 
@@ -602,7 +605,7 @@ var page_one = $(` <div class="quiz">
         }); //ajax 2//
         }); //submit on.click function 2//
 
-
+// CHECK VALUES MATCH IN ACTIONS
 
   </script>
 
