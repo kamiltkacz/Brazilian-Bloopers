@@ -1,5 +1,5 @@
 <?php
-
+// var_dump($_POST);
 require_once('./dbconn.php');
 
 $action = "";
@@ -127,7 +127,7 @@ if (isset($_POST["action"])) {
 
   }
 
-  if ($action == "check_Btn") {
+  if ($action == "check_first") {
     $export = Array();
     $news = $_POST["news"];
     $weather = $_POST["weather"];
