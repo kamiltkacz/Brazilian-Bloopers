@@ -338,8 +338,6 @@ require_once('./dbconn.php');
       return false;
     });
 
-
-
     $("#submit_survey").on("click", function() {
 
       var formData = $("#survey :input").serializeArray();
@@ -435,27 +433,64 @@ require_once('./dbconn.php');
 
            if (result.result == 1) {
 
+            Swal.fire({
+              title: "Yay!",
+              width: 400,
+              heightAuto: false,
+              padding: "0.15em",
+              background: "#000000",
+              icon: "success",
+              text: "Your survey has been submitted, thanks!",
+              footer: "<a href>Home</a>",
+              allowOutsideClick: false,
+              customClass: {
+                footer: 'sweet-footer',
+              }
+
+            });
+
+            $(".popup").slideUp();
+
+
+
+          } // End of first success (result.result == 1)
+
+          if (result.result == 2) {
+            Swal.fire({
+              icon: 'error',
+              title: 'Hmmm...',
+              text: 'Something went wrong, Try again!',
+              showCloseButton: true,
+              footer: '<a href><strong>Home</strong></a>'
+            });
+          }
+
+
+        } //ajax, success function//
+      }); //ajax//
+    }); //submit on.click function//
+
             console.log('Here 1');
 
-              //// Welcome + Instructions
+              //// Welcome + Instructions  ///  Start Here 29/05 , Fix this code.This has to provoke a button to start the test, next to instruction #3 on the quiz page,  a hidden div with a test start or another popup (r?)
 
-            let startHtml = $(`
+            // let startHtml = $(`
 
-             <div id="start">\
+            //  <div id="start">\
 
-             <p><label id="start">\
-             Welcome to the Quiz!\
-             <span id="span_start" style="color:#ff0000"></span></label></p>\
+            //  <p><label id="start">\
+            //  Welcome to the Quiz!\
+            //  <span id="span_start" style="color:#ff0000"></span></label></p>\
 
-             <button id='backHome-1'><a href='https://www.brazilianbloopers.com' style='color: black'>Home</a></button>\
+            //  <button id='backHome-1'><a href='https://www.brazilianbloopers.com' style='color: black'>Home</a></button>\
 
-             <p id="instr" name="instructions">Instructions</p>\
-             <button id="start_quiz" type="submit" name="startquiz">Start</button>\
-             </div>\
+            //  <p id="instr" name="instructions">Instructions</p>\
+            //  <button id="start_quiz" type="submit" name="startquiz">Start</button>\
+            //  </div>\
 
-                       `);
+            //            `);
 
-             $("#popup-empty").html(startHtml);
+            //  $("#popup-empty").html(startHtml);
 
              /* Mousemove function for the instructions*/
              $(function() {
@@ -483,131 +518,118 @@ require_once('./dbconn.php');
 
              });
 
-          } // End of first success (result.result == 1)
 
-          if (result.result == 2) {
-            Swal.fire({
-              icon: 'error',
-              title: 'Hmmm...',
-              text: 'Something went wrong, Try again!',
-              showCloseButton: true,
-              footer: '<a href><strong>Home</strong></a>'
-            });
-          }
+      // Quiz - First Page
 
+      let page_one = $(` <div class="quiz">
 
-        } //ajax, success function//
-      }); //ajax//
-    }); //submit on.click function//
+<form id="quiz_form" method="post" action="actions.php">
 
+<div id="dialogue_1">
 
-        // Quiz - First Page
+<h3><u>Read the dialogues and choose the best option for the blank spaces</u></h3>
 
-         let page_one = $(` <div class="quiz">
+<h4><b>SITUATION 1</b></h4>
 
-           <form id="quiz_form" method="post" action="actions.php">
+ <p>Liz: Do you watch the news everyday?</p>
+ <p>Mike: Yes, I think___is important to know what's going on.</p>
+ <p>Liz: I agree but sometimes___is difficult. There is a lot of negativity in the news.</p>
 
-          <div id="dialogue_1">
+ <p><i><u>What is missing?</u></i></p>
 
-           <h3><u>Read the dialogues and choose the best option for the blank spaces</u></h3>
+   <input type="radio" class="rads" name="news" value="err_contrct"> a )Contraction - " 's "<br>
+   <input type="radio" class="rads" name="news" value="err_pizz"> b) The word "pizza"<br>
+   <input type="radio" class="rads" name="news" value="err_noth">c) Nothing is missing<br>
+   <input type="radio" class="rads" name="news" value="corr_it">d) The neuter subject "It"
 
-           <h4><b>SITUATION 1</b></h4>
-
-            <p>Liz: Do you watch the news everyday?</p>
-            <p>Mike: Yes, I think___is important to know what's going on.</p>
-            <p>Liz: I agree but sometimes___is difficult. There is a lot of negativity in the news.</p>
-
-            <p><i><u>What is missing?</u></i></p>
-
-              <input type="radio" class="rads" name="news" value="err_contrct"> a )Contraction - " 's "<br>
-              <input type="radio" class="rads" name="news" value="err_pizz"> b) The word "pizza"<br>
-              <input type="radio" class="rads" name="news" value="err_noth">c) Nothing is missing<br>
-              <input type="radio" class="rads" name="news" value="corr_it">d) The neuter subject "It"
-
-            <h4><b>SITUATION 2</b></h4>
+ <h4><b>SITUATION 2</b></h4>
 
 
-            <p>Cris: Look out the window! I can't believe it!___was sunny 5 minute ago, now___is raining!</p>
-            <p>Natalie:___is like that here in January.
-            <p>Cris: Wow, some weather! </p>
+ <p>Cris: Look out the window! I can't believe it!___was sunny 5 minute ago, now___is raining!</p>
+ <p>Natalie:___is like that here in January.
+ <p>Cris: Wow, some weather! </p>
 
-            <p><i><u>What is missing?</u></i></p>
+ <p><i><u>What is missing?</u></i></p>
 
-              <input type="radio" class="rads" name="weather" value="err_he"> a) The masculine subject - "He"<br>
-              <input type="radio" class="rads" name="weather" value="corr_it"> b) The neuter subject "It"<br>
-              <input type="radio" class="rads" name="weather" value="err_noth"> c) Nothing is missing<br>
-              <input type="radio" class="rads" name="weather" value="err_i"> d) The subject "I">
+   <input type="radio" class="rads" name="weather" value="err_he"> a) The masculine subject - "He"<br>
+   <input type="radio" class="rads" name="weather" value="corr_it"> b) The neuter subject "It"<br>
+   <input type="radio" class="rads" name="weather" value="err_noth"> c) Nothing is missing<br>
+   <input type="radio" class="rads" name="weather" value="err_i"> d) The subject "I">
 
 
 
-            <h4>SITUATION 3</h4>
+ <h4>SITUATION 3</h4>
 
-            <p>John: How far is___from Sao Paulo to Brasilia?</p>
-            <p>Pedro: I don't know but___ must be a solid 10 hour drive.</p>
-            <p>John: I didn't know___takes this long.</p>
-            <p>Pedro: How long does___take to get from New York to Detroit.</p>
-            <p>John:___is about the same.</p>
-
-
-            <p><i><u>What is missing?</u></i></p>
-
-            <input type="radio" class="rads" name="dist" value="corr_it"> a)The neuter subject "It"<br>
-            <input type="radio" class="rads" name="dist" value="err_she"> b)The feminine subject - "She"<br>
-            <input type="radio" class="rads" name="dist" value="err_car">c) The word "car"<br>
-            <input type="radio" class="rads" name="dist" value="err_noth"> d)Nothing is missing <br>
+ <p>John: How far is___from Sao Paulo to Brasilia?</p>
+ <p>Pedro: I don't know but___ must be a solid 10 hour drive.</p>
+ <p>John: I didn't know___takes this long.</p>
+ <p>Pedro: How long does___take to get from New York to Detroit.</p>
+ <p>John:___is about the same.</p>
 
 
+ <p><i><u>What is missing?</u></i></p>
 
-        </div>
+ <input type="radio" class="rads" name="dist" value="corr_it"> a)The neuter subject "It"<br>
+ <input type="radio" class="rads" name="dist" value="err_she"> b)The feminine subject - "She"<br>
+ <input type="radio" class="rads" name="dist" value="err_car">c) The word "car"<br>
+ <input type="radio" class="rads" name="dist" value="err_noth"> d)Nothing is missing <br>
 
-       <button id='backHome-1'><a href='https://www.brazilianbloopers.com' style='color: black'>Home</a></button>
-       <button id="check_first" type="submit" name="checkfirst">Check</button>
 
-      </form>
-      </div>  `);
 
-        $("#quiz_form").submit(function() {
+</div>
 
-        console.log('Here 2');
+<button id='backHome-1'><a href='https://www.brazilianbloopers.com' style='color: black'>Home</a></button>
+<button id="check_first" type="submit" name="checkfirst">Check</button>
 
-        return false;
-        });
+</form>
+</div>  `);
 
-        $("#check_first").on("click", function() {
-        var formData = $("#quiz_form :input").serializeArray();
-        formDataQuiz[formData.length] = {
-        name: "action",
-        value: "check_first"
-        };
-        formData.push({});
+$("#quiz_form").submit(function() {
 
-        $.ajax({
-        type: "POST",
-        url: $("#quiz_form").attr("action"),
-        data: formData,
-        dataType: 'json',
-        async: true,
-        success: function(result) {
+console.log('Here 2');
 
-        alert('success');
+return false;
+});
 
-        if (result.result == 1) {
-          // var checkToNxt = $('#check_Btn').replace("#submit_pg1");
-          // return true;
-          alert('yes');
-        }
+$("#check_first").on("click", function() {
+var formData = $("#quiz_form :input").serializeArray();
+formData[formData.length] = {
+name: "action",
+value: "check_first"
+};
+formData.push({});
 
-        if (result.result == 2) {
-          alert('no way');
-        }
+$.ajax({
+type: "POST",
+url: $("#quiz_form").attr("action"),
+data: formData,
+dataType: 'json',
+async: true,
+success: function(result) {
 
-        } //ajax, success function 2//
-        }); //ajax 2//
-        }); //submit on.click function 2//
+alert('success');
 
-// CHECK VALUES MATCH IN ACTIONS
+if (result.result == 1) {
+
+
+alert('yes');
+}
+
+if (result.result == 2) {
+alert('no way');
+}
+
+} //ajax, success function 2//
+}); //ajax 2//
+}); //submit on.click function 2//
+
+
+
+
 
   </script>
+
+
 
   <div id="Contact Us" class="tabcontent">
     <div class="container">
@@ -757,13 +779,6 @@ require_once('./dbconn.php');
     }
     // Get the element with id="defaultOpen" and click on it
     document.getElementById("defaultOpen").click();
-
-    // flex tabs /05/16 try individual tablinks effect
-
-    /* $(".tabs").mouseover(function(){
-     $(".tablink").toggle(".tablink-open");
-     });*/
-
 
 
 
