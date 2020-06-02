@@ -137,19 +137,17 @@ require_once('./dbconn.php');
           </li>
           <li>
             <p>Click "Start" to begin the quiz</p>
-          </li>
+
+
+              <button id="start_quiz" type="submit" name="startquiz">Start</button>
+
+           </li>
           <li>
             <p>Have fun!</p>
           </li>
         </ol>
       </fieldset>
     </div>
-
-  <!--QUIZZ TESTS-->
-
-
-
-
 
 
     <form id="survey" method="post" action="actions.php">
@@ -158,7 +156,7 @@ require_once('./dbconn.php');
 
 
         <div class="popup-inner">
-         <div id="popup-empty">
+          <div id="popup-empty">
 
             <a class="popup-close" data-popup-close="popup-1" href="#">x</a>
             <div id="question1">
@@ -228,14 +226,14 @@ require_once('./dbconn.php');
 
 
 
-           </div>
+          </div>
 
         </div>
       </div>
     </form>
 
   </div>
-  <!-- Quiz -->
+
 
   <!--mouseover instructions in CSS: Dispaly None DIV -->
 
@@ -340,12 +338,16 @@ require_once('./dbconn.php');
 
     $("#submit_survey").on("click", function() {
 
+
+
       var formData = $("#survey :input").serializeArray();
       formData[formData.length] = {
         name: "action",
         value: "submit_survey"
       };
       formData.push({});
+
+     $("#start_quiz").show();
 
       $.ajax({
         type: "POST",
@@ -431,7 +433,7 @@ require_once('./dbconn.php');
 
           // After data submitted do stuff here
 
-           if (result.result == 1) {
+          if (result.result == 1) {
 
             Swal.fire({
               title: "Yay!",
@@ -447,10 +449,10 @@ require_once('./dbconn.php');
                 footer: 'sweet-footer',
               }
 
+
             });
 
-            $(".popup").slideUp();
-
+            $(".popup").hide(1000);
 
 
           } // End of first success (result.result == 1)
@@ -466,62 +468,59 @@ require_once('./dbconn.php');
           }
 
 
+
+
         } //ajax, success function//
       }); //ajax//
     }); //submit on.click function//
 
-            console.log('Here 1');
-
-              //// Welcome + Instructions  ///  Start Here 29/05 , Fix this code.This has to provoke a button to start the test, next to instruction #3 on the quiz page,  a hidden div with a test start or another popup (r?)
-
-            // let startHtml = $(`
-
-            //  <div id="start">\
-
-            //  <p><label id="start">\
-            //  Welcome to the Quiz!\
-            //  <span id="span_start" style="color:#ff0000"></span></label></p>\
-
-            //  <button id='backHome-1'><a href='https://www.brazilianbloopers.com' style='color: black'>Home</a></button>\
-
-            //  <p id="instr" name="instructions">Instructions</p>\
-            //  <button id="start_quiz" type="submit" name="startquiz">Start</button>\
-            //  </div>\
-
-            //            `);
-
-            //  $("#popup-empty").html(startHtml);
-
-             /* Mousemove function for the instructions*/
-             $(function() {
-             let moveLeft = 20;
-             let moveDown = 10;
-
-             $('#instr').hover(function(e) {
-             $('#inst_popup').show("slow");
-
-             }, function() {
-             $('#inst_popup').hide("slow");
-             });
-
-             $('#instr').mousemove(function(e) {
-             $("#inst_popup").css('top', e.pageY + moveDown).css('left', e.pageX + moveLeft);
-             });
-
-             });
-
-             $("#start_quiz").on("click", function() {
-
-             console.log('here 1,5');
-
-             $("#popup-empty").html(page_one);
-
-             });
 
 
-      // Quiz - First Page
 
-      let page_one = $(` <div class="quiz">
+    $(document).ready(function() {
+
+      $("#start_quiz").on("click", function() {
+
+
+        $(".popup").show();
+        $("#popup-empty").html(page_one);
+
+
+         });
+
+     });
+
+
+    /* Mousemove function for the instructions*/
+    $(function() {
+      let moveLeft = 20;
+      let moveDown = 10;
+
+      $('#instr').hover(function(e) {
+        $('#inst_popup').show("slow");
+
+      }, function() {
+        $('#inst_popup').hide("slow");
+      });
+
+      $('#instr').mousemove(function(e) {
+        $("#inst_popup").css('top', e.pageY + moveDown).css('left', e.pageX + moveLeft);
+      });
+
+    });
+
+    // $("#start_quiz").on("click", function() {
+
+    //   console.log('here 1,5');
+
+    //   $("#popup-empty").html(page_one);
+
+    // });
+
+
+    // Quiz - First Page
+
+    let page_one = $(` <div class="quiz">
 
 <form id="quiz_form" method="post" action="actions.php">
 
@@ -578,55 +577,52 @@ require_once('./dbconn.php');
 
 </div>
 
+<p id="instr" name="instructions">Instructions</p>
+
 <button id='backHome-1'><a href='https://www.brazilianbloopers.com' style='color: black'>Home</a></button>
 <button id="check_first" type="submit" name="checkfirst">Check</button>
 
 </form>
 </div>  `);
 
-$("#quiz_form").submit(function() {
+    $("#quiz_form").submit(function() {
 
-console.log('Here 2');
+      console.log('Here 2');
 
-return false;
-});
+      return false;
+    });
 
-$("#check_first").on("click", function() {
-var formData = $("#quiz_form :input").serializeArray();
-formData[formData.length] = {
-name: "action",
-value: "check_first"
-};
-formData.push({});
+    $("#check_first").on("click", function() {
+      var formData = $("#quiz_form :input").serializeArray();
+      formData[formData.length] = {
+        name: "action",
+        value: "check_first"
+      };
+      formData.push({});
 
-$.ajax({
-type: "POST",
-url: $("#quiz_form").attr("action"),
-data: formData,
-dataType: 'json',
-async: true,
-success: function(result) {
+      $.ajax({
+        type: "POST",
+        url: $("#quiz_form").attr("action"),
+        data: formData,
+        dataType: 'json',
+        async: true,
+        success: function(result) {
 
-alert('success');
+          alert('success');
 
-if (result.result == 1) {
-
-
-alert('yes');
-}
-
-if (result.result == 2) {
-alert('no way');
-}
-
-} //ajax, success function 2//
-}); //ajax 2//
-}); //submit on.click function 2//
+          if (result.result == 1) {
 
 
+            alert('yes');
+          }
 
+          if (result.result == 2) {
+            alert('no way');
+          }
 
-
+        } //ajax, success function 2//
+      }); //ajax 2//
+    }); //submit on.click function 2//
   </script>
 
 
