@@ -163,6 +163,7 @@ list-style-position: outside;
   padding: 5px;
   border-radius: 8px;
   cursor: pointer;
+  display: none;
 }
 
 p#instr {
@@ -173,9 +174,10 @@ p#instr {
   padding: 5px;
   border-radius: 5px;
   cursor: help;
-  position: fixed;
+  position: sticky;
   margin-top: 3px;
   margin-right: 30px;
+
 }
 /*
 #nextBtn {
