@@ -150,15 +150,16 @@ require_once('./dbconn.php');
     </div>
 
 
-    <form id="survey" method="post" action="actions.php">
+
       <div class="popup" data-popup="popup-1">
 
 
 
         <div class="popup-inner">
-          <div id="popup-empty">
+        <form id="survey" method="post" action="actions.php">
 
             <a class="popup-close" data-popup-close="popup-1" href="#">x</a>
+            <div id="surv_div">
             <div id="question1">
               <p><label id="bor_gender">1) What gender are you?<span id="span_gender" style="color:#ff0000"></span></label></p>
               <input type="radio" id="male" class="radios" name="gender" value="male"><label for="male">Male</label><br>
@@ -223,21 +224,21 @@ require_once('./dbconn.php');
 
 
             <button id="submit_survey" type="submit" name="submitsurvey">Submit</button>
+            </div>
 
 
-
-          </div>
+            </form>
 
         </div>
       </div>
-    </form>
+    </div>
 
-  </div>
+
 
 
   <!--mouseover instructions in CSS: Dispaly None DIV -->
 
-  <div id="inst_popup">
+  <div id="inst_hov">
     <p id="gen_instr"><u>General Instructions</u></p>
     <ul>
 
@@ -246,6 +247,13 @@ require_once('./dbconn.php');
 
     </ul>
   </div>
+
+  <!-- QUIZ PAGE ONE -->
+
+
+
+
+
 
 
   <script>
@@ -338,7 +346,8 @@ require_once('./dbconn.php');
 
     $("#submit_survey").on("click", function() {
 
-
+     // Start Button Show
+     $("#start_quiz").show("slow");
 
       var formData = $("#survey :input").serializeArray();
       formData[formData.length] = {
@@ -347,7 +356,6 @@ require_once('./dbconn.php');
       };
       formData.push({});
 
-     $("#start_quiz").show();
 
       $.ajax({
         type: "POST",
@@ -452,7 +460,8 @@ require_once('./dbconn.php');
 
             });
 
-            $(".popup").hide(1000);
+            $(".popup").hide();
+
 
 
           } // End of first success (result.result == 1)
@@ -481,48 +490,14 @@ require_once('./dbconn.php');
 
       $("#start_quiz").on("click", function() {
 
-
         $(".popup").show();
-        $("#popup-empty").html(page_one);
-
-
-         });
-
-     });
-
-
-    /* Mousemove function for the instructions*/
-    $(function() {
-      let moveLeft = 20;
-      let moveDown = 10;
-
-      $('#instr').hover(function(e) {
-        $('#inst_popup').show("slow");
-
-      }, function() {
-        $('#inst_popup').hide("slow");
-      });
-
-      $('#instr').mousemove(function(e) {
-        $("#inst_popup").css('top', e.pageY + moveDown).css('left', e.pageX + moveLeft);
-      });
-
-    });
-
-    // $("#start_quiz").on("click", function() {
-
-    //   console.log('here 1,5');
-
-    //   $("#popup-empty").html(page_one);
-
-    // });
-
-
-    // Quiz - First Page
-
-    let page_one = $(` <div class="quiz">
+        $('.popup-inner').html($(`<div class="quiz">
 
 <form id="quiz_form" method="post" action="actions.php">
+
+
+
+
 
 <div id="dialogue_1">
 
@@ -530,48 +505,48 @@ require_once('./dbconn.php');
 
 <h4><b>SITUATION 1</b></h4>
 
- <p>Liz: Do you watch the news everyday?</p>
- <p>Mike: Yes, I think___is important to know what's going on.</p>
- <p>Liz: I agree but sometimes___is difficult. There is a lot of negativity in the news.</p>
+<p>Liz: Do you watch the news everyday?</p>
+<p>Mike: Yes, I think___is important to know what's going on.</p>
+<p>Liz: I agree but sometimes___is difficult. There is a lot of negativity in the news.</p>
 
- <p><i><u>What is missing?</u></i></p>
+<p><i><u>What is missing?</u></i></p>
 
-   <input type="radio" class="rads" name="news" value="err_contrct"> a )Contraction - " 's "<br>
-   <input type="radio" class="rads" name="news" value="err_pizz"> b) The word "pizza"<br>
-   <input type="radio" class="rads" name="news" value="err_noth">c) Nothing is missing<br>
-   <input type="radio" class="rads" name="news" value="corr_it">d) The neuter subject "It"
+<input type="radio" class="rads" name="news" value="err_contrct"> a )Contraction - " 's "<br>
+<input type="radio" class="rads" name="news" value="err_pizz"> b) The word "pizza"<br>
+<input type="radio" class="rads" name="news" value="err_noth">c) Nothing is missing<br>
+<input type="radio" class="rads" name="news" value="corr_it">d) The neuter subject "It"
 
- <h4><b>SITUATION 2</b></h4>
-
-
- <p>Cris: Look out the window! I can't believe it!___was sunny 5 minute ago, now___is raining!</p>
- <p>Natalie:___is like that here in January.
- <p>Cris: Wow, some weather! </p>
-
- <p><i><u>What is missing?</u></i></p>
-
-   <input type="radio" class="rads" name="weather" value="err_he"> a) The masculine subject - "He"<br>
-   <input type="radio" class="rads" name="weather" value="corr_it"> b) The neuter subject "It"<br>
-   <input type="radio" class="rads" name="weather" value="err_noth"> c) Nothing is missing<br>
-   <input type="radio" class="rads" name="weather" value="err_i"> d) The subject "I">
+<h4><b>SITUATION 2</b></h4>
 
 
+<p>Cris: Look out the window! I can't believe it!___was sunny 5 minute ago, now___is raining!</p>
+<p>Natalie:___is like that here in January.
+<p>Cris: Wow, some weather! </p>
 
- <h4>SITUATION 3</h4>
+<p><i><u>What is missing?</u></i></p>
 
- <p>John: How far is___from Sao Paulo to Brasilia?</p>
- <p>Pedro: I don't know but___ must be a solid 10 hour drive.</p>
- <p>John: I didn't know___takes this long.</p>
- <p>Pedro: How long does___take to get from New York to Detroit.</p>
- <p>John:___is about the same.</p>
+<input type="radio" class="rads" name="weather" value="err_he"> a) The masculine subject - "He"<br>
+<input type="radio" class="rads" name="weather" value="corr_it"> b) The neuter subject "It"<br>
+<input type="radio" class="rads" name="weather" value="err_noth"> c) Nothing is missing<br>
+<input type="radio" class="rads" name="weather" value="err_i"> d) The subject "I">
 
 
- <p><i><u>What is missing?</u></i></p>
 
- <input type="radio" class="rads" name="dist" value="corr_it"> a)The neuter subject "It"<br>
- <input type="radio" class="rads" name="dist" value="err_she"> b)The feminine subject - "She"<br>
- <input type="radio" class="rads" name="dist" value="err_car">c) The word "car"<br>
- <input type="radio" class="rads" name="dist" value="err_noth"> d)Nothing is missing <br>
+<h4>SITUATION 3</h4>
+
+<p>John: How far is___from Sao Paulo to Brasilia?</p>
+<p>Pedro: I don't know but___ must be a solid 10 hour drive.</p>
+<p>John: I didn't know___takes this long.</p>
+<p>Pedro: How long does___take to get from New York to Detroit.</p>
+<p>John:___is about the same.</p>
+
+
+<p><i><u>What is missing?</u></i></p>
+
+<input type="radio" class="rads" name="dist" value="corr_it"> a)The neuter subject "It"<br>
+<input type="radio" class="rads" name="dist" value="err_she"> b)The feminine subject - "She"<br>
+<input type="radio" class="rads" name="dist" value="err_car">c) The word "car"<br>
+<input type="radio" class="rads" name="dist" value="err_noth"> d)Nothing is missing <br>
 
 
 
@@ -582,19 +557,46 @@ require_once('./dbconn.php');
 <button id='backHome-1'><a href='https://www.brazilianbloopers.com' style='color: black'>Home</a></button>
 <button id="check_first" type="submit" name="checkfirst">Check</button>
 
-</form>
-</div>  `);
+
+ </form>
+</div>); `));
+
+ /* Mousemove function for the instructions*/
+ $(function() {
+      let moveLeft = 20;
+      let moveDown = 10;
+
+      $('#instr').hover(function(e) {
+        $('#inst_hov').show('slow');
+        console.log( 'Hi there')
+      }, function() {
+        $('#inst_hov').hide('slow');
+      });
+
+      $('#instr').mousemove(function(e) {
+        $('#inst_hov').css('top', e.pageY + moveDown).css('left', e.pageX + moveLeft);
+      });
+
+    });
+
+
+
+         });
+
+     });
+
+
+
 
     $("#quiz_form").submit(function() {
 
-      console.log('Here 2');
-
-      return false;
+    return false;
+    alert('return false');
     });
 
     $("#check_first").on("click", function() {
-      var formData = $("#quiz_form :input").serializeArray();
-      formData[formData.length] = {
+      var formDataQuiz = $("#quiz_form :input").serializeArray();
+      formDataQuiz[formDataQuiz.length] = {
         name: "action",
         value: "check_first"
       };
@@ -603,7 +605,7 @@ require_once('./dbconn.php');
       $.ajax({
         type: "POST",
         url: $("#quiz_form").attr("action"),
-        data: formData,
+        data: formDataQuiz,
         dataType: 'json',
         async: true,
         success: function(result) {
