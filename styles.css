@@ -174,8 +174,8 @@ p#instr {
   padding: 5px;
   border-radius: 5px;
   cursor: help;
-  position: sticky;
-  margin-top: 3px;
+  position: fixed;
+ /* margin-top: 3px;*/
   margin-right: 30px;
 
 }
@@ -227,7 +227,7 @@ p#instr {
 
  /* HOVER STYLES */
 
- #inst_popup {
+ #inst_hov {
   display: none;
   position: absolute;
   width: 280px;
