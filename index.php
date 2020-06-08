@@ -577,34 +577,32 @@ require_once('./dbconn.php');
     });
 
   });
+
 });
 
-
-
-
-    $("#quiz_form").submit(function() {
+$("#quiz_form").submit(function() {
     return false;
     console.log('return false');
     });
 
     $("#check_first").on("click", function() {
-      var formDataQuiz = $("#quiz_form :input").serializeArray();
-      formDataQuiz[formDataQuiz.length] = {
+      var formData = $("#quiz_form :input").serializeArray();
+      formData[formData.length] = {
         name: "action",
         value: "check_first"
       };
-      formDataQuiz.push({});
+      formData.push({});
       console.log('dataQuiz');
 
       $.ajax({
         type: "POST",
         url: $("#quiz_form").attr("action"),
-        data: formDataQuiz,
+        data: formData,
         dataType: 'json',
         async: true,
+
         success: function(result) {
 
-          alert('success');
 
           if (result.result == 1) {
 
@@ -616,10 +614,11 @@ require_once('./dbconn.php');
             alert('no way');
           }
 
-
         } //ajax, success function 2//
       }); //ajax 2//
     }); //submit on.click function 2//
+
+
   </script>
 
 
@@ -790,6 +789,9 @@ require_once('./dbconn.php');
         e.preventDefault();
       });
     });
+
+
+
   </script>
 
 
