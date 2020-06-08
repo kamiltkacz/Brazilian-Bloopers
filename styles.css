@@ -46,8 +46,6 @@ color: #f5f5dc;
 
 }
 
-
-
 /* Style the tab content (and add height:100% for full page content) */
 .tabcontent {
   color: #f5f5dc;
@@ -215,10 +213,6 @@ p#instr {
 }
 
 
-
-
-
-
 #gen_instr {
 
  text-align: center;
@@ -263,15 +257,12 @@ textarea {
   font-family: 'Patua One', cursive;
   font-size: 20px;
   border: 5px solid #ccc;
-  /*grey*/
   border-radius: 4px;
-  /* Rounded borders */
   box-sizing: border-box;
-  /* Make sure that padding and width stays in place */
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
-  /* Allow the user to vertically resize the textarea (not horizontally) */
+
 }
 
 #ageselect {
