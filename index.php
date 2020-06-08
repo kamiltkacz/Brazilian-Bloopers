@@ -491,84 +491,81 @@ require_once('./dbconn.php');
       $("#start_quiz").on("click", function() {
 
         $(".popup").show();
-        $('.popup-inner').html($(`<div class="quiz">
+        $(".popup-inner").html($(`<div class="quiz">
 
-<form id="quiz_form" method="post" action="actions.php">
+          <form id="quiz_form" method="post" action="actions.php">
 
+          <div id="dialogue_1">
 
+          <h3><u>Read the dialogues and choose the best option for the blank spaces</u></h3>
 
+          <h4><b>SITUATION 1</b></h4>
 
+          <p>Liz: Do you watch the news everyday?</p>
+          <p>Mike: Yes, I think___is important to know what's going on.</p>
+          <p>Liz: I agree but sometimes___is difficult. There is a lot of negativity in the news.</p>
 
-<div id="dialogue_1">
+          <p><i><u>What is missing?</u></i></p>
 
-<h3><u>Read the dialogues and choose the best option for the blank spaces</u></h3>
+          <input type="radio" class="rads" name="news" value="err_contrct"> a )Contraction - " 's "<br>
+          <input type="radio" class="rads" name="news" value="err_pizz"> b) The word "pizza"<br>
+          <input type="radio" class="rads" name="news" value="err_noth">c) Nothing is missing<br>
+          <input type="radio" class="rads" name="news" value="corr_it">d) The neuter subject "It"
 
-<h4><b>SITUATION 1</b></h4>
-
-<p>Liz: Do you watch the news everyday?</p>
-<p>Mike: Yes, I think___is important to know what's going on.</p>
-<p>Liz: I agree but sometimes___is difficult. There is a lot of negativity in the news.</p>
-
-<p><i><u>What is missing?</u></i></p>
-
-<input type="radio" class="rads" name="news" value="err_contrct"> a )Contraction - " 's "<br>
-<input type="radio" class="rads" name="news" value="err_pizz"> b) The word "pizza"<br>
-<input type="radio" class="rads" name="news" value="err_noth">c) Nothing is missing<br>
-<input type="radio" class="rads" name="news" value="corr_it">d) The neuter subject "It"
-
-<h4><b>SITUATION 2</b></h4>
+          <h4><b>SITUATION 2</b></h4>
 
 
-<p>Cris: Look out the window! I can't believe it!___was sunny 5 minute ago, now___is raining!</p>
-<p>Natalie:___is like that here in January.
-<p>Cris: Wow, some weather! </p>
+          <p>Cris: Look out the window! I can't believe it!___was sunny 5 minute ago, now___is raining!</p>
+          <p>Natalie:___is like that here in January.
+          <p>Cris: Wow, some weather! </p>
 
-<p><i><u>What is missing?</u></i></p>
+          <p><i><u>What is missing?</u></i></p>
 
-<input type="radio" class="rads" name="weather" value="err_he"> a) The masculine subject - "He"<br>
-<input type="radio" class="rads" name="weather" value="corr_it"> b) The neuter subject "It"<br>
-<input type="radio" class="rads" name="weather" value="err_noth"> c) Nothing is missing<br>
-<input type="radio" class="rads" name="weather" value="err_i"> d) The subject "I">
+          <input type="radio" class="rads" name="weather" value="err_he"> a) The masculine subject - "He"<br>
+          <input type="radio" class="rads" name="weather" value="corr_it"> b) The neuter subject "It"<br>
+          <input type="radio" class="rads" name="weather" value="err_noth"> c) Nothing is missing<br>
+          <input type="radio" class="rads" name="weather" value="err_i"> d) The subject "I">
 
 
 
-<h4>SITUATION 3</h4>
+          <h4>SITUATION 3</h4>
 
-<p>John: How far is___from Sao Paulo to Brasilia?</p>
-<p>Pedro: I don't know but___ must be a solid 10 hour drive.</p>
-<p>John: I didn't know___takes this long.</p>
-<p>Pedro: How long does___take to get from New York to Detroit.</p>
-<p>John:___is about the same.</p>
-
-
-<p><i><u>What is missing?</u></i></p>
-
-<input type="radio" class="rads" name="dist" value="corr_it"> a)The neuter subject "It"<br>
-<input type="radio" class="rads" name="dist" value="err_she"> b)The feminine subject - "She"<br>
-<input type="radio" class="rads" name="dist" value="err_car">c) The word "car"<br>
-<input type="radio" class="rads" name="dist" value="err_noth"> d)Nothing is missing <br>
+          <p>John: How far is___from Sao Paulo to Brasilia?</p>
+          <p>Pedro: I don't know but___ must be a solid 10 hour drive.</p>
+          <p>John: I didn't know___takes this long.</p>
+          <p>Pedro: How long does___take to get from New York to Detroit.</p>
+          <p>John:___is about the same.</p>
 
 
+          <p><i><u>What is missing?</u></i></p>
 
-</div>
-
-<p id="instr" name="instructions">Instructions</p>
-
-<button id='backHome-1'><a href='https://www.brazilianbloopers.com' style='color: black'>Home</a></button>
-<button id="check_first" type="submit" name="checkfirst">Check</button>
+          <input type="radio" class="rads" name="dist" value="corr_it"> a)The neuter subject "It"<br>
+          <input type="radio" class="rads" name="dist" value="err_she"> b)The feminine subject - "She"<br>
+          <input type="radio" class="rads" name="dist" value="err_car">c) The word "car"<br>
+          <input type="radio" class="rads" name="dist" value="err_noth"> d)Nothing is missing <br>
 
 
- </form>
-</div>); `));
+
+          </div>
+
+          <p id="instr" name="instructions">Instructions</p>
+
+          <button id='backHome-1'><a href='https://www.brazilianbloopers.com' style='color: black'>Home</a></button>
+          <button id="check_first" type="submit" name="checkfirst">Check</button>
+
+
+           </form>
+          </div>); `));
 
  /* Mousemove function for the instructions*/
+
  $(function() {
       let moveLeft = 20;
       let moveDown = 10;
 
       $('#instr').hover(function(e) {
         $('#inst_hov').show('slow');
-        console.log( 'Hi there')
+
       }, function() {
         $('#inst_hov').hide('slow');
       });
@@ -579,19 +576,15 @@ require_once('./dbconn.php');
 
     });
 
-
-
-         });
-
-     });
+  });
+});
 
 
 
 
     $("#quiz_form").submit(function() {
-
     return false;
-    alert('return false');
+    console.log('return false');
     });
 
     $("#check_first").on("click", function() {
@@ -600,7 +593,8 @@ require_once('./dbconn.php');
         name: "action",
         value: "check_first"
       };
-      formData.push({});
+      formDataQuiz.push({});
+      console.log('dataQuiz');
 
       $.ajax({
         type: "POST",
@@ -621,6 +615,7 @@ require_once('./dbconn.php');
           if (result.result == 2) {
             alert('no way');
           }
+
 
         } //ajax, success function 2//
       }); //ajax 2//
