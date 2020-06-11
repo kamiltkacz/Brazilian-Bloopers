@@ -1,7 +1,7 @@
-    // $("#quiz_form").submit(function() {
-    // return false;
-    // console.log('return false');
-    // });
+    $("#quiz_form").submit(function() {
+    return false;
+    console.log('return false');
+    });
 
     $("#check_first").on("click", function() {
       var formData = $("#quiz_form :input").serializeArray();
