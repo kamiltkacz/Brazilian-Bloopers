@@ -22,14 +22,13 @@ require_once('./dbconn.php');
   <!--Squada One Font-->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
-
-  <!--SweetAlert2 -->
+   <!--SweetAlert2 -->
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
-  <script src="sweetalert2.all.min.js"></script>
+  <script src="sweetalert2/dist/sweetalert2.all.min.js"></script>
   <!-- Optional: include a polyfill for ES6 Promises for IE11 -->
-  <script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
+  <script src="https://cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.js"></script>
 
-  <!--Babel, Moment, Rome-->
+ <!--Babel, Moment, Rome-->
   <script src="https://unpkg.com/babel-polyfill@6.2.0/dist/polyfill.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/rome/3.0.2/rome.standalone.js"></script>
@@ -62,7 +61,7 @@ require_once('./dbconn.php');
 
     <div class="grid-five">
       <div class="container">
-        <p>If you look up English defintion of the word <a href="https://www.dictionary.com/browse/blooper"><span style="color:yellowgreen">'blooper'</a></span> what you'll get is that it's an embarassing error you make publicly. Although we don't think the mistakes you'll find here are embarrasing, we do believe correcting them will be a small step forward in your language learning. Think of this quiz as a nice amo to your arsenal on your English learning journey. Dont' forget to enjoy the process! </p>
+        <p>If you look up English defintion of the word <a href="https://www.dictionary.com/browse/blooper"><span style="color:green">'blooper'</a></span> what you'll get is that it's an embarassing error you make publicly. Although we don't think the mistakes you'll find here are embarrasing, we do believe correcting them will be a small step forward in your language learning. Think of this quiz as a nice amo to your arsenal on your English learning journey. Dont' forget to enjoy the process! </p>
       </div>
       <div class="container">
         <p>Let's face it. It's not an easy task to learn another language and communicate your ideas in it. English, however omnipresent in this world, is no exception. No worries, we're here to help a little with that.</p>
@@ -133,7 +132,7 @@ require_once('./dbconn.php');
         <legend>Follow these 3 simple steps:</legend>
         <ol>
           <li>
-            <p>Fill out our spectacularly short&nbsp;<a class="btn" data-popup-open="popup-1" href="#"><span id="surveyname" style="color: yellowgreen"><u>survey</u></span></a><br>and click submit</p>
+            <p>Fill out our spectacularly short&nbsp;<a class="btn" data-popup-open="popup-1" href="#"><span id="surveyname" style="color:green"><u>survey</u></span></a><br>and click submit</p>
           </li>
           <li>
             <p>Click "Start" to begin the quiz</p>
@@ -249,11 +248,6 @@ require_once('./dbconn.php');
   </div>
 
   <!-- QUIZ PAGE ONE -->
-
-
-
-
-
 
 
   <script>
@@ -490,72 +484,87 @@ require_once('./dbconn.php');
 
       $("#start_quiz").on("click", function() {
 
-        $(".popup").show();
+       $(".popup").show();
+
         $(".popup-inner").html($(`<div class="quiz">
 
-          <form id="quiz_form" method="post" action="actions.php">
-
-          <div id="dialogue_1">
-
-          <h3><u>Read the dialogues and choose the best option for the blank spaces</u></h3>
-
-          <h4><b>SITUATION 1</b></h4>
-
-          <p>Liz: Do you watch the news everyday?</p>
-          <p>Mike: Yes, I think___is important to know what's going on.</p>
-          <p>Liz: I agree but sometimes___is difficult. There is a lot of negativity in the news.</p>
-
-          <p><i><u>What is missing?</u></i></p>
-
-          <input type="radio" class="rads" name="news" value="err_contrct"> a )Contraction - " 's "<br>
-          <input type="radio" class="rads" name="news" value="err_pizz"> b) The word "pizza"<br>
-          <input type="radio" class="rads" name="news" value="err_noth">c) Nothing is missing<br>
-          <input type="radio" class="rads" name="news" value="corr_it">d) The neuter subject "It"
-
-          <h4><b>SITUATION 2</b></h4>
-
-
-          <p>Cris: Look out the window! I can't believe it!___was sunny 5 minute ago, now___is raining!</p>
-          <p>Natalie:___is like that here in January.
-          <p>Cris: Wow, some weather! </p>
-
-          <p><i><u>What is missing?</u></i></p>
-
-          <input type="radio" class="rads" name="weather" value="err_he"> a) The masculine subject - "He"<br>
-          <input type="radio" class="rads" name="weather" value="corr_it"> b) The neuter subject "It"<br>
-          <input type="radio" class="rads" name="weather" value="err_noth"> c) Nothing is missing<br>
-          <input type="radio" class="rads" name="weather" value="err_i"> d) The subject "I">
+<form id="quiz_form" method="post" action="actions.php">
 
 
 
-          <h4>SITUATION 3</h4>
+<h3><u>Read the dialogues and choose the best option for the blank spaces</u></h3>
 
-          <p>John: How far is___from Sao Paulo to Brasilia?</p>
-          <p>Pedro: I don't know but___ must be a solid 10 hour drive.</p>
-          <p>John: I didn't know___takes this long.</p>
-          <p>Pedro: How long does___take to get from New York to Detroit.</p>
-          <p>John:___is about the same.</p>
+  <div id="ques_one">
+  <h4><b>SITUATION 1</b></h4>
 
+  <p>Liz: Do you watch the news everyday?</p>s
+  <p>Mike: Yes, I think___is important to know what's going on.</p>
+  <p>Liz: I agree but sometimes___is difficult. There is a lot of negativity in the news.</p>
 
-          <p><i><u>What is missing?</u></i></p>
+  <p><i><u>What is missing?</u></i></p>
 
-          <input type="radio" class="rads" name="dist" value="corr_it"> a)The neuter subject "It"<br>
-          <input type="radio" class="rads" name="dist" value="err_she"> b)The feminine subject - "She"<br>
-          <input type="radio" class="rads" name="dist" value="err_car">c) The word "car"<br>
-          <input type="radio" class="rads" name="dist" value="err_noth"> d)Nothing is missing <br>
-
-
-
-          </div>
-
-          <p id="instr" name="instructions">Instructions</p>
-
-          <button id='backHome-1'><a href='https://www.brazilianbloopers.com' style='color: black'>Home</a></button>
-          <button id="check_first" type="submit" name="checkfirst">Check</button>
+  <input type="radio" class="rads" name="news" value="err_contrct"> a )Contraction - " 's "<br>
+  <input type="radio" class="rads" name="news" value="err_pizz"> b) The word "pizza"<br>
+  <input type="radio" class="rads" name="news" value="err_noth">c) Nothing is missing<br>
+  <input type="radio" class="rads" name="news" value="corr_it">d) The neuter subject "It"
+  </div>
+<div id="ques_two">
+<h4><b>SITUATION 2</b></h4>
 
 
-           </form>
-          </div>); `));
+  <p>Cris: Look out the window! I can't believe it!___was sunny 5 minute ago, now___is raining!</p>
+  <p>Natalie:___is like that here in January.
+  <p>Cris: Wow, some weather! </p>
+
+  <p><i><u>What is missing?</u></i></p>
+
+  <input type="radio" class="rads" name="weather" value="err_he"> a) The masculine subject - "He"<br>
+  <input type="radio" class="rads" name="weather" value="corr_it"> b) The neuter subject "It"<br>
+  <input type="radio" class="rads" name="weather" value="err_noth"> c) Nothing is missing<br>
+  <input type="radio" class="rads" name="weather" value="err_i"> d) The subject "I">
+</div>
+
+<div id="ques_three">
+<h4>SITUATION 3</h4>
+
+  <p>John: How far is___from Sao Paulo to Brasilia?</p>
+  <p>Pedro: I don't know but___ must be a solid 10 hour drive.</p>
+  <p>John: I didn't know___takes this long.</p>
+  <p>Pedro: How long does___take to get from New York to Detroit.</p>
+  <p>John:___is about the same.</p>
+
+
+  <p><i><u>What is missing?</u></i></p>
+
+  <input type="radio" class="rads" name="dist" value="corr_it"> a)The neuter subject "It"<br>
+  <input type="radio" class="rads" name="dist" value="err_she"> b)The feminine subject - "She"<br>
+  <input type="radio" class="rads" name="dist" value="err_car">c) The word "car"<br>
+  <input type="radio" class="rads" name="dist" value="err_noth"> d)Nothing is missing <br>
+</div>
+
+
+
+
+
+<p id="instr" name="instructions">Instructions</p>
+
+<button id='backHome-1'><a href='https://www.brazilianbloopers.com' style='color: black'>Home</a></button>
+<button id="check_first" type="submit" name="checkfirst">Next</button>
+
+
+ </form>
+</div>);
+
+`));
+
+$(document).ready(function(){
+
+  $('#ques_one').show();
+
+});
+
+
+
 
  /* Mousemove function for the instructions*/
 
@@ -575,7 +584,7 @@ require_once('./dbconn.php');
       });
 
     });
-    // Broken From here
+
 $("#quiz_form").submit(function() {
     return false;
     console.log('return false');
@@ -603,7 +612,7 @@ $("#quiz_form").submit(function() {
           if (result.result == 1) {
 
 
-            alert('yes');
+            alert('coming soon');
           }
 
           if (result.result == 2) {
@@ -798,6 +807,7 @@ $("#quiz_form").submit(function() {
   </script>
 
 <!--<script src="first_page.js"></script>-->
+
 
 
 </body>
