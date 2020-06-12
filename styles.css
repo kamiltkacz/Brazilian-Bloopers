@@ -33,7 +33,7 @@ color: #f5f5dc;
 
 /* Style tab links */
 .tablink {
-  background-color: #b9ff3b69;
+  background-color: #77993b69;
   color: #f5f5dc;
   float: left;
   border: none;
@@ -199,19 +199,12 @@ p#instr {
   margin-right: 10px;
 
 }
-#backHome-2 {
-  background-color: whitesmoke;
-  color: #000000;
-  font-family: inherit;
-  font-size: 17px;
-  padding: 5px;
-  border-radius: 8px;
-  cursor: pointer;
-  margin-top: 10px;
-  margin-right: 10px;
+#ques_one, #ques_two, #ques_three {
+
+display: none;
+
 
 }
-
 
 #gen_instr {
 
@@ -316,7 +309,7 @@ input[type="submit"],
 /* Add a background color and some padding around the form */
 .container {
   border-radius: 20px;
-  background-color: #b9ff3b69;
+  background-color: #77993b69;
   padding: 20px;
   text-align: left;
   margin-top: 30px;
