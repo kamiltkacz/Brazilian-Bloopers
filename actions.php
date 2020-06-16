@@ -128,29 +128,29 @@ if (isset($_POST["action"])) {
 
   }
 
-  if ($action == "check_first") {
-    $export = Array();
-    $news = $_POST["news"];
-    $weather = $_POST["weather"];
-    $dist = $_POST["dist"];
+  // if ($action == "nextBtn") {
+  //   $export = Array();
+  //   $news = $_POST["news"];
+  //   $weather = $_POST["weather"];
+  //   $dist = $_POST["dist"];
 
-    $sql = "INSERT INTO quiz (Radio_1, Radio_2, Radio_3)
-    VALUES ('$news', '$weather', '$dist')";
+  //   $sql = "INSERT INTO quiz (Radio_1, Radio_2, Radio_3)
+  //   VALUES ('$news', '$weather', '$dist')";
 
-    if (mysqli_query($conn, $sql) === TRUE) {
+  //   if (mysqli_query($conn, $sql) === TRUE) {
 
-      $export['result'] = "1";
-
-
-    } else {
-
-      $export['result'] = "2";
+  //     $export['result'] = "1";
 
 
-    }
+  //   } else {
+
+  //     $export['result'] = "2";
 
 
-  }
+  //   }
+
+
+  // }
 
 
 
