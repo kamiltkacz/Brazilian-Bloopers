@@ -164,6 +164,8 @@ list-style-position: outside;
   display: none;
 }
 
+
+
 p#instr {
   background-color: whitesmoke;
   color: #0f1403;
@@ -177,16 +179,7 @@ p#instr {
   margin-right: 30px;
 
 }
-/*
-#nextBtn {
-  background-color: whitesmoke;
-  color: #0f1403;
-  font-family: inherit;
-  font-size: 17px;
-  padding: 5px;
-  border-radius: 8px;
-  cursor: pointer;
-}*/
+
 #backHome-1 {
   background-color: whitesmoke;
   color: #000000;
@@ -199,7 +192,9 @@ p#instr {
   margin-right: 10px;
 
 }
-#ques_one, #ques_two, #ques_three {
+
+
+.tab {
 
 display: none;
 
@@ -228,7 +223,7 @@ display: none;
 
 /*check button*/
 
-#check_first {
+#nextBtn {
 background-color: whitesmoke;
 color: #000000;
 font-family: inherit;
@@ -240,6 +235,21 @@ margin-top: 10px;
 margin-right: 10px;
 
 }
+
+#prevBtn {
+  background-color: whitesmoke;
+  color: #000000;
+  font-family: inherit;
+  font-size: 17px;
+  padding: 5px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-right: 10px;
+
+  }
+
+
 
 /* CONTACT FORM Style inputs with type="text", select elements and textareas */
 input[type="text"],
@@ -321,6 +331,27 @@ input[type="submit"],
 
 }
 
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+/* Mark the active step: */
+.step.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: #4CAF50;
+}
 
 
 
