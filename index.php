@@ -138,7 +138,7 @@ require_once('./dbconn.php');
             <p>Click "Start" to begin the quiz</p>
 
 
-              <button id="start_quiz" type="submit" name="startquiz">Start</button>
+              <button id="a_quiz" type="button"><a class="btn" data-popup-open="popup-2" href="#">Start</a></button>
 
            </li>
           <li>
@@ -234,6 +234,82 @@ require_once('./dbconn.php');
 
 
 
+  <!-- QUIZ  -->
+
+
+  <div class="popup" data-popup="popup-2">
+    <div class="popup-inner">
+
+            <form id="quiz_form" method="post" action="actions.php">
+
+            <a class="popup-close" data-popup-close="popup-2" href="#">x</a>
+            <h3><u>Read the dialogues and choose the best option for the blank spaces</u></h3>
+
+              <div id="ques_one" class="tab" style="display: none;">
+              <h4><b>SITUATION 1</b></h4>
+
+              <p>Liz: Do you watch the news everyday?</p>
+              <p>Mike: Yeah, I think___is important to know what's going on.</p>
+              <p>Liz: I agree but sometimes___is difficult. There is a lot of negativity on the news.</p>
+
+              <p><i><u>What is missing?</u></i></p>
+
+              <input type="radio" class="rads" name="news" value="err_contrct"> a )Contraction - " 's "<br>
+              <input type="radio" class="rads" name="news" value="err_pizz"> b) The word "pizza"<br>
+              <input type="radio" class="rads" name="news" value="err_noth">c) Nothing is missing<br>
+              <input type="radio" class="rads" name="news" value="corr_it">d) The neuter subject "It"
+              </div>
+            <div id="ques_two" class="tab" style="display: none;">
+            <h4><b>SITUATION 2</b></h4>
+
+
+              <p>Cris: Look out the window! I can't believe it!___was sunny 5 minute ago, now___is raining!</p>
+              <p>Natalie:___is like that here in January.
+              <p>Cris: Wow, some weather! </p>
+
+              <p><i><u>What is missing?</u></i></p>
+
+              <input type="radio" class="rads" name="weather" value="err_he"> a) The masculine subject - "He"<br>
+              <input type="radio" class="rads" name="weather" value="corr_it"> b) The neuter subject "It"<br>
+              <input type="radio" class="rads" name="weather" value="err_noth"> c) Nothing is missing<br>
+              <input type="radio" class="rads" name="weather" value="err_i"> d) The subject "I">
+            </div>
+
+            <div id="ques_three" class="tab" style="display: none;">
+            <h4>SITUATION 3</h4>
+
+              <p>John: How far is___from Sao Paulo to Brasilia?</p>
+              <p>Pedro: I don't know but___ must be a solid 10 hour drive.</p>
+              <p>John: I didn't know___takes this long.</p>
+              <p>Pedro: How long does___take to get from New York to Detroit.</p>
+              <p>John:___is about the same.</p>
+
+
+              <p><i><u>What is missing?</u></i></p>
+
+              <input type="radio" class="rads" name="dist" value="corr_it"> a)The neuter subject "It"<br>
+              <input type="radio" class="rads" name="dist" value="err_she"> b)The feminine subject - "She"<br>
+              <input type="radio" class="rads" name="dist" value="err_car">c) The word "car"<br>
+              <input type="radio" class="rads" name="dist" value="err_noth"> d)Nothing is missing <br>
+            </div>
+
+            <div id="allButtons">
+            <p id="instr" name="instructions">Instructions</p>
+            <div style="overflow:auto;">
+             <div style="float:right;">
+             <button type="button" id="prevBtn">Previous</button>
+             <button type="button" id="nextBtn">Next</button>
+            </div>
+            </div>
+
+
+            <button id='backHome-1'><a href='https://www.brazilianbloopers.com' style='color: black'>Home</a></button>
+            </div>
+
+            </form>
+             </div> <!--popup-inner-->
+          </div> <!-- popup2-->
+
 
   <!--mouseover instructions in CSS: Dispaly None DIV -->
 
@@ -247,7 +323,6 @@ require_once('./dbconn.php');
     </ul>
   </div>
 
-  <!-- QUIZ PAGE ONE -->
 
 
   <script>
@@ -341,7 +416,7 @@ require_once('./dbconn.php');
     $("#submit_survey").on("click", function() {
 
      // Start Button Show
-     $("#start_quiz").show("slow");
+     $("#a_quiz").show("slow");
 
       var formData = $("#survey :input").serializeArray();
       formData[formData.length] = {
@@ -479,173 +554,44 @@ require_once('./dbconn.php');
 
 
 
+   $("#a_quiz").on("click", function() {
 
-    $(document).ready(function() {
+     var quizTabs = $(".tab");
 
-      $("#start_quiz").on("click", function() {
-
-       $(".popup").show();
-
-        $(".popup-inner").html($(`<div class="quiz">
-
-            <form id="quiz_form" method="post" action="">
-            <h3><u>Read the dialogues and choose the best option for the blank spaces</u></h3>
-
-              <div id="ques_one" class="tab">
-              <h4><b>SITUATION 1</b></h4>
-
-              <p>Liz: Do you watch the news everyday?</p>
-              <p>Mike: Yeah, I think___is important to know what's going on.</p>
-              <p>Liz: I agree but sometimes___is difficult. There is a lot of negativity on the news.</p>
-
-              <p><i><u>What is missing?</u></i></p>
-
-              <input type="radio" required class="rads" name="news" value="err_contrct"> a )Contraction - " 's "<br>
-              <input type="radio" class="rads" name="news" value="err_pizz"> b) The word "pizza"<br>
-              <input type="radio" class="rads" name="news" value="err_noth">c) Nothing is missing<br>
-              <input type="radio" class="rads" name="news" value="corr_it">d) The neuter subject "It"
-              </div>
-            <div id="ques_two" class="tab">
-            <h4><b>SITUATION 2</b></h4>
+     $("#ques_one").show();
+     $(document).ready(function(){
+     $('#nextBtn').click(function() {
+      if (typeof $('.rads:checked').val() !== 'undefined'){
+        alert('One of the radio buttons is checked!');
+        // go to next tab
+        $("#ques_one").hide();
+        $("#ques_two").show();
 
 
-              <p>Cris: Look out the window! I can't believe it!___was sunny 5 minute ago, now___is raining!</p>
-              <p>Natalie:___is like that here in January.
-              <p>Cris: Wow, some weather! </p>
-
-              <p><i><u>What is missing?</u></i></p>
-
-              <input type="radio" class="rads" name="weather" value="err_he"> a) The masculine subject - "He"<br>
-              <input type="radio" class="rads" name="weather" value="corr_it"> b) The neuter subject "It"<br>
-              <input type="radio" class="rads" name="weather" value="err_noth"> c) Nothing is missing<br>
-              <input type="radio" class="rads" name="weather" value="err_i"> d) The subject "I">
-            </div>
-
-            <div id="ques_three" class="tab">
-            <h4>SITUATION 3</h4>
-
-              <p>John: How far is___from Sao Paulo to Brasilia?</p>
-              <p>Pedro: I don't know but___ must be a solid 10 hour drive.</p>
-              <p>John: I didn't know___takes this long.</p>
-              <p>Pedro: How long does___take to get from New York to Detroit.</p>
-              <p>John:___is about the same.</p>
 
 
-              <p><i><u>What is missing?</u></i></p>
-
-              <input type="radio" class="rads" name="dist" value="corr_it"> a)The neuter subject "It"<br>
-              <input type="radio" class="rads" name="dist" value="err_she"> b)The feminine subject - "She"<br>
-              <input type="radio" class="rads" name="dist" value="err_car">c) The word "car"<br>
-              <input type="radio" class="rads" name="dist" value="err_noth"> d)Nothing is missing <br>
-            </div>
 
 
-            <p id="instr" name="instructions">Instructions</p>
-            <div style="overflow:auto;">
-             <div style="float:right;">
-             <button type="button" id="prevBtn">Previous</button>
-             <button type="button" id="nextBtn">Next</button>
-            </div>
-            </div>
-
-            <button id='backHome-1'><a href='https://www.brazilianbloopers.com' style='color: black'>Home</a></button>
 
 
-            <!-- Circles which indicates the steps of the form: -->
-             <div style="text-align:center;margin-top:40px;">
-               <span class="step"></span>
-               <span class="step"></span>
-               <span class="step"></span>
-               <span class="step"></span>
-             </div>
 
 
-            </form>
-            </div>);
-
-`));
-
-
- var currentTab = 0;
- showTab(currentTab);
-
-function showTab(n) {
-
-  var x = document.getElementsByClassName("tab");
-  x[n].style.display = "block";
-  if (n == 0) {
-    document.getElementById("prevBtn").style.display = "none";
-  } else {
-    document.getElementById("prevBtn").style.display = "inline";
-  }
-  if (n == (x.length - 1)) {
-    document.getElementById("nextBtn").innerHTML = "Submit";
-  } else {
-    document.getElementById("nextBtn").innerHTML = "Next";
-  }
-
-  fixStepIndicator(n)
-}
-
-function nextPrev(n) {
-
-  // Which tab to display
-
-  var x = document.getElementsByClassName("tab");
-  // Exit the function if any field in the current tab is invalid:
-  if (n == 1 && !validateForm()) return false;
-  // Hide the current tab:
-  x[currentTab].style.display = "none";
-  // Increase or decrease the current tab by 1:
-  currentTab = currentTab + n;
-   // the end of the form... :
-    if (currentTab >= x.length) {
-    //...the form gets submitted:
-    document.getElementById("quiz_form").submit();
-    return false;
-  }
-  // Otherwise, display the correct tab:
-  showTab(currentTab);
+     } else {
+      alert('Nothing is checked!');
+        return false;
 
 
-}
+    }
+  });
 
 
-function validateForm() {
+});
+});
 
-  var x, y, i, valid = true;
-  x = document.getElementsByClassName("tab");
-  y = x[currentTab].getElementsByClassName("rads");
 
-      for (i = 0; i < y.length; i++) {
 
-            if (y[i].checked == true) {
-                  alert("checked");
-            return true;
-                }
-              }
-                  alert('choose pliz');
-            return false;
 
-// If the valid is true, mark the step as finished and valid:
-  if (valid) {
-    document.getElementsByClassName("step")[currentTab].className += " finish";
-  }
-  return valid; // return the valid status
- }
 
-function fixStepIndicator(n) {
-  // This function removes the "active" class of all steps
-  var i, x = document.getElementsByClassName("step");
-  for (i = 0; i < x.length; i++) {
-    x[i].className = x[i].className.replace(" active", "");
-  }
-  //... and adds the "active" class to the current step:
-  x[n].className += " active";
-}
-
-document.getElementById("nextBtn").addEventListener("click", () => nextPrev(1)); // "double" function or no pass
-document.getElementById("prevBtn").addEventListener("click", () => nextPrev(-1));
 
 
 
@@ -668,50 +614,44 @@ document.getElementById("prevBtn").addEventListener("click", () => nextPrev(-1))
 
     });
 
-  //     $("#quiz_form").submit(function() {
-  //   return false;
-  //   console.log('return false');
-  //   });
+    // $("#quiz_form").submit(function() {
+    // return false;
 
-  //   $("#nextBtn").on("click", function() {
-  //     var formData = $("#quiz_form :input").serializeArray();
-  //     formData[formData.length] = {
-  //       name: "action",
-  //       value: "nextBtn"
-  //     };
-  //     formData.push({});
-  //     console.log('dataQuiz');
+    // });
 
-  //     $.ajax({
-  //       type: "POST",
-  //       url: $("#quiz_form").attr("action"),
-  //       data: formData,
-  //       dataType: 'json',
-  //       async: true,
+    // $("#nextBtn").on("click", function() {
+    //   var formData = $("#quiz_form :input").serializeArray();
+    //   formData[formData.length] = {
+    //     name: "action",
+    //     value: "nextBtn"
+    //   };
+    //   formData.push({});
+    //   console.log('dataQuiz');
 
-  //       success: function(result) {
+    //   $.ajax({
+    //     type: "POST",
+    //     url: $("#quiz_form").attr("action"),
+    //     data: formData,
+    //     dataType: 'json',
+    //     async: true,
 
-
-  //         if (result.result == 1) {
+    //     success: function(result) {
 
 
-  //           alert('coming soon');
-  //         }
-
-  //         if (result.result == 2) {
-  //           alert('no way');
-  //         }
-
-  //       } //ajax, success function 2//
-  //     }); //ajax 2//
-  //   }); //submit on.click function 2//
+    //       if (result.result == 1) {
 
 
+    //          $('.popup').hide();
+    //       }
 
+    //       if (result.result == 2) {
+    //         alert('no way');
+    //       }
 
-  });
+    //     } //ajax, success function 2//
+    //   }); //ajax 2//
+    // }); //submit on.click function 2//
 
-});
 
 
 
@@ -874,7 +814,7 @@ document.getElementById("prevBtn").addEventListener("click", () => nextPrev(-1))
 
 
 
-    //MAIN POP UP
+    //SURVEY POP UP
     $(function() {
       //----- OPEN
       $('[data-popup-open]').on('click', function(e) {
@@ -889,6 +829,24 @@ document.getElementById("prevBtn").addEventListener("click", () => nextPrev(-1))
         e.preventDefault();
       });
     });
+
+    //  //QUIZ POP UP
+    //  $(function() {
+    //   //----- OPEN
+    //   $('[data-popup-open]').on('click', function(e) {
+    //     var targeted_popup_class = $(this).attr('data-popup-open');
+    //     $('[data-popup="' + targeted_popup_class + '"]').fadeIn(350);
+    //     e.preventDefault();
+    //   });
+    //   //----- CLOSE
+    //   $('[data-popup-close]').on('click', function(e) {
+    //     var targeted_popup_class = $(this).attr('data-popup-close');
+    //     $('[data-popup="' + targeted_popup_class + '"]').fadeOut(350);
+    //     e.preventDefault();
+    //   });
+    // });
+
+
 
 
 
