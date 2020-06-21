@@ -1,5 +1,5 @@
 <?php
-// var_dump($_POST);
+
 require_once('./dbconn.php');
 
 $action = "";
