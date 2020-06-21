@@ -92,7 +92,7 @@ list-style-position: outside;
 
 #surveyname {
   color: #b9ff3b69;
-  word-spacing: 4px;
+  word-spacing: 5px;
 }
 
 /* Outer */
@@ -153,7 +153,7 @@ list-style-position: outside;
   text-decoration: none;
 }
 
-#start_quiz {
+#a_quiz {
   background-color: whitesmoke;
   color: #0f1403;
   font-family: 'Patua One', cursive;
@@ -193,13 +193,6 @@ p#instr {
 
 }
 
-
-.tab {
-
-display: none;
-
-
-}
 
 #gen_instr {
 
@@ -246,6 +239,7 @@ margin-right: 10px;
   cursor: pointer;
   margin-top: 10px;
   margin-right: 10px;
+  display: none;
 
   }
 
@@ -331,7 +325,7 @@ input[type="submit"],
 
 }
 
-/* Make circles that indicate the steps of the form: */
+/* Make circles that indicate the steps of the form:
 .step {
   height: 15px;
   width: 15px;
@@ -343,15 +337,15 @@ input[type="submit"],
   opacity: 0.5;
 }
 
-/* Mark the active step: */
+/* Mark the active step:
 .step.active {
   opacity: 1;
 }
 
-/* Mark the steps that are finished and valid: */
+/* Mark the steps that are finished and valid:
 .step.finish {
   background-color: #4CAF50;
-}
+} */
 
 
 
