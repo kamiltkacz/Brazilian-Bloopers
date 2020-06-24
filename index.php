@@ -22,13 +22,13 @@ require_once('./dbconn.php');
   <!--Squada One Font-->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
-   <!--SweetAlert2 -->
+  <!--SweetAlert2 -->
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
   <script src="sweetalert2/dist/sweetalert2.all.min.js"></script>
   <!-- Optional: include a polyfill for ES6 Promises for IE11 -->
   <script src="https://cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.js"></script>
 
- <!--Babel, Moment, Rome-->
+  <!--Babel, Moment, Rome-->
   <script src="https://unpkg.com/babel-polyfill@6.2.0/dist/polyfill.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/rome/3.0.2/rome.standalone.js"></script>
@@ -111,10 +111,19 @@ require_once('./dbconn.php');
 
       <div class="container">
         <p>Here's what we look like</p>
+    <label for="states">Who's the best wizard?</label>
+    <input type="text" id="wizards" name="wizards" list="wizards-list">
+     <datalist id="wizards-list">
+     	<option>Harry Potter</option>
+     	<option>Hermione</option>
+     	<option>Dumbledore</option>
+     	<option>Merlin</option>
+     	<option>Gandalf</option>
+     </datalist>
       </div>
 
-    </div>
 
+    </div>
   </div>
 
   <div id="The Quiz" class="tabcontent">
@@ -138,9 +147,9 @@ require_once('./dbconn.php');
             <p>Click "Start" to begin the quiz</p>
 
 
-              <button id="a_quiz" type="button"><a class="btn" data-popup-open="popup-2" href="#">Start</a></button>
+            <button id="a_quiz" type="button"><a class="btn" data-popup-open="popup-2" href="#">Start</a></button>
 
-           </li>
+          </li>
           <li>
             <p>Have fun!</p>
           </li>
@@ -150,15 +159,15 @@ require_once('./dbconn.php');
 
 
 
-      <div class="popup" data-popup="popup-1">
+    <div class="popup" data-popup="popup-1">
 
 
 
-        <div class="popup-inner">
+      <div class="popup-inner">
         <form id="survey" method="post" action="actions.php">
 
-            <a class="popup-close" data-popup-close="popup-1" href="#">x</a>
-            <div id="surv_div">
+          <a class="popup-close" data-popup-close="popup-1" href="#">x</a>
+          <div id="surv_div">
             <div id="question1">
               <p><label id="bor_gender">1) What gender are you?<span id="span_gender" style="color:#ff0000"></span></label></p>
               <input type="radio" id="male" class="radios" name="gender" value="male"><label for="male">Male</label><br>
@@ -223,14 +232,14 @@ require_once('./dbconn.php');
 
 
             <button id="submit_survey" type="submit" name="submitsurvey">Submit</button>
-            </div>
+          </div>
 
 
-            </form>
+        </form>
 
-        </div>
       </div>
     </div>
+  </div>
 
 
 
@@ -240,75 +249,82 @@ require_once('./dbconn.php');
   <div class="popup" data-popup="popup-2">
     <div class="popup-inner">
 
-            <form id="quiz_form" method="post" action="actions.php">
+      <form id="quiz_form" method="post" action="actions.php">
 
-            <a class="popup-close" data-popup-close="popup-2" href="#">x</a>
-            <h3><u>Read the dialogues and choose the best option for the blank spaces</u></h3>
+        <a class="popup-close" data-popup-close="popup-2" href="#">x</a>
+        <h3><u>Read the dialogues and choose the best option for the blank spaces</u></h3>
 
-              <div id="ques_one" class="tab" style="display: none;">
-              <h4><b>SITUATION 1</b></h4>
+        <div id="1" class="q_1 qe">
+          <h4><b>SITUATION 1</b></h4>
 
-              <p>Liz: Do you watch the news everyday?</p>
-              <p>Mike: Yeah, I think___is important to know what's going on.</p>
-              <p>Liz: I agree but sometimes___is difficult. There is a lot of negativity on the news.</p>
+          <p>Liz: Do you watch the news everyday?</p>
+          <p>Mike: Yeah, I think___is important to know what's going on.</p>
+          <p>Liz: I agree but sometimes___is difficult. There is a lot of negativity in the news.</p>
 
-              <p><i><u>What is missing?</u></i></p>
+          <p><i><u>What is missing?</u></i></p>
 
-              <input type="radio" class="rads" name="news" value="err_contrct"> a )Contraction - " 's "<br>
-              <input type="radio" class="rads" name="news" value="err_pizz"> b) The word "pizza"<br>
-              <input type="radio" class="rads" name="news" value="err_noth">c) Nothing is missing<br>
-              <input type="radio" class="rads" name="news" value="corr_it">d) The neuter subject "It"
-              </div>
-            <div id="ques_two" class="tab" style="display: none;">
-            <h4><b>SITUATION 2</b></h4>
+          <input type="radio" class="rads" name="news" value="err_contrct"> a )Contraction - " 's "<br>
+          <input type="radio" class="rads" name="news" value="err_pizz"> b) The word "pizza"<br>
+          <input type="radio" class="rads" name="news" value="err_noth">c) Nothing is missing<br>
+          <input type="radio" class="rads" name="news" value="corr_it">d) The neuter subject "It"
+          <button id="next_1" class="next">next</button>
 
 
-              <p>Cris: Look out the window! I can't believe it!___was sunny 5 minute ago, now___is raining!</p>
-              <p>Natalie:___is like that here in January.
-              <p>Cris: Wow, some weather! </p>
+        </div>
 
-              <p><i><u>What is missing?</u></i></p>
+        <div id="2" class="q_2 qe" style="display: none;">
+          <h4><b>SITUATION 2</b></h4>
 
-              <input type="radio" class="rads" name="weather" value="err_he"> a) The masculine subject - "He"<br>
-              <input type="radio" class="rads" name="weather" value="corr_it"> b) The neuter subject "It"<br>
-              <input type="radio" class="rads" name="weather" value="err_noth"> c) Nothing is missing<br>
-              <input type="radio" class="rads" name="weather" value="err_i"> d) The subject "I">
+
+          <p>Cris: Look out the window! I can't believe it!___was sunny 5 minute ago, now___is raining!</p>
+          <p>Natalie:___is like that here in January.
+            <p>Cris: Wow, some weather! </p>
+
+            <p><i><u>What is missing?</u></i></p>
+
+            <input type="radio" class="rads" name="weather" value="err_he"> a) The masculine subject - "He"<br>
+            <input type="radio" class="rads" name="weather" value="corr_it"> b) The neuter subject "It"<br>
+            <input type="radio" class="rads" name="weather" value="err_noth"> c) Nothing is missing<br>
+            <input type="radio" class="rads" name="weather" value="err_i"> d) The subject "I">
+            <button id="next_2" class="next">next</button>
+            <button id="back_2" class="back">back</button>
+
+        </div>
+
+        <div id="3" class="q_3 qe" style="display: none;">
+          <h4>SITUATION 3</h4>
+
+          <p>John: How far is___from Sao Paulo to Brasilia?</p>
+          <p>Pedro: I don't know but___ must be a solid 10 hour drive.</p>
+          <p>John: I didn't know___takes this long.</p>
+          <p>Pedro: How long does___take to get from New York to Detroit.</p>
+          <p>John:___is about the same.</p>
+
+
+          <p><i><u>What is missing?</u></i></p>
+
+          <input type="radio" class="rads" name="dist" value="corr_it"> a)The neuter subject "It"<br>
+          <input type="radio" class="rads" name="dist" value="err_she"> b)The feminine subject - "She"<br>
+          <input type="radio" class="rads" name="dist" value="err_car">c) The word "car"<br>
+          <input type="radio" class="rads" name="dist" value="err_noth"> d)Nothing is missing <br>
+          <button id="next_3" class="next">next</button>
+          <button id="back_3" class="back">back</button>
+        </div>
+
+
+        <div id="allButtons">
+          <p id="instr" name="instructions">Instructions</p>
+          <div style="overflow:auto;">
+            <div style="float:right;">
             </div>
+          </div>
+          <button id='backHome-1'><a href='https://www.brazilianbloopers.com' style='color: black'>Home</a></button>
+        </div>
 
-            <div id="ques_three" class="tab" style="display: none;">
-            <h4>SITUATION 3</h4>
-
-              <p>John: How far is___from Sao Paulo to Brasilia?</p>
-              <p>Pedro: I don't know but___ must be a solid 10 hour drive.</p>
-              <p>John: I didn't know___takes this long.</p>
-              <p>Pedro: How long does___take to get from New York to Detroit.</p>
-              <p>John:___is about the same.</p>
-
-
-              <p><i><u>What is missing?</u></i></p>
-
-              <input type="radio" class="rads" name="dist" value="corr_it"> a)The neuter subject "It"<br>
-              <input type="radio" class="rads" name="dist" value="err_she"> b)The feminine subject - "She"<br>
-              <input type="radio" class="rads" name="dist" value="err_car">c) The word "car"<br>
-              <input type="radio" class="rads" name="dist" value="err_noth"> d)Nothing is missing <br>
-            </div>
-
-            <div id="allButtons">
-            <p id="instr" name="instructions">Instructions</p>
-            <div style="overflow:auto;">
-             <div style="float:right;">
-             <button type="button" id="prevBtn">Previous</button>
-             <button type="button" id="nextBtn">Next</button>
-            </div>
-            </div>
-
-
-            <button id='backHome-1'><a href='https://www.brazilianbloopers.com' style='color: black'>Home</a></button>
-            </div>
-
-            </form>
-             </div> <!--popup-inner-->
-          </div> <!-- popup2-->
+      </form>
+    </div>
+    <!--popup-inner-->
+  </div> <!-- popup2-->
 
 
   <!--mouseover instructions in CSS: Dispaly None DIV -->
@@ -415,8 +431,8 @@ require_once('./dbconn.php');
 
     $("#submit_survey").on("click", function() {
 
-     // Start Button Show
-     $("#a_quiz").show("slow");
+      // Start Button Show
+      $("#a_quiz").show("slow");
 
       var formData = $("#survey :input").serializeArray();
       formData[formData.length] = {
@@ -552,52 +568,52 @@ require_once('./dbconn.php');
       }); //ajax//
     }); //submit on.click function//
 
+// Working
+
+    $("#a_quiz").on("click", function() {
+
+      $('.next').click(function() {
+        classNumRow = $(this).attr('id');
+        classNumSplit = classNumRow.split('_');
+        classNum = classNumSplit[1];
+
+        showTabs(classNum);
+
+      });
+
+      $('.back').click(function() {
+        classNumRow = $(this).attr('id');
+        classNumSplit = classNumRow.split('_');
+        classNum = classNumSplit[1];
+
+        backTabs(classNum);
+
+      });
+
+      function showTabs(classNum) {
+        numNext = parseInt(classNum) + 1;
+        event.preventDefault();
+
+        $('#' + classNum).hide();
+        $('#' + numNext).show();
+
+      }
+
+      function backTabs(classNum) {
+        numBack = parseInt(classNum) - 1;
+        event.preventDefault();
+
+        $('#' + classNum).hide();
+        $('#' + numBack).show();
+
+      }
+
+    });
 
 
-   $("#a_quiz").on("click", function() {
+    /* Mousemove function for the instructions*/
 
-     var quizTabs = $(".tab");
-
-     $("#ques_one").show();
-     $(document).ready(function(){
-     $('#nextBtn').click(function() {
-      if (typeof $('.rads:checked').val() !== 'undefined'){
-        alert('One of the radio buttons is checked!');
-        // go to next tab
-        $("#ques_one").hide();
-        $("#ques_two").show();
-
-
-
-
-
-
-
-
-
-
-     } else {
-      alert('Nothing is checked!');
-        return false;
-
-
-    }
-  });
-
-
-});
-});
-
-
-
-
-
-
-
-
- /* Mousemove function for the instructions*/
-
- $(function() {
+    $(function() {
       let moveLeft = 20;
       let moveDown = 10;
 
@@ -651,11 +667,6 @@ require_once('./dbconn.php');
     //     } //ajax, success function 2//
     //   }); //ajax 2//
     // }); //submit on.click function 2//
-
-
-
-
-
   </script>
 
 
@@ -808,13 +819,9 @@ require_once('./dbconn.php');
     }
     // Get the element with id="defaultOpen" and click on it
     document.getElementById("defaultOpen").click();
-// 17/06
-    //  Make new popup
-    // All quiz HTML stays passed as a hidden div only, not a variable
 
 
-
-    //SURVEY POP UP
+    //MAIN POP UP
     $(function() {
       //----- OPEN
       $('[data-popup-open]').on('click', function(e) {
@@ -829,27 +836,6 @@ require_once('./dbconn.php');
         e.preventDefault();
       });
     });
-
-    //  //QUIZ POP UP
-    //  $(function() {
-    //   //----- OPEN
-    //   $('[data-popup-open]').on('click', function(e) {
-    //     var targeted_popup_class = $(this).attr('data-popup-open');
-    //     $('[data-popup="' + targeted_popup_class + '"]').fadeIn(350);
-    //     e.preventDefault();
-    //   });
-    //   //----- CLOSE
-    //   $('[data-popup-close]').on('click', function(e) {
-    //     var targeted_popup_class = $(this).attr('data-popup-close');
-    //     $('[data-popup="' + targeted_popup_class + '"]').fadeOut(350);
-    //     e.preventDefault();
-    //   });
-    // });
-
-
-
-
-
   </script>
 
 </body>
