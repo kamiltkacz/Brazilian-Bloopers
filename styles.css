@@ -162,7 +162,9 @@ list-style-position: outside;
   border-radius: 8px;
   cursor: pointer;
   display: none;
+  text-decoration: solid; /* Important */
 }
+
 
 
 
@@ -216,7 +218,7 @@ p#instr {
 
 /*check button*/
 
-#nextBtn {
+.next {
 background-color: whitesmoke;
 color: #000000;
 font-family: inherit;
@@ -229,7 +231,7 @@ margin-right: 10px;
 
 }
 
-#prevBtn {
+.back {
   background-color: whitesmoke;
   color: #000000;
   font-family: inherit;
@@ -239,7 +241,7 @@ margin-right: 10px;
   cursor: pointer;
   margin-top: 10px;
   margin-right: 10px;
-  display: none;
+
 
   }
 
