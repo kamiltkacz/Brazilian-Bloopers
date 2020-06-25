@@ -568,7 +568,7 @@ require_once('./dbconn.php');
       }); //ajax//
     }); //submit on.click function//
 
-// Working
+
 
     $("#a_quiz").on("click", function() {
 
@@ -577,14 +577,17 @@ require_once('./dbconn.php');
         classNumSplit = classNumRow.split('_');
         classNum = classNumSplit[1];
 
-        showTabs(classNum);
+       showTabs(classNum);
 
       });
 
       $('.back').click(function() {
-        classNumRow = $(this).attr('id');
-        classNumSplit = classNumRow.split('_');
-        classNum = classNumSplit[1];
+      let =  classNumRow = $(this).attr('id');
+      let =  classNumSplit = classNumRow.split('_');
+      let =  classNum = classNumSplit[1];
+      // $('#sub').hide();
+      // $('.next').show();
+
 
         backTabs(classNum);
 
@@ -592,12 +595,29 @@ require_once('./dbconn.php');
 
       function showTabs(classNum) {
         numNext = parseInt(classNum) + 1;
+
+
         event.preventDefault();
 
         $('#' + classNum).hide();
         $('#' + numNext).show();
 
+        if (numNext > 2) {
+          $('#allButtons').append("<input type='submit' id='sub'/>");
+         // $('.next').hide();
+
+
+        } else {
+          return false;
+
+        }
+
+
       }
+
+
+
+
 
       function backTabs(classNum) {
         numBack = parseInt(classNum) - 1;
