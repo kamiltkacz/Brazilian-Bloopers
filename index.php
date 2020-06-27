@@ -252,7 +252,7 @@ require_once('./dbconn.php');
       <form id="quiz_form" method="post" action="actions.php">
 
         <a class="popup-close" data-popup-close="popup-2" href="#">x</a>
-        <h3><u>Read the dialogues and choose the best option for the blank spaces</u></h3>
+        <h3 id="inst_h3"><u>Read the dialogues and choose the best option for the blank spaces</u></h3>
 
         <div id="1" class="q_1 qe">
           <h4><b>SITUATION 1</b></h4>
@@ -568,6 +568,7 @@ require_once('./dbconn.php');
       }); //ajax//
     }); //submit on.click function//
 
+// 06/27 Work on slower transitions and data submit
 
 
     $("#a_quiz").on("click", function() {
@@ -582,12 +583,9 @@ require_once('./dbconn.php');
       });
 
       $('.back').click(function() {
-      let =  classNumRow = $(this).attr('id');
-      let =  classNumSplit = classNumRow.split('_');
-      let =  classNum = classNumSplit[1];
-      // $('#sub').hide();
-      // $('.next').show();
-
+      classNumRow = $(this).attr('id');
+      classNumSplit = classNumRow.split('_');
+      classNum = classNumSplit[1];
 
         backTabs(classNum);
 
@@ -602,9 +600,10 @@ require_once('./dbconn.php');
         $('#' + classNum).hide();
         $('#' + numNext).show();
 
-        if (numNext > 2) {
-          $('#allButtons').append("<input type='submit' id='sub'/>");
-         // $('.next').hide();
+        if (numNext >= 4) {
+          $('#backHome-1').replaceWith("<input type='submit' id='sub'/>");
+         $('#inst_h3').html("Thanks for doing the test!");
+         $("#instr").hide();
 
 
         } else {
