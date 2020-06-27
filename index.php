@@ -568,7 +568,7 @@ require_once('./dbconn.php');
       }); //ajax//
     }); //submit on.click function//
 
-// 06/27 Work on slower transitions and data submit
+// 06/27 Work on validation and data submit
 
 
     $("#a_quiz").on("click", function() {
