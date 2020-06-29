@@ -61,7 +61,7 @@ require_once('./dbconn.php');
 
     <div class="grid-five">
       <div class="container">
-        <p>If you look up English defintion of the word <a href="https://www.dictionary.com/browse/blooper"><span style="color:green">'blooper'</a></span> what you'll get is that it's an embarassing error you make publicly. Although we don't think the mistakes you'll find here are embarrasing, we do believe correcting them will be a small step forward in your language learning. Think of this quiz as a nice amo to your arsenal on your English learning journey. Dont' forget to enjoy the process! </p>
+        <p>If you look up English defintion of the word <a href="https://www.dictionary.com/browse/blooper"><span style="color:green">'blooper'</a></span> what you'll get is that it's an embarassing error you make publicly. Although we don't think the mistakes you'll find here are embarrasing, we do believe correcting them will be a small step forward in your language learning. Think of this quiz as a nice amo to your arsenal on your English learning journey. Don't forget to enjoy the process! </p>
       </div>
       <div class="container">
         <p>Let's face it. It's not an easy task to learn another language and communicate your ideas in it. English, however omnipresent in this world, is no exception. No worries, we're here to help a little with that.</p>
@@ -111,15 +111,15 @@ require_once('./dbconn.php');
 
       <div class="container">
         <p>Here's what we look like</p>
-    <label for="states">Who's the best wizard?</label>
-    <input type="text" id="wizards" name="wizards" list="wizards-list">
-     <datalist id="wizards-list">
-     	<option>Harry Potter</option>
-     	<option>Hermione</option>
-     	<option>Dumbledore</option>
-     	<option>Merlin</option>
-     	<option>Gandalf</option>
-     </datalist>
+        <label for="states">Who's the best wizard?</label>
+        <input type="text" id="wizards" name="wizards" list="wizards-list">
+        <datalist id="wizards-list">
+          <option>Harry Potter</option>
+          <option>Hermione</option>
+          <option>Dumbledore</option>
+          <option>Merlin</option>
+          <option>Gandalf</option>
+        </datalist>
       </div>
 
 
@@ -568,7 +568,7 @@ require_once('./dbconn.php');
       }); //ajax//
     }); //submit on.click function//
 
-// 06/27 Work on validation and data submit
+    // 06/27 Work on data submit and back-endvalidation
 
 
     $("#a_quiz").on("click", function() {
@@ -578,56 +578,57 @@ require_once('./dbconn.php');
         classNumSplit = classNumRow.split('_');
         classNum = classNumSplit[1];
 
-       showTabs(classNum);
+        showTabs(classNum);
 
       });
 
       $('.back').click(function() {
-      classNumRow = $(this).attr('id');
-      classNumSplit = classNumRow.split('_');
-      classNum = classNumSplit[1];
+        classNumRow = $(this).attr('id');
+        classNumSplit = classNumRow.split('_');
+        classNum = classNumSplit[1];
 
         backTabs(classNum);
 
       });
 
       function showTabs(classNum) {
+
         numNext = parseInt(classNum) + 1;
-
-
         event.preventDefault();
+
 
         $('#' + classNum).hide();
         $('#' + numNext).show();
 
-        if (numNext >= 4) {
-          $('#backHome-1').replaceWith("<input type='submit' id='sub'/>");
-         $('#inst_h3').html("Thanks for doing the test!");
-         $("#instr").hide();
 
+
+        if (numNext >= 4) {
+          $('#backHome-1').replaceWith("<input type='submit' id='sub'>");
+          $('#inst_h3').html("Thanks for doing the test!");
+          $("#instr").hide();
 
         } else {
           return false;
-
         }
 
-
       }
-
-
-
-
 
       function backTabs(classNum) {
         numBack = parseInt(classNum) - 1;
         event.preventDefault();
-
         $('#' + classNum).hide();
         $('#' + numBack).show();
 
       }
 
     });
+
+     $('#sub').on("click", function(){
+      alert('coming soon');
+      event.preventDefault();
+
+    });
+
 
 
     /* Mousemove function for the instructions*/
