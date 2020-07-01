@@ -261,7 +261,7 @@ require_once('./dbconn.php');
           <p>Mike: Yeah, I think___is important to know what's going on.</p>
           <p>Liz: I agree but sometimes___is difficult. There is a lot of negativity in the news.</p>
 
-          <p><i><u>What is missing?</u></i></p>
+          <p><label id="bor_news">1) What is missing?<span id="span_news" style="color:#ff0000"></span></label></p>
 
           <input type="radio" class="rads" name="news" value="err_contrct"> a )Contraction - " 's "<br>
           <input type="radio" class="rads" name="news" value="err_pizz"> b) The word "pizza"<br>
@@ -280,7 +280,8 @@ require_once('./dbconn.php');
           <p>Natalie:___is like that here in January.
             <p>Cris: Wow, some weather! </p>
 
-            <p><i><u>What is missing?</u></i></p>
+            <!-- <p><i><u><label id="bor_weather">What is missing?</u></i></p></label><span id="span_weather" style="color:#ff0000"></span> -->
+            <p><label id="bor_news">1) What is missing?<span id="span_news" style="color:#ff0000"></span></label></p>
 
             <input type="radio" class="rads" name="weather" value="err_he"> a) The masculine subject - "He"<br>
             <input type="radio" class="rads" name="weather" value="corr_it"> b) The neuter subject "It"<br>
@@ -301,7 +302,8 @@ require_once('./dbconn.php');
           <p>John:___is about the same.</p>
 
 
-          <p><i><u>What is missing?</u></i></p>
+          <!-- <p><i><u><label id="bor_dist">What is missing?</u></i></p></label><span id="span_dist" style="color:#ff0000"></span> -->
+          <p><label id="bor_news">1) What is missing?<span id="span_news" style="color:#ff0000"></span></label></p>
 
           <input type="radio" class="rads" name="dist" value="corr_it"> a)The neuter subject "It"<br>
           <input type="radio" class="rads" name="dist" value="err_she"> b)The feminine subject - "She"<br>
@@ -456,7 +458,7 @@ require_once('./dbconn.php');
               "padding": "8px"
             });
             $("#span_gender").text(" * ");
-            $("#valmsg").show();
+           // $("#valmsg").show();
           }
 
           if (result.ageErr == "empty") {
@@ -465,7 +467,7 @@ require_once('./dbconn.php');
               "padding": "8px"
             });
             $("#span_age").text(" * ");
-            $("#valmsg").show();
+           // $("#valmsg").show();
 
           }
 
@@ -475,8 +477,7 @@ require_once('./dbconn.php');
               "padding": "8px"
             });
             $("#span_years").text(" * ");
-            $("#valmsg").show();
-
+            //$("#valmsg").show();
 
           }
 
@@ -486,7 +487,7 @@ require_once('./dbconn.php');
               "padding": "6px"
             });
             $("#span_abroad").text(" * ");
-            $("#valmsg").show();
+            //$("#valmsg").show();
 
 
           }
@@ -497,7 +498,7 @@ require_once('./dbconn.php');
               "padding": "6px"
             });
             $("#span_way").text(" * ");
-            $("#valmsg").show();
+           // $("#valmsg").show();
 
 
           }
@@ -508,7 +509,7 @@ require_once('./dbconn.php');
               "padding": "6px"
             });
             $("#span_others").text(" * ");
-            $("#valmsg").show();
+            //$("#valmsg").show();
 
 
           }
@@ -519,7 +520,7 @@ require_once('./dbconn.php');
               "padding": "6px"
             });
             $("#span_country").text(" * ");
-            $("#valmsg").show();
+            //$("#valmsg").show();
 
           }
 
@@ -568,7 +569,7 @@ require_once('./dbconn.php');
       }); //ajax//
     }); //submit on.click function//
 
-    // 06/27 Work on data submit and back-endvalidation
+
 
 
     $("#a_quiz").on("click", function() {
@@ -595,21 +596,80 @@ require_once('./dbconn.php');
 
         numNext = parseInt(classNum) + 1;
         event.preventDefault();
+        $("#quiz_form").submit(function() {
+          event.preventDefault();
+         });
 
+         $('.next').on("click", function() {
+           var formData = $("#quiz_form :input").serializeArray();
+           formData[formData.length] = {
+             name: "action",
+             value: "next"
+           };
+           formData.push({});
+           console.log('dataQuiz');
+
+           $.ajax({
+             type: "POST",
+             url: $("#quiz_form").attr("action"),
+             data: formData,
+             dataType: 'json',
+             async: true,
+
+             success: function(result) {
+
+              // $('#next_2').on("click",function(){
+                if (result.weatherErr == "empty") {
+
+
+/// The JQuery Css doesn not work but radiios validate on second " next" click
+
+
+                //  $("#bor_news").css({
+                //    "border-bottom": "5px solid red",
+                //    "padding": "8px"
+
+                //  });
+                //  $("#span_news").text(" * ");
+
+
+                 console.log('empty');
+                }
+              //   });
+
+
+               if (result.result == 1) {
+
+
+                  $('.popup').hide();
+               }
+
+               if (result.result == 2) {
+                 alert('oh, no');
+               }
+
+             } //ajax, success function 2//
+           }); //ajax 2//
+         }); //submit on.click function 2//
 
         $('#' + classNum).hide();
         $('#' + numNext).show();
 
 
-
         if (numNext >= 4) {
+
+
           $('#backHome-1').replaceWith("<input type='submit' id='sub'>");
+
+
           $('#inst_h3').html("Thanks for doing the test!");
           $("#instr").hide();
 
-        } else {
-          return false;
+
+
         }
+
+
 
       }
 
@@ -621,13 +681,16 @@ require_once('./dbconn.php');
 
       }
 
-    });
 
-     $('#sub').on("click", function(){
-      alert('coming soon');
-      event.preventDefault();
 
     });
+
+
+
+
+
+
+
 
 
 
@@ -650,43 +713,7 @@ require_once('./dbconn.php');
 
     });
 
-    // $("#quiz_form").submit(function() {
-    // return false;
 
-    // });
-
-    // $("#nextBtn").on("click", function() {
-    //   var formData = $("#quiz_form :input").serializeArray();
-    //   formData[formData.length] = {
-    //     name: "action",
-    //     value: "nextBtn"
-    //   };
-    //   formData.push({});
-    //   console.log('dataQuiz');
-
-    //   $.ajax({
-    //     type: "POST",
-    //     url: $("#quiz_form").attr("action"),
-    //     data: formData,
-    //     dataType: 'json',
-    //     async: true,
-
-    //     success: function(result) {
-
-
-    //       if (result.result == 1) {
-
-
-    //          $('.popup').hide();
-    //       }
-
-    //       if (result.result == 2) {
-    //         alert('no way');
-    //       }
-
-    //     } //ajax, success function 2//
-    //   }); //ajax 2//
-    // }); //submit on.click function 2//
   </script>
 
 
