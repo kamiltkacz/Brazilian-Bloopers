@@ -124,36 +124,77 @@ if (isset($_POST["action"])) {
 
   }
 
+}
 
+
+if ($action == "next") {
+    $export = Array();
+    $news = $_POST["news"];
+    $weather = $_POST["weather"];
+    $dist = $_POST["dist"];
+
+    $export['newsErr'] = "";
+    $export['weatherErr'] = "";
+    $export['distErr'] = "";
+
+    // if (empty($news) || (empty($weather) || (empty($dist)) {
+
+  // Valid Question 1
+
+   if (empty($weather)) {
+
+    $export['weatherErr'] = "empty";
+
+    //   $export['news'] = 0;
+  //  } else{
+  //     $export['news'] = 1;
+  //   }
+
+// //   // Valid Question 2
+//  if (empty($weather)) {
+
+//     $export['weatherErr'] = "empty";
+//     $export['weather'] = 0;
+
+//   } else {
+//     $export['weather'] = 1;
+//   }
+//  // Valid Question 3
+//   if (empty($dist)) {
+
+//     $export['distErr'] = "empty";
+//     $export['dist'] = 0;
+
+//   } else {
+//     $export['dist'] = 1;
+//   }
+
+} else {
+
+
+
+
+
+
+
+    $sql = "INSERT INTO quiz (Radio_1, Radio_2, Radio_3)
+    VALUES ('$news', '$weather', '$dist')";
+
+    if (mysqli_query($conn, $sql) === TRUE) {
+
+      $export['result'] = "1";
+
+
+    } else {
+
+      $export['result'] = "2";
+
+
+    }
 
   }
 
-  // if ($action == "nextBtn") {
-  //   $export = Array();
-  //   $news = $_POST["news"];
-  //   $weather = $_POST["weather"];
-  //   $dist = $_POST["dist"];
-
-  //   $sql = "INSERT INTO quiz (Radio_1, Radio_2, Radio_3)
-  //   VALUES ('$news', '$weather', '$dist')";
-
-  //   if (mysqli_query($conn, $sql) === TRUE) {
-
-  //     $export['result'] = "1";
-
-
-  //   } else {
-
-  //     $export['result'] = "2";
-
-
-  //   }
-
-
-  // }
-
-
-
+  }
 
 
 
@@ -240,5 +281,6 @@ if (isset($_POST["action"])) {
 
   echo json_encode($export);
 }
+
 
 ?>
