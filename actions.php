@@ -141,32 +141,32 @@ if ($action == "next") {
 
   // Valid Question 1
 
-   if (empty($weather)) {
+   if (empty($news))  {
 
-    $export['weatherErr'] = "empty";
+    $export['newsErr'] = "empty";
+//    }
+//     //   $export['news'] = 0;
+//   //  } else{
+//   //     $export['news'] = 1;
+//   //   }
 
-    //   $export['news'] = 0;
-  //  } else{
-  //     $export['news'] = 1;
-  //   }
+// // //   // Valid Question 2
+//   if (empty($weather)) {
 
-// //   // Valid Question 2
-//  if (empty($weather)) {
-
-//     $export['weatherErr'] = "empty";
-//     $export['weather'] = 0;
-
-//   } else {
-//     $export['weather'] = 1;
+//    $export['weatherErr'] = "empty";
+// //     $export['weather'] = 0;
 //   }
-//  // Valid Question 3
+// //   } else {
+// //     $export['weather'] = 1;
+// //   }
+// //  // Valid Question 3
 //   if (empty($dist)) {
 
 //     $export['distErr'] = "empty";
-//     $export['dist'] = 0;
+// //     $export['dist'] = 0;
 
-//   } else {
-//     $export['dist'] = 1;
+// //   } else {
+// //     $export['dist'] = 1;
 //   }
 
 } else {
