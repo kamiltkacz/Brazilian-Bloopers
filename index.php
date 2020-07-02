@@ -596,8 +596,38 @@ require_once('./dbconn.php');
 
         numNext = parseInt(classNum) + 1;
         event.preventDefault();
-        $("#quiz_form").submit(function() {
-          event.preventDefault();
+
+         $('#' + classNum).hide();
+         $('#' + numNext).show();
+
+
+
+
+        if (numNext >= 4) {
+
+
+          $('#backHome-1').replaceWith("<input type='submit' id='sub'>");
+
+
+          $('#inst_h3').html("Thanks for doing the test!");
+          $("#instr").hide();
+
+        }
+
+
+
+      } // showTabs
+
+      function backTabs(classNum) {
+        numBack = parseInt(classNum) - 1;
+        event.preventDefault();
+        $('#' + classNum).hide();
+        $('#' + numBack).show();
+
+      }
+
+      $("#quiz_form").submit(function() {
+        event.preventDefault();
          });
 
          $('.next').on("click", function() {
@@ -617,31 +647,44 @@ require_once('./dbconn.php');
              async: true,
 
              success: function(result) {
-
-              // $('#next_2').on("click",function(){
-                if (result.weatherErr == "empty") {
-
-
-/// The JQuery Css doesn not work but radiios validate on second " next" click
+              // if (typeof $('.rads:checked').val() !== 'undefined'){
+              //  alert('One of the radio buttons is checked!');
+              //  }
 
 
-                //  $("#bor_news").css({
-                //    "border-bottom": "5px solid red",
-                //    "padding": "8px"
+            if (result.newsErr == "empty") {
+              alert('check something');
 
-                //  });
-                //  $("#span_news").text(" * ");
+            }
 
 
-                 console.log('empty');
-                }
-              //   });
+// else statment here
+
+
+
+
+
+            // if (result.weatherErr == "empty") {
+            //   alert('check something 2');
+
+            // }
+
+            // if (result.distErr == "empty") {
+            //   alert('check something 3');
+
+            // }
+
+
+
+
+
 
 
                if (result.result == 1) {
 
 
-                  $('.popup').hide();
+
+                  //$('.popup').hide();
                }
 
                if (result.result == 2) {
@@ -652,34 +695,6 @@ require_once('./dbconn.php');
            }); //ajax 2//
          }); //submit on.click function 2//
 
-        $('#' + classNum).hide();
-        $('#' + numNext).show();
-
-
-        if (numNext >= 4) {
-
-
-          $('#backHome-1').replaceWith("<input type='submit' id='sub'>");
-
-
-          $('#inst_h3').html("Thanks for doing the test!");
-          $("#instr").hide();
-
-
-
-        }
-
-
-
-      }
-
-      function backTabs(classNum) {
-        numBack = parseInt(classNum) - 1;
-        event.preventDefault();
-        $('#' + classNum).hide();
-        $('#' + numBack).show();
-
-      }
 
 
 
