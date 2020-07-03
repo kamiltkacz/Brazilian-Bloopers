@@ -250,11 +250,13 @@ require_once('./dbconn.php');
     <div class="popup-inner">
 
       <form id="quiz_form" method="post" action="actions.php">
-
-        <a class="popup-close" data-popup-close="popup-2" href="#">x</a>
+      <a class="popup-close" data-popup-close="popup-2" href="#">x</a>
         <h3 id="inst_h3"><u>Read the dialogues and choose the best option for the blank spaces</u></h3>
 
+
+
         <div id="1" class="q_1 qe">
+
           <h4><b>SITUATION 1</b></h4>
 
           <p>Liz: Do you watch the news everyday?</p>
@@ -273,7 +275,8 @@ require_once('./dbconn.php');
         </div>
 
         <div id="2" class="q_2 qe" style="display: none;">
-          <h4><b>SITUATION 2</b></h4>
+
+        <h4><b>SITUATION 2</b></h4>
 
 
           <p>Cris: Look out the window! I can't believe it!___was sunny 5 minute ago, now___is raining!</p>
@@ -290,9 +293,10 @@ require_once('./dbconn.php');
             <button id="next_2" class="next">next</button>
             <button id="back_2" class="back">back</button>
 
-        </div>
+       </div>
 
         <div id="3" class="q_3 qe" style="display: none;">
+
           <h4>SITUATION 3</h4>
 
           <p>John: How far is___from Sao Paulo to Brasilia?</p>
@@ -311,9 +315,8 @@ require_once('./dbconn.php');
           <input type="radio" class="rads" name="dist" value="err_noth"> d)Nothing is missing <br>
           <button id="next_3" class="next">next</button>
           <button id="back_3" class="back">back</button>
+
         </div>
-
-
         <div id="allButtons">
           <p id="instr" name="instructions">Instructions</p>
           <div style="overflow:auto;">
@@ -322,6 +325,7 @@ require_once('./dbconn.php');
           </div>
           <button id='backHome-1'><a href='https://www.brazilianbloopers.com' style='color: black'>Home</a></button>
         </div>
+
 
       </form>
     </div>
@@ -574,10 +578,26 @@ require_once('./dbconn.php');
 
     $("#a_quiz").on("click", function() {
 
+      $('#next_1').on("click", function(){
+          if (!$("input[name='news']:checked").val()) {
+          alert('Nothing is checked!');
+         return false;
+        }
+         else {
+         alert('One of the radio buttons is checked!');
+         $('#' + classNum).hide();
+         $('#' + numNext).show();
+          }
+
+         });
+
+
+
       $('.next').click(function() {
         classNumRow = $(this).attr('id');
         classNumSplit = classNumRow.split('_');
         classNum = classNumSplit[1];
+
 
         showTabs(classNum);
 
@@ -597,8 +617,10 @@ require_once('./dbconn.php');
         numNext = parseInt(classNum) + 1;
         event.preventDefault();
 
-         $('#' + classNum).hide();
-         $('#' + numNext).show();
+
+
+
+
 
 
 
@@ -626,9 +648,13 @@ require_once('./dbconn.php');
 
       }
 
-      $("#quiz_form").submit(function() {
+
+
+        $("#quiz_form").submit(function() {
         event.preventDefault();
          });
+
+
 
          $('.next').on("click", function() {
            var formData = $("#quiz_form :input").serializeArray();
@@ -647,18 +673,18 @@ require_once('./dbconn.php');
              async: true,
 
              success: function(result) {
-              // if (typeof $('.rads:checked').val() !== 'undefined'){
-              //  alert('One of the radio buttons is checked!');
-              //  }
+
 
 
             if (result.newsErr == "empty") {
               alert('check something');
 
+
+            } else {
+              alert('checked');
             }
 
 
-// else statment here
 
 
 
@@ -699,14 +725,6 @@ require_once('./dbconn.php');
 
 
     });
-
-
-
-
-
-
-
-
 
 
     /* Mousemove function for the instructions*/
