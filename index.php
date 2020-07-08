@@ -581,16 +581,38 @@ require_once('./dbconn.php');
       $('#next_1').on("click", function(){
           if (!$("input[name='news']:checked").val()) {
           alert('Nothing is checked!');
-         return false;
-        }
-         else {
+
+        } else {
+
          alert('One of the radio buttons is checked!');
-         $('#' + classNum).hide();
-         $('#' + numNext).show();
+              $('#' + classNum).hide();
+              $('#' + numNext).show();
           }
-
          });
+         $('#next_2').on("click", function(){
+          if (!$("input[name='weather']:checked").val()) {
+          alert('Nothing is checked 2!');
 
+        } else {
+
+         alert('One of the radio buttons is checked 2!');
+              $('#' + classNum).hide();
+              $('#' + numNext).show();
+          }
+         });
+         $('#next_3').on("click", function(){
+          if (!$("input[name='dist']:checked").val()) {
+          alert('Nothing is checked 3!');
+
+        } else {
+
+         alert('One of the radio buttons is checked 3!');
+              $('#' + classNum).hide();
+              $('#' + numNext).show();
+              $('#3').hide();
+
+          }
+         });
 
 
       $('.next').click(function() {
@@ -614,53 +636,25 @@ require_once('./dbconn.php');
 
       function showTabs(classNum) {
 
+
         numNext = parseInt(classNum) + 1;
         event.preventDefault();
-
-
-
-
-
-
-
-
-
         if (numNext >= 4) {
 
-
-          $('#backHome-1').replaceWith("<input type='submit' id='sub'>");
-
-
-          $('#inst_h3').html("Thanks for doing the test!");
-          $("#instr").hide();
-
+        $('#backHome-1').replaceWith("<input type='submit' id='sub'>");
+        $('#inst_h3').html("Thanks for doing the test!");
+        $("#instr").hide();
         }
 
-
-
-      } // showTabs
-
-      function backTabs(classNum) {
-        numBack = parseInt(classNum) - 1;
-        event.preventDefault();
-        $('#' + classNum).hide();
-        $('#' + numBack).show();
-
-      }
-
-
-
         $("#quiz_form").submit(function() {
-        event.preventDefault();
-         });
+           event.preventDefault();
+            });
 
-
-
-         $('.next').on("click", function() {
+         $('#sub').on("click", function() {
            var formData = $("#quiz_form :input").serializeArray();
            formData[formData.length] = {
              name: "action",
-             value: "next"
+             value: "sub"
            };
            formData.push({});
            console.log('dataQuiz');
@@ -676,19 +670,16 @@ require_once('./dbconn.php');
 
 
 
-            if (result.newsErr == "empty") {
-              alert('check something');
+            // if (result.newsErr == "empty") {
+            //   alert('check something');
+            //   return false;
 
 
-            } else {
-              alert('checked');
-            }
-
-
-
-
-
-
+            // } else {
+            //   alert('checked');
+            //   $('#' + classNum).hide();
+            //   $('#' + numNext).show();
+            // }
 
             // if (result.weatherErr == "empty") {
             //   alert('check something 2');
@@ -700,15 +691,9 @@ require_once('./dbconn.php');
 
             // }
 
-
-
-
-
-
-
                if (result.result == 1) {
 
-
+                 alert('your quiz was submitted');
 
                   //$('.popup').hide();
                }
@@ -722,9 +707,21 @@ require_once('./dbconn.php');
          }); //submit on.click function 2//
 
 
+      } // showTabs
 
 
-    });
+
+
+
+      function backTabs(classNum) {
+        numBack = parseInt(classNum) - 1;
+        event.preventDefault();
+        $('#' + classNum).hide();
+        $('#' + numBack).show();
+
+      }
+
+    });// (a_quiz) button
 
 
     /* Mousemove function for the instructions*/
