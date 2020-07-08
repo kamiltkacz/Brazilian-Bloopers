@@ -127,7 +127,7 @@ if (isset($_POST["action"])) {
 }
 
 
-if ($action == "next") {
+if ($action == "sub") {
     $export = Array();
     $news = $_POST["news"];
     $weather = $_POST["weather"];
@@ -141,9 +141,9 @@ if ($action == "next") {
 
   // Valid Question 1
 
-   if (empty($news))  {
+  //  if (empty($news))  {
 
-    $export['newsErr'] = "empty";
+  //   $export['newsErr'] = "empty";
 //    }
 //     //   $export['news'] = 0;
 //   //  } else{
@@ -169,7 +169,7 @@ if ($action == "next") {
 // //     $export['dist'] = 1;
 //   }
 
-} else {
+// } else {
 
 
 
@@ -192,7 +192,7 @@ if ($action == "next") {
 
     }
 
-  }
+  //}
 
   }
 
