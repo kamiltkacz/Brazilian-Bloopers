@@ -133,50 +133,6 @@ if ($action == "sub") {
     $weather = $_POST["weather"];
     $dist = $_POST["dist"];
 
-    $export['newsErr'] = "";
-    $export['weatherErr'] = "";
-    $export['distErr'] = "";
-
-    // if (empty($news) || (empty($weather) || (empty($dist)) {
-
-  // Valid Question 1
-
-  //  if (empty($news))  {
-
-  //   $export['newsErr'] = "empty";
-//    }
-//     //   $export['news'] = 0;
-//   //  } else{
-//   //     $export['news'] = 1;
-//   //   }
-
-// // //   // Valid Question 2
-//   if (empty($weather)) {
-
-//    $export['weatherErr'] = "empty";
-// //     $export['weather'] = 0;
-//   }
-// //   } else {
-// //     $export['weather'] = 1;
-// //   }
-// //  // Valid Question 3
-//   if (empty($dist)) {
-
-//     $export['distErr'] = "empty";
-// //     $export['dist'] = 0;
-
-// //   } else {
-// //     $export['dist'] = 1;
-//   }
-
-// } else {
-
-
-
-
-
-
-
     $sql = "INSERT INTO quiz (Radio_1, Radio_2, Radio_3)
     VALUES ('$news', '$weather', '$dist')";
 
@@ -191,8 +147,6 @@ if ($action == "sub") {
 
 
     }
-
-  //}
 
   }
 
