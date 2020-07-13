@@ -270,7 +270,7 @@ require_once('./dbconn.php');
           <input type="radio" class="rads" name="news" value="err_noth">c) Nothing is missing<br>
           <input type="radio" class="rads" name="news" value="corr_it">d) The neuter subject "It"
           <button id="next_1" class="next">next</button>
-
+          <p>1 out of 30</p>
 
         </div>
 
@@ -283,7 +283,7 @@ require_once('./dbconn.php');
           <p>Natalie:___is like that here in January.
             <p>Cris: Wow, some weather! </p>
 
-            <!-- <p><i><u><label id="bor_weather">What is missing?</u></i></p></label><span id="span_weather" style="color:#ff0000"></span> -->
+
             <p><label id="bor_news">1) What is missing?<span id="span_news" style="color:#ff0000"></span></label></p>
 
             <input type="radio" class="rads" name="weather" value="err_he"> a) The masculine subject - "He"<br>
@@ -292,10 +292,10 @@ require_once('./dbconn.php');
             <input type="radio" class="rads" name="weather" value="err_i"> d) The subject "I">
             <button id="next_2" class="next">next</button>
             <button id="back_2" class="back">back</button>
-
+            <p>2 out of 30</p>
        </div>
 
-        <div id="3" class="q_3 qe" style="display: none;">
+          <div id="3" class="q_3 qe" style="display: none;">
 
           <h4>SITUATION 3</h4>
 
@@ -306,7 +306,7 @@ require_once('./dbconn.php');
           <p>John:___is about the same.</p>
 
 
-          <!-- <p><i><u><label id="bor_dist">What is missing?</u></i></p></label><span id="span_dist" style="color:#ff0000"></span> -->
+
           <p><label id="bor_news">1) What is missing?<span id="span_news" style="color:#ff0000"></span></label></p>
 
           <input type="radio" class="rads" name="dist" value="corr_it"> a)The neuter subject "It"<br>
@@ -315,7 +315,7 @@ require_once('./dbconn.php');
           <input type="radio" class="rads" name="dist" value="err_noth"> d)Nothing is missing <br>
           <button id="next_3" class="next">next</button>
           <button id="back_3" class="back">back</button>
-
+          <p>3 out of 30</p>
         </div>
         <div id="allButtons">
           <p id="instr" name="instructions">Instructions</p>
@@ -578,24 +578,48 @@ require_once('./dbconn.php');
 
     $("#a_quiz").on("click", function() {
 
+      $('.next').click(function() {
+        classNumRow = $(this).attr('id');
+        classNumSplit = classNumRow.split('_');
+        classNum = classNumSplit[1];
+
+        showTabs(classNum);
+
+      });
+
+
+
+      let score = 0;
+
+
       $('#next_1').on("click", function(){
-          if (!$("input[name='news']:checked").val()) {
+
+        if (!$("input[name='news']:checked").val()) {
           alert('Nothing is checked!');
 
+        } else if ($("input[name='news']:checked").val() == "corr_it") {
+          alert('Correcto mundo');
+          score ++;
+          console.log(score);
         } else {
-
          alert('One of the radio buttons is checked!');
-              $('#' + classNum).hide();
-              $('#' + numNext).show();
-          }
+          score --;
+         console.log(score);
+                $('#' + classNum).hide();
+                $('#' + numNext).show();
+            }
+
          });
          $('#next_2').on("click", function(){
           if (!$("input[name='weather']:checked").val()) {
-          alert('Nothing is checked 2!');
+           alert('Nothing is checked 2!');
 
+        } else if ($("input[name='weather']:checked").val() == "corr_it") {  alert('Correcto mundo 2');
+          score ++;
+          console.log(score);
         } else {
-
          alert('One of the radio buttons is checked 2!');
+         console.log(score);
               $('#' + classNum).hide();
               $('#' + numNext).show();
           }
@@ -604,26 +628,56 @@ require_once('./dbconn.php');
           if (!$("input[name='dist']:checked").val()) {
           alert('Nothing is checked 3!');
 
+
         } else {
 
-         alert('One of the radio buttons is checked 3!');
-              $('#' + classNum).hide();
-              $('#' + numNext).show();
-              $('#3').hide();
+          alert('One of the radio buttons is checked 3!');
 
-          }
-         });
+             $('#backHome-1').replaceWith("<input type='submit' id='sub'>");
+             $('#inst_h3').html("Thanks for doing the test!");
+             $("#instr, #3").hide();
+
+             }
+
+             $("#quiz_form").submit(function() {
+                event.preventDefault();
+                 });
+
+              $('#sub').on("click", function() {
+                var formData = $("#quiz_form :input").serializeArray();
+                formData[formData.length] = {
+                  name: "action",
+                  value: "sub"
+                };
+                formData.push({});
+                console.log('dataQuiz');
+
+                $.ajax({
+                  type: "POST",
+                  url: $("#quiz_form").attr("action"),
+                  data: formData,
+                  dataType: 'json',
+                  async: true,
+
+                  success: function(result) {
 
 
-      $('.next').click(function() {
-        classNumRow = $(this).attr('id');
-        classNumSplit = classNumRow.split('_');
-        classNum = classNumSplit[1];
+                    if (result.result == 1) {
 
+                      alert('your quiz was submitted');
 
-        showTabs(classNum);
+                      $('.popup').hide();
+                    }
 
-      });
+                    if (result.result == 2) {
+                      alert('oh, no');
+                    }
+
+                  } //ajax, success function 2//
+                }); //ajax 2//
+              }); //submit on.click function 2//
+
+         }); // #next_3
 
       $('.back').click(function() {
         classNumRow = $(this).attr('id');
@@ -634,84 +688,12 @@ require_once('./dbconn.php');
 
       });
 
+
       function showTabs(classNum) {
-
-
         numNext = parseInt(classNum) + 1;
         event.preventDefault();
-        if (numNext >= 4) {
 
-        $('#backHome-1').replaceWith("<input type='submit' id='sub'>");
-        $('#inst_h3').html("Thanks for doing the test!");
-        $("#instr").hide();
-        }
-
-        $("#quiz_form").submit(function() {
-           event.preventDefault();
-            });
-
-         $('#sub').on("click", function() {
-           var formData = $("#quiz_form :input").serializeArray();
-           formData[formData.length] = {
-             name: "action",
-             value: "sub"
-           };
-           formData.push({});
-           console.log('dataQuiz');
-
-           $.ajax({
-             type: "POST",
-             url: $("#quiz_form").attr("action"),
-             data: formData,
-             dataType: 'json',
-             async: true,
-
-             success: function(result) {
-
-
-
-            // if (result.newsErr == "empty") {
-            //   alert('check something');
-            //   return false;
-
-
-            // } else {
-            //   alert('checked');
-            //   $('#' + classNum).hide();
-            //   $('#' + numNext).show();
-            // }
-
-            // if (result.weatherErr == "empty") {
-            //   alert('check something 2');
-
-            // }
-
-            // if (result.distErr == "empty") {
-            //   alert('check something 3');
-
-            // }
-
-               if (result.result == 1) {
-
-                 alert('your quiz was submitted');
-
-                  //$('.popup').hide();
-               }
-
-               if (result.result == 2) {
-                 alert('oh, no');
-               }
-
-             } //ajax, success function 2//
-           }); //ajax 2//
-         }); //submit on.click function 2//
-
-
-      } // showTabs
-
-
-
-
+      }
 
       function backTabs(classNum) {
         numBack = parseInt(classNum) - 1;
@@ -721,7 +703,7 @@ require_once('./dbconn.php');
 
       }
 
-    });// (a_quiz) button
+});// (a_quiz) button
 
 
     /* Mousemove function for the instructions*/
