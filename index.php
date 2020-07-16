@@ -630,7 +630,7 @@ require_once('./dbconn.php');
           }
          });
 // Pass function as a vairable or parameter
-         let hideLast;
+        //  let hideLast;
 
         $('#next_3').on("click", function(){
           if (!$("input[name='dist']:checked").val()) {
@@ -641,7 +641,7 @@ require_once('./dbconn.php');
             score ++;
             console.log(score);
 
-          hideLast = function() {
+        function hideLast() {
             $('#backHome-1').replaceWith("<input type='submit' id='sub'>");
             $('#inst_h3').html("Thanks for doing the test!");
             $("#instr, #3").hide();
@@ -654,7 +654,7 @@ require_once('./dbconn.php');
             alert('One of the radio buttons is checked 3!');
             console.log(score);
 
-            hidelast;
+           // hidelast;
 
             // $('#backHome-1').replaceWith("<input type='submit' id='sub'>");
             // $('#inst_h3').html("Thanks for doing the test!");
