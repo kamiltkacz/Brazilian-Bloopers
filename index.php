@@ -645,7 +645,8 @@ require_once('./dbconn.php');
             $('#backHome-1').replaceWith("<input type='submit' id='sub'>");
             $('#inst_h3').html("Thanks for doing the test!");
             $("#instr, #3").hide();
-          };
+          }
+          hideLast();
 
 
 
@@ -654,11 +655,11 @@ require_once('./dbconn.php');
             alert('One of the radio buttons is checked 3!');
             console.log(score);
 
-           // hidelast;
 
-            // $('#backHome-1').replaceWith("<input type='submit' id='sub'>");
-            // $('#inst_h3').html("Thanks for doing the test!");
-            // $("#instr, #3").hide();
+
+            $('#backHome-1').replaceWith("<input type='submit' id='sub'>");
+            $('#inst_h3').html("Thanks for doing the test!");
+            $("#instr, #3").hide();
 
               }
 
