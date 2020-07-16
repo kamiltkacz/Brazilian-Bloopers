@@ -578,6 +578,8 @@ require_once('./dbconn.php');
 
     $("#a_quiz").on("click", function() {
 
+      let score = 0;
+
       $('.next').click(function() {
         classNumRow = $(this).attr('id');
         classNumSplit = classNumRow.split('_');
@@ -589,55 +591,76 @@ require_once('./dbconn.php');
 
 
 
-      let score = 0;
-
-
       $('#next_1').on("click", function(){
 
         if (!$("input[name='news']:checked").val()) {
           alert('Nothing is checked!');
 
         } else if ($("input[name='news']:checked").val() == "corr_it") {
-          alert('Correcto mundo');
+
+        alert('Correcto mundo');
           score ++;
           console.log(score);
+          $('#' + classNum).hide();
+          $('#' + numNext).show();
+
         } else {
          alert('One of the radio buttons is checked!');
-          score --;
          console.log(score);
-                $('#' + classNum).hide();
-                $('#' + numNext).show();
+          $('#' + classNum).hide();
+          $('#' + numNext).show();
             }
-
          });
+
          $('#next_2').on("click", function(){
           if (!$("input[name='weather']:checked").val()) {
            alert('Nothing is checked 2!');
 
-        } else if ($("input[name='weather']:checked").val() == "corr_it") {  alert('Correcto mundo 2');
+        } else if ($("input[name='weather']:checked").val() == "corr_it") {
+          alert('Correcto mundo 2');
           score ++;
           console.log(score);
+          $('#' + classNum).hide();
+          $('#' + numNext).show();
         } else {
          alert('One of the radio buttons is checked 2!');
          console.log(score);
-              $('#' + classNum).hide();
-              $('#' + numNext).show();
+         $('#' + classNum).hide();
+         $('#' + numNext).show();
           }
          });
-         $('#next_3').on("click", function(){
+// Pass function as a vairable or parameter
+         let hideLast;
+
+        $('#next_3').on("click", function(){
           if (!$("input[name='dist']:checked").val()) {
+
           alert('Nothing is checked 3!');
 
+          } else if  ($("input[name='dist']:checked").val() == "corr_it") {
+            score ++;
+            console.log(score);
 
-        } else {
+          hideLast = function() {
+            $('#backHome-1').replaceWith("<input type='submit' id='sub'>");
+            $('#inst_h3').html("Thanks for doing the test!");
+            $("#instr, #3").hide();
+          };
 
-          alert('One of the radio buttons is checked 3!');
 
-             $('#backHome-1').replaceWith("<input type='submit' id='sub'>");
-             $('#inst_h3').html("Thanks for doing the test!");
-             $("#instr, #3").hide();
 
-             }
+          } else {
+
+            alert('One of the radio buttons is checked 3!');
+            console.log(score);
+
+            hidelast;
+
+            // $('#backHome-1').replaceWith("<input type='submit' id='sub'>");
+            // $('#inst_h3').html("Thanks for doing the test!");
+            // $("#instr, #3").hide();
+
+              }
 
              $("#quiz_form").submit(function() {
                 event.preventDefault();
@@ -679,12 +702,37 @@ require_once('./dbconn.php');
 
          }); // #next_3
 
+         $('#back_2').on("click", function(){
+
+          if ($("input[name='news']:checked").val() == "corr_it") {
+            score --;
+          }
+          console.log('Here 1 score');
+          console.log(score);
+
+         });
+
+         $('#back_3').on("click", function(){
+          if ($("input[name='weather']:checked").val() == "corr_it") {
+            score --;
+          }
+
+         console.log('Here 2 score');
+         console.log(score);
+
+         });
+
+
+
+
       $('.back').click(function() {
         classNumRow = $(this).attr('id');
         classNumSplit = classNumRow.split('_');
         classNum = classNumSplit[1];
 
+
         backTabs(classNum);
+
 
       });
 
