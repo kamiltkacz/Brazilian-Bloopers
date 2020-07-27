@@ -110,7 +110,7 @@ require_once('./dbconn.php');
       </div>
 
       <div class="container">
-        <p>Here's what we look like</p>
+       <!-- <p>Here's what we look like</p>-->
         <label for="states">Who's the best wizard?</label>
         <input type="text" id="wizards" name="wizards" list="wizards-list">
         <datalist id="wizards-list">
@@ -120,6 +120,7 @@ require_once('./dbconn.php');
           <option>Merlin</option>
           <option>Gandalf</option>
         </datalist>
+        <button id="fakeSub" onclick="fakeFunction()">Vote</button>
       </div>
 
 
@@ -140,8 +141,8 @@ require_once('./dbconn.php');
       <fieldset id="field_steps">
         <legend>Follow these 3 simple steps:</legend>
         <ol>
-          <li>
-            <p>Fill out our spectacularly short&nbsp;<a class="btn" data-popup-open="popup-1" href="#"><span id="surveyname" style="color:green"><u>survey</u></span></a><br>and click submit</p>
+          <li id="survPar">
+            <p>Fill out our spectacularly short&nbsp;<a class="btn" data-popup-open="popup-1" href="#"><span id="surveyname" style="color:green"><u>survey</u></span></a><br>and click submit. After you do it a "Start" button will show.</p>
           </li>
           <li>
             <p>Click "Start" to begin the quiz</p>
@@ -348,6 +349,7 @@ require_once('./dbconn.php');
 
 
   <script>
+
     // Age Select Menu
     let selectElement = document.getElementById("age");
     if (selectElement !== undefined) {
@@ -515,7 +517,6 @@ require_once('./dbconn.php');
             $("#span_others").text(" * ");
             //$("#valmsg").show();
 
-
           }
 
           if (result.countryErr == "empty") {
@@ -546,15 +547,12 @@ require_once('./dbconn.php');
               customClass: {
                 footer: 'sweet-footer',
               }
-
-
             });
 
-            $(".popup").hide();
+            $(".popup").slideUp();
+            $("#survPar").hide();
 
-
-
-          } // End of first success (result.result == 1)
+          }
 
           if (result.result == 2) {
             Swal.fire({
@@ -586,7 +584,6 @@ require_once('./dbconn.php');
         classNum = classNumSplit[1];
 
         showTabs(classNum);
-
       });
 
 
@@ -637,11 +634,12 @@ require_once('./dbconn.php');
 
           alert('Nothing is checked 3!');
 
-          } else if  ($("input[name='dist']:checked").val() == "corr_it") {
+          } else if ($("input[name='dist']:checked").val() == "corr_it") {
             score ++;
             console.log(score);
 
         function hideLast() {
+
             $('#backHome-1').replaceWith("<input type='submit' id='sub'>");
             $('#inst_h3').html("Thanks for doing the test!");
             $("#instr, #3").hide();
@@ -654,8 +652,6 @@ require_once('./dbconn.php');
 
             alert('One of the radio buttons is checked 3!');
             console.log(score);
-
-
 
             $('#backHome-1').replaceWith("<input type='submit' id='sub'>");
             $('#inst_h3').html("Thanks for doing the test!");
@@ -723,9 +719,6 @@ require_once('./dbconn.php');
 
          });
 
-
-
-
       $('.back').click(function() {
         classNumRow = $(this).attr('id');
         classNumSplit = classNumRow.split('_');
@@ -733,7 +726,6 @@ require_once('./dbconn.php');
 
 
         backTabs(classNum);
-
 
       });
 
@@ -944,6 +936,11 @@ require_once('./dbconn.php');
         e.preventDefault();
       });
     });
+
+   function fakeFunction() {
+
+      alert('The voting is coming soon');
+    }
   </script>
 
 </body>
