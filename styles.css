@@ -165,6 +165,35 @@ list-style-position: outside;
   text-decoration: solid; /* Important */
 }
 
+a.btn  {
+  background-color: whitesmoke;
+  color: #0f1403;
+  font-family: 'Patua One', cursive;
+  font-size: 17px;
+  padding: 5px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: none;
+  text-decoration: solid; /* Important */
+
+
+}
+
+.container #fakeSub {
+
+  background-color: whitesmoke;
+  color: #000000;
+  font-family: inherit;
+  font-size: 17px;
+  padding: 5px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-right: 10px;
+
+
+}
+
 
 
 
