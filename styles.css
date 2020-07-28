@@ -153,7 +153,22 @@ list-style-position: outside;
   text-decoration: none;
 }
 
-#a_quiz {
+ #a_quiz {
+  background-color: whitesmoke;
+  color: #0f1403;
+  font-family: 'Patua One', cursive;
+  font-size: 17px;
+  padding: 5px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: none;
+  text-decoration: solid;
+}
+
+
+
+.btn #btn_quiz{
+
   background-color: whitesmoke;
   color: #0f1403;
   font-family: 'Patua One', cursive;
@@ -163,23 +178,11 @@ list-style-position: outside;
   cursor: pointer;
   display: none;
   text-decoration: solid; /* Important */
-}
-
-a.btn  {
-  background-color: whitesmoke;
-  color: #0f1403;
-  font-family: 'Patua One', cursive;
-  font-size: 17px;
-  padding: 5px;
-  border-radius: 8px;
-  cursor: pointer;
-  display: none;
-  text-decoration: solid; /* Important */
 
 
 }
 
-.container #fakeSub {
+#fakeSub {
 
   background-color: whitesmoke;
   color: #000000;
