@@ -19,6 +19,8 @@ require_once('./dbconn.php');
   <!-- My CSS -->
   <link rel="stylesheet" href="styles.css">
 
+
+
   <!--Squada One Font-->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
@@ -79,7 +81,7 @@ require_once('./dbconn.php');
           <iframe class="iframe-resp" src="https://www.youtube.com/embed/CwC5BFX7rqQ">
           </iframe>
         </div>
-        <p> Below is a much better version where the American singer Pitbull gives the lyrics his own spin. "If I catch you" becomes "If I get you" and "this way you're gonna kill me" translates into "you're playing hard to get". Good job Pitubull!</p>
+        <p> Below is a much better version where the American singer Pitbull gives the lyrics his own spin. "If I catch you" becomes "If I get you" and "this way you're gonna kill me" translates into "you're playing hard to get". Good job Pitbull!</p>
         <div class="yt-resp">
           <iframe class="iframe-resp" src="https://www.youtube.com/embed/bMMnn2kA_HY">
           </iframe>
@@ -102,8 +104,6 @@ require_once('./dbconn.php');
 
 
   <div id="About" class="tabcontent">
-
-
     <div class="grid-two">
       <div class="container">
         <p>We are a group of English teachers based in Brasilia, Brazil who are determined to sharpen your skills. We've compiled this quiz based on years of experience. One day, fascinated by various "Brazilianisms" that students kept throwing at our ears we decided that this phenomenon deserves its own website. Thus project Brazilian Bloopers came to life.</p>
@@ -120,7 +120,7 @@ require_once('./dbconn.php');
           <option>Merlin</option>
           <option>Gandalf</option>
         </datalist>
-        <button id="fakeSub" onclick="fakeFunction()">Vote</button>
+        <button id="fakeSub" type="button" onclick="fakeFunction()">Vote</button>
       </div>
 
 
@@ -142,13 +142,13 @@ require_once('./dbconn.php');
         <legend>Follow these 3 simple steps:</legend>
         <ol>
           <li id="survPar">
-            <p>Fill out our spectacularly short&nbsp;<a class="btn" data-popup-open="popup-1" href="#"><span id="surveyname" style="color:green"><u>survey</u></span></a><br>and click submit. After you do it a "Start" button will show.</p>
+            <p>Fill out our spectacularly short&nbsp;<a class="btn" data-popup-open="popup-1" href="#"><span id="surveyname" style="color:green"><u>SURVEY</u> </span></a><br>and click submit. After you do it a "Start" button will show.</p>
           </li>
           <li>
             <p>Click "Start" to begin the quiz</p>
 
 
-            <button id="a_quiz" type="button"><a class="btn" data-popup-open="popup-2" href="#">Start</a></button>
+            <button id="a_quiz" type="button"><a id="btn_quiz" class="btn" data-popup-open="popup-2" href="#">Start</a></button>
 
           </li>
           <li>
@@ -159,11 +159,8 @@ require_once('./dbconn.php');
     </div>
 
 
-
+<!--SURVEY-->
     <div class="popup" data-popup="popup-1">
-
-
-
       <div class="popup-inner">
         <form id="survey" method="post" action="actions.php">
 
@@ -234,18 +231,12 @@ require_once('./dbconn.php');
 
             <button id="submit_survey" type="submit" name="submitsurvey">Submit</button>
           </div>
-
-
         </form>
-
       </div>
     </div>
   </div>
 
-
-
-  <!-- QUIZ  -->
-
+  <!--QUIZ-->
 
   <div class="popup" data-popup="popup-2">
     <div class="popup-inner">
@@ -253,8 +244,6 @@ require_once('./dbconn.php');
       <form id="quiz_form" method="post" action="actions.php">
       <a class="popup-close" data-popup-close="popup-2" href="#">x</a>
         <h3 id="inst_h3"><u>Read the dialogues and choose the best option for the blank spaces</u></h3>
-
-
 
         <div id="1" class="q_1 qe">
 
@@ -264,7 +253,7 @@ require_once('./dbconn.php');
           <p>Mike: Yeah, I think___is important to know what's going on.</p>
           <p>Liz: I agree but sometimes___is difficult. There is a lot of negativity in the news.</p>
 
-          <p><label id="bor_news">1) What is missing?<span id="span_news" style="color:#ff0000"></span></label></p>
+          <p id="miss_one"><label id="bor_news">1) What is missing?<span id="span_news" style="color:#ff0000"></span></label></p>
 
           <input type="radio" class="rads" name="news" value="err_contrct"> a )Contraction - " 's "<br>
           <input type="radio" class="rads" name="news" value="err_pizz"> b) The word "pizza"<br>
@@ -306,8 +295,6 @@ require_once('./dbconn.php');
           <p>Pedro: How long does___take to get from New York to Detroit.</p>
           <p>John:___is about the same.</p>
 
-
-
           <p><label id="bor_news">1) What is missing?<span id="span_news" style="color:#ff0000"></span></label></p>
 
           <input type="radio" class="rads" name="dist" value="corr_it"> a)The neuter subject "It"<br>
@@ -326,451 +313,22 @@ require_once('./dbconn.php');
           </div>
           <button id='backHome-1'><a href='https://www.brazilianbloopers.com' style='color: black'>Home</a></button>
         </div>
-
-
-      </form>
-    </div>
-    <!--popup-inner-->
+     </form>
+    </div> <!--popup-inner-->
   </div> <!-- popup2-->
 
 
-  <!--mouseover instructions in CSS: Dispaly None DIV -->
+  <!--mouseover instructions in CSS: Display None -->
 
   <div id="inst_hov">
     <p id="gen_instr"><u>General Instructions</u></p>
     <ul>
-
       <li>Only one answer is correct</li>
       <li>The explanations pop up after each segment</li>
-
     </ul>
   </div>
 
-
-
-  <script>
-
-    // Age Select Menu
-    let selectElement = document.getElementById("age");
-    if (selectElement !== undefined) {
-      for (let agenum = 1; agenum <= 100; agenum++) {
-        selectElement.add(new Option(agenum));
-      }
-    }
-
-
-    // Reset border color & text in span element for question1 validation
-    $("input[type='radio'][name='gender']").click(function() {
-      $("input[type='radio'][name='gender']").focus();
-      $("#bor_gender").css({
-        "border": ""
-      });
-      $("#span_gender").text("");
-
-    });
-
-    // Reset border color & text in span element for question2 validation
-    $("#age").click(function() {
-      $("#age").focus();
-      $("#bor_age").css({
-        "border": ""
-      });
-      $("#span_age").text("");
-
-    });
-
-    // Reset border color & text in span element for question3 validation
-    $("input[type='radio'][name='years']").click(function() {
-      $("input[type='radio'][name='years']").focus();
-      $("#bor_years").css({
-        "border": ""
-      });
-      $("#span_years").text("");
-
-    });
-
-
-    // Reset border color & text in span element for question4 validation
-    $("input[type='radio'][name='abroad']").click(function() {
-      $("input[type='radio'][name='abroad']").focus();
-      $("#bor_abroad").css({
-        "border": ""
-      });
-      $("#span_abroad").text("");
-
-    });
-
-
-    // Reset border color & text in span element for question5 validation
-    $(".check").click(function() {
-      $(".check").focus();
-      $("#bor_way").css({
-        "border": ""
-      });
-      $("#span_way").text("");
-
-    });
-    // Reset border color & text in span element for question6 validation
-    $("input[type='radio'][name='others']").click(function() {
-      $("input[type='radio'][name='others']").focus();
-      $("#bor_others").css({
-        "border": ""
-      });
-      $("#span_others").text("");
-
-    });
-
-
-    // Reset border color & text in span element for question7 validation
-    $("input[type='radio'][name='country']").click(function() {
-      $("input[type='radio'][name='country']").focus();
-      $("#bor_country").css({
-        "border": ""
-      });
-      $("#span_country").text("");
-
-    });
-
-
-    // Survey Data - on(click)
-    $("#survey").submit(function() {
-      return false;
-    });
-
-    $("#submit_survey").on("click", function() {
-
-      // Start Button Show
-      $("#a_quiz").show("slow");
-
-      var formData = $("#survey :input").serializeArray();
-      formData[formData.length] = {
-        name: "action",
-        value: "submit_survey"
-      };
-      formData.push({});
-
-
-      $.ajax({
-        type: "POST",
-        url: $("#survey").attr("action"),
-        data: formData,
-        dataType: 'json',
-        async: true,
-        success: function(result) {
-
-          if (result.genderErr == "empty") {
-            $("#bor_gender").css({
-              "border-bottom": "5px solid red",
-              "padding": "8px"
-            });
-            $("#span_gender").text(" * ");
-           // $("#valmsg").show();
-          }
-
-          if (result.ageErr == "empty") {
-            $("#bor_age").css({
-              "border-bottom": "5px solid red",
-              "padding": "8px"
-            });
-            $("#span_age").text(" * ");
-           // $("#valmsg").show();
-
-          }
-
-          if (result.yearsErr == "empty") {
-            $("#bor_years").css({
-              "border-bottom": "5px solid red",
-              "padding": "8px"
-            });
-            $("#span_years").text(" * ");
-            //$("#valmsg").show();
-
-          }
-
-          if (result.abroadErr == "empty") {
-            $("#bor_abroad").css({
-              "border-bottom": "5px solid red",
-              "padding": "6px"
-            });
-            $("#span_abroad").text(" * ");
-            //$("#valmsg").show();
-
-
-          }
-
-          if (result.wayErr == "empty") {
-            $("#bor_way").css({
-              "border-bottom": "5px solid red",
-              "padding": "6px"
-            });
-            $("#span_way").text(" * ");
-           // $("#valmsg").show();
-
-
-          }
-
-          if (result.othersErr == "empty") {
-            $("#bor_others").css({
-              "border-bottom": "5px solid red",
-              "padding": "6px"
-            });
-            $("#span_others").text(" * ");
-            //$("#valmsg").show();
-
-          }
-
-          if (result.countryErr == "empty") {
-            $("#bor_country").css({
-              "border-bottom": "5px solid red",
-              "padding": "6px"
-            });
-            $("#span_country").text(" * ");
-            //$("#valmsg").show();
-
-          }
-
-
-          // After data submitted do stuff here
-
-          if (result.result == 1) {
-
-            Swal.fire({
-              title: "Yay!",
-              width: 400,
-              heightAuto: false,
-              padding: "0.15em",
-              background: "#000000",
-              icon: "success",
-              text: "Your survey has been submitted, thanks!",
-              footer: "<a href>Home</a>",
-              allowOutsideClick: false,
-              customClass: {
-                footer: 'sweet-footer',
-              }
-            });
-
-            $(".popup").slideUp();
-            $("#survPar").hide();
-
-          }
-
-          if (result.result == 2) {
-            Swal.fire({
-              icon: 'error',
-              title: 'Hmmm...',
-              text: 'Something went wrong, Try again!',
-              showCloseButton: true,
-              footer: '<a href><strong>Home</strong></a>'
-            });
-          }
-
-
-
-
-        } //ajax, success function//
-      }); //ajax//
-    }); //submit on.click function//
-
-
-
-
-    $("#a_quiz").on("click", function() {
-
-      let score = 0;
-
-      $('.next').click(function() {
-        classNumRow = $(this).attr('id');
-        classNumSplit = classNumRow.split('_');
-        classNum = classNumSplit[1];
-
-        showTabs(classNum);
-      });
-
-
-
-      $('#next_1').on("click", function(){
-
-        if (!$("input[name='news']:checked").val()) {
-          alert('Nothing is checked!');
-
-        } else if ($("input[name='news']:checked").val() == "corr_it") {
-
-        alert('Correcto mundo');
-          score ++;
-          console.log(score);
-          $('#' + classNum).hide();
-          $('#' + numNext).show();
-
-        } else {
-         alert('One of the radio buttons is checked!');
-         console.log(score);
-          $('#' + classNum).hide();
-          $('#' + numNext).show();
-            }
-         });
-
-         $('#next_2').on("click", function(){
-          if (!$("input[name='weather']:checked").val()) {
-           alert('Nothing is checked 2!');
-
-        } else if ($("input[name='weather']:checked").val() == "corr_it") {
-          alert('Correcto mundo 2');
-          score ++;
-          console.log(score);
-          $('#' + classNum).hide();
-          $('#' + numNext).show();
-        } else {
-         alert('One of the radio buttons is checked 2!');
-         console.log(score);
-         $('#' + classNum).hide();
-         $('#' + numNext).show();
-          }
-         });
-// Pass function as a vairable or parameter
-        //  let hideLast;
-
-        $('#next_3').on("click", function(){
-          if (!$("input[name='dist']:checked").val()) {
-
-          alert('Nothing is checked 3!');
-
-          } else if ($("input[name='dist']:checked").val() == "corr_it") {
-            score ++;
-            console.log(score);
-
-        function hideLast() {
-
-            $('#backHome-1').replaceWith("<input type='submit' id='sub'>");
-            $('#inst_h3').html("Thanks for doing the test!");
-            $("#instr, #3").hide();
-          }
-          hideLast();
-
-
-
-          } else {
-
-            alert('One of the radio buttons is checked 3!');
-            console.log(score);
-
-            $('#backHome-1').replaceWith("<input type='submit' id='sub'>");
-            $('#inst_h3').html("Thanks for doing the test!");
-            $("#instr, #3").hide();
-
-              }
-
-             $("#quiz_form").submit(function() {
-                event.preventDefault();
-                 });
-
-              $('#sub').on("click", function() {
-                var formData = $("#quiz_form :input").serializeArray();
-                formData[formData.length] = {
-                  name: "action",
-                  value: "sub"
-                };
-                formData.push({});
-                console.log('dataQuiz');
-
-                $.ajax({
-                  type: "POST",
-                  url: $("#quiz_form").attr("action"),
-                  data: formData,
-                  dataType: 'json',
-                  async: true,
-
-                  success: function(result) {
-
-
-                    if (result.result == 1) {
-
-                      alert('your quiz was submitted');
-
-                      $('.popup').hide();
-                    }
-
-                    if (result.result == 2) {
-                      alert('oh, no');
-                    }
-
-                  } //ajax, success function 2//
-                }); //ajax 2//
-              }); //submit on.click function 2//
-
-         }); // #next_3
-
-         $('#back_2').on("click", function(){
-
-          if ($("input[name='news']:checked").val() == "corr_it") {
-            score --;
-          }
-          console.log('Here 1 score');
-          console.log(score);
-
-         });
-
-         $('#back_3').on("click", function(){
-          if ($("input[name='weather']:checked").val() == "corr_it") {
-            score --;
-          }
-
-         console.log('Here 2 score');
-         console.log(score);
-
-         });
-
-      $('.back').click(function() {
-        classNumRow = $(this).attr('id');
-        classNumSplit = classNumRow.split('_');
-        classNum = classNumSplit[1];
-
-
-        backTabs(classNum);
-
-      });
-
-
-      function showTabs(classNum) {
-        numNext = parseInt(classNum) + 1;
-        event.preventDefault();
-
-      }
-
-      function backTabs(classNum) {
-        numBack = parseInt(classNum) - 1;
-        event.preventDefault();
-        $('#' + classNum).hide();
-        $('#' + numBack).show();
-
-      }
-
-});// (a_quiz) button
-
-
-    /* Mousemove function for the instructions*/
-
-    $(function() {
-      let moveLeft = 20;
-      let moveDown = 10;
-
-      $('#instr').hover(function(e) {
-        $('#inst_hov').show('slow');
-
-      }, function() {
-        $('#inst_hov').hide('slow');
-      });
-
-      $('#instr').mousemove(function(e) {
-        $('#inst_hov').css('top', e.pageY + moveDown).css('left', e.pageX + moveLeft);
-      });
-
-    });
-
-
-  </script>
-
-
-
+  <!--CONTACT FORM-->
   <div id="Contact Us" class="tabcontent">
     <div class="container">
       <div style="text-align:center">
@@ -798,110 +356,6 @@ require_once('./dbconn.php');
 
 
   <script>
-    // Reset border color & text in span element for name validation
-    $("#bor_name").focus(function() {
-      $("#bor_name").css({
-        "border": ""
-      });
-      $("#span_name").text("");
-    });
-    // Reset border color & text in span element for email validation
-    $("#bor_email").focus(function() {
-      $("#bor_email").css({
-        "border": ""
-      });
-      $("#span_email").text("");
-    });
-    // Reset border color & text in span element for message validation
-    $("#bor_message").focus(function() {
-      $("#bor_message").css({
-        "border": ""
-      });
-      $("#span_message").text("");
-    });
-
-    // Submit form contact
-    $("#contact").submit(function() {
-      return false;
-    });
-
-    $("#submit_contact").on("click", function() {
-      var formData = $("#contact :input").serializeArray();
-      formData[formData.length] = {
-        name: "action",
-        value: "submit_contact"
-      };
-      formData.push({});
-      $.ajax({
-        type: "POST",
-        url: $("#contact").attr("action"),
-        data: formData,
-        dataType: 'json',
-        async: true,
-        success: function(result) {
-          // After receiving confirmation on submit Do STUFF HERE:
-          if (result.validFormName == "empty") {
-            $("#bor_name").css({
-              "border": "5px solid red"
-            });
-            $("#span_name").text(" must only contain letters and whitespace ex.\"Paulo Sousa\"");
-          }
-          if (result.validFormEmail == "empty") {
-            $("#bor_email").css({
-              "border": "5px solid red"
-            });
-            $("#span_email").text(" enter a valid email address ex.\"paulo@brazil.com\"");
-          }
-          if (result.validFormMessage == "empty") {
-            $("#bor_message").css({
-              "border": "5px solid red"
-            });
-            $("#span_message").text(" type something, anything!");
-          }
-          if (result.validName == "no") {
-            $("#bor_name").css({
-              "border": "5px solid red"
-            });
-            $("#span_name").text(" must only contain letters and whitespace ex.\"Paulo Sousa\"");
-          }
-          if (result.validEmail == "email0") {
-            $("#bor_email").css({
-              "border": "5px solid red"
-            });
-            $("#span_email").text(" enter a valid email address ex.\"paulo@brazil.com\"");
-          }
-
-          // If data is sent do stuff here
-          if (result.result == 1) {
-
-            Swal.fire({
-              title: "Yay!",
-              width: 400,
-              heightAuto: false,
-              padding: "0.15em",
-              background: "#000000",
-              icon: "success",
-              text: "Your form has been submitted, thanks!",
-              footer: "<a href>Home</a>",
-              allowOutsideClick: false,
-              customClass: {
-                footer: 'sweet-footer',
-              }
-            });
-            $("#contact")[0].reset();
-          }
-          if (result.result == 2) {
-
-            Swal.fire({
-              icon: 'error',
-              title: 'Hmmm...',
-              text: 'Something went wrong, Try again!',
-              footer: '<a href><strong>Home</strong></a>'
-            });
-          }
-        } //ajax, success function//
-      }); //ajax//
-    }); //submit on.click fuction//
 
     function openPage(pageName, elmnt, color) {
       var i, tabcontent, tablinks;
@@ -938,11 +392,17 @@ require_once('./dbconn.php');
     });
 
    function fakeFunction() {
-
       alert('The voting is coming soon');
     }
+
   </script>
 
-</body>
+ <!-- JS Survey -->
+  <script src="survey.js"></script>
+ <!-- JS Quiz -->
+   <script src="quiz.js"></script>
+ <!--JS Contactform -->
+   <script src="contact_form.js"></script>
 
+ </body>
 </html>
