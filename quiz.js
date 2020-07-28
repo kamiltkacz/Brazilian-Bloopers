@@ -6,6 +6,7 @@
 
 $("#a_quiz").on("click", function() {
 
+
 let score = 0;
 // Reset border color & text in span element for question1 validation
 $("input[name='news']").click(function() {
