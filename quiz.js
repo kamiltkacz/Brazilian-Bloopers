@@ -9,16 +9,14 @@ $("#a_quiz").on("click", function() {
 
 let score = 0;
 // Reset border color & text in span element for question1 validation
-$("input[name='news']").click(function() {
-  $("input[name='news']").focus();
-   $("#bor_news").css({
+$("input[class='rads']").click(function() {
+  $("input[class='rads']").focus();
+   $(".bor_news").css({
     "border": ""
   });
-  $("#span_news").text("");
+  $(".span_news").text("");
 
 });
-
-
 
 $('.next').click(function() {
   classNumRow = $(this).attr('id');
@@ -31,12 +29,11 @@ $('.next').click(function() {
 $('#next_1').on("click", function(){
 
   if (!$("input[name='news']:checked").val()) {
-   // alert('Nothing is checked!');
-   $('#bor_news').css({
-    "border-bottom": "5px solid red",
+
+  $('.bor_news').css({"border-bottom": "5px solid red",
     "padding": "6px"
   });
-  $("#span_news").text(" * ");
+  $(".span_news").text(" * ");
 
 
   } else if ($("input[name='news']:checked").val() == "corr_it") {
@@ -49,9 +46,6 @@ $('#next_1').on("click", function(){
     $('#' + numNext).show();
 
   } else {
-
-
-   alert('One of the radio buttons is checked!');
    console.log(score);
     $('#' + classNum).hide();
     $('#' + numNext).show();
@@ -60,10 +54,16 @@ $('#next_1').on("click", function(){
 
    $('#next_2').on("click", function(){
     if (!$("input[name='weather']:checked").val()) {
-    // alert('Nothing is checked 2!');
+
+    $('.bor_news').css({
+      "border-bottom": "5px solid red",
+      "padding": "6px"
+    });
+    $(".span_news").text(" * ");
+
+
 
   } else if ($("input[name='weather']:checked").val() == "corr_it") {
-    alert('Correcto mundo 2');
     score ++;
     console.log(score);
     $('#' + classNum).hide();
@@ -79,8 +79,6 @@ $('#next_1').on("click", function(){
   $('#next_3').on("click", function(){
     if (!$("input[name='dist']:checked").val()) {
 
-   // alert('Nothing is checked 3!');
-
     } else if ($("input[name='dist']:checked").val() == "corr_it") {
       score ++;
       console.log(score);
@@ -92,8 +90,6 @@ $('#next_1').on("click", function(){
       $("#instr, #3").hide();
     }
     hideLast();
-
-
 
     } else {
 
@@ -146,10 +142,10 @@ $('#next_1').on("click", function(){
 
    }); // #next_3
 
-
-
-
    $('#back_2').on("click", function(){
+
+      $(".bor_news").css({"border": ""});
+      $(".span_news").text("");
 
     if ($("input[name='news']:checked").val() == "corr_it") {
       score --;
