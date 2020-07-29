@@ -34,7 +34,7 @@ color: #f5f5dc;
 /* Style tab links */
 .tablink {
   background-color: #77993b69;
-  color: #f5f5dc;
+  color: black;
   float: left;
   border: none;
   outline: none;
@@ -167,7 +167,7 @@ list-style-position: outside;
 
 
 
-.btn #btn_quiz{
+#btn_quiz{
 
   background-color: whitesmoke;
   color: #0f1403;
@@ -176,7 +176,7 @@ list-style-position: outside;
   padding: 5px;
   border-radius: 8px;
   cursor: pointer;
-  display: none;
+  /*display: none;*/
   text-decoration: solid; /* Important */
 
 
@@ -330,6 +330,16 @@ label,
 #bor_gender,
 #bor_years {
   cursor: default;
+}
+
+.bor_news, .span_news {
+
+  cursor: default;
+}
+
+.rads {
+
+  cursor: pointer;
 }
 
 /* Submit button */
