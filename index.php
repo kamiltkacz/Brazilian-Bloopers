@@ -168,6 +168,7 @@ require_once('./dbconn.php');
           <div id="surv_div">
             <div id="question1">
               <p><label id="bor_gender">1) What gender are you?<span id="span_gender" style="color:#ff0000"></span></label></p>
+
               <input type="radio" id="male" class="radios" name="gender" value="male"><label for="male">Male</label><br>
               <input type="radio" id="female" class="radios" name="gender" value="female"><label for="female">Female</label><br>
               <input type="radio" id="other" class="radios" name="gender" value="other"><label for="other">Other</label><br>
@@ -183,6 +184,7 @@ require_once('./dbconn.php');
 
             <div id="question3">
               <p><label id="bor_years">3) English student for:<span id="span_years" style="color:#ff0000"></span></label></p>
+
               <input type="radio" id="y1" class="radios" name="years" value="0-2"><label for="y1">0-2years</label><br>
               <input type="radio" id="y2" class="radios" name="years" value="2-5"><label for="y2">2-5years</label><br>
               <input type="radio" id="y3" class="radios" name="years" value="5-10"><label for="y3">5-10years</label><br>
@@ -192,6 +194,7 @@ require_once('./dbconn.php');
 
             <div id="question4">
               <p><label id="bor_abroad">4) Experience with English abroad<span id="span_abroad" style="color:#ff0000"></span></label></p>
+
               <input type="radio" id="abr1" class="radios" name="abroad" value="less than a year"><label for="abr1">less than a year</label><br>
               <input type="radio" id="abr2" class="radios" name="abroad" value="1-3 years"><label for="abr2">1-2 years</label><br>
               <input type="radio" id="abr3" class="radios" name="abroad" value="3-6 years"><label for="abr3">3-5 years</label><br>
@@ -202,6 +205,7 @@ require_once('./dbconn.php');
 
             <div id="question5">
               <p><label id="bor_way">5) How do you learn English?<i>Choose all that apply</i><span id="span_way" style="color:#ff0000"><br></span></label></p>
+
               <input type="checkbox" id="way1" class="check" name="way[]" value="inperson"><label for="way1">in-person course</label><br>
               <input type="checkbox" id="way2" class="check" name="way[]" value="privateteacher"><label for="way2">private teacher</label><br>
               <input type="checkbox" id="way3" class="check" name="way[]" value="selftaught"><label for="way3">self-taught</label><br>
@@ -213,7 +217,9 @@ require_once('./dbconn.php');
             </div>
 
             <div id="question6">
-              <p><label id="bor_others">6) How many foreign languages do you speak?<span id="span_others" style="color:#ff0000"></span></label></p>
+              <p><label id="bor_others">6) How many foreign languages do you speak?
+              <span id="span_others" style="color:#ff0000"></span></label></p>
+
               <input type="radio" id="oth1" class="radios" name="others" value="one"><label for="oth1">One</label><br>
               <input type="radio" id="oth2" class="radios" name="others" value="two"><label for="oth2">Two</label><br>
               <input type="radio" id="oth3" class="radios" name="others" value="polyglot"><label for="oth3">I'm a polyglot</label>
@@ -252,13 +258,14 @@ require_once('./dbconn.php');
           <p>Liz: Do you watch the news everyday?</p>
           <p>Mike: Yeah, I think___is important to know what's going on.</p>
           <p>Liz: I agree but sometimes___is difficult. There is a lot of negativity in the news.</p>
+          <p>Mike: To be honest,__doesn't take much of my time.</p>
 
-          <p id="miss_one"><label id="bor_news">1) What is missing?<span id="span_news" style="color:#ff0000"></span></label></p>
+          <p><label class="bor_news">1) What is missing?<span class="span_news" style="color:#ff0000"></span></label></p>
 
-          <input type="radio" class="rads" name="news" value="err_contrct"> a )Contraction - " 's "<br>
-          <input type="radio" class="rads" name="news" value="err_pizz"> b) The word "pizza"<br>
-          <input type="radio" class="rads" name="news" value="err_noth">c) Nothing is missing<br>
-          <input type="radio" class="rads" name="news" value="corr_it">d) The neuter subject "It"
+          <input type="radio" id="n1" class="rads" name="news" value="err_contrct"><label for="n1">a)Contraction - " 's "</label><br>
+          <input type="radio" id="n2" class="rads" name="news" value="err_pizz"><label for="n2"> b) The word "pizza"</label><br>
+          <input type="radio" id="n3" class="rads" name="news" value="err_noth"><label for="n3">c) Nothing is missing</label><br>
+          <input type="radio" id="n4" class="rads" name="news" value="corr_it"><label for="n4">d) The neuter subject "It"</label>
           <button id="next_1" class="next">next</button>
           <p>1 out of 30</p>
 
@@ -274,7 +281,7 @@ require_once('./dbconn.php');
             <p>Cris: Wow, some weather! </p>
 
 
-            <p><label id="bor_news">1) What is missing?<span id="span_news" style="color:#ff0000"></span></label></p>
+            <p><label class="bor_news">1) What is missing?<span class="span_news" style="color:#ff0000"></span></label></p>
 
             <input type="radio" class="rads" name="weather" value="err_he"> a) The masculine subject - "He"<br>
             <input type="radio" class="rads" name="weather" value="corr_it"> b) The neuter subject "It"<br>
@@ -294,8 +301,8 @@ require_once('./dbconn.php');
           <p>John: I didn't know___takes this long.</p>
           <p>Pedro: How long does___take to get from New York to Detroit.</p>
           <p>John:___is about the same.</p>
-
-          <p><label id="bor_news">1) What is missing?<span id="span_news" style="color:#ff0000"></span></label></p>
+<!--
+          <p><label class="bor_news">1) What is missing?<span class="span_news" style="color:#ff0000"></span></label></p> -->
 
           <input type="radio" class="rads" name="dist" value="corr_it"> a)The neuter subject "It"<br>
           <input type="radio" class="rads" name="dist" value="err_she"> b)The feminine subject - "She"<br>
