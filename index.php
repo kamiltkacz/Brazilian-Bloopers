@@ -139,16 +139,18 @@ require_once('./dbconn.php');
 
     <div class="container" id="steps">
       <fieldset id="field_steps">
-        <legend>Follow these 3 simple steps:</legend>
+        <legend id="leg_steps">Follow these 3 simple steps:</legend>
+
         <ol>
           <li id="survPar">
-            <p>Fill out our spectacularly short&nbsp;<a class="btn" data-popup-open="popup-1" href="#"><span id="surveyname" style="color:green"><u>SURVEY</u> </span></a><br>and click submit. After you do it a "Start" button will show.</p>
+            <p>Fill out our spectacularly short&nbsp;<a class="btn" data-popup-open="popup-1" href="#">
+              Survey</a><br><br>and click submit. After you do it a "Start" button will show.</p>
           </li>
           <li>
-            <p>Click "Start" to begin the quiz</p>
+            <p>Click "Start" to begin the quiz.</p>
 
 
-            <button id="a_quiz" type="button"><a id="btn_quiz" class="btn" data-popup-open="popup-2" href="#">Start</a></button>
+            <button id="a_quiz" type="button"><a class="btn" data-popup-open="popup-2" href="#">Start</a></button>
 
           </li>
           <li>
@@ -251,27 +253,28 @@ require_once('./dbconn.php');
       <a class="popup-close" data-popup-close="popup-2" href="#">x</a>
         <h3 id="inst_h3"><u>Read the dialogues and choose the best option for the blank spaces</u></h3>
 
-        <div id="1" class="q_1 qe">
-
+        <div id="1" class="questions">
+          <div class="cont_dial">
           <h4><b>SITUATION 1</b></h4>
 
           <p>Liz: Do you watch the news everyday?</p>
           <p>Mike: Yeah, I think___is important to know what's going on.</p>
           <p>Liz: I agree but sometimes___is difficult. There is a lot of negativity in the news.</p>
-          <p>Mike: To be honest,__doesn't take much of my time.</p>
-
+          <p>Mike:__doesn't take much of my time.</p>
+          </div>
+          <div class="cont_answer">
           <p><label class="bor_news">1) What is missing?<span class="span_news" style="color:#ff0000"></span></label></p>
 
           <input type="radio" id="n1" class="rads" name="news" value="err_contrct"><label for="n1">a)Contraction - " 's "</label><br>
           <input type="radio" id="n2" class="rads" name="news" value="err_pizz"><label for="n2"> b) The word "pizza"</label><br>
           <input type="radio" id="n3" class="rads" name="news" value="err_noth"><label for="n3">c) Nothing is missing</label><br>
           <input type="radio" id="n4" class="rads" name="news" value="corr_it"><label for="n4">d) The neuter subject "It"</label>
-          <button id="next_1" class="next">next</button>
-          <p>1 out of 30</p>
 
+          <p>1 out of 30</p>
+          </div>
         </div>
 
-        <div id="2" class="q_2 qe" style="display: none;">
+        <div id="2" class="questions" style="display: none;">
 
         <h4><b>SITUATION 2</b></h4>
 
@@ -292,7 +295,7 @@ require_once('./dbconn.php');
             <p>2 out of 30</p>
        </div>
 
-          <div id="3" class="q_3 qe" style="display: none;">
+          <div id="3" class="questions" style="display: none;">
 
           <h4>SITUATION 3</h4>
 
@@ -318,7 +321,9 @@ require_once('./dbconn.php');
             <div style="float:right;">
             </div>
           </div>
+
           <button id='backHome-1'><a href='https://www.brazilianbloopers.com' style='color: black'>Home</a></button>
+          <button id="next_1" class="next">next</button>
         </div>
      </form>
     </div> <!--popup-inner-->
