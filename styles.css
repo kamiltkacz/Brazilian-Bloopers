@@ -89,11 +89,11 @@ list-style-position: outside;
   border: 0;
 }
 
-
+/*
 #surveyname {
   color: #b9ff3b69;
   word-spacing: 5px;
-}
+}*/
 
 /* Outer */
 .popup {
@@ -153,6 +153,8 @@ list-style-position: outside;
   text-decoration: none;
 }
 
+/*BUTTONS*/
+
  #a_quiz {
   background-color: whitesmoke;
   color: #0f1403;
@@ -166,39 +168,20 @@ list-style-position: outside;
 }
 
 
-
-#btn_quiz{
-
-  background-color: whitesmoke;
-  color: #0f1403;
-  font-family: 'Patua One', cursive;
-  font-size: 17px;
-  padding: 5px;
-  border-radius: 8px;
-  cursor: pointer;
-  /*display: none;*/
-  text-decoration: solid; /* Important */
-
-
-}
-
-#fakeSub {
+.btn {
 
   background-color: whitesmoke;
   color: #000000;
   font-family: inherit;
-  font-size: 17px;
+  font-size: 19px;
   padding: 5px;
   border-radius: 8px;
   cursor: pointer;
   margin-top: 10px;
   margin-right: 10px;
-
+  text-align: center;
 
 }
-
-
-
 
 p#instr {
   background-color: whitesmoke;
@@ -227,6 +210,57 @@ p#instr {
 
 }
 
+.next {
+  background-color: whitesmoke;
+  color: #000000;
+  font-family: inherit;
+  font-size: 17px;
+  padding: 5px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-right: 10px;
+
+  }
+
+  .back {
+    background-color: whitesmoke;
+    color: #000000;
+    font-family: inherit;
+    font-size: 17px;
+    padding: 5px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-right: 10px;
+
+    }
+
+/* END BUTTONS*/
+
+/* QUIZ CONTAINERS*/
+
+.cont_dial {
+
+  border-radius: 20px;
+  background-color: #77993b69;
+  padding: 20px;
+  text-align: left;
+  margin-top: 30px;
+
+}
+.cont_answer {
+
+  border-radius: 20px;
+  background-color: #77993b69;
+  padding: 20px;
+  text-align: left;
+  margin-top: 30px;
+
+}
+
+
+
 
 #gen_instr {
 
@@ -248,34 +282,8 @@ p#instr {
   font-size: 90%;
 }
 
-/*check button*/
-
-.next {
-background-color: whitesmoke;
-color: #000000;
-font-family: inherit;
-font-size: 17px;
-padding: 5px;
-border-radius: 8px;
-cursor: pointer;
-margin-top: 10px;
-margin-right: 10px;
-
-}
-
-.back {
-  background-color: whitesmoke;
-  color: #000000;
-  font-family: inherit;
-  font-size: 17px;
-  padding: 5px;
-  border-radius: 8px;
-  cursor: pointer;
-  margin-top: 10px;
-  margin-right: 10px;
 
 
-  }
 
 
 
