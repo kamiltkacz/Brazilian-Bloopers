@@ -98,6 +98,7 @@
       formData.push({});
 
 
+
       $.ajax({
         type: "POST",
         url: $("#survey").attr("action"),
@@ -202,6 +203,7 @@
 
             $(".popup").slideUp();
             $("#survPar").hide();
+            $('#leg_steps').text('Follow these 2 simple steps');
 
           }
 
