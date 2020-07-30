@@ -1,9 +1,4 @@
 
-
-
-
-
-
 $("#a_quiz").on("click", function() {
 
 
@@ -38,8 +33,6 @@ $('#next_1').on("click", function(){
 
   } else if ($("input[name='news']:checked").val() == "corr_it") {
 
-
-  alert('Correcto mundo');
     score ++;
     console.log(score);
     $('#' + classNum).hide();
@@ -61,15 +54,13 @@ $('#next_1').on("click", function(){
     });
     $(".span_news").text(" * ");
 
-
-
   } else if ($("input[name='weather']:checked").val() == "corr_it") {
     score ++;
     console.log(score);
     $('#' + classNum).hide();
     $('#' + numNext).show();
   } else {
-   alert('One of the radio buttons is checked 2!');
+
    console.log(score);
    $('#' + classNum).hide();
    $('#' + numNext).show();
@@ -93,7 +84,6 @@ $('#next_1').on("click", function(){
 
     } else {
 
-      alert('One of the radio buttons is checked 3!');
       console.log(score);
 
       $('#backHome-1').replaceWith("<input type='submit' id='sub'>");
@@ -114,6 +104,8 @@ $('#next_1').on("click", function(){
           };
           formData.push({});
           console.log('dataQuiz');
+
+
 
           $.ajax({
             type: "POST",
@@ -140,7 +132,17 @@ $('#next_1').on("click", function(){
           }); //ajax 2//
         }); //submit on.click function 2//
 
-   }); // #next_3
+   }); // #next_3 button
+
+   $('.back').click(function() {
+    classNumRow = $(this).attr('id');
+    classNumSplit = classNumRow.split('_');
+    classNum = classNumSplit[1];
+
+    backTabs(classNum);
+
+  });
+
 
    $('#back_2').on("click", function(){
 
@@ -150,7 +152,6 @@ $('#next_1').on("click", function(){
     if ($("input[name='news']:checked").val() == "corr_it") {
       score --;
     }
-    console.log('Here 1 score');
     console.log(score);
 
    });
@@ -159,21 +160,10 @@ $('#next_1').on("click", function(){
     if ($("input[name='weather']:checked").val() == "corr_it") {
       score --;
     }
-
-   console.log('Here 2 score');
-   console.log(score);
+  console.log(score);
 
    });
 
-$('.back').click(function() {
-  classNumRow = $(this).attr('id');
-  classNumSplit = classNumRow.split('_');
-  classNum = classNumSplit[1];
-
-
-  backTabs(classNum);
-
-});
 
 
 function showTabs(classNum) {
