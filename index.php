@@ -270,20 +270,23 @@ require_once('./dbconn.php');
           <input type="radio" id="n3" class="rads" name="news" value="err_noth"><label for="n3">c) Nothing is missing</label><br>
           <input type="radio" id="n4" class="rads" name="news" value="corr_it"><label for="n4">d) The neuter subject "It"</label>
 
-          <p>1 out of 30</p>
+
+          <button id="next_1" class="next">next</button>
+
+          <!--<p>1 out of 30</p>-->
           </div>
         </div>
 
         <div id="2" class="questions" style="display: none;">
-
+        <div class="cont_dial">
         <h4><b>SITUATION 2</b></h4>
 
 
           <p>Cris: Look out the window! I can't believe it!___was sunny 5 minute ago, now___is raining!</p>
           <p>Natalie:___is like that here in January.
             <p>Cris: Wow, some weather! </p>
-
-
+            </div>
+            <div class="cont_answer">
             <p><label class="bor_news">1) What is missing?<span class="span_news" style="color:#ff0000"></span></label></p>
 
             <input type="radio" class="rads" name="weather" value="err_he"> a) The masculine subject - "He"<br>
@@ -292,7 +295,8 @@ require_once('./dbconn.php');
             <input type="radio" class="rads" name="weather" value="err_i"> d) The subject "I">
             <button id="next_2" class="next">next</button>
             <button id="back_2" class="back">back</button>
-            <p>2 out of 30</p>
+            <!-- <p>2 out of 30</p> -->
+        </div>
        </div>
 
           <div id="3" class="questions" style="display: none;">
@@ -313,25 +317,16 @@ require_once('./dbconn.php');
           <input type="radio" class="rads" name="dist" value="err_noth"> d)Nothing is missing <br>
           <button id="next_3" class="next">next</button>
           <button id="back_3" class="back">back</button>
-          <p>3 out of 30</p>
+          <!-- <p>3 out of 30</p> -->
         </div>
-        <div id="allButtons">
+        <div id="div_instr">
           <p id="instr" name="instructions">Instructions</p>
-          <div style="overflow:auto;">
-            <div style="float:right;">
-            </div>
-          </div>
-
-          <button id='backHome-1'><a href='https://www.brazilianbloopers.com' style='color: black'>Home</a></button>
-          <button id="next_1" class="next">next</button>
         </div>
      </form>
     </div> <!--popup-inner-->
   </div> <!-- popup2-->
 
-
   <!--mouseover instructions in CSS: Display None -->
-
   <div id="inst_hov">
     <p id="gen_instr"><u>General Instructions</u></p>
     <ul>
