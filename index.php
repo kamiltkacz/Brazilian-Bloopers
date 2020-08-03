@@ -247,7 +247,7 @@ require_once('./dbconn.php');
   <!--QUIZ-->
 
   <div class="popup" data-popup="popup-2">
-    <div class="popup-inner">
+    <div class="popup-inner" id="inner_2">
 
       <form id="quiz_form" method="post" action="actions.php">
       <a class="popup-close" data-popup-close="popup-2" href="#">x</a>
@@ -270,11 +270,12 @@ require_once('./dbconn.php');
           <input type="radio" id="n3" class="rads" name="news" value="err_noth"><label for="n3">c) Nothing is missing</label><br>
           <input type="radio" id="n4" class="rads" name="news" value="corr_it"><label for="n4">d) The neuter subject "It"</label>
 
+          <!--<div id="next_01">-->
 
           <button id="next_1" class="next">next</button>
-
-          <!--<p>1 out of 30</p>-->
           </div>
+          <!--<p>1 out of 30</p>-->
+          <!--</div>-->
         </div>
 
         <div id="2" class="questions" style="display: none;">
