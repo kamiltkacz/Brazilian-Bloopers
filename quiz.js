@@ -37,11 +37,13 @@ $('#next_1').on("click", function(){
     console.log(score);
     $('#' + classNum).hide();
     $('#' + numNext).show();
+    $('.popup-inner').scrollTop(0);
 
   } else {
    console.log(score);
     $('#' + classNum).hide();
     $('#' + numNext).show();
+    $('.popup-inner').scrollTop(0);
       }
    });
 
