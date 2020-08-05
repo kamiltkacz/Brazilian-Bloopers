@@ -108,7 +108,7 @@ list-style-position: outside;
 
 /* Inner */
 .popup-inner {
-  max-width: 500px;
+  max-width: 380px;
   max-height: 400px;
   width: 90%;
   padding: 40px;
@@ -172,18 +172,6 @@ list-style-position: outside;
 
 /*BUTTONS*/
 
- #a_quiz {
-  background-color: whitesmoke;
-  color: #0f1403;
-  font-family: 'Patua One', cursive;
-  font-size: 17px;
-  padding: 5px;
-  border-radius: 8px;
-  cursor: pointer;
-  display: none;
-  text-decoration: solid;
-}
-
 
 .btn {
 
@@ -194,10 +182,15 @@ list-style-position: outside;
   padding: 5px;
   border-radius: 8px;
   cursor: pointer;
-  margin-top: 10px;
+  top: 15px;
   margin-right: 10px;
   text-align: center;
+  position: relative;
 
+}
+#a_quiz {
+display: none;
+top: -2px;
 }
 
 p#instr {
@@ -212,39 +205,27 @@ p#instr {
  /* margin-top: 3px;*/
   margin-right: 30px;
 
-}
+ }
 
 
-.next {
+
+  #next_2, #next_1 {
   background-color: whitesmoke;
   color: #000000;
   font-family: inherit;
-  font-size: 17px;
+  font-size: 18px;
   padding: 5px;
   border-radius: 8px;
   cursor: pointer;
-  margin-top: 10px;
-  margin-right: 10px;
-  position: relative;
 
- }
-
-  #next_2, #next_1 {
   display: flex;
-  margin-left: 415px;
-  margin-top: 35px;
-  position: absolute;
+  right: 40px;
+  margin-top: 34px;
+  position: fixed;
  }
 
- /* #next_01 {
-  display: flex;
-  margin-left: 410px;
-  margin-top: 35px;
-  position: absolute;
 
 
- }
- */
 
 
 .back {
@@ -294,6 +275,7 @@ p#instr {
 
 
 
+
 #gen_instr {
 
  text-align: center;
@@ -336,22 +318,24 @@ textarea {
 
 }
 
-#ageselect {
+/* #ageselect {
   width: 200px;
   padding: 7px;
   border-radius: 20px;
-}
+} */
 
 #submit_survey {
   background-color: whitesmoke;
-  color: #62645e;
+  color: #000000;
   font-family: 'Patua One', cursive;
-  font-size: 20px;
+  font-size: 18px;
+  position: fixed;
   padding: 4px;
   border-radius: 8px;
   cursor: pointer;
-  margin-top: 20px;
-  width: 90px;
+  margin-top: 10px;
+  width: 80px;
+  right: 12px;
 }
 
 /* mouseover pointer survey */
@@ -360,6 +344,12 @@ label,
 .radios,
 .check:hover {
   cursor: pointer;
+}
+
+#age {
+
+  width: 70%;
+  font-size: 18px;
 }
 
 #bor_country,
@@ -380,6 +370,17 @@ label,
 .rads {
 
   cursor: pointer;
+}
+
+.cont_surv{
+
+  border-radius: 20px;
+  background-color: #77993b69;
+  padding: 20px;
+  text-align: left;
+  margin-top: 30px;
+
+
 }
 
 /* Submit button */
@@ -450,7 +451,7 @@ input[type="submit"],
   }
 }
 
- @media (max-width: 414px) {
+ /* @media (max-width: 414px) {
   #next_2, #next_1 {
     display: flex;
     margin-left: 305px;
@@ -472,7 +473,7 @@ input[type="submit"],
 @media (max-height: 736px) {
   #next_2, #next_1 {
     display: flex;
-    margin-left: 305px;
+    margin-left: 270px;
     margin-top: 35px;
     position: absolute;
 }
@@ -481,7 +482,7 @@ input[type="submit"],
 @media (min-height: 736px) {
   #next_2, #next_1 {
     display: flex;
-    margin-left: 305px;
+    margin-left: 415px;
     margin-top: 35px;
     position: absolute;
 }
@@ -527,4 +528,4 @@ input[type="submit"],
 }
 }
 
-
+ */
