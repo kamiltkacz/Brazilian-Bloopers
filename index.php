@@ -165,6 +165,7 @@ require_once('./dbconn.php');
 <!--SURVEY-->
     <div class="popup" data-popup="popup-1">
       <div class="popup-inner">
+        <h2>Please fill out these 7 questions</h2>
         <form id="survey" method="post" action="actions.php">
 
           <a class="popup-close" data-popup-close="popup-1" href="#">x</a>
@@ -186,7 +187,7 @@ require_once('./dbconn.php');
 
 
             <div id="question3" class="cont_surv">
-              <p><label id="bor_years">3) English student for:<span id="span_years" style="color:#ff0000"></span></label></p>
+              <p><label id="bor_years">3) English student for<span id="span_years" style="color:#ff0000"></span></label></p>
 
               <input type="radio" id="y1" class="radios" name="years" value="0-2"><label for="y1">0-2years</label><br>
               <input type="radio" id="y2" class="radios" name="years" value="2-5"><label for="y2">2-5years</label><br>
@@ -196,7 +197,7 @@ require_once('./dbconn.php');
             </div>
 
             <div id="question4" class="cont_surv">
-              <p><label id="bor_abroad">4) Experience with English abroad<span id="span_abroad" style="color:#ff0000"></span></label></p>
+              <p><label id="bor_abroad">4) Contact with English abroad<span id="span_abroad" style="color:#ff0000"></span></label></p>
 
               <input type="radio" id="abr1" class="radios" name="abroad" value="less than a year"><label for="abr1">less than a year</label><br>
               <input type="radio" id="abr2" class="radios" name="abroad" value="1-3 years"><label for="abr2">1-2 years</label><br>
@@ -221,7 +222,6 @@ require_once('./dbconn.php');
 
             <div id="question6" class="cont_surv">
               <p><label id="bor_others">6) Foreign languages<span id="span_others" style="color:#ff0000"></span></label></p>
-
               <input type="radio" id="oth1" class="radios" name="others" value="one"><label for="oth1">One</label><br>
               <input type="radio" id="oth2" class="radios" name="others" value="two"><label for="oth2">Two</label><br>
               <input type="radio" id="oth3" class="radios" name="others" value="polyglot"><label for="oth3">I'm a polyglot</label>
@@ -265,12 +265,12 @@ require_once('./dbconn.php');
           <div class="cont_answer">
           <p><label class="bor_news">1) What is missing?<span class="span_news" style="color:#ff0000"></span></label></p>
 
-          <input type="radio" id="n1" class="rads" name="news" value="err_contrct"><label for="n1">a)Contraction - " 's "</label><br>
+          <input type="radio" id="n1" class="rads" name="news" value="err_contrct"><label for="n1"> a) Contraction - " 's "</label><br>
           <input type="radio" id="n2" class="rads" name="news" value="err_pizz"><label for="n2"> b) The word "pizza"</label><br>
-          <input type="radio" id="n3" class="rads" name="news" value="err_noth"><label for="n3">c) Nothing is missing</label><br>
-          <input type="radio" id="n4" class="rads" name="news" value="corr_it"><label for="n4">d) The neuter subject "It"</label>
+          <input type="radio" id="n3" class="rads" name="news" value="err_noth"><label for="n3"> c) Nothing is missing</label><br>
+          <input type="radio" id="n4" class="rads" name="news" value="corr_it"><label for="n4"> d) The neuter subject "It"</label>
           <div id="next_01">
-         <button id="next_1" class="next">next</button>
+         <button id="next_1" class="next">Next</button>
         </div>
         <!--<p>1 out of 30</p>-->
 
@@ -294,8 +294,8 @@ require_once('./dbconn.php');
             <input type="radio" class="rads" name="weather" value="corr_it"> b) The neuter subject "It"<br>
             <input type="radio" class="rads" name="weather" value="err_noth"> c) Nothing is missing<br>
             <input type="radio" class="rads" name="weather" value="err_i"> d) The subject "I">
-            <button id="next_2" class="next">next</button>
-            <button id="back_2" class="back">back</button>
+            <button id="next_2" class="next">Next</button>
+            <button id="back_2" class="back">Back</button>
             <!-- <p>2 out of 30</p> -->
         </div>
        </div>
@@ -322,7 +322,7 @@ require_once('./dbconn.php');
         </div>
         <div id="div_instr">
           <p id="instr" name="instructions">Instructions</p>
-
+        <button id="sub_quiz" type="submit">Submit</button>
         </div>
      </form>
     </div> <!--popup-inner-->
