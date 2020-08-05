@@ -127,21 +127,12 @@ if (isset($_POST["action"])) {
 }
 
 
-if ($action == "sub") {
+if ($action == "sub_quiz") {
     $export = Array();
     $news = $_POST["news"];
     $weather = $_POST["weather"];
     $dist = $_POST["dist"];
 
-    // $export['newsErr'] = "";
-
-    // if (empty($news)) {
-
-    //   $export['newsErr'] = "empty";
-    //   $export['news'] = 0;
-    //   } else {
-    //   $export['news'] = 1;
-    //  }
 
     $sql = "INSERT INTO quiz (Radio_1, Radio_2, Radio_3)
     VALUES ('$news', '$weather', '$dist')";
