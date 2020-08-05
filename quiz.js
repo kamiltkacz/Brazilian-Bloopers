@@ -78,7 +78,7 @@ $('#next_1').on("click", function(){
 
   function hideLast() {
 
-      $('#backHome-1').replaceWith("<input type='submit' id='sub'>");
+      $('#sub_quiz').show();
       $('#inst_h3').html("Thanks for doing the test!");
       $("#instr, #3").hide();
     }
@@ -88,7 +88,7 @@ $('#next_1').on("click", function(){
 
       console.log(score);
 
-      $('#backHome-1').replaceWith("<input type='submit' id='sub'>");
+      $('#sub_quiz').show();
       $('#inst_h3').html("Thanks for doing the test!");
       $("#instr, #3").hide();
 
@@ -98,11 +98,11 @@ $('#next_1').on("click", function(){
           event.preventDefault();
            });
 
-        $('#sub').on("click", function() {
+        $('#sub_quiz').on("click", function() {
           var formData = $("#quiz_form :input").serializeArray();
           formData[formData.length] = {
             name: "action",
-            value: "sub"
+            value: "sub_quiz"
           };
           formData.push({});
           console.log('dataQuiz');
@@ -124,6 +124,7 @@ $('#next_1').on("click", function(){
                 alert('your quiz was submitted');
 
                 $('.popup').hide();
+                $('#a_quiz').off('click');
               }
 
               if (result.result == 2) {
