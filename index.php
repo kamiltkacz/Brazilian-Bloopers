@@ -21,6 +21,8 @@ require_once('./dbconn.php');
 
 
 
+
+
   <!--Squada One Font-->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
@@ -143,15 +145,14 @@ require_once('./dbconn.php');
 
         <ol>
           <li id="survPar">
-            <p>Fill out our spectacularly short&nbsp;<a class="btn" data-popup-open="popup-1" href="#">
-              Survey</a><br><br>and click submit. After you do it a "Start" button will show.</p>
+           <p>Fill out our spectacularly short<br>
+             <button class="btn" data-popup-open="popup-1" href="#">Survey</button>
+              <br><br>and click submit. After you do it a "Start" button will show.
+            </p>
           </li>
           <li>
             <p>Click "Start" to begin the quiz.</p>
-
-
-            <button id="a_quiz" type="button"><a class="btn" data-popup-open="popup-2" href="#">Start</a></button>
-
+            <button id="a_quiz" class="btn" data-popup-open="popup-2" href="#">Start</button>
           </li>
           <li>
             <p>Have fun!</p>
@@ -168,7 +169,7 @@ require_once('./dbconn.php');
 
           <a class="popup-close" data-popup-close="popup-1" href="#">x</a>
           <div id="surv_div">
-            <div id="question1">
+            <div id="question1" class="cont_surv">
               <p><label id="bor_gender">1) What gender are you?<span id="span_gender" style="color:#ff0000"></span></label></p>
 
               <input type="radio" id="male" class="radios" name="gender" value="male"><label for="male">Male</label><br>
@@ -176,15 +177,15 @@ require_once('./dbconn.php');
               <input type="radio" id="other" class="radios" name="gender" value="other"><label for="other">Other</label><br>
             </div>
 
-            <div id="question2">
+            <div id="question2" class="cont_surv">
               <p><label id="bor_age">2) How old are you?<span id="span_age" style="color:#ff0000"></span></label></p>
               <select id="age" name="ageselect">
-                <option id="opt" value="0">Please select your age</option>
+                <option id="opt" value="0">Select your age</option>
               </select>
             </div>
 
 
-            <div id="question3">
+            <div id="question3" class="cont_surv">
               <p><label id="bor_years">3) English student for:<span id="span_years" style="color:#ff0000"></span></label></p>
 
               <input type="radio" id="y1" class="radios" name="years" value="0-2"><label for="y1">0-2years</label><br>
@@ -194,7 +195,7 @@ require_once('./dbconn.php');
               <input type="radio" id="y5" class="radios" name="years" value="never studied"><label for="y5">never studied</label>
             </div>
 
-            <div id="question4">
+            <div id="question4" class="cont_surv">
               <p><label id="bor_abroad">4) Experience with English abroad<span id="span_abroad" style="color:#ff0000"></span></label></p>
 
               <input type="radio" id="abr1" class="radios" name="abroad" value="less than a year"><label for="abr1">less than a year</label><br>
@@ -205,8 +206,8 @@ require_once('./dbconn.php');
               <input type="radio" id="abr6" class="radios" name="abroad" value="never lived abroad"><label for="abr6">never lived abroad</label>
             </div>
 
-            <div id="question5">
-              <p><label id="bor_way">5) How do you learn English?<i>Choose all that apply</i><span id="span_way" style="color:#ff0000"><br></span></label></p>
+            <div id="question5" class="cont_surv">
+              <p><label id="bor_way">5) How do you learn English?<span id="span_way" style="color:#ff0000"><br></span></label></p>
 
               <input type="checkbox" id="way1" class="check" name="way[]" value="inperson"><label for="way1">in-person course</label><br>
               <input type="checkbox" id="way2" class="check" name="way[]" value="privateteacher"><label for="way2">private teacher</label><br>
@@ -218,9 +219,8 @@ require_once('./dbconn.php');
 
             </div>
 
-            <div id="question6">
-              <p><label id="bor_others">6) How many foreign languages do you speak?
-              <span id="span_others" style="color:#ff0000"></span></label></p>
+            <div id="question6" class="cont_surv">
+              <p><label id="bor_others">6) Foreign languages<span id="span_others" style="color:#ff0000"></span></label></p>
 
               <input type="radio" id="oth1" class="radios" name="others" value="one"><label for="oth1">One</label><br>
               <input type="radio" id="oth2" class="radios" name="others" value="two"><label for="oth2">Two</label><br>
@@ -228,16 +228,16 @@ require_once('./dbconn.php');
 
             </div>
 
-            <div id="question7">
+            <div id="question7" class="cont_surv">
               <p><label id="bor_country">7) Where do you live?<span id="span_country" style="color:#ff0000"></span></label></p>
 
               <input type="radio" id="ctr1" class="radios" name="country" value="brazil"><label for="ctr1">Brazil</label><br>
               <input type="radio" id="ctr2" class="radios" name="country" value="abroad"><label for="ctr2">Abroad</label>
+
             </div>
-
-
-
+            <div>
             <button id="submit_survey" type="submit" name="submitsurvey">Submit</button>
+            </div>
           </div>
         </form>
       </div>
@@ -269,14 +269,14 @@ require_once('./dbconn.php');
           <input type="radio" id="n2" class="rads" name="news" value="err_pizz"><label for="n2"> b) The word "pizza"</label><br>
           <input type="radio" id="n3" class="rads" name="news" value="err_noth"><label for="n3">c) Nothing is missing</label><br>
           <input type="radio" id="n4" class="rads" name="news" value="corr_it"><label for="n4">d) The neuter subject "It"</label>
-
-          <!--<div id="next_01">-->
-
-          <button id="next_1" class="next">next</button>
-          </div>
-          <!--<p>1 out of 30</p>-->
-          <!--</div>-->
+          <div id="next_01">
+         <button id="next_1" class="next">next</button>
         </div>
+        <!--<p>1 out of 30</p>-->
+
+        </div>
+        </div>
+
 
         <div id="2" class="questions" style="display: none;">
         <div class="cont_dial">
@@ -322,6 +322,7 @@ require_once('./dbconn.php');
         </div>
         <div id="div_instr">
           <p id="instr" name="instructions">Instructions</p>
+
         </div>
      </form>
     </div> <!--popup-inner-->
