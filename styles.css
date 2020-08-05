@@ -209,7 +209,7 @@ p#instr {
 
 
 
-  #next_2, #next_1 {
+  .next {
   background-color: whitesmoke;
   color: #000000;
   font-family: inherit;
@@ -223,8 +223,6 @@ p#instr {
   margin-top: 34px;
   position: fixed;
  }
-
-
 
 
 
@@ -249,6 +247,22 @@ p#instr {
 
  }
 
+ #sub_quiz {
+
+  display: none;
+  background-color: whitesmoke;
+  color: #000000;
+  font-family: inherit;
+  font-size: 19px;
+  padding: 5px;
+  border-radius: 8px;
+  cursor: pointer;
+  top: 15px;
+  margin-right: 10px;
+  text-align: center;
+  position: relative;
+ }
+
 /* END BUTTONS*/
 
 /* QUIZ CONTAINERS*/
@@ -271,10 +285,6 @@ p#instr {
   margin-top: 30px;
 
 }
-
-
-
-
 
 #gen_instr {
 
@@ -318,11 +328,6 @@ textarea {
 
 }
 
-/* #ageselect {
-  width: 200px;
-  padding: 7px;
-  border-radius: 20px;
-} */
 
 #submit_survey {
   background-color: whitesmoke;
@@ -372,18 +377,18 @@ label,
   cursor: pointer;
 }
 
-.cont_surv{
+.cont_surv {
 
-  border-radius: 20px;
+  border-radius: 30px;
   background-color: #77993b69;
-  padding: 20px;
+  padding: 14px;
   text-align: left;
-  margin-top: 30px;
-
+  margin-top: 20px;
 
 }
 
-/* Submit button */
+
+/* Submit Contact button */
 input[type="submit"],
 #submit_contact {
   background-color: whitesmoke;
