@@ -3,37 +3,45 @@ body,
 html {
   height: 100%;
   margin: 0;
-  background-color: #000;
+  background-color: black;
   font-family: 'Patua One', cursive;
   font-size: 20px;
-  color: #f5f5dc;
+  color: #0f0f0e;
 }
 
 /* All 'a' links */
 a {
   text-decoration: none;
-  color: #f5f5dc;
-  font-weight: 200;
+  color: black;
+  font-weight: 400;
+  font-size: 20px;
 }
-p {
-  word-spacing: 3px;
+/* p link*/
+.missing {
+ /* word-spacing: 3px;*/
+text-align: center;
 }
+
 
 h4 {
 
   font-weight: normal;
+  text-align: center;
 
 
 }
 
 h3 {
-color: #f5f5dc;
+color: #6a9c22;
 
+}
+#inst_h3 {
+  color: black;
 }
 
 /* Style tab links */
 .tablink {
-  background-color: #77993b69;
+  background-color: #6a9c22;
   color: black;
   float: left;
   border: none;
@@ -48,7 +56,7 @@ color: #f5f5dc;
 
 /* Style the tab content (and add height:100% for full page content) */
 .tabcontent {
-  color: #f5f5dc;
+  color: black;
   display: none;
   padding: 100px 19px;
   height: 100%;
@@ -89,11 +97,6 @@ list-style-position: outside;
   border: 0;
 }
 
-/*
-#surveyname {
-  color: #b9ff3b69;
-  word-spacing: 5px;
-}*/
 
 /* Outer */
 .popup {
@@ -119,7 +122,7 @@ list-style-position: outside;
   transform: translate(-50%, -50%);
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 1);
   border-radius: 20px;
-  background: #2c2933;
+  background: whitesmoke;
   text-align: center;
   overflow-x: hidden;
   overflow-y: scroll;
@@ -136,7 +139,7 @@ list-style-position: outside;
   transform: translate(-50%, -50%);
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 1);
   border-radius: 20px;
-  background: #2c2933;
+  background: whitesmoke;
   text-align: center;
   overflow-x: hidden;
   overflow-y: scroll;
@@ -194,7 +197,7 @@ top: -2px;
 }
 
 p#instr {
-  background-color: whitesmoke;
+  background-color: #6a9c22;
   color: #0f1403;
   font-family: 'Patua One', cursive;
   font-size: 17px;
@@ -210,7 +213,7 @@ p#instr {
 
 
   .next {
-  background-color: whitesmoke;
+  background-color: #6a9c22;
   color: #000000;
   font-family: inherit;
   font-size: 18px;
@@ -227,7 +230,7 @@ p#instr {
 
 
 .back {
-    background-color: whitesmoke;
+    background-color: #6a9c22;
     color: #000000;
     font-family: inherit;
     font-size: 17px;
@@ -238,7 +241,7 @@ p#instr {
     margin-right: 10px;
  }
 
- #back_2 {
+ #back_2, #back_3 {
 
   display: flex;
   margin-left: 350px;
@@ -250,7 +253,7 @@ p#instr {
  #sub_quiz {
 
   display: none;
-  background-color: whitesmoke;
+  background-color: #6a9c22;
   color: #000000;
   font-family: inherit;
   font-size: 19px;
@@ -270,19 +273,21 @@ p#instr {
 .cont_dial {
 
   border-radius: 20px;
-  background-color: #77993b69;
+  background-color: #6a9c22;
   padding: 20px;
   text-align: left;
   margin-top: 30px;
+  color: black;
 
 }
 .cont_answer {
 
   border-radius: 20px;
-  background-color: #77993b69;
+  background-color: #6a9c22;
   padding: 20px;
   text-align: left;
   margin-top: 30px;
+  color: black;
 
 }
 
@@ -330,7 +335,7 @@ textarea {
 
 
 #submit_survey {
-  background-color: whitesmoke;
+  background-color:#6a9c22;
   color: #000000;
   font-family: 'Patua One', cursive;
   font-size: 18px;
@@ -380,7 +385,7 @@ label,
 .cont_surv {
 
   border-radius: 30px;
-  background-color: #77993b69;
+  background-color: #6a9c22;
   padding: 14px;
   text-align: left;
   margin-top: 20px;
@@ -391,8 +396,8 @@ label,
 /* Submit Contact button */
 input[type="submit"],
 #submit_contact {
-  background-color: whitesmoke;
-  color: #62645e;
+  background-color: #6a9c22;
+  color: black;
   font-family: 'Patua One', cursive;
   font-size: 20px;
   padding: 5px;
@@ -403,7 +408,7 @@ input[type="submit"],
 /* Add a background color and some padding around the form */
 .container {
   border-radius: 20px;
-  background-color: #77993b69;
+  background-color:#6a9c22;
   padding: 20px;
   text-align: left;
   margin-top: 30px;
@@ -414,28 +419,6 @@ input[type="submit"],
   border-radius: 15px 50px 30px 15px;
 
 }
-
-/* Make circles that indicate the steps of the form:
-.step {
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbbbbb;
-  border: none;
-  border-radius: 50%;
-  display: inline-block;
-  opacity: 0.5;
-}
-
-/* Mark the active step:
-.step.active {
-  opacity: 1;
-}
-
-/* Mark the steps that are finished and valid:
-.step.finish {
-  background-color: #4CAF50;
-} */
 
 
 
@@ -455,82 +438,3 @@ input[type="submit"],
     white-space: nowrap;
   }
 }
-
- /* @media (max-width: 414px) {
-  #next_2, #next_1 {
-    display: flex;
-    margin-left: 305px;
-    margin-top: 35px;
-    position: absolute;
-}
-
-}
-@media (min-width: 414px) {
-  #next_2, #next_1 {
-    display: flex;
-    margin-left: 305px;
-    margin-top: 35px;
-    position: absolute;
-}
-
-}
-
-@media (max-height: 736px) {
-  #next_2, #next_1 {
-    display: flex;
-    margin-left: 270px;
-    margin-top: 35px;
-    position: absolute;
-}
-}
-
-@media (min-height: 736px) {
-  #next_2, #next_1 {
-    display: flex;
-    margin-left: 415px;
-    margin-top: 35px;
-    position: absolute;
-}
-}
-@media (max-width: 414px) {
-
-  #back_2 {
-    display: flex;
-    margin-left: 245px;
-    margin-top: 35px;
-    position: absolute;
-}
-#inst_hov {
-  display: none;
-  position: absolute;
-  width: 180px;
-  padding: 10px;
-  background: #eeeeee;
-  color: #000000;
-  border-radius: 20mm;
-  border: 1px solid #1a1a1a;
-  font-size: 80%;
-}
-}
-@media (max-height: 736px) {
-
-  #back_2 {
-    display: flex;
-    margin-left: 245px;
-    margin-top: 35px;
-    position: absolute;
-}
-#inst_hov {
-  display: none;
-  position: absolute;
-  width: 180px;
-  padding: 10px;
-  background: #eeeeee;
-  color: #000000;
-  border-radius: 20mm;
-  border: 1px solid #1a1a1a;
-  font-size: 80%;
-}
-}
-
- */
