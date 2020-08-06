@@ -37,13 +37,13 @@ $('#next_1').on("click", function(){
     console.log(score);
     $('#' + classNum).hide();
     $('#' + numNext).show();
-    $('.popup-inner').scrollTop(0);
+    $('#inner_2').scrollTop(0);
 
   } else {
    console.log(score);
     $('#' + classNum).hide();
     $('#' + numNext).show();
-    $('.popup-inner').scrollTop(0);
+    $('#inner_2').scrollTop(0);
       }
    });
 
@@ -61,11 +61,13 @@ $('#next_1').on("click", function(){
     console.log(score);
     $('#' + classNum).hide();
     $('#' + numNext).show();
+    $('#inner_2').scrollTop(0);
   } else {
 
    console.log(score);
    $('#' + classNum).hide();
    $('#' + numNext).show();
+   $('#inner_2').scrollTop(0);
     }
    });
 
@@ -91,6 +93,9 @@ $('#next_1').on("click", function(){
       $('#sub_quiz').show();
       $('#inst_h3').html("Thanks for doing the test!");
       $("#instr, #3").hide();
+      $("#inner_2").css({"overflow-y": "hidden"});
+
+
 
         }
 
