@@ -65,7 +65,7 @@ require_once('./dbconn.php');
 
     <div class="grid-five">
       <div class="container">
-        <p>If you look up English defintion of the word <a href="https://www.dictionary.com/browse/blooper"><span style="color:green">'blooper'</a></span> what you'll get is that it's an embarassing error you make publicly. Although we don't think the mistakes you'll find here are embarrasing, we do believe correcting them will be a small step forward in your language learning. Think of this quiz as a nice amo to your arsenal on your English learning journey. Don't forget to enjoy the process! </p>
+        <p>If you look up English defintion of the word <a href="https://www.dictionary.com/browse/blooper"><span style="color:yellow">'blooper'</a></span> what you'll get is that it's an embarassing error you make publicly. Although we don't think the mistakes you'll find here are embarrasing, we do believe correcting them will be a small step forward in your language learning. Think of this quiz as a nice amo to your arsenal on your English learning journey. Don't forget to enjoy the process! </p>
       </div>
       <div class="container">
         <p>Let's face it. It's not an easy task to learn another language and communicate your ideas in it. English, however omnipresent in this world, is no exception. No worries, we're here to help a little with that.</p>
@@ -254,6 +254,7 @@ require_once('./dbconn.php');
         <h3 id="inst_h3"><u>Read the dialogues and choose the best option for the blank spaces</u></h3>
 
         <div id="1" class="questions">
+        <p class="count">1 out of 30</p>
           <div class="cont_dial">
           <h4><b>SITUATION 1</b></h4>
 
@@ -263,7 +264,7 @@ require_once('./dbconn.php');
           <p>Mike:__doesn't take much of my time.</p>
           </div>
           <div class="cont_answer">
-          <p><label class="bor_news">1) What is missing?<span class="span_news" style="color:#ff0000"></span></label></p>
+          <p class="missing"><label class="bor_news">What is missing?<span class="span_news" style="color:#ff0000"></span></label></p>
 
           <input type="radio" id="n1" class="rads" name="news" value="err_contrct"><label for="n1"> a) Contraction - " 's "</label><br>
           <input type="radio" id="n2" class="rads" name="news" value="err_pizz"><label for="n2"> b) The word "pizza"</label><br>
@@ -271,14 +272,13 @@ require_once('./dbconn.php');
           <input type="radio" id="n4" class="rads" name="news" value="corr_it"><label for="n4"> d) The neuter subject "It"</label>
           <div id="next_01">
          <button id="next_1" class="next">Next</button>
-        </div>
-        <!--<p>1 out of 30</p>-->
-
-        </div>
+          </div>
+         </div>
         </div>
 
 
         <div id="2" class="questions" style="display: none;">
+        <p class="count">2 out of 30</p>
         <div class="cont_dial">
         <h4><b>SITUATION 2</b></h4>
 
@@ -288,7 +288,7 @@ require_once('./dbconn.php');
             <p>Cris: Wow, some weather! </p>
             </div>
             <div class="cont_answer">
-            <p><label class="bor_news">1) What is missing?<span class="span_news" style="color:#ff0000"></span></label></p>
+            <p class="missing"><label class="bor_news">What is missing?<span class="span_news" style="color:#ff0000"></span></label></p>
 
             <input type="radio" class="rads" name="weather" value="err_he"> a) The masculine subject - "He"<br>
             <input type="radio" class="rads" name="weather" value="corr_it"> b) The neuter subject "It"<br>
@@ -296,12 +296,13 @@ require_once('./dbconn.php');
             <input type="radio" class="rads" name="weather" value="err_i"> d) The subject "I">
             <button id="next_2" class="next">Next</button>
             <button id="back_2" class="back">Back</button>
-            <!-- <p>2 out of 30</p> -->
+
         </div>
        </div>
 
           <div id="3" class="questions" style="display: none;">
-
+          <p class="count">3 out of 30</p>
+          <div class="cont_dial">
           <h4>SITUATION 3</h4>
 
           <p>John: How far is___from Sao Paulo to Brasilia?</p>
@@ -309,8 +310,9 @@ require_once('./dbconn.php');
           <p>John: I didn't know___takes this long.</p>
           <p>Pedro: How long does___take to get from New York to Detroit.</p>
           <p>John:___is about the same.</p>
-<!--
-          <p><label class="bor_news">1) What is missing?<span class="span_news" style="color:#ff0000"></span></label></p> -->
+          </div>
+          <div class="cont_answer">
+          <p class="missing"><label class="bor_news">What is missing?<span class="span_news" style="color:#ff0000"></span></label></p>
 
           <input type="radio" class="rads" name="dist" value="corr_it"> a)The neuter subject "It"<br>
           <input type="radio" class="rads" name="dist" value="err_she"> b)The feminine subject - "She"<br>
@@ -318,7 +320,8 @@ require_once('./dbconn.php');
           <input type="radio" class="rads" name="dist" value="err_noth"> d)Nothing is missing <br>
           <button id="next_3" class="next">next</button>
           <button id="back_3" class="back">back</button>
-          <!-- <p>3 out of 30</p> -->
+
+        </div>
         </div>
         <div id="div_instr">
           <p id="instr" name="instructions">Instructions</p>
@@ -343,7 +346,7 @@ require_once('./dbconn.php');
       <div style="text-align:center">
         <h2>Shoot us an e-mail directly at</h2>
         <h3><a href="mailto:hello@brazilianbloopers.com">hello@brazilianbloopers.com</a></h3>
-        <h3>or</h3>
+        <h3 style="color: black">or</h3>
       </div>
       <div class="row">
         <div class="column">
