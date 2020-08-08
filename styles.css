@@ -21,6 +21,10 @@ a {
  /* word-spacing: 3px;*/
 text-align: center;
 }
+/* .active {
+
+  font-size: 30px;
+} */
 
 
 h4 {
@@ -51,6 +55,9 @@ color: #6a9c22;
   font-family: 'Patua One', cursive;
   width: 25%;
   border-radius: 20px;
+  /*font-size: 30px;*/
+  overflow: hidden;
+  white-space: nowrap;
 
 }
 
@@ -346,6 +353,7 @@ textarea {
   margin-top: 10px;
   width: 80px;
   right: 12px;
+  position: inherit;
 }
 
 /* mouseover pointer survey */
@@ -420,21 +428,24 @@ input[type="submit"],
 
 }
 
-
-
+/* /*
 @media (min-width: 1030px) {
   .tablink {
     font-size: 30px;
     overflow: hidden;
     white-space: nowrap;
   }
+  .active{
+    font-size: 10px;
+  }
 
-}
+}*/
 
-@media (max-width: 1030px) {
+@media (max-width: 375px) {
   .tablink {
-    font-size: 20px;
+    font-size: 15px;
     overflow: hidden;
     white-space: nowrap;
   }
+
 }
