@@ -81,7 +81,7 @@ $('#next_1').on("click", function(){
   function hideLast() {
 
       $('#sub_quiz').show();
-      $('#inst_h3').html("Thanks for doing the test!");
+      $('#inst_h3').html("Thanks for doing the test!<br>More questions coming soon");
       $("#instr, #3").hide();
     }
     hideLast();
