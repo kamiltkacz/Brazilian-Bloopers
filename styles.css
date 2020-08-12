@@ -16,22 +16,20 @@ a {
   font-weight: 400;
   font-size: 20px;
 }
+ .active {
+  font-size: 23px;
+}
 /* p link*/
-.missing {
- /* word-spacing: 3px;*/
+.choose {
+
 text-align: center;
 }
-/* .active {
-
-  font-size: 30px;
-} */
 
 
 h4 {
 
   font-weight: normal;
   text-align: center;
-
 
 }
 
@@ -40,7 +38,11 @@ color: #6a9c22;
 
 }
 #inst_h3 {
-  color: black;
+color: black;
+background: #6a9c22;
+border-radius: 10px;
+padding: 20px;
+white-space: nowrap;
 }
 
 /* Style tab links */
@@ -51,15 +53,21 @@ color: #6a9c22;
   border: none;
   outline: none;
   cursor: pointer;
-  padding: 10px 12px;
+  padding: 8px 11px;
   font-family: 'Patua One', cursive;
   width: 25%;
   border-radius: 20px;
-  /*font-size: 30px;*/
   overflow: hidden;
   white-space: nowrap;
 
 }
+.tabs :hover {
+  background-color: #88d320;
+  outline: 0;
+  text-transform: uppercase;
+
+}
+
 
 /* Style the tab content (and add height:100% for full page content) */
 .tabcontent {
@@ -198,9 +206,53 @@ list-style-position: outside;
   position: relative;
 
 }
-#a_quiz {
+#start_survey {
+background-color: whitesmoke;
+  color: #000000;
+  font-family: inherit;
+  font-size: 19px;
+  padding: 5px;
+  border-radius: 8px;
+  cursor: pointer;
+  top: 15px;
+  margin-right: 10px;
+  text-align: center;
+  position: relative;
+
+}
+#start_quiz {
 display: none;
 top: -2px;
+background-color: whitesmoke;
+  color: #000000;
+  font-family: inherit;
+  font-size: 19px;
+  padding: 5px;
+  border-radius: 8px;
+  cursor: pointer;
+  /*top: 15px;*/
+  margin-right: 10px;
+  text-align: center;
+  position: relative;
+}
+
+/* Grow */
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+  transform: scale(1.1);
+  text-transform: uppercase;
 }
 
 p#instr {
@@ -275,6 +327,34 @@ p#instr {
 
 /* END BUTTONS*/
 
+.count {
+  background: #6a9c22;
+
+
+    color: #0f1403;
+    font-family: 'Patua One', cursive;
+    /* font-size: 17px; */
+    padding: 10px;
+    border-radius: 15px;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+#situation {
+  background: whitesmoke;
+  padding: 10px;
+  padding-left: 40px;
+  border-radius: 10px;
+  padding-right: 40px;
+  text-align: center;
+  margin-right: 105px;
+  margin-left: 45px;
+}
+.situ {
+  text-align: center;
+  padding-left: 40px;
+}
+
+
 /* QUIZ CONTAINERS*/
 
 .cont_dial {
@@ -298,11 +378,6 @@ p#instr {
 
 }
 
-#gen_instr {
-
- text-align: center;
-
-}
 
  /* HOVER STYLES */
 
@@ -378,13 +453,33 @@ label,
 #bor_gender,
 #bor_years {
   cursor: default;
+  background: whitesmoke;
+font-family: 'Patua One', cursive;
+padding: 5px;
+border-radius: 10px;
+
 }
 
-.bor_news, .span_news {
+.bor_choose {
 
   cursor: default;
-}
+  background: whitesmoke;
+  font-family: 'Patua One', cursive;
+  padding: 10px;
+  border-radius: 10px;
+  padding-left: 30px;
 
+}
+.span_choose {
+
+  cursor: default;
+  background: whitesmoke;
+  font-family: 'Patua One', cursive;
+  border-radius: 10px;
+  padding-left: 30px;
+
+
+}
 .rads {
 
   cursor: pointer;
@@ -404,7 +499,7 @@ label,
 /* Submit Contact button */
 input[type="submit"],
 #submit_contact {
-  background-color: #6a9c22;
+  background-color: whitesmoke;
   color: black;
   font-family: 'Patua One', cursive;
   font-size: 20px;
@@ -428,18 +523,6 @@ input[type="submit"],
 
 }
 
-/* /*
-@media (min-width: 1030px) {
-  .tablink {
-    font-size: 30px;
-    overflow: hidden;
-    white-space: nowrap;
-  }
-  .active{
-    font-size: 10px;
-  }
-
-}*/
 
 @media (max-width: 375px) {
   .tablink {
@@ -447,5 +530,8 @@ input[type="submit"],
     overflow: hidden;
     white-space: nowrap;
   }
+  .active {
+    font-size: 18px;
+ }
 
 }
