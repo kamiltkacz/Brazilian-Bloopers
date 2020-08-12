@@ -1,15 +1,15 @@
 
-$("#a_quiz").on("click", function() {
+$("#start_quiz").on("click", function() {
 
 
 let score = 0;
 // Reset border color & text in span element for question1 validation
 $("input[class='rads']").click(function() {
   $("input[class='rads']").focus();
-   $(".bor_news").css({
+   $(".bor_choose").css({
     "border": ""
   });
-  $(".span_news").text("");
+  $(".span_choose").text("");
 
 });
 
@@ -23,15 +23,15 @@ $('.next').click(function() {
 
 $('#next_1').on("click", function(){
 
-  if (!$("input[name='news']:checked").val()) {
+  if (!$("input[name='sub_it']:checked").val()) {
 
-  $('.bor_news').css({"border-bottom": "5px solid red",
+  $('.bor_choose').css({"border-bottom": "5px solid red",
     "padding": "6px"
   });
-  $(".span_news").text(" * ");
+  $(".span_choose").text(" * ");
 
 
-  } else if ($("input[name='news']:checked").val() == "corr_it") {
+  } else if ($("input[name='sub_it']:checked").val() == "corr_it") {
 
     score ++;
     console.log(score);
@@ -48,15 +48,15 @@ $('#next_1').on("click", function(){
    });
 
    $('#next_2').on("click", function(){
-    if (!$("input[name='weather']:checked").val()) {
+    if (!$("input[name='too']:checked").val()) {
 
-    $('.bor_news').css({
+    $('.bor_choose').css({
       "border-bottom": "5px solid red",
       "padding": "6px"
     });
-    $(".span_news").text(" * ");
+    $(".span_choose").text(" * ");
 
-  } else if ($("input[name='weather']:checked").val() == "corr_it") {
+  } else if ($("input[name='too']:checked").val() == "corr_so") {
     score ++;
     console.log(score);
     $('#' + classNum).hide();
@@ -72,9 +72,14 @@ $('#next_1').on("click", function(){
    });
 
   $('#next_3').on("click", function(){
-    if (!$("input[name='dist']:checked").val()) {
+    if (!$("input[name='much']:checked").val()) {
+      $('.bor_choose').css({
+        "border-bottom": "5px solid red",
+        "padding": "6px"
+      });
+      $(".span_choose").text(" * ");
 
-    } else if ($("input[name='dist']:checked").val() == "corr_it") {
+    } else if ($("input[name='much']:checked").val() == "corr_lot") {
       score ++;
       console.log(score);
 
@@ -91,7 +96,7 @@ $('#next_1').on("click", function(){
       console.log(score);
 
       $('#sub_quiz').show();
-      $('#inst_h3').html("Thanks for doing the test!");
+      $('#inst_h3').html("Thanks for doing the test!<br>More questions coming soon");
       $("#instr, #3").hide();
       $("#inner_2").css({"overflow-y": "hidden"});
 
@@ -129,7 +134,7 @@ $('#next_1').on("click", function(){
                 alert('your quiz was submitted');
 
                 $('.popup').hide();
-                $('#a_quiz').off('click');
+                $('#start_quiz').off('click');
               }
 
               if (result.result == 2) {
@@ -154,10 +159,10 @@ $('#next_1').on("click", function(){
 
    $('#back_2').on("click", function(){
 
-      $(".bor_news").css({"border": ""});
-      $(".span_news").text("");
+      $(".bor_choose").css({"border": ""});
+      $(".span_choose").text("");
 
-    if ($("input[name='news']:checked").val() == "corr_it") {
+    if ($("input[name='sub_it']:checked").val() == "corr_it") {
       score --;
     }
     console.log(score);
@@ -165,7 +170,7 @@ $('#next_1').on("click", function(){
    });
 
    $('#back_3').on("click", function(){
-    if ($("input[name='weather']:checked").val() == "corr_it") {
+    if ($("input[name='too']:checked").val() == "corr_it") {
       score --;
     }
   console.log(score);
@@ -188,14 +193,14 @@ function backTabs(classNum) {
 
 }
 
-});// (a_quiz) button
+});// (start_quiz) button
 
 
 /* Mousemove function for the instructions*/
 
 $(function() {
 let moveLeft = 20;
-let moveDown = 10;
+let moveDown = 5;
 
 $('#instr').hover(function(e) {
   $('#inst_hov').show('slow');
