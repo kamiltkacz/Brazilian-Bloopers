@@ -88,7 +88,7 @@
 
     $("#submit_survey").on("click", function() {
 
-      $("#a_quiz").show("slow");
+      $("#start_quiz").show("slow");
 
       var formData = $("#survey :input").serializeArray();
       formData[formData.length] = {
