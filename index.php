@@ -65,7 +65,7 @@ require_once('./dbconn.php');
 
     <div class="grid-five">
       <div class="container">
-        <p>If you look up English defintion of the word <a href="https://www.dictionary.com/browse/blooper"><span style="color:yellow">'blooper'</a></span> what you'll get is that it's an embarassing error you make publicly. Although we don't think the mistakes you'll find here are embarrasing, we do believe correcting them will be a small step forward in your language learning. Think of this quiz as a nice amo to your arsenal on your English learning journey. Don't forget to enjoy the process! </p>
+        <p>If you look up English defintion of the word <a href="https://www.dictionary.com/browse/blooper"><span style="color:yellow">'blooper'</a></span> what you'll get is that it's an embarassing error you make publicly. Although we don't think the mistakes you'll find here are too bad, we do believe correcting them will be a small step forward in your language learning. Think of this quiz as a nice amo to your arsenal on your English learning journey. Don't forget to enjoy the process! </p>
       </div>
       <div class="container">
         <p>Let's face it. It's not an easy task to learn another language and communicate your ideas in it. English, however omnipresent in this world, is no exception. No worries, we're here to help a little with that.</p>
@@ -257,15 +257,15 @@ require_once('./dbconn.php');
         <span class="count"> 1 out of 30</span>
           <div class="cont_dial">
           <div class="situ">
-          <p id="situation"><b>SITUATION 1</b></p>
+          <p class="situation">Situation 1</p>
             </div>
           <p>Liz: How is the weather today?</p>
           <p>Mike: <span style="background-color: #FFFF00">Is hot!</span></p>
           </div>
           <div class="cont_answer">
-          <p class="choose"><label class="bor_choose">Choose the correct answer<span class="span_choose" style="color:#ff0000"></span></label></p>
+          <p class="choose"><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p>
 
-          <input type="radio" id="i1" class="rads" name="sub_it" value="err_correct"><label for="i1"> a) This answer is correct!</label><br>
+          <input type="radio" id="i1" class="rads" name="sub_it" value="err_noverb"><label for="i1"> a) It hot!</label><br>
           <input type="radio" id="i2" class="rads" name="sub_it" value="corr_it"><label for="i2"> b) It is hot!</label><br>
           <input type="radio" id="i3" class="rads" name="sub_it" value="err_is"><label for="i3"> c) Is it hot!</label><br>
           <div id="next_01">
@@ -279,18 +279,18 @@ require_once('./dbconn.php');
         <span class="count"> 2 out of 30</span>
         <div class="cont_dial">
           <div class="situ">
-        <p><b>SITUATION 2</b></p>
+        <p class="situation">Situation 2</p>
             </div>
 
           <p>Cris: How was the party last night?</p>
-          <p>Jane: Ohh, <span style="background-color: #FFFF00">it was too good.</span> I had a great time!</p>
+          <p>Jane: Ohh, <span style="background-color: #FFFF00">it was too good.</span> I danced all night!</p>
             </div>
             <div class="cont_answer">
-            <p class="choose"><label class="bor_choose">Choose the correct answer?<span class="span_choose" style="color:#ff0000"></span></label></p>
+            <p class="choose"><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p>
 
-            <input type="radio" id="t1" class="rads" name="too" value="corr_so"><label for="t1">a)it was so good!</label><br>
-            <input type="radio" id="t2" class="rads" name="too" value="err_noth"><label for="t2"> c) it was too good is correct!</label><br>
-            <input type="radio" id="t3" class="rads" name="too" value="err_two"><label for="t3"> d) it was two good</label>
+            <input type="radio" id="t1" class="rads" name="too" value="corr_very"><label for="t1">a)it was very good!</label><br>
+            <input type="radio" id="t2" class="rads" name="too" value="err_noth"><label for="t2"> c) it was very too good!</label><br>
+            <input type="radio" id="t3" class="rads" name="too" value="err_two"><label for="t3"> d) it was two good!</label>
             <button id="next_2" class="next">Next</button>
             <button id="back_2" class="back">Back</button>
 
@@ -298,23 +298,76 @@ require_once('./dbconn.php');
        </div>
 
           <div id="3" class="questions" style="display: none;">
-          <span class="count"> 1 out of 30</span>
-          <div class="cont_dial">
-          <p>SITUATION 3</p>
 
-          <p>John: Do you like your teacher?</p>
-          <p>Pedro: Yes, I love her.<span style="background-color: #FFFF00"> She has much patience</span> with me</p>
+          <div class="cont_dial">
+           <div class="situ">
+          <p class="situation">Situation 3 out of 30</p>
+            </div>
+            <div class="dialos">
+          <p>John: <i>Do you like your teacher?</i></p>
+          <p>Pedro:<i> Yes, I love her.<span style="background-color: #FFFF00"> She has much patience</span> with me.</i></p>
+            </div>
           </div>
           <div class="cont_answer">
-          <p class="choose"><label class="bor_choose">Choose the best answer<span class="span_choose" style="color:#ff0000"></span></label></p>
-
-          <input type="radio" id="m1" class="rads" name="much" value="err_much"><label for="m1"> a)She has much patience is correct</label><br>
+          <p class="choose"><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p>
+          <div class="answers">
+          <input type="radio" id="m1" class="rads" name="much" value="err_much"><label for="m1"> a)She has a lot patience</label><br>
           <input type="radio" id="m2" class="rads" name="much" value="err_it"><label for="m2"> b)She has it patience</label><br>
           <input type="radio" id="m3" class="rads" name="much" value="corr_lot"><label for="m3">c)She has a lot of patience</label><br>
+          </div>
+
+        </div>
           <button id="next_3" class="next">next</button>
           <button id="back_3" class="back">back</button>
+       <!-- <span class="count" style="font-weight: 600px">3 out of 30</span>-->
+        </div>
+
+        <!-- <div id="4" class="questions" style="display: none;">
+          <span class="count">4 out of 30</span>
+          <div class="cont_dial">
+           <div class="situ">
+          <p class="situation">Situation 4</p>
+            </div>
+            <div class="dialos">
+          <p>Marta: I'm hungry</p>
+          <p>Paulo:<span style="background-color: #FFFF00">Has some pizza</span>in the fridge</p>
+          <p>Marta: Okay, thanks!</p>
+            </div>
+          </div>
+          <div class="cont_answer">
+          <p class="choose"><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p>
+
+          <input type="radio" id="th1" class="rads" name="much" value="err_much"><label for="th1"> a)Have some</label><br>
+          <input type="radio" id="th2" class="rads" name="much" value="err_it"><label for="th2"> b)There is some</label><br>
+          <input type="radio" id="th3" class="rads" name="much" value="corr_lot"><label for="th3">c)There are some</label><br>
+          <button id="next_4" class="next">next</button>
+          <button id="back_4" class="back">back</button>
         </div>
         </div>
+
+        <div id="5" class="questions" style="display: none;">
+          <span class="count">5 out of 30</span>
+          <div class="cont_dial">
+           <div class="situ">
+          <p class="situation">Situation 5</p>
+            </div>
+            <div class="dialos">
+          <p>Marta: I'm hungry</p>
+          <p>Paulo:<span style="background-color: #FFFF00">Has some pizza</span>in the fridge</p>
+          <p>Marta: Okay, thanks!</p>
+            </div>
+          </div>
+          <div class="cont_answer">
+          <p class="choose"><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p>
+
+          <input type="radio" id="th1" class="rads" name="much" value="err_much"><label for="th1"> a)Have some</label><br>
+          <input type="radio" id="th2" class="rads" name="much" value="err_it"><label for="th2"> b)There is some</label><br>
+          <input type="radio" id="th3" class="rads" name="much" value="corr_lot"><label for="th3">c)There are some</label><br>
+          <button id="next_4" class="next">next</button>
+          <button id="back_4" class="back">back</button>
+        </div>
+        </div> -->
+
         <div id="div_instr">
           <p id="instr" name="instructions">Instructions</p>
         <button id="sub_quiz" type="submit">Submit</button>
