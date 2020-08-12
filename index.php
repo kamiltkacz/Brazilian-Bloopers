@@ -44,7 +44,7 @@ require_once('./dbconn.php');
 <body>
   <div class="tabs">
     <button id="defaultOpen" class="tablink" onclick="openPage('Home', this);">
-      <a href="#" class="active">Home</a>
+      <a href="#" id="active_home" class="active">Home</a>
     </button>
     <button class="tablink" onclick="openPage('The Quiz', this);">
       <a href="#" class="active">The Quiz</a>
@@ -135,7 +135,7 @@ require_once('./dbconn.php');
 
       <fieldset id="field_about">
         <legend>About the quiz</legend>
-        <h4>The quiz is the fruit of labor of a group of English teachers who noticed the various Brazilian mistakes that students make when speaking English. Among the bloopers you'll find false cognates, idiomatic expressions, incomplete phrases, etc. You'll be presented witha series of dialogues. You have to use your judgement when picking the only one correct answer.<br><br> We won't grade your performance on the quiz using a conventional point-score system. We think that's kind of boring. Instead we'll match your result with a Brazilian public persona and their English skills. These celebrieties' English chops vary somewhat drastically, so beware. Questions range in difficulty and get harder progressively. Some mistakes are more common and some less frequent but all of them share the peculiarity of the Portuguese language that sometimes does not translate well into common English. Even though many of the bloopers are intelligible to English speakers, you would be better off finding a more common alternative.<br><br> But don't be too hard on yourself - It's okay if you have a piece of Brazil that never leaves your brain, plus why not let the gringo do some thinking? <br><br> Ready? </h4>
+        <h4>The quiz resulted from English teachers who noticed the various Brazilian mistakes that students make when speaking English. Among the bloopers you'll find false cognates, idiomatic expressions, incomplete phrases, etc. You'll be presented witha series of dialogues. You have to use your judgement when picking the only one correct answer.<br><br> We won't grade your performance on the quiz using a conventional point-score system. We think that's kind of boring. Instead we'll match your result with a Brazilian public persona and their English skills. These celebrieties' English chops vary somewhat drastically, so beware. Questions range in difficulty and get harder progressively. Some mistakes are more common and some less frequent but all of them share the peculiarity of the Portuguese language that sometimes does not translate well into common English. Even though many of the bloopers are intelligible to English speakers, you would be better off finding a more common alternative.<br><br> But don't be too hard on yourself - It's okay if you have a piece of Brazil that never leaves your brain, plus why not let the gringo do some thinking? <br><br> Ready? </h4>
       </fieldset>
     </div>
 
@@ -146,13 +146,13 @@ require_once('./dbconn.php');
         <ol>
           <li id="survPar">
            <p>Fill out our spectacularly short<br>
-             <button class="btn" data-popup-open="popup-1" href="#">Survey</button>
-              <br><br>and click submit. After you do it a "Start" button will show.
+             <button id="start_survey" class="hvr-grow" data-popup-open="popup-1" href="#">Survey</button>
+              <br><br>and click submit. After you finish it a "Start" button will show.
             </p>
           </li>
           <li>
             <p>Click "Start" to begin the quiz.</p>
-            <button id="a_quiz" class="btn" data-popup-open="popup-2" href="#">Start</button>
+            <button id="start_quiz" class="hvr-grow" data-popup-open="popup-2">Start</button>
           </li>
           <li>
             <p>Have fun!</p>
@@ -251,25 +251,23 @@ require_once('./dbconn.php');
 
       <form id="quiz_form" method="post" action="actions.php">
       <a class="popup-close" data-popup-close="popup-2" href="#">x</a>
-        <h3 id="inst_h3"><u>Read the dialogues and choose the best option for the blank spaces</u></h3>
+        <h3 id="inst_h3">Read the dialogue and correct the mistake</h3>
 
         <div id="1" class="questions">
-        <p class="count">1 out of 30</p>
+        <span class="count"> 1 out of 30</span>
           <div class="cont_dial">
-          <h4><b>SITUATION 1</b></h4>
-
-          <p>Liz: Do you watch the news everyday?</p>
-          <p>Mike: Yeah, I think___is important to know what's going on.</p>
-          <p>Liz: I agree but sometimes___is difficult. There is a lot of negativity in the news.</p>
-          <p>Mike:__doesn't take much of my time.</p>
+          <div class="situ">
+          <p id="situation"><b>SITUATION 1</b></p>
+            </div>
+          <p>Liz: How is the weather today?</p>
+          <p>Mike: <span style="background-color: #FFFF00">Is hot!</span></p>
           </div>
           <div class="cont_answer">
-          <p class="missing"><label class="bor_news">What is missing?<span class="span_news" style="color:#ff0000"></span></label></p>
+          <p class="choose"><label class="bor_choose">Choose the correct answer<span class="span_choose" style="color:#ff0000"></span></label></p>
 
-          <input type="radio" id="n1" class="rads" name="news" value="err_contrct"><label for="n1"> a) Contraction - " 's "</label><br>
-          <input type="radio" id="n2" class="rads" name="news" value="err_pizz"><label for="n2"> b) The word "pizza"</label><br>
-          <input type="radio" id="n3" class="rads" name="news" value="err_noth"><label for="n3"> c) Nothing is missing</label><br>
-          <input type="radio" id="n4" class="rads" name="news" value="corr_it"><label for="n4"> d) The neuter subject "It"</label>
+          <input type="radio" id="i1" class="rads" name="sub_it" value="err_correct"><label for="i1"> a) This answer is correct!</label><br>
+          <input type="radio" id="i2" class="rads" name="sub_it" value="corr_it"><label for="i2"> b) It is hot!</label><br>
+          <input type="radio" id="i3" class="rads" name="sub_it" value="err_is"><label for="i3"> c) Is it hot!</label><br>
           <div id="next_01">
          <button id="next_1" class="next">Next</button>
           </div>
@@ -278,22 +276,21 @@ require_once('./dbconn.php');
 
 
         <div id="2" class="questions" style="display: none;">
-        <p class="count">2 out of 30</p>
+        <span class="count"> 2 out of 30</span>
         <div class="cont_dial">
-        <h4><b>SITUATION 2</b></h4>
+          <div class="situ">
+        <p><b>SITUATION 2</b></p>
+            </div>
 
-
-          <p>Cris: Look out the window! I can't believe it!___was sunny 5 minute ago, now___is raining!</p>
-          <p>Natalie:___is like that here in January.
-            <p>Cris: Wow, some weather! </p>
+          <p>Cris: How was the party last night?</p>
+          <p>Jane: Ohh, <span style="background-color: #FFFF00">it was too good.</span> I had a great time!</p>
             </div>
             <div class="cont_answer">
-            <p class="missing"><label class="bor_news">What is missing?<span class="span_news" style="color:#ff0000"></span></label></p>
+            <p class="choose"><label class="bor_choose">Choose the correct answer?<span class="span_choose" style="color:#ff0000"></span></label></p>
 
-            <input type="radio" class="rads" name="weather" value="err_he"> a) The masculine subject - "He"<br>
-            <input type="radio" class="rads" name="weather" value="corr_it"> b) The neuter subject "It"<br>
-            <input type="radio" class="rads" name="weather" value="err_noth"> c) Nothing is missing<br>
-            <input type="radio" class="rads" name="weather" value="err_i"> d) The subject "I">
+            <input type="radio" id="t1" class="rads" name="too" value="corr_so"><label for="t1">a)it was so good!</label><br>
+            <input type="radio" id="t2" class="rads" name="too" value="err_noth"><label for="t2"> c) it was too good is correct!</label><br>
+            <input type="radio" id="t3" class="rads" name="too" value="err_two"><label for="t3"> d) it was two good</label>
             <button id="next_2" class="next">Next</button>
             <button id="back_2" class="back">Back</button>
 
@@ -301,26 +298,21 @@ require_once('./dbconn.php');
        </div>
 
           <div id="3" class="questions" style="display: none;">
-          <p class="count">3 out of 30</p>
+          <span class="count"> 1 out of 30</span>
           <div class="cont_dial">
-          <h4>SITUATION 3</h4>
+          <p>SITUATION 3</p>
 
-          <p>John: How far is___from Sao Paulo to Brasilia?</p>
-          <p>Pedro: I don't know but___ must be a solid 10 hour drive.</p>
-          <p>John: I didn't know___takes this long.</p>
-          <p>Pedro: How long does___take to get from New York to Detroit.</p>
-          <p>John:___is about the same.</p>
+          <p>John: Do you like your teacher?</p>
+          <p>Pedro: Yes, I love her.<span style="background-color: #FFFF00"> She has much patience</span> with me</p>
           </div>
           <div class="cont_answer">
-          <p class="missing"><label class="bor_news">What is missing?<span class="span_news" style="color:#ff0000"></span></label></p>
+          <p class="choose"><label class="bor_choose">Choose the best answer<span class="span_choose" style="color:#ff0000"></span></label></p>
 
-          <input type="radio" class="rads" name="dist" value="corr_it"> a)The neuter subject "It"<br>
-          <input type="radio" class="rads" name="dist" value="err_she"> b)The feminine subject - "She"<br>
-          <input type="radio" class="rads" name="dist" value="err_car">c) The word "car"<br>
-          <input type="radio" class="rads" name="dist" value="err_noth"> d)Nothing is missing <br>
+          <input type="radio" id="m1" class="rads" name="much" value="err_much"><label for="m1"> a)She has much patience is correct</label><br>
+          <input type="radio" id="m2" class="rads" name="much" value="err_it"><label for="m2"> b)She has it patience</label><br>
+          <input type="radio" id="m3" class="rads" name="much" value="corr_lot"><label for="m3">c)She has a lot of patience</label><br>
           <button id="next_3" class="next">next</button>
           <button id="back_3" class="back">back</button>
-
         </div>
         </div>
         <div id="div_instr">
@@ -333,10 +325,9 @@ require_once('./dbconn.php');
 
   <!--mouseover instructions in CSS: Display None -->
   <div id="inst_hov">
-    <p id="gen_instr"><u>General Instructions</u></p>
     <ul>
       <li>Only one answer is correct</li>
-      <li>The explanations pop up after each segment</li>
+      <li>After you finish check the explanations for more examples of each mistake</li>
     </ul>
   </div>
 
@@ -379,12 +370,19 @@ require_once('./dbconn.php');
       tablinks = document.getElementsByClassName("tablink");
       for (i = 0; i < tablinks.length; i++) {
         tablinks[i].style.backgroundColor = "";
+
       }
       document.getElementById(pageName).style.display = "block";
       elmnt.style.backgroundColor = color;
     }
     // Get the element with id="defaultOpen" and click on it
-    document.getElementById("defaultOpen").click();
+   document.getElementById("defaultOpen").click();
+
+
+    // $("#active_home").val($("#active_home").val().toUpperCase());
+    // console.log('hello handsoem');
+
+
 
 
     //MAIN POP UP
