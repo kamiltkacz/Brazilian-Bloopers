@@ -129,13 +129,13 @@ if (isset($_POST["action"])) {
 
 if ($action == "sub_quiz") {
     $export = Array();
-    $news = $_POST["news"];
-    $weather = $_POST["weather"];
-    $dist = $_POST["dist"];
+    $sub_it = $_POST["sub_it"];
+    $too = $_POST["too"];
+    $much = $_POST["much"];
 
 
     $sql = "INSERT INTO quiz (Radio_1, Radio_2, Radio_3)
-    VALUES ('$news', '$weather', '$dist')";
+    VALUES ('$sub_it', '$too', '$much')";
 
     if (mysqli_query($conn, $sql) === TRUE) {
 
