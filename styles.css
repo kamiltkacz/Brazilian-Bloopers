@@ -1,25 +1,25 @@
+/*MAKE THE FONT SLIGHLTY BOLDER*/
 /* Set height of body and the document to 100% */
 body,
 html {
-  height: 100%;
-  margin: 0;
-  background: #8E24AA;
-  background: linear-gradient(45deg,  #42a5f5 0%,#478ed1 50%,#0d47a1 100%);
-
-  font-family: 'Inconsolata', monospace;;
-  font-size: 20px;
-  color: antiquewhite
+ height: 100%;
+ margin: 0;
+ background: #8E24AA;
+ background: linear-gradient(45deg,  #42a5f5 0%,#478ed1 50%,#0d47a1 100%);
+ font-family: 'Inconsolata', monospace;
+ font-size: 20px;
+ color: antiquewhite
 }
 
 /* All 'a' links */
 a {
-  text-decoration: none;
-  color: antiquewhite;
-  font-weight: 400px;
-  font-size: 20px;
+ text-decoration: none;
+ color: antiquewhite;
+ font-weight: 400px;
+ font-size: 20px;
 }
- .active {
-  font-size: 23px;
+.active {
+ font-size: 23px;
 }
 /* p link*/
 .choose {
@@ -31,8 +31,8 @@ font-weight: 600;
 
 h4 {
 
-  font-weight: normal;
-  text-align: center;
+font-weight: normal;
+text-align: center;
 
 }
 
@@ -42,9 +42,11 @@ color: antiquewhite;
 }
 #inst_h3 {
 color: antiquewhite;
-background: antiquewhite;
+background: #8E24AA;
+background: linear-gradient(45deg,  #42a5f5 0%,#478ed1 50%,#0d47a1 100%);;
 border-radius: 10px;
 padding: 20px;
+font-family: 'Inconsolata', monospace;
 
 }
 
@@ -52,47 +54,47 @@ padding: 20px;
 .tablink {
 
 
-  float: left;
-  border: none;
-  outline: none;
-  width: 25%;
-  border-radius: 5px;
-  overflow: hidden;
-  white-space: nowrap;
-  border: 0;
-    cursor: pointer;
-    color: white;
-    font-size: 2rem;
-    text-transform: uppercase;
-    background: rgba(0,0,0,0.1);
-    border-bottom: 3px solid rgba(0,0,0,0.2);
-    border-right: 1px solid rgba(0,0,0,0.2);
-    padding: 1rem;
-    font-family: 'Inconsolata', monospace;
+ float: left;
+ border: none;
+ outline: none;
+ width: 25%;
+ border-radius: 5px;
+ overflow: hidden;
+ white-space: nowrap;
+ border: 0;
+ cursor: pointer;
+ color: white;
+ font-size: 2rem;
+ text-transform: uppercase;
+ background: rgba(0,0,0,0.1);
+ border-bottom: 3px solid rgba(0,0,0,0.2);
+ border-right: 1px solid rgba(0,0,0,0.2);
+ padding: 1rem;
+ font-family: 'Inconsolata', monospace;
 
 }
 .tabs :hover {
-  background-color: #158be6;
-  outline: 0;
-  text-transform: uppercase;
+ background-color: #158be6;
+ outline: 0;
+ text-transform: uppercase;
 
 }
 
 
 /* Style the tab content (and add height:100% for full page content) */
 .tabcontent {
-  color: black;
-  display: none;
-  padding: 100px 19px;
-  height: 100%;
-  text-align: center;
+ color: whitesmoke;
+ display: none;
+ padding: 100px 19px;
+ height: 100%;
+ text-align: center;
 }
 
 legend {
-  display: block;
-  padding-left: 2px;
-  padding-right: 2px;
-  border: none;
+ display: block;
+ padding-left: 2px;
+ padding-right: 2px;
+ border: none;
 }
 
 #field_steps {
@@ -108,98 +110,98 @@ list-style-position: outside;
 }
 /* CSS for Youtube*/
 .yt-resp {
-  position: relative;
-  overflow: hidden;
-  padding-top: 46.25%;
+ position: relative;
+ overflow: hidden;
+ padding-top: 46.25%;
 }
 
 .iframe-resp {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 80%;
-  height: 80%;
-  border: 0;
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 80%;
+ height: 80%;
+ border: 0;
 }
 
 
 /* Outer */
 .popup {
-  width: 100%;
-  height: 100%;
-  display: none;
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  background: rgba(3, 3, 3, 0.75);
+ width: 100%;
+ height: 100%;
+ display: none;
+ position: fixed;
+ top: 0px;
+ left: 0px;
+ background: rgba(3, 3, 3, 0.75);
 }
 
 /* Inner */
 .popup-inner {
-  max-width: 380px;
-  max-height: 400px;
-  width: 90%;
-  padding: 40px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  box-shadow: 0px 2px 6px rgba(0, 0, 0, 1);
-  border-radius: 20px;
-  background: #8E24AA;
-  background: linear-gradient(45deg,  #42a5f5 0%,#478ed1 50%,#0d47a1 100%);
+ max-width: 380px;
+ max-height: 400px;
+ width: 90%;
+ padding: 40px;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ -webkit-transform: translate(-50%, -50%);
+ transform: translate(-50%, -50%);
+ box-shadow: 0px 2px 6px rgba(0, 0, 0, 1);
+ border-radius: 20px;
+ background: #8E24AA;
+ background: linear-gradient(45deg,  #42a5f5 0%,#478ed1 50%,#0d47a1 100%);
 
-  text-align: center;
-  overflow-x: hidden;
-  overflow-y: scroll;
+ text-align: center;
+ overflow-x: hidden;
+ overflow-y: scroll;
 }
 #inner_2 {
-  max-width: 500px;
-  max-height: 400px;
-  width: 90%;
-  padding: 40px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  box-shadow: 0px 2px 6px rgba(0, 0, 0, 1);
-  border-radius: 20px;
-  background: #8E24AA;
-  background: linear-gradient(45deg,  #42a5f5 0%,#478ed1 50%,#0d47a1 100%);
+ max-width: 500px;
+ max-height: 400px;
+ width: 90%;
+ padding: 40px;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ -webkit-transform: translate(-50%, -50%);
+ transform: translate(-50%, -50%);
+ box-shadow: 0px 2px 6px rgba(0, 0, 0, 1);
+ border-radius: 20px;
+ background: #8E24AA;
+ background: linear-gradient(45deg,  #42a5f5 0%,#478ed1 50%,#0d47a1 100%);
 
-  text-align: center;
-  overflow-x: hidden;
-  overflow-y: scroll;
+ text-align: center;
+ overflow-x: hidden;
+ overflow-y: scroll;
 }
 
 /* Pop up Close Button */
 .popup-close {
-  width: 20px;
-  height: 20px;
-  padding-top: 2px;
-  display: inline-block;
-  position: sticky;
-  top: 20px;
-  right: 545px;
-  transition: ease 0.25s all;
-  -webkit-transform: translate(50%, -50%);
-  transform: translate(50%, -50%);
-  border-radius: 1000px;
-  background: rgba(0, 0, 0, 0.8);
-  font-family: 'Patua One', cursive;
-  font-size: 15px;
-  text-align: center;
-  line-height: 90%;
-  color: #fff;
+ width: 20px;
+ height: 20px;
+ padding-top: 2px;
+ display: inline-block;
+ position: sticky;
+ top: 20px;
+ right: 545px;
+ transition: ease 0.25s all;
+ -webkit-transform: translate(50%, -50%);
+ transform: translate(50%, -50%);
+ border-radius: 1000px;
+ background: rgba(0, 0, 0, 0.8);
+ font-family: 'Patua One', cursive;
+ font-size: 15px;
+ text-align: center;
+ line-height: 90%;
+ color: #fff;
 }
 
 .popup-close:hover {
-  -webkit-transform: translate(50%, -50%) rotate(180deg);
-  transform: translate(50%, -50%) rotate(180deg);
-  background: rgba(0, 0, 0, 1);
-  text-decoration: none;
+ -webkit-transform: translate(50%, -50%) rotate(180deg);
+ transform: translate(50%, -50%) rotate(180deg);
+ background: rgba(0, 0, 0, 1);
+ text-decoration: none;
 }
 
 /*BUTTONS*/
@@ -207,223 +209,272 @@ list-style-position: outside;
 
 .btn {
 
-  background-color: antiquewhite;
-  color: #000000;
-  font-family: inherit;
-  font-size: 19px;
-  padding: 5px;
-  border-radius: 8px;
-  cursor: pointer;
-  top: 15px;
-  margin-right: 10px;
-  text-align: center;
-  position: relative;
+ background-color: #0b0be4;
+ color: whitesmoke;
+ font-family: inherit;
+ font-size: 19px;
+ padding: 5px;
+ border-radius: 8px;
+ cursor: pointer;
+ top: 15px;
+ margin-right: 10px;
+ text-align: center;
+ position: relative;
 
 }
 #start_survey {
-background-color: antiquewhite;
-  color: #000000;
-  font-family: inherit;
-  font-size: 19px;
-  padding: 5px;
-  border-radius: 8px;
-  cursor: pointer;
-  top: 15px;
-  margin-right: 10px;
-  text-align: center;
-  position: relative;
+background-color: #0b0be4;
+ color: #000000;
+ font-family: inherit;
+ font-size: 19px;
+ padding: 5px;
+ border-radius: 8px;
+ cursor: pointer;
+ top: 15px;
+ margin-right: 10px;
+ text-align: center;
+ position: relative;
 
 }
 #start_quiz {
 display: none;
 top: -2px;
-background-color: antiquewhite;
-  color: #000000;
-  font-family: inherit;
-  font-size: 19px;
-  padding: 5px;
-  border-radius: 8px;
-  cursor: pointer;
-  /*top: 15px;*/
-  margin-right: 10px;
-  text-align: center;
-  position: relative;
+background-color: #0b0be4;
+ color: #000000;
+ font-family: inherit;
+ font-size: 19px;
+ padding: 5px;
+ border-radius: 8px;
+ cursor: pointer;
+ /*top: 15px;*/
+ margin-right: 10px;
+ text-align: center;
+ position: relative;
 }
 
 /* Grow */
 .hvr-grow {
-  display: inline-block;
-  vertical-align: middle;
-  transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  backface-visibility: hidden;
-  -moz-osx-font-smoothing: grayscale;
-  transition-duration: 0.3s;
-  transition-property: transform;
+ display: inline-block;
+ vertical-align: middle;
+ transform: translateZ(0);
+ box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+ backface-visibility: hidden;
+ -moz-osx-font-smoothing: grayscale;
+ transition-duration: 0.3s;
+ transition-property: transform;
 }
 
 .hvr-grow:hover,
 .hvr-grow:focus,
 .hvr-grow:active {
-  transform: scale(1.1);
-  text-transform: uppercase;
+ transform: scale(1.1);
+ text-transform: uppercase;
 }
 
 p#instr {
-  background-color:antiquewhite;
-  color: #0f1403;
-  font-family: 'Patua One', cursive;
-  font-size: 17px;
-  padding: 5px;
-  border-radius: 5px;
-  cursor: help;
-  position: fixed;
- /* margin-top: 3px;*/
-  margin-right: 30px;
+ background-color:#0b0be4;
+ color: whitesmoke;
+ font-family: 'Patua One', cursive;
+ font-size: 17px;
+ padding: 5px;
+ border-radius: 5px;
+ cursor: help;
+ position: fixed;
+/* margin-top: 3px;*/
+ margin-right: 30px;
 
- }
+}
 
 
 
-  .next {
-  background-color: antiquewhite;
-  color: #000000;
-  font-family: inherit;
-  font-size: 18px;
-  padding: 5px;
-  border-radius: 8px;
-  cursor: pointer;
+ .next {
+ background-color: #0b0be4;
+ color: whitesmoke;
+ font-family: inherit;
+ font-size: 18px;
+ padding: 5px;
+ border-radius: 8px;
+ cursor: pointer;
 
-  display: flex;
-  right: 40px;
-  margin-top: 16px;
-  position: fixed;
- }
+ display: flex;
+ right: 40px;
+ margin-top: 16px;
+ position: fixed;
+}
 
 
 
 .back {
-    background-color: antiquewhite;
-    color: #000000;
-    font-family: inherit;
-    font-size: 18px;
-    padding: 5px;
-    border-radius: 8px;
-    cursor: pointer;
-    display: flex;
-    margin-top: 16px;
-    position: fixed;
-    right: 100px;
+   background-color: antiquewhite;
+   color: #000000;
+   font-family: inherit;
+   font-size: 18px;
+   padding: 5px;
+   border-radius: 8px;
+   cursor: pointer;
+   display: flex;
+   margin-top: 16px;
+   position: fixed;
+   right: 100px;
 
- }
+}
 
 
- #sub_quiz {
+#sub_quiz {
 
-  display: none;
-  background-color: antiquewhite;
-  color: #000000;
-  font-family: inherit;
-  font-size: 19px;
-  padding: 5px;
-  border-radius: 8px;
-  cursor: pointer;
-  top: 15px;
-  margin-right: 10px;
-  text-align: center;
-  position: relative;
- }
+ display: none;
+ background-color: antiquewhite;
+ color: #000000;
+ font-family: inherit;
+ font-size: 19px;
+ padding: 5px;
+ border-radius: 8px;
+ cursor: pointer;
+ top: 15px;
+ margin-right: 10px;
+ text-align: center;
+ position: relative;
+}
+/* Submit Contact button */
+input[type="submit"],
+#submit_contact {
+ background-color: whitesmoke;
+ color: black;
+ font-family: 'Patua One', cursive;
+ font-size: 20px;
+ padding: 5px;
+ border-radius: 8px;
+ cursor: pointer;
+}
+/* Submit Survey Button*/
+#submit_survey {
+ background: #8E24AA;
+ background: linear-gradient(45deg,  #42a5f5 0%,#478ed1 50%,#0d47a1 100%);
+ color: whitesmoke;
+ font-family: 'Patua One', cursive;
+ font-size: 18px;
+ position: fixed;
+ padding: 4px;
+ border-radius: 8px;
+ cursor: pointer;
+ margin-top: 10px;
+ width: 80px;
+ right: 12px;
+ position: inherit;
+}
+
 
 /* END BUTTONS*/
 
 
+/* MAIN CONTAINERS */
+.container {
+ border-radius: 20px;
+ background: #8E24AA;
+ background: linear-gradient(45deg,  #42a5f5 0%,#478ed1 50%,#0d47a1 100%);
+ padding: 20px;
+ text-align: left;
+ margin-top: 30px;
+}
+.cont_surv {
+ background: #8E24AA;
+ background: linear-gradient(45deg,  #42a5f5 0%,#478ed1 50%,#0d47a1 100%);
+ border-radius: 30px;
+ padding: 14px;
+ text-align: left;
+ margin-top: 20px;
+
+}
+
 
 /* QUIZ CONTAINERS*/
 .count {
-  background: antiquewhite;
-  color: #0f1403;
-  font-family: 'Patua One', cursive;
-  padding: 10px;
-  border-radius: 15px;
-  padding-right: 40px;
-  padding-left: 40px;
+ background: antiquewhite;
+ color: #0f1403;
+ font-family: 'Patua One', cursive;
+ padding: 10px;
+ border-radius: 15px;
+ padding-right: 40px;
+ padding-left: 40px;
 
 }
 .situation {
-    background: whitesmoke;
-    padding: 10px;
-    border-radius: 10px;
-    text-align: center;
-    margin-right: 110px;
-    margin-left: 60px;
-    font-weight: 600;
+   background:#8E24AA;
+   background: linear-gradient(45deg,  #42a5f5 0%,#478ed1 50%,#0d47a1 100%);;
+   padding: 10px;
+   border-radius: 10px;
+   text-align: center;
+   margin-right: 110px;
+   margin-left: 60px;
+   font-weight: 600;
 }
 .situ {
-  text-align: center;
-  padding-left: 40px;
+ text-align: center;
+ padding-left: 40px;
 }
 
 
 .cont_dial {
 
-  border-radius: 10px;
-  background-color: antiquewhite;;
-  padding: 18px;
-  text-align: left;
-  margin-top: 30px;
-  color: black;
+ border-radius: 10px;
+ background-color: #8E24AA;
+ background: linear-gradient(45deg,  #42a5f5 0%,#478ed1 50%,#0d47a1 100%);
+ padding: 18px;
+ text-align: left;
+ margin-top: 30px;
+ color: whitesmoke;
 
 }
 
 .dialos {
 
-  border-radius: 10px;
-  background-color: whitesmoke;
-  padding: 12px;
-  text-align: left;
-  margin-top: 30px;
-  color: black;
+ border-radius: 10px;
+ background: #8E24AA;
+ background: linear-gradient(45deg,  #42a5f5 0%,#478ed1 50%,#0d47a1 100%);;
+ padding: 12px;
+ text-align: left;
+ margin-top: 30px;
+ color:wheat;
 
 
 }
 .cont_answer {
 
-  border-radius: 10px;
-  background-color: antiquewhite;
-  padding: 18px;
-  text-align: left;
-  margin-top: 30px;
-  color: black;
+ border-radius: 10px;
+ background: #8E24AA;
+ background: linear-gradient(45deg,  #42a5f5 0%,#478ed1 50%,#0d47a1 100%);
+ padding: 18px;
+ text-align: left;
+ margin-top: 30px;
+ color: whitesmoke;
 
 }
 .answers {
 
-  border-radius: 10px;
-  background-color: antiquewhite;
-  padding: 12px;
-  text-align: left;
-  margin-top: 30px;
-  color: black;
+ border-radius: 10px;
+ background: #8E24AA;
+ background: linear-gradient(45deg,  #42a5f5 0%,#478ed1 50%,#0d47a1 100%);
+ padding: 12px;
+ text-align: left;
+ margin-top: 30px;
+ color: whitesmoke;
 
 }
 
 
- /* HOVER STYLES */
+/* HOVER INSTRUCTIONS STYLES */
 
- #inst_hov {
-  display: none;
-  position: absolute;
-  width: 280px;
-  padding: 10px;
-  background: #eeeeee;
-  color: #000000;
-  border-radius: 20mm;
-  border: 1px solid #1a1a1a;
-  font-size: 90%;
+#inst_hov {
+ display: none;
+ position: absolute;
+ width: 280px;
+ padding: 10px;
+ background: #eeeeee;
+ color: #000000;
+ border-radius: 20mm;
+ border: 1px solid #1a1a1a;
+ font-size: 90%;
 }
-
-
-
 
 
 
@@ -431,48 +482,38 @@ p#instr {
 input[type="text"],
 select,
 textarea {
-  width: 100%;
-  padding: 12px;
-  font-family: 'Patua One', cursive;
-  font-size: 20px;
-  border: 5px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
+ width: 100%;
+ padding: 12px;
+ font-family: 'Patua One', cursive;
+ font-size: 20px;
+ border: 5px solid #ccc;
+ border-radius: 4px;
+ box-sizing: border-box;
+ margin-top: 6px;
+ margin-bottom: 16px;
+ resize: vertical;
 
 }
 
 
-#submit_survey {
-  background-color: antiquewhite;
-  color: #000000;
-  font-family: 'Patua One', cursive;
-  font-size: 18px;
-  position: fixed;
-  padding: 4px;
-  border-radius: 8px;
-  cursor: pointer;
-  margin-top: 10px;
-  width: 80px;
-  right: 12px;
-  position: inherit;
-}
 
 /* mouseover pointer survey */
 label,
 #age,
 .radios,
 .check:hover {
-  cursor: pointer;
+ cursor: pointer;
 }
-
+/* age select range*/
 #age {
-
-  width: 70%;
-  font-size: 18px;
+ width: 70%;
+ font-size: 18px;
+ font-family: inherit;
+ color: blue;
+ background: #8E24AA;
+ background: linear-gradient(45deg, #42a5f5 0%,#478ed1 50%,#0d47a1 100%);
 }
+
 
 #bor_country,
 #bor_others,
@@ -481,9 +522,9 @@ label,
 #bor_age,
 #bor_gender,
 #bor_years {
-  cursor: default;
-  background: whitesmoke;
-font-family: 'Patua One', cursive;
+ cursor: default;
+ background: #d8ca00;
+font-family: inherit, cursive;
 padding: 5px;
 border-radius: 10px;
 
@@ -491,69 +532,41 @@ border-radius: 10px;
 
 .bor_choose {
 
-  cursor: default;
-  background: whitesmoke;
-  padding: 12px;
-  border-radius: 10px;
-  text-align: center;
-  margin-right: 80px;
-  margin-left: 60px;
-  font-weight: 600;
+ cursor: default;
+ background: whitesmoke;
+ padding: 12px;
+ border-radius: 10px;
+ text-align: center;
+ margin-right: 80px;
+ margin-left: 60px;
+ font-weight: 600;
 }
-}
+
 
 .rads {
 
-  cursor: pointer;
-}
-
-.cont_surv {
-
-  border-radius: 30px;
-  background-color: antiquewhite;
-  padding: 14px;
-  text-align: left;
-  margin-top: 20px;
-
+ cursor: pointer;
 }
 
 
-/* Submit Contact button */
-input[type="submit"],
-#submit_contact {
-  background-color: whitesmoke;
-  color: black;
-  font-family: 'Patua One', cursive;
-  font-size: 20px;
-  padding: 5px;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-/* Add a background color and some padding around the form */
-.container {
-  border-radius: 20px;
-  background-color:antiquewhite;
-  padding: 20px;
-  text-align: left;
-  margin-top: 30px;
-}
 
 #field_about {
 
-  border-radius: 15px 50px 30px 15px;
+ border-radius: 15px 50px 30px 15px;
 
 }
 
 
 @media (max-width: 375px) {
-  .tablink {
-    font-size: 15px;
-    overflow: hidden;
-    white-space: nowrap;
-  }
-  .active {
-    font-size: 18px;
+ .tablink {
+   font-size: 15px;
+   overflow: hidden;
+   white-space: nowrap;
  }
+ .active {
+   font-size: 18px;
+}
 
 }
+
+
