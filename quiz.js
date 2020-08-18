@@ -217,7 +217,7 @@ $('#instr').mousemove(function(e) {
 });
 
 });
-/*Hover function for .next and .back buttons*/
+/*Hover function for '.next and .back' buttons*/
 $(document).ready(function(){
   $(".next").hover(function(){
     $(this).css({"text-transform": "uppercase", "background": "#d8ca00"});
