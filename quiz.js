@@ -203,14 +203,31 @@ let moveLeft = 20;
 let moveDown = 5;
 
 $('#instr').hover(function(e) {
+  $(this).css("background", "#d8ca00");
   $('#inst_hov').show('slow');
 
 }, function() {
+  $(this).css("background", "");
   $('#inst_hov').hide('slow');
 });
 
 $('#instr').mousemove(function(e) {
+
   $('#inst_hov').css('top', e.pageY + moveDown).css('left', e.pageX + moveLeft);
 });
+
+});
+/*Hover function for .next and .back buttons*/
+$(document).ready(function(){
+  $(".next").hover(function(){
+    $(this).css({"text-transform": "uppercase", "background": "#d8ca00"});
+    }, function(){
+    $(this).css({"text-transform": "lowercase", "background": ""});
+  });
+  $(".back").hover(function(){
+    $(this).css({"text-transform": "uppercase", "background": "#d8ca00"});
+    }, function(){
+    $(this).css({"text-transform": "lowercase", "background": ""});
+  });
 
 });

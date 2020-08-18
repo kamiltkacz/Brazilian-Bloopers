@@ -236,7 +236,7 @@ require_once('./dbconn.php');
 
             </div>
             <div>
-            <button id="submit_survey" type="submit" name="submitsurvey">Submit</button>
+            <button id="submit_survey" class="hvr-grow" type="submit" name="submitsurvey">Submit</button>
             </div>
           </div>
         </form>
@@ -305,7 +305,7 @@ require_once('./dbconn.php');
             </div>
             <div class="dialos">
           <p>John: <i>Do you like your teacher?</i></p>
-          <p>Pedro:<i> Yes, I love her.<span style="background-color: #FFFF00"> She has much patience</span> with me.</i></p>
+          <p>Pedro:<i> Yes, I love her.<span class="error_style"><em>She has much patience</em></span> with me.</i></p>
             </div>
           </div>
           <div class="cont_answer">
