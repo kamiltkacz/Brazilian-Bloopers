@@ -26,7 +26,7 @@ $('#next_1').on("click", function(){
   if (!$("input[name='sub_it']:checked").val()) {
 
   $('.bor_choose').css({"border-bottom": "5px solid red",
-    "padding": "6px"
+    "padding": "12px"
   });
   $(".span_choose").text(" * ");
 
@@ -52,7 +52,7 @@ $('#next_1').on("click", function(){
 
     $('.bor_choose').css({
       "border-bottom": "5px solid red",
-      "padding": "6px"
+      "padding": "12px"
     });
     $(".span_choose").text(" * ");
 
@@ -75,7 +75,7 @@ $('#next_1').on("click", function(){
     if (!$("input[name='much']:checked").val()) {
       $('.bor_choose').css({
         "border-bottom": "5px solid red",
-        "padding": "6px"
+        "padding": "12px"
       });
       $(".span_choose").text(" * ");
 
@@ -203,7 +203,7 @@ let moveLeft = 20;
 let moveDown = 5;
 
 $('#instr').hover(function(e) {
-  $(this).css("background", "#d8ca00");
+  $(this).css("background", "midnightblue");
   $('#inst_hov').show('slow');
 
 }, function() {
@@ -212,22 +212,21 @@ $('#instr').hover(function(e) {
 });
 
 $('#instr').mousemove(function(e) {
-
   $('#inst_hov').css('top', e.pageY + moveDown).css('left', e.pageX + moveLeft);
 });
 
 });
+
 /*Hover function for '.next and .back' buttons*/
 $(document).ready(function(){
   $(".next").hover(function(){
-    $(this).css({"text-transform": "uppercase", "background": "#d8ca00"});
+    $(this).css({"text-transform": "uppercase", "background": "midnightblue"});
     }, function(){
     $(this).css({"text-transform": "lowercase", "background": ""});
   });
   $(".back").hover(function(){
-    $(this).css({"text-transform": "uppercase", "background": "#d8ca00"});
+    $(this).css({"text-transform": "uppercase", "background": "midnightblue"});
     }, function(){
     $(this).css({"text-transform": "lowercase", "background": ""});
   });
-
 });
