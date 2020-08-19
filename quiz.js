@@ -220,13 +220,13 @@ $('#instr').mousemove(function(e) {
 /*Hover function for '.next and .back' buttons*/
 $(document).ready(function(){
   $(".next").hover(function(){
-    $(this).css({"text-transform": "uppercase", "background": "midnightblue"});
+    $(this).css({"background": "midnightblue"});
     }, function(){
-    $(this).css({"text-transform": "lowercase", "background": ""});
+    $(this).css({"background": ""});
   });
   $(".back").hover(function(){
-    $(this).css({"text-transform": "uppercase", "background": "midnightblue"});
+    $(this).css({"background": "midnightblue"});
     }, function(){
-    $(this).css({"text-transform": "lowercase", "background": ""});
+    $(this).css({"background": ""});
   });
 });
