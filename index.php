@@ -165,10 +165,13 @@ require_once('./dbconn.php');
 <!--SURVEY-->
     <div class="popup" data-popup="popup-1">
       <div class="popup-inner">
-        <h2>Please fill out these 7 questions</h2>
+      <a class="popup-close" data-popup-close="popup-1" href="#">x</a>
+      <div id="please_fill">
+        <h3>Please fill out these 7 questions</h3>
+       </div>
         <form id="survey" method="post" action="actions.php">
 
-          <a class="popup-close" data-popup-close="popup-1" href="#">x</a>
+
           <div id="surv_div">
             <div id="question1" class="cont_surv">
               <p><label id="bor_gender">1) What gender are you?<span id="span_gender" style="color:#ff0000"></span></label></p>
