@@ -28,6 +28,7 @@ a {
 
 text-align: center;
 font-weight: 600;
+padding: 12px;
 }
 
 
@@ -45,10 +46,11 @@ color: whitesmoke;
 #inst_h3 {
 color: whitesmoke;
 background: #8E24AA;
-background: linear-gradient(45deg,  #42a5f5 0%,#478ed1 50%,#0d47a1 100%);;
+background: linear-gradient(45deg, #415e76 0%,#478ed1 50%,#061a3a 100%);
 border-radius: 10px;
 padding: 20px;
 font-family: 'Inconsolata', monospace;
+font-weight: normal;
 
 }
 
@@ -407,15 +409,16 @@ input[type="submit"],
 
 }
 .situation {
-   background:#d8ca00;
-
+   background: radial-gradient(black, transparent);
    padding: 10px;
    border-radius: 10px;
    text-align: center;
    margin-right: 110px;
    margin-left: 60px;
-   font-weight: 600;
+   font-weight: normal;
    color: whitesmoke;
+   text-shadow: 0 0 10px black;
+   word-wrap: break-word;
 }
 .situ {
  text-align: center;
@@ -427,7 +430,7 @@ input[type="submit"],
 
  border-radius: 10px;
  background-color: #8E24AA;
- background: linear-gradient(45deg,  #42a5f5 0%,#478ed1 50%,#0d47a1 100%);
+ background: linear-gradient(45deg, #09182d 0%,#478ed1 50%,#c3cbd5 100%);
  padding: 18px;
  text-align: left;
  margin-top: 30px;
@@ -439,7 +442,7 @@ input[type="submit"],
 
  border-radius: 10px;
  background: #8E24AA;
- background: linear-gradient(45deg,  #42a5f5 0%,#478ed1 50%,#0d47a1 100%);;
+ background: linear-gradient(45deg, #415e76 0%,#478ed1 50%,#061a3a 100%);
  padding: 12px;
  text-align: left;
  margin-top: 30px;
@@ -451,19 +454,18 @@ input[type="submit"],
 
  border-radius: 10px;
  background: #8E24AA;
- background: linear-gradient(45deg, #415e76 0%,#478ed1 50%,#061a3a 100%);
+ background: linear-gradient(45deg, #09182d 0%,#478ed1 50%,#c3cbd5 100%);
  padding: 18px;
  text-align: left;
  margin-top: 30px;
  color: whitesmoke;
- font-style: italic;
 
 }
 .answers {
 
  border-radius: 10px;
  background: #8E24AA;
- background: linear-gradient(45deg,  #42a5f5 0%,#478ed1 50%,#0d47a1 100%);
+ background: linear-gradient(45deg, #415e76 0%,#478ed1 50%,#061a3a 100%);
  padding: 12px;
  text-align: left;
  margin-top: 30px;
@@ -543,15 +545,17 @@ border-radius: 10px;
 
 .bor_choose {
 
+ background: radial-gradient(black, transparent);
  cursor: default;
  padding: 12px;
  border-radius: 10px;
  text-align: center;
- margin-right: 80px;
+ margin-right: 70px;
  margin-left: 60px;
- font-weight: 600;
+ font-weight: normal;
  font-style: normal;
- background: #d8ca00;
+ text-shadow: 0 0 10px black;
+
 
 }
 
@@ -562,10 +566,10 @@ border-radius: 10px;
 }
 
 em {
-   background: #d8ca00;
-   color: red;
+   background: radial-gradient(black, transparent);
+   color: gold;
    padding: 2px;
-
+   font-weight: 600;
 }
 
 
@@ -585,6 +589,16 @@ em {
  }
  .active {
    font-size: 18px;
+}
+.situation {
+
+   display: table-cell;
+}
+.bor_choose {
+   display: flex;
+}
+.next :hover {
+   background: midnightblue;
 }
 
 }
