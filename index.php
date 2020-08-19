@@ -197,7 +197,7 @@ require_once('./dbconn.php');
             </div>
 
             <div id="question4" class="cont_surv">
-              <p><label id="bor_abroad">4) Contact with English abroad<span id="span_abroad" style="color:#ff0000"></span></label></p>
+              <p><label id="bor_abroad">4) Experience abroad<span id="span_abroad" style="color:#ff0000"></span></label></p>
 
               <input type="radio" id="abr1" class="radios" name="abroad" value="less than a year"><label for="abr1">less than a year</label><br>
               <input type="radio" id="abr2" class="radios" name="abroad" value="1-3 years"><label for="abr2">1-2 years</label><br>
@@ -208,7 +208,7 @@ require_once('./dbconn.php');
             </div>
 
             <div id="question5" class="cont_surv">
-              <p><label id="bor_way">5) How do you learn English?<span id="span_way" style="color:#ff0000"><br></span></label></p>
+              <p><label id="bor_way">5) How do you learn?<span id="span_way" style="color:#ff0000"><br></span></label></p>
 
               <input type="checkbox" id="way1" class="check" name="way[]" value="inperson"><label for="way1">in-person course</label><br>
               <input type="checkbox" id="way2" class="check" name="way[]" value="privateteacher"><label for="way2">private teacher</label><br>
@@ -251,7 +251,7 @@ require_once('./dbconn.php');
 
       <form id="quiz_form" method="post" action="actions.php">
       <a class="popup-close" data-popup-close="popup-2" href="#">x</a>
-        <h3 id="inst_h3">Read the dialogue and correct the mistake</h3>
+        <h3 id="inst_h3">Read the dialogue and check the correct answer</h3>
 
         <div id="1" class="questions">
         <span class="count"> 1 out of 30</span>
@@ -304,16 +304,16 @@ require_once('./dbconn.php');
           <p class="situation">Situation 3 out of 30</p>
             </div>
             <div class="dialos">
-          <p>John: <i>Do you like your teacher?</i></p>
-          <p>Pedro:<i> Yes, I love her.<span class="error_style"><em>She has much patience</em></span> with me.</i></p>
+          <p>John: Do you like your teacher?</p>
+          <p>Pedro: Yes, I love her.<span class="error_style"><em>She has much patience</em></span> with me.</p>
             </div>
           </div>
           <div class="cont_answer">
           <p class="choose"><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p>
           <div class="answers">
-          <input type="radio" id="m1" class="rads" name="much" value="err_much"><label for="m1"> a)She has a lot patience</label><br>
-          <input type="radio" id="m2" class="rads" name="much" value="err_it"><label for="m2"> b)She has it patience</label><br>
-          <input type="radio" id="m3" class="rads" name="much" value="corr_lot"><label for="m3">c)She has a lot of patience</label><br>
+          <input type="radio" id="m1" class="rads" name="much" value="err_much"><label for="m1"> She has a lot patience</label><br>
+          <input type="radio" id="m2" class="rads" name="much" value="err_ok"><label for="m2"> This answer is correct</label><br>
+          <input type="radio" id="m3" class="rads" name="much" value="corr_lot"><label for="m3"> She has a lot of patience</label><br>
           </div>
 
         </div>
