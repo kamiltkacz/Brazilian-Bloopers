@@ -164,7 +164,7 @@ list-style-position: outside;
  max-width: 500px;
  max-height: 400px;
  width: 90%;
- padding: 40px;
+ padding: 60px;
  position: absolute;
  top: 50%;
  left: 50%;
@@ -184,17 +184,16 @@ list-style-position: outside;
 .popup-close {
  width: 20px;
  height: 20px;
- padding-top: 2px;
+ padding-top: 5px;
  display: inline-block;
  position: sticky;
- top: 20px;
  right: 545px;
  transition: ease 0.25s all;
  -webkit-transform: translate(50%, -50%);
  transform: translate(50%, -50%);
  border-radius: 1000px;
  background: #0867b0;
- font-family: 'Patua One', cursive;
+ font-family: inherit;
  font-size: 15px;
  text-align: center;
  line-height: 90%;
@@ -204,8 +203,16 @@ list-style-position: outside;
 .popup-close:hover {
  -webkit-transform: translate(50%, -50%) rotate(180deg);
  transform: translate(50%, -50%) rotate(180deg);
- background: #0867b0;
+ background: midnightblue;
  text-decoration: none;
+}
+
+#please_fill {
+   background: linear-gradient(45deg, #415e76 0%,#478ed1 50%,#061a3a 100%);
+   border-radius: 30px;
+   padding: 15px;
+   font-family: 'Inconsolata', monospace;
+   font-weight: normal;
 }
 
 /*BUTTONS*/
@@ -275,11 +282,12 @@ color: whitesmoke;
 .hvr-grow:active {
  transform: scale(1.1);
  text-transform: uppercase;
+
 }
 
 p#instr {
 background: #8E24AA;
-background: linear-gradient(45deg,  #42a5f5 0%,#478ed1 50%,#0d47a1 100%);
+background: linear-gradient(45deg,  #4083b8 0%,#478ed1 50%,#0d47a1 100%);
  color: whitesmoke;
  font-family: inherit;
  font-size: 17px;
@@ -304,9 +312,10 @@ padding: 5px;
 border-radius: 8px;
 cursor: pointer;
 display: flex;
-right: 40px;
+right: 60px;
 margin-top: 16px;
 position: fixed;
+text-transform: uppercase;
 }
 
 
@@ -322,7 +331,8 @@ position: fixed;
    display: flex;
    margin-top: 16px;
    position: fixed;
-   right: 100px;
+   right: 120px;
+   text-transform: uppercase;
 
 }
 
@@ -362,15 +372,15 @@ input[type="submit"],
  background: linear-gradient(45deg,  #42a5f5 0%,#478ed1 50%,#0d47a1 100%);
  color: whitesmoke;
  font-family: inherit;
- font-size: 18px;
- position: fixed;
- padding: 4px;
+ font-size: 20px;
+ padding: 8px;
  border-radius: 8px;
  cursor: pointer;
- margin-top: 10px;
+ margin-top: 25px;
  width: 80px;
  right: 12px;
  position: inherit;
+ text-transform: uppercase;
 }
 
 
@@ -387,8 +397,8 @@ input[type="submit"],
  margin-top: 30px;
 }
 .cont_surv {
- background: #8E24AA;
- background: linear-gradient(45deg,  #42a5f5 0%,#478ed1 50%,#0d47a1 100%);
+background: #8E24AA;
+background: linear-gradient(45deg, #415e76 0%,#478ed1 50%,#061a3a 100%);
  border-radius: 30px;
  padding: 14px;
  text-align: left;
@@ -413,16 +423,15 @@ input[type="submit"],
    padding: 10px;
    border-radius: 10px;
    text-align: center;
-   margin-right: 110px;
-   margin-left: 60px;
    font-weight: normal;
    color: whitesmoke;
    text-shadow: 0 0 10px black;
    word-wrap: break-word;
+   display: inline-flex;
 }
 .situ {
  text-align: center;
- padding-left: 40px;
+
 }
 
 
@@ -431,7 +440,7 @@ input[type="submit"],
  border-radius: 10px;
  background-color: #8E24AA;
  background: linear-gradient(45deg, #09182d 0%,#478ed1 50%,#c3cbd5 100%);
- padding: 18px;
+ padding: 30px;
  text-align: left;
  margin-top: 30px;
  color: whitesmoke;
@@ -445,7 +454,7 @@ input[type="submit"],
  background: linear-gradient(45deg, #415e76 0%,#478ed1 50%,#061a3a 100%);
  padding: 12px;
  text-align: left;
- margin-top: 30px;
+ margin-top: 25px;
  color:whitesmoke;
 
 
@@ -455,7 +464,7 @@ input[type="submit"],
  border-radius: 10px;
  background: #8E24AA;
  background: linear-gradient(45deg, #09182d 0%,#478ed1 50%,#c3cbd5 100%);
- padding: 18px;
+ padding: 25px;
  text-align: left;
  margin-top: 30px;
  color: whitesmoke;
@@ -466,9 +475,9 @@ input[type="submit"],
  border-radius: 10px;
  background: #8E24AA;
  background: linear-gradient(45deg, #415e76 0%,#478ed1 50%,#061a3a 100%);
- padding: 12px;
+ padding: 25px;
  text-align: left;
- margin-top: 30px;
+ margin-top: 45px;
  color: whitesmoke;
 
 }
@@ -522,8 +531,7 @@ label,
  font-size: 18px;
  font-family: inherit;
  color: rgb(32 80 116 / 80%);
- background: #8E24AA;
- background: linear-gradient(45deg, #42a5f5 0%,#478ed1 50%,#0d47a1 100%);
+ background: linear-gradient(45deg, #e4e8eb 0%,#aeb4b9 50%,#0d47a1 100%);
 }
 
 
@@ -535,7 +543,7 @@ label,
 #bor_gender,
 #bor_years {
  cursor: default;
- background: #d8ca00;
+ background: radial-gradient(black, transparent);
 font-family: inherit, cursive;
 padding: 5px;
 border-radius: 10px;
@@ -592,13 +600,21 @@ em {
 }
 .situation {
 
-   display: table-cell;
+   display: inline;
+   margin-left: auto;
+   margin-right: auto;
 }
 .bor_choose {
-   display: flex;
+    display: unset;
+    margin-right: auto;
+    margin-left: auto;
 }
 .next :hover {
    background: midnightblue;
+}
+.cont_dial {
+
+   padding-top: 40px;
 }
 
 }
