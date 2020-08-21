@@ -272,6 +272,7 @@ em {
   text-align: center;
   position: relative;
 }
+
 #start_quiz {
   display: none;
   top: -2px;
@@ -290,7 +291,7 @@ em {
 }
 
 /* Grow */
-.hvr-grow {
+ .hvr-grow, .next, .back/* #next_1, #next_2 #next_3, #back_2, #back_3 */{
   display: inline-block;
   vertical-align: middle;
   transform: translateZ(0);
@@ -303,7 +304,17 @@ em {
 
 .hvr-grow:hover,
 .hvr-grow:focus,
-.hvr-grow:active {
+.hvr-grow:active,
+.next:hover,
+.next:focus,
+.next:active,
+.back:hover,
+.back:focus,
+.back:active
+ /* #next_3, #back_2, #back_3
+#next_1, #next_2, #next_3, #back_2, #back_3,
+#next_1, #next_2, #next_3, #back_2, #back_3*/ {
+
   transform: scale(1.1);
   text-transform: uppercase;
 }
@@ -321,7 +332,6 @@ p#instr {
   /* margin-top: 3px;*/
   margin-right: 30px;
 }
-
 .next {
   background: #8e24aa;
   background: linear-gradient(45deg, #42a5f5 0%, #478ed1 50%, #0d47a1 100%);
@@ -338,6 +348,8 @@ p#instr {
   text-transform: uppercase;
 }
 
+
+
 .back {
   background: #8e24aa;
   background: linear-gradient(45deg, #42a5f5 0%, #478ed1 50%, #0d47a1 100%);
@@ -353,6 +365,8 @@ p#instr {
   right: 120px;
   text-transform: uppercase;
 }
+
+
 
 /* Submit Survey Button*/
 #submit_survey {
