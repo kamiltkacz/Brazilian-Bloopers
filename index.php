@@ -47,10 +47,10 @@ require_once('./dbconn.php');
       <a href="#" id="active_home" class="active">Home</a>
     </button>
     <button class="tablink" onclick="openPage('The Quiz', this);">
-      <a href="#" class="active">The Quiz</a>
+      <a href="#" id="active_quiz" class="active">The Quiz</a>
     </button>
     <button class="tablink" onclick="openPage('About', this);">
-      <a href="#" class="active">About Us</a>
+      <a href="#" class="active">About</a>
     </button>
     <button class="tablink" onclick="openPage('Contact Us', this);">
       <a href="#" class="active">Contact</a>
@@ -101,8 +101,15 @@ require_once('./dbconn.php');
           </div>
       </div>
     </div>
-
+    <!-- My Footer -->
+	<div class="footer">
+      <p> Author - Kamil Tkacz</p>
+  <!-- Copyright -->
+  <div class="copyright">
+   <p> &copy; 2020 BrazilianBloopers.com </p>
   </div>
+ </div>
+</div>
 
 
   <div id="About" class="tabcontent">
@@ -127,6 +134,15 @@ require_once('./dbconn.php');
 
 
     </div>
+       <!-- My Footer -->
+	<div id="foot_about" class="footer">
+      <p> Author - Kamil Tkacz</p>
+  <!-- Copyright -->
+  <div class="copyright">
+   <p> &copy; 2020 BrazilianBloopers.com </p>
+  </div>
+ </div>
+
   </div>
 
   <div id="The Quiz" class="tabcontent">
@@ -245,6 +261,14 @@ require_once('./dbconn.php');
         </form>
       </div>
     </div>
+       <!-- My Footer -->
+	<div class="footer">
+      <p> Author - Kamil Tkacz</p>
+  <!-- Copyright -->
+  <div class="copyright">
+   <p> &copy; 2020 BrazilianBloopers.com </p>
+  </div>
+ </div>
   </div>
 
   <!--QUIZ-->
@@ -257,123 +281,85 @@ require_once('./dbconn.php');
         <h3 id="inst_h3">Read the dialogue and check the correct answer</h3>
 
         <div id="1" class="questions">
-        <span class="count"> 1 out of 30</span>
-          <div class="cont_dial">
-           <div class="situation">
-            <p>Situation 1</p>
-           </div>
-          <p>Liz: How is the weather today?</p>
-          <p>Mike: <span style="background-color: #FFFF00">Is hot!</span></p>
-          </div>
-          <div class="cont_answer">
-          <div class="correct_ques">
-          <p><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p>
-          </div>
-          <input type="radio" id="i1" class="rads" name="sub_it" value="err_noverb"><label for="i1"> a) It hot!</label><br>
-          <input type="radio" id="i2" class="rads" name="sub_it" value="corr_it"><label for="i2"> b) It is hot!</label><br>
-          <input type="radio" id="i3" class="rads" name="sub_it" value="err_is"><label for="i3"> c) Is it hot!</label><br>
-          <div id="next_01">
-         <button id="next_1" class="next">Next</button>
+         <div class="cont_dial">
+           <p class="situation">Situation 1 out of 30</p>
+          <div class="dialos">
+           <p>Tiago: How is the weather today?</p>
+           <p>Luisa:<span class="error_style"><em>Is hot!</em></span></p>
           </div>
          </div>
+          <div class="cont_answer">
+          <p><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p>
+          <div class="answers">
+          <input type="radio" id="i1" class="rads" name="sub_it" value="err_ok"><label for="i1">This answer is correct!</label><br>
+          <input type="radio" id="i2" class="rads" name="sub_it" value="corr_it"><label for="i2">It is hot!</label><br>
+          <input type="radio" id="i3" class="rads" name="sub_it" value="err_is"><label for="i3">Is it hot!</label><br>
+           </div>
+          </div>
+          <button id="next_1" class="next">Next</button>
         </div>
 
 
-        <div id="2" class="questions" style="display: none;">
-        <span class="count"> 2 out of 30</span>
+      <div id="2" class="questions" style="display: none;">
         <div class="cont_dial">
-         <div class="situation">
-          <p>Situation 2</p>
-         </div>
-
-          <p>Cris: How was the party last night?</p>
-          <p>Jane: Ohh, <span style="background-color: #FFFF00">it was too good.</span> I danced all night!</p>
+            <p class="situation">Situation 2 out of 30</p>
+            <div class="dialos">
+            <p>Milene: How was the party?</p>
+            <p>Marta: Oh,<span class="error_style"><em>it was too good</em></span>.I danced all night.</p>
             </div>
-            <div class="cont_answer">
-            <div class="correct_ques">
+           </div>
+        <div class="cont_answer">
             <p><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p>
+            <div class="answers">
+             <input type="radio" id="t1" class="rads" name="too" value="corr_very"><label for="t1">it was very good!</label><br>
+             <input type="radio" id="t2" class="rads" name="too" value="err_ok"><label for="t2">This answer is correct</label><br>
+             <input type="radio" id="t3" class="rads" name="too" value="err_two"><label for="t3">it was two good!</label>
             </div>
-            <input type="radio" id="t1" class="rads" name="too" value="corr_very"><label for="t1">a)it was very good!</label><br>
-            <input type="radio" id="t2" class="rads" name="too" value="err_noth"><label for="t2"> c) it was very too good!</label><br>
-            <input type="radio" id="t3" class="rads" name="too" value="err_two"><label for="t3"> d) it was two good!</label>
+        </div>
             <button id="next_2" class="next">Next</button>
             <button id="back_2" class="back">Back</button>
+      </div>
 
-        </div>
-       </div>
-
-          <div id="3" class="questions" style="display: none;">
-
+        <div id="3" class="questions" style="display: none;">
           <div class="cont_dial">
-
             <p class="situation">Situation 3 out of 30</p>
-
             <div class="dialos">
-          <p>John: Do you like your teacher?</p>
-          <p>Pedro: Yes, I love her.<span class="error_style"><em>She has much patience</em></span> with me.</p>
-            </div>
+            <p>John: Do you like your teacher?</p>
+            <p>Pedro: Yes, I love her.<span class="error_style"><em>She has much patience</em></span> with me.</p>
+           </div>
           </div>
           <div class="cont_answer">
-
-          <p><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p>
-
-          <div class="answers">
-          <input type="radio" id="m1" class="rads" name="much" value="err_much"><label for="m1"> She has a lot patience</label><br>
-          <input type="radio" id="m2" class="rads" name="much" value="err_ok"><label for="m2"> This answer is correct</label><br>
-          <input type="radio" id="m3" class="rads" name="much" value="corr_lot"><label for="m3"> She has a lot of patience</label><br>
+           <p><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p>
+           <div class="answers">
+            <input type="radio" id="m1" class="rads" name="much" value="err_much"><label for="m1"> She has a lot patience</label><br>
+            <input type="radio" id="m2" class="rads" name="much" value="err_ok"><label for="m2"> This answer is correct</label><br>
+            <input type="radio" id="m3" class="rads" name="much" value="corr_lot"><label for="m3"> She has a lot of patience</label><br>
+           </div>
           </div>
-
-        </div>
           <button id="next_3" class="next">next</button>
           <button id="back_3" class="back">back</button>
-       <!-- <span class="count" style="font-weight: 600px">3 out of 30</span>-->
-        </div>
+       </div>
 
-        <!-- <div id="4" class="questions" style="display: none;">
-          <span class="count">4 out of 30</span>
+       <div id="4" class="questions" style="display: none;">
           <div class="cont_dial">
-           <div class="situ">
-          <p class="situation">Situation 4</p>
-            </div>
+            <p class="situation">Situation 4 out of 30</p>
             <div class="dialos">
-          <p>Marta: I'm hungry</p>
-          <p>Paulo:<span style="background-color: #FFFF00">Has some pizza</span>in the fridge</p>
-          <p>Marta: Okay, thanks!</p>
-            </div>
+            <p>Livia: Do you want to watch a movie?</p>
+            <p>Alex: Sure,<span class="error_style"><em>have a good comedy on Netflix</em></span> called "David Brent"</p>
+           </div>
           </div>
           <div class="cont_answer">
-          <p class="choose"><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p>
-
-          <input type="radio" id="th1" class="rads" name="much" value="err_much"><label for="th1"> a)Have some</label><br>
-          <input type="radio" id="th2" class="rads" name="much" value="err_it"><label for="th2"> b)There is some</label><br>
-          <input type="radio" id="th3" class="rads" name="much" value="corr_lot"><label for="th3">c)There are some</label><br>
-          <button id="next_4" class="next">next</button>
-          <button id="back_4" class="back">back</button>
-        </div>
-        </div>
-
-        <div id="5" class="questions" style="display: none;">
-          <span class="count">5 out of 30</span>
-          <div class="cont_dial">
-           <div class="situ">
-          <p class="situation">Situation 5</p>
-            </div>
-            <div class="dialos">
-          <p>Marta: I'm hungry</p>
-          <p>Paulo:<span style="background-color: #FFFF00">Has some pizza</span>in the fridge</p>
-          <p>Marta: Okay, thanks!</p>
-            </div>
+           <p><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p>
+           <div class="answers">
+           <input type="radio" id="ex1" class="rads" name="exist" value="err_ok"><label for="ex1">This answer is correct</label><br>
+          <input type="radio" id="ex2" class="rads" name="exist" value="corr_exist"><label for="ex2"> b)there is</label><br>
+          <input type="radio" id="ex3" class="rads" name="exist" value="err_plural"><label for="ex3">c)there are</label><br>
+           </div>
           </div>
-          <div class="cont_answer">
-          <p class="choose"><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p>
-
-          <input type="radio" id="th1" class="rads" name="much" value="err_much"><label for="th1"> a)Have some</label><br>
-          <input type="radio" id="th2" class="rads" name="much" value="err_it"><label for="th2"> b)There is some</label><br>
-          <input type="radio" id="th3" class="rads" name="much" value="corr_lot"><label for="th3">c)There are some</label><br>
           <button id="next_4" class="next">next</button>
           <button id="back_4" class="back">back</button>
-        </div>
-        </div> -->
+       </div>
+
 
         <div id="div_instr">
           <p id="instr" name="instructions">Instructions</p>
@@ -397,24 +383,32 @@ require_once('./dbconn.php');
       <div style="text-align:center">
         <h2>Shoot us an e-mail directly at</h2>
         <h3><a href="mailto:hello@brazilianbloopers.com">hello@brazilianbloopers.com</a></h3>
-        <h3 style="color: black">or</h3>
+        <h4>or</h4>
       </div>
       <div class="row">
         <div class="column">
           <form id="contact" method="post" action="actions.php">
-            <label for="name">Name*<span id="span_name"></span></label>
+            <label for="name" class="contact_lbl">Name*<span id="span_name"></span></label>
             <input type="text" id="bor_name" name="name" placeholder="Your name.." font-family="cursive">
-            <label for="email">E-mail*<span id="span_email"></span></label>
+            <label for="email" class="contact_lbl">E-mail*<span id="span_email"></span></label>
             <input type="text" id="bor_email" name="email" placeholder="Your e-mail..">
-            <label for="subject">Subject</label>
+            <label for="subject" class="contact_lbl">Subject</label>
             <input type="text" id="bor_subject" name="subject" placeholder="e.g.,suggestion for a blooper, comment, etc...">
-            <label for="message">Message*<span id="span_message"></span></label>
+            <label for="message" class="contact_lbl">Message*<span id="span_message"></span></label>
             <textarea id="bor_message" name="message" placeholder="Write your message here!" style="height:170px"></textarea>
             <button id="submit_contact" class="hvr-grow" type="submit" name="submitcontact">Submit</button>
           </form>
         </div>
       </div>
     </div>
+       <!-- My Footer -->
+	<div class="footer">
+      <p> Author - Kamil Tkacz</p>
+  <!-- Copyright -->
+  <div class="copyright">
+   <p> &copy; 2020 BrazilianBloopers.com </p>
+  </div>
+ </div>
   </div>
 
 
