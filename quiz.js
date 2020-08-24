@@ -56,7 +56,7 @@ $('#next_1').on("click", function(){
     });
     $(".span_choose").text(" * ");
 
-  } else if ($("input[name='too']:checked").val() == "corr_so") {
+  } else if ($("input[name='too']:checked").val() == "corr_very") {
     score ++;
     console.log(score);
     $('#' + classNum).hide();
@@ -71,15 +71,54 @@ $('#next_1').on("click", function(){
     }
    });
 
-  $('#next_3').on("click", function(){
+
+
+
+
+   $('#next_3').on("click", function(){
     if (!$("input[name='much']:checked").val()) {
+
+    $('.bor_choose').css({
+      "border-bottom": "5px solid red",
+      "padding": "12px"
+    });
+    $(".span_choose").text(" * ");
+
+  } else if ($("input[name='much']:checked").val() == "corr_lot") {
+    score ++;
+    console.log(score);
+    $('#' + classNum).hide();
+    $('#' + numNext).show();
+    $('#inner_2').scrollTop(0);
+  } else {
+
+   console.log(score);
+   $('#' + classNum).hide();
+   $('#' + numNext).show();
+   $('#inner_2').scrollTop(0);
+    }
+   });
+
+
+
+
+
+
+
+
+
+
+
+
+  $('#next_4').on("click", function(){
+    if (!$("input[name='exist']:checked").val()) {
       $('.bor_choose').css({
         "border-bottom": "5px solid red",
         "padding": "12px"
       });
       $(".span_choose").text(" * ");
 
-    } else if ($("input[name='much']:checked").val() == "corr_lot") {
+    } else if ($("input[name='exist']:checked").val() == "corr_exist") {
       score ++;
       console.log(score);
 
@@ -87,7 +126,7 @@ $('#next_1').on("click", function(){
 
       $('#sub_quiz').show();
       $('#inst_h3').html("Thanks for doing the test!<br>More questions coming soon");
-      $("#instr, #3").hide();
+      $("#instr, #4").hide();
     }
     hideLast();
 
@@ -97,7 +136,7 @@ $('#next_1').on("click", function(){
 
       $('#sub_quiz').show();
       $('#inst_h3').html("Thanks for doing the test!<br>More questions coming soon");
-      $("#instr, #3").hide();
+      $("#instr, #4").hide();
       $("#inner_2").css({"overflow-y": "hidden"});
 
 
@@ -145,7 +184,7 @@ $('#next_1').on("click", function(){
           }); //ajax 2//
         }); //submit on.click function 2//
 
-   }); // #next_3 button
+   }); // #next_4 button
 
    $('.back').click(function() {
     classNumRow = $(this).attr('id');
@@ -170,7 +209,14 @@ $('#next_1').on("click", function(){
    });
 
    $('#back_3').on("click", function(){
-    if ($("input[name='too']:checked").val() == "corr_it") {
+    if ($("input[name='too']:checked").val() == "corr_very") {
+      score --;
+    }
+  console.log(score);
+
+   });
+   $('#back_4').on("click", function(){
+    if ($("input[name='too']:checked").val() == "corr_lot") {
       score --;
     }
   console.log(score);
@@ -199,11 +245,11 @@ function backTabs(classNum) {
 /* Mousemove function for the instructions*/
 
 $(function() {
-let moveLeft = 20;
-let moveDown = 5;
+let moveLeft = 10;
+let moveUp = 75;
 
 $('#instr').hover(function(e) {
-  $(this).css("background", "midnightblue");
+  $(this).css("background", "#1b417b");
   $('#inst_hov').show('slow');
 
 }, function() {
@@ -212,7 +258,7 @@ $('#instr').hover(function(e) {
 });
 
 $('#instr').mousemove(function(e) {
-  $('#inst_hov').css('top', e.pageY + moveDown).css('left', e.pageX + moveLeft);
+  $('#inst_hov').css('top', e.pageY - moveUp).css('left', e.pageX + moveLeft);
 });
 
 });
@@ -220,13 +266,19 @@ $('#instr').mousemove(function(e) {
 /*Hover function for '.next and .back' buttons*/
 $(document).ready(function(){
   $(".next").hover(function(){
-    $(this).css({"background": "midnightblue"});
+    $(this).css({"background": "#1b417b"});
     }, function(){
     $(this).css({"background": ""});
   });
   $(".back").hover(function(){
-    $(this).css({"background": "midnightblue"});
+    $(this).css({"background": "#1b417b"});
     }, function(){
     $(this).css({"background": ""});
   });
+  $(".hvr-grow").hover(function(){
+    $(this).css({"background": "#1b417b"});
+    }, function(){
+    $(this).css({"background": ""});
+  });
+
 });
