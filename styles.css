@@ -23,13 +23,6 @@ a {
 .active {
   font-size: 23px;
 }
-/* p link*/
-
-/* .choose {
-  text-align: center;
-  font-weight: 600;
-  padding: 12px;
-} */
 
 h4 {
   font-weight: normal;
@@ -61,18 +54,18 @@ h3 {
   border: 0;
   cursor: pointer;
   color: white;
-  font-size: 2rem;
+  /*font-size: 2rem;*/
   background: rgba(0, 0, 0, 0.1);
   border-bottom: 3px solid rgba(0, 0, 0, 0.2);
   border-right: 1px solid rgba(0, 0, 0, 0.2);
-  padding: 1rem;
+  padding: 15px;
   font-family: "Inconsolata", monospace;
   text-transform: inherit;
 }
 .tabs :hover {
-  background-color: #158be6;
+  background-color: #1b417b;
   outline: 0;
-  /*text-transform: uppercase;*/
+
 }
 
 /* Style the tab content (and add height:100% for full page content) */
@@ -209,6 +202,9 @@ label,
 .check:hover {
   cursor: pointer;
 }
+.contact_lbl:hover{
+  cursor: auto;
+}
 /* age select range*/
 #age {
   width: 70%;
@@ -234,7 +230,7 @@ label,
 
 .bor_choose {
    background: radial-gradient(black, transparent);
-   cursor: default;
+   cursor: auto;
    padding: 12px;
    border-radius: 10px;
    text-align: center;
@@ -271,6 +267,9 @@ em {
   margin-right: 10px;
   text-align: center;
   position: relative;
+  text-transform: uppercase;
+  border-bottom: 3px solid rgba(0, 0, 0, 0.2);
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 #start_quiz {
@@ -288,10 +287,13 @@ em {
   margin-right: 10px;
   text-align: center;
   position: relative;
+  text-transform: uppercase;
+  border-bottom: 3px solid rgba(0, 0, 0, 0.2);
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 /* Grow */
- .hvr-grow, .next, .back/* #next_1, #next_2 #next_3, #back_2, #back_3 */{
+ .hvr-grow, .next, .back {
   display: inline-block;
   vertical-align: middle;
   transform: translateZ(0);
@@ -311,12 +313,10 @@ em {
 .back:hover,
 .back:focus,
 .back:active
- /* #next_3, #back_2, #back_3
-#next_1, #next_2, #next_3, #back_2, #back_3,
-#next_1, #next_2, #next_3, #back_2, #back_3*/ {
+ {
 
   transform: scale(1.1);
-  text-transform: uppercase;
+  background-color: #1b417b;
 }
 
 p#instr {
@@ -329,8 +329,9 @@ p#instr {
   border-radius: 5px;
   cursor: help;
   position: fixed;
-  /* margin-top: 3px;*/
   margin-right: 30px;
+  border-bottom: 3px solid rgba(0, 0, 0, 0.2);
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
 }
 .next {
   background: #8e24aa;
@@ -346,6 +347,8 @@ p#instr {
   margin-top: 16px;
   position: fixed;
   text-transform: uppercase;
+  border-bottom: 3px solid rgba(0, 0, 0, 0.2);
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 
@@ -364,6 +367,8 @@ p#instr {
   position: fixed;
   right: 120px;
   text-transform: uppercase;
+  border-bottom: 3px solid rgba(0, 0, 0, 0.2);
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 
@@ -383,6 +388,8 @@ p#instr {
   right: 12px;
   position: inherit;
   text-transform: uppercase;
+  border-bottom: 3px solid rgba(0, 0, 0, 0.2);
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 #sub_quiz {
@@ -399,6 +406,9 @@ p#instr {
   margin-right: 10px;
   text-align: center;
   position: relative;
+  text-transform: uppercase;
+  border-bottom: 3px solid rgba(0, 0, 0, 0.2);
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 /* Submit Contact button */
@@ -412,6 +422,9 @@ p#instr {
   padding: 5px;
   border-radius: 8px;
   cursor: pointer;
+  text-transform: uppercase;
+  border-bottom: 3px solid rgba(0, 0, 0, 0.2);
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 /* END BUTTONS*/
@@ -472,7 +485,7 @@ p#instr {
   background: linear-gradient(45deg, #415e76 0%, #478ed1 50%, #061a3a 100%);
   padding: 12px;
   text-align: left;
-  margin-top: 25px;
+  margin-top: 15px;
   color: whitesmoke;
 }
 .cont_answer {
@@ -500,12 +513,12 @@ p#instr {
   display: none;
   position: absolute;
   width: 280px;
-  padding: 10px;
+  padding: 8px;
   background: #eeeeee;
   color: #0867b0;
   border-radius: 20mm;
   border: 1px solid #1a1a1a;
-  font-size: 90%;
+  font-size: 70%;
 }
 
 /* CONTACT FORM Style inputs with type="text", select elements and textareas */
@@ -527,15 +540,24 @@ textarea {
 #field_about {
   border-radius: 15px 50px 30px 15px;
 }
+#foot_about {
+
+  width: 50%;
+  margin-top: 300px;
+  margin-left: 230px;
+}
 
 @media (max-width: 375px) {
   .tablink {
-    font-size: 15px;
     overflow: hidden;
     white-space: nowrap;
   }
+
   .active {
     font-size: 18px;
+  }
+  #active_quiz {
+    margin-left: -9px;
   }
   .situation {
     display: inline;
@@ -553,4 +575,16 @@ textarea {
   .cont_dial {
     padding-top: 40px;
   }
+  .dialos {
+    margin-top: 40px;
+  }
+  #foot_about {
+    width: 50%;
+    margin-top: 300px;
+    margin-left: 50px;
+    font-size: 15px;
+ }
+ .footer {
+   font-size: 15px;
+ }
 }
