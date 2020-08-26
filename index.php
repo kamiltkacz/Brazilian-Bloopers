@@ -102,14 +102,14 @@ require_once('./dbconn.php');
       </div>
     </div>
     <!-- My Footer -->
-	<div class="footer">
+    <div class="footer">
       <p> Author - Kamil Tkacz</p>
-  <!-- Copyright -->
-  <div class="copyright">
-   <p> &copy; 2020 BrazilianBloopers.com </p>
+      <!-- Copyright -->
+      <div class="copyright">
+        <p> &copy; 2020 BrazilianBloopers.com </p>
+      </div>
+    </div>
   </div>
- </div>
-</div>
 
 
   <div id="About" class="tabcontent">
@@ -119,7 +119,7 @@ require_once('./dbconn.php');
       </div>
 
       <div class="container">
-       <!-- <p>Here's what we look like</p>-->
+        <!-- <p>Here's what we look like</p>-->
         <label for="states">Who's the best wizard?</label>
         <input type="text" id="wizards" name="wizards" list="wizards-list">
         <datalist id="wizards-list">
@@ -134,14 +134,14 @@ require_once('./dbconn.php');
 
 
     </div>
-       <!-- My Footer -->
-	<div id="foot_about" class="footer">
+    <!-- My Footer -->
+    <div id="foot_about" class="footer">
       <p> Author - Kamil Tkacz</p>
-  <!-- Copyright -->
-  <div class="copyright">
-   <p> &copy; 2020 BrazilianBloopers.com </p>
-  </div>
- </div>
+      <!-- Copyright -->
+      <div class="copyright">
+        <p> &copy; 2020 BrazilianBloopers.com </p>
+      </div>
+    </div>
 
   </div>
 
@@ -161,8 +161,8 @@ require_once('./dbconn.php');
 
         <ol>
           <li id="survPar">
-           <p>Fill out our spectacularly short<br>
-             <button id="start_survey" class="hvr-grow" data-popup-open="popup-1" href="#">Survey</button>
+            <p>Fill out our spectacularly short<br>
+              <button id="start_survey" class="hvr-grow" data-popup-open="popup-1" href="#">Survey</button>
               <br><br>and click submit. After you finish it a "Start" button will show.
             </p>
           </li>
@@ -178,13 +178,13 @@ require_once('./dbconn.php');
     </div>
 
 
-<!--SURVEY-->
+    <!--SURVEY-->
     <div class="popup" data-popup="popup-1">
       <div class="popup-inner">
-      <a class="popup-close" data-popup-close="popup-1" href="#">x</a>
-      <div id="please_fill">
-        <h3>Please fill out these 7 questions</h3>
-       </div>
+        <a class="popup-close" data-popup-close="popup-1" href="#">x</a>
+        <div id="please_fill">
+          <h3>Please fill out these 7 questions</h3>
+        </div>
         <form id="survey" method="post" action="actions.php">
 
 
@@ -255,20 +255,20 @@ require_once('./dbconn.php');
 
             </div>
             <div>
-            <button id="submit_survey" class="hvr-grow" type="submit" name="submitsurvey">Submit</button>
+              <button id="submit_survey" class="hvr-grow" type="submit" name="submitsurvey">Submit</button>
             </div>
           </div>
         </form>
       </div>
     </div>
-       <!-- My Footer -->
-	<div class="footer">
+    <!-- My Footer -->
+    <div class="footer">
       <p> Author - Kamil Tkacz</p>
-  <!-- Copyright -->
-  <div class="copyright">
-   <p> &copy; 2020 BrazilianBloopers.com </p>
-  </div>
- </div>
+      <!-- Copyright -->
+      <div class="copyright">
+        <p> &copy; 2020 BrazilianBloopers.com </p>
+      </div>
+    </div>
   </div>
 
   <!--QUIZ-->
@@ -277,96 +277,624 @@ require_once('./dbconn.php');
     <div class="popup-inner" id="inner_2">
 
       <form id="quiz_form" method="post" action="actions.php">
-      <a class="popup-close" data-popup-close="popup-2" href="#">x</a>
+        <a class="popup-close" data-popup-close="popup-2" href="#">x</a>
         <h3 id="inst_h3">Read the dialogue and check the correct answer</h3>
 
         <div id="1" class="questions">
-         <div class="cont_dial">
-           <p class="situation">Situation 1 out of 30</p>
-          <div class="dialos">
-           <p>Tiago: How is the weather today?</p>
-           <p>Luisa:<span class="error_style"><em>Is hot!</em></span></p>
+          <div class="cont_dial">
+            <p class="situation">Situation 1 out of 30</p>
+            <div class="dialos">
+              <p>Tiago: How is the weather today?</p>
+              <p>Luisa:<span class="error_style"><em>Is hot!</em></span></p>
+            </div>
           </div>
-         </div>
           <div class="cont_answer">
-          <p><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p>
-          <div class="answers">
-          <input type="radio" id="i1" class="rads" name="sub_it" value="err_ok"><label for="i1">This answer is correct!</label><br>
-          <input type="radio" id="i2" class="rads" name="sub_it" value="corr_it"><label for="i2">It is hot!</label><br>
-          <input type="radio" id="i3" class="rads" name="sub_it" value="err_is"><label for="i3">Is it hot!</label><br>
-           </div>
+            <p><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p>
+            <div class="answers">
+              <input type="radio" id="i1" class="rads" name="sub_it" value="err_ok"><label for="i1">This answer is correct!</label><br>
+              <input type="radio" id="i2" class="rads" name="sub_it" value="corr"><label for="i2">It is hot!</label><br>
+              <input type="radio" id="i3" class="rads" name="sub_it" value="err_is"><label for="i3">Is it hot!</label><br>
+            </div>
           </div>
           <button id="next_1" class="next">Next</button>
         </div>
 
 
-      <div id="2" class="questions" style="display: none;">
-        <div class="cont_dial">
+        <div id="2" class="questions" style="display: none;">
+          <div class="cont_dial">
             <p class="situation">Situation 2 out of 30</p>
             <div class="dialos">
-            <p>Milene: How was the party?</p>
-            <p>Marta: Oh,<span class="error_style"><em>it was too good</em></span>.I danced all night.</p>
+              <p>Milene: How was the party?</p>
+              <p>Marta: Oh,<span class="error_style"><em>it was too good</em></span>.I danced all night.</p>
             </div>
-           </div>
-        <div class="cont_answer">
+          </div>
+          <div class="cont_answer">
             <p><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p>
             <div class="answers">
-             <input type="radio" id="t1" class="rads" name="too" value="corr_very"><label for="t1">it was very good!</label><br>
-             <input type="radio" id="t2" class="rads" name="too" value="err_ok"><label for="t2">This answer is correct</label><br>
-             <input type="radio" id="t3" class="rads" name="too" value="err_two"><label for="t3">it was two good!</label>
+              <input type="radio" id="t1" class="rads" name="too" value="corr"><label for="t1">it was very good!</label><br>
+              <input type="radio" id="t2" class="rads" name="too" value="err_ok"><label for="t2">This answer is correct</label><br>
+              <input type="radio" id="t3" class="rads" name="too" value="err_two"><label for="t3">it was two good!</label>
             </div>
+          </div>
+          <button id="next_2" class="next">Next</button>
+          <button id="back_2" class="back">Back</button>
         </div>
-            <button id="next_2" class="next">Next</button>
-            <button id="back_2" class="back">Back</button>
-      </div>
 
         <div id="3" class="questions" style="display: none;">
           <div class="cont_dial">
             <p class="situation">Situation 3 out of 30</p>
             <div class="dialos">
-            <p>John: Do you like your teacher?</p>
-            <p>Pedro: Yes, I love her.<span class="error_style"><em>She has much patience</em></span> with me.</p>
-           </div>
+              <p>John: Do you like your teacher?</p>
+              <p>Pedro: Yes, I love her.<span class="error_style"><em>She has much patience</em></span> with me.</p>
+            </div>
           </div>
           <div class="cont_answer">
-           <p><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p>
-           <div class="answers">
-            <input type="radio" id="m1" class="rads" name="much" value="err_much"><label for="m1"> She has a lot patience</label><br>
-            <input type="radio" id="m2" class="rads" name="much" value="err_ok"><label for="m2"> This answer is correct</label><br>
-            <input type="radio" id="m3" class="rads" name="much" value="corr_lot"><label for="m3"> She has a lot of patience</label><br>
-           </div>
+            <p><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p>
+            <div class="answers">
+              <input type="radio" id="m1" class="rads" name="much" value="err_much"><label for="m1"> She has a lot patience</label><br>
+              <input type="radio" id="m2" class="rads" name="much" value="err_ok"><label for="m2"> This answer is correct</label><br>
+              <input type="radio" id="m3" class="rads" name="much" value="corr"><label for="m3"> She has a lot of patience</label><br>
+            </div>
           </div>
           <button id="next_3" class="next">next</button>
           <button id="back_3" class="back">back</button>
-       </div>
+        </div>
 
-       <div id="4" class="questions" style="display: none;">
+        <div id="4" class="questions" style="display: none;">
           <div class="cont_dial">
             <p class="situation">Situation 4 out of 30</p>
             <div class="dialos">
-            <p>Livia: Do you want to watch a movie?</p>
-            <p>Alex: Sure,<span class="error_style"><em>have a good comedy on Netflix</em></span> called "David Brent"</p>
-           </div>
+              <p>Livia: Do you want to see a movie?</p>
+              <p>Alex: Sure,<span class="error_style"><em>have a good comedy on Netflix</em></span> called "David Brent"</p>
+            </div>
           </div>
           <div class="cont_answer">
-           <p><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p>
-           <div class="answers">
-           <input type="radio" id="ex1" class="rads" name="exist" value="err_ok"><label for="ex1">This answer is correct</label><br>
-          <input type="radio" id="ex2" class="rads" name="exist" value="corr_exist"><label for="ex2"> b)there is</label><br>
-          <input type="radio" id="ex3" class="rads" name="exist" value="err_plural"><label for="ex3">c)there are</label><br>
-           </div>
+            <p><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p>
+            <div class="answers">
+              <input type="radio" id="ex1" class="rads" name="exist" value="err_ok"><label for="ex1">this answer is correct</label><br>
+              <input type="radio" id="ex2" class="rads" name="exist" value="corr_exist"><label for="ex2">there is</label><br>
+              <input type="radio" id="ex3" class="rads" name="exist" value="err_plural"><label for="ex3">there are</label><br>
+            </div>
           </div>
           <button id="next_4" class="next">next</button>
           <button id="back_4" class="back">back</button>
-       </div>
+        </div>
+
+        <div id="5" class="questions" style="display: none;">
+          <div class="cont_dial">
+            <p class="situation">Situation 5 out of 30</p>
+            <div class="dialos">
+              <p>Livia: What's your mother's profession?</p>
+              <p>Alex: My mother,<span class="error_style"><em>she is a dentist</em></span></p>
+            </div>
+          </div>
+          <div class="cont_answer">
+            <p><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p>
+            <div class="answers">
+              <input type="radio" id="tw1" class="rads" name="two_sub" value="err_noverb"><label for="tw1">my mother dentist</label><br>
+              <input type="radio" id="tw2" class="rads" name="two_sub" value="corr"><label for="tw2">my mother is a dentist</label><br>
+              <input type="radio" id="tw3" class="rads" name="two_sub" value="err_ok"><label for="tw3">This answer is correct</label><br>
+            </div>
+          </div>
+          <button id="next_5" class="next">next</button>
+          <button id="back_5" class="back">back</button>
+        </div>
+
+        <div id="6" class="questions" style="display: none;">
+          <div class="cont_dial">
+            <p class="situation">Situation 6 out of 30</p>
+            <div class="dialos">
+              <p>Livia: Did you like the movie?</p>
+              <p>Alex: Yes,<span class="error_style"><em>I liked.</em></span></p>
+            </div>
+          </div>
+          <div class="cont_answer">
+            <p><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p>
+            <div class="answers">
+              <input type="radio" id="ob1" class="rads" name="no_obj" value="corr"><label for="ob1">i liked it</label><br>
+              <input type="radio" id="ob2" class="rads" name="no_obj" value="err_ok"><label for="ob2">this answer is correct</label><br>
+              <input type="radio" id="ob3" class="rads" name="no_obj" value="err_its"><label for="ob3">i liked its</label><br>
+            </div>
+          </div>
+          <button id="next_6" class="next">next</button>
+          <button id="back_6" class="back">back</button>
+        </div>
+
+        <div id="7" class="questions" style="display: none;">
+          <div class="cont_dial">
+            <p class="situation">Situation 7 out of 30</p>
+            <div class="dialos">
+              <p>Livia: This cake is delicious</p>
+              <p>Alex: Great! Would you like<span class="error_style"><em> other slice?</em></span></p>
+            </div>
+          </div>
+          <div class="cont_answer">
+            <p><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p>
+            <div class="answers">
+              <input type="radio" id="ob1" class="rads" name="no_obj" value="corr"><label for="ob1">this answer is correct</label><br>
+              <input type="radio" id="ob2" class="rads" name="no_obj" value="err_ok"><label for="ob2">another slice?</label><br>
+              <input type="radio" id="ob3" class="rads" name="no_obj" value="err_its"><label for="ob3">others slice?</label><br>
+            </div>
+          </div>
+          <button id="next_7" class="next">next</button>
+          <button id="back_7" class="back">back</button>
+        </div>
+
+        <div id="8" class="questions" style="display: none;">
+          <div class="cont_dial">
+            <p class="situation">Situation 8 out of 30</p>
+            <div class="dialos">
+              <p>Livia: I really enjoy working from home</p>
+              <p>Marcia: Why?
+                <p>Alex:<span class="error_style"><em>I don't have to use a suit.</em></span></p>
+            </div>
+          </div>
+          <div class="cont_answer">
+            <p><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p>
+            <div class="answers">
+              <input type="radio" id="use1" class="rads" name="use" value="corr"><label for="use1">I don't have to wear a suit</label><br>
+              <input type="radio" id="use2" class="rads" name="use" value="err_ing"><label for="use2">I dont have to wearing a suit</label><br>
+              <input type="radio" id="use3" class="rads" name="use" value="err_ok"><label for="use3">this answer is correct</label><br>
+            </div>
+          </div>
+          <button id="next_8" class="next">next</button>
+          <button id="back_8" class="back">back</button>
+        </div>
+
+        <div id="9" class="questions" style="display: none;">
+          <div class="cont_dial">
+            <p class="situation">Situation 9 out of 30</p>
+            <div class="dialos">
+              <p>Livia: I'd like to travel to Italy</p>
+              <p>Me too<span class="error_style"><em>I have many parents there.</em></span></p>
+            </div>
+          </div>
+          <div class="cont_answer">
+            <p><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p>
+            <div class="answers">
+              <input type="radio" id="par1" class="rads" name="parent" value="corr"><label for="par1">I have many family there</label><br>
+              <input type="radio" id="par2" class="rads" name="parent" value="err_ing"><label for="par2">this answer is correct</label><br>
+              <input type="radio" id="par3" class="rads" name="parent" value="err_ok"><label for="par3">I have many relatives there</label><br>
+            </div>
+          </div>
+          <button id="next_9" class="next">next</button>
+          <button id="back_9" class="back">back</button>
+        </div>
+
+        <div id="10" class="questions" style="display: none;">
+          <div class="cont_dial">
+            <p class="situation">Situation 10 out of 30</p>
+            <div class="dialos">
+              <p>Livia: Who is that? He's smiling at you. Do you know him?</p>
+              <p>Yes, it's Paulo from my gym.<span class="error_style"><em>I knew him last week.</em></span></p>
+            </div>
+          </div>
+          <div class="cont_answer">
+            <p><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p>
+            <div class="answers">
+              <input type="radio" id="met1" class="rads" name="know" value="err_ok"><label for="met1">this answer is correct</label><br>
+              <input type="radio" id="met2" class="rads" name="know" value="corr"><label for="met2">I met him last week</label><br>
+              <input type="radio" id="met3" class="rads" name="know" value="err_pres"><label for="met3">I meet him last week</label><br>
+            </div>
+          </div>
+          <button id="next_10" class="next">next</button>
+          <button id="back_10" class="back">back</button>
+        </div>
+
+        <div id="11" class="questions" style="display: none;">
+          <div class="cont_dial">
+            <p class="situation">Situation 11 out of 30</p>
+            <div class="dialos">
+              <p>Livia: What time is it? I have to go to the airport?</p>
+              <p>It's 15.30.Hurry up or<span class="error_style"><em> you will lose your flight.</em></span></p>
+            </div>
+          </div>
+          <div class="cont_answer">
+            <p><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p>
+            <div class="answers">
+              <input type="radio" id="los1" class="rads" name="lose" value="err_lost"><label for="los1">you will lost your flight</label><br>
+              <input type="radio" id="los2" class="rads" name="lose" value="corr"><label for="los2">you will miss your flight</label><br>
+              <input type="radio" id="los3" class="rads" name="lose" value="err_ok"><label for="los3">this answer is correct</label><br>
+            </div>
+          </div>
+          <button id="next_11" class="next">next</button>
+          <button id="back_11" class="back">back</button>
+        </div>
+
+        <div id="12" class="questions" style="display: none;">
+          <div class="cont_dial">
+            <p class="situation">Situation 12 out of 30</p>
+            <div class="dialos">
+              <p>Livia: Why are you sad?</p>
+              <p>John:<span class="error_style"><em>I discussed with Marta about politics.</em></span> we got very nervous.</p>
+            </div>
+          </div>
+          <div class="cont_answer">
+            <p><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p>
+            <div class="answers">
+              <input type="radio" id="diss1" class="rads" name="diss" value="err_lost"><label for="diss1">this answer is correct</label><br>
+              <input type="radio" id="diss2" class="rads" name="diss" value="corr"><label for="diss2">I was discussing with Marta</label><br>
+              <input type="radio" id="diss3" class="rads" name="diss" value="err_ok"><label for="diss3">I argued with marta</label><br>
+            </div>
+          </div>
+          <button id="next_12" class="next">next</button>
+          <button id="back_12" class="back">back</button>
+        </div>
+
+        <div id="13" class="questions" style="display: none;">
+          <div class="cont_dial">
+            <p class="situation">Situation 13 out of 30</p>
+            <div class="dialos">
+              <p>Student:<span class="error_style"><em>I have a doubt</em></span> about homework. Can you help me?</p>
+              <p>Teacher: Sure</p>
+            </div>
+          </div>
+          <div class="cont_answer">
+            <p><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p>
+            <div class="answers">
+              <input type="radio" id="doub1" class="rads" name="doubt" value="err_lost"><label for="doub1">I get a question</label><br>
+              <input type="radio" id="doub2" class="rads" name="doubt" value="corr"><label for="doub2">this question is correct</label><br>
+              <input type="radio" id="doub3" class="rads" name="doubt" value="err_ok"><label for="doub3">I have a question</label><br>
+            </div>
+          </div>
+          <button id="next_13" class="next">next</button>
+          <button id="back_13" class="back">back</button>
+        </div>
+
+        <div id="14" class="questions" style="display: none;">
+          <div class="cont_dial">
+            <p class="situation">Situation 14 out of 30</p>
+            <div class="dialos">
+              <p>Joe: I don't follow the news in Mexico</p>
+              <p>Murilo: Me neither<span class="error_style"><em>I don't know the actual president's name.</em></span></p>
+            </div>
+          </div>
+          <div class="cont_answer">
+            <p><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p>
+            <div class="answers">
+              <input type="radio" id="act1" class="rads" name="actual" value="err_ok"><label for="act1">this answer is correct</label><br>
+              <input type="radio" id="act2" class="rads" name="actual" value="corr"><label for="act2"></label>the current president's name<br>
+              <input type="radio" id="act3" class="rads" name="actual" value="err_ok"><label for="act3">the actually president's name</label><br>
+            </div>
+          </div>
+          <button id="next_14" class="next">next</button>
+          <button id="back_14" class="back">back</button>
+        </div>
+
+        <div id="15" class="questions" style="display: none;">
+          <div class="cont_dial">
+            <p class="situation">Situation 15 out of 30</p>
+            <div class="dialos">
+              <p>Joe: Martin had an accident this morning</p>
+              <p> Really?</p>
+              <p>Murilo: Yeah<span class="error_style"><em>thanks god nothing happened to him</em></span></p>
+            </div>
+          </div>
+          <div class="cont_answer">
+            <p><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p>
+            <div class="answers">
+              <input type="radio" id="god1" class="rads" name="god" value="corr"><label for="act1">thank god nothing happened</label><br>
+              <input type="radio" id="god2" class="rads" name="god" value="err_nogod"><label for="act2">thanks, nothing happened</label><br>
+              <input type="radio" id="god3" class="rads" name="god" value="err_ok"><label for="act3">this answer is correct</label><br>
+            </div>
+          </div>
+          <button id="next_15" class="next">next</button>
+          <button id="back_15" class="back">back</button>
+        </div>
+
+        <div id="16" class="questions" style="display: none;">
+          <div class="cont_dial">
+            <p class="situation">Situation 16 out of 30</p>
+            <div class="dialos">
+              <p>Joe: Do you like pizza?</p>
+              <p>Murilo: Oh, Yeah<span class="error_style"><em>it's my preferred food</em></span></p>
+            </div>
+          </div>
+          <div class="cont_answer">
+            <p><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p>
+            <div class="answers">
+              <input type="radio" id="pref1" class="rads" name="pref" value="err_verb"><label for="pref1">it's my prefer food</label><br>
+              <input type="radio" id="pref2" class="rads" name="pref" value="err_ok"><label for="pref2">this answer is corect</label><br>
+              <input type="radio" id="pref3" class="rads" name="pref" value="corr"><label for="pref3">it's my favorite food</label><br>
+            </div>
+          </div>
+          <button id="next_16" class="next">next</button>
+          <button id="back_16" class="back">back</button>
+        </div>
+
+        <div id="17" class="questions" style="display: none;">
+          <div class="cont_dial">
+            <p class="situation">Situation 17 out of 30</p>
+            <div class="dialos">
+              <p>Ana: Did your friend like Rio?</p>
+              <p>Miguel:She loved it but<span class="error_style"><em>she was impressed with </em></span>violence in favelas</p>
+            </div>
+          </div>
+          <div class="cont_answer">
+            <p><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p>
+            <div class="answers">
+              <input type="radio" id="imp1" class="rads" name="impress" value="err_noverb"><label for="imp1">she was impressing </label><br>
+              <input type="radio" id="imp2" class="rads" name="impress" value="err_ok"><label for="imp2">this answer is correct</label><br>
+              <input type="radio" id="imp3" class="rads" name="impress" value="corr"><label for="imp3">she was shocked</label><br>
+            </div>
+          </div>
+          <button id="next_17" class="next">next</button>
+          <button id="back_17" class="back">back</button>
+        </div>
+
+        <div id="18" class="questions" style="display: none;">
+          <div class="cont_dial">
+            <p class="situation">Situation 18 out of 30</p>
+            <div class="dialos">
+              <p>Murilo: <span class="error_style"><em>Hey Guy,</em></span> how are you?</p>
+              <p>Joe: I'm okay, thanks</p>
+            </div>
+          </div>
+          <div class="cont_answer">
+            <p><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p>
+            <div class="answers">
+              <input type="radio" id="guy1" class="rads" name="guy" value="err_ok"><label for="guy1">this question is correct</label><br>
+              <input type="radio" id="guy2" class="rads" name="guy" value="corr"><label for="guy2">hey man, how are you?</label><br>
+              <input type="radio" id="guy3" class="rads" name="guy" value="err_male"><label for="guy3">hey male, how are you</label><br>
+            </div>
+          </div>
+          <button id="next_18" class="next">next</button>
+          <button id="back_18" class="back">back</button>
+        </div>
+
+        <div id="19" class="questions" style="display: none;">
+          <div class="cont_dial">
+            <p class="situation">Situation 19 out of 30</p>
+            <div class="dialos">
+              <p>Joe: Are you free at 18?</p>
+              <p>Murilo: No,<span class="error_style"><em>I go out from work</em></span> at 19</p>
+            </div>
+          </div>
+          <div class="cont_answer">
+            <p><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p>
+            <div class="answers">
+              <input type="radio" id="go1" class="rads" name="gout" value="corr"><label for="go1">I leave work </label><br>
+              <input type="radio" id="go2" class="rads" name="gout" value="er_off"><label for="go2">I go off work</label><br>
+              <input type="radio" id="go3" class="rads" name="gout" value="err_ok"><label for="go3">this answer is correct</label><br>
+            </div>
+          </div>
+          <button id="next_19" class="next">next</button>
+          <button id="back_19" class="back">back</button>
+        </div>
+
+        <div id="20" class="questions" style="display: none;">
+          <div class="cont_dial">
+            <p class="situation">Situation 20 out of 30</p>
+            <div class="dialos">
+              <p>Joe: I don't smoke cigartettes. What about you?</p>
+              <p>Murilo: I do,<span class="error_style"><em>it's my bad custom</em></span></p>
+            </div>
+          </div>
+          <div class="cont_answer">
+            <p><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p>
+            <div class="answers">
+              <input type="radio" id="cus1" class="rads" name="custom" value="err_syn"><label for="go1">it's my bad costume</label><br>
+              <input type="radio" id="cus2" class="rads" name="custom" value="corr"><label for="go2">it's my bad habit</label><br>
+              <input type="radio" id="cus3" class="rads" name="custom" value="err_ok"><label for="go3">this answer is correct</label><br>
+            </div>
+          </div>
+          <button id="next_20" class="next">next</button>
+          <button id="back_20" class="back">back</button>
+        </div>
+
+        <div id="21" class="questions" style="display: none;">
+          <div class="cont_dial">
+            <p class="situation">Situation 21 out of 30</p>
+            <div class="dialos">
+              <p>Joe: Hi Mariana, how are you?</p>
+              <p>Murilo: I'm tired,<span class="error_style"><em>I studied during 3 hours</em></span></p>
+            </div>
+          </div>
+          <div class="cont_answer">
+            <p><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p>
+            <div class="answers">
+              <input type="radio" id="stu1" class="rads" name="custom" value="err_ok"><label for="stu1">this answer is correct</label><br>
+              <input type="radio" id="stu2" class="rads" name="custom" value="corr"><label for="stu2">i studied for 3 hours</label><br>
+              <input type="radio" id="stu3" class="rads" name="custom" value="err_at"><label for="stu3">i studied at 3 hours</label><br>
+            </div>
+          </div>
+          <button id="next_21" class="next">next</button>
+          <button id="back_21" class="back">back</button>
+        </div>
+
+        <div id="22" class="questions" style="display: none;">
+          <div class="cont_dial">
+            <p class="situation">Situation 22 out of 30</p>
+            <div class="dialos">
+              <p>Jackie: How was training today?</p>
+              <p>stan: Good but<span class="error_style"><em>I stayed tired</em></span>quickly.</p>
+            </div>
+          </div>
+          <div class="cont_answer">
+            <p><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p>
+            <div class="answers">
+              <input type="radio" id="cla1" class="rads" name="custom" value="err_ok"><label for="cla1">this answer is correct</label><br>
+              <input type="radio" id="cla2" class="rads" name="custom" value="err_voc"><label for="cla2">I became tired</label><br>
+              <input type="radio" id="cla3" class="rads" name="custom" value="corr"><label for="cla3">I got tired</label><br>
+            </div>
+          </div>
+          <button id="next_22" class="next">next</button>
+          <button id="back_22" class="back">back</button>
+        </div>
+
+        <div id="23" class="questions" style="display: none;">
+          <div class="cont_dial">
+            <p class="situation">Situation 23 out of 30</p>
+            <div class="dialos">
+              <p>Jackie: How do you feel?</p>
+              <p>stan: Not so good<span class="error_style"><em>I'm with a headache </em></span></p>
+            </div>
+          </div>
+          <div class="cont_answer">
+            <p><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p>
+            <div class="answers">
+              <input type="radio" id="cla1" class="rads" name="custom" value="err_noverb"><label for="cla1">I'm a headache</label><br>
+              <input type="radio" id="cla2" class="rads" name="custom" value="err_ok"><label for="cla2">this answer is correct</label><br>
+              <input type="radio" id="cla3" class="rads" name="custom" value="corr"><label for="cla3">I have a headache</label><br>
+            </div>
+          </div>
+          <button id="next_23" class="next">next</button>
+          <button id="back_23" class="back">back</button>
+        </div>
+
+        <div id="24" class="questions" style="display: none;">
+          <div class="cont_dial">
+            <p class="situation">Situation 24 out of 30</p>
+            <div class="dialos">
+              <p>Jackie: Have you finished "Friends"?</p>
+              <p>stan: Almost, I just watched<span class="error_style"><em>chapter 4 of the last season</em></span></p>
+            </div>
+          </div>
+          <div class="cont_answer">
+            <p><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p>
+            <div class="answers">
+              <input type="radio" id="cha1" class="rads" name="chap" value="err_voc"><label for="cha1">capital 4 of the last season</label><br>
+              <input type="radio" id="cha2" class="rads" name="chap" value="corr"><label for="cha2">episode 4 of the last season</label><br>
+              <input type="radio" id="cha3" class="rads" name="chap" value="err_ok"><label for="cha3">this answer is correct</label><br>
+            </div>
+          </div>
+          <button id="next_24" class="next">next</button>
+          <button id="back_24" class="back">back</button>
+        </div>
+
+        <div id="25" class="questions" style="display: none;">
+          <div class="cont_dial">
+            <p class="situation">Situation 25 out of 30</p>
+            <div class="dialos">
+              <p>Jackie: What's wrong?</p>
+              <p>stan: I'm worried about my son. he's been getting<span class="error_style"><em> bad notes on his school exams</em></span></p>
+            </div>
+          </div>
+          <div class="cont_answer">
+            <p><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p>
+            <div class="answers">
+              <input type="radio" id="not1" class="rads" name="notes" value="err_ok"><label for="not1">this answer is correct</label><br>
+              <input type="radio" id="not2" class="rads" name="notes" value="corr"><label for="not2">bad grades on his school exams</label><br>
+              <input type="radio" id="not3" class="rads" name="notes" value="err_voc"><label for="not3">bad points on his school exmas</label><br>
+            </div>
+          </div>
+          <button id="next_25" class="next">next</button>
+          <button id="back_25" class="back">back</button>
+        </div>
+
+        <div id="26" class="questions" style="display: none;">
+          <div class="cont_dial">
+            <p class="situation">Situation 26 out of 30</p>
+            <div class="dialos">
+              <p>Jackie: Who is your favorite singer?</p>
+              <p>stan: Rhianna<span class="error_style"><em>I love all of her musics</em></span></p>
+            </div>
+          </div>
+          <div class="cont_answer">
+            <p><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p>
+            <div class="answers">
+              <input type="radio" id="mus1" class="rads" name="musics" value="err_noverb"><label for="mus1">I love all of her sounds</label><br>
+              <input type="radio" id="mus2" class="rads" name="musics" value="err_ok"><label for="mus2">this answer is correct</label><br>
+              <input type="radio" id="mus3" class="rads" name="musics" value="corr"><label for="mus3">I love all of her songs</label><br>
+            </div>
+          </div>
+          <button id="next_26" class="next">next</button>
+          <button id="back_26" class="back">back</button>
+        </div>
+
+        <div id="27" class="questions" style="display: none;">
+          <div class="cont_dial">
+            <p class="situation">Situation 27 out of 30</p>
+            <div class="dialos">
+              <p>Woman: What time do you usually get up?</p>
+              <p>Store Attendant:I get up<span class="error_style"><em>at 6 all days</em></span></p>
+            </div>
+          </div>
+          <div class="cont_answer">
+            <p><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p>
+            <div class="answers">
+              <input type="radio" id="ev1" class="rads" name="every" value="corr"><label for="ev1">every day</label><br>
+              <input type="radio" id="ev2" class="rads" name="every" value="err_ok"><label for="ev2">this answer is correct</label><br>
+              <input type="radio" id="ev3" class="rads" name="every" value="err_all"><label for="ev3">all day</label><br>
+            </div>
+          </div>
+          <button id="next_27" class="next">next</button>
+          <button id="back_27" class="back">back</button>
+        </div>
+
+        <div id="28" class="questions" style="display: none;">
+          <div class="cont_dial">
+            <p class="situation">Situation 28 out of 30</p>
+            <div class="dialos">
+              <p>Child: What do you think of your English teacher?</p>
+              <p>Grandson:I think<span class="error_style"><em>he is very symphatetic</em></span></p>
+            </div>
+          </div>
+          <div class="cont_answer">
+            <p><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p>
+            <div class="answers">
+              <input type="radio" id="sym1" class="rads" name="sym" value="err_noverb"><label for="sym1">he is very symphatic</label><br>
+              <input type="radio" id="sym2" class="rads" name="sym" value="err_ok"><label for="sym2">he is very nice</label><br>
+              <input type="radio" id="sym3" class="rads" name="sym" value="corr"><label for="sym3">this answer is correct</label><br>
+            </div>
+          </div>
+          <button id="next_28" class="next">next</button>
+          <button id="back_28" class="back">back</button>
+        </div>
+        <div id="29" class="questions" style="display: none;">
+          <div class="cont_dial">
+            <p class="situation">Situation 29 out of 30</p>
+            <div class="dialos">
+              <p>Ana: What makes you upset?</p>
+              <p>Miguel:I'm very organized so<span class="error_style"><em>I can't support </em></span>messy people</p>
+            </div>
+          </div>
+          <div class="cont_answer">
+            <p><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p>
+            <div class="answers">
+              <input type="radio" id="sup1" class="rads" name="suport" value="err_noverb"><label for="sup1">I can't stand</label><br>
+              <input type="radio" id="sup2" class="rads" name="suport" value="err_ok"><label for="sup2">this answer is correct</label><br>
+              <input type="radio" id="sup3" class="rads" name="suport" value="corr"><label for="sup3">I can't stand up</label><br>
+            </div>
+          </div>
+          <button id="next_29" class="next">next</button>
+          <button id="back_29" class="back">back</button>
+        </div>
+
+        <div id="30" class="questions" style="display: none;">
+          <div class="cont_dial">
+            <p class="situation">Situation 30 out of 30</p>
+            <div class="dialos">
+              <p>Joe: What is special about Brazil?</p>
+              <p>Murilo:<span class="error_style"><em>it's the unique country in south america that speaks portuguese.</em></span></p>
+            </div>
+          </div>
+          <div class="cont_answer">
+            <p><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p>
+            <div class="answers">
+              <input type="radio" id="unq1" class="rads" name="uniq" value="corr"><label for="unq1">it's the only country</label><br>
+              <input type="radio" id="unq2" class="rads" name="uniq" value="err_ok"><label for="unq2">this answer is correct</label><br>
+              <input type="radio" id="unq3" class="rads" name="uniq" value="err_adverb"><label for="unq3">it's the uniquely country</label><br>
+            </div>
+          </div>
+          <button id="next_30" class="next">next</button>
+          <button id="back_30" class="back">back</button>
+        </div>
+
+
+
+
+
+
 
 
         <div id="div_instr">
           <p id="instr" name="instructions">Instructions</p>
-        <button id="sub_quiz" type="submit">Submit</button>
+          <button id="sub_quiz" type="submit">Submit</button>
         </div>
-     </form>
-    </div> <!--popup-inner-->
+      </form>
+    </div>
+    <!--popup-inner-->
   </div> <!-- popup2-->
 
   <!--mouseover instructions in CSS: Display None -->
@@ -401,19 +929,18 @@ require_once('./dbconn.php');
         </div>
       </div>
     </div>
-       <!-- My Footer -->
-	<div class="footer">
+    <!-- My Footer -->
+    <div class="footer">
       <p> Author - Kamil Tkacz</p>
-  <!-- Copyright -->
-  <div class="copyright">
-   <p> &copy; 2020 BrazilianBloopers.com </p>
-  </div>
- </div>
+      <!-- Copyright -->
+      <div class="copyright">
+        <p> &copy; 2020 BrazilianBloopers.com </p>
+      </div>
+    </div>
   </div>
 
 
   <script>
-
     function openPage(pageName, elmnt, color) {
       var i, tabcontent, tablinks;
 
@@ -430,7 +957,7 @@ require_once('./dbconn.php');
       elmnt.style.backgroundColor = color;
     }
     // Get the element with id="defaultOpen" and click on it
-   document.getElementById("defaultOpen").click();
+    document.getElementById("defaultOpen").click();
 
 
     // $("#active_home").val($("#active_home").val().toUpperCase());
@@ -455,18 +982,18 @@ require_once('./dbconn.php');
       });
     });
 
-   function fakeFunction() {
+    function fakeFunction() {
       alert('The voting is coming soon');
     }
-
   </script>
 
- <!-- JS Survey -->
+  <!-- JS Survey -->
   <script src="survey.js"></script>
- <!-- JS Quiz -->
-   <script src="quiz.js"></script>
- <!--JS Contactform -->
-   <script src="contact_form.js"></script>
+  <!-- JS Quiz -->
+  <script src="quiz.js"></script>
+  <!--JS Contactform -->
+  <script src="contact_form.js"></script>
 
- </body>
+</body>
+
 </html>
