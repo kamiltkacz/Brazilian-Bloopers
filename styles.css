@@ -32,7 +32,7 @@ h4 {
 h3 {
   color: whitesmoke;
 }
-#inst_h3 {
+/* #inst_h3 {
   color: whitesmoke;
   background: #8e24aa;
   background: linear-gradient(45deg, #415e76 0%, #478ed1 50%, #061a3a 100%);
@@ -40,7 +40,7 @@ h3 {
   padding: 20px;
   font-family: "Inconsolata", monospace;
   font-weight: normal;
-}
+} */
 
 /* Style tab links */
 .tablink {
