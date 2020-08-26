@@ -31,7 +31,7 @@ $('#next_1').on("click", function(){
   $(".span_choose").text(" * ");
 
 
-  } else if ($("input[name='sub_it']:checked").val() == "corr_it") {
+  } else if ($("input[name='sub_it']:checked").val() == "corr") {
 
     score ++;
     console.log(score);
@@ -56,7 +56,7 @@ $('#next_1').on("click", function(){
     });
     $(".span_choose").text(" * ");
 
-  } else if ($("input[name='too']:checked").val() == "corr_very") {
+  } else if ($("input[name='too']:checked").val() == "corr") {
     score ++;
     console.log(score);
     $('#' + classNum).hide();
@@ -84,7 +84,54 @@ $('#next_1').on("click", function(){
     });
     $(".span_choose").text(" * ");
 
-  } else if ($("input[name='much']:checked").val() == "corr_lot") {
+  } else if ($("input[name='much']:checked").val() == "corr") {
+    score ++;
+    console.log(score);
+    $('#' + classNum).hide();
+    $('#' + numNext).show();
+    $('#inner_2').scrollTop(0);
+  } else {
+
+   console.log(score);
+   $('#' + classNum).hide();
+   $('#' + numNext).show();
+   $('#inner_2').scrollTop(0);
+    }
+   });
+
+   $('#next_4').on("click", function(){
+    if (!$("input[name='exist']:checked").val()) {
+
+    $('.bor_choose').css({
+      "border-bottom": "5px solid red",
+      "padding": "12px"
+    });
+    $(".span_choose").text(" * ");
+
+  } else if ($("input[name='exist']:checked").val() == "corr") {
+    score ++;
+    console.log(score);
+    $('#' + classNum).hide();
+    $('#' + numNext).show();
+    $('#inner_2').scrollTop(0);
+  } else {
+
+   console.log(score);
+   $('#' + classNum).hide();
+   $('#' + numNext).show();
+   $('#inner_2').scrollTop(0);
+    }
+   });
+   $('#next_5').on("click", function(){
+    if (!$("input[name='two_sub']:checked").val()) {
+
+    $('.bor_choose').css({
+      "border-bottom": "5px solid red",
+      "padding": "12px"
+    });
+    $(".span_choose").text(" * ");
+
+  } else if ($("input[name='two_sub']:checked").val() == "corr") {
     score ++;
     console.log(score);
     $('#' + classNum).hide();
@@ -110,15 +157,16 @@ $('#next_1').on("click", function(){
 
 
 
-  $('#next_4').on("click", function(){
-    if (!$("input[name='exist']:checked").val()) {
+
+  $('#next_30').on("click", function(){
+    if (!$("input[name='last']:checked").val()) {
       $('.bor_choose').css({
         "border-bottom": "5px solid red",
         "padding": "12px"
       });
       $(".span_choose").text(" * ");
 
-    } else if ($("input[name='exist']:checked").val() == "corr_exist") {
+    } else if ($("input[name='last']:checked").val() == "corr") {
       score ++;
       console.log(score);
 
@@ -184,7 +232,7 @@ $('#next_1').on("click", function(){
           }); //ajax 2//
         }); //submit on.click function 2//
 
-   }); // #next_4 button
+   }); // #next_30 button
 
    $('.back').click(function() {
     classNumRow = $(this).attr('id');
@@ -222,6 +270,14 @@ $('#next_1').on("click", function(){
   console.log(score);
 
    });
+
+
+
+
+
+
+
+
 
 
 
