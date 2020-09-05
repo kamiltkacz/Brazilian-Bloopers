@@ -115,7 +115,7 @@ require_once('./dbconn.php');
   <div id="About" class="tabcontent">
     <div class="grid-two">
       <div class="container">
-        <p>We are a group of English teachers based in Brasilia, Brazil who are determined to sharpen your skills. We've compiled this quiz based on years of experience. One day, fascinated by various "Brazilianisms" that students kept throwing at our ears we decided that this phenomenon deserves its own website. Thus project Brazilian Bloopers came to life.</p>
+        <p>We are a group of English teachers based in Brasilia, Brazil, who are determined to sharpen your skills. We've compiled this quiz based on years of experience. One day, fascinated by various "Brazilianisms" students kept throwing at our ears, we decided this phenomenon deserves its own website. Thus, the project Brazilian Bloopers came to life.</p>
       </div>
 
       <div class="container">
@@ -277,11 +277,12 @@ require_once('./dbconn.php');
     <div class="popup-inner" id="inner_2">
 
       <form id="quiz_form" method="post" action="actions.php">
-        <a class="popup-close" data-popup-close="popup-2" href="#">x</a>
+
         <!-- <h3 id="inst_h3">Read the dialogue and check the correct answer</h3> -->
 
         <div id="1" class="questions">
           <div class="cont_dial">
+          <a class="popup-close" data-popup-close="popup-2" href="#">x</a>
             <p class="situation">Situation 1 out of 30</p>
             <div class="dialos">
               <p>Milene: How is the weather today?</p>
@@ -463,8 +464,8 @@ require_once('./dbconn.php');
           <div class="cont_dial">
             <p class="situation">Situation 10 out of 30</p>
             <div class="dialos">
-              <p>Marcia: Who is that? He's smiling at you. Do you know him?</p>
-              <p>Livia: Yes, it's Paulo from my gym.<span class="error_style"><em><br>I knew him last week.</em></span></p>
+              <p>Marcia: Who did you talk to? I don't know him</p>
+              <p>Livia: It's Paulo.<span class="error_style"><em><br>I knew him last week.</em></span>at the gym</p>
             </div>
           </div>
           <div class="cont_answer">
@@ -552,7 +553,7 @@ require_once('./dbconn.php');
             <div class="answers">
               <input type="radio" id="act1" class="rads" name="actual" value="err_ok"><label for="act1">this answer is correct</label><br>
               <input type="radio" id="act2" class="rads" name="actual" value="corr"><label for="act2"></label>the current president's name<br>
-              <input type="radio" id="act3" class="rads" name="actual" value="err_ok"><label for="act3">the actually president's name</label><br>
+              <input type="radio" id="act3" class="rads" name="actual" value="err_adv"><label for="act3">the actually president's name</label><br>
             </div>
           </div>
           <button id="next_14" class="next">next</button>
@@ -571,8 +572,8 @@ require_once('./dbconn.php');
           <div class="cont_answer">
             <p><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p>
             <div class="answers">
-              <input type="radio" id="god1" class="rads" name="god" value="corr"><label for="god1">thank god nothing happened</label><br>
-              <input type="radio" id="god2" class="rads" name="god" value="err_nogod"><label for="god2">thanks, nothing happened</label><br>
+              <input type="radio" id="god1" class="rads" name="god" value="corr"><label for="god1">thank god he's allright</label><br>
+              <input type="radio" id="god2" class="rads" name="god" value="err_nogod"><label for="god2">thanks, he allright</label><br>
               <input type="radio" id="god3" class="rads" name="god" value="err_ok"><label for="god3">this answer is correct</label><br>
             </div>
           </div>
@@ -674,7 +675,7 @@ require_once('./dbconn.php');
             <p><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p>
             <div class="answers">
               <input type="radio" id="use1" class="rads" name="use" value="corr"><label for="use1">I don't have to wear a suit</label><br>
-              <input type="radio" id="use2" class="rads" name="use" value="err_ing"><label for="use2">I dont have to wearing a suit</label><br>
+              <input type="radio" id="use2" class="rads" name="use" value="err_ing"><label for="use2">I dont have to put a suit</label><br>
               <input type="radio" id="use3" class="rads" name="use" value="err_ok"><label for="use3">this answer is correct</label><br>
             </div>
           </div>
@@ -788,7 +789,7 @@ require_once('./dbconn.php');
           <div class="cont_dial">
             <p class="situation">Situation 26 out of 30</p>
             <div class="dialos">
-              <p>Robyn: Who is your nr.1 singer?</p>
+              <p>Robyn: Who is your favorite singer?</p>
               <p>Julio: Rihanna,&nbsp;<span class="error_style"><em>I love all of her musics.</em></span></p>
             </div>
           </div>
@@ -809,7 +810,7 @@ require_once('./dbconn.php');
             <p class="situation">Situation 27 out of 30</p>
             <div class="dialos">
               <p>Rudolfo: What time do you usually get up?</p>
-              <p>Fernanda:I get up&nbsp;<span class="error_style"><em>at 6 all days.</em></span></p>
+              <p>Fernanda:I get up&nbsp;<span class="error_style"><em>at 6 all day.</em></span></p>
             </div>
           </div>
           <div class="cont_answer">
@@ -847,8 +848,8 @@ require_once('./dbconn.php');
           <div class="cont_dial">
             <p class="situation">Situation 29 out of 30</p>
             <div class="dialos">
-              <p>Ana: What makes you upset?</p>
-              <p>Julia:I'm very organized so&nbsp;<span class="error_style"><em>I can't support </em></span>messy people.</p>
+              <p>Ana: What kind of people don't you like?</p>
+              <p>Julia:<span class="error_style"><em>I can't support </em></span>messy people.</p>
             </div>
           </div>
           <div class="cont_answer">
