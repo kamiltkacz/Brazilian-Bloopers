@@ -10,7 +10,7 @@ html {
   font-size: 20px;
   font-weight: 500px;
   color: whitesmoke;
-  text-transform: uppercase;
+
 }
 
 /* All 'a' links */
@@ -96,6 +96,7 @@ ol {
   position: relative;
   overflow: hidden;
   padding-top: 46.25%;
+
 }
 
 .iframe-resp {
@@ -120,7 +121,7 @@ ol {
 
 /* Inner */
 .popup-inner {
-  max-width: 380px;
+  max-width: 580px;
   max-height: 400px;
   width: 90%;
   padding: 40px;
@@ -263,8 +264,8 @@ em {
   padding: 5px;
   border-radius: 8px;
   cursor: pointer;
-  top: 15px;
-  margin-right: 10px;
+  /* top: 15px;
+  margin-right: 10px; */
   text-align: center;
   position: relative;
   text-transform: uppercase;
@@ -273,7 +274,7 @@ em {
 }
 
 #start_quiz {
-  display: none;
+  /*display: none;*/
   top: -2px;
   background: #8e24aa;
   background: linear-gradient(45deg, #42a5f5 0%, #478ed1 50%, #0d47a1 100%);
@@ -346,7 +347,7 @@ p#instr {
   right: 60px;
   margin-top: 16px;
   position: fixed;
-  text-transform: uppercase;
+
   border-bottom: 3px solid rgba(0, 0, 0, 0.2);
   border-right: 1px solid rgba(0, 0, 0, 0.2);
 }
@@ -366,7 +367,7 @@ p#instr {
   margin-top: 16px;
   position: fixed;
   right: 120px;
-  text-transform: uppercase;
+
   border-bottom: 3px solid rgba(0, 0, 0, 0.2);
   border-right: 1px solid rgba(0, 0, 0, 0.2);
 }
@@ -387,7 +388,7 @@ p#instr {
   width: 80px;
   right: 12px;
   position: inherit;
-  text-transform: uppercase;
+
   border-bottom: 3px solid rgba(0, 0, 0, 0.2);
   border-right: 1px solid rgba(0, 0, 0, 0.2);
 }
@@ -406,7 +407,7 @@ p#instr {
   margin-right: 10px;
   text-align: center;
   position: relative;
-  text-transform: uppercase;
+
   border-bottom: 3px solid rgba(0, 0, 0, 0.2);
   border-right: 1px solid rgba(0, 0, 0, 0.2);
 }
@@ -422,7 +423,7 @@ p#instr {
   padding: 5px;
   border-radius: 8px;
   cursor: pointer;
-  text-transform: uppercase;
+
   border-bottom: 3px solid rgba(0, 0, 0, 0.2);
   border-right: 1px solid rgba(0, 0, 0, 0.2);
 }
@@ -436,7 +437,7 @@ p#instr {
   background: #8e24aa;
   background: linear-gradient(45deg, #42a5f5 0%, #478ed1 50%, #0d47a1 100%);
   padding: 20px;
-  text-align: left;
+  text-align: center;
   margin-top: 30px;
 }
 .cont_surv {
@@ -444,7 +445,7 @@ p#instr {
   background: linear-gradient(45deg, #415e76 0%, #478ed1 50%, #061a3a 100%);
   border-radius: 30px;
   padding: 14px;
-  text-align: left;
+  text-align: center;
   margin-top: 20px;
 }
 
@@ -537,16 +538,20 @@ textarea {
   resize: vertical;
 }
 
-#field_about {
+.field_about {
   border-radius: 15px 50px 30px 15px;
 }
-#foot_about {
+#foot_quiz {
 
   width: 50%;
-  margin-top: 300px;
+  margin-top: 500px;
   margin-left: 230px;
   text-align: center;
 }
+.footer {
+font-size: smaller;
+}
+
 
 @media (max-width: 375px) {
   .tablink {
