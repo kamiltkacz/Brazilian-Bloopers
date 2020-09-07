@@ -7,6 +7,8 @@
       }
     }
 
+    $("#start_quiz").prop('disabled',true);
+
 
     // Reset border color & text in span element for question1 validation
     $("input[type='radio'][name='gender']").click(function() {
@@ -88,7 +90,7 @@
 
     $("#submit_survey").on("click", function() {
 
-      $("#start_quiz").show("slow");
+      $("#start_quiz").prop('disabled',false);
 
       var formData = $("#survey :input").serializeArray();
       formData[formData.length] = {
@@ -202,7 +204,7 @@
             });
 
             $(".popup").slideUp();
-            $("#survPar").hide();
+            //$("#survPar").hide();
             $('#leg_steps').text('Follow these 2 simple steps');
 
           }
