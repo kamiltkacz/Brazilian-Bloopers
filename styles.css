@@ -4,8 +4,8 @@ body,
 html {
   height: 100%;
   margin: 0;
-  background: #8e24aa;
-  background: linear-gradient(45deg, #42a5f5 0%, #478ed1 50%, #0d47a1 100%);
+  background: black;
+  background: linear-gradient(45deg, #131415 0%, #20272d 50%, #3b8d3b 100%);
   font-family: "Inconsolata", monospace;
   font-size: 20px;
   font-weight: 500px;
@@ -56,14 +56,14 @@ h3 {
   color: white;
   /*font-size: 2rem;*/
   background: rgba(0, 0, 0, 0.1);
-  border-bottom: 3px solid rgba(0, 0, 0, 0.2);
-  border-right: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 3px solid #eee;
+    border-right: 1px solid #eee;
   padding: 15px;
   font-family: "Inconsolata", monospace;
   text-transform: inherit;
 }
 .tabs :hover {
-  background-color: #1b417b;
+  background-color: #0b2b0f;
   outline: 0;
 
 }
@@ -132,15 +132,15 @@ ol {
   transform: translate(-50%, -50%);
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 1);
   border-radius: 20px;
-  background: #8e24aa;
-  background: linear-gradient(45deg, #42a5f5 0%, #478ed1 50%, #0d47a1 100%);
+  background: black;
+  background: linear-gradient(45deg, #131415 0%, #20272d 50%, #3b8d3b 100%);
 
   text-align: center;
   overflow-x: hidden;
-  overflow-y: scroll;
+  /*overflow-y: scroll;*/
 }
 #inner_2 {
-  max-width: 500px;
+ /* max-width: 500px;*/
   max-height: 400px;
   width: 90%;
   padding: 60px;
@@ -151,12 +151,12 @@ ol {
   transform: translate(-50%, -50%);
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 1);
   border-radius: 20px;
-  background: #8e24aa;
-  background: linear-gradient(45deg, #42a5f5 0%, #478ed1 50%, #0d47a1 100%);
+  background: black;
+  background: linear-gradient(45deg, #131415 0%, #20272d 50%, #3b8d3b 100%);
 
   text-align: center;
-  overflow-x: hidden;
-  overflow-y: scroll;
+  /* overflow-x: hidden;
+  overflow-y: scroll; */
 }
 
 /* Pop up Close Button */
@@ -256,8 +256,8 @@ em {
 /*BUTTONS*/
 
 #start_survey {
-  background: #8e24aa;
-  background: linear-gradient(45deg, #42a5f5 0%, #478ed1 50%, #0d47a1 100%);
+  background: black;
+  background: linear-gradient(45deg, #131415 0%, #20272d 50%, #3b8d3b 100%);
   color: whitesmoke;
   font-family: inherit;
   font-size: 19px;
@@ -276,8 +276,8 @@ em {
 #start_quiz {
   /*display: none;*/
   top: -2px;
-  background: #8e24aa;
-  background: linear-gradient(45deg, #42a5f5 0%, #478ed1 50%, #0d47a1 100%);
+  background: black;
+  background: linear-gradient(45deg, #131415 0%, #20272d 50%, #3b8d3b 100%);
   color: whitesmoke;
   font-family: inherit;
   font-size: 19px;
@@ -321,8 +321,8 @@ em {
 }
 
 p#instr {
-  background: #8e24aa;
-  background: linear-gradient(45deg, #4083b8 0%, #478ed1 50%, #0d47a1 100%);
+  background: black;
+  background: linear-gradient(45deg, #131415 0%, #20272d 50%, #3b8d3b 100%);
   color: whitesmoke;
   font-family: inherit;
   font-size: 17px;
@@ -335,8 +335,8 @@ p#instr {
   border-right: 1px solid rgba(0, 0, 0, 0.2);
 }
 .next {
-  background: #8e24aa;
-  background: linear-gradient(45deg, #42a5f5 0%, #478ed1 50%, #0d47a1 100%);
+  background: black;
+  background: linear-gradient(45deg, #131415 0%, #20272d 50%, #3b8d3b 100%);
   color: whitesmoke;
   font-family: inherit;
   font-size: 18px;
@@ -355,8 +355,8 @@ p#instr {
 
 
 .back {
-  background: #8e24aa;
-  background: linear-gradient(45deg, #42a5f5 0%, #478ed1 50%, #0d47a1 100%);
+  background: black;
+  background: linear-gradient(45deg, #131415 0%, #20272d 50%, #3b8d3b 100%);
   color: whitesmoke;
   font-family: inherit;
   font-size: 18px;
@@ -434,15 +434,15 @@ p#instr {
 
 .container {
   border-radius: 20px;
-  background: #8e24aa;
-  background: linear-gradient(45deg, #42a5f5 0%, #478ed1 50%, #0d47a1 100%);
+  background: black;
+  background: linear-gradient(45deg, #131415 0%, #20272d 50%, #3b8d3b 100%);
   padding: 20px;
   text-align: center;
   margin-top: 30px;
 }
 .cont_surv {
-  background: #8e24aa;
-  background: linear-gradient(45deg, #415e76 0%, #478ed1 50%, #061a3a 100%);
+  background: black;
+  background: linear-gradient(45deg, #131415 0%, #20272d 50%, #3b8d3b 100%);
   border-radius: 30px;
   padding: 14px;
   text-align: center;
@@ -469,18 +469,19 @@ p#instr {
    text-shadow: 0 0 10px black;
    word-wrap: break-word;
    display: inline-flex;
+   margin-top: auto;
 }
 
-.cont_dial {
+/* .cont_dial {
   border-radius: 10px;
   background-color: #8e24aa;
   background: linear-gradient(45deg, #09182d 0%, #478ed1 50%, #c3cbd5 100%);
   padding: 20px;
   margin-top: 30px;
   color: whitesmoke;
-}
+} */
 
-.dialos {
+/* .dialos {
   border-radius: 10px;
   background: #8e24aa;
   background: linear-gradient(45deg, #415e76 0%, #478ed1 50%, #061a3a 100%);
@@ -488,23 +489,25 @@ p#instr {
   text-align: left;
   margin-top: 15px;
   color: whitesmoke;
-}
+} */
 .cont_answer {
-  border-radius: 10px;
+  margin-top: 40px;
+ /* border-radius: 10px;
   background: #8e24aa;
   background: linear-gradient(45deg, #09182d 0%, #478ed1 50%, #c3cbd5 100%);
   padding: 20px;
-  margin-top: 30px;
-  color: whitesmoke;
+
+  color: whitesmoke;*/
 }
-.answers {
-  border-radius: 10px;
+ .answers {
+   margin-top: 25px;
+  /*border-radius: 10px;
   background: #8e24aa;
   background: linear-gradient(45deg, #415e76 0%, #478ed1 50%, #061a3a 100%);
   padding: 25px;
   text-align: left;
-  margin-top: 45px;
-  color: whitesmoke;
+
+  color: whitesmoke;*/
 }
 
 
