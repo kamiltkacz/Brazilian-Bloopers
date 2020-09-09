@@ -7,7 +7,7 @@
       }
     }
 
-    $("#start_quiz").prop('disabled',true);
+    // $("#start_quiz").prop('disabled',true);
 
 
     // Reset border color & text in span element for question1 validation
@@ -90,7 +90,7 @@
 
     $("#submit_survey").on("click", function() {
 
-      $("#start_quiz").prop('disabled',false);
+      // $("#start_quiz").prop('disabled',false);
 
       var formData = $("#survey :input").serializeArray();
       formData[formData.length] = {
