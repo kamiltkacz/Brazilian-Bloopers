@@ -333,7 +333,7 @@ $('#next_1').on("click", function(){
     }
    });
    $('#next_14').on("click", function(){
-    if (!$("input[name='actual']:checked").val()) {
+    if (!$("input[name='car']:checked").val()) {
 
     $('.bor_choose').css({
       "border-bottom": "5px solid red",
@@ -341,7 +341,7 @@ $('#next_1').on("click", function(){
     });
     $(".span_choose").text(" * ");
 
-  } else if ($("input[name='actual']:checked").val() == "corr") {
+  } else if ($("input[name='car']:checked").val() == "corr") {
     score ++;
     console.log(score);
     $('#' + classNum).hide();
@@ -700,63 +700,26 @@ $('#next_1').on("click", function(){
    $('#inner_2').scrollTop(0);
     }
    });
+
+// LAST QUESTION //
    $('#next_30').on("click", function(){
+
     if (!$("input[name='uniq']:checked").val()) {
-
-    $('.bor_choose').css({
-      "border-bottom": "5px solid red",
-      "padding": "12px"
-    });
-    $(".span_choose").text(" * ");
-
-  } else if ($("input[name='uniq']:checked").val() == "corr") {
-    score ++;
-    console.log(score);
-    $('#' + classNum).hide();
-    $('#' + numNext).show();
-    $('#inner_2').scrollTop(0);
-  } else {
-
-   console.log(score);
-   $('#' + classNum).hide();
-   $('#' + numNext).show();
-   $('#inner_2').scrollTop(0);
-    }
-   });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   $('#next_30').on("click", function(){
-    if (!$("input[name='last']:checked").val()) {
       $('.bor_choose').css({
         "border-bottom": "5px solid red",
         "padding": "12px"
       });
       $(".span_choose").text(" * ");
 
-    } else if ($("input[name='last']:checked").val() == "corr") {
+    } else if ($("input[name='uniq']:checked").val() == "corr") {
       score ++;
       console.log(score);
 
   function hideLast() {
 
       $('#sub_quiz').show();
-      $('#inst_h3').html("Thanks for doing the test!<br>More questions coming soon");
-      $("#instr, #4").hide();
+      $('#inner_2').html("<h3>Thanks for doing the test! Explanations coming soon!</h3>");
+      $("#instr, #30").hide();
     }
     hideLast();
 
@@ -765,13 +728,11 @@ $('#next_1').on("click", function(){
       console.log(score);
 
       $('#sub_quiz').show();
-      $('#inst_h3').html("Thanks for doing the test!<br>More questions coming soon");
-      $("#instr, #4").hide();
-      $("#inner_2").css({"overflow-y": "hidden"});
+      $('#inner_2').html("<h3>Thanks for doing the test! Explanations coming soon</h3>");
+      $("#instr, #30").hide();
 
 
-
-        }
+    }
 
        $("#quiz_form").submit(function() {
           event.preventDefault();
@@ -857,7 +818,7 @@ let moveLeft = 10;
 let moveUp = 75;
 
 $('#instr').hover(function(e) {
-  $(this).css("background", "#1b417b");
+  $(this).css("background", "#55c50b");
   $('#inst_hov').show('slow');
 
 }, function() {
@@ -874,17 +835,17 @@ $('#instr').mousemove(function(e) {
 /*Hover function for '.next and .back' buttons*/
 $(document).ready(function(){
   $(".next").hover(function(){
-    $(this).css({"background": "#1b417b"});
+    $(this).css({"background": "#55c50b"});
     }, function(){
     $(this).css({"background": ""});
   });
   $(".back").hover(function(){
-    $(this).css({"background": "#1b417b"});
+    $(this).css({"background": "#55c50b"});
     }, function(){
     $(this).css({"background": ""});
   });
   $(".hvr-grow").hover(function(){
-    $(this).css({"background": "#1b417b"});
+    $(this).css({"background": "#55c50b"});
     }, function(){
     $(this).css({"background": ""});
   });
