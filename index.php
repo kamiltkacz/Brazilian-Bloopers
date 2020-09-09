@@ -246,7 +246,7 @@ require_once('./dbconn.php');
 
       <form id="quiz_form" method="post" action="actions.php">
 
-        <!-- <h3 id="inst_h3">Read the dialogue and check the correct answer</h3> -->
+
         <a class="popup-close" data-popup-close="popup-2" href="#">x</a>
         <div id="1" class="questions">
           <div class="cont_dial">
@@ -433,7 +433,7 @@ require_once('./dbconn.php');
             <p class="situation">Situation 10 out of 30</p>
             <div class="dialos">
               <p>Marcia: Who were you talking to?<br>I don't know him.</p>
-              <p>Livia: It's Paulo.<span class="error_style"><em><br>&nbsp;I knew him</em></span>last week at the gym.</p>
+              <p>Livia: His name's Paulo.<br>&nbsp;<span class="error_style"><em>I knew him</em></span>&nbsp;last week at the gym.</p>
             </div>
           </div>
           <div class="cont_answer">
@@ -492,7 +492,7 @@ require_once('./dbconn.php');
           <div class="cont_dial">
             <p class="situation">Situation 13 out of 30</p>
             <div class="dialos">
-              <p>Student:<span class="error_style"><em>I have a doubt</em></span> about homework. Can you help me?</p>
+              <p>Student:<span class="error_style"><em>I have a doubt</em></span> about homework.<br>Can you help me?</p>
               <p>Teacher: Sure.</p>
             </div>
           </div>
@@ -512,16 +512,16 @@ require_once('./dbconn.php');
           <div class="cont_dial">
             <p class="situation">Situation 14 out of 30</p>
             <div class="dialos">
-              <p>Mike: I don't follow the news in Mexico.</p>
-              <p>Gabriel: Me neither. I don't know<span class="error_style"><em>&nbsp;the actual</em></span> president's name.</p>
+              <p>Marilia: What things do you like?</p>
+              <p>Gabriel: I'm a typical guy.<span class="error_style"><em>&nbsp;I like car.</em></span></p>
             </div>
           </div>
           <div class="cont_answer">
             <p><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p>
             <div class="answers">
-              <input type="radio" id="act1" class="rads" name="actual" value="err_ok"><label for="act1">this answer is correct</label><br>
-              <input type="radio" id="act2" class="rads" name="actual" value="corr"><label for="act2">the current</label><br>
-              <input type="radio" id="act3" class="rads" name="actual" value="err_2"><label for="act3">the actually</label><br>
+              <input type="radio" id="act1" class="rads" name="car" value="err_ok"><label for="act1">this answer is correct</label><br>
+              <input type="radio" id="act2" class="rads" name="car" value="corr"><label for="act2">I like cars</label><br>
+              <input type="radio" id="act3" class="rads" name="car" value="err_2"><label for="act3">I like a car</label><br>
             </div>
           </div>
           <button id="next_14" class="next">next</button>
@@ -554,7 +554,7 @@ require_once('./dbconn.php');
             <p class="situation">Situation 16 out of 30</p>
             <div class="dialos">
               <p>Carla: Do you like pizza?</p>
-              <p>Joana: Oh, Yeah!<span class="error_style"><em>&nbsp;it's my preferred</em></span>food.</p>
+              <p>Joana: Oh, Yeah!<span class="error_style"><em>&nbsp;it's my preferred</em></span>&nbsp;food.</p>
             </div>
           </div>
           <div class="cont_answer">
@@ -573,7 +573,7 @@ require_once('./dbconn.php');
           <div class="cont_dial">
             <p class="situation">Situation 17 out of 30</p>
             <div class="dialos">
-              <p>Ana: Did your friend like Rio?</p>
+              <p>Ana: Did your friend enjoy Rio?</p>
               <p>Miguel:Yes, but&nbsp;<span class="error_style"><em>she was impressed with </em></span>violence in the favelas.</p>
             </div>
           </div>
@@ -615,7 +615,7 @@ require_once('./dbconn.php');
             <p class="situation">Situation 19 out of 30</p>
             <div class="dialos">
               <p>Dani: Are you free at 6?</p>
-              <p>Carlos: No,&nbsp;<span class="error_style"><em>I go out from</em></span>work at 7.</p>
+              <p>Carlos: No,&nbsp;<span class="error_style"><em>I go out from</em></span>&nbsp;work at 7.</p>
             </div>
           </div>
           <div class="cont_answer">
@@ -698,7 +698,7 @@ require_once('./dbconn.php');
             <p class="situation">Situation 23 out of 30</p>
             <div class="dialos">
               <p>Tony: How do you feel?</p>
-              <p>Rafael: Not well.&nbsp;<span class="error_style"><em>I'm with a headache.</em></span></p>
+              <p>Rafael: Not well.<span class="error_style"><em>I'm with a headache.</em></span></p>
             </div>
           </div>
           <div class="cont_answer">
@@ -717,8 +717,8 @@ require_once('./dbconn.php');
           <div class="cont_dial">
             <p class="situation">Situation 24 out of 30</p>
             <div class="dialos">
-              <p>Luiza: Have you finished watching "Friends"?</p>
-              <p>Breno: No yet, I've just seen &nbsp;<span class="error_style"><em>chapter 4.</em></span></p>
+              <p>Luiza: Have you finished the last season of "Friends"?</p>
+              <p>Breno: No yet, I've just seen<span class="error_style"><em>&nbsp;chapter 4.</em></span></p>
             </div>
           </div>
           <div class="cont_answer">
@@ -738,7 +738,7 @@ require_once('./dbconn.php');
             <p class="situation">Situation 25 out of 30</p>
             <div class="dialos">
               <p>Susan: What's wrong?</p>
-              <p>Saulo: I'm worried about my son. he's getting<span class="error_style"><em>&nbsp;bad notes</em></span>in school.</p>
+              <p>Saulo: I'm worried about my son. He's getting<span class="error_style"><em>&nbsp;bad notes</em></span>&nbsp;in school.</p>
             </div>
           </div>
           <div class="cont_answer">
@@ -798,7 +798,7 @@ require_once('./dbconn.php');
             <p class="situation">Situation 28 out of 30</p>
             <div class="dialos">
               <p>Sol: What do you think of your English teacher?</p>
-              <p>Maria:I think he is very &nbsp;<span class="error_style"><em>symphatetic</em></span></p>
+              <p>Maria:I think he is very&nbsp;<span class="error_style"><em>symphatetic.</em></span></p>
             </div>
           </div>
           <div class="cont_answer">
@@ -817,7 +817,7 @@ require_once('./dbconn.php');
             <p class="situation">Situation 29 out of 30</p>
             <div class="dialos">
               <p>Ana: What kind of people don't you like?</p>
-              <p>Julia:<span class="error_style"><em>I can't support</em></span>messy people.</p>
+              <p>Julia:<span class="error_style"><em>I can't support</em></span>&nbsp;messy people.</p>
             </div>
           </div>
           <div class="cont_answer">
@@ -837,7 +837,7 @@ require_once('./dbconn.php');
             <p class="situation">Situation 30 out of 30</p>
             <div class="dialos">
               <p>Carol: What makes Brazil stand out in South America?</p>
-              <p>Jaciara:<span class="error_style"><em>&nbsp;it's the unique country</em></span>that speaks portuguese.</p>
+              <p>Jaciara:<span class="error_style"><em>&nbsp;It's the unique country</em></span>&nbsp;that speaks Portuguese.</p>
             </div>
           </div>
           <div class="cont_answer">
@@ -871,8 +871,7 @@ require_once('./dbconn.php');
   <div id="inst_hov">
     <ul>
       <li>Read the dialogues and check<br>the correct answer</li>
-      <li>Only one answer is correct</li>
-      <li>After you finish check your score and the explanations</li>
+      <li>After you finish check your score<br> and the explanations</li>
     </ul>
   </div>
  <!-- My Footer -->
