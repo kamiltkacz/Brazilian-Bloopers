@@ -32,15 +32,6 @@ h4 {
 h3 {
   color: whitesmoke;
 }
-/* #inst_h3 {
-  color: whitesmoke;
-  background: #8e24aa;
-  background: linear-gradient(45deg, #415e76 0%, #478ed1 50%, #061a3a 100%);
-  border-radius: 10px;
-  padding: 20px;
-  font-family: "Inconsolata", monospace;
-  font-weight: normal;
-} */
 
 /* Style tab links */
 .tablink {
@@ -140,7 +131,7 @@ ol {
   /*overflow-y: scroll;*/
 }
 #inner_2 {
- /* max-width: 500px;*/
+ max-width: 500px;
   max-height: 400px;
   width: 90%;
   padding: 60px;
@@ -152,8 +143,8 @@ ol {
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 1);
   border-radius: 20px;
   background: black;
-  background: linear-gradient(45deg, #131415 0%, #20272d 50%, #3b8d3b 100%);
-
+  background: linear-gradient(45deg, #5ac01c 0%, #1cc110 50%, #18dc0c 100%);
+  border: 3px solid antiquewhite;
   text-align: center;
   /* overflow-x: hidden;
   overflow-y: scroll; */
@@ -211,8 +202,9 @@ label,
   width: 70%;
   font-size: 18px;
   font-family: inherit;
-  color: rgb(32 80 116 / 80%);
-  background: linear-gradient(45deg, #e4e8eb 0%, #aeb4b9 50%, #0d47a1 100%);
+  color: rgba(35,35,35,0.9);
+  background: black;
+  background: linear-gradient(45deg, #276b27 0%, #0f0 50%, #3b8d3b 100%);
 }
 
 #bor_country,
@@ -317,7 +309,7 @@ em {
  {
 
   transform: scale(1.1);
-  background-color: #1b417b;
+  background-color: #55c50b;
 }
 
 p#instr {
@@ -376,8 +368,8 @@ p#instr {
 
 /* Submit Survey Button*/
 #submit_survey {
-  background: #8e24aa;
-  background: linear-gradient(45deg, #42a5f5 0%, #478ed1 50%, #0d47a1 100%);
+  background: black;
+  background: linear-gradient(45deg, #131415 0%, #20272d 50%, #3b8d3b 100%);
   color: whitesmoke;
   font-family: inherit;
   font-size: 20px;
@@ -395,8 +387,8 @@ p#instr {
 
 #sub_quiz {
   display: none;
-  background: #8e24aa;
-  background: linear-gradient(45deg, #42a5f5 0%, #478ed1 50%, #0d47a1 100%);
+  background: black;
+  background: linear-gradient(45deg, #131415 0%, #20272d 50%, #3b8d3b 100%);
   color: whitesmoke;
   font-family: inherit;
   font-size: 19px;
@@ -415,8 +407,8 @@ p#instr {
 /* Submit Contact button */
 
 #submit_contact {
-  background: #8e24aa;
-  background: linear-gradient(45deg, #42a5f5 0%, #478ed1 50%, #0d47a1 100%);
+  background: black;
+  background: linear-gradient(45deg, #131415 0%, #20272d 50%, #3b8d3b 100%);
   color: whitesmoke;
   font-family: inherit;
   font-size: 20px;
@@ -440,14 +432,14 @@ p#instr {
   text-align: center;
   margin-top: 30px;
 }
-.cont_surv {
+/* .cont_surv {
   background: black;
   background: linear-gradient(45deg, #131415 0%, #20272d 50%, #3b8d3b 100%);
   border-radius: 30px;
   padding: 14px;
   text-align: center;
   margin-top: 20px;
-}
+} */
 
 /* QUIZ CONTAINERS*/
 .count {
@@ -472,14 +464,15 @@ p#instr {
    margin-top: auto;
 }
 
-/* .cont_dial {
-  border-radius: 10px;
+ .cont_dial {
+  margin-top: -30px;
+ /* border-radius: 10px;
   background-color: #8e24aa;
   background: linear-gradient(45deg, #09182d 0%, #478ed1 50%, #c3cbd5 100%);
   padding: 20px;
-  margin-top: 30px;
-  color: whitesmoke;
-} */
+
+  color: whitesmoke;*/
+}
 
 /* .dialos {
   border-radius: 10px;
