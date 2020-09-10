@@ -241,7 +241,7 @@ $('#next_1').on("click", function(){
     }
    });
    $('#next_10').on("click", function(){
-    if (!$("input[name='know']:checked").val()) {
+    if (!$("input[name='car']:checked").val()) {
 
     $('.bor_choose').css({
       "border-bottom": "5px solid red",
@@ -249,7 +249,7 @@ $('#next_1').on("click", function(){
     });
     $(".span_choose").text(" * ");
 
-  } else if ($("input[name='know']:checked").val() == "corr") {
+  } else if ($("input[name='car']:checked").val() == "corr") {
     score ++;
     console.log(score);
     $('#' + classNum).hide();
@@ -333,7 +333,7 @@ $('#next_1').on("click", function(){
     }
    });
    $('#next_14').on("click", function(){
-    if (!$("input[name='car']:checked").val()) {
+    if (!$("input[name='know']:checked").val()) {
 
     $('.bor_choose').css({
       "border-bottom": "5px solid red",
@@ -341,7 +341,7 @@ $('#next_1').on("click", function(){
     });
     $(".span_choose").text(" * ");
 
-  } else if ($("input[name='car']:checked").val() == "corr") {
+  } else if ($("input[name='know']:checked").val() == "corr") {
     score ++;
     console.log(score);
     $('#' + classNum).hide();
