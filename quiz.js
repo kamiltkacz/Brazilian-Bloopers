@@ -703,6 +703,7 @@ $('#next_1').on("click", function(){
 
 // LAST QUESTION //
    $('#next_30').on("click", function(){
+     let lastPage = (``)
 
     if (!$("input[name='uniq']:checked").val()) {
       $('.bor_choose').css({
@@ -735,7 +736,7 @@ $('#next_1').on("click", function(){
     }
 
        $("#quiz_form").submit(function() {
-          event.preventDefault();
+          e.preventDefault();
            });
 
         $('#sub_quiz').on("click", function() {
