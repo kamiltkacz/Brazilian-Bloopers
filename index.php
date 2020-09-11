@@ -584,7 +584,7 @@ require_once('./dbconn.php');
             <div class="answers">
               <input type="radio" id="imp1" class="rads" name="impress" value="err_2"><label for="imp1">she was impressing </label><br>
               <input type="radio" id="imp2" class="rads" name="impress" value="err_ok"><label for="imp2">she impressed</label><br>
-              <input type="radio" id="imp3" class="rads" name="impress" value="corr"><label for="imp3">she was shocked</label><br>
+              <input type="radio" id="imp3" class="rads" name="impress" value="corr"><label for="imp3">she was shocked by</label><br>
             </div>
           </div>
           <button id="next_17" class="next">next</button>
