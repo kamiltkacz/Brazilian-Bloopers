@@ -99,6 +99,10 @@ ol {
   border: 0;
 }
 
+.scoreMsg {
+  display: none;
+}
+
 /* Outer */
 .popup {
   width: 100%;
@@ -546,6 +550,15 @@ textarea {
 }
 .footer {
 font-size: smaller;
+}
+
+.score {
+  display: none;
+  background: rgba(255,255,255,0.2);
+  padding: 0 3rem;
+  line-height: 1;
+  border-radius: 1rem;
+  font-size: xxx-large;
 }
 
 
