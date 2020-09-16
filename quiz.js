@@ -47,6 +47,7 @@ $('#next_1').on("click", function(){
 
 
 
+
   } else {
    console.log(score);
     $('#' + classNum).hide();
@@ -60,29 +61,29 @@ $('#next_1').on("click", function(){
 
    });
 
-   $('#next_2').on("click", function(){
-    if (!$("input[name='too']:checked").val()) {
+  //  $('#next_2').on("click", function(){
+  //   if (!$("input[name='too']:checked").val()) {
 
-    $('.bor_choose').css({
-      "border-bottom": "5px solid red",
-      "padding": "12px"
-    });
-    $(".span_choose").text(" * ");
+  //   $('.bor_choose').css({
+  //     "border-bottom": "5px solid red",
+  //     "padding": "12px"
+  //   });
+  //   $(".span_choose").text(" * ");
 
-  } else if ($("input[name='too']:checked").val() == "corr") {
-    score ++;
-    console.log(score);
-    $('#' + classNum).hide();
-    $('#' + numNext).show();
+  // } else if ($("input[name='too']:checked").val() == "corr") {
+  //   score ++;
+  //   console.log(score);
+  //   $('#' + classNum).hide();
+  //   $('#' + numNext).show();
 
-  } else {
+  // } else {
 
-   console.log(score);
-   $('#' + classNum).hide();
-   $('#' + numNext).show();
-   $('#inner_2').scrollTop(0);
-    }
-   });
+  //  console.log(score);
+  //  $('#' + classNum).hide();
+  //  $('#' + numNext).show();
+  //  $('#inner_2').scrollTop(0);
+  //   }
+  //  });
 
 
 
@@ -725,10 +726,10 @@ $('#next_1').on("click", function(){
        $("#quiz_form").submit(function() {
         return false;
            });
-        $("#next_3").text("Submit");
-        $("#back_3").css({"right": "140px"});
+        $("#next_2").text("Submit");
+        $("#back_2").css({"right": "140px"});
 
-        $('#next_3').on("click", function() {
+        $('#next_2').on("click", function() {
 
           if (!$("input[name='uniq']:checked").val()) {
             $('.bor_choose').css({
@@ -762,7 +763,6 @@ $('#next_1').on("click", function(){
           }
 
 
-
           var formData = $("#quiz_form :input").serializeArray();
           formData[formData.length] = {
             name: "action",
@@ -785,10 +785,55 @@ $('#next_1').on("click", function(){
 
               if (result.result == 1) {
 
-                $("#instr, #3").hide();
+                $("#instr, #2").hide();
 
                $(".scoreMsg").show();
                $(".score").show();
+
+               $("#results").show();
+               console.log(formData);
+
+               $(document).ready(function(){
+                // let quizList = $(".questions");
+                 let currentQuiz = $("#1").children();
+                // let i = 0;
+                 console.log(currentQuiz);
+                 //$("input[class='rads']").css({"display": "none"});
+
+                if ($("input[class='rads']:checked").val() === "corr") {
+                  $("#i1, #i3").attr("disabled", true);
+                  $("#i1, #i3").change(function() {
+                    $("#i1, #i3").css({"background-color" : "black"});
+                  });
+
+                 }
+                // if ($("input[class='rads']:checked").val() === "err_2") {
+                //   $(".rads").attr("disabled", true);
+
+                // }
+                // if ($("input[class='rads']:checked").val() === "err_ok") {
+                //   $(".rads").attr("disabled", true);
+
+                // }
+
+
+
+                //  for (i=o; i < quizList.length; i++) {
+                //    if (!$("input[class='rads']:checked").val() == "corr") {
+
+
+                //    }
+                //  }
+
+
+                  $("#results").append(currentQuiz)
+
+
+              });
+
+
+
+
 
 
 

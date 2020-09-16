@@ -560,6 +560,9 @@ font-size: smaller;
   border-radius: 1rem;
   font-size: xxx-large;
 }
+#results {
+  display: none;
+}
 
 
 @media (max-width: 375px) {
