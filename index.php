@@ -167,9 +167,9 @@ require_once('./dbconn.php');
             <div id="question1" class="cont_surv">
               <p><label id="bor_gender">1) What gender are you?<span id="span_gender" style="color:#ff0000"></span></label></p>
 
-              <input type="radio" id="male" class="radios" name="gender" value="male"><label for="male">Male</label><br>
-              <input type="radio" id="female" class="radios" name="gender" value="female"><label for="female">Female</label><br>
-              <input type="radio" id="other" class="radios" name="gender" value="other"><label for="other">Other</label><br>
+                <input type="radio" id="male" class="radios" name="gender" value="male"><label for="male">Male</label><br>
+                <input type="radio" id="female" class="radios" name="gender" value="female"><label for="female">Female</label><br>
+                <input type="radio" id="other" class="radios" name="gender" value="other"><label for="other">Other</label><br>
             </div>
 
             <div id="question2" class="cont_surv">
@@ -183,49 +183,49 @@ require_once('./dbconn.php');
             <div id="question3" class="cont_surv">
               <p><label id="bor_years">3) English student for<span id="span_years" style="color:#ff0000"></span></label></p>
 
-              <input type="radio" id="y1" class="radios" name="years" value=">_2"><label for="y1">0-2years</label><br>
-              <input type="radio" id="y2" class="radios" name="years" value="2-5"><label for="y2">2-5years</label><br>
-              <input type="radio" id="y3" class="radios" name="years" value="5-10"><label for="y3">5-10years</label><br>
-              <input type="radio" id="y4" class="radios" name="years" value="10_<"><label for="y4">10+ years</label><br>
-              <input type="radio" id="y5" class="radios" name="years" value="never_studied"><label for="y5">never studied</label>
+                <input type="radio" id="y1" class="radios" name="years" value=">_2"><label for="y1">0-2years</label><br>
+                <input type="radio" id="y2" class="radios" name="years" value="2-5"><label for="y2">2-5years</label><br>
+                <input type="radio" id="y3" class="radios" name="years" value="5-10"><label for="y3">5-10years</label><br>
+                <input type="radio" id="y4" class="radios" name="years" value="10_<"><label for="y4">10+ years</label><br>
+                <input type="radio" id="y5" class="radios" name="years" value="never_studied"><label for="y5">never studied</label>
             </div>
 
             <div id="question4" class="cont_surv">
               <p><label id="bor_abroad">4) Experience abroad<span id="span_abroad" style="color:#ff0000"></span></label></p>
 
-              <input type="radio" id="abr1" class="radios" name="abroad" value=">_year"><label for="abr1">less than a year</label><br>
-              <input type="radio" id="abr2" class="radios" name="abroad" value="1-3_years"><label for="abr2">1-2 years</label><br>
-              <input type="radio" id="abr3" class="radios" name="abroad" value="3-6_years"><label for="abr3">3-5 years</label><br>
-              <input type="radio" id="abr4" class="radios" name="abroad" value="6-10_years"><label for="abr4">6-10 years</label><br>
-              <input type="radio" id="abr5" class="radios" name="abroad" value="10_<"><label for="abr5">10+ years</label><br>
-              <input type="radio" id="abr6" class="radios" name="abroad" value="never_abroad"><label for="abr6">never lived abroad</label>
+                <input type="radio" id="abr1" class="radios" name="abroad" value=">_year"><label for="abr1">less than a year</label><br>
+                <input type="radio" id="abr2" class="radios" name="abroad" value="1-3_years"><label for="abr2">1-2 years</label><br>
+                <input type="radio" id="abr3" class="radios" name="abroad" value="3-6_years"><label for="abr3">3-5 years</label><br>
+                <input type="radio" id="abr4" class="radios" name="abroad" value="6-10_years"><label for="abr4">6-10 years</label><br>
+                <input type="radio" id="abr5" class="radios" name="abroad" value="10_<"><label for="abr5">10+ years</label><br>
+                <input type="radio" id="abr6" class="radios" name="abroad" value="never_abroad"><label for="abr6">never lived abroad</label>
             </div>
 
             <div id="question5" class="cont_surv">
               <p><label id="bor_way">5) How do you learn?<span id="span_way" style="color:#ff0000"><br></span></label></p>
 
-              <input type="checkbox" id="way1" class="check" name="way[]" value="g_course"><label for="way1">group course</label><br>
-              <input type="checkbox" id="way2" class="check" name="way[]" value="private_teacher"><label for="way2">private teacher</label><br>
-              <input type="checkbox" id="way3" class="check" name="way[]" value="self_taught"><label for="way3">self-taught</label><br>
-              <input type="checkbox" id="way4" class="check" name="way[]" value="apps"><label for="way4">apps</label><br>
-              <input type="checkbox" id="way5" class="check" name="way[]" value="video_games"><label for="way5">video games</label><br>
-              <input type="checkbox" id="way6" class="check" name="way[]" value="other"><label for="way6">other</label>
+                <input type="checkbox" id="way1" class="check" name="way[]" value="g_course"><label for="way1">group course</label><br>
+                <input type="checkbox" id="way2" class="check" name="way[]" value="private_teacher"><label for="way2">private teacher</label><br>
+                <input type="checkbox" id="way3" class="check" name="way[]" value="self_taught"><label for="way3">self-taught</label><br>
+                <input type="checkbox" id="way4" class="check" name="way[]" value="apps"><label for="way4">apps</label><br>
+                <input type="checkbox" id="way5" class="check" name="way[]" value="video_games"><label for="way5">video games</label><br>
+                <input type="checkbox" id="way6" class="check" name="way[]" value="other"><label for="way6">other</label>
 
             </div>
 
             <div id="question6" class="cont_surv">
               <p><label id="bor_others">6) Foreign languages<span id="span_others" style="color:#ff0000"></span></label></p>
-              <input type="radio" id="oth1" class="radios" name="others" value="one"><label for="oth1">One</label><br>
-              <input type="radio" id="oth2" class="radios" name="others" value="two"><label for="oth2">Two</label><br>
-              <input type="radio" id="oth3" class="radios" name="others" value="polyglot"><label for="oth3">I'm a polyglot</label>
+                <input type="radio" id="oth1" class="radios" name="others" value="one"><label for="oth1">One</label><br>
+                <input type="radio" id="oth2" class="radios" name="others" value="two"><label for="oth2">Two</label><br>
+                <input type="radio" id="oth3" class="radios" name="others" value="polyglot"><label for="oth3">I'm a polyglot</label>
 
             </div>
 
             <div id="question7" class="cont_surv">
               <p><label id="bor_country">7) Where do you live?<span id="span_country" style="color:#ff0000"></span></label></p>
 
-              <input type="radio" id="ctr1" class="radios" name="country" value="brazil"><label for="ctr1">Brazil</label><br>
-              <input type="radio" id="ctr2" class="radios" name="country" value="abroad"><label for="ctr2">Abroad</label>
+                <input type="radio" id="ctr1" class="radios" name="country" value="brazil"><label for="ctr1">Brazil</label><br>
+                <input type="radio" id="ctr2" class="radios" name="country" value="abroad"><label for="ctr2">Abroad</label>
 
             </div>
             <div>
@@ -260,15 +260,15 @@ require_once('./dbconn.php');
           <div class="cont_answer">
             <p><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p>
             <div class="answers">
-              <input type="radio" id="i1" class="rads" name="sub_it" value="err_ok"><label for="i1">It hot</label><br>
-              <input type="radio" id="i2" class="rads" name="sub_it" value="corr"><label for="i2">It is hot!</label><br>
-              <input type="radio" id="i3" class="rads" name="sub_it" value="err_2"><label for="i3">Is it hot!</label><br>
+                <input type="radio" id="i1" class="rads" name="sub_it" value="err_ok"><label for="i1" >It hot</label><br>
+                <input type="radio" id="i2" class="rads" name="sub_it" value="corr"><label for="i2">It is hot!</label><br>
+                <input type="radio" id="i3" class="rads" name="sub_it" value="err_2"><label for="i3">Is it hot!</label><br>
             </div>
           </div>
           <button id="next_1" class="next">Next</button>
         </div>
 
-
+<!--
          <div id="2" class="questions" style="display: none;">
           <div class="cont_dial">
             <p class="situation">Situation 2 out of 30</p>
@@ -280,14 +280,14 @@ require_once('./dbconn.php');
           <div class="cont_answer">
             <p><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p>
             <div class="answers">
-              <input type="radio" id="t1" class="rads" name="too" value="corr"><label for="t1">it was very good!</label><br>
-              <input type="radio" id="t2" class="rads" name="too" value="err_ok"><label for="t2">it were very good</label><br>
-              <input type="radio" id="t3" class="rads" name="too" value="err_2"><label for="t3">it was two good!</label>
+                <input type="radio" id="t1" class="rads" name="too" value="corr"><label for="t1">it was very good!</label><br>
+                <input type="radio" id="t2" class="rads" name="too" value="err_ok"><label for="t2">it were very good</label><br>
+                <input type="radio" id="t3" class="rads" name="too" value="err_2"><label for="t3">it was two good!</label>
             </div>
           </div>
           <button id="next_2" class="next">Next</button>
           <button id="back_2" class="back">Back</button>
-        </div>
+        </div> -->
 
       <!--  <div id="3" class="questions" style="display: none;">
           <div class="cont_dial">
@@ -300,9 +300,9 @@ require_once('./dbconn.php');
           <div class="cont_answer">
             <p><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p>
             <div class="answers">
-              <input type="radio" id="m1" class="rads" name="much" value="err_2"><label for="m1"> She has a lot patience</label><br>
-              <input type="radio" id="m2" class="rads" name="much" value="err_ok"><label for="m2">She have a lot of patience</label><br>
-              <input type="radio" id="m3" class="rads" name="much" value="corr"><label for="m3"> She has a lot of patience</label><br>
+                <input type="radio" id="m1" class="rads" name="much" value="err_2"><label for="m1"> She has a lot patience</label><br>
+                <input type="radio" id="m2" class="rads" name="much" value="err_ok"><label for="m2">She have a lot of patience</label><br>
+                <input type="radio" id="m3" class="rads" name="much" value="corr"><label for="m3"> She has a lot of patience</label><br>
             </div>
           </div>
           <button id="next_3" class="next">next</button>
@@ -320,9 +320,9 @@ require_once('./dbconn.php');
           <div class="cont_answer">
             <p><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p>
             <div class="answers">
-              <input type="radio" id="ex1" class="rads" name="exist" value="err_ok"><label for="ex1">they are many</label><br>
-              <input type="radio" id="ex2" class="rads" name="exist" value="corr"><label for="ex2">there are many</label><br>
-              <input type="radio" id="ex3" class="rads" name="exist" value="err_2"><label for="ex3">has many</label><br>
+                <input type="radio" id="ex1" class="rads" name="exist" value="err_ok"><label for="ex1">they are many</label><br>
+                <input type="radio" id="ex2" class="rads" name="exist" value="corr"><label for="ex2">there are many</label><br>
+                <input type="radio" id="ex3" class="rads" name="exist" value="err_2"><label for="ex3">has many</label><br>
             </div>
           </div>
           <button id="next_4" class="next">next</button>
@@ -340,9 +340,9 @@ require_once('./dbconn.php');
           <div class="cont_answer">
             <p><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p>
             <div class="answers">
-              <input type="radio" id="tw1" class="rads" name="two_sub" value="err_2"><label for="tw1">my mother dentist</label><br>
-              <input type="radio" id="tw2" class="rads" name="two_sub" value="corr"><label for="tw2">my mother is a dentist</label><br>
-              <input type="radio" id="tw3" class="rads" name="two_sub" value="err_ok"><label for="tw3">my mothers is dentist</label><br>
+                <input type="radio" id="tw1" class="rads" name="two_sub" value="err_2"><label for="tw1">my mother dentist</label><br>
+                <input type="radio" id="tw2" class="rads" name="two_sub" value="corr"><label for="tw2">my mother is a dentist</label><br>
+                <input type="radio" id="tw3" class="rads" name="two_sub" value="err_ok"><label for="tw3">my mothers is dentist</label><br>
             </div>
           </div>
           <button id="next_5" class="next">next</button>
@@ -360,9 +360,9 @@ require_once('./dbconn.php');
           <div class="cont_answer">
             <p><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p>
             <div class="answers">
-              <input type="radio" id="ob1" class="rads" name="no_obj" value="corr"><label for="ob1">I liked it</label><br>
-              <input type="radio" id="ob2" class="rads" name="no_obj" value="err_ok"><label for="ob2">I liked this</label><br>
-              <input type="radio" id="ob3" class="rads" name="no_obj" value="err_2"><label for="ob3">I liked its</label><br>
+                <input type="radio" id="ob1" class="rads" name="no_obj" value="corr"><label for="ob1">I liked it</label><br>
+                <input type="radio" id="ob2" class="rads" name="no_obj" value="err_ok"><label for="ob2">I liked this</label><br>
+                <input type="radio" id="ob3" class="rads" name="no_obj" value="err_2"><label for="ob3">I liked its</label><br>
             </div>
           </div>
           <button id="next_6" class="next">next</button>
@@ -380,9 +380,9 @@ require_once('./dbconn.php');
           <div class="cont_answer">
             <p><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p>
             <div class="answers">
-              <input type="radio" id="for1" class="rads" name="for" value="err_ok"><label for="for1">to buying some milk</label><br>
-              <input type="radio" id="for2" class="rads" name="for" value="corr"><label for="for2">to buy some milk</label><br>
-              <input type="radio" id="for3" class="rads" name="for" value="err_2"><label for="for3">for to buy some milk</label><br>
+                <input type="radio" id="for1" class="rads" name="for" value="err_ok"><label for="for1">to buying some milk</label><br>
+                <input type="radio" id="for2" class="rads" name="for" value="corr"><label for="for2">to buy some milk</label><br>
+                <input type="radio" id="for3" class="rads" name="for" value="err_2"><label for="for3">for to buy some milk</label><br>
             </div>
           </div>
           <button id="next_7" class="next">next</button>
@@ -400,9 +400,9 @@ require_once('./dbconn.php');
           <div class="cont_answer">
             <p><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p>
             <div class="answers">
-              <input type="radio" id="age1" class="rads" name="h_age" value="err_2"><label for="age1">I have 38 years old</label><br>
-              <input type="radio" id="age2" class="rads" name="h_age" value="corr"><label for="age2">I am 38 years old</label><br>
-              <input type="radio" id="age3" class="rads" name="h_age" value="err_ok"><label for="age3">I am 38 old</label><br>
+                <input type="radio" id="age1" class="rads" name="h_age" value="err_2"><label for="age1">I have 38 years old</label><br>
+                <input type="radio" id="age2" class="rads" name="h_age" value="corr"><label for="age2">I am 38 years old</label><br>
+                <input type="radio" id="age3" class="rads" name="h_age" value="err_ok"><label for="age3">I am 38 old</label><br>
             </div>
           </div>
           <button id="next_8" class="next">next</button>
@@ -419,9 +419,9 @@ require_once('./dbconn.php');
           <div class="cont_answer">
             <p><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p>
             <div class="answers">
-              <input type="radio" id="guy1" class="rads" name="guy" value="err_ok"><label for="guy1">hey face</label><br>
-              <input type="radio" id="guy2" class="rads" name="guy" value="corr"><label for="guy2">hey man</label><br>
-              <input type="radio" id="guy3" class="rads" name="guy" value="err_2"><label for="guy3">hey male</label><br>
+                <input type="radio" id="guy1" class="rads" name="guy" value="err_ok"><label for="guy1">hey face</label><br>
+                <input type="radio" id="guy2" class="rads" name="guy" value="corr"><label for="guy2">hey man</label><br>
+                <input type="radio" id="guy3" class="rads" name="guy" value="err_2"><label for="guy3">hey male</label><br>
             </div>
           </div>
           <button id="next_9" class="next">next</button>
@@ -439,9 +439,9 @@ require_once('./dbconn.php');
           <div class="cont_answer">
             <p><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p>
             <div class="answers">
-              <input type="radio" id="act1" class="rads" name="car" value="err_ok"><label for="act1">I likes car</label><br>
-              <input type="radio" id="act2" class="rads" name="car" value="corr"><label for="act2">I like cars</label><br>
-              <input type="radio" id="act3" class="rads" name="car" value="err_2"><label for="act3">I like a car</label><br>
+                <input type="radio" id="act1" class="rads" name="car" value="err_ok"><label for="act1">I likes car</label><br>
+                <input type="radio" id="act2" class="rads" name="car" value="corr"><label for="act2">I like cars</label><br>
+                <input type="radio" id="act3" class="rads" name="car" value="err_2"><label for="act3">I like a car</label><br>
             </div>
           </div>
           <button id="next_10" class="next">next</button>
@@ -460,9 +460,9 @@ require_once('./dbconn.php');
           <div class="cont_answer">
             <p><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p>
             <div class="answers">
-              <input type="radio" id="los1" class="rads" name="lose" value="err_2"><label for="los1">lost your flight</label><br>
-              <input type="radio" id="los2" class="rads" name="lose" value="corr"><label for="los2">miss your flight</label><br>
-              <input type="radio" id="los3" class="rads" name="lose" value="err_ok"><label for="los3">loose your flight</label><br>
+                <input type="radio" id="los1" class="rads" name="lose" value="err_2"><label for="los1">lost your flight</label><br>
+                <input type="radio" id="los2" class="rads" name="lose" value="corr"><label for="los2">miss your flight</label><br>
+                <input type="radio" id="los3" class="rads" name="lose" value="err_ok"><label for="los3">loose your flight</label><br>
             </div>
           </div>
           <button id="next_11" class="next">next</button>
@@ -480,9 +480,9 @@ require_once('./dbconn.php');
           <div class="cont_answer">
             <p><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p>
             <div class="answers">
-              <input type="radio" id="diss1" class="rads" name="diss" value="err_ok"><label for="diss1">I discussed Marta</label><br>
-              <input type="radio" id="diss2" class="rads" name="diss" value="err_2"><label for="diss2">I was discussing with Marta</label><br>
-              <input type="radio" id="diss3" class="rads" name="diss" value="corr"><label for="diss3">I argued with Marta</label><br>
+                <input type="radio" id="diss1" class="rads" name="diss" value="err_ok"><label for="diss1">I discussed Marta</label><br>
+                <input type="radio" id="diss2" class="rads" name="diss" value="err_2"><label for="diss2">I was discussing with Marta</label><br>
+                <input type="radio" id="diss3" class="rads" name="diss" value="corr"><label for="diss3">I argued with Marta</label><br>
             </div>
           </div>
           <button id="next_12" class="next">next</button>
@@ -500,9 +500,9 @@ require_once('./dbconn.php');
           <div class="cont_answer">
             <p><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p>
             <div class="answers">
-              <input type="radio" id="doub1" class="rads" name="doubt" value="err_2"><label for="doub1">I have question</label><br>
-              <input type="radio" id="doub2" class="rads" name="doubt" value="err_ok"><label for="doub2">I have a questioning</label><br>
-              <input type="radio" id="doub3" class="rads" name="doubt" value="corr"><label for="doub3">I have a question</label><br>
+                <input type="radio" id="doub1" class="rads" name="doubt" value="err_2"><label for="doub1">I have question</label><br>
+                <input type="radio" id="doub2" class="rads" name="doubt" value="err_ok"><label for="doub2">I have a questioning</label><br>
+                <input type="radio" id="doub3" class="rads" name="doubt" value="corr"><label for="doub3">I have a question</label><br>
             </div>
           </div>
           <button id="next_13" class="next">next</button>
@@ -520,9 +520,9 @@ require_once('./dbconn.php');
           <div class="cont_answer">
             <p><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p>
             <div class="answers">
-              <input type="radio" id="met1" class="rads" name="know" value="err_ok"><label for="met1">I meat him</label><br>
-              <input type="radio" id="met2" class="rads" name="know" value="corr"><label for="met2">I met him</label><br>
-              <input type="radio" id="met3" class="rads" name="know" value="err_2"><label for="met3">I meet him</label><br>
+                <input type="radio" id="met1" class="rads" name="know" value="err_ok"><label for="met1">I meat him</label><br>
+                <input type="radio" id="met2" class="rads" name="know" value="corr"><label for="met2">I met him</label><br>
+                <input type="radio" id="met3" class="rads" name="know" value="err_2"><label for="met3">I meet him</label><br>
             </div>
           </div>
           <button id="next_14" class="next">next</button>
@@ -542,9 +542,9 @@ require_once('./dbconn.php');
           <div class="cont_answer">
             <p><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p>
             <div class="answers">
-              <input type="radio" id="god1" class="rads" name="god" value="corr"><label for="god1">thank god he's alright</label><br>
-              <input type="radio" id="god2" class="rads" name="god" value="err_2"><label for="god2">thanks, he alright</label><br>
-              <input type="radio" id="god3" class="rads" name="god" value="err_ok"><label for="god3">thanks gods, he's alright</label><br>
+                <input type="radio" id="god1" class="rads" name="god" value="corr"><label for="god1">thank god he's alright</label><br>
+                <input type="radio" id="god2" class="rads" name="god" value="err_2"><label for="god2">thanks, he alright</label><br>
+                <input type="radio" id="god3" class="rads" name="god" value="err_ok"><label for="god3">thanks gods, he's alright</label><br>
             </div>
           </div>
           <button id="next_15" class="next">next</button>
@@ -562,9 +562,9 @@ require_once('./dbconn.php');
           <div class="cont_answer">
             <p><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p>
             <div class="answers">
-              <input type="radio" id="pref1" class="rads" name="pref" value="err_2"><label for="pref1">it's my prefer</label><br>
-              <input type="radio" id="pref2" class="rads" name="pref" value="err_ok"><label for="pref2">it's my preference</label><br>
-              <input type="radio" id="pref3" class="rads" name="pref" value="corr"><label for="pref3">it's my favorite</label><br>
+                <input type="radio" id="pref1" class="rads" name="pref" value="err_2"><label for="pref1">it's my prefer</label><br>
+                <input type="radio" id="pref2" class="rads" name="pref" value="err_ok"><label for="pref2">it's my preference</label><br>
+                <input type="radio" id="pref3" class="rads" name="pref" value="corr"><label for="pref3">it's my favorite</label><br>
             </div>
           </div>
           <button id="next_16" class="next">next</button>
@@ -582,9 +582,9 @@ require_once('./dbconn.php');
           <div class="cont_answer">
             <p><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p>
             <div class="answers">
-              <input type="radio" id="imp1" class="rads" name="impress" value="err_2"><label for="imp1">she was impressing </label><br>
-              <input type="radio" id="imp2" class="rads" name="impress" value="err_ok"><label for="imp2">she impressed</label><br>
-              <input type="radio" id="imp3" class="rads" name="impress" value="corr"><label for="imp3">she was shocked by</label><br>
+                <input type="radio" id="imp1" class="rads" name="impress" value="err_2"><label for="imp1">she was impressing </label><br>
+                <input type="radio" id="imp2" class="rads" name="impress" value="err_ok"><label for="imp2">she impressed</label><br>
+                <input type="radio" id="imp3" class="rads" name="impress" value="corr"><label for="imp3">she was shocked by</label><br>
             </div>
           </div>
           <button id="next_17" class="next">next</button>
@@ -602,9 +602,9 @@ require_once('./dbconn.php');
           <div class="cont_answer">
             <p><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p>
             <div class="answers">
-              <input type="radio" id="par1" class="rads" name="parent" value="err_2"><label for="par1">parent there</label><br>
-              <input type="radio" id="par2" class="rads" name="parent" value="err_ok"><label for="par2">families there</label><br>
-              <input type="radio" id="par3" class="rads" name="parent" value="corr"><label for="par3">relatives there</label><br>
+                <input type="radio" id="par1" class="rads" name="parent" value="err_2"><label for="par1">parent there</label><br>
+                <input type="radio" id="par2" class="rads" name="parent" value="err_ok"><label for="par2">families there</label><br>
+                <input type="radio" id="par3" class="rads" name="parent" value="corr"><label for="par3">relatives there</label><br>
             </div>
           </div>
           <button id="next_18" class="next">next</button>
@@ -623,9 +623,9 @@ require_once('./dbconn.php');
           <div class="cont_answer">
             <p><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p>
             <div class="answers">
-              <input type="radio" id="go1" class="rads" name="gout" value="corr"><label for="go1">I leave</label><br>
-              <input type="radio" id="go2" class="rads" name="gout" value="er_2"><label for="go2">I go off</label><br>
-              <input type="radio" id="go3" class="rads" name="gout" value="err_ok"><label for="go3">I live</label><br>
+                <input type="radio" id="go1" class="rads" name="gout" value="corr"><label for="go1">I leave</label><br>
+                <input type="radio" id="go2" class="rads" name="gout" value="er_2"><label for="go2">I go off</label><br>
+                <input type="radio" id="go3" class="rads" name="gout" value="err_ok"><label for="go3">I live</label><br>
             </div>
           </div>
           <button id="next_19" class="next">next</button>
@@ -644,9 +644,9 @@ require_once('./dbconn.php');
           <div class="cont_answer">
             <p><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p>
             <div class="answers">
-              <input type="radio" id="use1" class="rads" name="use" value="corr"><label for="use1">wear a suit</label><br>
-              <input type="radio" id="use2" class="rads" name="use" value="err_2"><label for="use2">put a suit</label><br>
-              <input type="radio" id="use3" class="rads" name="use" value="err_ok"><label for="use3">take a suit</label><br>
+                <input type="radio" id="use1" class="rads" name="use" value="corr"><label for="use1">wear a suit</label><br>
+                <input type="radio" id="use2" class="rads" name="use" value="err_2"><label for="use2">put a suit</label><br>
+                <input type="radio" id="use3" class="rads" name="use" value="err_ok"><label for="use3">take a suit</label><br>
             </div>
           </div>
           <button id="next_20" class="next">next</button>
@@ -666,9 +666,9 @@ require_once('./dbconn.php');
           <div class="cont_answer">
             <p><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p>
             <div class="answers">
-              <input type="radio" id="stu1" class="rads" name="durat" value="err_ok"><label for="stu1">during for 3 hours</label><br>
-              <input type="radio" id="stu2" class="rads" name="durat" value="corr"><label for="stu2">for 3 hours</label><br>
-              <input type="radio" id="stu3" class="rads" name="durat" value="err_2"><label for="stu3">at 3 hours</label><br>
+                <input type="radio" id="stu1" class="rads" name="durat" value="err_ok"><label for="stu1">during for 3 hours</label><br>
+                <input type="radio" id="stu2" class="rads" name="durat" value="corr"><label for="stu2">for 3 hours</label><br>
+                <input type="radio" id="stu3" class="rads" name="durat" value="err_2"><label for="stu3">at 3 hours</label><br>
             </div>
           </div>
           <button id="next_21" class="next">next</button>
@@ -686,9 +686,9 @@ require_once('./dbconn.php');
           <div class="cont_answer">
             <p><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p>
             <div class="answers">
-              <input type="radio" id="sta1" class="rads" name="stay" value="err_ok"><label for="sta1">I tires</label><br>
-              <input type="radio" id="sta2" class="rads" name="stay" value="err_voc"><label for="sta2">I became tired</label><br>
-              <input type="radio" id="sta3" class="rads" name="stay" value="corr"><label for="sta3">I got tired</label><br>
+                <input type="radio" id="sta1" class="rads" name="stay" value="err_ok"><label for="sta1">I tires</label><br>
+                <input type="radio" id="sta2" class="rads" name="stay" value="err_voc"><label for="sta2">I became tired</label><br>
+                <input type="radio" id="sta3" class="rads" name="stay" value="corr"><label for="sta3">I got tired</label><br>
             </div>
           </div>
           <button id="next_22" class="next">next</button>
@@ -706,9 +706,9 @@ require_once('./dbconn.php');
           <div class="cont_answer">
             <p><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p>
             <div class="answers">
-              <input type="radio" id="wit1" class="rads" name="with" value="err_2"><label for="wit1">I'm a headache</label><br>
-              <input type="radio" id="wit2" class="rads" name="with" value="err_ok"><label for="wit2">I'm headache</label><br>
-              <input type="radio" id="wit3" class="rads" name="with" value="corr"><label for="wit3">I have a headache</label><br>
+                <input type="radio" id="wit1" class="rads" name="with" value="err_2"><label for="wit1">I'm a headache</label><br>
+                <input type="radio" id="wit2" class="rads" name="with" value="err_ok"><label for="wit2">I'm headache</label><br>
+                <input type="radio" id="wit3" class="rads" name="with" value="corr"><label for="wit3">I have a headache</label><br>
             </div>
           </div>
           <button id="next_23" class="next">next</button>
@@ -726,9 +726,9 @@ require_once('./dbconn.php');
           <div class="cont_answer">
             <p><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p>
             <div class="answers">
-              <input type="radio" id="cha1" class="rads" name="chap" value="err_2"><label for="cha1">capitals</label><br>
-              <input type="radio" id="cha2" class="rads" name="chap" value="corr"><label for="cha2">episodes</label><br>
-              <input type="radio" id="cha3" class="rads" name="chap" value="err_ok"><label for="cha3">programs</label><br>
+                <input type="radio" id="cha1" class="rads" name="chap" value="err_2"><label for="cha1">capitals</label><br>
+                <input type="radio" id="cha2" class="rads" name="chap" value="corr"><label for="cha2">episodes</label><br>
+                <input type="radio" id="cha3" class="rads" name="chap" value="err_ok"><label for="cha3">programs</label><br>
             </div>
           </div>
           <button id="next_24" class="next">next</button>
@@ -746,9 +746,9 @@ require_once('./dbconn.php');
           <div class="cont_answer">
             <p><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p>
             <div class="answers">
-              <input type="radio" id="not1" class="rads" name="notes" value="err_ok"><label for="not1">bad grade</label><br>
-              <input type="radio" id="not2" class="rads" name="notes" value="corr"><label for="not2">bad grades</label><br>
-              <input type="radio" id="not3" class="rads" name="notes" value="err_2"><label for="not3">bad points</label><br>
+                <input type="radio" id="not1" class="rads" name="notes" value="err_ok"><label for="not1">bad grade</label><br>
+                <input type="radio" id="not2" class="rads" name="notes" value="corr"><label for="not2">bad grades</label><br>
+                <input type="radio" id="not3" class="rads" name="notes" value="err_2"><label for="not3">bad points</label><br>
             </div>
           </div>
           <button id="next_25" class="next">next</button>
@@ -766,9 +766,9 @@ require_once('./dbconn.php');
           <div class="cont_answer">
             <p><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p>
             <div class="answers">
-              <input type="radio" id="mus1" class="rads" name="music" value="err_2"><label for="mus1">her sounds</label><br>
-              <input type="radio" id="mus2" class="rads" name="music" value="err_ok"><label for="mus2">her song</label><br>
-              <input type="radio" id="mus3" class="rads" name="music" value="corr"><label for="mus3">her songs</label><br>
+                <input type="radio" id="mus1" class="rads" name="music" value="err_2"><label for="mus1">her sounds</label><br>
+                <input type="radio" id="mus2" class="rads" name="music" value="err_ok"><label for="mus2">her song</label><br>
+                <input type="radio" id="mus3" class="rads" name="music" value="corr"><label for="mus3">her songs</label><br>
             </div>
           </div>
           <button id="next_26" class="next">next</button>
@@ -786,9 +786,9 @@ require_once('./dbconn.php');
           <div class="cont_answer">
             <p><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p>
             <div class="answers">
-              <input type="radio" id="ev1" class="rads" name="every" value="corr"><label for="ev1">every day</label><br>
-              <input type="radio" id="ev2" class="rads" name="every" value="err_ok"><label for="ev2">every days</label><br>
-              <input type="radio" id="ev3" class="rads" name="every" value="err_2"><label for="ev3">all days</label><br>
+                <input type="radio" id="ev1" class="rads" name="every" value="corr"><label for="ev1">every day</label><br>
+                <input type="radio" id="ev2" class="rads" name="every" value="err_ok"><label for="ev2">every days</label><br>
+                <input type="radio" id="ev3" class="rads" name="every" value="err_2"><label for="ev3">all days</label><br>
             </div>
           </div>
           <button id="next_27" class="next">next</button>
@@ -806,9 +806,9 @@ require_once('./dbconn.php');
           <div class="cont_answer">
             <p><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p>
             <div class="answers">
-              <input type="radio" id="sym1" class="rads" name="sym" value="err_2"><label for="sym1">symphatic</label><br>
-              <input type="radio" id="sym2" class="rads" name="sym" value="corr"><label for="sym2">friendly</label><br>
-              <input type="radio" id="sym3" class="rads" name="sym" value="err_ok"><label for="sym3">friend</label><br>
+                <input type="radio" id="sym1" class="rads" name="sym" value="err_2"><label for="sym1">symphatic</label><br>
+                <input type="radio" id="sym2" class="rads" name="sym" value="corr"><label for="sym2">friendly</label><br>
+                <input type="radio" id="sym3" class="rads" name="sym" value="err_ok"><label for="sym3">friend</label><br>
             </div>
           </div>
           <button id="next_28" class="next">next</button>
@@ -825,16 +825,16 @@ require_once('./dbconn.php');
           <div class="cont_answer">
             <p><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p>
             <div class="answers">
-              <input type="radio" id="sup1" class="rads" name="support" value="corr"><label for="sup1">I can't stand</label><br>
-              <input type="radio" id="sup2" class="rads" name="support" value="err_ok"><label for="sup2">I cans stand</label><br>
-              <input type="radio" id="sup3" class="rads" name="support" value="err_2"><label for="sup3">I can't stand up</label><br>
+                <input type="radio" id="sup1" class="rads" name="support" value="corr"><label for="sup1">I can't stand</label><br>
+                <input type="radio" id="sup2" class="rads" name="support" value="err_ok"><label for="sup2">I cans stand</label><br>
+                <input type="radio" id="sup3" class="rads" name="support" value="err_2"><label for="sup3">I can't stand up</label><br>
             </div>
           </div>
           <button id="next_29" class="next">next</button>
           <button id="back_29" class="back">back</button>
         </div> -->
 
-        <div id="3" class="questions" style="display: none;">
+        <div id="2" class="questions" style="display: none;">
           <div class="cont_dial">
             <p class="situation">Situation 30 out of 30</p>
             <div class="dialos">
@@ -845,20 +845,20 @@ require_once('./dbconn.php');
           <div class="cont_answer">
             <p><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p>
             <div class="answers">
-              <input type="radio" id="unq1" class="rads" name="uniq" value="corr"><label for="unq1">it's the only country</label><br>
-              <input type="radio" id="unq2" class="rads" name="uniq" value="err_ok"><label for="unq2">it's one country</label><br>
-              <input type="radio" id="unq3" class="rads" name="uniq" value="err_2"><label for="unq3">it's the uniquely country</label><br>
+                <input type="radio" id="unq1" class="rads" name="uniq" value="corr"><label for="unq1">it's the only country</label><br>
+                <input type="radio" id="unq2" class="rads" name="uniq" value="err_ok"><label for="unq2">it's one country</label><br>
+                <input type="radio" id="unq3" class="rads" name="uniq" value="err_2"><label for="unq3">it's the uniquely country</label><br>
             </div>
           </div>
-          <button id="next_3" class="next">next</button>
-          <button id="back_3" class="back">back</button>
+          <button id="next_2" class="next">next</button>
+          <button id="back_2" class="back">back</button>
         </div>
 
 
 
         <!--Hidden Msg -->
         <h2 class="scoreMsg">Thanks for doing the quiz! Your score is:</h2>
-        <h3 class="scoreMsg"><span class="score">0</span></h3>
+        <h3 class="scoreMsg"><span class="score">0 points</span></h3>
         <p class="scoreMsg">Check your answers&nbsp;<a onclick="alert('Coming soon')">HERE</a></p>
 
 
@@ -872,6 +872,10 @@ require_once('./dbconn.php');
 
     </div><!--popup-inner2-->
   </div> <!-- popup2-->
+  <div id="results">
+  <p id="urTest">Your test:</p><br>
+
+  </div>
 
   <!--mouseover instructions in CSS: Display None -->
   <div id="inst_hov">
@@ -902,13 +906,13 @@ require_once('./dbconn.php');
       <div class="row">
         <div class="column">
           <form id="contact" method="post" action="actions.php">
-            <label for="name" class="contact_lbl">Name*<span id="span_name"></span></label>
+              <label for="name" class="contact_lbl">Name*<span id="span_name"></span></label>
             <input type="text" id="bor_name" name="name" placeholder="Your name.." font-family="cursive">
-            <label for="email" class="contact_lbl">E-mail*<span id="span_email"></span></label>
+              <label for="email" class="contact_lbl">E-mail*<span id="span_email"></span></label>
             <input type="text" id="bor_email" name="email" placeholder="Your e-mail..">
-            <label for="subject" class="contact_lbl">Subject</label>
+              <label for="subject" class="contact_lbl">Subject</label>
             <input type="text" id="bor_subject" name="subject" placeholder="e.g.,suggestion for a blooper, comment, etc...">
-            <label for="message" class="contact_lbl">Message*<span id="span_message"></span></label>
+              <label for="message" class="contact_lbl">Message*<span id="span_message"></span></label>
             <textarea id="bor_message" name="message" placeholder="Write your message here!" style="height:170px"></textarea>
             <button id="submit_contact" class="hvr-grow" type="submit" name="submitcontact">Submit</button>
           </form>
