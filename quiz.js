@@ -798,15 +798,33 @@ $('#next_1').on("click", function(){
                  let currentQuiz = $("#1").children();
                 // let i = 0;
                  console.log(currentQuiz);
-                 //$("input[class='rads']").css({"display": "none"});
 
                 if ($("input[class='rads']:checked").val() === "corr") {
-                  $("#i1, #i3").attr("disabled", true);
-                  $("#i1, #i3").change(function() {
-                    $("#i1, #i3").css({"background-color" : "black"});
-                  });
+                  $( "input[value='err_ok']" ).next().css({"text-decoration":"line-through"});
+                  $( "input[value='err_2']" ).next().css( {"text-decoration":"line-through"});
+                  $('.iconz').show().css({"display":"inline"});
+                  $("input[value='err_ok']").attr("disabled", true);
+                  $("input[value='err_2']").attr("disabled", true);
+
 
                  }
+                //  if ($("input[class='rads']:checked").val() === "err_ok"){
+                //   $( "input[value='err_ok']" ).next().css({"text-decoration":"line-through"});
+                //   $( "input[value='err_2']" ).next().css( {"text-decoration":"line-through"});
+                //   $('#err_ok_1, #ic_1').show();
+                //   $("input[value='corr']").attr("disabled", true);
+                //   $("input[value='err_2']").attr("disabled", true);
+
+                //  }
+
+
+
+
+
+
+                 // $("#i1, #i3").attr("disabled", true);
+
+
                 // if ($("input[class='rads']:checked").val() === "err_2") {
                 //   $(".rads").attr("disabled", true);
 
