@@ -38,7 +38,8 @@ require_once('./dbconn.php');
   <script src="https://cdnjs.cloudflare.com/ajax/libs/rome/3.0.2/rome.standalone.js"></script>
   <!--Popper-->
   <script src="https://unpkg.com/@popperjs/core@2"></script>
-
+   <!-- FontAwesome-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
 
 <body>
@@ -259,10 +260,11 @@ require_once('./dbconn.php');
           </div>
           <div class="cont_answer">
             <p><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p>
+
             <div class="answers">
-                <input type="radio" id="i1" class="rads" name="sub_it" value="err_ok"><label for="i1" >It hot</label><br>
-                <input type="radio" id="i2" class="rads" name="sub_it" value="corr"><label for="i2">It is hot!</label><br>
-                <input type="radio" id="i3" class="rads" name="sub_it" value="err_2"><label for="i3">Is it hot!</label><br>
+                <input type="radio" id="i1" class="rads" name="sub_it" value="err_ok"><label for="i1" >It hot</label>&nbsp;<i class="fa fa-times" aria-hidden="true" style="display:none;"></i><br>
+                <input type="radio" id="i2" class="rads" name="sub_it" value="corr"><label for="i2">It is hot!</label><div class="iconz" style="display:none">&nbsp;<i class='fas fa-check'></i></div><br>
+                <input type="radio" id="i3" class="rads" name="sub_it" value="err_2"><label for="i3">Is it hot!</label>&nbsp;<i class='fas fa-times' aria-hidden="true" style="display:none;"></i><br>
             </div>
           </div>
           <button id="next_1" class="next">Next</button>
