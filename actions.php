@@ -130,16 +130,17 @@ if (isset($_POST["action"])) {
 if ($action == "sub_quiz") {
     $export = Array();
     $sub_it = $_POST["sub_it"];
-    $too = $_POST["too"];
-    $much = $_POST["much"];
+    $uniq = $_POST["uniq"];
+   // $much = $_POST["much"];
 
 
-    $sql = "INSERT INTO quiz (Radio_1, Radio_2, Radio_3)
-    VALUES ('$sub_it', '$too', '$much')";
+    $sql = "INSERT INTO quiz (Radio_1, Radio_2)
+    VALUES ('$sub_it', '$uniq')";
 
     if (mysqli_query($conn, $sql) === TRUE) {
 
       $export['result'] = "1";
+
 
 
     } else {
@@ -150,6 +151,10 @@ if ($action == "sub_quiz") {
     }
 
   }
+
+
+
+
 
 
 
