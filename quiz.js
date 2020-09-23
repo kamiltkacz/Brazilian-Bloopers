@@ -792,6 +792,154 @@ $('#next_1').on("click", function(){
 
                $("#results").show();
                console.log(formData);
+               $(document).ready(function(){
+                // let quizList = $(".questions");
+                 let currentQuiz = $(".questions").contents();
+                // let i = 0;
+                 console.log(currentQuiz);
+
+                 if ($("input[id='i1']:checked").val()) {
+                   console.log("err_ok checked")
+                   $("#i2, #i3").hide();
+                 }
+                 if ($("input[id='i2']:checked").val()) {
+                  console.log("corr checked")
+                  $("#i1, #i3").hide();
+                }
+                if ($("input[id='i3']:checked").val()) {
+                  console.log("err_2 checked")
+                  $("#i1, #i2").hide();
+                }
+
+
+
+                if ($("input[id='unq1']:checked").val()) {
+                  console.log("corr 2 checked")
+                  $("#unq2, #unq3").hide();
+
+                }
+                if ($("input[id='unq2']:checked").val()) {
+                 console.log(" err ok 2 checked")
+                 $("#unq1, #unq3").hide();
+               }
+               if ($("input[id='unq3']:checked").val()) {
+                 console.log("err_2 2 checked")
+                 $("#unq1, #unq2").hide();
+               }
+
+
+
+
+                // if ($("input[name='sub_it']:checked").val() === "corr") {
+                //   //$(this).attr("disabled", true);
+                //   $( "input[value='err_ok']" ).next().css({"text-decoration":"line-through"});
+                //   $( "input[value='err_2']" ).next().css( {"text-decoration":"line-through"});
+                //   $('.d_corr').show().css({"display":"inline", "color": "green"});
+                //   $(".rads").hide();
+                //  // $("input[value='err_ok']").attr("disabled", true);
+                //   // $("input[value='err_2']").attr("disabled", true);
+                //   // $("input[value='corr']").attr("disabled", false);
+
+                //   $(".rads").css({"cursor":"auto"}).next().css({"cursor":"auto"});
+                //  // $(".rads").attr("disabled", true);
+                // // $('.rads').off('click');
+                // //$(".situation").append("<p>Don't forget it</p>");
+
+                // }
+                //  if ($("input[name='sub_it']:checked").val() === "err_ok") {
+                //   $( "input[value='err_ok']" ).next().css({"text-decoration":"line-through"});
+                //   $( "input[value='err_2']" ).next().css( {"text-decoration":"line-through"});
+                //   $('.d_corr').show().css({"display":"inline", "color": "green"});
+                //   $('.d_err_ok').show().css({"display":"inline", "color": "red"}).text("Your ok answer 1");
+                //   // $("input[value='corr']").attr("disabled", true);
+                //   // $("input[value='err_2']").attr("disabled", true);
+                //   // $("input[value='err_ok']").attr("disabled", false);
+                //   $(".rads").css({"cursor":"auto"}).next().css({"cursor":"auto"});
+                //   $(".rads").hide();
+
+                //  }
+
+                //  if  ($("input[name='sub_it']:checked").val() === "err_2") {
+                //   $( "input[value='err_ok']" ).next().css({"text-decoration":"line-through"});
+                //   $( "input[value='err_2']" ).next().css( {"text-decoration":"line-through"});
+                //   $('.d_corr').show().css({"display":"inline", "color": "green"});
+                //   $('.d_err_2').show().css({"display":"inline", "color": "red"}).text("your bad answer 1");
+                //   // $("input[value='corr']").attr("disabled", true);
+                //   // $("input[value='err_ok']").attr("disabled", true);
+                //   // $("input[value='err_2']").attr("disabled", false);
+                //   $(".rads").css({"cursor":"auto"}).next().css({"cursor":"auto"});
+                //   $(".rads").hide();
+
+                // }
+
+
+
+                // if ($("input[name='uniq']:checked").val() === "corr") {
+                //  // $(".situation").append("<p>Don't forget only</p>");
+                //   //$(this).attr("disabled", true);
+                //   $("input[value='err_ok']").next().css({"text-decoration":"line-through"});
+                //   $("input[value='err_2']").next().css( {"text-decoration":"line-through"});
+                //   $('.d_corr').show().css({"display":"inline", "color": "green"});
+                //   $(".rads").hide();
+                //  //$("#unq2, #unq3").hide();
+                //   // $("input[value='err_ok']").attr("disabled", true);
+                //   // $("input[value='err_2']").attr("disabled", true);
+                //   // $("input[value='corr']").attr("disabled", false);
+                //   $(".rads").css({"cursor":"auto"}).next().css({"cursor":"auto"});
+                //  // $(".rads").attr("disabled", true);
+                // // $('.rads').off('click');
+
+                //  }
+                //   if ($("input[name='uniq']:checked").val() === "err_ok") {
+                //   $("input[value='err_ok']").next().css({"text-decoration":"line-through"});
+                //   $("input[value='err_2']").next().css({"text-decoration":"line-through"});
+                //   $('.d_corr').show().css({"display":"inline", "color": "green"});
+                //   $('.d_err_ok').show().css({"display":"inline", "color": "red"}).text("your ok answer 2");
+                //   // $("input[value='corr']").attr("disabled", true);
+                //   // $("input[value='err_2']").attr("disabled", true);
+                //   // $("input[value='err_ok']").attr("disabled", false);
+                //   $(".rads").css({"cursor":"auto"}).next().css({"cursor":"auto"});
+                //   //$("#unq1, #unq3").hide();
+                //   $(".rads").hide();
+
+                //  }
+                // if  ($("input[name='uniq']:checked").val() === "err_2") {
+
+
+                //   $("input[value='err_ok']").next().css({"text-decoration":"line-through"});
+                //   $("input[value='err_2']").next().css({"text-decoration":"line-through"});
+                //   $('.d_corr').show().css({"display":"inline", "color": "green"});
+                //   $('.d_err_2').show().css({"display":"inline", "color": "red"}).text("your 2 bad answer");
+                //   // $("input[value='corr']").attr("disabled", true);
+                //   // $("input[value='err_ok']").attr("disabled", true);
+                //   // $("input[value='err_2']").attr("disabled", false);
+                //   $(".rads").css({"cursor":"auto"}).next().css({"cursor":"auto"});
+                //  // $("#unq1, #unq2").hide();
+                //  $(".rads").hide();
+
+                //  }
+
+
+
+                $("#results").append(currentQuiz);
+               // $(".cont_dial").css({"background":"darkgreen"});
+
+                $(".cont_dial").prepend("<div class='divider'></div>");
+               // Move The "divider" div
+                $(document).ready(function() {
+
+                    $('.divider').animate({
+                    'marginTop' : "+=50px"
+                    });
+
+
+
+                });
+
+
+
+
+              });
 
 
 
@@ -813,79 +961,7 @@ $('#next_1').on("click", function(){
                 alert('oh, no! Something went wrong, Try again');
               }
 
-              $(document).ready(function(){
-                // let quizList = $(".questions");
-                 let currentQuiz = $(".questions").children();
-                // let i = 0;
-                 console.log(currentQuiz);
 
-                if ($("input[name='sub_it']:checked").val() === "corr") {
-                  $( "input[value='err_ok']" ).next().css({"text-decoration":"line-through"});
-                  $( "input[value='err_2']" ).next().css( {"text-decoration":"line-through"});
-                  $('.d_corr').show().css({"display":"inline", "color": "green"});
-                  $("input[value='err_ok']").attr("disabled", true);
-                  $("input[value='err_2']").attr("disabled", true);
-                  $(".rads").css({"cursor":"auto"}).next().css({"cursor":"auto"});
-
-
-                 } else if ($("input[name='sub_it']:checked").val() === "err_ok") {
-                  $( "input[value='err_ok']" ).next().css({"text-decoration":"line-through"});
-                  $( "input[value='err_2']" ).next().css( {"text-decoration":"line-through"});
-                  $('.d_corr').show().css({"display":"inline", "color": "green"});
-                  $('.d_err_ok').show().css({"display":"inline", "color": "red"});
-                  $("input[value='corr']").attr("disabled", true);
-                  $("input[value='err_2']").attr("disabled", true);
-                  $(".rads").css({"cursor":"auto"}).next().css({"cursor":"auto"});
-
-                 } else {
-                  ($("input[name='sub_it']:checked").val() === "err_2")
-                  $( "input[value='err_ok']" ).next().css({"text-decoration":"line-through"});
-                  $( "input[value='err_2']" ).next().css( {"text-decoration":"line-through"});
-                  $('.d_corr').show().css({"display":"inline", "color": "green"});
-                  $('.d_err_2').show().css({"display":"inline", "color": "red"});
-                  $("input[value='corr']").attr("disabled", true);
-                  $("input[value='err_ok']").attr("disabled", true);
-                  $(".rads").css({"cursor":"auto"}).next().css({"cursor":"auto"});
-
-                }
-
-
-                if ($("input[name='uniq']:checked").val() === "corr") {
-                  $("input[value='err_ok']").next().css({"text-decoration":"line-through"});
-                  $("input[value='err_2']").next().css( {"text-decoration":"line-through"});
-                  $('.d_corr').show().css({"display":"inline", "color": "green"});
-                  $("input[value='err_ok']").attr("disabled", true);
-                  $("input[value='err_2']").attr("disabled", true);
-                  $(".rads").css({"cursor":"auto"}).next().css({"cursor":"auto"});
-
-
-                 } else if ($("input[name='uniq']:checked").val() === "err_ok") {
-                  $("input[value='err_ok']").next().css({"text-decoration":"line-through"});
-                  $("input[value='err_2']").next().css({"text-decoration":"line-through"});
-                  $('.d_corr').show().css({"display":"inline", "color": "green"});
-                  $('.d_err_ok').show().css({"display":"inline", "color": "red"});
-                  $("input[value='corr']").attr("disabled", true);
-                  $("input[value='err_2']").attr("disabled", true);
-                  $(".rads").css({"cursor":"auto"}).next().css({"cursor":"auto"});
-
-                 } else {
-                  ($("input[name='uniq']:checked").val() === "err_2")
-                  $("input[value='err_ok']").next().css({"text-decoration":"line-through"});
-                  $("input[value='err_2']").next().css({"text-decoration":"line-through"});
-                  $('.d_corr').show().css({"display":"inline", "color": "green"});
-                  $('.d_err_2').show().css({"display":"inline", "color": "red"});
-                  $("input[value='corr']").attr("disabled", true);
-                  $("input[value='err_ok']").attr("disabled", true);
-                  $(".rads").css({"cursor":"auto"}).next().css({"cursor":"auto"});
-
-                 }
-
-
-
-                  $("#results").append(currentQuiz)
-
-
-              });
 
             } //ajax, success function 2//
           }); //ajax 2//
