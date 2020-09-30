@@ -280,7 +280,7 @@ require_once('./dbconn.php');
           <button id="next_1" class="next">Next</button>
         </div>
 
-<!--
+
          <div id="2" class="questions" style="display: none;">
           <div class="cont_dial">
             <p class="situation">Situation 2 out of 30</p>
@@ -292,14 +292,20 @@ require_once('./dbconn.php');
           <div class="cont_answer">
             <p><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p>
             <div class="answers">
-                <input type="radio" id="t1" class="rads" name="too" value="corr"><label for="t1">it was very good!</label><br>
-                <input type="radio" id="t2" class="rads" name="too" value="err_ok"><label for="t2">it were very good</label><br>
-                <input type="radio" id="t3" class="rads" name="too" value="err_2"><label for="t3">it was two good!</label>
+                <input type="radio" id="t1" class="rads" name="too" value="corr"><label for="t1">it was very good!</label><div class="d_corr" style="display:none">&nbsp;<i class="fas fa-check"></i></div><br>
+                <input type="radio" id="t2" class="rads" name="too" value="err_ok"><label for="t2"class="err_label">it were very good</label><div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
+                <input type="radio" id="t3" class="rads" name="too" value="err_2"><label for="t3"class="err_label">it was two good!</label><div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
+
             </div>
+            <div class="exp" id="exp2" style="display:none">Explanation: We say "very" when we want to intesify something".<br>Ex."The weather was very good on our holiday"<br> We say "too" to negative express excess of something ex."It's 10 degrees. It is too cold to go to the beach"
+            <div class="resultMsg">
+             <h4 class="scoreInfo" id="scoreInfo_2">Your score:&nbsp;</h4>
+            </div>
+           </div>
           </div>
           <button id="next_2" class="next">Next</button>
           <button id="back_2" class="back">Back</button>
-        </div> -->
+        </div>
 
       <!--  <div id="3" class="questions" style="display: none;">
           <div class="cont_dial">
@@ -846,7 +852,7 @@ require_once('./dbconn.php');
           <button id="back_29" class="back">back</button>
         </div> -->
 
-        <div id="2" class="questions" style="display: none;">
+        <div id="3" class="questions" style="display: none;">
           <div class="cont_dial">
             <p class="situation">Situation 30 out of 30</p>
             <div class="dialos">
@@ -872,8 +878,8 @@ require_once('./dbconn.php');
             </div>
            </div>
           </div>
-          <button id="next_2" class="next">next</button>
-          <button id="back_2" class="back">back</button>
+          <button id="next_3" class="next">next</button>
+          <button id="back_3" class="back">back</button>
         </div>
 
 
