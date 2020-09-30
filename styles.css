@@ -28,6 +28,10 @@ h4 {
   font-weight: normal;
   text-align: center;
 }
+.scoreInfo {
+  text-align: right;
+  margin-bottom: -5px;
+}
 
 h3 {
   color: whitesmoke;
@@ -506,6 +510,15 @@ p#instr {
 
   color: whitesmoke;*/
 }
+.exp {
+  background: linear-gradient(45deg, #5ac01c 0%, #1cc110 50%, #18dc0c 100%);;
+  padding: 25px;
+  border-radius: 15px;
+
+}
+.resultMsg{
+  text-align: right;
+}
 
 
 /* HOVER INSTRUCTIONS STYLES */
@@ -562,6 +575,7 @@ font-size: smaller;
 }
 #results {
   display: none;
+  background: linear-gradient(45deg, #131415 0%, #20272d 50%, #3b8d3b 100%);
 }
 
 
