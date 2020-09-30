@@ -262,15 +262,20 @@ require_once('./dbconn.php');
             <p><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p>
 
             <div class="answers">
-                <input type="radio" id="i1" class="rads" name="sub_it" value="err_ok"><label for="i1">It hot</label>
-                <div class="d_err_ok" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
+                <input type="radio" id="i1" class="rads" name="sub_it" value="err_ok"><label for="i1" class="err_label">It hot</label>
+                <div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
 
                 <input type="radio" id="i2" class="rads" name="sub_it" value="corr"><label for="i2">It is hot!</label>
                 <div class="d_corr" style="display:none">&nbsp;<i class="fas fa-check"></i></div><br>
 
-                <input type="radio" id="i3" class="rads" name="sub_it" value="err_2"><label for="i3">Is it hot!</label>
-                <div class="d_err_2"style="display:none">&nbsp;<i class="fas fa-times" aria-hidden="true"></i></div><br>
+                <input type="radio" id="i3" class="rads" name="sub_it" value="err_2"><label for="i3" class="err_label">Is it hot!</label>
+                <div class="d_err"style="display:none">&nbsp;<i class="fas fa-times" aria-hidden="true"></i></div><br>
             </div>
+           <div class="exp" id="exp1" style="display:none">Explanation: In English we always use the subject(It, He, She, etc).<br>Ex."It is important to read the news"<br>ex."It doesn't rain much in Brasilia"
+            <div class="resultMsg">
+             <h4 class="scoreInfo" id="scoreInfo_1">Your score:&nbsp;</h4>
+            </div>
+           </div>
           </div>
           <button id="next_1" class="next">Next</button>
         </div>
@@ -855,12 +860,17 @@ require_once('./dbconn.php');
                 <input type="radio" id="unq1" class="rads" name="uniq" value="corr"><label for="unq1">it's the only country</label>
                 <div class="d_corr" style="display:none">&nbsp;<i class="fas fa-check"></i></div><br>
 
-                <input type="radio" id="unq2" class="rads" name="uniq" value="err_ok"><label for="unq2">it's one country</label>
-                <div class="d_err_ok" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
+                <input type="radio" id="unq2" class="rads" name="uniq" value="err_ok"><label for="unq2" class="err_label">it's one country</label>
+                <div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
 
-                <input type="radio" id="unq3" class="rads" name="uniq" value="err_2"><label for="unq3">it's the uniquely country</label>
-                <div class="d_err_2" style="display:none">&nbsp;<i class="fas fa-times" aria-hidden="true"></i></div><br>
+                <input type="radio" id="unq3" class="rads" name="uniq" value="err_2"><label for="unq3" class="err_label">it's the uniquely country</label>
+                <div class="d_err" style="display:none">&nbsp;<i class="fas fa-times" aria-hidden="true"></i></div><br>
             </div>
+            <div class="exp" id="exp30" style="display:none">Explanation: We use "only" when we mean the single example of something.<br>Ex."There is only one person named Michael at my work"<br>We say "unique" when we mean one of a kind, atypical, unuasual. Ex."She has a very unique smile"
+            <div class="resultMsg">
+             <h4 class="scoreInfo" id="scoreInfo_30">Your score:&nbsp;</h4>
+            </div>
+           </div>
           </div>
           <button id="next_2" class="next">next</button>
           <button id="back_2" class="back">back</button>
