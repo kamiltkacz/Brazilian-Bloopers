@@ -76,29 +76,29 @@ $('.next').click(function() {
 
 
 
-  //  $('#next_3').on("click", function(){
-  //   if (!$("input[name='much']:checked").val()) {
+   $('#next_3').on("click", function(){
+    if (!$("input[name='much']:checked").val()) {
 
-  //   $('.bor_choose').css({
-  //     "border-bottom": "5px solid red",
-  //     "padding": "12px"
-  //   });
-  //   $(".span_choose").text(" * ");
+    $('.bor_choose').css({
+      "border-bottom": "5px solid red",
+      "padding": "12px"
+    });
+    $(".span_choose").text(" * ");
 
-  // } else if ($("input[name='much']:checked").val() == "corr") {
-  //   score ++;
-  //   console.log(score);
-  //   $('#' + classNum).hide();
-  //   $('#' + numNext).show();
-  //
-  // } else {
+  } else if ($("input[name='much']:checked").val() == "corr") {
+    score ++;
+    console.log(score);
+    $('#' + classNum).hide();
+    $('#' + numNext).show();
 
-  //  console.log(score);
-  //  $('#' + classNum).hide();
-  //  $('#' + numNext).show();
-  //  $('#inner_2').scrollTop(0);
-  //   }
-  //  });
+  } else {
+
+   console.log(score);
+   $('#' + classNum).hide();
+   $('#' + numNext).show();
+
+    }
+   });
 
   //  $('#next_4').on("click", function(){
   //   if (!$("input[name='exist']:checked").val()) {
@@ -711,10 +711,10 @@ $('.next').click(function() {
        });
 
        // Next button changes to Submit and moves
-       $("#next_3").text("Submit");
-       $("#back_3").css({"right": "140px"});
+       $("#next_4").text("Submit");
+       $("#back_4").css({"right": "140px"});
 
-        $('#next_3').on("click", function() {
+        $('#next_4').on("click", function() {
 
           if (!$("input[name='uniq']:checked").val()) {
             $('.bor_choose').css({
@@ -735,11 +735,15 @@ $('.next').click(function() {
 
           }
 
-
+          var surveyId = localStorage.getItem("surveyId");
           var formData = $("#quiz_form :input").serializeArray();
           formData[formData.length] = {
             name: "action",
             value: "sub_quiz"
+          };
+          formData[formData.length] = {
+            name: "surveyId",
+            value: surveyId
           };
           formData.push({});
           console.log('dataQuiz');
@@ -756,7 +760,7 @@ $('.next').click(function() {
 
               if (result.result == 1) {
 
-               $("#instr, #3").hide();
+               $("#instr, #4").hide();
                $(".scoreMsg").show();
                $(".score").show();
                $("#results").show();
@@ -837,6 +841,42 @@ $('.next').click(function() {
                $("#scoreInfo_2").append(resultScore);
 
              }
+
+             if ($("input[id='m1']:checked").val()) {
+
+              $("#m2, #m3").hide();
+              $( ".err_label").css({"text-decoration":"line-through"});
+              $('.d_corr').show().css({"display":"inline", "color": "green"});
+              $('.d_err').show().css({"display":"inline", "color": "red"});
+              $(".rads").css({"cursor":"auto"}).next().css({"cursor":"auto"});
+
+              $("#scoreInfo_3").append(resultScore);
+
+             }
+
+             if ($("input[id='m2']:checked").val()) {
+
+              $("#m1, #m3").hide();
+              $( ".err_label").css({"text-decoration":"line-through"});
+              $('.d_corr').show().css({"display":"inline", "color": "green"});
+              $(".rads").css({"cursor":"auto"}).next().css({"cursor":"auto"});
+
+              $("#scoreInfo_3").append(resultScore);
+
+            }
+
+            if ($("input[id='m3']:checked").val())  {
+
+             $("#m1, #m2").hide();
+             $( ".err_label").css({"text-decoration":"line-through"});
+             $('.d_corr').show().css({"display":"inline", "color": "green"});
+             $('.d_err').show().css({"display":"inline", "color": "red"});
+             $(".rads").css({"cursor":"auto"}).next().css({"cursor":"auto"});
+             resultScore++;
+             $("#scoreInfo_3").append(resultScore);
+
+           }
+
 
 
 
