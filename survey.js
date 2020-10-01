@@ -109,6 +109,9 @@
         async: true,
         success: function(result) {
 
+
+
+
           if (result.genderErr == "empty") {
             $("#bor_gender").css({
               "border-bottom": "5px solid red",
@@ -184,6 +187,8 @@
           // After data submitted do stuff here
 
           if (result.result == 1) {
+
+            localStorage.setItem("surveyId", result.id);
 
              // Start Button Show
 
