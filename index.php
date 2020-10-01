@@ -295,9 +295,8 @@ require_once('./dbconn.php');
                 <input type="radio" id="t1" class="rads" name="too" value="corr"><label for="t1">it was very good!</label><div class="d_corr" style="display:none">&nbsp;<i class="fas fa-check"></i></div><br>
                 <input type="radio" id="t2" class="rads" name="too" value="err_ok"><label for="t2"class="err_label">it were very good</label><div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
                 <input type="radio" id="t3" class="rads" name="too" value="err_2"><label for="t3"class="err_label">it was two good!</label><div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
-
             </div>
-            <div class="exp" id="exp2" style="display:none">Explanation: We say "very" when we want to intesify something".<br>Ex."The weather was very good on our holiday"<br> We say "too" to negative express excess of something ex."It's 10 degrees. It is too cold to go to the beach"
+            <div class="exp" id="exp2" style="display:none">Explanation: We say "very" when we want to intesify something".<br>Ex."The weather was very good on our holiday"<br> We say "too" to express negative excess of something ex."It's 10 degrees. It is too cold to go to the beach."
             <div class="resultMsg">
              <h4 class="scoreInfo" id="scoreInfo_2">Your score:&nbsp;</h4>
             </div>
@@ -307,7 +306,7 @@ require_once('./dbconn.php');
           <button id="back_2" class="back">Back</button>
         </div>
 
-      <!--  <div id="3" class="questions" style="display: none;">
+       <div id="3" class="questions" style="display: none;">
           <div class="cont_dial">
             <p class="situation">Situation 3 out of 30</p>
             <div class="dialos">
@@ -318,16 +317,21 @@ require_once('./dbconn.php');
           <div class="cont_answer">
             <p><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p>
             <div class="answers">
-                <input type="radio" id="m1" class="rads" name="much" value="err_2"><label for="m1"> She has a lot patience</label><br>
-                <input type="radio" id="m2" class="rads" name="much" value="err_ok"><label for="m2">She have a lot of patience</label><br>
-                <input type="radio" id="m3" class="rads" name="much" value="corr"><label for="m3"> She has a lot of patience</label><br>
+                <input type="radio" id="m1" class="rads" name="much" value="err_2"><label for="m1"> She has a lot patience</label><div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
+                <input type="radio" id="m2" class="rads" name="much" value="err_ok"><label for="m2">She have a lot of patience</label><div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
+                <input type="radio" id="m3" class="rads" name="much" value="corr"><label for="m3"> She has a lot of patience</label><div class="d_corr" style="display:none">&nbsp;<i class="fas fa-check"></i></div><br>
             </div>
+            <div class="exp" id="exp3" style="display:none">Explanation: We say "a lot of" in affirmative when we want to express big quantity for non-countable nouns like patience, poluttion, water etc.<br>Ex."There is a lot of pollution in China"<br> We say "much" only in the negative or to intesify something ex."I don't drink much water.", "I like socccer very much"
+            <div class="resultMsg">
+             <h4 class="scoreInfo" id="scoreInfo_3">Your score:&nbsp;</h4>
+            </div>
+           </div>
           </div>
           <button id="next_3" class="next">next</button>
           <button id="back_3" class="back">back</button>
         </div>
 
-        <div id="4" class="questions" style="display: none;">
+     <!--   <div id="4" class="questions" style="display: none;">
           <div class="cont_dial">
             <p class="situation">Situation 4 out of 30</p>
             <div class="dialos">
@@ -852,7 +856,7 @@ require_once('./dbconn.php');
           <button id="back_29" class="back">back</button>
         </div> -->
 
-        <div id="3" class="questions" style="display: none;">
+        <div id="4" class="questions" style="display: none;">
           <div class="cont_dial">
             <p class="situation">Situation 30 out of 30</p>
             <div class="dialos">
@@ -878,8 +882,8 @@ require_once('./dbconn.php');
             </div>
            </div>
           </div>
-          <button id="next_3" class="next">next</button>
-          <button id="back_3" class="back">back</button>
+          <button id="next_4" class="next">next</button>
+          <button id="back_4" class="back">back</button>
         </div>
 
 
@@ -887,7 +891,7 @@ require_once('./dbconn.php');
         <!--Hidden Msg -->
         <h2 class="scoreMsg">Thanks for doing the quiz! Your score is:</h2>
         <h3 class="scoreMsg"><span class="score">0 points</span></h3>
-        <p class="scoreMsg">Check your answers&nbsp;<a onclick="alert('Coming soon')">HERE</a></p>
+        <p class="scoreMsg">check your answers&nbsp;<button id="check_res" class="hvr-grow" onclick="checkResult()">HERE</button></p>
 
 
 
@@ -995,6 +999,19 @@ require_once('./dbconn.php');
         e.preventDefault();
       });
     });
+
+    // inline button Check results function
+
+    function checkResult() {
+
+     let scorePopup = document.getElementsByClassName("popup")[1];
+     let hideSteps = document.getElementById("steps");
+
+     setTimeout(function(){
+       scorePopup.style.display = "none",
+       hideSteps.style.display = "none";
+      }, 1000);
+    }
 
 
   </script>
