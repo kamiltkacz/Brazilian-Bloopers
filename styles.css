@@ -428,6 +428,23 @@ p#instr {
   border-right: 1px solid rgba(0, 0, 0, 0.2);
 }
 
+#check_res {
+
+  background: black;
+  background: linear-gradient(45deg, #131415 0%, #20272d 50%, #3b8d3b 100%);
+  color: whitesmoke;
+  font-family: inherit;
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 8px;
+  cursor: pointer;
+
+  border-bottom: 3px solid rgba(0, 0, 0, 0.2);
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+
+
+}
+
 /* END BUTTONS*/
 
 /* MAIN CONTAINERS */
