@@ -735,8 +735,8 @@ $('.next').click(function() {
 
           }
 
-          var surveyId = localStorage.getItem("surveyId");
-          var formData = $("#quiz_form :input").serializeArray();
+          let surveyId = localStorage.getItem("surveyId");
+          let formData = $("#quiz_form :input").serializeArray();
           formData[formData.length] = {
             name: "action",
             value: "sub_quiz"
