@@ -188,7 +188,7 @@
 
           if (result.result == 1) {
 
-            localStorage.setItem("surveyId", result.id);
+           // localStorage.setItem("surveyId", result.id);
 
              // Start Button Show
 
