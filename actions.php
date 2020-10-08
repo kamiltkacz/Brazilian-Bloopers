@@ -114,9 +114,9 @@ if (isset($_POST["action"])) {
 
     if (mysqli_query($conn, $sql) === TRUE) {
 
-      $lastId = mysqli_insert_id($conn);
+      // $lastId = mysqli_insert_id($conn);
 
-      $export['id'] = $lastId;
+      // $export['id'] = $lastId;
 
       $export['result'] = "1";
 
@@ -136,11 +136,11 @@ if ($action == "sub_quiz") {
     $sub_it = $_POST["sub_it"];
     $uniq = $_POST["uniq"];
    // $much = $_POST["much"];
-   $surveyId = $_POST["surveyId"];
+  // $surveyId = $_POST["surveyId"];
 
 
-    $sql = "INSERT INTO quiz (Radio_1, Radio_2, surveyId)
-    VALUES ('$sub_it', '$uniq', '$surveyId')";
+    $sql = "INSERT INTO quiz (Radio_1, Radio_2)
+    VALUES ('$sub_it', '$uniq')";
 
     if (mysqli_query($conn, $sql) === TRUE) {
 
