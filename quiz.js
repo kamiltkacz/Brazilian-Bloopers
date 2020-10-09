@@ -1,8 +1,8 @@
 
 $("#start_quiz").on("click", function() {
 
-alert('coming (for real) soon');
-$(this).hide();
+ alert('coming (for real) soon');
+ $(this).hide();
 // let score = 0;
 
 // // Reset border color & text in span element
@@ -72,9 +72,6 @@ $(this).hide();
 
 //     }
 //    });
-
-
-
 
 
 //    $('#next_3').on("click", function(){
