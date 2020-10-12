@@ -92,14 +92,12 @@
 
       // $("#start_quiz").prop('disabled',false);
 
-      var formData = $("#survey :input").serializeArray();
+      let formData = $("#survey :input").serializeArray();
       formData[formData.length] = {
         name: "action",
         value: "submit_survey"
       };
       formData.push({});
-
-
 
       $.ajax({
         type: "POST",
@@ -110,9 +108,7 @@
         success: function(result) {
 
 
-
-
-          if (result.genderErr == "empty") {
+        if (result.genderErr == "empty") {
             $("#bor_gender").css({
               "border-bottom": "5px solid red",
               "padding": "8px"
@@ -121,7 +117,7 @@
 
           }
 
-          if (result.ageErr == "empty") {
+        if (result.ageErr == "empty") {
             $("#bor_age").css({
               "border-bottom": "5px solid red",
               "padding": "8px"
@@ -131,24 +127,21 @@
 
           }
 
-          if (result.yearsErr == "empty") {
+        if (result.yearsErr == "empty") {
             $("#bor_years").css({
               "border-bottom": "5px solid red",
               "padding": "8px"
             });
             $("#span_years").text(" * ");
 
-
           }
 
-          if (result.abroadErr == "empty") {
+         if (result.abroadErr == "empty") {
             $("#bor_abroad").css({
               "border-bottom": "5px solid red",
               "padding": "6px"
             });
             $("#span_abroad").text(" * ");
-
-
 
           }
 
@@ -159,8 +152,6 @@
             });
             $("#span_way").text(" * ");
 
-
-
           }
 
           if (result.othersErr == "empty") {
@@ -169,7 +160,6 @@
               "padding": "6px"
             });
             $("#span_others").text(" * ");
-
 
           }
 
@@ -180,9 +170,7 @@
             });
             $("#span_country").text(" * ");
 
-
           }
-
 
           // After data submitted do stuff here
 
