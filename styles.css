@@ -274,7 +274,7 @@ em {
 }
 
 #start_quiz {
-  /*display: none;*/
+  opacity: 0.2;
   top: -2px;
   background: black;
   background: linear-gradient(45deg, #131415 0%, #20272d 50%, #3b8d3b 100%);
