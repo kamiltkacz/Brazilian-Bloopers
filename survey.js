@@ -7,7 +7,7 @@
       }
     }
 
-    // $("#start_quiz").prop('disabled',true);
+     $("#start_quiz").prop('disabled',true);
 
 
     // Reset border color & text in span element for question1 validation
@@ -90,7 +90,6 @@
 
     $("#submit_survey").on("click", function() {
 
-      // $("#start_quiz").prop('disabled',false);
 
       let formData = $("#survey :input").serializeArray();
       formData[formData.length] = {
@@ -180,6 +179,8 @@
 
              // Start Button Show
 
+         $("#start_quiz").prop('disabled',false).css({"opacity": "1"});
+
 
             Swal.fire({
               title: "Yay!",
@@ -197,8 +198,10 @@
             });
 
             $(".popup").slideUp();
-            //$("#survPar").hide();
             $('#leg_steps').text('Follow these 2 simple steps');
+            $('#removeSteps').hide();
+            $('#clickStart').text('1.Click "Start" button to begin the quiz.');
+            $('#haveFun').text('2.Have fun!');
 
           }
 
