@@ -834,7 +834,7 @@ require_once('./dbconn.php');
                 <input type="radio" id="wit_2" class="rads" name="with" value="err_ok"><label for="wit_2" class="err_label">I'm headache</label><div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
                 <input type="radio" id="wit_3" class="rads" name="with" value="corr"><label for="wit_3">I have a headache</label><div class="d_corr" style="display:none">&nbsp;<i class="fas fa-check"></i></div><br>
             </div>
-            <div class="exp" id="exp_23" style="display:none"><p class="par_exp">Explanation: We say "To have a headache" or any kind of pain or disease. Ex. "Jonh had a stomachache after he ate those grapes." Ex."Luis has a heart condition"<br> We say "To be with someone" when we mean their company, generally we use it just for people. Ex. "I was with Claire at the picnic."</p>
+            <div class="exp" id="exp_23" style="display:none"><p class="par_exp">Explanation: We say "To have a headache" or any kind of pain or disease. Ex. "Jonh had a stomachache after he ate those grapes." Ex."Luis has a heart condition."<br> We say "To be with someone" when we mean their company, generally we use it just for people. Ex. "I was with Claire at the picnic."</p>
             <div class="resultMsg">
              <h4 class="scoreInfo" id="scoreInfo_23">Your score:&nbsp;</h4>
             </div>
@@ -914,7 +914,7 @@ require_once('./dbconn.php');
                 <input type="radio" id="mus_2" class="rads" name="music" value="err_ok"><label for="mus_2" class="err_label">her song</label><div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
                 <input type="radio" id="mus_3" class="rads" name="music" value="corr"><label for="mus_3">her songs</label><div class="d_corr" style="display:none">&nbsp;<i class="fas fa-check"></i></div><br>
             </div>
-            <div class="exp" id="exp_26" style="display:none"><p class="par_exp">Explanation: We say "Songs" when we mean a piece of a musical composition. Ex. "Garota de Ipanema" is a famous Brazilian song."<br> We don't use "music" in the plural.</p>
+            <div class="exp" id="exp_26" style="display:none"><p class="par_exp">Explanation: We say "Song(s)" when we mean a piece of a musical composition. Ex. "Garota de Ipanema" is a famous Brazilian song."<br> We don't use "music" in the plural.</p>
             <div class="resultMsg">
              <h4 class="scoreInfo" id="scoreInfo_26">Your score:&nbsp;</h4>
             </div>
@@ -939,7 +939,7 @@ require_once('./dbconn.php');
                 <input type="radio" id="ev_2" class="rads" name="every" value="err_ok"><label for="ev_2" class="err_label">every days</label><div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
                 <input type="radio" id="ev_3" class="rads" name="every" value="err_2"><label for="ev_3" class="err_label">all days</label><div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
             </div>
-            <div class="exp" id="exp_27" style="display:none"><p class="par_exp">Explanation: We say "All day" when we mean from morning till evening. Ex. "I cleaned my room all day yesterday."<br> We say "Every day" when we mean something happening daily (Monday, Tuesday, etc). Ex. "I don't watch the news every day."</p>
+            <div class="exp" id="exp_27" style="display:none"><p class="par_exp">Explanation: We say "All day" when we mean from morning till evening.<br> Ex. "I cleaned my room all day yesterday."<br> We say "Every day" when we mean something happening daily (Monday, Tuesday, etc). Ex. "I don't watch the news every day."</p>
             <div class="resultMsg">
              <h4 class="scoreInfo" id="scoreInfo_27">Your score:&nbsp;</h4>
             </div>
