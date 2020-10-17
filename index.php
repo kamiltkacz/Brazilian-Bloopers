@@ -43,6 +43,8 @@ require_once('./dbconn.php');
 </head>
 
 <body>
+
+
   <div class="tabs">
     <button id="defaultOpen" class="tablink" onclick="openPage('Home', this);">
       <a href="#" id="active_home" class="active">Home</a>
@@ -57,7 +59,7 @@ require_once('./dbconn.php');
       <a href="#" class="active">Contact</a>
     </button>
   </div>
-
+  <div class="bg"></div>
 
   <div id="Home" class="tabcontent">
     <header>
