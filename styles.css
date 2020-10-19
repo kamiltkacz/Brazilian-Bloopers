@@ -1,30 +1,19 @@
-/*MAKE THE FONT SLIGHLTY BOLDER*/
-/* Set height of body and the document to 100% */
+
 body,
 html {
-  height: 100%;
-  margin: 0;
-  background: black;
-  background: linear-gradient(45deg, #131415 0%, #20272d 50%, #3b8d3b 100%);
-  font-family: "Inconsolata", monospace;
-  font-size: 20px;
-  font-weight: 500px;
-  color: whitesmoke;
-
+height: auto;
+margin: 0;
+max-width: 100%;
+font-family: "Inconsolata", monospace;
+font-size: 20px;
+font-weight: 500px;
+color: whitesmoke;
+background-image: url("pics/beach_soccer.jpeg");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
 }
 
-.bg {
-  /* The image used */
-  background-image: url("beach_soccer.jpg");
-
-  /* Full height */
-  height: 100%;
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
 
 
@@ -59,18 +48,19 @@ h3 {
   outline: none;
   width: 25%;
   border-radius: 5px;
-  overflow: hidden;
-  white-space: nowrap;
+  /* overflow: hidden;
+  white-space: nowrap; */
   border: 0;
   cursor: pointer;
   color: white;
   /*font-size: 2rem;*/
   background: rgba(0, 0, 0, 0.1);
   border-bottom: 3px solid #eee;
-    border-right: 1px solid #eee;
+  border-right: 1px solid #eee;
   padding: 15px;
   font-family: "Inconsolata", monospace;
   text-transform: inherit;
+
 }
 .tabs :hover {
   background-color: #0b2b0f;
@@ -78,13 +68,20 @@ h3 {
 
 }
 
+
 /* Style the tab content (and add height:100% for full page content) */
 .tabcontent {
   color: whitesmoke;
   display: none;
   padding: 100px 19px;
-  height: 100%;
+  height: auto;
+  max-width: 100%;
   text-align: center;
+  background-image: url("pics/beach_soccer.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
 
 legend {
@@ -101,6 +98,7 @@ legend {
 ol {
   list-style-position: outside;
 }
+
 /* CSS for Youtube*/
 .yt-resp {
   position: relative;
@@ -472,6 +470,7 @@ p#instr {
   padding: 20px;
   text-align: center;
   margin-top: 30px;
+  background: transparent;
 }
 /* .cont_surv {
   background: black;
@@ -588,6 +587,7 @@ textarea {
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
+  background: transparent;
 }
 
 .field_about {
@@ -619,7 +619,7 @@ font-size: smaller;
   padding: 5px;
 }
 
-
+/*
 @media (max-width: 375px) {
   .tablink {
     overflow: hidden;
@@ -660,4 +660,4 @@ font-size: smaller;
  .footer {
    font-size: 15px;
  }
-}
+} */
