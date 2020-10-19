@@ -16,6 +16,9 @@ require_once('./dbconn.php');
   <!-- JQuery UI -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha256-KM512VNnjElC30ehFwehXjx1YCHPiQkOPmqnrWtpccM=" crossorigin="anonymous"></script>
 
+  <!--BOOTSTRAP-->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
   <!-- My CSS -->
   <link rel="stylesheet" href="styles.css">
 
@@ -40,11 +43,12 @@ require_once('./dbconn.php');
   <script src="https://unpkg.com/@popperjs/core@2"></script>
    <!-- FontAwesome-->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
 </head>
 
 <body>
 
-
+<div class="bg">
   <div class="tabs">
     <button id="defaultOpen" class="tablink" onclick="openPage('Home', this);">
       <a href="#" id="active_home" class="active">Home</a>
@@ -59,7 +63,7 @@ require_once('./dbconn.php');
       <a href="#" class="active">Contact</a>
     </button>
   </div>
-  <div class="bg"></div>
+
 
   <div id="Home" class="tabcontent">
     <header>
@@ -1168,6 +1172,7 @@ require_once('./dbconn.php');
   <script src="contact_form.js"></script>
 
 
+  </div>
   </body>
 
 </html>
