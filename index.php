@@ -48,7 +48,6 @@ require_once('./dbconn.php');
 
 <body>
 
-<div class="bg">
   <div class="tabs">
     <button id="defaultOpen" class="tablink" onclick="openPage('Home', this);">
       <a href="#" id="active_home" class="active">Home</a>
@@ -65,11 +64,21 @@ require_once('./dbconn.php');
   </div>
 
 
+  <img src="pics\LogoMakr-3Azicc.png" id="logo" alt="Boy smiling" style="width:80px;height:80px;">
   <div id="Home" class="tabcontent">
     <header>
-      <h3>Hello, Welcome to Brazilian Bloopers.<br>Here we tell you what gives you away as a Brazilian!</h3>
+      <h3>Hello, Welcome to Brazilian Bloopers.<br><br>Here we tell you what gives you away as a Brazilian!</h3>
     </header>
+  </div>
 
+
+  <div id="About" class="tabcontent">
+    <div class="container" id="about_us">
+    <fieldset class="field_about">
+       <legend>About Us</legend>
+        <p>We are a group of English teachers based in Brasilia, Brazil, who are determined to sharpen your skills. We've compiled this quiz based on years of experience. One day, fascinated by various "Brazilianisms" students kept throwing at our ears, we decided this phenomenon deserves its own website. Thus, the project Brazilian Bloopers came to life.</p>
+    </fieldset>
+    </div>
     <div class="grid-five">
       <div class="container">
         <p>If you look up English defintion of the word <a href="https://www.dictionary.com/browse/blooper" target="_blank"><span style="color:yellow">'blooper'</span></a> what you'll get is that it's an embarassing error you make publicly. Although we don't think the mistakes you'll find here are too bad, we do believe correcting them will be a small step forward in your language learning. Think of this quiz as a nice amo to your arsenal on your English learning journey. Don't forget to enjoy the process! </p>
@@ -110,42 +119,15 @@ require_once('./dbconn.php');
           </div>
       </div>
     </div>
-    <!-- My Footer -->
-    <div class="footer">
-      <p> Author - Kamil Tkacz</p>
-      <!-- Copyright -->
-      <div class="copyright">
-        <p> &copy; 2020 BrazilianBloopers.com </p>
-      </div>
-    </div>
-  </div>
-
-
-  <div id="About" class="tabcontent">
-    <div class="container" id="about_us">
-    <fieldset class="field_about">
-       <legend>About Us</legend>
-        <p>We are a group of English teachers based in Brasilia, Brazil, who are determined to sharpen your skills. We've compiled this quiz based on years of experience. One day, fascinated by various "Brazilianisms" students kept throwing at our ears, we decided this phenomenon deserves its own website. Thus, the project Brazilian Bloopers came to life.</p>
-    </fieldset>
-    </div>
     <div class="container" id="about_qz">
     <fieldset class="field_about">
        <legend>About the quiz</legend>
-       <h4>The quiz consists of false cognates, idiomatic expressions, incomplete phrases, etc. You'll be presented with a series of dialogues. You have to use your judgement when picking the only one correct answer.<br><br> There are 30 questions which range in difficulty. Some mistakes are more common and some less frequent but all of them share the peculiarity of the Portuguese language that sometimes does not translate well into common English. Even though many of the bloopers are intelligible to English speakers, you would be better off finding a more common alternative.<br><br> But don't be too hard on yourself - It's okay if you have a piece of Brazil that never leaves your brain, plus why not let the gringo do some thinking? <br><br><a href="#">Ready?</a></h4>
+       <h3>The quiz consists of false cognates, idiomatic expressions, incomplete phrases, etc. You'll be presented with a series of dialogues. You have to use your judgement when picking the only one correct answer.<br><br> There are 30 questions which range in difficulty. Some mistakes are more common and some less frequent but all of them share the peculiarity of the Portuguese language that sometimes does not translate well into common English. Even though many of the bloopers are intelligible to English speakers, you would be better off finding a more common alternative.<br><br> But don't be too hard on yourself - It's okay if you have a piece of Brazil that never leaves your brain, plus why not let the gringo do some thinking? <br><br><a href="#">Ready?</a></h3>
      </fieldset>
      </div>
-      <!-- My Footer -->
-    <div class="footer">
-      <p> Author - Kamil Tkacz</p>
-      <!-- Copyright -->
-      <div class="copyright">
-        <p> &copy; 2020 BrazilianBloopers.com </p>
-      </div>
-    </div>
 
+  </div> <!-- About us -->
 
-
-  </div>
 
   <div id="TheQuiz" class="tabcontent">
 
@@ -1065,23 +1047,15 @@ require_once('./dbconn.php');
     </ul>
   </div>
 
- <!-- My Footer -->
- <div id="foot_quiz" class="footer">
-      <p> Author - Kamil Tkacz</p>
-      <!-- Copyright -->
-      <div class="copyright">
-        <p> &copy; 2020 BrazilianBloopers.com </p>
-      </div>
-    </div>
   </div> <!--Quiz tab-->
 
   <!--CONTACT FORM-->
   <div id="ContactUs" class="tabcontent">
     <div class="container">
       <div style="text-align:center">
-        <h2>Shoot us an e-mail directly at</h2>
+        <h3>Shoot us an e-mail directly at</h3>
         <h3><a href="mailto:hello@brazilianbloopers.com">hello@brazilianbloopers.com</a></h3>
-        <h4>or</h4>
+        <h3>or</h3>
       </div>
       <div class="row">
         <div class="column">
@@ -1097,14 +1071,6 @@ require_once('./dbconn.php');
             <button id="submit_contact" class="hvr-grow" type="submit" name="submitcontact">Submit</button>
           </form>
         </div>
-      </div>
-    </div>
-    <!-- My Footer -->
-    <div class="footer">
-      <p> Author - Kamil Tkacz</p>
-      <!-- Copyright -->
-      <div class="copyright">
-        <p> &copy; 2020 BrazilianBloopers.com </p>
       </div>
     </div>
   </div>
@@ -1172,7 +1138,15 @@ require_once('./dbconn.php');
   <script src="contact_form.js"></script>
 
 
-  </div>
+
+
+   <!-- My Footer -->
+   <div id="footer" class="container">
+      <p>Author - Kamil Tkacz<br>
+        &copy;2020 BrazilianBloopers.com<br>
+        Fot.Andre Noboa/Unsplash&nbsp;@andrenoboa</p>
+    </div>
+
   </body>
 
 </html>
