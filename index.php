@@ -76,43 +76,38 @@ require_once('./dbconn.php');
     <div class="container" id="about_us">
     <fieldset class="field_about">
        <legend>About Us</legend>
-        <p>We are a group of English teachers based in Brasilia, Brazil, who are determined to sharpen your skills. We've compiled this quiz based on years of experience. One day, fascinated by various "Brazilianisms" students kept throwing at our ears, we decided this phenomenon deserves its own website. Thus, the project Brazilian Bloopers came to life.</p>
+        <p class="al_left">&nbsp;We are a group of English teachers based in Brasilia, Brazil, who are determined to sharpen your skills. We've compiled this quiz based on years of experience.<br>One day, fascinated by various "Brazilianisms" students kept throwing at our ears, we decided this phenomenon deserves its own website. Thus, the project Brazilian Bloopers came to life.</p>
     </fieldset>
     </div>
     <div class="grid-five">
       <div class="container">
-        <p>If you look up English defintion of the word <a href="https://www.dictionary.com/browse/blooper" target="_blank"><span style="color:yellow">'blooper'</span></a> what you'll get is that it's an embarassing error you make publicly. Although we don't think the mistakes you'll find here are too bad, we do believe correcting them will be a small step forward in your language learning. Think of this quiz as a nice amo to your arsenal on your English learning journey. Don't forget to enjoy the process! </p>
-      </div>
-      <div class="container">
-        <p>Let's face it. It's not an easy task to learn another language and communicate your ideas in it. English, however omnipresent in this world, is no exception. No worries, we're here to help a little with that.</p>
+        <legend>About the Bloopers</legend>
+        <p class="al_left">&nbsp;Let's face it. Learning another language and communicating your ideas in it, is no easy feat. English, however omnipresent in this world, is no exception. We're here to help a little with that.<br>&nbsp;If you look up English defintion of the word <a href="https://www.dictionary.com/browse/blooper" target="_blank"><span style="color:yellow">'blooper'</span></a>you'll get "an embarassing error you make publicly". Although we don't think the mistakes you'll find here are that bad, we do believe correcting them is a great step forward in your language learning journey.</p>
       </div>
       <div class="container">
         <picture>
-          <h3>Example of a "Brazilian Blooper" in a casual dialogue:</h3>
-         <br><br> A) Did you like your trip?<br><p>B)<span class="error_style"><em>More or less</em></span></p><br>A) Hmmm...&#129300;</p>
-          <p>Explanation: In English when we say "More or Less" we use it generally as an approximation of numbers, quantities, a "plus-minus". Ex. "It will cost you 40 reais, more or less."<br>We don't answer with only "more or less" to express value or our impression of something. If you thought the trip could have been better, you answer "Not much". If you thought it could have been worse, you answer "It was okay." You should remember that answers like this are hugely context dependent, meaning, you will have to develop what you mean in more detail.</p>
+          <legend>Example of a Brazilian blooper in casual dialogue:</legend>
+         <br><br>A) Did you like your trip?<br><p>B)<span class="error_style"><em>More or less.</em></span></p>A) Hmmm...&#129300;</p>
+         <hr>
+          <p class="al_left">&nbsp;Explanation: In English we generally say "More or Less" to use it as an approximation of numbers, quantities, a "plus-minus". Ex. "It will cost you 40 reais, more or less."<br><br>We don't answer with "more or less" only to express value or our impression of something. If you thought the above mentioned trip could have been better, you answer "Not much". If you thought it could have been worse, you answer "It was okay." You should remember that answers like this are hugely context dependent, meaning, you will have to develop what you mean in more detail.</p>
         </picture>
       </div>
       <div class="container">
-        <header>Case Studies</header>
-        <p>Case 1) The example of Michel Telo's hit</p>
-        <p> In this case, a hugely popular Brazilian song has a bit of a rough reading in English. Among other smaller bloopers the title "If I catch you" gives it away as something clumsily translated from Portuguese. Even the mainstream showbusiness is not free from an occasional blunder.</p>
+        <legend>Example nr.1 of Bloopers in the mainstream.</legend><br>
+        <p class="al_left">&nbsp;Michel Telo's hit, a hugely popular Brazilian song has a bit of a rough reading in English. Among other smaller bloopers the title "If I catch you" gives it away as something clumsily translated from Portuguese. Even the mainstream showbusiness is not free from an occasional blunder.</p>
         <div class="yt-resp">
           <iframe class="iframe-resp" src="https://www.youtube.com/embed/CwC5BFX7rqQ">
           </iframe>
         </div>
-        <p> Below is a much better version where the American singer Pitbull gives the lyrics his own spin. "If I catch you" becomes "If I get you" and "this way you're gonna kill me" translates into "you're playing hard to get". Good job Pitbull!</p>
+        <p class="al_left">&nbsp;Below is a much better version where the American singer Pitbull gives the lyrics his own spin. "If I catch you" becomes "If I get you" and "this way you're gonna kill me" translates into "you're playing hard to get". Good job Pitbull!</p>
         <div class="yt-resp">
           <iframe class="iframe-resp" src="https://www.youtube.com/embed/bMMnn2kA_HY">
           </iframe>
-        </div>
-
-
+          </div>
       </div>
       <div class="container">
-        <header>Case Studies</header>
-        <p> Case 2)Marilia Gabriela's interview with the one and only Madonna</p>
-        <p> This interview is plainly awkward and actually some part of it is the inability of the Brazilian Journalist to get her English on track. Madonna clearly was not in the mood to help her.
+      <legend>Example nr.2 of Bloopers in the mainstream.</legend><br>
+        <p class="al_left">&nbsp;Marilia Gabriela's interview with the one and only Madonna is plainly awkward partially due to the inability of the Brazilian Journalist to get her English on track. Madonna clearly was not charitable and in the mood to help.
           <div class="yt-resp">
             <iframe class="iframe-resp" src="https://www.youtube.com/embed/zHMhLd4MUC4">
             </iframe>
@@ -122,11 +117,11 @@ require_once('./dbconn.php');
     <div class="container" id="about_qz">
     <fieldset class="field_about">
        <legend>About the quiz</legend>
-       <h3>The quiz consists of false cognates, idiomatic expressions, incomplete phrases, etc. You'll be presented with a series of dialogues. You have to use your judgement when picking the only one correct answer.<br><br> There are 30 questions which range in difficulty. Some mistakes are more common and some less frequent but all of them share the peculiarity of the Portuguese language that sometimes does not translate well into common English. Even though many of the bloopers are intelligible to English speakers, you would be better off finding a more common alternative.<br><br> But don't be too hard on yourself - It's okay if you have a piece of Brazil that never leaves your brain, plus why not let the gringo do some thinking? <br><br><a href="#">Ready?</a></h3>
+       <p class="al_left">&nbsp;The quiz consists of false cognates, idiomatic expressions, incomplete phrases, etc. You'll be presented with a series of dialogues. You have to use your judgement when picking the only one correct answer.<br><br>&nbsp;There are 30 questions which range in difficulty. Some mistakes are more common and some less frequent but all of them share the peculiarity of the Portuguese language that does not translate well into English. Even though many of the bloopers are intelligible to native English speakers, you would be better off finding a more common alternative.<br><br>&nbsp;But don't be too hard on yourself - It's okay if you have a piece of Brazil that never leaves your brain, plus why not let the gringo do some thinking?<br><br>Don't forget to enjoy the process! <br><br><a href="#">Ready?</a></p>
      </fieldset>
      </div>
 
-  </div> <!-- About us -->
+  </div> <!-- About -->
 
 
   <div id="TheQuiz" class="tabcontent">
@@ -241,12 +236,9 @@ require_once('./dbconn.php');
         <a class="popup-close" data-popup-close="popup-2" href="#">x</a>
         <div id="1" class="questions">
           <div class="cont_dial">
-
             <p class="situation">Situation 1 out of 30</p>
-            <div class="dialos">
               <p>Milene: How is the weather today?</p>
               <p>Camile:<span class="error_style"><em>Is hot!</em></span></p>
-            </div>
           </div>
           <div class="cont_answer">
             <p><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p>
@@ -1144,7 +1136,7 @@ require_once('./dbconn.php');
    <div id="footer" class="container">
       <p>Author - Kamil Tkacz<br>
         &copy;2020 BrazilianBloopers.com<br>
-        Fot.Andre Noboa/Unsplash&nbsp;@andrenoboa</p>
+        Photo by Andre Noboa/Unsplash&nbsp;@andrenoboa</p>
     </div>
 
   </body>
