@@ -7,7 +7,7 @@
       }
     }
 
-     $("#start_quiz").prop('disabled',true);
+    //  $("#start_quiz").prop('disabled',true);
 
 
     // Reset border color & text in span element for question1 validation
@@ -187,7 +187,7 @@
               width: 400,
               heightAuto: false,
               padding: "0.15em",
-              background: "#000000",
+              background: "#362317",
               icon: "success",
               text: "Your survey has been submitted, thanks!",
               footer: "<a href>Home</a>",
