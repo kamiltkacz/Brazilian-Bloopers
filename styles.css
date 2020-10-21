@@ -32,9 +32,9 @@ a:hover{
   color: whitesmoke;
 
 }
- a:active {
+ /* a:active {
   font-size: inherit;
-}
+} */
 
 
 
@@ -89,6 +89,10 @@ h3 {
   float: right;
   display: flex;
 
+}
+
+.al_left {
+  text-align: left;
 }
 
 
@@ -179,18 +183,17 @@ ol {
   transform: translate(-50%, -50%);
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 1);
   border-radius: 20px;
-  background: black;
-  background: linear-gradient(45deg, #131415 0%, #20272d 50%, #3b8d3b 100%);
+  background: #EECC89;
 
   text-align: center;
   overflow-x: hidden;
   /*overflow-y: scroll;*/
 }
 #inner_2 {
- max-width: 500px;
-  max-height: 400px;
+ max-width: 550px;
+  max-height: 800px;
   width: 90%;
-  padding: 60px;
+  padding: 50px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -202,8 +205,10 @@ ol {
   background: linear-gradient(45deg, #5ac01c 0%, #1cc110 50%, #18dc0c 100%);
   border: 3px solid antiquewhite;
   text-align: center;
-  /* overflow-x: hidden;
-  overflow-y: scroll; */
+  overflow: hidden;
+
+
+
 }
 
 /* Pop up Close Button */
@@ -258,9 +263,9 @@ label,
   width: 70%;
   font-size: 18px;
   font-family: inherit;
-  color: rgba(35,35,35,0.9);
-  background: black;
-  background: linear-gradient(45deg, #276b27 0%, #0f0 50%, #3b8d3b 100%);
+  color: whitesmoke;
+
+  background: #EECC89;
 }
 
 #bor_country,
@@ -271,7 +276,7 @@ label,
 #bor_gender,
 #bor_years {
   cursor: default;
-  background: radial-gradient(black, transparent);
+  background: radial-gradient(#362317, transparent);
   font-family: inherit, cursive;
   padding: 5px;
   border-radius: 10px;
@@ -304,8 +309,8 @@ em {
 /*BUTTONS*/
 
 #start_survey {
-  background: black;
-  background: linear-gradient(45deg, #131415 0%, #20272d 50%, #3b8d3b 100%);
+  background: #EECC89;
+  /*background: linear-gradient(45deg, #131415 0%, #20272d 50%, #3b8d3b 100%);*/
   color: whitesmoke;
   font-family: inherit;
   font-size: 19px;
@@ -365,7 +370,7 @@ em {
  {
 
   transform: scale(1.1);
-  background-color: #55c50b;
+  background-color: #362317;
 }
 
 p#instr {
@@ -393,8 +398,11 @@ p#instr {
   cursor: pointer;
   display: flex;
   right: 60px;
-  margin-top: 16px;
+
   position: fixed;
+
+  margin-top: 0px;
+  MARGIN-RIGHT: -20PX;
 
   border-bottom: 3px solid rgba(0, 0, 0, 0.2);
   border-right: 1px solid rgba(0, 0, 0, 0.2);
@@ -424,8 +432,8 @@ p#instr {
 
 /* Submit Survey Button*/
 #submit_survey {
-  background: black;
-  background: linear-gradient(45deg, #131415 0%, #20272d 50%, #3b8d3b 100%);
+  background: #EECC89;
+
   color: whitesmoke;
   font-family: inherit;
   font-size: 20px;
@@ -500,12 +508,12 @@ p#instr {
 
 .container {
   border-radius: 20px;
-  background: black;
-  background: linear-gradient(45deg, #131415 0%, #20272d 50%, #3b8d3b 100%);
+  /* background: black;
+  background: linear-gradient(45deg, #131415 0%, #20272d 50%, #3b8d3b 100%); */
   padding: 20px;
   text-align: center;
   margin-top: 30px;
-  background: transparent;
+  background: #91C5FA;
 }
 /* .cont_surv {
   background: black;
@@ -594,6 +602,8 @@ p#instr {
 
 }
 
+/* END CONTAINERS */
+
 /* HOVER INSTRUCTIONS STYLES */
 
 #inst_hov {
@@ -637,10 +647,11 @@ textarea {
 } */
 #footer {
 
-font-size: 13px;
+font-size: 12px;
 display: block;
 margin-top: 480px;
 padding: unset;
+background: transparent;
 }
 
 
