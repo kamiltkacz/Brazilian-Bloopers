@@ -153,9 +153,9 @@ require_once('./dbconn.php');
             <div id="question1" class="cont_surv">
               <p><label id="bor_gender">1) What gender are you?<span id="span_gender" style="color:#ff0000"></span></label></p>
 
-                <input type="radio" id="male" class="radios" name="gender" value="male"><label for="male">Male</label><br>
-                <input type="radio" id="female" class="radios" name="gender" value="female"><label for="female">Female</label><br>
-                <input type="radio" id="other" class="radios" name="gender" value="other"><label for="other">Other</label><br>
+                <input type="radio" id="male" class="radios" name="gender" value="male"><label for="male">&nbsp;Male</label><br>
+                <input type="radio" id="female" class="radios" name="gender" value="female"><label for="female">&nbsp;Female</label><br>
+                <input type="radio" id="other" class="radios" name="gender" value="other"><label for="other">&nbsp;Other</label><br>
             </div>
 
             <div id="question2" class="cont_surv">
@@ -169,49 +169,49 @@ require_once('./dbconn.php');
             <div id="question3" class="cont_surv">
               <p><label id="bor_years">3) English student for<span id="span_years" style="color:#ff0000"></span></label></p>
 
-                <input type="radio" id="y1" class="radios" name="years" value=">_2"><label for="y1">0-2years</label><br>
-                <input type="radio" id="y2" class="radios" name="years" value="2-5"><label for="y2">2-5years</label><br>
-                <input type="radio" id="y3" class="radios" name="years" value="5-10"><label for="y3">5-10years</label><br>
-                <input type="radio" id="y4" class="radios" name="years" value="10_<"><label for="y4">10+ years</label><br>
-                <input type="radio" id="y5" class="radios" name="years" value="never_studied"><label for="y5">never studied</label>
+                <input type="radio" id="y1" class="radios" name="years" value=">_2"><label for="y1">&nbsp;0-2years</label><br>
+                <input type="radio" id="y2" class="radios" name="years" value="2-5"><label for="y2">&nbsp;2-5years</label><br>
+                <input type="radio" id="y3" class="radios" name="years" value="5-10"><label for="y3">&nbsp;5-10years</label><br>
+                <input type="radio" id="y4" class="radios" name="years" value="10_<"><label for="y4">&nbsp;10+ years</label><br>
+                <input type="radio" id="y5" class="radios" name="years" value="never_studied"><label for="y5">&nbsp;never studied</label>
             </div>
 
             <div id="question4" class="cont_surv">
               <p><label id="bor_abroad">4) Experience abroad<span id="span_abroad" style="color:#ff0000"></span></label></p>
 
-                <input type="radio" id="abr1" class="radios" name="abroad" value=">_year"><label for="abr1">less than a year</label><br>
-                <input type="radio" id="abr2" class="radios" name="abroad" value="1-3_years"><label for="abr2">1-2 years</label><br>
-                <input type="radio" id="abr3" class="radios" name="abroad" value="3-6_years"><label for="abr3">3-5 years</label><br>
-                <input type="radio" id="abr4" class="radios" name="abroad" value="6-10_years"><label for="abr4">6-10 years</label><br>
-                <input type="radio" id="abr5" class="radios" name="abroad" value="10_<"><label for="abr5">10+ years</label><br>
-                <input type="radio" id="abr6" class="radios" name="abroad" value="never_abroad"><label for="abr6">never lived abroad</label>
+                <input type="radio" id="abr1" class="radios" name="abroad" value=">_year"><label for="abr1">&nbsp;less than a year</label><br>
+                <input type="radio" id="abr2" class="radios" name="abroad" value="1-3_years"><label for="abr2">&nbsp;1-2 years</label><br>
+                <input type="radio" id="abr3" class="radios" name="abroad" value="3-6_years"><label for="abr3">&nbsp;3-5 years</label><br>
+                <input type="radio" id="abr4" class="radios" name="abroad" value="6-10_years"><label for="abr4">&nbsp;6-10 years</label><br>
+                <input type="radio" id="abr5" class="radios" name="abroad" value="10_<"><label for="abr5">&nbsp;10+ years</label><br>
+                <input type="radio" id="abr6" class="radios" name="abroad" value="never_abroad"><label for="abr6">&nbsp;never lived abroad</label>
             </div>
 
             <div id="question5" class="cont_surv">
               <p><label id="bor_way">5) How do you learn?<span id="span_way" style="color:#ff0000"><br></span></label></p>
 
-                <input type="checkbox" id="way1" class="check" name="way[]" value="g_course"><label for="way1">group course</label><br>
-                <input type="checkbox" id="way2" class="check" name="way[]" value="private_teacher"><label for="way2">private teacher</label><br>
-                <input type="checkbox" id="way3" class="check" name="way[]" value="self_taught"><label for="way3">self-taught</label><br>
-                <input type="checkbox" id="way4" class="check" name="way[]" value="apps"><label for="way4">apps</label><br>
-                <input type="checkbox" id="way5" class="check" name="way[]" value="video_games"><label for="way5">video games</label><br>
-                <input type="checkbox" id="way6" class="check" name="way[]" value="other"><label for="way6">other</label>
+                <input type="checkbox" id="way1" class="check" name="way[]" value="g_course"><label for="way1">&nbsp;group course</label><br>
+                <input type="checkbox" id="way2" class="check" name="way[]" value="private_teacher"><label for="way2">&nbsp;private teacher</label><br>
+                <input type="checkbox" id="way3" class="check" name="way[]" value="self_taught"><label for="way3">&nbsp;self-taught</label><br>
+                <input type="checkbox" id="way4" class="check" name="way[]" value="apps"><label for="way4">&nbsp;apps</label><br>
+                <input type="checkbox" id="way5" class="check" name="way[]" value="video_games"><label for="way5">&nbsp;video games</label><br>
+                <input type="checkbox" id="way6" class="check" name="way[]" value="other"><label for="way6">&nbsp;other</label>
 
             </div>
 
             <div id="question6" class="cont_surv">
               <p><label id="bor_others">6) Foreign languages<span id="span_others" style="color:#ff0000"></span></label></p>
-                <input type="radio" id="oth1" class="radios" name="others" value="one"><label for="oth1">One</label><br>
-                <input type="radio" id="oth2" class="radios" name="others" value="two"><label for="oth2">Two</label><br>
-                <input type="radio" id="oth3" class="radios" name="others" value="polyglot"><label for="oth3">I'm a polyglot</label>
+                <input type="radio" id="oth1" class="radios" name="others" value="one"><label for="oth1">&nbsp;One</label><br>
+                <input type="radio" id="oth2" class="radios" name="others" value="two"><label for="oth2">&nbsp;Two</label><br>
+                <input type="radio" id="oth3" class="radios" name="others" value="polyglot"><label for="oth3">&nbsp;I'm a polyglot</label>
 
             </div>
 
             <div id="question7" class="cont_surv">
               <p><label id="bor_country">7) Where do you live?<span id="span_country" style="color:#ff0000"></span></label></p>
 
-                <input type="radio" id="ctr1" class="radios" name="country" value="brazil"><label for="ctr1">Brazil</label><br>
-                <input type="radio" id="ctr2" class="radios" name="country" value="abroad"><label for="ctr2">Abroad</label>
+                <input type="radio" id="ctr1" class="radios" name="country" value="brazil"><label for="ctr1">&nbsp;Brazil</label><br>
+                <input type="radio" id="ctr2" class="radios" name="country" value="abroad"><label for="ctr2">&nbsp;Abroad</label>
 
             </div>
             <div>
@@ -233,7 +233,7 @@ require_once('./dbconn.php');
       <form id="quiz_form" method="post" action="actions.php">
 
 
-        <a class="popup-close" data-popup-close="popup-2" href="#">x</a>
+        <a class="popup-close" id="popup_close_2" data-popup-close="popup-2" href="#">x</a>
         <div id="1" class="questions">
           <div class="cont_dial">
             <p class="situation">Situation 1 out of 30</p>
