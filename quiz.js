@@ -1757,7 +1757,7 @@ $(function () {
 
   $("#instr").hover(
     function (e) {
-      $(this).css("background", "#55c50b");
+      $(this).css("background", "#4B352C");
       $("#inst_hov").show("slow");
     },
     function () {
@@ -1777,7 +1777,7 @@ $(function () {
 $(document).ready(function () {
   $(".next").hover(
     function () {
-      $(this).css({ background: "#55c50b" });
+      $(this).css({ background: "#4B352C" });
     },
     function () {
       $(this).css({ background: "" });
@@ -1785,7 +1785,7 @@ $(document).ready(function () {
   );
   $(".back").hover(
     function () {
-      $(this).css({ background: "#55c50b" });
+      $(this).css({ background: "#4B352C" });
     },
     function () {
       $(this).css({ background: "" });
@@ -1793,7 +1793,7 @@ $(document).ready(function () {
   );
   $(".hvr-grow").hover(
     function () {
-      $(this).css({ background: "#55c50b" });
+      $(this).css({ background: "#4B352C" });
     },
     function () {
       $(this).css({ background: "" });
