@@ -3,7 +3,7 @@ body,
 html {
 height: 100%;
 margin: 0;
-font-family: "Inconsolata", monospace;
+font-family: "Bangers", monospace;
 font-size: 20px;
 font-weight: 500px;
 color: whitesmoke;
@@ -172,7 +172,7 @@ ol {
 
 /* Inner */
 .popup-inner {
-  max-width: 580px;
+  max-width: 500px;
   max-height: 400px;
   width: 90%;
   padding: 40px;
@@ -190,7 +190,7 @@ ol {
   /*overflow-y: scroll;*/
 }
 #inner_2 {
- max-width: 550px;
+  max-width: 530px;
   max-height: 800px;
   width: 90%;
   padding: 50px;
@@ -201,8 +201,8 @@ ol {
   transform: translate(-50%, -50%);
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 1);
   border-radius: 20px;
-  background: black;
-  background: linear-gradient(45deg, #5ac01c 0%, #1cc110 50%, #18dc0c 100%);
+  background: #EECC89;
+  /*background: linear-gradient(45deg, #5ac01c 0%, #1cc110 50%, #18dc0c 100%);*/
   border: 3px solid antiquewhite;
   text-align: center;
   overflow: hidden;
@@ -217,24 +217,51 @@ ol {
   height: 20px;
   padding-top: 5px;
   display: inline-block;
-  position: sticky;
-  right: 545px;
+  position: absolute;
+
   transition: ease 0.25s all;
   -webkit-transform: translate(50%, -50%);
   transform: translate(50%, -50%);
-  border-radius: 1000px;
-  background: radial-gradient(black, transparent);
+  border-radius: 10px;
+ /* background: radial-gradient(black, transparent);*/
   font-family: inherit;
   font-size: 15px;
   text-align: center;
   line-height: 90%;
   color: #fff;
+  margin-top: -16px;
+  margin-left: -190px;
+
 }
+
+#popup_close_2 {
+  width: 20px;
+  height: 20px;
+  padding-top: 5px;
+  display: inline-block;
+  position: absolute;
+
+  transition: ease 0.25s all;
+  -webkit-transform: translate(50%, -50%);
+  transform: translate(50%, -50%);
+  border-radius: 10px;
+ /* background: radial-gradient(black, transparent);*/
+  font-family: inherit;
+  font-size: 15px;
+  text-align: center;
+  line-height: 90%;
+  color: #fff;
+  margin-top: -2px;
+  margin-left: -190px;
+
+}
+
+
 
 .popup-close:hover {
   -webkit-transform: translate(50%, -50%) rotate(180deg);
   transform: translate(50%, -50%) rotate(180deg);
-  background: midnightblue;
+  background: #362317;
   text-decoration: none;
 }
 
@@ -329,8 +356,8 @@ em {
 #start_quiz {
   opacity: 0.2;
   top: -2px;
-  background: black;
-  background: linear-gradient(45deg, #131415 0%, #20272d 50%, #3b8d3b 100%);
+  background: #EECC89;
+  /*background: linear-gradient(45deg, #131415 0%, #20272d 50%, #3b8d3b 100%);*/
   color: whitesmoke;
   font-family: inherit;
   font-size: 19px;
@@ -370,12 +397,12 @@ em {
  {
 
   transform: scale(1.1);
-  background-color: #362317;
+  background: #362317;
 }
 
 p#instr {
-  background: black;
-  background: linear-gradient(45deg, #131415 0%, #20272d 50%, #3b8d3b 100%);
+  background: #EECC89;
+ /* background: linear-gradient(45deg, #131415 0%, #20272d 50%, #3b8d3b 100%);*/
   color: whitesmoke;
   font-family: inherit;
   font-size: 17px;
@@ -388,8 +415,8 @@ p#instr {
   border-right: 1px solid rgba(0, 0, 0, 0.2);
 }
 .next {
-  background: black;
-  background: linear-gradient(45deg, #131415 0%, #20272d 50%, #3b8d3b 100%);
+  background: #EECC89;
+ /* background: linear-gradient(45deg, #131415 0%, #20272d 50%, #3b8d3b 100%);*/
   color: whitesmoke;
   font-family: inherit;
   font-size: 18px;
@@ -411,8 +438,8 @@ p#instr {
 
 
 .back {
-  background: black;
-  background: linear-gradient(45deg, #131415 0%, #20272d 50%, #3b8d3b 100%);
+  background: #EECC89;
+ /* background: linear-gradient(45deg, #131415 0%, #20272d 50%, #3b8d3b 100%);*/
   color: whitesmoke;
   font-family: inherit;
   font-size: 18px;
@@ -433,15 +460,14 @@ p#instr {
 /* Submit Survey Button*/
 #submit_survey {
   background: #EECC89;
-
   color: whitesmoke;
   font-family: inherit;
   font-size: 20px;
-  padding: 8px;
+  padding: 5px;
   border-radius: 8px;
   cursor: pointer;
   margin-top: 25px;
-  width: 80px;
+ /* width: 80px;*/
   right: 12px;
   position: inherit;
 
@@ -451,8 +477,8 @@ p#instr {
 
 #sub_quiz {
   display: none;
-  background: black;
-  background: linear-gradient(45deg, #131415 0%, #20272d 50%, #3b8d3b 100%);
+  background: #EECC89;
+  /*background: linear-gradient(45deg, #131415 0%, #20272d 50%, #3b8d3b 100%);*/
   color: whitesmoke;
   font-family: inherit;
   font-size: 19px;
@@ -471,8 +497,8 @@ p#instr {
 /* Submit Contact button */
 
 #submit_contact {
-  background: black;
-  background: linear-gradient(45deg, #131415 0%, #20272d 50%, #3b8d3b 100%);
+  background: #EECC89;
+ /* background: linear-gradient(45deg, #131415 0%, #20272d 50%, #3b8d3b 100%);*/
   color: whitesmoke;
   font-family: inherit;
   font-size: 20px;
@@ -487,8 +513,8 @@ p#instr {
 
 #check_res {
 
-  background: black;
-  background: linear-gradient(45deg, #131415 0%, #20272d 50%, #3b8d3b 100%);
+  background: #EECC89;
+ /* background: linear-gradient(45deg, #131415 0%, #20272d 50%, #3b8d3b 100%);*/
   color: whitesmoke;
   font-family: inherit;
   font-size: 20px;
