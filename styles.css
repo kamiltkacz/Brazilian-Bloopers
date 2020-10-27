@@ -206,6 +206,7 @@ ol {
   border: 3px solid antiquewhite;
   text-align: center;
   overflow: hidden;
+  font-size: 18px;
 
 
 
@@ -229,8 +230,8 @@ ol {
   text-align: center;
   line-height: 90%;
   color: #fff;
-  margin-top: -16px;
-  margin-left: -190px;
+  margin-top: -20px;
+  left: 10px;
 
 }
 
@@ -251,8 +252,8 @@ ol {
   text-align: center;
   line-height: 90%;
   color: #fff;
-  margin-top: -2px;
-  margin-left: -190px;
+  margin-top: -30px;
+  left: 190px;
 
 }
 
@@ -281,6 +282,8 @@ label,
 .radios,
 .check:hover {
   cursor: pointer;
+  display: unset;
+  margin-bottom: 5px;
 }
 .contact_lbl:hover{
   cursor: auto;
@@ -309,17 +312,33 @@ label,
   border-radius: 10px;
 }
 
+.surv_ques {
+
+  display: inline-flex;
+  margin-bottom: 10px;
+  margin-top: 20px;
+
+
+}
+
 .bor_choose {
    background: radial-gradient(black, transparent);
    cursor: auto;
-   padding: 12px;
+   padding: 8px;
    border-radius: 10px;
    text-align: center;
-   margin-right: 70px;
-   margin-left: 60px;
+   /*margin-right: 70px;
+   margin-left: 40px;*/
    font-weight: normal;
    font-style: normal;
    text-shadow: 0 0 10px black;
+  /* display: inline-flex;*/
+}
+
+.p_corr {
+  display: inline-block;
+  margin-left: -5px;
+
 }
 
 .rads {
@@ -405,12 +424,12 @@ p#instr {
  /* background: linear-gradient(45deg, #131415 0%, #20272d 50%, #3b8d3b 100%);*/
   color: whitesmoke;
   font-family: inherit;
-  font-size: 17px;
+  font-size: 14px;
   padding: 5px;
   border-radius: 5px;
   cursor: help;
   position: fixed;
-  margin-right: 30px;
+  left: 15px;
   border-bottom: 3px solid rgba(0, 0, 0, 0.2);
   border-right: 1px solid rgba(0, 0, 0, 0.2);
 }
@@ -419,12 +438,12 @@ p#instr {
  /* background: linear-gradient(45deg, #131415 0%, #20272d 50%, #3b8d3b 100%);*/
   color: whitesmoke;
   font-family: inherit;
-  font-size: 18px;
-  padding: 5px;
+  font-size: 15px;
+  padding: 4px;
   border-radius: 8px;
   cursor: pointer;
   display: flex;
-  right: 60px;
+  right: 40px;
 
   position: fixed;
 
@@ -442,18 +461,18 @@ p#instr {
  /* background: linear-gradient(45deg, #131415 0%, #20272d 50%, #3b8d3b 100%);*/
   color: whitesmoke;
   font-family: inherit;
-  font-size: 18px;
-  padding: 5px;
+  font-size: 15px;
+  padding: 4px;
   border-radius: 8px;
   cursor: pointer;
   display: flex;
-  margin-top: 16px;
+  margin-top: 0px;
+  right: 70px;
   position: fixed;
-  right: 120px;
-
   border-bottom: 3px solid rgba(0, 0, 0, 0.2);
   border-right: 1px solid rgba(0, 0, 0, 0.2);
 }
+
 
 
 
@@ -541,14 +560,15 @@ p#instr {
   margin-top: 30px;
   background: #91C5FA;
 }
-/* .cont_surv {
-  background: black;
+ .cont_surv {
+  /* background: black;
   background: linear-gradient(45deg, #131415 0%, #20272d 50%, #3b8d3b 100%);
-  border-radius: 30px;
+  border-radius: 30px; */
   padding: 14px;
   text-align: center;
   margin-top: 20px;
-} */
+
+}
 
 /* QUIZ CONTAINERS*/
 .count {
@@ -562,26 +582,24 @@ p#instr {
 }
 .situation {
    background: radial-gradient(black, transparent);
-   padding: 10px;
+   padding: 8px;
    border-radius: 10px;
    text-align: center;
    font-weight: normal;
    color: whitesmoke;
    text-shadow: 0 0 10px black;
    word-wrap: break-word;
-   display: inline-flex;
-   margin-top: auto;
+   display: inline-block;
+   /*margin-left: 80px;*/
+}
+ .questions {
+  position: relative;
 }
 
- .cont_dial {
-  margin-top: -30px;
- /* border-radius: 10px;
-  background-color: #8e24aa;
-  background: linear-gradient(45deg, #09182d 0%, #478ed1 50%, #c3cbd5 100%);
-  padding: 20px;
+ /* .cont_dial {
 
-  color: whitesmoke;*/
-}
+  text-align: left;
+} */
 
 /* .dialos {
   border-radius: 10px;
@@ -593,23 +611,16 @@ p#instr {
   color: whitesmoke;
 } */
 .cont_answer {
-  margin-top: 40px;
+ /* margin-top: 40px;
  /* border-radius: 10px;
   background: #8e24aa;
   background: linear-gradient(45deg, #09182d 0%, #478ed1 50%, #c3cbd5 100%);
   padding: 20px;
 
   color: whitesmoke;*/
-}
- .answers {
-   margin-top: 25px;
-  /*border-radius: 10px;
-  background: #8e24aa;
-  background: linear-gradient(45deg, #415e76 0%, #478ed1 50%, #061a3a 100%);
-  padding: 25px;
-  text-align: left;
-
-  color: whitesmoke;*/
+  font-size: 17px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 .exp {
   background: linear-gradient(45deg, #5ac01c 0%, #1cc110 50%, #18dc0c 100%);;
@@ -635,13 +646,13 @@ p#instr {
 #inst_hov {
   display: none;
   position: absolute;
-  width: 280px;
+  width: 400px;
   padding: 8px;
   background: #eeeeee;
   color: #0867b0;
   border-radius: 20mm;
   border: 1px solid #1a1a1a;
-  font-size: 70%;
+  font-size: 60%;
 }
 
 /* CONTACT FORM Style inputs with type="text", select elements and textareas */
