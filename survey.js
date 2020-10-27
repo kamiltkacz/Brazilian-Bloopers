@@ -112,7 +112,7 @@
               "border-bottom": "5px solid red",
               "padding": "8px"
             });
-            $("#span_gender").text(" * ");
+            // $("#span_gender").text(" * ");
 
           }
 
@@ -121,7 +121,7 @@
               "border-bottom": "5px solid red",
               "padding": "8px"
             });
-            $("#span_age").text(" * ");
+            // $("#span_age").text(" * ");
 
 
           }
@@ -131,7 +131,7 @@
               "border-bottom": "5px solid red",
               "padding": "8px"
             });
-            $("#span_years").text(" * ");
+            // $("#span_years").text(" * ");
 
           }
 
@@ -140,7 +140,7 @@
               "border-bottom": "5px solid red",
               "padding": "6px"
             });
-            $("#span_abroad").text(" * ");
+            // $("#span_abroad").text(" * ");
 
           }
 
@@ -149,7 +149,7 @@
               "border-bottom": "5px solid red",
               "padding": "6px"
             });
-            $("#span_way").text(" * ");
+            // $("#span_way").text(" * ");
 
           }
 
@@ -157,8 +157,8 @@
             $("#bor_others").css({
               "border-bottom": "5px solid red",
               "padding": "6px"
-            });
-            $("#span_others").text(" * ");
+             });
+            // $("#span_others").text(" * ");
 
           }
 
@@ -167,7 +167,7 @@
               "border-bottom": "5px solid red",
               "padding": "6px"
             });
-            $("#span_country").text(" * ");
+            // $("#span_country").text(" * ");
 
           }
 
