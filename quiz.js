@@ -23,9 +23,9 @@ $("#start_quiz").on("click", function () {
     if (!$("input[name='sub_it']:checked").val()) {
       $(".bor_choose").css({
         "border-bottom": "5px solid red",
-        padding: "12px",
+        padding: "10px",
       });
-      $(".span_choose").text(" * ");
+
     } else if ($("input[name='sub_it']:checked").val() == "corr") {
       score++;
       console.log(score);
@@ -44,9 +44,9 @@ $("#start_quiz").on("click", function () {
     if (!$("input[name='too']:checked").val()) {
       $(".bor_choose").css({
         "border-bottom": "5px solid red",
-        padding: "12px",
+        padding:"",
       });
-      $(".span_choose").text(" * ");
+
     } else if ($("input[name='too']:checked").val() == "corr") {
       score++;
       console.log(score);
@@ -63,9 +63,9 @@ $("#start_quiz").on("click", function () {
     if (!$("input[name='much']:checked").val()) {
       $(".bor_choose").css({
         "border-bottom": "5px solid red",
-        padding: "12px",
+        padding:"",
       });
-      $(".span_choose").text(" * ");
+
     } else if ($("input[name='much']:checked").val() == "corr") {
       score++;
       console.log(score);
@@ -82,9 +82,9 @@ $("#start_quiz").on("click", function () {
     if (!$("input[name='exist']:checked").val()) {
       $(".bor_choose").css({
         "border-bottom": "5px solid red",
-        padding: "12px",
+        padding:"",
       });
-      $(".span_choose").text(" * ");
+
     } else if ($("input[name='exist']:checked").val() == "corr") {
       score++;
       console.log(score);
@@ -101,9 +101,9 @@ $("#start_quiz").on("click", function () {
     if (!$("input[name='two_sub']:checked").val()) {
       $(".bor_choose").css({
         "border-bottom": "5px solid red",
-        padding: "12px",
+        padding:"",
       });
-      $(".span_choose").text(" * ");
+
     } else if ($("input[name='two_sub']:checked").val() == "corr") {
       score++;
       console.log(score);
@@ -120,9 +120,9 @@ $("#start_quiz").on("click", function () {
     if (!$("input[name='no_obj']:checked").val()) {
       $(".bor_choose").css({
         "border-bottom": "5px solid red",
-        padding: "12px",
+        padding:"",
       });
-      $(".span_choose").text(" * ");
+
     } else if ($("input[name='no_obj']:checked").val() == "corr") {
       score++;
       console.log(score);
@@ -139,9 +139,9 @@ $("#start_quiz").on("click", function () {
     if (!$("input[name='for']:checked").val()) {
       $(".bor_choose").css({
         "border-bottom": "5px solid red",
-        padding: "12px",
+        padding:"",
       });
-      $(".span_choose").text(" * ");
+
     } else if ($("input[name='for']:checked").val() == "corr") {
       score++;
       console.log(score);
@@ -158,9 +158,9 @@ $("#start_quiz").on("click", function () {
     if (!$("input[name='h_age']:checked").val()) {
       $(".bor_choose").css({
         "border-bottom": "5px solid red",
-        padding: "12px",
+        padding:"",
       });
-      $(".span_choose").text(" * ");
+
     } else if ($("input[name='h_age']:checked").val() == "corr") {
       score++;
       console.log(score);
@@ -177,9 +177,9 @@ $("#start_quiz").on("click", function () {
     if (!$("input[name='guy']:checked").val()) {
       $(".bor_choose").css({
         "border-bottom": "5px solid red",
-        padding: "12px",
+        padding:"",
       });
-      $(".span_choose").text(" * ");
+
     } else if ($("input[name='guy']:checked").val() == "corr") {
       score++;
       console.log(score);
@@ -196,9 +196,9 @@ $("#start_quiz").on("click", function () {
     if (!$("input[name='car']:checked").val()) {
       $(".bor_choose").css({
         "border-bottom": "5px solid red",
-        padding: "12px",
+        padding:"",
       });
-      $(".span_choose").text(" * ");
+
     } else if ($("input[name='car']:checked").val() == "corr") {
       score++;
       console.log(score);
@@ -215,9 +215,9 @@ $("#start_quiz").on("click", function () {
     if (!$("input[name='lose']:checked").val()) {
       $(".bor_choose").css({
         "border-bottom": "5px solid red",
-        padding: "12px",
+        padding:"",
       });
-      $(".span_choose").text(" * ");
+
     } else if ($("input[name='lose']:checked").val() == "corr") {
       score++;
       console.log(score);
@@ -234,9 +234,9 @@ $("#start_quiz").on("click", function () {
     if (!$("input[name='diss']:checked").val()) {
       $(".bor_choose").css({
         "border-bottom": "5px solid red",
-        padding: "12px",
+        padding:"",
       });
-      $(".span_choose").text(" * ");
+
     } else if ($("input[name='diss']:checked").val() == "corr") {
       score++;
       console.log(score);
@@ -253,9 +253,9 @@ $("#start_quiz").on("click", function () {
     if (!$("input[name='doubt']:checked").val()) {
       $(".bor_choose").css({
         "border-bottom": "5px solid red",
-        padding: "12px",
+        padding:"",
       });
-      $(".span_choose").text(" * ");
+
     } else if ($("input[name='doubt']:checked").val() == "corr") {
       score++;
       console.log(score);
@@ -272,9 +272,9 @@ $("#start_quiz").on("click", function () {
     if (!$("input[name='know']:checked").val()) {
       $(".bor_choose").css({
         "border-bottom": "5px solid red",
-        padding: "12px",
+        padding:"",
       });
-      $(".span_choose").text(" * ");
+
     } else if ($("input[name='know']:checked").val() == "corr") {
       score++;
       console.log(score);
@@ -291,9 +291,9 @@ $("#start_quiz").on("click", function () {
     if (!$("input[name='god']:checked").val()) {
       $(".bor_choose").css({
         "border-bottom": "5px solid red",
-        padding: "12px",
+        padding:"",
       });
-      $(".span_choose").text(" * ");
+
     } else if ($("input[name='god']:checked").val() == "corr") {
       score++;
       console.log(score);
@@ -310,9 +310,9 @@ $("#start_quiz").on("click", function () {
     if (!$("input[name='pref']:checked").val()) {
       $(".bor_choose").css({
         "border-bottom": "5px solid red",
-        padding: "12px",
+        padding:"",
       });
-      $(".span_choose").text(" * ");
+
     } else if ($("input[name='pref']:checked").val() == "corr") {
       score++;
       console.log(score);
@@ -329,9 +329,9 @@ $("#start_quiz").on("click", function () {
     if (!$("input[name='impress']:checked").val()) {
       $(".bor_choose").css({
         "border-bottom": "5px solid red",
-        padding: "12px",
+        padding:"",
       });
-      $(".span_choose").text(" * ");
+
     } else if ($("input[name='impress']:checked").val() == "corr") {
       score++;
       console.log(score);
@@ -348,9 +348,9 @@ $("#start_quiz").on("click", function () {
     if (!$("input[name='parent']:checked").val()) {
       $(".bor_choose").css({
         "border-bottom": "5px solid red",
-        padding: "12px",
+        padding:"",
       });
-      $(".span_choose").text(" * ");
+
     } else if ($("input[name='parent']:checked").val() == "corr") {
       score++;
       console.log(score);
@@ -367,9 +367,9 @@ $("#start_quiz").on("click", function () {
     if (!$("input[name='gout']:checked").val()) {
       $(".bor_choose").css({
         "border-bottom": "5px solid red",
-        padding: "12px",
+        padding:"",
       });
-      $(".span_choose").text(" * ");
+
     } else if ($("input[name='gout']:checked").val() == "corr") {
       score++;
       console.log(score);
@@ -386,9 +386,9 @@ $("#start_quiz").on("click", function () {
     if (!$("input[name='use']:checked").val()) {
       $(".bor_choose").css({
         "border-bottom": "5px solid red",
-        padding: "12px",
+        padding:"",
       });
-      $(".span_choose").text(" * ");
+
     } else if ($("input[name='use']:checked").val() == "corr") {
       score++;
       console.log(score);
@@ -405,9 +405,9 @@ $("#start_quiz").on("click", function () {
     if (!$("input[name='durat']:checked").val()) {
       $(".bor_choose").css({
         "border-bottom": "5px solid red",
-        padding: "12px",
+        padding:"",
       });
-      $(".span_choose").text(" * ");
+
     } else if ($("input[name='durat']:checked").val() == "corr") {
       score++;
       console.log(score);
@@ -424,9 +424,9 @@ $("#start_quiz").on("click", function () {
     if (!$("input[name='stay']:checked").val()) {
       $(".bor_choose").css({
         "border-bottom": "5px solid red",
-        padding: "12px",
+        padding:"",
       });
-      $(".span_choose").text(" * ");
+
     } else if ($("input[name='stay']:checked").val() == "corr") {
       score++;
       console.log(score);
@@ -443,9 +443,9 @@ $("#start_quiz").on("click", function () {
     if (!$("input[name='with']:checked").val()) {
       $(".bor_choose").css({
         "border-bottom": "5px solid red",
-        padding: "12px",
+        padding:"",
       });
-      $(".span_choose").text(" * ");
+
     } else if ($("input[name='with']:checked").val() == "corr") {
       score++;
       console.log(score);
@@ -462,9 +462,9 @@ $("#start_quiz").on("click", function () {
     if (!$("input[name='chap']:checked").val()) {
       $(".bor_choose").css({
         "border-bottom": "5px solid red",
-        padding: "12px",
+        padding:"",
       });
-      $(".span_choose").text(" * ");
+
     } else if ($("input[name='chap']:checked").val() == "corr") {
       score++;
       console.log(score);
@@ -481,9 +481,9 @@ $("#start_quiz").on("click", function () {
     if (!$("input[name='notes']:checked").val()) {
       $(".bor_choose").css({
         "border-bottom": "5px solid red",
-        padding: "12px",
+        padding:"",
       });
-      $(".span_choose").text(" * ");
+
     } else if ($("input[name='notes']:checked").val() == "corr") {
       score++;
       console.log(score);
@@ -500,9 +500,9 @@ $("#start_quiz").on("click", function () {
     if (!$("input[name='music']:checked").val()) {
       $(".bor_choose").css({
         "border-bottom": "5px solid red",
-        padding: "12px",
+        padding:"",
       });
-      $(".span_choose").text(" * ");
+
     } else if ($("input[name='music']:checked").val() == "corr") {
       score++;
       console.log(score);
@@ -519,9 +519,9 @@ $("#start_quiz").on("click", function () {
     if (!$("input[name='every']:checked").val()) {
       $(".bor_choose").css({
         "border-bottom": "5px solid red",
-        padding: "12px",
+        padding:"",
       });
-      $(".span_choose").text(" * ");
+
     } else if ($("input[name='every']:checked").val() == "corr") {
       score++;
       console.log(score);
@@ -538,9 +538,9 @@ $("#start_quiz").on("click", function () {
     if (!$("input[name='sym']:checked").val()) {
       $(".bor_choose").css({
         "border-bottom": "5px solid red",
-        padding: "12px",
+        padding:"",
       });
-      $(".span_choose").text(" * ");
+
     } else if ($("input[name='sym']:checked").val() == "corr") {
       score++;
       console.log(score);
@@ -557,9 +557,9 @@ $("#start_quiz").on("click", function () {
     if (!$("input[name='support']:checked").val()) {
       $(".bor_choose").css({
         "border-bottom": "5px solid red",
-        padding: "12px",
+        padding:"",
       });
-      $(".span_choose").text(" * ");
+
     } else if ($("input[name='support']:checked").val() == "corr") {
       score++;
       console.log(score);
@@ -580,15 +580,15 @@ $("#start_quiz").on("click", function () {
 
   // Next button changes to Submit and moves
   $("#next_30").text("Submit");
-  $("#back_30").css({ right: "140px" });
+  $("#back_30").css({ right: "85px" });
 
   $("#next_30").on("click", function () {
     if (!$("input[name='uniq']:checked").val()) {
       $(".bor_choose").css({
         "border-bottom": "5px solid red",
-        padding: "12px",
+        padding:"",
       });
-      $(".span_choose").text(" * ");
+
       return false;
     } else if ($("input[name='uniq']:checked").val() == "corr") {
       score++;
