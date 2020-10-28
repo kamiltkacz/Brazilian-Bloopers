@@ -13,6 +13,7 @@ background-position: center;
 background-repeat: no-repeat;
 background-attachment: fixed;
 background-size: 100% 100%;
+opacity: 0.8:
 /* filter: blur(8px);
 -webkit-filter: blur(8px);*/
 }
@@ -38,9 +39,17 @@ a:hover{
 
 
 
-#logo {
+.logo {
 
   filter: grayscale(100%);
+  opacity: 0.8;
+}
+
+#logo_surv {
+
+  opacity: 0.5;
+
+
 }
 
 /* #leg_steps {
@@ -128,6 +137,20 @@ legend {
   padding-left: 2px;
   padding-right: 2px;
   border: none;
+  font-size: 25px;
+}
+
+#leg_steps {
+  font-size: 25px;
+}
+
+#remove_steps {
+
+  margin-top: 30px;
+}
+
+#have_fun {
+  margin-top: 30px;
 }
 
 #field_steps {
@@ -155,7 +178,7 @@ ol {
   border: 0;
 }
 
-.scoreMsg {
+.score_msg {
   display: none;
 }
 
@@ -184,10 +207,17 @@ ol {
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 1);
   border-radius: 20px;
   background: #EECC89;
+  /*background-color: whitesmoke;*/
 
   text-align: center;
   overflow-x: hidden;
   /*overflow-y: scroll;*/
+  background-image: url("pics/GreyLogo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+ /* background-attachment: fixed;*/
+  background-size: 280px 280px;
+
 }
 #inner_2 {
   max-width: 530px;
@@ -230,10 +260,11 @@ ol {
   text-align: center;
   line-height: 90%;
   color: #fff;
-  margin-top: -20px;
-  left: 10px;
-
+  margin-top: -30px;
+  left: -5px;
 }
+
+
 
 #popup_close_2 {
   width: 20px;
@@ -252,8 +283,8 @@ ol {
   text-align: center;
   line-height: 90%;
   color: #fff;
-  margin-top: -30px;
-  left: 190px;
+  margin-top: -40px;
+  left: -10px;
 
 }
 
@@ -315,11 +346,12 @@ label,
 .surv_ques {
 
   display: inline-flex;
-  margin-bottom: 10px;
-  margin-top: 20px;
-
-
+  margin-bottom: 30px;
+  margin-top: 0px;
 }
+
+
+
 
 .bor_choose {
    background: radial-gradient(black, transparent);
@@ -359,7 +391,7 @@ em {
   /*background: linear-gradient(45deg, #131415 0%, #20272d 50%, #3b8d3b 100%);*/
   color: whitesmoke;
   font-family: inherit;
-  font-size: 19px;
+  font-size: 16px;
   padding: 5px;
   border-radius: 8px;
   cursor: pointer;
@@ -370,7 +402,10 @@ em {
   text-transform: uppercase;
   border-bottom: 3px solid rgba(0, 0, 0, 0.2);
   border-right: 1px solid rgba(0, 0, 0, 0.2);
+  margin-top: 25px;
+  margin-bottom: 35px;
 }
+
 
 #start_quiz {
   opacity: 0.2;
@@ -379,12 +414,12 @@ em {
   /*background: linear-gradient(45deg, #131415 0%, #20272d 50%, #3b8d3b 100%);*/
   color: whitesmoke;
   font-family: inherit;
-  font-size: 19px;
+  font-size: 16px;
   padding: 5px;
   border-radius: 8px;
   cursor: pointer;
   /*top: 15px;*/
-  margin-right: 10px;
+  /*margin-right: 10px;*/
   text-align: center;
   position: relative;
   text-transform: uppercase;
@@ -438,13 +473,13 @@ p#instr {
  /* background: linear-gradient(45deg, #131415 0%, #20272d 50%, #3b8d3b 100%);*/
   color: whitesmoke;
   font-family: inherit;
-  font-size: 15px;
+  font-size: 16px;
   padding: 4px;
   border-radius: 8px;
   cursor: pointer;
   display: flex;
   right: 40px;
-
+  text-transform: uppercase;
   position: fixed;
 
   margin-top: 0px;
@@ -461,7 +496,7 @@ p#instr {
  /* background: linear-gradient(45deg, #131415 0%, #20272d 50%, #3b8d3b 100%);*/
   color: whitesmoke;
   font-family: inherit;
-  font-size: 15px;
+  font-size: 16px;
   padding: 4px;
   border-radius: 8px;
   cursor: pointer;
@@ -471,6 +506,7 @@ p#instr {
   position: fixed;
   border-bottom: 3px solid rgba(0, 0, 0, 0.2);
   border-right: 1px solid rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
 }
 
 
@@ -481,7 +517,7 @@ p#instr {
   background: #EECC89;
   color: whitesmoke;
   font-family: inherit;
-  font-size: 20px;
+  font-size: 16px;
   padding: 5px;
   border-radius: 8px;
   cursor: pointer;
@@ -489,7 +525,7 @@ p#instr {
  /* width: 80px;*/
   right: 12px;
   position: inherit;
-
+  text-transform: uppercase;
   border-bottom: 3px solid rgba(0, 0, 0, 0.2);
   border-right: 1px solid rgba(0, 0, 0, 0.2);
 }
@@ -500,7 +536,7 @@ p#instr {
   /*background: linear-gradient(45deg, #131415 0%, #20272d 50%, #3b8d3b 100%);*/
   color: whitesmoke;
   font-family: inherit;
-  font-size: 19px;
+  font-size: 16px;
   padding: 5px;
   border-radius: 8px;
   cursor: pointer;
@@ -508,7 +544,7 @@ p#instr {
   margin-right: 10px;
   text-align: center;
   position: relative;
-
+  text-transform: uppercase;
   border-bottom: 3px solid rgba(0, 0, 0, 0.2);
   border-right: 1px solid rgba(0, 0, 0, 0.2);
 }
@@ -520,12 +556,12 @@ p#instr {
  /* background: linear-gradient(45deg, #131415 0%, #20272d 50%, #3b8d3b 100%);*/
   color: whitesmoke;
   font-family: inherit;
-  font-size: 20px;
+  font-size: 16px;
   padding: 5px;
   border-radius: 8px;
   cursor: pointer;
   /*margin-left: 430px;*/
-
+  text-transform: uppercase;
   border-bottom: 3px solid rgba(0, 0, 0, 0.2);
   border-right: 1px solid rgba(0, 0, 0, 0.2);
 }
@@ -536,11 +572,11 @@ p#instr {
  /* background: linear-gradient(45deg, #131415 0%, #20272d 50%, #3b8d3b 100%);*/
   color: whitesmoke;
   font-family: inherit;
-  font-size: 20px;
+  font-size: 16px;
   padding: 5px;
   border-radius: 8px;
   cursor: pointer;
-
+  text-transform: uppercase;
   border-bottom: 3px solid rgba(0, 0, 0, 0.2);
   border-right: 1px solid rgba(0, 0, 0, 0.2);
 
@@ -567,7 +603,12 @@ p#instr {
   padding: 14px;
   text-align: center;
   margin-top: 20px;
+  background: radial-gradient(#573520, transparent);
 
+}
+
+#question_1 {
+  margin-top: -10px;
 }
 
 /* QUIZ CONTAINERS*/
@@ -591,6 +632,7 @@ p#instr {
    word-wrap: break-word;
    display: inline-block;
    /*margin-left: 80px;*/
+   margin-top: -25px;
 }
  .questions {
   position: relative;
@@ -636,7 +678,30 @@ p#instr {
 #contact {
 
   text-align: left;
+  color: whitesmoke;
 
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: whitesmoke;
+  opacity: 1; /* Firefox */
+  font-family: inherit;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: whitesmoke;
+  font-family: inherit;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: whitesmoke;
+  font-family: inherit;
+
+}
+
+#shoot_email {
+
+  font-size: 25px;
 }
 
 /* END CONTAINERS */
@@ -661,15 +726,16 @@ select,
 textarea {
   width: 100%;
   padding: 12px;
-  font-family: "Patua One", cursive;
+ /* font-family: "Patua One", cursive;*/
   font-size: 20px;
-  border: 5px solid #ccc;
+  border: 5px solid #EECC89;
   border-radius: 4px;
   box-sizing: border-box;
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
   background: transparent;
+  color: whitesmoke;
 }
 
 .field_about {
