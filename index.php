@@ -64,7 +64,7 @@ require_once('./dbconn.php');
   </div>
 
 
-  <img src="pics\LogoMakr-3Azicc.png" id="logo" alt="Boy smiling" style="width:80px;height:80px;">
+  <img src="pics\logo.png" id="logo_main" class="logo" style="width:80px;height:80px;">
   <div id="Home" class="tabcontent">
     <header>
       <h3>Hello, Welcome to Brazilian Bloopers.<br><br>Here we tell you what gives you away as a Brazilian!</h3>
@@ -82,11 +82,18 @@ require_once('./dbconn.php');
     <div class="grid-five">
       <div class="container">
         <legend>About the Bloopers</legend>
-        <p class="al_left">&nbsp;Let's face it. Learning another language and communicating your ideas in it, is no easy feat. English, however omnipresent in this world, is no exception. We're here to help a little with that.<br>&nbsp;If you look up English defintion of the word <a href="https://www.dictionary.com/browse/blooper" target="_blank"><span style="color:yellow">'blooper'</span></a>you'll get "an embarassing error you make publicly". Although we don't think the mistakes you'll find here are that bad, we do believe correcting them is a great step forward in your language learning journey.</p>
+        <p class="al_left">&nbsp;Let's face it. Learning another language and communicating your ideas in it, is no easy feat. English, however omnipresent in this world, is no exception. We're here to help a little with that.<br>&nbsp;If you look up English defintion of the word <a href="https://www.dictionary.com/browse/blooper" target="_blank"><span style="color:#EECC89">'blooper'</span></a>you'll get "an embarassing error you make publicly". Although we don't think the mistakes you'll find here are that bad, we do believe correcting them is a great step forward in your language learning journey.<a href="#examples">&nbsp;<span style="color:#EECC89">Check out the examples below.</span></a></p>
       </div>
-      <div class="container">
+
+    <div class="container" id="about_qz">
+    <fieldset class="field_about">
+       <legend>About the quiz</legend>
+       <p class="al_left">&nbsp;The quiz consists of false cognates, idiomatic expressions, incomplete phrases, etc. You'll be presented with a series of dialogues. You have to use your judgement when picking the only one correct answer.<br><br>&nbsp;There are 30 questions which range in difficulty. Some mistakes are more common and some less frequent but all of them share the peculiarity of the Portuguese language that does not translate well into English. Even though many of the bloopers are intelligible to native English speakers, you would be better off finding a more common alternative.<br><br>&nbsp;But don't be too hard on yourself - It's okay if you have a piece of Brazil that never leaves your brain, plus why not let the gringo do some thinking?<br><br>Don't forget to enjoy the process! <br><br><a href="#" style="color:#EECC89" onclick="openPage('TheQuiz', this);">Ready?</a></p>
+     </fieldset>
+     </div>
+     <div class="container">
         <picture>
-          <legend>Example of a Brazilian blooper in casual dialogue:</legend>
+          <legend><a id="examples" style="font-size: 25px;">Example of a Brazilian blooper in casual dialogue:</a></legend>
          <br><br>A) Did you like your trip?<br><p>B)<span class="error_style"><em>More or less.</em></span></p>A) Hmmm...&#129300;</p>
          <hr>
           <p class="al_left">&nbsp;Explanation: In English we generally say "More or Less" to use it as an approximation of numbers, quantities, a "plus-minus". Ex. "It will cost you 40 reais, more or less."<br><br>We don't answer with "more or less" only to express value or our impression of something. If you thought the above mentioned trip could have been better, you answer "Not much". If you thought it could have been worse, you answer "It was okay." You should remember that answers like this are hugely context dependent, meaning, you will have to develop what you mean in more detail.</p>
@@ -114,29 +121,23 @@ require_once('./dbconn.php');
           </div>
       </div>
     </div>
-    <div class="container" id="about_qz">
-    <fieldset class="field_about">
-       <legend>About the quiz</legend>
-       <p class="al_left">&nbsp;The quiz consists of false cognates, idiomatic expressions, incomplete phrases, etc. You'll be presented with a series of dialogues. You have to use your judgement when picking the only one correct answer.<br><br>&nbsp;There are 30 questions which range in difficulty. Some mistakes are more common and some less frequent but all of them share the peculiarity of the Portuguese language that does not translate well into English. Even though many of the bloopers are intelligible to native English speakers, you would be better off finding a more common alternative.<br><br>&nbsp;But don't be too hard on yourself - It's okay if you have a piece of Brazil that never leaves your brain, plus why not let the gringo do some thinking?<br><br>Don't forget to enjoy the process! <br><br><a href="#">Ready?</a></p>
-     </fieldset>
-     </div>
 
   </div> <!-- About -->
 
 
   <div id="TheQuiz" class="tabcontent">
-
+    <!--<a id="quiz_link"></a>-->
 
     <div class="container" id="steps">
       <fieldset id="field_steps">
         <legend id="leg_steps">Follow these 3 simple steps:</legend>
-            <div id="removeSteps">
-            <p>1. First, fill out our spectacularly short
-            <button id="start_survey" class="hvr-grow" data-popup-open="popup-1">Survey</button> and click submit.</p><br>
+            <div id="remove_steps">
+            <p>1.First, fill out our spectacularly short survey.</p>
+             <button id="start_survey" class="hvr-grow" data-popup-open="popup-1">Survey</button>
             </div>
-            <p id="clickStart">2.Next, Click the "Start" button to begin the quiz.</p><br>
+            <p id="click_start">2.Next, Click the "Start" button to begin the quiz.</p><br>
             <button id="start_quiz" class="hvr-grow" data-popup-open="popup-2">Start</button>
-            <p id="haveFun">3.Have fun!</p>
+            <p id="have_fun">3.Have fun!</p>
       </fieldset>
     </div>
 
@@ -150,7 +151,7 @@ require_once('./dbconn.php');
 
 
           <div id="surv_div">
-            <div id="question1" class="cont_surv">
+            <div id="question_1" class="cont_surv">
               <p  class="surv_ques"><label id="bor_gender">1) What gender are you?<span id="span_gender" style="color:#ff0000"></span></label></p><br>
 
                 <input type="radio" id="male" class="radios" name="gender" value="male"><label for="male">&nbsp;Male</label><br>
@@ -158,7 +159,7 @@ require_once('./dbconn.php');
                 <input type="radio" id="other" class="radios" name="gender" value="other"><label for="other">&nbsp;Other</label><br>
             </div>
 
-            <div id="question2" class="cont_surv">
+            <div id="question_2" class="cont_surv">
               <p class="surv_ques"><label id="bor_age">2) How old are you?<span id="span_age" style="color:#ff0000"></span></label></p><br>
               <select id="age" name="ageselect">
                 <option id="opt" value="0">Select your age</option>
@@ -166,7 +167,7 @@ require_once('./dbconn.php');
             </div>
 
 
-            <div id="question3" class="cont_surv">
+            <div id="question_3" class="cont_surv">
               <p class="surv_ques"><label id="bor_years">3) English student for<span id="span_years" style="color:#ff0000"></span></label></p><br>
 
                 <input type="radio" id="y1" class="radios" name="years" value=">_2"><label for="y1">&nbsp;0-2years</label><br>
@@ -176,7 +177,7 @@ require_once('./dbconn.php');
                 <input type="radio" id="y5" class="radios" name="years" value="never_studied"><label for="y5">&nbsp;never studied</label>
             </div>
 
-            <div id="question4" class="cont_surv">
+            <div id="question_4" class="cont_surv">
               <p class="surv_ques"><label id="bor_abroad">4) Experience abroad<span id="span_abroad" style="color:#ff0000"></span></label></p><br>
 
                 <input type="radio" id="abr1" class="radios" name="abroad" value=">_year"><label for="abr1">&nbsp;less than a year</label><br>
@@ -187,7 +188,7 @@ require_once('./dbconn.php');
                 <input type="radio" id="abr6" class="radios" name="abroad" value="never_abroad"><label for="abr6">&nbsp;never lived abroad</label>
             </div>
 
-            <div id="question5" class="cont_surv">
+            <div id="question_5" class="cont_surv">
               <p class="surv_ques"><label id="bor_way">5) How do you learn?<span id="span_way" style="color:#ff0000"><br></span></label></p><br>
 
                 <input type="checkbox" id="way1" class="check" name="way[]" value="g_course"><label for="way1">&nbsp;group course</label><br>
@@ -199,7 +200,7 @@ require_once('./dbconn.php');
 
             </div>
 
-            <div id="question6" class="cont_surv">
+            <div id="question_6" class="cont_surv">
               <p class="surv_ques"><label id="bor_others">6) Foreign languages<span id="span_others" style="color:#ff0000"></span></label></p><br>
                 <input type="radio" id="oth1" class="radios" name="others" value="one"><label for="oth1">&nbsp;One</label><br>
                 <input type="radio" id="oth2" class="radios" name="others" value="two"><label for="oth2">&nbsp;Two</label><br>
@@ -207,7 +208,7 @@ require_once('./dbconn.php');
 
             </div>
 
-            <div id="question7" class="cont_surv">
+            <div id="question_7" class="cont_surv">
               <p class="surv_ques"><label id="bor_country">7) Where do you live?<span id="span_country" style="color:#ff0000"></span></label></p><br>
 
                 <input type="radio" id="ctr1" class="radios" name="country" value="brazil"><label for="ctr1">&nbsp;Brazil</label><br>
@@ -238,7 +239,7 @@ require_once('./dbconn.php');
           <div class="cont_dial">
             <p class="situation">1 out of 30</p>
               <p>Milene: How is the weather today?</p>
-              <p>Camile:<span class="error_style"><em>Is hot!</em></span></p>
+              <p>Camile:<span class="error_style"><em>&nbsp;Is hot!</em></span></p>
           </div>
           <hr>
           <div class="cont_answer">
@@ -1042,9 +1043,9 @@ require_once('./dbconn.php');
 
 
         <!--Hidden Msg -->
-        <h2 class="scoreMsg">Thanks for doing the quiz! Your score is:</h2>
-        <h3 class="scoreMsg"><span class="score">0 points</span></h3>
-        <p class="scoreMsg">check your answers&nbsp;<button id="check_res" class="hvr-grow" onclick="checkResult()">HERE</button></p>
+        <h2 class="score_msg">Thanks for doing the quiz! Your score is:</h2>
+        <h3 class="score_msg"><span class="score">0 points</span></h3>
+        <p class="score_msg">check your answers&nbsp;<button id="check_res" class="hvr-grow" onclick="checkResult()">HERE</button></p>
 
 
 
@@ -1073,7 +1074,7 @@ require_once('./dbconn.php');
   <div id="ContactUs" class="tabcontent">
     <div class="container">
       <div style="text-align:center">
-        <h3>Shoot us an e-mail directly at</h3>
+        <h3 id="shoot_email">Shoot us an e-mail directly at</h3>
         <h3><a href="mailto:hello@brazilianbloopers.com">hello@brazilianbloopers.com</a></h3>
         <h3>or</h3>
       </div>
@@ -1085,7 +1086,7 @@ require_once('./dbconn.php');
               <label for="email">E-mail*<span id="span_email"></span></label>
             <input type="text" id="bor_email" name="email" placeholder="Your e-mail..">
               <label for="subject">Subject</label>
-            <input type="text" id="bor_subject" name="subject" placeholder="e.g.,suggestion for a blooper, comment, etc...">
+            <input type="text" id="bor_subject" name="subject" placeholder="suggestion, comment, etc.">
               <label for="message">Message*<span id="span_message"></span></label>
             <textarea id="bor_message" name="message" placeholder="Write your message here!" style="height:170px"></textarea>
             <button id="submit_contact" class="hvr-grow" type="submit" name="submitcontact">Submit</button>
