@@ -622,7 +622,7 @@ $("#start_quiz").on("click", function () {
       success: function (result) {
         if (result.result == 1) {
           $("#instr, #30").hide();
-          $(".scoreMsg").show();
+          $(".score_msg").show();
           $(".score").show();
           $("#results").show();
 
