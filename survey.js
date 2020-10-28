@@ -199,9 +199,9 @@
 
             $(".popup").slideUp();
             $('#leg_steps').text('Follow these 2 simple steps');
-            $('#removeSteps').hide();
-            $('#clickStart').text('1.Click "Start" button to begin the quiz.');
-            $('#haveFun').text('2.Have fun!');
+            $('#remove_steps').hide();
+            $('#click_start').text('1.Click "Start" button to begin the quiz.');
+            $('#have_fun').text('2.Have fun!');
 
           }
 
