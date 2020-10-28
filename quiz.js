@@ -622,9 +622,10 @@ $("#start_quiz").on("click", function () {
       success: function (result) {
         if (result.result == 1) {
           $("#instr, #30").hide();
-          $(".score_msg").show();
+          $("#score_msg").show();
           $(".score").show();
           $("#results").show();
+          $(".situation").css({"background": "radial-gradient(#533019, transparent)"});
 
           $(document).ready(function () {
             let currentQuiz = $(".questions").contents();
