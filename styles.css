@@ -27,6 +27,7 @@ a {
   color: whitesmoke;
   font-weight: 400px;
   font-size: 20px;
+  word-break: break-word;
 }
 a:hover{
   text-decoration: underline;
@@ -178,7 +179,7 @@ ol {
   border: 0;
 }
 
-.score_msg {
+#score_msg {
   display: none;
 }
 
@@ -223,7 +224,7 @@ ol {
   max-width: 530px;
   max-height: 800px;
   width: 90%;
-  padding: 50px;
+  padding: 45px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -237,6 +238,11 @@ ol {
   text-align: center;
   overflow: hidden;
   font-size: 18px;
+  background-image: url("pics/GreyLogo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+ /* background-attachment: fixed;*/
+  background-size: 280px 280px;
 
 
 
@@ -378,8 +384,8 @@ label,
 }
 
 em {
-  background: radial-gradient(black, transparent);
-  color: gold;
+  background: radial-gradient(#533019, #00000059);
+  color: #EECC89;
   padding: 2px;
   font-weight: 600;
 }
@@ -467,6 +473,7 @@ p#instr {
   left: 15px;
   border-bottom: 3px solid rgba(0, 0, 0, 0.2);
   border-right: 1px solid rgba(0, 0, 0, 0.2);
+  margin-top: 8px;
 }
 .next {
   background: #EECC89;
@@ -482,7 +489,7 @@ p#instr {
   text-transform: uppercase;
   position: fixed;
 
-  margin-top: 0px;
+  margin-top: 15px;
   MARGIN-RIGHT: -20PX;
 
   border-bottom: 3px solid rgba(0, 0, 0, 0.2);
@@ -501,7 +508,7 @@ p#instr {
   border-radius: 8px;
   cursor: pointer;
   display: flex;
-  margin-top: 0px;
+  margin-top: 15px;
   right: 70px;
   position: fixed;
   border-bottom: 3px solid rgba(0, 0, 0, 0.2);
@@ -594,7 +601,7 @@ p#instr {
   padding: 20px;
   text-align: center;
   margin-top: 30px;
-  background: #91C5FA;
+  background: radial-gradient(#533019, #00000059);
 }
  .cont_surv {
   /* background: black;
@@ -603,7 +610,8 @@ p#instr {
   padding: 14px;
   text-align: center;
   margin-top: 20px;
-  background: radial-gradient(#573520, transparent);
+  background: radial-gradient(#533019, #00000059);
+  border-radius: 20px;
 
 }
 
@@ -622,7 +630,7 @@ p#instr {
   padding-left: 40px;
 }
 .situation {
-   background: radial-gradient(black, transparent);
+  /* background: radial-gradient(black, transparent);*/
    padding: 8px;
    border-radius: 10px;
    text-align: center;
@@ -636,6 +644,9 @@ p#instr {
 }
  .questions {
   position: relative;
+  background: radial-gradient(#533019, #0000006e);
+    padding: 10px;
+   border-radius: 25px;
 }
 
  /* .cont_dial {
@@ -665,7 +676,7 @@ p#instr {
   margin-bottom: 20px;
 }
 .exp {
-  background: linear-gradient(45deg, #5ac01c 0%, #1cc110 50%, #18dc0c 100%);;
+  background-color: #EECC89;
   padding: 25px;
   border-radius: 15px;
 
@@ -677,9 +688,14 @@ p#instr {
 /*Contact form*/
 #contact {
 
-  text-align: left;
+  /*text-align: left;*/
   color: whitesmoke;
 
+}
+
+#labels_left {
+
+  text-align: left;
 }
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -760,7 +776,7 @@ background: transparent;
 
 .score {
   display: none;
-  background: rgba(255,255,255,0.2);
+  background: radial-gradient(#533019, #0000006e);
   padding: 0 3rem;
   line-height: 1;
   border-radius: 1rem;
@@ -768,9 +784,30 @@ background: transparent;
 }
 #results {
   display: none;
-  background: linear-gradient(45deg, #131415 0%, #20272d 50%, #3b8d3b 100%);
+  background: radial-gradient(#533019, #0000006e);
   border-radius: 20px;
   padding: 5px;
+}
+.span_exp {
+  background: radial-gradient(#533019, #0000006e);
+  padding: 8px;
+  border-radius: 10px;
+}
+#score_span {
+
+  background: radial-gradient(#533019, #0000006e);
+  padding: 10px;
+  border-radius: 10px;
+
+}
+.scoreInfo {
+
+  background: radial-gradient(#533019, #0000006e);
+  padding: 10px;
+  border-radius: 10px;
+  display: inline;
+
+
 }
 
 /*
