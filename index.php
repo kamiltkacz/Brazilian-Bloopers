@@ -79,32 +79,34 @@ require_once('./dbconn.php');
   <div id="About" class="tabcontent">
     <div class="container" id="about_us">
     <fieldset class="field_about">
-       <legend class="leg_highlight">About Us</legend>
+       <legend class="leg_highlight" id="leg_high_1">About Us</legend>
         <p class="al_left">&nbsp;We are a group of English teachers based in Brasilia, Brazil, who are determined to sharpen your skills. We've compiled this quiz based on years of experience.<br>One day, fascinated by various "Brazilianisms" students kept throwing at our ears, we decided this phenomenon deserves its own website. Thus, the project Brazilian Bloopers came to life.</p>
     </fieldset>
     </div>
     <div class="grid-five">
       <div class="container">
-        <legend>About the Bloopers</legend>
+      <fieldset class="field_about">
+        <legend class="leg_highlight" id="leg_high_2" >About the Bloopers</legend>
         <p class="al_left">&nbsp;Let's face it. Learning another language and communicating your ideas in it, is no easy feat. English, however omnipresent in this world, is no exception. We're here to help a little with that.<br>&nbsp;If you look up English defintion of the word <a href="https://www.dictionary.com/browse/blooper" target="_blank"><span style="color:#EECC89">'blooper'</span></a>&nbsp;you'll get "an embarassing error you make publicly". Although we don't think the mistakes you'll find here are that bad, we do believe correcting them is a great step forward in your language learning journey.<a href="#examples">&nbsp;<span style="color:#EECC89">Check out the examples below.</span></a></p>
+      </fieldset>
       </div>
 
     <div class="container" id="about_qz">
     <fieldset class="field_about">
-       <legend>About the quiz</legend>
+       <legend class="leg_highlight" id="leg_high_3">About the quiz</legend>
        <p class="al_left">&nbsp;The quiz consists of false cognates, idiomatic expressions, incomplete phrases, etc. You'll be presented with a series of dialogues. You have to use your judgement when picking the only one correct answer.<br><br>&nbsp;There are 30 questions which range in difficulty. Some mistakes are more common and some less frequent but all of them share the peculiarity of the Portuguese language that does not translate well into English. Even though many of the bloopers are intelligible to native English speakers, you would be better off finding a more common alternative.<br><br>&nbsp;But don't be too hard on yourself - It's okay if you have a piece of Brazil that never leaves your brain, plus why not let the gringo do some thinking?<br><br>Don't forget to enjoy the process! <br><br><a href="#" style="color:#EECC89" onclick="openPage('TheQuiz', this);">Ready?</a></p>
      </fieldset>
      </div>
      <div class="container">
         <picture>
-          <legend><a id="examples" style="font-size: 25px;">Example of a Brazilian blooper in casual dialogue:</a></legend>
+          <legend class="leg_highlight"><a id="examples" style="font-size: 25px;">Example of a Brazilian blooper in casual dialogue:</a></legend>
          <br><br>A) Did you like your trip?<br><p>B)&nbsp;<span class="error_style"><em>More or less.</em></span></p>A) Hmmm...&#129300;</p>
          <hr>
           <p class="al_left">&nbsp;<span class="span_exp">Explanation</span>: In English we generally say "More or Less" to use it as an approximation of numbers, quantities, a "plus-minus". Ex. "It will cost you 40 reais, more or less."<br><br>We don't answer with "more or less" only to express value or our impression of something. If you thought the above mentioned trip could have been better, you answer "Not much". If you thought it could have been worse, you answer "It was okay." You should remember that answers like this are hugely context dependent, meaning, you will have to develop what you mean in more detail.</p>
         </picture>
       </div>
       <div class="container">
-        <legend>Example nr.1 of Bloopers in the mainstream.</legend><br>
+        <legend class="leg_highlight">Example nr.1 of Bloopers in the mainstream.</legend><br>
         <p class="al_left">&nbsp;Michel Telo's hit, a hugely popular Brazilian song has a bit of a rough reading in English. Among other smaller bloopers the title "If I catch you" gives it away as something clumsily translated from Portuguese. Even the mainstream showbusiness is not free from an occasional blunder.</p>
         <div class="yt-resp">
           <iframe class="iframe-resp" src="https://www.youtube.com/embed/CwC5BFX7rqQ">
@@ -117,7 +119,7 @@ require_once('./dbconn.php');
           </div>
       </div>
       <div class="container">
-      <legend>Example nr.2 of Bloopers in the mainstream.</legend><br>
+      <legend class="leg_highlight">Example nr.2 of Bloopers in the mainstream.</legend><br>
         <p class="al_left">&nbsp;Marilia Gabriela's interview with the one and only Madonna is plainly awkward partially due to the inability of the Brazilian Journalist to get her English on track. Madonna clearly was not charitable and in the mood to help.
           <div class="yt-resp">
             <iframe class="iframe-resp" src="https://www.youtube.com/embed/zHMhLd4MUC4">
