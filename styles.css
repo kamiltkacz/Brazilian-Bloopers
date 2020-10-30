@@ -57,6 +57,7 @@ a:hover{
 
   background: radial-gradient(#533019, #00000059);
     border-radius: 10px;
+    border: 2px solid #EECC89;
 }
 
 
@@ -113,13 +114,22 @@ h3 {
 }
 .leg_highlight {
 
-  cursor: default;
+    cursor: default;
     background: radial-gradient(#362317, transparent);
     font-family: inherit, cursive;
     padding: 5px;
     border-radius: 10px;
-    width: 50%;
+    width: 100%;
 }
+
+#leg_high_1, #leg_high_2, #leg_high_3   {
+
+  width: 50%;
+}
+
+
+
+
 
 
 
@@ -223,9 +233,9 @@ ol {
   transform: translate(-50%, -50%);
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 1);
   border-radius: 20px;
-  background: #EECC89;
+ /* background: #EECC89;*/
   /*background-color: whitesmoke;*/
-
+  border: 3px solid #EECC89;
   text-align: center;
   overflow-x: hidden;
   /*overflow-y: scroll;*/
@@ -248,9 +258,9 @@ ol {
   transform: translate(-50%, -50%);
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 1);
   border-radius: 20px;
-  background: #EECC89;
+ /* background: #EECC89;*/
   /*background: linear-gradient(45deg, #5ac01c 0%, #1cc110 50%, #18dc0c 100%);*/
-  border: 3px solid antiquewhite;
+  border: 3px solid #EECC89;
   text-align: center;
   overflow: hidden;
   font-size: 18px;
@@ -618,6 +628,7 @@ p#instr {
   text-align: center;
   margin-top: 30px;
   background: radial-gradient(#533019, #00000059);
+  border: 3px solid #EECC89;
 }
  .cont_surv {
   /* background: black;
