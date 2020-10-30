@@ -31,7 +31,7 @@ a {
 }
 a:hover{
   text-decoration: underline;
-  color: whitesmoke;
+  color: #eecc89;
 
 }
  /* a:active {
@@ -52,6 +52,13 @@ a:hover{
 
 
 }
+#logo_div {
+
+
+  background: radial-gradient(#533019, #00000059);
+    border-radius: 10px;
+}
+
 
 /* #leg_steps {
 
@@ -103,6 +110,15 @@ h3 {
 
 .al_left {
   text-align: left;
+}
+.leg_highlight {
+
+  cursor: default;
+    background: radial-gradient(#362317, transparent);
+    font-family: inherit, cursive;
+    padding: 5px;
+    border-radius: 10px;
+    width: 50%;
 }
 
 
@@ -619,6 +635,13 @@ p#instr {
   margin-top: -10px;
 }
 
+#home {
+
+  max-width: 500px;
+  max-height: 400px;
+  width: 90%;
+}
+
 /* QUIZ CONTAINERS*/
 .count {
   background: antiquewhite;
@@ -791,7 +814,7 @@ background: transparent;
 .span_exp {
   background: radial-gradient(#533019, #0000006e);
   padding: 8px;
-  border-radius: 10px;
+  border-radius: 3px;
 }
 #score_span {
 
