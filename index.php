@@ -63,8 +63,10 @@ require_once('./dbconn.php');
     </button>
   </div>
 
-
+<div id="logo_div">
   <img src="pics\logo.png" id="logo_main" class="logo" style="width:80px;height:80px;">
+  </div>
+
   <div id="Home" class="tabcontent">
     <div class="container" id="home">
     <header>
@@ -77,7 +79,7 @@ require_once('./dbconn.php');
   <div id="About" class="tabcontent">
     <div class="container" id="about_us">
     <fieldset class="field_about">
-       <legend>About Us</legend>
+       <legend class="leg_highlight">About Us</legend>
         <p class="al_left">&nbsp;We are a group of English teachers based in Brasilia, Brazil, who are determined to sharpen your skills. We've compiled this quiz based on years of experience.<br>One day, fascinated by various "Brazilianisms" students kept throwing at our ears, we decided this phenomenon deserves its own website. Thus, the project Brazilian Bloopers came to life.</p>
     </fieldset>
     </div>
@@ -98,7 +100,7 @@ require_once('./dbconn.php');
           <legend><a id="examples" style="font-size: 25px;">Example of a Brazilian blooper in casual dialogue:</a></legend>
          <br><br>A) Did you like your trip?<br><p>B)&nbsp;<span class="error_style"><em>More or less.</em></span></p>A) Hmmm...&#129300;</p>
          <hr>
-          <p class="al_left">&nbsp;<span class="span_exp"></span>: In English we generally say "More or Less" to use it as an approximation of numbers, quantities, a "plus-minus". Ex. "It will cost you 40 reais, more or less."<br><br>We don't answer with "more or less" only to express value or our impression of something. If you thought the above mentioned trip could have been better, you answer "Not much". If you thought it could have been worse, you answer "It was okay." You should remember that answers like this are hugely context dependent, meaning, you will have to develop what you mean in more detail.</p>
+          <p class="al_left">&nbsp;<span class="span_exp">Explanation</span>: In English we generally say "More or Less" to use it as an approximation of numbers, quantities, a "plus-minus". Ex. "It will cost you 40 reais, more or less."<br><br>We don't answer with "more or less" only to express value or our impression of something. If you thought the above mentioned trip could have been better, you answer "Not much". If you thought it could have been worse, you answer "It was okay." You should remember that answers like this are hugely context dependent, meaning, you will have to develop what you mean in more detail.</p>
         </picture>
       </div>
       <div class="container">
@@ -1060,6 +1062,7 @@ require_once('./dbconn.php');
 
     </div><!--popup-inner2-->
   </div> <!-- popup2-->
+
   <div id="results">
   <p id="urTest">Your test:</p><br>
   </div>
@@ -1068,7 +1071,7 @@ require_once('./dbconn.php');
   <div id="inst_hov">
    <br>
       <p>* Read the dialogues and check the correct answer.<br></p>
-    <p>* After you finish check your score and <span class="span_exp"></span>s.</p>
+    <p>* After you finish check your score and explanations.</p>
   </div>
 
   </div> <!--Quiz tab-->
