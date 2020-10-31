@@ -49,19 +49,27 @@ require_once('./dbconn.php');
 <body>
 
   <div class="tabs">
-    <button id="defaultOpen" class="tablink" onclick="openPage('Home', this);">
+   <button id="defaultOpen" class="tablink" onclick="openPage('Home', this);">
       <a href="#" id="active_home" class="active">Home</a>
     </button>
-    <button class="tablink" onclick="openPage('About', this);">
+   <button class="tablink" onclick="openPage('About', this);">
       <a href="#" class="active">About</a>
     </button>
-    <button class="tablink" onclick="openPage('TheQuiz', this);">
+   <button class="tablink" onclick="openPage('TheQuiz', this);">
       <a href="#" id="active_quiz" class="active">The Quiz</a>
     </button>
-    <button class="tablink" onclick="openPage('ContactUs', this);">
+   <button class="tablink" onclick="openPage('ContactUs', this);">
       <a href="#" class="active">Contact</a>
     </button>
+
   </div>
+
+
+
+
+
+
+
 
 <div id="logo_div">
   <img src="pics\logo.png" id="logo_main" class="logo" style="width:80px;height:80px;">
@@ -1159,6 +1167,8 @@ require_once('./dbconn.php');
     }
 
 
+
+
   </script>
 
   <!-- JS Survey -->
@@ -1173,7 +1183,7 @@ require_once('./dbconn.php');
 
    <!-- My Footer -->
    <div id="footer" class="container">
-      <p>Author - Kamil Tkacz<br>
+      <p id="p_footer">Author - Kamil Tkacz<br>
         &copy;2020 BrazilianBloopers.com<br>
         Photo by Andre Noboa/Unsplash&nbsp;@andrenoboa</p>
     </div>
