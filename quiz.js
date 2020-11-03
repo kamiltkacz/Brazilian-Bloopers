@@ -2,6 +2,10 @@
 $("#start_quiz").on("click", function () {
   let score = 0;
 
+
+  $('#steps').hide();
+  $('#footer').hide();
+
   // Reset border color & text in span element
   $("input[class='rads']").click(function () {
     $("input[class='rads']").focus();
@@ -621,10 +625,13 @@ $("#start_quiz").on("click", function () {
 
       success: function (result) {
         if (result.result == 1) {
+         // $("#steps").show();
+
           $("#instr, #30").hide();
           $("#score_msg").show();
           $(".score").show();
-          $("#results").show();
+
+
           $(".situation").css({"background": "radial-gradient(#533019, transparent)"});
 
           $(document).ready(function () {
@@ -1758,7 +1765,7 @@ $(function () {
 
   $("#instr").hover(
     function (e) {
-      $(this).css("background", "#4B352C");
+      $(this).css("background", "#2c00f7");
       $("#inst_hov").show("slow");
     },
     function () {
@@ -1778,7 +1785,7 @@ $(function () {
 $(document).ready(function () {
   $(".next").hover(
     function () {
-      $(this).css({ background: "#4B352C" });
+      $(this).css({ background: "#2c00f7" });
     },
     function () {
       $(this).css({ background: "" });
@@ -1786,7 +1793,7 @@ $(document).ready(function () {
   );
   $(".back").hover(
     function () {
-      $(this).css({ background: "#4B352C" });
+      $(this).css({ background: "radial-gradient(#2c00f7, #000000bf)"});
     },
     function () {
       $(this).css({ background: "" });
@@ -1794,7 +1801,7 @@ $(document).ready(function () {
   );
   $(".hvr-grow").hover(
     function () {
-      $(this).css({ background: "#4B352C" });
+      $(this).css({ background: "#2c00f7" });
     },
     function () {
       $(this).css({ background: "" });
