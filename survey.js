@@ -7,6 +7,26 @@
       }
     }
 
+    $("#start_survey").on("click", function(){
+
+      $('#steps').hide();
+      $('#footer').hide();
+
+    });
+
+      $(".popup-close").on("click", function(){
+
+        $('#steps').show();
+        $('#footer').show();
+
+
+      });
+
+
+
+
+
+
     //  $("#start_quiz").prop('disabled',true);
 
 
@@ -198,6 +218,8 @@
             });
 
             $(".popup").slideUp();
+            $("#steps").show();
+            $('#footer').show();
             $('#leg_steps').text('Follow these 2 simple steps');
             $('#remove_steps').hide();
             $('#click_start').text('1.Click "Start" button to begin the quiz.');
