@@ -3,5 +3,5 @@ The website has a Home, About Us, Test, Contact tabs plus Contact Form, Short Su
 
 JavaScript/JQuery. Backend with PHP and MySQL. Using Bootstrap.
 
-Feel free to contribute!
+Feel free to give feedback!
 Thanks!
