@@ -28,7 +28,7 @@ require_once('./dbconn.php');
 
   <!--Squada One Font-->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@300&display=swap" rel="stylesheet">
   <!--SweetAlert2 -->
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
   <script src="sweetalert2/dist/sweetalert2.all.min.js"></script>
@@ -88,39 +88,38 @@ require_once('./dbconn.php');
     <div class="container" id="about_us">
     <fieldset class="field_about">
        <legend class="leg_highlight" id="leg_high_1">About Us</legend>
-        <p class="al_left">&nbsp;We are a group of English teachers based in Brasilia, Brazil, who are determined to sharpen your skills. We've compiled this quiz based on years of experience.<br>One day, fascinated by various "Brazilianisms" students kept throwing at our ears, we decided this phenomenon deserves its own website. Thus, the project Brazilian Bloopers came to life.</p>
+        <p class="al_left">We are a group of English teachers based in Brasilia, Brazil, who are determined to sharpen your skills. We've compiled this quiz based on years of experience.<br>One day, fascinated by various "Brazilianisms" students kept throwing at our ears, we decided this phenomenon deserves its own website. Thus, the project Brazilian Bloopers came to life.</p>
     </fieldset>
     </div>
-    <div class="grid-five">
       <div class="container">
       <fieldset class="field_about">
         <legend class="leg_highlight" id="leg_high_2" >About the Bloopers</legend>
-        <p class="al_left">&nbsp;Let's face it. Learning another language and communicating your ideas in it, is no easy feat. English, however omnipresent in this world, is no exception. We're here to help a little with that.<br>&nbsp;If you look up English defintion of the word <a href="https://www.dictionary.com/browse/blooper" target="_blank"><span style="color:#EECC89">'blooper'</span></a>&nbsp;you'll get "an embarassing error you make publicly". Although we don't think the mistakes you'll find here are that bad, we do believe correcting them is a great step forward in your language learning journey.<a href="#examples">&nbsp;<span style="color:#EECC89">Check out the examples below.</span></a></p>
+        <p class="al_left">Let's face it. Learning another language and communicating your ideas in it, is no easy feat. English, however omnipresent in this world, is no exception. We're here to help a little with that.<br>If you look up English defintion of the word <a href="https://www.dictionary.com/browse/blooper" target="_blank"><span style="color:#EECC89">'blooper'</span></a>&nbsp;you'll get "an embarassing error you make publicly". Although we don't think the mistakes you'll find here are that bad, we do believe correcting them is a great step forward in your language learning journey.<a href="#examples">&nbsp;<span style="color:#EECC89">Check out the examples below.</span></a></p>
       </fieldset>
       </div>
 
     <div class="container" id="about_qz">
     <fieldset class="field_about">
        <legend class="leg_highlight" id="leg_high_3">About the quiz</legend>
-       <p class="al_left">&nbsp;The quiz consists of false cognates, idiomatic expressions, incomplete phrases, etc. You'll be presented with a series of dialogues. You have to use your judgement when picking the only one correct answer.<br><br>&nbsp;There are 30 questions which range in difficulty. Some mistakes are more common and some less frequent but all of them share the peculiarity of the Portuguese language that does not translate well into English. Even though many of the bloopers are intelligible to native English speakers, you would be better off finding a more common alternative.<br><br>&nbsp;But don't be too hard on yourself - It's okay if you have a piece of Brazil that never leaves your brain, plus why not let the gringo do some thinking?<br><br>Don't forget to enjoy the process! <br><br><a href="#" style="color:#EECC89" onclick="openPage('TheQuiz', this);">Ready?</a></p>
+       <p class="al_left">The quiz consists of false cognates, idiomatic expressions, incomplete phrases, etc. You'll be presented with a series of dialogues. You have to use your judgement when picking the only one correct answer.<br><br>&nbsp;There are 30 questions which range in difficulty. Some mistakes are more common and some less frequent but all of them share the peculiarity of the Portuguese language that does not translate well into English. Even though many of the bloopers are intelligible to native English speakers, you would be better off finding a more common alternative.<br><br>&nbsp;But don't be too hard on yourself - It's okay if you have a piece of Brazil that never leaves your brain, plus why not let the gringo do some thinking?<br><br>Don't forget to enjoy the process! <br><br><a href="#" style="color:#EECC89" onclick="openPage('TheQuiz', this);">Ready?</a></p>
      </fieldset>
      </div>
      <div class="container">
         <picture>
           <legend class="leg_highlight"><a id="examples" style="font-size: 25px;">Example of a Brazilian blooper in casual dialogue:</a></legend>
-         <br><br>A) Did you like your trip?<br><p>B)&nbsp;<span class="error_style"><em>More or less.</em></span></p>A) Hmmm...&#129300;</p>
+         <br><br><p>A) Did you like your trip?</p><br><p style="margin-top: -20px;">B)&nbsp;<span class="error_style"><em>More or less.</em></span></p><br><p style="margin-top: -20px;">A) Hmmm...&#129300;</p>
          <hr>
-          <p class="al_left">&nbsp;<span class="span_exp">Explanation</span>: In English we generally say "More or Less" to use it as an approximation of numbers, quantities, a "plus-minus". Ex. "It will cost you 40 reais, more or less."<br><br>We don't answer with "more or less" only to express value or our impression of something. If you thought the above mentioned trip could have been better, you answer "Not much". If you thought it could have been worse, you answer "It was okay." You should remember that answers like this are hugely context dependent, meaning, you will have to develop what you mean in more detail.</p>
+          <p class="al_left">&nbsp;<span class="span_exp">Explanation:</span>&nbsp;In English we generally say "More or Less" to use it as an approximation of numbers, quantities, a "plus-minus". Ex. "It will cost you 40 reais, more or less."<br><br>We don't answer with "more or less" only to express value or our impression of something. If you thought the above mentioned trip could have been better, you answer "Not much". If you thought it could have been worse, you answer "It was okay." You should remember that answers like this are hugely context dependent, meaning, you will have to develop what you mean in more detail.</p>
         </picture>
       </div>
       <div class="container">
         <legend class="leg_highlight">Example nr.1 of Bloopers in the mainstream.</legend><br>
-        <p class="al_left">&nbsp;Michel Telo's hit, a hugely popular Brazilian song has a bit of a rough reading in English. Among other smaller bloopers the title "If I catch you" gives it away as something clumsily translated from Portuguese. Even the mainstream showbusiness is not free from an occasional blunder.</p>
+        <p class="al_left">Michel Telo's hit, a hugely popular Brazilian song has a bit of a rough reading in English. Among other smaller bloopers the title "If I catch you" gives it away as something clumsily translated from Portuguese. Even the mainstream showbusiness is not free from an occasional blunder.</p>
         <div class="yt-resp">
           <iframe class="iframe-resp" src="https://www.youtube.com/embed/CwC5BFX7rqQ">
           </iframe>
         </div>
-        <p class="al_left">&nbsp;Below is a much better version where the American singer Pitbull gives the lyrics his own spin. "If I catch you" becomes "If I get you" and "this way you're gonna kill me" translates into "you're playing hard to get". Good job Pitbull!</p>
+        <p class="al_left">Below is a much better version where the American singer Pitbull gives the lyrics his own spin. "If I catch you" becomes "If I get you" and "this way you're gonna kill me" translates into "you're playing hard to get". Good job Pitbull!</p>
         <div class="yt-resp">
           <iframe class="iframe-resp" src="https://www.youtube.com/embed/bMMnn2kA_HY">
           </iframe>
@@ -128,19 +127,18 @@ require_once('./dbconn.php');
       </div>
       <div class="container">
       <legend class="leg_highlight">Example nr.2 of Bloopers in the mainstream.</legend><br>
-        <p class="al_left">&nbsp;Marilia Gabriela's interview with the one and only Madonna is plainly awkward partially due to the inability of the Brazilian Journalist to get her English on track. Madonna clearly was not charitable and in the mood to help.
+        <p class="al_left">Marilia Gabriela's interview with the one and only Madonna is plainly awkward partially due to the inability of the Brazilian Journalist to get her English on track. Madonna clearly was not charitable and in the mood to help.
           <div class="yt-resp">
             <iframe class="iframe-resp" src="https://www.youtube.com/embed/zHMhLd4MUC4">
             </iframe>
           </div>
       </div>
-    </div>
 
   </div> <!-- About -->
 
 
   <div id="TheQuiz" class="tabcontent">
-    <!--<a id="quiz_link"></a>-->
+
 
     <div class="container" id="steps">
       <fieldset id="field_steps">
@@ -159,7 +157,7 @@ require_once('./dbconn.php');
     <!--SURVEY-->
     <div class="popup" data-popup="popup-1">
       <div class="popup-inner">
-        <a class="popup-close" data-popup-close="popup-1" href="#">x</a>
+        <a class="popup-close" data-popup-close="popup-1" href="#" onclick="myFunction();">x</a>
 
         <form id="survey" method="post" action="actions.php">
 
@@ -467,7 +465,7 @@ require_once('./dbconn.php');
           <div class="cont_dial">
             <p class="situation">9 out of 30</p>
             <div class="dialos">
-              <p>Marcel: <span class="error_style"><em>Hey Guy,</em></span>how are you?</p>
+              <p>Marcel: <span class="error_style"><em>Hey Guy,&nbsp;</em></span>how are you?</p>
               <p>Steven: I'm okay, thanks.</p>
             </div>
           </div>
@@ -681,7 +679,7 @@ require_once('./dbconn.php');
             <p class="situation">17 out of 30</p>
             <div class="dialos">
               <p>Ana: Did your friend enjoy Rio?</p>
-              <p>Miguel:Yes, but&nbsp;<span class="error_style"><em>she was impressed with </em></span>violence in the favelas.</p>
+              <p>Miguel: Yes, but&nbsp;<span class="error_style"><em>she was impressed with </em></span>violence in the favelas.</p>
             </div>
           </div>
           <hr>
@@ -745,7 +743,7 @@ require_once('./dbconn.php');
                 <input type="radio" id="go_2" class="rads" name="gout" value="er_2"><label for="go_2" class="err_label">&nbsp;I go off work</label><div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
                 <input type="radio" id="go_3" class="rads" name="gout" value="err_ok"><label for="go_3" class="err_label">&nbsp;I live work</label><div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
 
-            <div class="exp" id="exp_19" style="display:none"><p class="par_exp"><span class="span_exp">Explanations</span>: We say "To go out" when we mean going to a nightclub or a bar and staying until late hours. Ex."Young people love to go out on Fridays."<br>We say "To leave" when we mean to exit a place, relationship, group, etc. Ex. "I leave class earlier on Fridays beacuse I have to catch a bus." Ex. "She left the marrige due to his gambling habit."</p>
+            <div class="exp" id="exp_19" style="display:none"><p class="par_exp"><span class="span_exp">Explanations</span>: We say "To go out" when we mean going to a nightclub or a bar and staying until late hours. Ex."Young people love to go out on weekends."<br>We say "To leave" when we mean to exit a place, relationship, group, etc. Ex. "I leave class earlier on Fridays beacuse I have to catch a bus." Ex. "She left the marrige due to his gambling habit."</p>
             <div class="resultMsg">
              <h4 class="scoreInfo" id="scoreInfo_19">Your score:&nbsp;</h4>
             </div>
@@ -761,7 +759,7 @@ require_once('./dbconn.php');
             <div class="dialos">
               <p>Alex: I really enjoy working from home.</p>
               <p>Magda: Why?
-              <p>Alex:I don't have to<span class="error_style"><em>&nbsp;use a suit.</em></span></p>
+              <p>Alex: I don't have to<span class="error_style"><em>&nbsp;use a suit.</em></span></p>
             </div>
           </div>
           <hr>
@@ -976,7 +974,7 @@ require_once('./dbconn.php');
             <p class="situation">28 out of 30</p>
             <div class="dialos">
               <p>Sol: What do you think of your English teacher?</p>
-              <p>Maria:I think he is very&nbsp;<span class="error_style"><em>symphatetic.</em></span></p>
+              <p>Maria: He is very&nbsp;<span class="error_style"><em>symphatetic.</em></span></p>
             </div>
           </div>
           <hr>
@@ -1002,7 +1000,7 @@ require_once('./dbconn.php');
             <p class="situation">29 out of 30</p>
             <div class="dialos">
               <p>Ana: What kind of people don't you like?</p>
-              <p>Julia:<span class="error_style"><em>I can't support</em></span>&nbsp;messy people.</p>
+              <p>Julia: <span class="error_style"><em>I can't support</em></span>&nbsp;messy people.</p>
             </div>
           </div>
           <hr>
@@ -1013,7 +1011,7 @@ require_once('./dbconn.php');
                 <input type="radio" id="sup_2" class="rads" name="support" value="err_ok"><label for="sup_2" class="err_label">&nbsp;I cans stand</label> <div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
                 <input type="radio" id="sup_3" class="rads" name="support" value="err_2"><label for="sup_3" class="err_label">&nbsp;I can't stand up</label><div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
 
-            <div class="exp" id="exp_29" style="display:none"><p class="par_exp"><span class="span_exp">Explanations</span>: We say "Support" when we mean to help someone financially. Ex. "I lost my job and now my parents support me."<br> We say "Can't stand" when we mean we strongly dislike something or somebody. Ex. "I can't stand country music."</p>
+            <div class="exp" id="exp_29" style="display:none"><p class="par_exp"><span class="span_exp">Explanations</span>: We say "Support" when we mean to help someone financially. Ex."I lost my job and now my parents support me."<br> We say "Can't stand" when we mean we strongly dislike something or somebody. Ex. "I can't stand country music."</p>
             <div class="resultMsg">
              <h4 class="scoreInfo" id="scoreInfo_29">Your score:&nbsp;</h4>
             </div>
@@ -1058,7 +1056,7 @@ require_once('./dbconn.php');
 
         <!--Hidden Msg -->
         <div id="score_msg" class="container">
-        <h2>Thanks for doing the quiz!Your score is:</h2>
+        <h2>Thanks for doing the quiz!<br>Your score is:</h2>
         <h3><span class="score">0 points</span></h3>
         <p>check your answers&nbsp;<button id="check_res" class="hvr-grow" onclick="checkResult()">HERE</button></p>
         </div>
@@ -1088,9 +1086,9 @@ require_once('./dbconn.php');
 
   <!--CONTACT FORM-->
   <div id="ContactUs" class="tabcontent">
-    <div class="container">
+    <div class="container" id="contact_cont">
       <div style="text-align:center">
-        <h3 id="shoot_email">Shoot us an e-mail directly at</h3>
+        <h3 id="shoot_email">If you like the quiz say hi to me on<br><i class="fab fa-twitter"></i><a href="https://twitter.com/kamiltkacz" style="font-size: unset;">&nbsp;@kamiltkacz</a><br>shoot me an e-mail directly at</h3>
         <h3><a href="mailto:hello@brazilianbloopers.com">hello@brazilianbloopers.com</a></h3>
         <h3>or</h3>
       </div>
@@ -1164,6 +1162,8 @@ require_once('./dbconn.php');
        scorePopup.style.display = "none",
        hideSteps.style.display = "none";
       }, 1000);
+      $('#footer').show();
+      $("#results").show();
     }
 
 
@@ -1183,9 +1183,9 @@ require_once('./dbconn.php');
 
    <!-- My Footer -->
    <div id="footer" class="container">
-      <p id="p_footer">Author - Kamil Tkacz<br>
+      <p id="p_footer">Author - Kamil Tkacz&nbsp;<a href="https://twitter.com/kamiltkacz" style="font-size: unset;">@kamiltkacz</a>&nbsp;<i class="fab fa-twitter"></i><br>
         &copy;2020 BrazilianBloopers.com<br>
-        Photo by Andre Noboa/Unsplash&nbsp;@andrenoboa</p>
+        Photo by Andre Noboa/Unsplash&nbsp;<a href="https://www.instagram.com/andrenoboa/?utm_medium=referral&utm_source=unsplash"style="font-size: unset;">@andrenoboa</a>&nbsp;<i class="fab fa-instagram"></i></p>
     </div>
 
   </body>
