@@ -3,12 +3,12 @@ body,
 html {
 height: 100%;
 margin: 0;
-font-family: "Bangers", monospace;
+font-family: 'Londrina Solid', cursive;
 font-size: 20px;
 font-weight: 500px;
 color: whitesmoke;
 min-height: 100%;
-background-image: url("pics/beach_soccer.jpeg"), url("pics/beach_soccer.jpeg");
+background-image: url("pics/beach_soccer.jpeg");
 background-position: center;
 background-repeat: no-repeat;
 background-attachment: fixed;
@@ -47,7 +47,7 @@ a {
 } */
 
 
-.highlight {
+/* .highlight {
   transition: all 0,2s;
   border-bottom: 2px solid white;
   position: absolute;
@@ -58,7 +58,7 @@ a {
   border-radius: 20px;
   display: block;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
-}
+} */
 
 
 /* .menu {
@@ -93,9 +93,9 @@ a {
 #logo_div {
 
 
-  background: radial-gradient(#533019, #00000059);
+  background: radial-gradient(#ffc107, #00000059);
     border-radius: 10px;
-    border: 2px solid #EECC89;
+   /* border: 2px solid #EECC89;*/
 }
 
 
@@ -186,7 +186,7 @@ h3 {
   color: whitesmoke;
   display: none;
   padding: 100px 19px;
-
+ /* height: 100%;*/
   max-width: 100%;
   text-align: center;
   /* background-image: url("pics/beach_soccer.jpeg");
@@ -194,6 +194,15 @@ h3 {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;*/
+
+}
+.About {
+
+  background-image: url("pics/beach_soccer.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
 
 }
 
@@ -245,6 +254,8 @@ ol {
 
 #score_msg {
   display: none;
+  background: #76350aeb;
+
 }
 
 /* Outer */
@@ -452,12 +463,13 @@ em {
   color: #EECC89;
   padding: 2px;
   font-weight: 600;
+  border-radius: 10px;
 }
 
 /*BUTTONS*/
 
 #start_survey {
-  background: #EECC89;
+  background: radial-gradient(#ffc107, #00000059);
   /*background: linear-gradient(45deg, #131415 0%, #20272d 50%, #3b8d3b 100%);*/
   color: whitesmoke;
   font-family: inherit;
@@ -480,7 +492,7 @@ em {
 #start_quiz {
   opacity: 0.2;
   top: -2px;
-  background: #EECC89;
+  background: radial-gradient(#ffc107, #00000059);
   /*background: linear-gradient(45deg, #131415 0%, #20272d 50%, #3b8d3b 100%);*/
   color: whitesmoke;
   font-family: inherit;
@@ -525,7 +537,7 @@ em {
 }
 
 p#instr {
-  background: #EECC89;
+  background: radial-gradient(#ffc107, #00000059);
  /* background: linear-gradient(45deg, #131415 0%, #20272d 50%, #3b8d3b 100%);*/
   color: whitesmoke;
   font-family: inherit;
@@ -540,7 +552,7 @@ p#instr {
   margin-top: 8px;
 }
 .next {
-  background: #EECC89;
+  background: radial-gradient(#ffc107, #00000059);
  /* background: linear-gradient(45deg, #131415 0%, #20272d 50%, #3b8d3b 100%);*/
   color: whitesmoke;
   font-family: inherit;
@@ -550,7 +562,7 @@ p#instr {
   cursor: pointer;
   display: flex;
   right: 40px;
-  text-transform: uppercase;
+ /* text-transform: uppercase;*/
   position: fixed;
 
   margin-top: 15px;
@@ -563,7 +575,7 @@ p#instr {
 
 
 .back {
-  background: #EECC89;
+  background: radial-gradient(#ffc107, #00000059);
  /* background: linear-gradient(45deg, #131415 0%, #20272d 50%, #3b8d3b 100%);*/
   color: whitesmoke;
   font-family: inherit;
@@ -577,7 +589,7 @@ p#instr {
   position: fixed;
   border-bottom: 3px solid rgba(0, 0, 0, 0.2);
   border-right: 1px solid rgba(0, 0, 0, 0.2);
-  text-transform: uppercase;
+ /* text-transform: uppercase;*/
 }
 
 
@@ -585,7 +597,7 @@ p#instr {
 
 /* Submit Survey Button*/
 #submit_survey {
-  background: #EECC89;
+  background: radial-gradient(#ffc107, #00000059);
   color: whitesmoke;
   font-family: inherit;
   font-size: 16px;
@@ -603,7 +615,7 @@ p#instr {
 
 #sub_quiz {
   display: none;
-  background: #EECC89;
+  background: radial-gradient(#ffc107, #00000059);
   /*background: linear-gradient(45deg, #131415 0%, #20272d 50%, #3b8d3b 100%);*/
   color: whitesmoke;
   font-family: inherit;
@@ -623,7 +635,7 @@ p#instr {
 /* Submit Contact button */
 
 #submit_contact {
-  background: #EECC89;
+  background: radial-gradient(#ffc107, #00000059);
  /* background: linear-gradient(45deg, #131415 0%, #20272d 50%, #3b8d3b 100%);*/
   color: whitesmoke;
   font-family: inherit;
@@ -639,7 +651,7 @@ p#instr {
 
 #check_res {
 
-  background: #EECC89;
+  background: radial-gradient(#ffc107, #00000059);
  /* background: linear-gradient(45deg, #131415 0%, #20272d 50%, #3b8d3b 100%);*/
   color: whitesmoke;
   font-family: inherit;
@@ -659,13 +671,15 @@ p#instr {
 /* MAIN CONTAINERS */
 
 .container {
+
   border-radius: 20px;
   /* background: black;
   background: linear-gradient(45deg, #131415 0%, #20272d 50%, #3b8d3b 100%); */
   padding: 20px;
   text-align: center;
   margin-top: 30px;
-  background: radial-gradient(#533019, #00000059);
+  background: radial-gradient(#ffc107, #00000059);
+
   border: 3px solid #EECC89;
 }
  .cont_surv {
@@ -675,8 +689,9 @@ p#instr {
   padding: 14px;
   text-align: center;
   margin-top: 20px;
-  background: radial-gradient(#533019, #00000059);
+  background: radial-gradient(#2c00f7, #00000059);
   border-radius: 20px;
+ /* background:  #76350aeb;*/
 
 }
 
@@ -716,7 +731,8 @@ p#instr {
 }
  .questions {
   position: relative;
-  background: radial-gradient(#533019, #0000006e);
+ /* background: radial-gradient(#533019, #0000006e);*/
+ background: radial-gradient(#2c00f7, #000000bf);
     padding: 10px;
    border-radius: 25px;
 }
@@ -748,7 +764,7 @@ p#instr {
   margin-bottom: 20px;
 }
 .exp {
-  background-color: #EECC89;
+  background-color: #76350aeb;
   padding: 25px;
   border-radius: 15px;
 
@@ -787,10 +803,13 @@ p#instr {
 
 }
 
+
+
 #shoot_email {
 
   font-size: 25px;
 }
+
 
 /* END CONTAINERS */
 
@@ -870,7 +889,7 @@ border: unset;
 .span_exp {
   background: radial-gradient(#533019, #0000006e);
   padding: 8px;
-  border-radius: 3px;
+  border-radius: 10px;
 }
 #score_span {
 
@@ -891,8 +910,27 @@ border: unset;
 
 
 
+
+@media (min-width: 768px) {
+
+.container {
+
+  width: 50%;
+
+}
+
+#score_msg {
+
+  width: 100%;
+}
+
+html, body {
+  background-repeat: repeat;
+}
+
+}
 /*
-@media (max-width: 375px) {
+
   .tablink {
     overflow: hidden;
     white-space: nowrap;
