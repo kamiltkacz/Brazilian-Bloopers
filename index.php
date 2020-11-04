@@ -23,10 +23,7 @@ require_once('./dbconn.php');
   <link rel="stylesheet" href="styles.css">
 
 
-
-
-
-  <!--Squada One Font-->
+  <!--Londrina Font-->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@300&display=swap" rel="stylesheet">
   <!--SweetAlert2 -->
@@ -61,24 +58,21 @@ require_once('./dbconn.php');
    <button class="tablink" onclick="openPage('ContactUs', this);">
       <a href="#" class="active">Contact</a>
     </button>
+   <button id="lang_btn">Portuguese</button>
+
+
 
   </div>
 
 
-
-
-
-
-
-
-<div id="logo_div">
-  <img src="pics\logo.png" id="logo_main" class="logo" style="width:80px;height:80px;">
-  </div>
 
   <div id="Home" class="tabcontent">
     <div class="container" id="home">
+    <div class="logo_div">
+  <img src="pics\logo.png" id="logo_main" class="logo" style="width:60px;height:60px;">
+  </div>
     <header>
-      <h3>Hello, Welcome to Brazilian Bloopers.<br><br>Here we tell you what gives you away as a Brazilian!</h3>
+      <h3 style="margin-top: 15px;">Hello, Welcome to Brazilian Bloopers.<br><br>Here we tell you what gives you away as a Brazilian!</h3>
     </header>
     </div>
   </div>
@@ -94,14 +88,14 @@ require_once('./dbconn.php');
       <div class="container">
       <fieldset class="field_about">
         <legend class="leg_highlight" id="leg_high_2" >About the Bloopers</legend>
-        <p class="al_left">Let's face it. Learning another language and communicating your ideas in it, is no easy feat. English, however omnipresent in this world, is no exception. We're here to help a little with that.<br>If you look up English defintion of the word <a href="https://www.dictionary.com/browse/blooper" target="_blank"><span style="color:#EECC89">'blooper'</span></a>&nbsp;you'll get "an embarassing error you make publicly". Although we don't think the mistakes you'll find here are that bad, we do believe correcting them is a great step forward in your language learning journey.<a href="#examples">&nbsp;<span style="color:#EECC89">Check out the examples below.</span></a></p>
+        <p class="al_left">Let's face it. Learning another language and communicating your ideas in it, is no easy feat. English, however omnipresent in this world, is no exception. We're here to help a little with that.<br>If you look up English defintion of the word <a href="https://www.dictionary.com/browse/blooper" style="background: radial-gradient(#2c00f7, #00000059); border-radius: 20px; padding: 5px" target="_blank"><span>'blooper'</span></a>&nbsp;you'll get "an embarassing error you make publicly". Although we don't think the mistakes you'll find here are that bad, we do believe correcting them is a great step forward in your language learning journey.<br><a href="#examples" id="a_examples">&nbsp;<span>Check out the examples below.</span></a></p>
       </fieldset>
       </div>
 
     <div class="container" id="about_qz">
     <fieldset class="field_about">
        <legend class="leg_highlight" id="leg_high_3">About the quiz</legend>
-       <p class="al_left">The quiz consists of false cognates, idiomatic expressions, incomplete phrases, etc. You'll be presented with a series of dialogues. You have to use your judgement when picking the only one correct answer.<br><br>&nbsp;There are 30 questions which range in difficulty. Some mistakes are more common and some less frequent but all of them share the peculiarity of the Portuguese language that does not translate well into English. Even though many of the bloopers are intelligible to native English speakers, you would be better off finding a more common alternative.<br><br>&nbsp;But don't be too hard on yourself - It's okay if you have a piece of Brazil that never leaves your brain, plus why not let the gringo do some thinking?<br><br>Don't forget to enjoy the process! <br><br><a href="#" style="color:#EECC89" onclick="openPage('TheQuiz', this);">Ready?</a></p>
+       <p class="al_left">The quiz consists of false cognates, idiomatic expressions, incomplete phrases, etc. You'll be presented with a series of dialogues. You have to use your judgement when picking the only one correct answer.<br><br>&nbsp;There are 30 questions which range in difficulty. Some mistakes are more common and some less frequent but all of them share the peculiarity of the Portuguese language that does not translate well into English. Even though many of the bloopers are intelligible to native English speakers, you would be better off finding a more common alternative.<br><br>&nbsp;But don't be too hard on yourself - It's okay if you have a piece of Brazil that never leaves your brain, plus why not let the gringo do some thinking?<br><br>Don't forget to enjoy the process! <br><br><a href="#" style="background: radial-gradient(#2c00f7, #00000059); border-radius: 20px; padding: 5px", onclick="openPage('TheQuiz', this);">Ready?</a></p>
      </fieldset>
      </div>
      <div class="container">
@@ -141,6 +135,9 @@ require_once('./dbconn.php');
 
 
     <div class="container" id="steps">
+    <div class="logo_div">
+    <img src="pics\logo.png" id="logo_main" class="logo" style="width:60px;height:60px; margin-bottom: 30px;">
+    </div>
       <fieldset id="field_steps">
         <legend id="leg_steps">Follow these 3 simple steps:</legend>
             <div id="remove_steps">
@@ -1087,7 +1084,10 @@ require_once('./dbconn.php');
   <!--CONTACT FORM-->
   <div id="ContactUs" class="tabcontent">
     <div class="container" id="contact_cont">
-      <div style="text-align:center">
+    <div class="logo_div">
+  <img src="pics\logo.png" id="logo_main" class="logo" style="width:60px;height:60px;">
+  </div>
+       <div style="text-align:center">
         <h3 id="shoot_email">If you like the quiz say hi to me on<br><i class="fab fa-twitter"></i><a href="https://twitter.com/kamiltkacz" style="font-size: unset;">&nbsp;@kamiltkacz</a><br>shoot me an e-mail directly at</h3>
         <h3><a href="mailto:hello@brazilianbloopers.com">hello@brazilianbloopers.com</a></h3>
         <h3>or</h3>
@@ -1166,6 +1166,22 @@ require_once('./dbconn.php');
       $("#results").show();
     }
 
+    // LANGUAGES
+
+
+    // let whichLang = $("lang_btn").text();
+    $("#lang_btn").on("click", function(){
+
+      $(this).text("English");
+
+      window.location.href = "in_port.php"
+
+
+
+
+
+    });
+
 
 
 
@@ -1185,7 +1201,7 @@ require_once('./dbconn.php');
    <div id="footer" class="container">
       <p id="p_footer">Author - Kamil Tkacz&nbsp;<a href="https://twitter.com/kamiltkacz" style="font-size: unset;">@kamiltkacz</a>&nbsp;<i class="fab fa-twitter"></i><br>
         &copy;2020 BrazilianBloopers.com<br>
-        Photo by Andre Noboa/Unsplash&nbsp;<a href="https://www.instagram.com/andrenoboa/?utm_medium=referral&utm_source=unsplash"style="font-size: unset;">@andrenoboa</a>&nbsp;<i class="fab fa-instagram"></i></p>
+        Photo by &nbsp;<a href="https://www.instagram.com/andrenoboa/?utm_medium=referral&utm_source=unsplash"style="font-size: unset;">@andrenoboa</a>&nbsp;<i class="fab fa-instagram"></i></p>
     </div>
 
   </body>
