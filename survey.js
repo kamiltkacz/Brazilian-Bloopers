@@ -24,9 +24,6 @@
 
 
 
-
-
-
     //  $("#start_quiz").prop('disabled',true);
 
 
@@ -211,12 +208,12 @@
               icon: "success",
               text: "Your survey has been submitted, thanks!",
               footer: "<a href>Home</a>",
-              allowOutsideClick: false,
+              allowOutsideClick: true,
               customClass: {
                 footer: 'sweet-footer',
               }
             });
-
+      //  Here u change the language
             $(".popup").slideUp();
             $("#steps").show();
             $('#footer').show();
