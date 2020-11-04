@@ -630,6 +630,7 @@ $("#start_quiz").on("click", function () {
           $("#instr, #30").hide();
           $("#score_msg").show();
           $(".score").show();
+          $("#popup-close").hide();
 
 
           $(".situation").css({"background": "radial-gradient(#533019, transparent)"});
@@ -1765,7 +1766,7 @@ $(function () {
 
   $("#instr").hover(
     function (e) {
-      $(this).css("background", "#2c00f7");
+      $(this).css("background", "radial-gradient(#2c00f7, #000000bf)");
       $("#inst_hov").show("slow");
     },
     function () {
@@ -1785,7 +1786,7 @@ $(function () {
 $(document).ready(function () {
   $(".next").hover(
     function () {
-      $(this).css({ background: "#2c00f7" });
+      $(this).css({ background: "radial-gradient(#2c00f7, #000000bf)" });
     },
     function () {
       $(this).css({ background: "" });
@@ -1801,7 +1802,7 @@ $(document).ready(function () {
   );
   $(".hvr-grow").hover(
     function () {
-      $(this).css({ background: "#2c00f7" });
+      $(this).css({ background: "radial-gradient(#2c00f7, #000000bf)" });
     },
     function () {
       $(this).css({ background: "" });
