@@ -45,7 +45,7 @@ require_once('./dbconn.php');
 
 <body>
 
-  <div class="tabs">
+  <div class="tabs" id="tabs_port">
    <button id="defaultOpen" class="tablink" onclick="openPage('Home', this);">
       <a href="#" id="active_home" class="active">Home</a>
     </button>
@@ -59,13 +59,12 @@ require_once('./dbconn.php');
       <a href="#" class="active">Contato</a>
     </button>
     <button id="lang_btn">English</button>
-
   </div>
 
 
 
   <div id="Home" class="tabcontent">
-    <div class="container" id="home">
+    <div class="container" id="home_port">
     <div class="logo_div">
   <img src="pics\logo.png" id="logo_main" class="logo" style="width:60px;height:60px;">
   </div>
@@ -76,7 +75,7 @@ require_once('./dbconn.php');
   </div>
 
 
-  <div id="About" class="tabcontent">
+  <div id="About_port" class="tabcontent">
     <div class="container" id="about_us">
     <fieldset class="field_about">
        <legend class="leg_highlight" id="leg_high_1">Sobre nós</legend>
@@ -101,7 +100,7 @@ require_once('./dbconn.php');
           <legend class="leg_highlight"><a id="examples" style="font-size: 25px;">Exemplo de um erro brasileiro em um diálogo casual:</a></legend>
          <br><br><p>A) Did you like your trip?</p><br><p style="margin-top: -20px;">B)&nbsp;<span class="error_style"><em>More or less.</em></span></p><br><p style="margin-top: -20px;">A) Hmmm...&#129300;</p>
          <hr>
-          <p class="al_left">&nbsp;<span class="span_exp">Explicação:</span>&nbsp;Em inglês, geralmente dizemos "More or less" para usá-lo como uma aproximação de números, quantidades, um "plus-minus". Ex. "It'll cost you, more or less."<br><br>Não respondemos com "more or less" apenas para expressar valor ou nossa impressão de algo. Se você achou que a viagem acima mencionada poderia ter sido melhor, você responde "Not much". Se você pensou que poderia ter sido pior, você responde "It was okay." Você deve se lembrar que respostas como esta são extremamente dependentes do contexto, ou seja, você terá que desenvolver o que quer dizer com mais detalhes.</p>
+         <p class="al_left">&nbsp;<span class="span_exp">Explanation:</span>&nbsp;In English we generally say "More or Less" to use it as an approximation of numbers, quantities, a "plus-minus". Ex. "It will cost you 40 reais, more or less."<br><br>We don't answer with "more or less" only to express value or our impression of something. If you thought the above mentioned trip could have been better, you answer "Not much". If you thought it could have been worse, you answer "It was okay." You should remember that answers like this are hugely context dependent, meaning, you will have to develop what you mean in more detail.</p>
         </picture>
       </div>
       <div class="container">
@@ -1085,7 +1084,7 @@ require_once('./dbconn.php');
     <div class="logo_div">
   <img src="pics\logo.png" id="logo_main" class="logo" style="width:60px;height:60px;">
   </div>
-       <div style="text-align:center">
+       <div id="feedback_div" style="text-align:center">
         <h3 id="shoot_email">Se você gostou do quiz diga oi para mim no<br><i class="fab fa-twitter"></i><a href="https://twitter.com/kamiltkacz" style="font-size: unset;">&nbsp;@kamiltkacz</a><br>manda um e-mail diretamente </h3>
         <h3><a href="mailto:hello@brazilianbloopers.com">hello@brazilianbloopers.com</a></h3>
         <h3>or</h3>
@@ -1166,17 +1165,17 @@ require_once('./dbconn.php');
 
      // LANGUAGES
 
+  //    $( document ).ready(function() {
+
+  //    $("#lang_btn").on("click", function(){
+
+  //   $(this).text("Portuguese");
+
+  //    window.location.href = "index.php"
 
 
-     $("#lang_btn").on("click", function(){
-
-    $(this).text("Portuguese");
-
-     window.location.href = "index.php"
-
-
-    });
-
+  //   });
+  // });
 
 
 
