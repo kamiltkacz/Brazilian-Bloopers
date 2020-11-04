@@ -214,15 +214,32 @@
               }
             });
       //  Here u change the language
-            $(".popup").slideUp();
-            $("#steps").show();
-            $('#footer').show();
-            $('#leg_steps').text('Follow these 2 simple steps');
-            $('#remove_steps').hide();
-            $('#click_start').text('1.Click "Start" button to begin the quiz.');
-            $('#have_fun').text('2.Have fun!');
 
-          }
+      $(".popup").slideUp();
+      $("#steps").show();
+      $('#footer').show();
+      $('#leg_steps').text('Follow these 2 simple steps');
+      $('#remove_steps').hide();
+      $('#click_start').text('1.Click "Start" button to begin the quiz.');
+      $('#have_fun').text('2.Have fun!');
+
+
+
+    }
+
+         // if (window.location.href = "in_port.php") {
+
+// $(".popup").slideUp();
+// $("#steps").show();
+// $('#footer').show();
+// $('#leg_steps').text('Siga estas 2 etapas simples');
+// $('#remove_steps').hide();
+//$('#click_start').text('1.Clique no botão "Iniciar" para iniciar o quiz.');
+//$('#have_fun').text('2.Diverta-se!');
+
+
+
+//}
 
           if (result.result == 2) {
             Swal.fire({
@@ -233,6 +250,10 @@
               footer: '<a href><strong>Home</strong></a>'
             });
           }
+
+
+
+
 
         } //ajax, success function//
       }); //ajax//
