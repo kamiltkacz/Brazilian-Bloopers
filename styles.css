@@ -82,7 +82,7 @@ h3 {
   background: radial-gradient(#362317, transparent);
   font-family: inherit, cursive;
   padding: 5px;
-  border-radius: 10px;
+  border-radius: 40px;
   width: 100%;
   margin-top: 25px;
 }
@@ -117,7 +117,7 @@ legend {
   background: radial-gradient(#362317, transparent);
   font-family: inherit, cursive;
   padding: 5px;
-  border-radius: 10px;
+  border-radius: 40px;
   width: 60%;
 }
 
