@@ -59,9 +59,6 @@ require_once('./dbconn.php');
       <a href="#" class="active">Contact</a>
     </button>
    <button id="lang_btn">Portuguese</button>
-
-
-
   </div>
 
 
@@ -141,7 +138,7 @@ require_once('./dbconn.php');
       <fieldset id="field_steps">
         <legend id="leg_steps">Follow these 3 simple steps:</legend>
             <div id="remove_steps">
-            <p>1.First, fill out our spectacularly short survey.</p>
+            <p id="click_survey">1.First, fill out our spectacularly short survey.</p>
              <button id="start_survey" class="hvr-grow" data-popup-open="popup-1">Survey</button>
             </div>
             <p id="click_start">2.Next, Click the "Start" button to begin the quiz.</p><br>
@@ -1087,7 +1084,7 @@ require_once('./dbconn.php');
     <div class="logo_div">
   <img src="pics\logo.png" id="logo_main" class="logo" style="width:60px;height:60px;">
   </div>
-       <div style="text-align:center">
+       <div id="feedback_div" style="text-align:center">
         <h3 id="shoot_email">If you like the quiz say hi to me on<br><i class="fab fa-twitter"></i><a href="https://twitter.com/kamiltkacz" style="font-size: unset;">&nbsp;@kamiltkacz</a><br>shoot me an e-mail directly at</h3>
         <h3><a href="mailto:hello@brazilianbloopers.com">hello@brazilianbloopers.com</a></h3>
         <h3>or</h3>
@@ -1167,20 +1164,134 @@ require_once('./dbconn.php');
     }
 
     // LANGUAGES
+    $( document ).ready(function() {
 
+    let tabsSwitch = $(`<div class="tabs">
+   <button id="defaultOpen" class="tablink" onclick="openPage('Home', this);">
+      <a href="#" id="active_home" class="active">Home</a>
+    </button>
+   <button class="tablink" onclick="openPage('About', this);">
+      <a href="#" class="active">Sobre</a>
+    </button>
+   <button class="tablink" onclick="openPage('TheQuiz', this);">
+      <a href="#" id="active_quiz" class="active">O Quiz</a>
+    </button>
+   <button class="tablink" onclick="openPage('ContactUs', this);">
+      <a href="#" class="active">Contato</a>
+    </button>
+    <button id="lang_btn">English</button>
+  </div>);`)
 
-    // let whichLang = $("lang_btn").text();
+  let headerSwitch = $(`
+    <header>
+      <h3 style="margin-top: 15px;">Olá, bem-vindo aos Brazilian Bloopers.<br> <br> Aqui nós contamos o que te trai como brasileiro!</h3>
+    </header>
+    `);
+
+    let aboutSwitch = $(` <div id="About" class="tabcontent">
+    <div class="container" id="about_us">
+    <fieldset class="field_about">
+       <legend class="leg_highlight" id="leg_high_1">Sobre nós</legend>
+        <p class="al_left">Somos um grupo de professores de inglês baseados em Brasília, Brasil, que estão determinados a aprimorar suas habilidades. Compilamos este quiz com base em anos de experiência. <br> Um dia, fascinados por vários "brasilismos" que os alunos ficavam atirando em nossos ouvidos, decidimos que esse fenômeno merecia um site próprio. Assim, o projeto Brazilian Bloopers ganhou vida.</p>
+    </fieldset>
+    </div>
+      <div class="container">
+      <fieldset class="field_about">
+        <legend class="leg_highlight" id="leg_high_2" >Sobre os Bloopers</legend>
+        <p class="al_left">Vamos encarar. Aprender outro idioma e comunicar suas ideias nele não é tarefa fácil. O inglês, embora onipresente neste mundo, não é exceção. Estamos aqui para ajudar um pouco nisso.<br>Se você procurar a definição em inglês da palavra <a href="https://www.dictionary.com/browse/blooper" style="background: radial-gradient(#2c00f7, #00000059); border-radius: 20px; padding: 5px" target="_blank"><span>'blooper'</span></a>&nbsp;você receberá "um erro embaraçoso que você comete publicamente". Embora não achemos que os erros que você encontrará aqui sejam tão graves, acreditamos que corrigi-los é um grande passo em sua jornada de aprendizado de idiomas.<br><a href="#examples" id="a_examples">&nbsp;<span>Confira os exemplos abaixo.</span></a></p>
+      </fieldset>
+      </div>
+
+    <div class="container" id="about_qz">
+    <fieldset class="field_about">
+       <legend class="leg_highlight" id="leg_high_3">Sobre o Quiz</legend>
+       <p class="al_left">O questionário consiste em falsos cognatos, expressões idiomáticas, frases incompletas, etc. Você verá uma série de diálogos. Você deve usar seu bom senso ao escolher a única resposta correta.<br><br>&nbsp;Existem 30 questões que variam em dificuldade. Alguns erros são mais comuns e outros menos frequentes, mas todos eles compartilham a peculiaridade da língua portuguesa que não traduz bem para o inglês. Mesmo que muitos dos erros sejam inteligíveis para falantes nativos de inglês, seria melhor você encontrar uma alternativa mais comum.<br><br>&nbsp;Mas não seja tão duro consigo mesmo - Tudo bem se você tem um pedaço do Brasil que nunca sai do seu cérebro, e por que não deixar o gringo pensar um pouco?<br><br>Não se esqueça de aproveitar o processo!<br><br><a href="#" style="background: radial-gradient(#2c00f7, #00000059); border-radius: 20px; padding: 5px", onclick="openPage('TheQuiz', this);">Pronto?</a></p>
+     </fieldset>
+     </div>
+     <div class="container">
+        <picture>
+          <legend class="leg_highlight"><a id="examples" style="font-size: 25px;">Exemplo de um erro brasileiro em um diálogo casual:</a></legend>
+         <br><br><p>A) Did you like your trip?</p><br><p style="margin-top: -20px;">B)&nbsp;<span class="error_style"><em>More or less.</em></span></p><br><p style="margin-top: -20px;">A) Hmmm...&#129300;</p>
+         <hr>
+         <p class="al_left">&nbsp;<span class="span_exp">Explanation:</span>&nbsp;In English we generally say "More or Less" to use it as an approximation of numbers, quantities, a "plus-minus". Ex. "It will cost you 40 reais, more or less."<br><br>We don't answer with "more or less" only to express value or our impression of something. If you thought the above mentioned trip could have been better, you answer "Not much". If you thought it could have been worse, you answer "It was okay." You should remember that answers like this are hugely context dependent, meaning, you will have to develop what you mean in more detail.</p>
+        </picture>
+      </div>
+      <div class="container">
+        <legend class="leg_highlight">Exemplo nº 1 de Bloopers no mainstream.</legend><br>
+        <p class="al_left">O hit de Michel Telo, uma canção brasileira muito popular, tem uma leitura um pouco áspera em inglês. Entre outros erros menores, o título "Se eu te pegar" dá como algo traduzido do português de maneira desajeitada. Mesmo o showbusiness mainstream não está livre de erros ocasionais.</p>
+        <div class="yt-resp">
+          <iframe class="iframe-resp" src="https://www.youtube.com/embed/CwC5BFX7rqQ">
+          </iframe>
+        </div>
+        <p class="al_left">Abaixo está uma versão muito melhor, onde o cantor americano Pitbull dá seu próprio toque às letras. "Se eu te pegar" torna-se "Se eu te pegar" e "assim você vai me matar" se traduz em "você está jogando duro para conseguir". Bom trabalho Pitbull</p>
+        <div class="yt-resp">
+          <iframe class="iframe-resp" src="https://www.youtube.com/embed/bMMnn2kA_HY">
+          </iframe>
+          </div>
+      </div>
+      <div class="container">
+      <legend class="leg_highlight">Exemplo nº 2 de Bloopers no mainstream.</legend><br>
+        <p class="al_left">A entrevista de Marilia Gabriela com a única Madonna é claramente estranha, em parte devido à incapacidade do jornalista brasileiro de colocar seu inglês nos trilhos. Madonna claramente não era caridosa e estava com vontade de ajudar.</p>
+          <div class="yt-resp">
+            <iframe class="iframe-resp" src="https://www.youtube.com/embed/zHMhLd4MUC4">
+            </iframe>
+          </div>
+      </div>
+
+  </div>`);
+
+  let legStepsSwitch = $(`<legend id="leg_steps">Siga estas 3 etapas simples:</legend>`);
+  let clickSurveySwitch = $(`<p id="click_survey">1. Primeiro, preencha nossa pesquisa espetacularmente curta.</p>`);
+  let clickStartSwitch = $(`<p id="click_start">2. Em seguida, clique no botão "Iniciar" para iniciar o questionário.</p><br>`);
+  let haveFunSwitch = $(`<p id="have_fun">3.Divirta-se!</p>`)
+
+  let feedbackSwitch = $(` <div id="feedback_div" style="text-align:center">
+        <h3 id="shoot_email">Se você gostou do quiz diga oi para mim no<br><i class="fab fa-twitter"></i><a href="https://twitter.com/kamiltkacz" style="font-size: unset;">&nbsp;@kamiltkacz</a><br>manda um e-mail diretamente </h3>
+        <h3><a href="mailto:hello@brazilianbloopers.com">hello@brazilianbloopers.com</a></h3>
+        <h3>or</h3>
+      </div>`);
+
     $("#lang_btn").on("click", function(){
 
       $(this).text("English");
 
-      window.location.href = "in_port.php"
+     // window.location.href = "in_port.php"
+
+     $(".tabs").replaceWith(tabsSwitch);
+     $("header").replaceWith(headerSwitch);
+     $("#About").replaceWith(aboutSwitch);
+     $("#leg_steps").replaceWith(legStepsSwitch);
+     $("#click_survey").replaceWith(clickSurveySwitch);
+     $("#start_survey").text("Pesquisa");
+     $("#click_start").replaceWith(clickStartSwitch);
+     $("#start_quiz").text("Comece");
+     $("#have_fun").replaceWith(haveFunSwitch);
+     $("#feedback_div").replaceWith(feedbackSwitch);
+
+
+
+    // "#click_survey","#start_survey", "#click_start", "#have_fun"
+
+  //   <fieldset id="field_steps">
+
+  //       <div id="remove_steps">
+  //
+  //        <button id="start_survey" class="hvr-grow" data-popup-open="popup-1">Pesquisa</button>
+  //       </div>
+  //
+  //       <button id="start_quiz" class="hvr-grow" data-popup-open="popup-2">Start</button>
+  //
+  // </fieldset>
+
+
 
 
 
 
 
     });
+
+  });
 
 
 
@@ -1207,3 +1318,6 @@ require_once('./dbconn.php');
   </body>
 
 </html>
+
+
+
