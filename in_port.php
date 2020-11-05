@@ -1093,14 +1093,16 @@ require_once('./dbconn.php');
         <div class="column">
           <div id="labels_left">
           <form id="contact" method="post" action="actions.php">
+            <div id="contact_text">
               <label for="name">Nome*<span id="span_name"></span></label>
             <input type="text" id="bor_name" name="name" placeholder="Seu nome.." font-family="cursive">
               <label for="email">E-mail*<span id="span_email"></span></label>
             <input type="text" id="bor_email" name="email" placeholder="Seu e-mail..">
-              <label for="subject">Subject</label>
-            <input type="text" id="bor_subject" name="subject" placeholder="sugestão,  comentário, etc.">
+              <label for="subject">Assunto</label>
+            <input type="text" id="bor_subject" name="subject" placeholder="sugestão, comentário, etc.">
               <label for="message">Mensagem*<span id="span_message"></span></label>
             <textarea id="bor_message" name="message" placeholder="Escreva sua mensagem aqui!" style="height:170px"></textarea>
+            </div>
             </div>
             <button id="submit_contact" class="hvr-grow" type="submit" name="submitcontact">Enviar</button>
           </form>
