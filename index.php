@@ -1093,6 +1093,7 @@ require_once('./dbconn.php');
         <div class="column">
           <div id="labels_left">
           <form id="contact" method="post" action="actions.php">
+          <div id ="contact_text">
               <label for="name">Name*<span id="span_name"></span></label>
             <input type="text" id="bor_name" name="name" placeholder="Your name.." font-family="cursive">
               <label for="email">E-mail*<span id="span_email"></span></label>
@@ -1101,6 +1102,7 @@ require_once('./dbconn.php');
             <input type="text" id="bor_subject" name="subject" placeholder="suggestion, comment, etc.">
               <label for="message">Message*<span id="span_message"></span></label>
             <textarea id="bor_message" name="message" placeholder="Write your message here!" style="height:170px"></textarea>
+            </div>
             </div>
             <button id="submit_contact" class="hvr-grow" type="submit" name="submitcontact">Submit</button>
           </form>
@@ -1164,7 +1166,7 @@ require_once('./dbconn.php');
     }
 
     // LANGUAGES
-    $( document ).ready(function() {
+    $ ( document ).ready(function() {
 
     let tabsSwitch = $(`<div class="tabs">
    <button id="defaultOpen" class="tablink" onclick="openPage('Home', this);">
@@ -1248,8 +1250,19 @@ require_once('./dbconn.php');
   let feedbackSwitch = $(` <div id="feedback_div" style="text-align:center">
         <h3 id="shoot_email">Se você gostou do quiz diga oi para mim no<br><i class="fab fa-twitter"></i><a href="https://twitter.com/kamiltkacz" style="font-size: unset;">&nbsp;@kamiltkacz</a><br>manda um e-mail diretamente </h3>
         <h3><a href="mailto:hello@brazilianbloopers.com">hello@brazilianbloopers.com</a></h3>
-        <h3>or</h3>
+        <h3>ou</h3>
       </div>`);
+
+  let contactSwitch = $(` <div id="contact_text">
+              <label for="name">Nome*<span id="span_name"></span></label>
+            <input type="text" id="bor_name" name="name" placeholder="Seu nome.." font-family="cursive">
+              <label for="email">E-mail*<span id="span_email"></span></label>
+            <input type="text" id="bor_email" name="email" placeholder="Seu e-mail..">
+              <label for="subject">Assunto</label>
+            <input type="text" id="bor_subject" name="subject" placeholder="Sugestão, comentário, etc.">
+              <label for="message">Mensagem*<span id="span_message"></span></label>
+            <textarea id="bor_message" name="message" placeholder="Escreva sua mensagem aqui!" style="height:170px"></textarea>
+            </div>`);
 
     $("#lang_btn").on("click", function(){
 
@@ -1267,6 +1280,10 @@ require_once('./dbconn.php');
      $("#start_quiz").text("Comece");
      $("#have_fun").replaceWith(haveFunSwitch);
      $("#feedback_div").replaceWith(feedbackSwitch);
+     $("#contact_text").replaceWith(contactSwitch);
+     $("#submit_contact").text("Enviar");
+
+
 
 
 
