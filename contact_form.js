@@ -71,6 +71,37 @@
             $("#span_email").text(" enter a valid email address ex.\"paulo@brazil.com\"");
           }
 
+          // if (result.validFormName == "empty") {
+          //   $("#bor_name").css({
+          //     "border": "5px solid red"
+          //   });
+          //   $("#span_name").text(" must only contain letters and whitespace ex.\"Paulo Sousa\"");
+          // }
+          // if (result.validFormEmail == "empty") {
+          //   $("#bor_email").css({
+          //     "border": "5px solid red"
+          //   });
+          //   $("#span_email").text(" enter a valid email address ex.\"paulo@brazil.com\"");
+          // }
+          // if (result.validFormMessage == "empty") {
+          //   $("#bor_message").css({
+          //     "border": "5px solid red"
+          //   });
+          //   $("#span_message").text(" type something, anything!");
+          // }
+          // if (result.validName == "no") {
+          //   $("#bor_name").css({
+          //     "border": "5px solid red"
+          //   });
+          //   $("#span_name").text(" must only contain letters and whitespace ex.\"Paulo Sousa\"");
+          // }
+          // if (result.validEmail == "email0") {
+          //   $("#bor_email").css({
+          //     "border": "5px solid red"
+          //   });
+          //   $("#span_email").text(" enter a valid email address ex.\"paulo@brazil.com\"");
+          // }
+
           // If data is sent do stuff here
           if (result.result == 1) {
 
