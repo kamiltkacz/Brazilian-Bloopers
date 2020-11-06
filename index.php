@@ -1166,9 +1166,8 @@ require_once('./dbconn.php');
     }
 
     // LANGUAGES
-    $ ( document ).ready(function() {
 
-    let tabsSwitch = $(`<div class="tabs">
+    const tabsSwitch = $(`<div class="tabs">
    <button id="defaultOpen" class="tablink" onclick="openPage('Home', this);">
       <a href="#" id="active_home" class="active">Home</a>
     </button>
@@ -1184,13 +1183,13 @@ require_once('./dbconn.php');
     <button id="lang_btn">English</button>
   </div>);`)
 
-  let headerSwitch = $(`
+  const headerSwitch = $(`
     <header>
       <h3 style="margin-top: 15px;">Olá, bem-vindo aos Brazilian Bloopers.<br> <br> Aqui nós contamos o que te trai como brasileiro!</h3>
     </header>
     `);
 
-    let aboutSwitch = $(` <div id="About" class="tabcontent">
+    const aboutSwitch = $(` <div id="About" class="tabcontent">
     <div class="container" id="about_us">
     <fieldset class="field_about">
        <legend class="leg_highlight" id="leg_high_1">Sobre nós</legend>
@@ -1242,18 +1241,18 @@ require_once('./dbconn.php');
 
   </div>`);
 
-  let legStepsSwitch = $(`<legend id="leg_steps">Siga estas 3 etapas simples:</legend>`);
-  let clickSurveySwitch = $(`<p id="click_survey">1. Primeiro, preencha nossa pesquisa espetacularmente curta.</p>`);
-  let clickStartSwitch = $(`<p id="click_start">2. Em seguida, clique no botão "Iniciar" para iniciar o questionário.</p><br>`);
-  let haveFunSwitch = $(`<p id="have_fun">3.Divirta-se!</p>`)
+  const legStepsSwitch = $(`<legend id="leg_steps">Siga estas 3 etapas simples:</legend>`);
+  const clickSurveySwitch = $(`<p id="click_survey">1. Primeiro, preencha nossa pesquisa espetacularmente curta.</p>`);
+  const clickStartSwitch = $(`<p id="click_start">2. Em seguida, clique no botão "Iniciar" para iniciar o questionário.</p><br>`);
+  const haveFunSwitch = $(`<p id="have_fun">3.Divirta-se!</p>`)
 
-  let feedbackSwitch = $(` <div id="feedback_div" style="text-align:center">
+  const feedbackSwitch = $(` <div id="feedback_div" style="text-align:center">
         <h3 id="shoot_email">Se você gostou do quiz diga oi para mim no<br><i class="fab fa-twitter"></i><a href="https://twitter.com/kamiltkacz" style="font-size: unset;">&nbsp;@kamiltkacz</a><br>manda um e-mail diretamente </h3>
         <h3><a href="mailto:hello@brazilianbloopers.com">hello@brazilianbloopers.com</a></h3>
         <h3>ou</h3>
       </div>`);
 
-  let contactSwitch = $(` <div id="contact_text">
+  const contactSwitch = $(` <div id="contact_text_p">
               <label for="name">Nome*<span id="span_name"></span></label>
             <input type="text" id="bor_name" name="name" placeholder="Seu nome.." font-family="cursive">
               <label for="email">E-mail*<span id="span_email"></span></label>
@@ -1264,7 +1263,13 @@ require_once('./dbconn.php');
             <textarea id="bor_message" name="message" placeholder="Escreva sua mensagem aqui!" style="height:170px"></textarea>
             </div>`);
 
+
+
     $("#lang_btn").on("click", function(){
+
+
+
+
 
       $(this).text("English");
 
@@ -1280,8 +1285,8 @@ require_once('./dbconn.php');
      $("#start_quiz").text("Comece");
      $("#have_fun").replaceWith(haveFunSwitch);
      $("#feedback_div").replaceWith(feedbackSwitch);
-     $("#contact_text").replaceWith(contactSwitch);
-     $("#submit_contact").text("Enviar");
+    $("#contact_text").replaceWith(contactSwitch);
+    $("#submit_contact").text("Enviar");
 
 
 
@@ -1301,13 +1306,9 @@ require_once('./dbconn.php');
   // </fieldset>
 
 
-
-
-
-
-
     });
 
+    $ ( document ).ready(function() {
   });
 
 
@@ -1331,8 +1332,7 @@ require_once('./dbconn.php');
         &copy;2020 BrazilianBloopers.com<br>
         Photo by &nbsp;<a href="https://www.instagram.com/andrenoboa/?utm_medium=referral&utm_source=unsplash"style="font-size: unset;">@andrenoboa</a>&nbsp;<i class="fab fa-instagram"></i></p>
     </div>
-
-  </body>
+</body>
 
 </html>
 
