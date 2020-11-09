@@ -41,6 +41,10 @@ require_once('./dbconn.php');
    <!-- FontAwesome-->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
+
+
+
+
 </head>
 
 <body>
@@ -149,16 +153,16 @@ require_once('./dbconn.php');
 
 
     <!--SURVEY-->
-    <div class="popup" data-popup="popup-1">
+    <div class="popup" id="survey_popup" data-popup="popup-1">
       <div class="popup-inner">
-        <a class="popup-close" data-popup-close="popup-1" href="#" onclick="myFunction();">x</a>
+        <a class="popup-close" data-popup-close="popup-1" href="#">x</a>
 
         <form id="survey" method="post" action="actions.php">
 
+       <div id="surv_port">
 
-          <div id="surv_div">
             <div id="question_1" class="cont_surv">
-              <p  class="surv_ques"><label id="bor_gender">1) What gender are you?<span id="span_gender" style="color:#ff0000"></span></label></p><br>
+              <p id="surv_q1"  class="surv_ques"><label id="bor_gender">1) What gender are you?<span id="span_gender" style="color:#ff0000"></span></label></p><br>
 
                 <input type="radio" id="male" class="radios" name="gender" value="male"><label for="male">&nbsp;Male</label><br>
                 <input type="radio" id="female" class="radios" name="gender" value="female"><label for="female">&nbsp;Female</label><br>
@@ -166,7 +170,7 @@ require_once('./dbconn.php');
             </div>
 
             <div id="question_2" class="cont_surv">
-              <p class="surv_ques"><label id="bor_age">2) How old are you?<span id="span_age" style="color:#ff0000"></span></label></p><br>
+              <p id="surv_q2" class="surv_ques"><label id="bor_age">2) How old are you?<span id="span_age" style="color:#ff0000"></span></label></p><br>
               <select id="age" name="ageselect">
                 <option id="opt" value="0">Select your age</option>
               </select>
@@ -174,7 +178,7 @@ require_once('./dbconn.php');
 
 
             <div id="question_3" class="cont_surv">
-              <p class="surv_ques"><label id="bor_years">3) English student for<span id="span_years" style="color:#ff0000"></span></label></p><br>
+              <p id="surv_q3" class="surv_ques"><label id="bor_years">3) English student for<span id="span_years" style="color:#ff0000"></span></label></p><br>
 
                 <input type="radio" id="y1" class="radios" name="years" value=">_2"><label for="y1">&nbsp;0-2years</label><br>
                 <input type="radio" id="y2" class="radios" name="years" value="2-5"><label for="y2">&nbsp;2-5years</label><br>
@@ -184,7 +188,7 @@ require_once('./dbconn.php');
             </div>
 
             <div id="question_4" class="cont_surv">
-              <p class="surv_ques"><label id="bor_abroad">4) Experience abroad<span id="span_abroad" style="color:#ff0000"></span></label></p><br>
+              <p id="surv_q4" class="surv_ques"><label id="bor_abroad">4) Experience abroad<span id="span_abroad" style="color:#ff0000"></span></label></p><br>
 
                 <input type="radio" id="abr1" class="radios" name="abroad" value=">_year"><label for="abr1">&nbsp;less than a year</label><br>
                 <input type="radio" id="abr2" class="radios" name="abroad" value="1-3_years"><label for="abr2">&nbsp;1-2 years</label><br>
@@ -195,7 +199,7 @@ require_once('./dbconn.php');
             </div>
 
             <div id="question_5" class="cont_surv">
-              <p class="surv_ques"><label id="bor_way">5) How do you learn?<span id="span_way" style="color:#ff0000"><br></span></label></p><br>
+              <p id="surv_q5" class="surv_ques"><label id="bor_way">5) How do you learn?<span id="span_way" style="color:#ff0000"><br></span></label></p><br>
 
                 <input type="checkbox" id="way1" class="check" name="way[]" value="g_course"><label for="way1">&nbsp;group course</label><br>
                 <input type="checkbox" id="way2" class="check" name="way[]" value="private_teacher"><label for="way2">&nbsp;private teacher</label><br>
@@ -207,7 +211,7 @@ require_once('./dbconn.php');
             </div>
 
             <div id="question_6" class="cont_surv">
-              <p class="surv_ques"><label id="bor_others">6) Foreign languages<span id="span_others" style="color:#ff0000"></span></label></p><br>
+              <p id="surv_q6" class="surv_ques"><label id="bor_others">6) Foreign languages<span id="span_others" style="color:#ff0000"></span></label></p><br>
                 <input type="radio" id="oth1" class="radios" name="others" value="one"><label for="oth1">&nbsp;One</label><br>
                 <input type="radio" id="oth2" class="radios" name="others" value="two"><label for="oth2">&nbsp;Two</label><br>
                 <input type="radio" id="oth3" class="radios" name="others" value="polyglot"><label for="oth3">&nbsp;I'm a polyglot</label>
@@ -215,16 +219,17 @@ require_once('./dbconn.php');
             </div>
 
             <div id="question_7" class="cont_surv">
-              <p class="surv_ques"><label id="bor_country">7) Where do you live?<span id="span_country" style="color:#ff0000"></span></label></p><br>
+              <p id="surv_q7" class="surv_ques"><label id="bor_country">7) Where do you live?<span id="span_country" style="color:#ff0000"></span></label></p><br>
 
                 <input type="radio" id="ctr1" class="radios" name="country" value="brazil"><label for="ctr1">&nbsp;Brazil</label><br>
                 <input type="radio" id="ctr2" class="radios" name="country" value="abroad"><label for="ctr2">&nbsp;Abroad</label>
 
             </div>
+            </div>
             <div>
               <button id="submit_survey" class="hvr-grow" type="submit" name="submitsurvey">Submit</button>
             </div>
-          </div>
+
         </form>
       </div>
     </div>
@@ -1167,7 +1172,19 @@ require_once('./dbconn.php');
 
     // LANGUAGES
 
-    const tabsSwitch = $(`<div class="tabs">
+
+
+  </script>
+
+
+  <script>
+
+
+    $ ( document ).ready(function() {
+      });
+
+
+const tabsSwitch = $(`<div class="tabs">
    <button id="defaultOpen" class="tablink" onclick="openPage('Home', this);">
       <a href="#" id="active_home" class="active">Home</a>
     </button>
@@ -1252,7 +1269,7 @@ require_once('./dbconn.php');
         <h3>ou</h3>
       </div>`);
 
-  const contactSwitch = $(` <div id="contact_text_p">
+  const contactSwitch = $(` <div id="contact_text">
               <label for="name">Nome*<span id="span_name"></span></label>
             <input type="text" id="bor_name" name="name" placeholder="Seu nome.." font-family="cursive">
               <label for="email">E-mail*<span id="span_email"></span></label>
@@ -1263,11 +1280,100 @@ require_once('./dbconn.php');
             <textarea id="bor_message" name="message" placeholder="Escreva sua mensagem aqui!" style="height:170px"></textarea>
             </div>`);
 
+  const footerSwitch = $(`<div id="footer" class="container">
+      <p id="p_footer">Autor - Kamil Tkacz&nbsp;<a href="https://twitter.com/kamiltkacz" style="font-size: unset;">@kamiltkacz</a>&nbsp;<i class="fab fa-twitter"></i><br>
+        &copy;2020 BrazilianBloopers.com<br>
+        Foto &nbsp;<a href="https://www.instagram.com/andrenoboa/?utm_medium=referral&utm_source=unsplash"style="font-size: unset;">@andrenoboa</a>&nbsp;<i class="fab fa-instagram"></i></p>
+    </div>`);
+
+
+
+
+
+//     const surveySwitch = $(`
+
+
+
+
+
+
+
+// <div id="surv_port">
+
+//             <div id="question_1" class="cont_surv">
+//               <p class="surv_ques"><label id="bor_gender">1) Que gênero você é?<span id="span_gender" style="color:#ff0000"></span></label></p><br>
+
+//                 <input type="radio" id="male" class="radios" name="gender" value="male"><label for="male">&nbsp;Homen</label><br>
+//                 <input type="radio" id="female" class="radios" name="gender" value="female"><label for="female">&nbsp;Mulher</label><br>
+//                 <input type="radio" id="other" class="radios" name="gender" value="other"><label for="other">&nbsp;Outro</label><br>
+//             </div>
+
+//             <div id="question_2" class="cont_surv">
+//               <p id="surv_q2" class="surv_ques"><label id="bor_age">2) How old are you?<span id="span_age" style="color:#ff0000"></span></label></p><br>
+//               <select id="age" name="ageselect">
+//                 <option id="opt" value="0">Select your age</option>
+//               </select>
+//             </div>
+
+//             <div id="question_3" class="cont_surv">
+//               <p class="surv_ques"><label id="bor_years">3) Estudante de inglês<span id="span_years" style="color:#ff0000"></span></label></p><br>
+
+//                 <input type="radio" id="y1" class="radios" name="years" value=">_1"><label for="y1">&nbsp;0-1anos</label><br>
+//                 <input type="radio" id="y2" class="radios" name="years" value="2-5"><label for="y2">&nbsp;2-5anos</label><br>
+//                 <input type="radio" id="y3" class="radios" name="years" value="5-10"><label for="y3">&nbsp;5-10anos</label><br>
+//                 <input type="radio" id="y4" class="radios" name="years" value="10_<"><label for="y4">&nbsp;10+ anos</label><br>
+//                 <input type="radio" id="y5" class="radios" name="years" value="never_studied"><label for="y5">&nbsp;nunca estudei</label>
+//             </div>
+
+//             <div id="question_4" class="cont_surv">
+//               <p class="surv_ques"><label id="bor_abroad">4) Experiência no exterior<span id="span_abroad" style="color:#ff0000"></span></label></p><br>
+
+//                 <input type="radio" id="abr1" class="radios" name="abroad" value=">_year"><label for="abr1">&nbsp;menos de um ano</label><br>
+//                 <input type="radio" id="abr2" class="radios" name="abroad" value="1-2_years"><label for="abr2">&nbsp;1-2 anos</label><br>
+//                 <input type="radio" id="abr3" class="radios" name="abroad" value="3-6_years"><label for="abr3">&nbsp;3-5 anos</label><br>
+//                 <input type="radio" id="abr4" class="radios" name="abroad" value="6-10_years"><label for="abr4">&nbsp;6-10 anos</label><br>
+//                 <input type="radio" id="abr5" class="radios" name="abroad" value="10_<"><label for="abr5">&nbsp;10+ anos</label><br>
+//                 <input type="radio" id="abr6" class="radios" name="abroad" value="never_abroad"><label for="abr6">&nbsp;nunca morei no exterior</label>
+//             </div>
+
+//             <div id="question_5" class="cont_surv">
+//               <p class="surv_ques"><label id="bor_way">5) Como você aprende?<span id="span_way" style="color:#ff0000"><br></span></label></p><br>
+
+//                 <input type="checkbox" id="way1" class="check" name="way[]" value="g_course"><label for="way1">&nbsp;curso de grupo</label><br>
+//                 <input type="checkbox" id="way2" class="check" name="way[]" value="private_teacher"><label for="way2">&nbsp;professor particular</label><br>
+//                 <input type="checkbox" id="way3" class="check" name="way[]" value="self_taught"><label for="way3">&nbsp;auto-ensino</label><br>
+//                 <input type="checkbox" id="way4" class="check" name="way[]" value="apps"><label for="way4">&nbsp;apps</label><br>
+//                 <input type="checkbox" id="way5" class="check" name="way[]" value="video_games"><label for="way5">&nbsp;jogos</label><br>
+//                 <input type="checkbox" id="way6" class="check" name="way[]" value="other"><label for="way6">&nbsp;outros</label>
+
+//             </div>
+
+//             <div id="question_6" class="cont_surv">
+//               <p class="surv_ques"><label id="bor_others">6) Línguas estrangeiras<span id="span_others" style="color:#ff0000"></span></label></p><br>
+//                 <input type="radio" id="oth1" class="radios" name="others" value="one"><label for="oth1">&nbsp;Um</label><br>
+//                 <input type="radio" id="oth2" class="radios" name="others" value="two"><label for="oth2">&nbsp;Dois</label><br>
+//                 <input type="radio" id="oth3" class="radios" name="others" value="polyglot"><label for="oth3">&nbsp;Eu sou um poliglota</label>
+
+//             </div>
+
+//             <div id="question_7" class="cont_surv">
+//               <p class="surv_ques"><label id="bor_country">7) Onde você mora?<span id="span_country" style="color:#ff0000"></span></label></p><br>
+
+//                 <input type="radio" id="ctr1" class="radios" name="country" value="brazil"><label for="ctr1">&nbsp;Brasil</label><br>
+//                 <input type="radio" id="ctr2" class="radios" name="country" value="abroad"><label for="ctr2">&nbsp;Extrerior</label>
+
+//             </div>
+//           </div>
+
+//     `);
+
+
+
+
+
 
 
     $("#lang_btn").on("click", function(){
-
-
 
 
 
@@ -1285,43 +1391,76 @@ require_once('./dbconn.php');
      $("#start_quiz").text("Comece");
      $("#have_fun").replaceWith(haveFunSwitch);
      $("#feedback_div").replaceWith(feedbackSwitch);
-    $("#contact_text").replaceWith(contactSwitch);
-    $("#submit_contact").text("Enviar");
+     $("#contact_text").replaceWith(contactSwitch);
+     $("#submit_contact").text("Enviar");
+     $("#footer").replaceWith(footerSwitch);
+    // $("#surv_port").replaceWith(surveySwitch);
+
+
+              $("#surv_q1").text(" 1) Que gênero você é?");
+                $("label[for*='male']").text("homen");
+                $("label[for*='female']").text("mulher");
+                $("label[for*='other']").text("outro");
+              $("#surv_q2").text(" 2) Quantos anos você tem?");
+              $("#opt").text("Selecione sua idade");
+
+              $("#surv_q3").text(" 3) Estudante de inglês?");
+               $("label[for*='y1']").text("0-1 anos");
+               $("label[for*='y2']").text("2-5 anos");
+               $("label[for*='y3']").text("5-10 anos");
+               $("label[for*='y4']").text("10+ anos");
+               $("label[for*='y5']").text("nunca estudei");
+
+
+              $("#surv_q4").text(" 4) Experiência no exterior");
+               $("label[for*='abr1']").text("menos de 1 ano");
+               $("label[for*='abr2']").text("1-2 anos");
+               $("label[for*='abr3']").text("3-5 anos");
+               $("label[for*='abr4']").text("6-10 anos");
+               $("label[for*='abr5']").text("10+ anos");
+               $("label[for*='abr6']").text("nunca morei no exterior");
+
+
+
+
+              $("#surv_q5").text(" 5) Como você aprende?");
+               $("label[for*='way1']").text("curso de grupo");
+               $("label[for*='way2']").text("professor particular");
+               $("label[for*='way3']").text("auto-ensino");
+               $("label[for*='way4']").text("apps");
+               $("label[for*='way5']").text("jogos");
+               $("label[for*='way6']").text("outros");
+
+              $("#surv_q6").text(" 6) Línguas estrangeiras");
+               $("label[for*='oth1']").text("um");
+               $("label[for*='oth2']").text("dois");
+               $("label[for*='oth3']").text("Eu sou um poliglota");
+
+
+              $("#surv_q7").text(" 7) Onde você mora?");
+               $("label[for*='ctr1']").text("Brasil");
+               $("label[for*='ctr22']").text("Exterior");
+
+
+              $("#submit_survey").text('Enviar');
 
 
 
 
 
-    // "#click_survey","#start_survey", "#click_start", "#have_fun"
 
-  //   <fieldset id="field_steps">
 
-  //       <div id="remove_steps">
-  //
-  //        <button id="start_survey" class="hvr-grow" data-popup-open="popup-1">Pesquisa</button>
-  //       </div>
-  //
-  //       <button id="start_quiz" class="hvr-grow" data-popup-open="popup-2">Start</button>
-  //
-  // </fieldset>
+
+
+
+
 
 
     });
 
-    $ ( document ).ready(function() {
-  });
-
-
 
 
   </script>
-
-  <!-- JS Survey -->
-  <script src="survey.js"></script>
-  <!-- JS Quiz -->
-  <script src="quiz.js"></script>
-  <!--JS Contactform -->
-  <script src="contact_form.js"></script>
 
 
 
@@ -1332,6 +1471,14 @@ require_once('./dbconn.php');
         &copy;2020 BrazilianBloopers.com<br>
         Photo by &nbsp;<a href="https://www.instagram.com/andrenoboa/?utm_medium=referral&utm_source=unsplash"style="font-size: unset;">@andrenoboa</a>&nbsp;<i class="fab fa-instagram"></i></p>
     </div>
+
+      <!-- JS Survey -->
+  <script src="survey.js"></script>
+  <!-- JS Quiz -->
+  <script src="quiz.js"></script>
+  <!--JS Contactform -->
+  <script src="contact_form.js"></script>
+
 </body>
 
 </html>
