@@ -20,13 +20,15 @@
       $("#span_message").text("");
     });
 
+
+
     // Submit form contact
     $("#contact").submit(function() {
       return false;
     });
 
     $("#submit_contact").on("click", function() {
-      var formData = $("#contact :input").serializeArray();
+      let formData = $("#contact :input").serializeArray();
       formData[formData.length] = {
         name: "action",
         value: "submit_contact"
@@ -69,38 +71,69 @@
               "border": "5px solid red"
             });
             $("#span_email").text(" enter a valid email address ex.\"paulo@brazil.com\"");
+
           }
 
-          // if (result.validFormName == "empty") {
-          //   $("#bor_name").css({
-          //     "border": "5px solid red"
-          //   });
-          //   $("#span_name").text(" must only contain letters and whitespace ex.\"Paulo Sousa\"");
-          // }
-          // if (result.validFormEmail == "empty") {
-          //   $("#bor_email").css({
-          //     "border": "5px solid red"
-          //   });
-          //   $("#span_email").text(" enter a valid email address ex.\"paulo@brazil.com\"");
-          // }
-          // if (result.validFormMessage == "empty") {
-          //   $("#bor_message").css({
-          //     "border": "5px solid red"
-          //   });
-          //   $("#span_message").text(" type something, anything!");
-          // }
-          // if (result.validName == "no") {
-          //   $("#bor_name").css({
-          //     "border": "5px solid red"
-          //   });
-          //   $("#span_name").text(" must only contain letters and whitespace ex.\"Paulo Sousa\"");
-          // }
-          // if (result.validEmail == "email0") {
-          //   $("#bor_email").css({
-          //     "border": "5px solid red"
-          //   });
-          //   $("#span_email").text(" enter a valid email address ex.\"paulo@brazil.com\"");
-          // }
+          // Validacao Portuguese
+
+          if ( $( "#contact_text" ).is( ":contains('Nome')" ) ) {
+
+            $("#bor_name").focus(function() {
+              $("#bor_name").css({
+                "border": ""
+              });
+              $("#span_name").text("");
+            });
+            // Reset border color & text in span element for email validation
+            $("#bor_email").focus(function() {
+              $("#bor_email").css({
+                "border": ""
+              });
+              $("#span_email").text("");
+            });
+            // Reset border color & text in span element for message validation
+            $("#bor_message").focus(function() {
+              $("#bor_message").css({
+                "border": ""
+              });
+              $("#span_message").text("");
+            });
+
+
+
+          if (result.validFormName == "empty") {
+            $("#bor_name").css({
+              "border": "5px solid red"
+            });
+            $("#span_name").text(" Deve conter apenas letras e espaços em branco ex.\"Paulo Sousa\"");
+          }
+          if (result.validFormEmail == "empty") {
+            $("#bor_email").css({
+              "border": "5px solid red"
+            });
+            $("#span_email").text(" Digite um endereço de e-mail válido ex.\"paulo@brazil.com\"");
+          }
+          if (result.validFormMessage == "empty") {
+            $("#bor_message").css({
+              "border": "5px solid red"
+            });
+            $("#span_message").text(" Digite algo, qualquer coisa!");
+          }
+          if (result.validName == "no") {
+            $("#bor_name").css({
+              "border": "5px solid red"
+            });
+            $("#span_name").text(" Deve conter apenas letras e espaços em branco ex.\"Paulo Sousa\"");
+          }
+          if (result.validEmail == "email0") {
+            $("#bor_email").css({
+              "border": "5px solid red"
+            });
+            $("#span_email").text(" Digite um endereço de e-mail válido ex.\"paulo@brazil.com\"");
+          }
+
+
+        }
 
           // If data is sent do stuff here
           if (result.result == 1) {
