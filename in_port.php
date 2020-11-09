@@ -151,7 +151,7 @@ require_once('./dbconn.php');
     <!--SURVEY-->
     <div class="popup" data-popup="popup-1">
       <div class="popup-inner">
-        <a class="popup-close" data-popup-close="popup-1" href="#" onclick="myFunction();">x</a>
+        <a class="popup-close" data-popup-close="popup-1" href="#">x</a>
 
         <form id="survey" method="post" action="actions.php">
 
