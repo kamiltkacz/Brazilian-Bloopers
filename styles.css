@@ -54,6 +54,11 @@ h3 {
   opacity: 0.5;
 }
 
+#eng_btn {
+
+  display: none;
+}
+
 
 
 /* Style tab links */
@@ -230,6 +235,19 @@ ol {
   left: -5px;
 }
 
+
+::-webkit-scrollbar {
+
+  width: 8px;
+
+  height: 10px;
+
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background: #c2c9d2;
+}
+
 #popup_close_2 {
   width: 20px;
   height: 20px;
@@ -304,7 +322,7 @@ label,
 
 .surv_ques {
   display: inline-flex;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   margin-top: 0px;
 }
 
