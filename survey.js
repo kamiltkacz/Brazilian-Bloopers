@@ -189,6 +189,78 @@
 
           if ( $( "#surv_q3" ).is( ":contains('Estudante')" ) ) {
 
+              // Reset border color & text in span element for question1 validation
+    $("input[type='radio'][name='gender']").click(function() {
+      $("input[type='radio'][name='gender']").focus();
+      $("#bor_gender").css({
+        "border": ""
+      });
+      $("#span_gender").text("");
+
+    });
+
+    // Reset border color & text in span element for question2 validation
+    $("#age").click(function() {
+      $("#age").focus();
+      $("#bor_age").css({
+        "border": ""
+      });
+      $("#span_age").text("");
+
+    });
+
+    // Reset border color & text in span element for question3 validation
+    $("input[type='radio'][name='years']").click(function() {
+      $("input[type='radio'][name='years']").focus();
+      $("#bor_years").css({
+        "border": ""
+      });
+      $("#span_years").text("");
+
+    });
+
+
+    // Reset border color & text in span element for question4 validation
+    $("input[type='radio'][name='abroad']").click(function() {
+      $("input[type='radio'][name='abroad']").focus();
+      $("#bor_abroad").css({
+        "border": ""
+      });
+      $("#span_abroad").text("");
+
+    });
+
+
+    // Reset border color & text in span element for question5 validation
+    $(".check").click(function() {
+      $(".check").focus();
+      $("#bor_way").css({
+        "border": ""
+      });
+      $("#span_way").text("");
+
+    });
+    // Reset border color & text in span element for question6 validation
+    $("input[type='radio'][name='others']").click(function() {
+      $("input[type='radio'][name='others']").focus();
+      $("#bor_others").css({
+        "border": ""
+      });
+      $("#span_others").text("");
+
+    });
+
+
+    // Reset border color & text in span element for question7 validation
+    $("input[type='radio'][name='country']").click(function() {
+      $("input[type='radio'][name='country']").focus();
+      $("#bor_country").css({
+        "border": ""
+      });
+      $("#span_country").text("");
+
+    });
+
 
             if (result.genderErr == "empty") {
               $("#bor_gender").css({
@@ -266,21 +338,38 @@
 
          $("#start_quiz").prop('disabled',false).css({"opacity": "1"});
 
+         if ( $( ".surv_ques" ).is( ":contains('Estudante')" ) ) {
+                Swal.fire({
+                 title: "Yay!",
+                 width: 400,
+                 heightAuto: false,
+                 padding: "0.15em",
+                 background: "#362317",
+                 icon: "success",
+                 text: "Sua pesquisa foi enviada, obrigado!",
+                 footer: "<a href>Home</a>",
+                 allowOutsideClick: true,
+                 customClass: {
+                   footer: 'sweet-footer',
+                 }
+               });
+      } else {
+        Swal.fire({
+          title: "Yay!",
+          width: 400,
+          heightAuto: false,
+          padding: "0.15em",
+          background: "#362317",
+          icon: "success",
+          text: "Your survey has been submitted, thanks!",
+          footer: "<a href>Home</a>",
+          allowOutsideClick: true,
+          customClass: {
+            footer: 'sweet-footer',
+          }
+        });
+      }
 
-            Swal.fire({
-              title: "Yay!",
-              width: 400,
-              heightAuto: false,
-              padding: "0.15em",
-              background: "#362317",
-              icon: "success",
-              text: "Your survey has been submitted, thanks!",
-              footer: "<a href>Home</a>",
-              allowOutsideClick: true,
-              customClass: {
-                footer: 'sweet-footer',
-              }
-            });
       //  Here u change the language
 
       $(".popup").slideUp();
@@ -291,7 +380,9 @@
       $('#click_start').text('1.Click "Start" button to begin the quiz.');
       $('#have_fun').text('2.Have fun!');
 
-      if ( $( "#surv_q3" ).is( ":contains('Estudante')" ) ) {
+      if ( $( ".surv_ques" ).is( ":contains('Estudante')" ) ) {
+
+
      // $(".popup").slideUp();
      // $("#steps").show();
      // $('#footer').show();
