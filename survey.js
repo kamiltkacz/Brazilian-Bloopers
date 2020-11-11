@@ -1,4 +1,5 @@
 
+
     // Age Select Menu
     let selectElement = document.getElementById("age");
     if (selectElement !== undefined) {
