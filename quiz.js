@@ -603,16 +603,16 @@ $("#start_quiz").on("click", function () {
       $(".score").text(score);
     }
 
-    // let surveyId = localStorage.getItem("surveyId");
+    let surveyId = localStorage.getItem("surveyId");
     let formData = $("#quiz_form :input").serializeArray();
     formData[formData.length] = {
       name: "action",
       value: "sub_quiz",
     };
-    // formData[formData.length] = {
-    //   name: "surveyId",
-    //   value: surveyId
-    // };
+     formData[formData.length] = {
+      name: "surveyId",
+      value: surveyId
+   };
     formData.push({});
     console.log("dataQuiz");
 
