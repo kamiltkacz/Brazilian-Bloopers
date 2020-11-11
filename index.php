@@ -15,6 +15,10 @@ require_once('./dbconn.php');
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
   <!-- JQuery UI -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha256-KM512VNnjElC30ehFwehXjx1YCHPiQkOPmqnrWtpccM=" crossorigin="anonymous"></script>
+  <!--JQuery lang plugin-->
+  <!-- <script src="src/languages/langs.min.js"></script>
+  <script src="src/languages/jquery.multilang.min.js"></script> -->
+
 
   <!--BOOTSTRAP-->
    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -49,7 +53,7 @@ require_once('./dbconn.php');
 
 </head>
 
-<body>
+<body onload="onloadHandler()">
 
   <div class="tabs">
    <button id="defaultOpen" class="tablink" onclick="openPage('Home', this);">
@@ -64,11 +68,13 @@ require_once('./dbconn.php');
    <button class="tablink" onclick="openPage('ContactUs', this);">
       <a href="#" class="active">Contact</a>
     </button>
-   <img src="//bandidosnatv.com/plgns/gtranslate/flags/24/en-us.png" id="eng_btn" height="24" width="24" alt="English">
+   <img src="//bandidosnatv.com/plgns/gtranslate/flags/24/en-us.png" id="eng_btn"  height="24" width="24" alt="English">
   <img src="//bandidosnatv.com/plgns/gtranslate/flags/24/pt-br.png" id="port_btn" height="24" width="24" alt="Portuguese">
 
 
   </div>
+
+
 
 
 
@@ -84,6 +90,7 @@ require_once('./dbconn.php');
   </div>
 
 
+
   <div id="About" class="tabcontent">
     <div class="container" id="about_us">
     <fieldset class="field_about">
@@ -93,7 +100,7 @@ require_once('./dbconn.php');
     </div>
       <div class="container">
       <fieldset class="field_about">
-        <legend class="leg_highlight" id="leg_high_2" >About the Bloopers</legend>
+        <legend class="leg_highlight" id="leg_high_2">About the Bloopers</legend>
         <p class="al_left">Let's face it. Learning another language and communicating your ideas in it, is no easy feat. English, however omnipresent in this world, is no exception. We're here to help a little with that.<br>If you look up English defintion of the word <a href="https://www.dictionary.com/browse/blooper" style="background: radial-gradient(#2c00f7, #00000059); border-radius: 20px; padding: 5px" target="_blank"><span>'blooper'</span></a>&nbsp;you'll get "an embarassing error you make publicly". Although we don't think the mistakes you'll find here are that bad, we do believe correcting them is a great step forward in your language learning journey.<br><a href="#examples" id="a_examples">&nbsp;<span>Check out the examples below.</span></a></p>
       </fieldset>
       </div>
@@ -1190,14 +1197,18 @@ require_once('./dbconn.php');
         &copy;2020 BrazilianBloopers.com<br>
         Photo by &nbsp;<a href="https://www.instagram.com/andrenoboa/?utm_medium=referral&utm_source=unsplash"style="font-size: unset;">@andrenoboa</a>&nbsp;<i class="fab fa-instagram"></i></p>
    </div>
-     <!--JS Portuguese -->
-     <script src="port.js"></script>
+
      <!-- JS Survey -->
      <script src="survey.js"></script>
      <!-- JS Quiz -->
      <script src="quiz.js"></script>
      <!--JS Contactform -->
      <script src="contact_form.js"></script>
+       <!--JS Portuguese -->
+       <script src="port.js"></script>
+
+
+
 
 
 
