@@ -1,6 +1,6 @@
-// $(document).ready(function() {
 
-// });
+
+
 
 
 
@@ -19,12 +19,11 @@ const tabsSwitch = $(`<div class="tabs">
  <button class="tablink" onclick="openPage('ContactUs', this);">
     <a href="#" class="active">Contato</a>
   </button>
-  <img src="//bandidosnatv.com/plgns/gtranslate/flags/24/en-us.png" id="eng_btn" onclick="window.location.href = 'index.php'" height="24" width="24" alt="English">
+  <img src="//bandidosnatv.com/plgns/gtranslate/flags/24/en-us.png" id="eng_btn"  height="24" width="24" alt="English">
   <div id="port_icon>
   <img src="//bandidosnatv.com/plgns/gtranslate/flags/24/pt-br.png" id="port_btn" height="24" width="24" alt="Portuguese">
  </div>
 </div>`);
-
 
 
 
@@ -145,9 +144,13 @@ const ques_7_Switch = $(
 );
 
 
+function onloadHandler() {
+
 
 
 $("#port_btn").on("click", function () {
+
+  isClicked = true;
 
 
   $(".tabs").replaceWith(tabsSwitch);
@@ -164,7 +167,7 @@ $("#port_btn").on("click", function () {
   $("#contact_text").replaceWith(contactSwitch);
   $("#submit_contact").text("Enviar");
   $("#footer").replaceWith(footerSwitch);
-  // $("#surv_port").replaceWith(surveySwitch);
+
 
   $("#surv_q1").replaceWith(ques_1_Switch);
   $("label[for*='male']").text(" homen ");
@@ -211,10 +214,30 @@ $("#port_btn").on("click", function () {
   $("#submit_survey").text("Enviar");
 
 
+  $("#eng_btn").on("click", function () {
+
+    // alert("Hi");
 
 
-});
+    window.location.href = 'index.php';
 
+
+
+
+    });
+
+
+
+
+
+
+
+
+  });
+
+
+
+};
 
 
 
