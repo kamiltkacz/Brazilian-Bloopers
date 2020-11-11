@@ -114,9 +114,9 @@ if (isset($_POST["action"])) {
 
     if (mysqli_query($conn, $sql) === TRUE) {
 
-      // $lastId = mysqli_insert_id($conn);
+     $lastId = mysqli_insert_id($conn);
 
-      // $export['id'] = $lastId;
+      $export['id'] = $lastId;
 
       $export['result'] = "1";
 
@@ -134,13 +134,40 @@ if (isset($_POST["action"])) {
 if ($action == "sub_quiz") {
     $export = Array();
     $sub_it = $_POST["sub_it"];
+    $too = $_POST["too"];
+    $much = $_POST["much"];
+    $exist = $_POST["exist"];
+    $two_sub = $_POST["two_sub"];
+    $no_obj = $_POST["no_obj"];
+    $for = $_POST["for"];
+    $h_age = $_POST["h_age"];
+    $guy = $_POST["guy"];
+    $car = $_POST["car"];
+    $lose = $_POST["lose"];
+    $diss = $_POST["diss"];
+    $doubt = $_POST["doubt"];
+    $know = $_POST["know"];
+    $god = $_POST["god"];
+    $pref = $_POST["pref"];
+    $impress = $_POST["impress"];
+    $parent = $_POST["parent"];
+    $gout = $_POST["gout"];
+    $use = $_POST["use"];
+    $durat = $_POST["durat"];
+    $stay = $_POST["stay"];
+    $with = $_POST["with"];
+    $chap = $_POST["chap"];
+    $notes = $_POST["notes"];
+    $music = $_POST["music"];
+    $every = $_POST["every"];
+    $sym = $_POST["sym"];
+    $support = $_POST["support"];
     $uniq = $_POST["uniq"];
-   // $much = $_POST["much"];
-  // $surveyId = $_POST["surveyId"];
+    $surveyId = $_POST["surveyId"];
 
 
-    $sql = "INSERT INTO quiz (Radio_1, Radio_2)
-    VALUES ('$sub_it', '$uniq')";
+    $sql = "INSERT INTO quiz (Radio_1, Radio_2, Radio_3, Radio_4, Radio_5, Radio_6, Radio_7, Radio_8, Radio_9, Radio_10, Radio_11, Radio_12, Radio_13, Radio_14, Radio_15, Radio_16, Radio_17, Radio_18, Radio_19, Radio_20, Radio_21, Radio_22, Radio_23, Radio_24, Radio_25, Radio_26, Radio_27, Radio_28, Radio_29, Radio_30, surveyId )
+    VALUES ('$sub_it', '$too', '$much', '$exist', '$two_sub', '$no_obj', '$for', '$h_age', '$guy', '$car', '$lose', '$diss', '$doubt', '$know', '$god', '$pref', '$impress', '$parent', '$gout', '$use', '$durat', '$stay', '$with', '$chap', '$notes', '$music', '$every', '$sym', '$support', '$uniq', '$surveyId')";
 
     if (mysqli_query($conn, $sql) === TRUE) {
 
