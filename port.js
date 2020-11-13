@@ -19,7 +19,8 @@ const tabsSwitch = $(`<div class="tabs">
  <button class="tablink" onclick="openPage('ContactUs', this);">
     <a href="#" class="active">Contato</a>
   </button>
-  <img src="//bandidosnatv.com/plgns/gtranslate/flags/24/en-us.png" id="eng_btn"  height="24" width="24" alt="English">
+
+  <img src="//bandidosnatv.com/plgns/gtranslate/flags/24/en-us.png" id="eng_btn" height="24" width="24" alt="English">
   <div id="port_icon>
   <img src="//bandidosnatv.com/plgns/gtranslate/flags/24/pt-br.png" id="port_btn" height="24" width="24" alt="Portuguese">
  </div>
@@ -50,7 +51,8 @@ const aboutSwitch = $(` <div id="About" class="tabcontent">
   <div class="container" id="about_qz">
   <fieldset class="field_about">
      <legend class="leg_highlight" id="leg_high_3">Sobre o Quiz</legend>
-     <p class="al_left">O questionário consiste em falsos cognatos, expressões idiomáticas, frases incompletas, etc. Você verá uma série de diálogos. Você deve usar seu bom senso ao escolher a única resposta correta.<br><br>&nbsp;Existem 30 questões que variam em dificuldade. Alguns erros são mais comuns e outros menos frequentes, mas todos eles compartilham a peculiaridade da língua portuguesa que não traduz bem para o inglês. Mesmo que muitos dos erros sejam inteligíveis para falantes nativos de inglês, seria melhor você encontrar uma alternativa mais comum.<br><br>&nbsp;Mas não seja tão duro consigo mesmo - Tudo bem se você tem um pedaço do Brasil que nunca sai do seu cérebro, e por que não deixar o gringo pensar um pouco?<br><br>Não se esqueça de aproveitar o processo!<br><br><a href="#" style="background: radial-gradient(#2c00f7, #00000059); border-radius: 20px; padding: 5px", onclick="openPage('TheQuiz', this);">Pronto?</a></p>
+     <p class="al_left"> O teste é apenas em inglês, porque não pode ficar muito fácil, não é? A pesquisa, entretanto, é oferecida em inglês e português.
+     O quiz consiste em falsos cognatos, expressões idiomáticas, frases incompletas, etc. Você verá uma série de diálogos. Você deve usar seu bom senso ao escolher a única resposta correta.<br><br>&nbsp;Existem 30 questões que variam em dificuldade. Alguns erros são mais comuns e outros menos frequentes, mas todos eles compartilham a peculiaridade da língua portuguesa que não traduz bem para o inglês. Mesmo que muitos dos erros sejam inteligíveis para falantes nativos de inglês, seria melhor você encontrar uma alternativa mais comum.<br><br>&nbsp;Mas não seja tão duro consigo mesmo - Tudo bem se você tem um pedaço do Brasil que nunca sai do seu cérebro, e por que não deixar o gringo pensar um pouco?<br><br>Não se esqueça de aproveitar o processo!<br><br><a href="#" style="background: radial-gradient(#2c00f7, #00000059); border-radius: 20px; padding: 5px", onclick="openPage('TheQuiz', this);">Pronto?</a></p>
    </fieldset>
    </div>
    <div class="container">
@@ -144,7 +146,6 @@ const ques_7_Switch = $(
 );
 
 
-function onloadHandler() {
 
 
 
@@ -216,7 +217,6 @@ $("#port_btn").on("click", function () {
 
   $("#eng_btn").on("click", function () {
 
-    // alert("Hi");
 
 
     window.location.href = 'index.php';
@@ -237,7 +237,7 @@ $("#port_btn").on("click", function () {
 
 
 
-};
+
 
 
 
