@@ -53,7 +53,8 @@ require_once('./dbconn.php');
 
 </head>
 
-<body onload="onloadHandler()">
+<body>
+
 
   <div class="tabs">
    <button id="defaultOpen" class="tablink" onclick="openPage('Home', this);">
@@ -94,33 +95,34 @@ require_once('./dbconn.php');
   <div id="About" class="tabcontent">
     <div class="container" id="about_us">
     <fieldset class="field_about">
-       <legend class="leg_highlight" id="leg_high_1">About Us</legend>
+       <h4 class="leg_highlight" id="leg_high_1">About Us</h4>
         <p class="al_left">We are a group of English teachers based in Brasilia, Brazil, who are determined to sharpen your skills. We've compiled this quiz based on years of experience.<br>One day, fascinated by various "Brazilianisms" students kept throwing at our ears, we decided this phenomenon deserves its own website. Thus, the project Brazilian Bloopers came to life.</p>
     </fieldset>
     </div>
       <div class="container">
       <fieldset class="field_about">
-        <legend class="leg_highlight" id="leg_high_2">About the Bloopers</legend>
+        <h4 class="leg_highlight" id="leg_high_2">About the Bloopers</h4>
         <p class="al_left">Let's face it. Learning another language and communicating your ideas in it, is no easy feat. English, however omnipresent in this world, is no exception. We're here to help a little with that.<br>If you look up English defintion of the word <a href="https://www.dictionary.com/browse/blooper" style="background: radial-gradient(#2c00f7, #00000059); border-radius: 20px; padding: 5px" target="_blank"><span>'blooper'</span></a>&nbsp;you'll get "an embarassing error you make publicly". Although we don't think the mistakes you'll find here are that bad, we do believe correcting them is a great step forward in your language learning journey.<br><a href="#examples" id="a_examples">&nbsp;<span>Check out the examples below.</span></a></p>
       </fieldset>
       </div>
 
     <div class="container" id="about_qz">
     <fieldset class="field_about">
-       <legend class="leg_highlight" id="leg_high_3">About the quiz</legend>
-       <p class="al_left">The quiz consists of false cognates, idiomatic expressions, incomplete phrases, etc. You'll be presented with a series of dialogues. You have to use your judgement when picking the only one correct answer.<br><br>&nbsp;There are 30 questions which range in difficulty. Some mistakes are more common and some less frequent but all of them share the peculiarity of the Portuguese language that does not translate well into English. Even though many of the bloopers are intelligible to native English speakers, you would be better off finding a more common alternative.<br><br>&nbsp;But don't be too hard on yourself - It's okay if you have a piece of Brazil that never leaves your brain, plus why not let the gringo do some thinking?<br><br>Don't forget to enjoy the process! <br><br><a href="#" style="background: radial-gradient(#2c00f7, #00000059); border-radius: 20px; padding: 5px", onclick="openPage('TheQuiz', this);">Ready?</a></p>
+       <h4 class="leg_highlight" id="leg_high_3">About the quiz</h4>
+       <p class="al_left"> The quiz is in English only, beacause you can't have it too easy, can you? The survey however, is offered in both English and  Portuguese. The quiz consists of false cognates, idiomatic expressions, incomplete phrases, etc. You'll be presented with a series of dialogues. You have to use your judgement when picking the only one correct answer.<br><br>&nbsp;There are 30 questions which range in difficulty. Some mistakes are more common and some less frequent but all of them share the peculiarity of the Portuguese language that does not translate well into English. Even though many of the bloopers are intelligible to native English speakers, you would be better off finding a more common alternative.<br><br>&nbsp;But don't be too hard on yourself - It's okay if you have a piece of Brazil that never leaves your brain, plus why not let the gringo do some thinking?<br><br>Don't forget to enjoy the process! <br><br><a href="#" style="background: radial-gradient(#2c00f7, #00000059); border-radius: 20px; padding: 5px", onclick="openPage('TheQuiz', this);">Ready?</a></p>
      </fieldset>
      </div>
      <div class="container">
         <picture>
-          <legend class="leg_highlight"><a id="examples" style="font-size: 25px;">Example of a Brazilian blooper in casual dialogue:</a></legend>
+        <a id="examples"></a>
+          <h4 class="leg_highlight">Example of a Brazilian blooper in casual dialogue:</h4>
          <br><br><p>A) Did you like your trip?</p><br><p style="margin-top: -20px;">B)&nbsp;<span class="error_style"><em>More or less.</em></span></p><br><p style="margin-top: -20px;">A) Hmmm...&#129300;</p>
          <hr>
           <p class="al_left">&nbsp;<span class="span_exp">Explanation:</span>&nbsp;In English we generally say "More or Less" to use it as an approximation of numbers, quantities, a "plus-minus". Ex. "It will cost you 40 reais, more or less."<br><br>We don't answer with "more or less" only to express value or our impression of something. If you thought the above mentioned trip could have been better, you answer "Not much". If you thought it could have been worse, you answer "It was okay." You should remember that answers like this are hugely context dependent, meaning, you will have to develop what you mean in more detail.</p>
         </picture>
       </div>
       <div class="container">
-        <legend class="leg_highlight">Example nr.1 of Bloopers in the mainstream.</legend><br>
+        <h4 class="leg_highlight">Example nr.1 of Bloopers in the mainstream.</h4><br>
         <p class="al_left">Michel Telo's hit, a hugely popular Brazilian song has a bit of a rough reading in English. Among other smaller bloopers the title "If I catch you" gives it away as something clumsily translated from Portuguese. Even the mainstream showbusiness is not free from an occasional blunder.</p>
         <div class="yt-resp">
           <iframe class="iframe-resp" src="https://www.youtube.com/embed/CwC5BFX7rqQ">
@@ -133,7 +135,7 @@ require_once('./dbconn.php');
           </div>
       </div>
       <div class="container">
-      <legend class="leg_highlight">Example nr.2 of Bloopers in the mainstream.</legend><br>
+      <h4 class="leg_highlight">Example nr.2 of Bloopers in the mainstream.</h4><br>
         <p class="al_left">Marilia Gabriela's interview with the one and only Madonna is plainly awkward partially due to the inability of the Brazilian Journalist to get her English on track. Madonna clearly was not charitable and in the mood to help.
           <div class="yt-resp">
             <iframe class="iframe-resp" src="https://www.youtube.com/embed/zHMhLd4MUC4">
@@ -152,7 +154,7 @@ require_once('./dbconn.php');
     <img src="pics\logo.png" id="logo_main" class="logo" style="width:60px;height:60px; margin-bottom: 30px;">
     </div>
       <fieldset id="field_steps">
-        <legend id="leg_steps">Follow these 3 simple steps:</legend>
+        <h4 id="leg_steps">Follow these 3 simple steps:</h4>
             <div id="remove_steps">
             <p id="click_survey">1.First, fill out our spectacularly short survey.</p>
              <button id="start_survey" class="hvr-grow" data-popup-open="popup-1">Survey</button>
@@ -1067,7 +1069,7 @@ require_once('./dbconn.php');
 
         <!--Hidden Msg -->
         <div id="score_msg" class="container">
-        <h2>Thanks for doing the quiz!<br>Your score is:</h2>
+        <h4>Thanks for doing the quiz!<br>Your score is:</h4>
         <h3><span class="score">0 points</span></h3>
         <p>check your answers&nbsp;<button id="check_res" class="hvr-grow" onclick="checkResult()">HERE</button></p>
         </div>
