@@ -84,7 +84,7 @@ h3 {
 
 .leg_highlight {
   cursor: default;
-  background: radial-gradient(#362317, transparent);
+  background: radial-gradient(#2c00f7, #00000059);
   font-family: inherit, cursive;
   padding: 5px;
   border-radius: 40px;
@@ -92,11 +92,11 @@ h3 {
   margin-top: 25px;
 }
 
-#leg_high_1,
+/* #leg_high_1,
 #leg_high_2,
 #leg_high_3 {
   width: 50%;
-}
+} */
 
 /* Style the tab content (and add height:100% for full page content) */
 .tabcontent {
@@ -119,11 +119,11 @@ legend {
 #leg_steps {
   font-size: 25px;
   cursor: default;
-  background: radial-gradient(#362317, transparent);
+  background: radial-gradient(#2c00f7, #00000059);
   font-family: inherit, cursive;
   padding: 5px;
   border-radius: 40px;
-  width: 60%;
+  /* width: 60%; */
 }
 
 #remove_steps {
@@ -531,13 +531,15 @@ p#instr {
   padding: 20px;
   text-align: center;
   margin-top: 30px;
-  background: radial-gradient(#ffc107, #00000059);
+  /* background: radial-gradient(#ffc107, #00000059); */
+  background: radial-gradient(#2c00f7, #000000f2);
 }
+
 .cont_surv {
   padding: 14px;
   text-align: center;
   margin-top: 20px;
-  background: radial-gradient(#2c00f7, #00000059);
+  background: radial-gradient(#2c00f7, #000000f2);
   border-radius: 20px;
 }
 
@@ -549,6 +551,7 @@ p#instr {
   max-width: 500px;
   max-height: 400px;
   width: 90%;
+  background: radial-gradient(#2c00f7, #000000b5);
 }
 
 /* QUIZ CONTAINERS*/
@@ -574,7 +577,7 @@ p#instr {
 }
 .questions {
   position: relative;
-  background: radial-gradient(#2c00f7, #000000bf);
+  background: radial-gradient(#2c00f7, #000000f2);
   padding: 10px;
   border-radius: 25px;
   margin-bottom: 20px;
@@ -651,8 +654,8 @@ textarea {
   width: 100%;
   padding: 12px;
   font-size: 20px;
-  border: 2px solid #eecc89;
-  border-radius: 4px;
+  border: 2px solid #2c00f7;
+  border-radius: 40px;
   box-sizing: border-box;
   margin-top: 6px;
   margin-bottom: 16px;
@@ -700,7 +703,7 @@ textarea {
   padding: 5px;
 }
 .span_exp {
-  background: radial-gradient(#533019, #0000006e);
+  background: radial-gradient(#2c00f7, #00000059);
   padding: 8px;
   border-radius: 10px;
 }
