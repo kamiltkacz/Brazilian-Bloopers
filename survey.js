@@ -24,7 +24,7 @@
       });
 
 
-    //  $("#start_quiz").prop('disabled',true);
+     $("#start_quiz").prop('disabled',true);
 
 
     // Reset border color & text in span element for question1 validation
@@ -213,6 +213,8 @@
                    footer: 'sweet-footer',
                  }
                });
+
+
       } else {
         Swal.fire({
           title: "Yay!",
@@ -235,31 +237,16 @@
       $("#steps").show();
       $('#footer').show();
       $('#leg_steps').text('Follow these 2 simple steps');
+      $(legStepsSwitch).text('Siga estas 2 etapas simples');
       $('#remove_steps').hide();
-      $('#click_start').text('1.Click "Start" button to begin the quiz.');
-      $('#have_fun').text('2.Have fun!');
-
-      if ( $( ".surv_ques" ).is( ":contains('Estudante')" ) ) {
-
-
-     // $(".popup").slideUp();
-     // $("#steps").show();
-     // $('#footer').show();
-     $('#leg_steps').text('Siga estas 2 etapas simples');
-     // $('#remove_steps').hide();
-      $('#click_start').text('1.Clique no botão "Iniciar" para iniciar o quiz. Lembre-se de que o teste está disponível apenas em inglês.');
-      $('#have_fun').text('2.Diverta-se!');
+      $('#click_start').text('1. Click "Start" button to begin the quiz.');
+      $('#have_fun').text('2. Have fun!');
+      $(clickStartSwitch).text('1. Clique no botão "Iniciar" para iniciar o quiz. Lembre-se de que o teste está disponível apenas em inglês.');
+      $(haveFunSwitch).text('2. Diverta-se!');
 
 
-      }
 
     }
-
-
-
-
-
-
 
           if (result.result == 2) {
             Swal.fire({
@@ -269,6 +256,7 @@
               showCloseButton: true,
               footer: '<a href><strong>Home</strong></a>'
             });
+
           }
 
 
