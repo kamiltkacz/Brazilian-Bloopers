@@ -6,13 +6,12 @@ html {
   font-size: 20px;
   font-weight: 500px;
   color: whitesmoke;
- /* min-height: 100%;*/
   background-image: url("pics/beach_soccer.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
-  /*box-sizing: border-box;*/
+
 }
 
 
@@ -57,6 +56,7 @@ h3 {
 #eng_btn {
 
   display: none;
+  margin-top: 4px;
 }
 
 
@@ -83,20 +83,15 @@ h3 {
 }
 
 .leg_highlight {
+
   cursor: default;
-  background: radial-gradient(#2c00f7, #00000059);
   font-family: inherit, cursive;
   padding: 5px;
   border-radius: 40px;
-  width: 100%;
-  margin-top: 25px;
 }
 
-/* #leg_high_1,
-#leg_high_2,
-#leg_high_3 {
-  width: 50%;
-} */
+
+
 
 /* Style the tab content (and add height:100% for full page content) */
 .tabcontent {
@@ -108,22 +103,15 @@ h3 {
 }
 
 
-legend {
-  display: block;
-  padding-left: 2px;
-  padding-right: 2px;
-  border: none;
-  font-size: 25px;
-}
 
 #leg_steps {
   font-size: 25px;
   cursor: default;
-  background: radial-gradient(#2c00f7, #00000059);
   font-family: inherit, cursive;
   padding: 5px;
   border-radius: 40px;
-  /* width: 60%; */
+  margin-bottom: 50px;
+
 }
 
 #remove_steps {
@@ -134,9 +122,9 @@ legend {
   margin-top: 30px;
 }
 
-#field_steps {
+/* #field_steps {
   border-radius: 15px 50px 30px 15px;
-}
+} */
 
 ol {
   list-style-position: outside;
@@ -527,11 +515,10 @@ p#instr {
 /* MAIN CONTAINERS */
 
 .container {
-  border-radius: 40px;
+  border-radius: 50px;
   padding: 20px;
   text-align: center;
   margin-top: 30px;
-  /* background: radial-gradient(#ffc107, #00000059); */
   background: radial-gradient(#2c00f7, #000000f2);
 }
 
@@ -595,6 +582,10 @@ p#instr {
 }
 .resultMsg {
   text-align: right;
+}
+
+.cont_dial {
+  margin-top: 20px;
 }
 
 /*Contact form*/
@@ -741,5 +732,20 @@ textarea {
   html, body {
       height: 100%;
   }
+
+.leg_highlight {
+
+  margin-left: unset;
+  width: 100%;
+}
+
+#leg_steps {
+
+  width: 100%;
+  margin-left: unset;
+
+}
+
+
 
 }
