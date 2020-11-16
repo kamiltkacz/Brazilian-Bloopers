@@ -69,8 +69,8 @@ require_once('./dbconn.php');
    <button class="tablink" onclick="openPage('ContactUs', this);">
       <a href="#" class="active">Contact</a>
     </button>
-   <img src="//bandidosnatv.com/plgns/gtranslate/flags/24/en-us.png" id="eng_btn"  height="24" width="24" alt="English">
-  <img src="//bandidosnatv.com/plgns/gtranslate/flags/24/pt-br.png" id="port_btn" height="24" width="24" alt="Portuguese">
+   <img src="//bandidosnatv.com/plgns/gtranslate/flags/24/en-us.png" id="eng_btn" style="margin-top: 4px;" height="24" width="24" alt="English_flag">
+  <img src="//bandidosnatv.com/plgns/gtranslate/flags/24/pt-br.png" id="port_btn" style="margin-top: 4px;" height="24" width="24" alt="Portuguese_flag">
 
 
   </div>
@@ -82,7 +82,7 @@ require_once('./dbconn.php');
   <div id="Home" class="tabcontent">
     <div class="container" id="home">
     <div class="logo_div">
-  <img src="pics\logo.png" id="logo_main" class="logo" style="width:60px;height:60px;">
+  <img src="pics\logo.png" id="logo_main" class="logo" style="width:60px;height:60px;" alt="logo_boy">
   </div>
     <header>
       <h3 style="margin-top: 15px;">Hello, Welcome to Brazilian Bloopers.<br><br>Here we tell you what gives you away as a Brazilian!</h3>
@@ -96,20 +96,20 @@ require_once('./dbconn.php');
     <div class="container" id="about_us">
     <fieldset class="field_about">
        <h4 class="leg_highlight" id="leg_high_1">About Us</h4>
-        <p class="al_left">We are a group of English teachers based in Brasilia, Brazil, who are determined to sharpen your skills. We've compiled this quiz based on years of experience.<br>One day, fascinated by various "Brazilianisms" students kept throwing at our ears, we decided this phenomenon deserves its own website. Thus, the project Brazilian Bloopers came to life.</p>
+        <p class="al_left">We are a couple of English teachers based in Brasilia, Brazil, who are determined to sharpen your skills. We've compiled this quiz based on years of experience.<br>One day, fascinated by various "Brazilianisms" students kept throwing at our ears, we decided this phenomenon deserves its own website. Thus, the project Brazilian Bloopers came to life.</p>
     </fieldset>
     </div>
       <div class="container">
       <fieldset class="field_about">
         <h4 class="leg_highlight" id="leg_high_2">About the Bloopers</h4>
-        <p class="al_left">Let's face it. Learning another language and communicating your ideas in it, is no easy feat. English, however omnipresent in this world, is no exception. We're here to help a little with that.<br>If you look up English defintion of the word <a href="https://www.dictionary.com/browse/blooper" style="background: radial-gradient(#2c00f7, #00000059); border-radius: 20px; padding: 5px" target="_blank"><span>'blooper'</span></a>&nbsp;you'll get "an embarassing error you make publicly". Although we don't think the mistakes you'll find here are that bad, we do believe correcting them is a great step forward in your language learning journey.<br><a href="#examples" id="a_examples">&nbsp;<span>Check out the examples below.</span></a></p>
+        <p class="al_left">Let's face it. Learning another language and communicating your ideas in it, is no easy feat. English, however omnipresent in this world, is no exception. We're here to help a little with that.<br>If you look up English defintion of the word <a href="https://www.dictionary.com/browse/blooper" alt="to dictionary.com" style="background: radial-gradient(#ffc107, #00000059); border-radius: 20px; padding: 5px" target="_blank"><span>'blooper'</span></a>&nbsp;you'll get "an embarassing error you make publicly". Although we don't think the mistakes you'll find here are that bad, we do believe correcting them is a great step forward in your language learning journey.<br><a href="#examples" id="a_examples" style="background: radial-gradient(#ffc107, #00000059); border-radius: 20px; padding: 5px">&nbsp;<span>Check out the examples below.</span></a></p>
       </fieldset>
       </div>
 
     <div class="container" id="about_qz">
     <fieldset class="field_about">
-       <h4 class="leg_highlight" id="leg_high_3">About the quiz</h4>
-       <p class="al_left"> The quiz is in English only, beacause you can't have it too easy, can you? The survey however, is offered in both English and  Portuguese. The quiz consists of false cognates, idiomatic expressions, incomplete phrases, etc. You'll be presented with a series of dialogues. You have to use your judgement when picking the only one correct answer.<br><br>&nbsp;There are 30 questions which range in difficulty. Some mistakes are more common and some less frequent but all of them share the peculiarity of the Portuguese language that does not translate well into English. Even though many of the bloopers are intelligible to native English speakers, you would be better off finding a more common alternative.<br><br>&nbsp;But don't be too hard on yourself - It's okay if you have a piece of Brazil that never leaves your brain, plus why not let the gringo do some thinking?<br><br>Don't forget to enjoy the process! <br><br><a href="#" style="background: radial-gradient(#2c00f7, #00000059); border-radius: 20px; padding: 5px", onclick="openPage('TheQuiz', this);">Ready?</a></p>
+       <h4 class="leg_highlight" id="leg_high_3">About the Quiz</h4>
+       <p class="al_left"> The quiz is in English only, beacause you can't have it too easy, can you? The survey however, is offered in both English and  Portuguese. The quiz consists of false cognates, idiomatic expressions, incomplete phrases, etc. You'll be presented with a series of dialogues. You have to use your judgement when picking the only one correct answer.<br><br>&nbsp;There are 30 questions which vary in difficulty. Some mistakes are more common and some less frequent but all of them share the peculiarity of the Portuguese language that does not translate well into English. Even though many of the bloopers are intelligible to native English speakers, you would be better off finding a more common alternative.<br><br>&nbsp;But don't be too hard on yourself - It's okay if you have a piece of Brazil that never leaves your brain, plus why not let the gringo do some thinking?<br><br>Don't forget to enjoy the process! <br><br><a href="#" style="background: radial-gradient(#ffc107, #00000059); border-radius: 20px; padding: 5px", onclick="openPage('TheQuiz', this);">Ready?</a></p>
      </fieldset>
      </div>
      <div class="container">
@@ -123,14 +123,14 @@ require_once('./dbconn.php');
       </div>
       <div class="container">
         <h4 class="leg_highlight">Example nr.1 of Bloopers in the mainstream.</h4><br>
-        <p class="al_left">Michel Telo's hit, a hugely popular Brazilian song has a bit of a rough reading in English. Among other smaller bloopers the title "If I catch you" gives it away as something clumsily translated from Portuguese. Even the mainstream showbusiness is not free from an occasional blunder.</p>
+        <p class="al_left"> Michel Telo's hit, a hugely popular Brazilian song has a bit of a rough reading in English. Among other smaller bloopers the title "If I catch you" gives it away as something clumsily translated from Portuguese. Even the mainstream showbusiness is not free from an occasional blunder.</p>
         <div class="yt-resp">
-          <iframe class="iframe-resp" src="https://www.youtube.com/embed/CwC5BFX7rqQ">
+          <iframe class="iframe-resp" src="https://www.youtube.com/embed/CwC5BFX7rqQ" alt="youtube_link_1">
           </iframe>
         </div>
         <p class="al_left">Below is a much better version where the American singer Pitbull gives the lyrics his own spin. "If I catch you" becomes "If I get you" and "this way you're gonna kill me" translates into "you're playing hard to get". Good job Pitbull!</p>
         <div class="yt-resp">
-          <iframe class="iframe-resp" src="https://www.youtube.com/embed/bMMnn2kA_HY">
+          <iframe class="iframe-resp" src="https://www.youtube.com/embed/bMMnn2kA_HY" alt="youtube_link_2">
           </iframe>
           </div>
       </div>
@@ -138,7 +138,7 @@ require_once('./dbconn.php');
       <h4 class="leg_highlight">Example nr.2 of Bloopers in the mainstream.</h4><br>
         <p class="al_left">Marilia Gabriela's interview with the one and only Madonna is plainly awkward partially due to the inability of the Brazilian Journalist to get her English on track. Madonna clearly was not charitable and in the mood to help.
           <div class="yt-resp">
-            <iframe class="iframe-resp" src="https://www.youtube.com/embed/zHMhLd4MUC4">
+            <iframe class="iframe-resp" src="https://www.youtube.com/embed/zHMhLd4MUC4" alt="youtube_link_3">
             </iframe>
           </div>
       </div>
@@ -153,16 +153,16 @@ require_once('./dbconn.php');
     <div class="logo_div">
     <img src="pics\logo.png" id="logo_main" class="logo" style="width:60px;height:60px; margin-bottom: 30px;">
     </div>
-      <fieldset id="field_steps">
+
         <h4 id="leg_steps">Follow these 3 simple steps:</h4>
             <div id="remove_steps">
-            <p id="click_survey">1.First, fill out our spectacularly short survey.</p>
+            <p id="click_survey">1.&nbsp;First, fill out our spectacularly short survey.</p>
              <button id="start_survey" class="hvr-grow" data-popup-open="popup-1">Survey</button>
             </div>
-            <p id="click_start">2.Next, Click the "Start" button to begin the quiz.</p><br>
+            <p id="click_start">2.&nbsp;Next, Click the "Start" button to begin the quiz.</p><br>
             <button id="start_quiz" class="hvr-grow" data-popup-open="popup-2">Start</button>
-            <p id="have_fun">3.Have fun!</p>
-      </fieldset>
+            <p id="have_fun">3.&nbsp;Have fun!</p>
+
     </div>
 
 
@@ -262,7 +262,7 @@ require_once('./dbconn.php');
         <a class="popup-close" id="popup_close_2" data-popup-close="popup-2" href="#">x</a>
         <div id="1" class="questions">
           <div class="cont_dial">
-            <p class="situation">1 out of 30</p>
+            <p class="situation">1&nbsp; out of&nbsp; 30</p>
               <p>Milene: How is the weather today?</p>
               <p>Camile:<span class="error_style"><em>&nbsp;Is hot!</em></span></p>
           </div>
@@ -280,7 +280,7 @@ require_once('./dbconn.php');
                 <div class="d_err" style="display:none">&nbsp;<i class="fas fa-times" aria-hidden="true"></i></div><br>
 
            <div class="exp" id="exp_1" style="display:none">
-           <p class="par_exp"><span class="span_exp">Explanations</span>: In English we always use the subject(It, He, She, etc).<br>Ex."It is important to read the news."<br>Ex."It doesn't rain much in Brasilia."</p>
+           <p class="par_exp"><span class="span_exp">Explanations</span>: In English we always use the subject&nbsp;(It, He, She, etc).<br>Ex.&nbsp;"It is important to drive responsibly."<br>Ex.&nbsp;"It doesn't rain much in Brasilia."</p>
             <div class="resultMsg">
              <h4 class="scoreInfo" id="scoreInfo_1">Your score:&nbsp;</h4>
             </div>
@@ -292,7 +292,7 @@ require_once('./dbconn.php');
 
          <div id="2" class="questions" style="display: none;">
           <div class="cont_dial">
-            <p class="situation">2 out of 30</p>
+            <p class="situation">2&nbsp; out of&nbsp; 30</p>
             <div class="dialos">
               <p>Tiago: How was the party?</p>
               <p>Magda: Oh,<span class="error_style"><em>it was too good</em></span>.&nbsp;I danced all night.</p>
@@ -309,7 +309,7 @@ require_once('./dbconn.php');
                 <input type="radio" id="t_3" class="rads" name="too" value="err_2"><label for="t_3" class="err_label">&nbsp;it was two good!</label>
                 <div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
 
-            <div class="exp" id="exp_2" style="display:none"><p class="par_exp"><span class="span_exp">Explanations</span>: We say "Very" when we want to intensify something". Ex."The weather was very good on our holiday".<br>We say "Too" to express negative excess of something, ex."It's 10 degrees. It is too cold to go to the beach."</p>
+            <div class="exp" id="exp_2" style="display:none"><p class="par_exp"><span class="span_exp">Explanations</span>: We say "Very" when we want to intensify something".&nbsp;Ex."The weather was very good on our holiday".<br>We say "Too" to express negative excess of something, ex."It's 10 degrees. It is too cold to go to the beach."</p>
             <div class="resultMsg">
              <h4 class="scoreInfo" id="scoreInfo_2">Your score:&nbsp;</h4>
             </div>
@@ -321,7 +321,7 @@ require_once('./dbconn.php');
 
        <div id="3" class="questions" style="display: none;">
           <div class="cont_dial">
-            <p class="situation">3 out of 30</p>
+            <p class="situation">3&nbsp; out of&nbsp; 30</p>
               <p>Rudolfo: Do you like your teacher?</p>
               <p>Pedro: Yes, I love her.<span class="error_style"><em>She has much patience</em></span>&nbsp;with me.</p>
           </div>
@@ -345,10 +345,10 @@ require_once('./dbconn.php');
 
       <div id="4" class="questions" style="display: none;">
           <div class="cont_dial">
-            <p class="situation">4 out of 30</p>
+            <p class="situation">4&nbsp; out of&nbsp; 30</p>
             <div class="dialos">
               <p>Livia: Do you want to see a movie?</p>
-              <p>Alex: Sure,<span class="error_style"><em>have many</em></span>&nbsp;good films on Netflix.</p>
+              <p>Alex: Sure,<span class="error_style"><em>&nbsp;have many</em></span>&nbsp;good films on Netflix.</p>
             </div>
           </div>
           <hr>
@@ -372,7 +372,7 @@ require_once('./dbconn.php');
 
        <div id="5" class="questions" style="display: none;">
           <div class="cont_dial">
-            <p class="situation">5 out of 30</p>
+            <p class="situation">5&nbsp; out of&nbsp; 30</p>
             <div class="dialos">
               <p>Sylvio: What's your mother's profession?</p>
               <p>Cristiano:<span class="error_style"><em>My mother, she is a dentist.</em></span></p>
@@ -398,7 +398,7 @@ require_once('./dbconn.php');
 
         <div id="6" class="questions" style="display: none;">
           <div class="cont_dial">
-            <p class="situation">6 out of 30</p>
+            <p class="situation">6&nbsp; out of&nbsp; 30</p>
             <div class="dialos">
               <p>Mauricio: Did you like the movie?</p>
               <p>Beata: Yes,<span class="error_style"><em>I liked.</em></span></p>
@@ -424,7 +424,7 @@ require_once('./dbconn.php');
 
       <div id="7" class="questions" style="display: none;">
           <div class="cont_dial">
-            <p class="situation">7 out of 30</p>
+            <p class="situation">7&nbsp; out of &nbsp;30</p>
             <div class="dialos">
               <p>Claudio: Where were you?</p>
               <p>Natalia: I went to the store<span class="error_style"><em>&nbsp;for buy some milk.</em></span></p>
@@ -450,7 +450,7 @@ require_once('./dbconn.php');
 
           <div id="8" class="questions" style="display: none;">
           <div class="cont_dial">
-            <p class="situation">8 out of 30</p>
+            <p class="situation">8&nbsp;out of&nbsp; 30</p>
             <div class="dialos">
               <p>Joe: How old are you?</p>
               <p>Camilo:<span class="error_style"><em>I have 38 years.</em></span></p>
@@ -476,7 +476,7 @@ require_once('./dbconn.php');
 
         <div id="9" class="questions" style="display: none;">
           <div class="cont_dial">
-            <p class="situation">9 out of 30</p>
+            <p class="situation">9&nbsp;out of&nbsp; 30</p>
             <div class="dialos">
               <p>Marcel: <span class="error_style"><em>Hey Guy,&nbsp;</em></span>how are you?</p>
               <p>Steven: I'm okay, thanks.</p>
@@ -502,7 +502,7 @@ require_once('./dbconn.php');
 
         <div id="10" class="questions" style="display: none;">
           <div class="cont_dial">
-            <p class="situation">10 out of 30</p>
+            <p class="situation">10&nbsp; out of&nbsp; 30</p>
             <div class="dialos">
               <p>Marilia: What things do you like?</p>
               <p>Gabriel: I'm a typical guy.<span class="error_style"><em>&nbsp;I like car.</em></span></p>
@@ -529,7 +529,7 @@ require_once('./dbconn.php');
 
       <div id="11" class="questions" style="display: none;">
           <div class="cont_dial">
-            <p class="situation">11 out of 30</p>
+            <p class="situation">11&nbsp; out of&nbsp; 30</p>
             <div class="dialos">
               <p>Rogerio: What time do I have to be at the airport?</p>
               <p>Sansa: 3.30. Hurry up or you will <span class="error_style"><em>lose your flight.</em></span></p>
@@ -555,7 +555,7 @@ require_once('./dbconn.php');
 
          <div id="12" class="questions" style="display: none;">
           <div class="cont_dial">
-            <p class="situation">12 out of 30</p>
+            <p class="situation">12&nbsp; out of&nbsp; 30</p>
             <div class="dialos">
               <p>Sabrina: Why are you nervous?</p>
               <p>Nando:<span class="error_style"><em>&nbsp;I discussed with Marta about&nbsp;</em></span>politics.</p>
@@ -581,7 +581,7 @@ require_once('./dbconn.php');
 
          <div id="13" class="questions" style="display: none;">
           <div class="cont_dial">
-            <p class="situation">13 out of 30</p>
+            <p class="situation">13&nbsp; out of&nbsp; 30</p>
             <div class="dialos">
               <p>Student:<span class="error_style"><em>I have a doubt</em></span> about homework.<br>Can you help me?</p>
               <p>Teacher: Sure.</p>
@@ -607,7 +607,7 @@ require_once('./dbconn.php');
 
       <div id="14" class="questions" style="display: none;">
           <div class="cont_dial">
-            <p class="situation">14 out of 30</p>
+            <p class="situation">14&nbsp; out of&nbsp; 30</p>
             <div class="dialos">
               <p>Marcia: Who were you talking to?<br>I don't know him.</p>
               <p>Livia: His name's Paulo.<br>&nbsp;<span class="error_style"><em>I knew him</em></span>&nbsp;last week at the gym.</p>
@@ -621,7 +621,7 @@ require_once('./dbconn.php');
                 <input type="radio" id="met_2" class="rads" name="know" value="corr"><label for="met_2">&nbsp;I met him</label><div class="d_corr" style="display:none">&nbsp;<i class="fas fa-check"></i></div><br>
                 <input type="radio" id="met_3" class="rads" name="know" value="err_2"><label for="met_3" class="err_label">&nbsp;I meet him</label><div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
 
-            <div class="exp" id="exp_14" style="display:none"><p class="par_exp"><span class="span_exp">Explanations</span>: We say "I know someone" when you mean you are familar with a person, place, or a thing. Ex. "I know the mayor." We say "I knew someone" when you had a past relationship with someone or something but you don't have it anymore. Ex."I knew her in high school. She was my friend."<br>We say "I met someone" when we talk to the person for the first time. Ex."I met George in France on my vacation." Ex. "I'm a journalist so I meet many interesting people."</p>
+            <div class="exp" id="exp_14" style="display:none"><p class="par_exp"><span class="span_exp">Explanations</span>: We say "I know someone" when you mean you are familar with a person, place, or a thing. Ex. "I know the mayor." We say "I knew someone" when you had a past relationship with someone or something but you don't have it anymore. Ex."I knew her in high school. She was popular."<br>We say "I met someone" when we interact with someone for the first time. Ex."I met George in France on my vacation." Ex. "I'm a journalist so I meet many interesting people."</p>
             <div class="resultMsg">
              <h4 class="scoreInfo" id="scoreInfo_14">Your score:&nbsp;</h4>
             </div>
@@ -634,21 +634,21 @@ require_once('./dbconn.php');
 
          <div id="15" class="questions" style="display: none;">
           <div class="cont_dial">
-            <p class="situation">15 out of 30</p>
+            <p class="situation">15&nbsp; out of&nbsp; 30</p>
             <div class="dialos">
               <p>Gui: Martin had an accident.</p>
               <p>Vitor: Really?</p>
-              <p>Gui:<span class="error_style"><em>&nbsp;Thanks god</em></span>&nbsp;he's alright.</p>
+              <p>Gui:<span class="error_style"><em>&nbsp;Thanks God</em></span>&nbsp;he's alright.</p>
             </div>
           </div>
           <hr>
           <div class="cont_answer">
             <p class="p_corr"><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p><br>
 
-                <input type="radio" id="god_1" class="rads" name="god" value="corr"><label for="god_1">&nbsp;thank god he's alright</label><div class="d_corr" style="display:none">&nbsp;<i class="fas fa-check"></i></div><br>
-                <input type="radio" id="god_2" class="rads" name="god" value="err_2"><label for="god_2" class="err_label">&nbsp;thanks, he alright</label>
+                <input type="radio" id="god_1" class="rads" name="god" value="corr"><label for="god_1">&nbsp;Thank God he's alright</label><div class="d_corr" style="display:none">&nbsp;<i class="fas fa-check"></i></div><br>
+                <input type="radio" id="god_2" class="rads" name="god" value="err_2"><label for="god_2" class="err_label">&nbsp;Thanks, he alright</label>
                 <div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
-                <input type="radio" id="god_3" class="rads" name="god" value="err_ok"><label for="god_3" class="err_label">&nbsp;thanks gods, he's alright</label>
+                <input type="radio" id="god_3" class="rads" name="god" value="err_ok"><label for="god_3" class="err_label">&nbsp;Thanks Gods, he's alright</label>
                 <div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
 
             <div class="exp" id="exp_15" style="display:none"><p class="par_exp"><span class="span_exp">Explanations</span>: We say "Thank God" when we express relief. We don't add "s" to "God". Ex. "Thank God it doesn't snow in Brazil. I hate cold weather."</p>
@@ -663,7 +663,7 @@ require_once('./dbconn.php');
 
         <div id="16" class="questions" style="display: none;">
           <div class="cont_dial">
-            <p class="situation">16 out of 30</p>
+            <p class="situation">16&nbsp; out of&nbsp; 30</p>
             <div class="dialos">
               <p>Carla: Do you like pizza?</p>
               <p>Joana: Oh, Yeah!<span class="error_style"><em>&nbsp;it's my preferred</em></span>&nbsp;food.</p>
@@ -689,7 +689,7 @@ require_once('./dbconn.php');
 
          <div id="17" class="questions" style="display: none;">
           <div class="cont_dial">
-            <p class="situation">17 out of 30</p>
+            <p class="situation">17&nbsp; out of&nbsp; 30</p>
             <div class="dialos">
               <p>Ana: Did your friend enjoy Rio?</p>
               <p>Miguel: Yes, but&nbsp;<span class="error_style"><em>she was impressed with </em></span>violence in the favelas.</p>
@@ -703,7 +703,7 @@ require_once('./dbconn.php');
                 <input type="radio" id="imp_2" class="rads" name="impress" value="err_ok"><label for="imp_2" class="err_label">&nbsp;she impressed</label><div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
                 <input type="radio" id="imp_3" class="rads" name="impress" value="corr"><label for="imp_3">&nbsp;she was astonished by</label><div class="d_corr" style="display:none">&nbsp;<i class="fas fa-check"></i></div><br>
 
-            <div class="exp" id="exp_17" style="display:none"><p class="par_exp"><span class="span_exp">Explanations</span>: We are "Impressed" when somebody or something arouses our intrest or admiration. Ex."Messi's skills are impressive."<br> We can say "Astonished" when someone or something makes us surprised in a negative or threatning way. Ex."He was astonished by the stock market crash."</p>
+            <div class="exp" id="exp_17" style="display:none"><p class="par_exp"><span class="span_exp">Explanations</span>: We are "Impressed" when somebody or something arouses our interest or admiration. Ex."Messi's skills are impressive."<br> We can say "Astonished" when someone or something makes us surprised in a negative or threatning way. Ex."He was astonished by the stock market crash."</p>
             <div class="resultMsg">
              <h4 class="scoreInfo" id="scoreInfo_17">Your score:&nbsp;</h4>
             </div>
@@ -715,7 +715,7 @@ require_once('./dbconn.php');
 
         <div id="18" class="questions" style="display: none;">
           <div class="cont_dial">
-            <p class="situation">18 out of 30</p>
+            <p class="situation">18&nbsp; out of&nbsp; 30</p>
             <div class="dialos">
               <p>Gustavo: I'd like to visit Italy.</p>
               <p>Erik: Me too, I have a lot of&nbsp;<span class="error_style"><em>parents there.</em></span></p>
@@ -742,7 +742,7 @@ require_once('./dbconn.php');
 
         <div id="19" class="questions" style="display: none;">
           <div class="cont_dial">
-            <p class="situation">19 out of 30</p>
+            <p class="situation">19&nbsp;out of&nbsp; 30</p>
             <div class="dialos">
               <p>Dani: Are you free at 6?</p>
               <p>Carlos: No,&nbsp;<span class="error_style"><em>I go out from</em></span>&nbsp;work at 7.</p>
@@ -768,7 +768,7 @@ require_once('./dbconn.php');
 
         <div id="20" class="questions" style="display: none;">
           <div class="cont_dial">
-            <p class="situation">20 out of 30</p>
+            <p class="situation">20&nbsp; out of&nbsp; 30</p>
             <div class="dialos">
               <p>Alex: I really enjoy working from home.</p>
               <p>Magda: Why?
@@ -797,7 +797,7 @@ require_once('./dbconn.php');
 
         <div id="21" class="questions" style="display: none;">
           <div class="cont_dial">
-            <p class="situation">21 out of 30</p>
+            <p class="situation">21&nbsp; out of&nbsp; 30</p>
             <div class="dialos">
               <p>Suzy: Hi Mariana, how are you?</p>
               <p>Mariana: I'm tired, I studied<span class="error_style"><em>&nbsp;during 3 hours.</em></span></p>
@@ -823,7 +823,7 @@ require_once('./dbconn.php');
 
         <div id="22" class="questions" style="display: none;">
           <div class="cont_dial">
-            <p class="situation">22 out of 30</p>
+            <p class="situation">22&nbsp; out of&nbsp; 30</p>
             <div class="dialos">
               <p>Jackie: How was training today?</p>
               <p>Juliano: Good, but&nbsp;<span class="error_style"><em>I stayed tired</em></span>&nbsp;quickly.</p>
@@ -849,7 +849,7 @@ require_once('./dbconn.php');
 
         <div id="23" class="questions" style="display: none;">
           <div class="cont_dial">
-            <p class="situation">23 out of 30</p>
+            <p class="situation">23&nbsp; out of&nbsp; 30</p>
             <div class="dialos">
               <p>Tony: How do you feel?</p>
               <p>Rafael: Not well.&nbsp;<span class="error_style"><em>I'm with a headache.</em></span></p>
@@ -875,7 +875,7 @@ require_once('./dbconn.php');
 
         <div id="24" class="questions" style="display: none;">
           <div class="cont_dial">
-            <p class="situation">24 out of 30</p>
+            <p class="situation">24&nbsp; out of&nbsp; 30</p>
             <div class="dialos">
               <p>Luiza: What did you do last night?</p>
               <p>Breno: I saw 3<span class="error_style"><em>&nbsp;chapters</em></span> of "Friends".</p>
@@ -906,7 +906,7 @@ require_once('./dbconn.php');
 
         <div id="25" class="questions" style="display: none;">
           <div class="cont_dial">
-            <p class="situation">25 out of 30</p>
+            <p class="situation">25&nbsp; out of&nbsp; 30</p>
             <div class="dialos">
               <p>Susan: What's wrong?</p>
               <p>Saulo: I'm worried about my son. He's getting<span class="error_style"><em>&nbsp;bad notes</em></span>&nbsp;in school.</p>
@@ -932,7 +932,7 @@ require_once('./dbconn.php');
 
         <div id="26" class="questions" style="display: none;">
           <div class="cont_dial">
-            <p class="situation">26 out of 30</p>
+            <p class="situation">26&nbsp; out of&nbsp; 30</p>
             <div class="dialos">
               <p>Robyn: Who is your number one singer?</p>
               <p>Julio: Rihanna, I love all of&nbsp;<span class="error_style"><em>her musics.</em></span></p>
@@ -958,7 +958,7 @@ require_once('./dbconn.php');
 
         <div id="27" class="questions" style="display: none;">
           <div class="cont_dial">
-            <p class="situation">27 out of 30</p>
+            <p class="situation">27&nbsp; out of&nbsp; 30</p>
             <div class="dialos">
               <p>Marcus: What time do you usually get up?</p>
               <p>Fernanda:&nbsp;I get up&nbsp;<span class="error_style"><em>at 6 all day.</em></span></p>
@@ -984,7 +984,7 @@ require_once('./dbconn.php');
 
         <div id="28" class="questions" style="display: none;">
           <div class="cont_dial">
-            <p class="situation">28 out of 30</p>
+            <p class="situation">28&nbsp; out of&nbsp; 30</p>
             <div class="dialos">
               <p>Sol: What do you think of your English teacher?</p>
               <p>Maria: He is very&nbsp;<span class="error_style"><em>symphatetic.</em></span></p>
@@ -1010,7 +1010,7 @@ require_once('./dbconn.php');
 
         <div id="29" class="questions" style="display: none;">
           <div class="cont_dial">
-            <p class="situation">29 out of 30</p>
+            <p class="situation">29&nbsp; out of&nbsp; 30</p>
             <div class="dialos">
               <p>Ana: What kind of people don't you like?</p>
               <p>Julia: <span class="error_style"><em>I can't support</em></span>&nbsp;messy people.</p>
@@ -1036,7 +1036,7 @@ require_once('./dbconn.php');
 
         <div id="30" class="questions" style="display: none;">
           <div class="cont_dial">
-            <p class="situation">30 out of 30</p>
+            <p class="situation">30 out of&nbsp; 30</p>
             <div class="dialos">
               <p>Carol: What makes Brazil different in South America?</p>
               <p>Jaciara:<span class="error_style"><em>&nbsp;It's the unique country</em></span>&nbsp;that speaks Portuguese.</p>
@@ -1114,13 +1114,13 @@ require_once('./dbconn.php');
           <form id="contact" method="post" action="actions.php">
           <div id ="contact_text">
               <label for="name">Name*<span id="span_name"></span></label>
-            <input type="text" id="bor_name" name="name" placeholder="Your name.." font-family="cursive">
+            <input type="text" id="bor_name" name="name" placeholder="Your name.." tabindex="0" font-family="cursive">
               <label for="email">E-mail*<span id="span_email"></span></label>
-            <input type="text" id="bor_email" name="email" placeholder="Your e-mail..">
+            <input type="text" id="bor_email" name="email" placeholder="Your e-mail.." tabindex="0">
               <label for="subject">Subject</label>
-            <input type="text" id="bor_subject" name="subject" placeholder="suggestion, comment, etc.">
+            <input type="text" id="bor_subject" name="subject" placeholder="suggestion, comment, etc." tabindex="0">
               <label for="message">Message*<span id="span_message"></span></label>
-            <textarea id="bor_message" name="message" placeholder="Write your message here!" style="height:170px"></textarea>
+            <textarea id="bor_message" name="message" placeholder="Write your message here!" tabindex="0" style="height:170px"></textarea>
             </div>
             </div>
             <button id="submit_contact" class="hvr-grow" type="submit" name="submitcontact">Submit</button>
