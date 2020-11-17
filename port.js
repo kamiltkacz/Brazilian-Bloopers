@@ -13,10 +13,10 @@ const tabsSwitch = $(`<div class="tabs">
  <button class="tablink" onclick="openPage('About', this);">
     <a href="#" class="active">Sobre</a>
   </button>
- <button class="tablink" onclick="openPage('TheQuiz', this);">
+ <button class="tablink" onclick="openPage('Quiz', this);">
     <a href="#" id="active_quiz" class="active">O Quiz</a>
   </button>
- <button class="tablink" onclick="openPage('ContactUs', this);">
+ <button class="tablink" onclick="openPage('Contact', this);">
     <a href="#" class="active">Contato</a>
   </button>
 
@@ -99,9 +99,19 @@ let clickStartSwitch = $(
 let haveFunSwitch = $(`<p id="have_fun">3.&nbsp;Divirta-se!</p>`);
 
 const feedbackSwitch = $(` <div id="feedback_div" style="text-align:center">
-      <h3 id="shoot_email">Se você gostou do quiz diga oi para mim no<br><i class="fab fa-twitter"></i><a href="https://twitter.com/kamiltkacz" style="font-size: unset;">&nbsp;@kamiltkacz</a><br>manda um e-mail diretamente </h3>
+      <h3 id="shoot_email">Se você gostou do teste,<br> escreva-me uma mensagem<br>abaixo ou diga oi aqui:<br><i class="fab fa-twitter"></i><a href="https://twitter.com/kamiltkacz" style="font-size: unset;">&nbsp;@kamiltkacz</a></h3>
       <h3><a href="mailto:hello@brazilianbloopers.com">hello@brazilianbloopers.com</a></h3>
-      <h3>ou</h3>
+      <h3>ou considere doar qualquer quantia para</h3>
+      <form action="https://www.paypal.com/donate" method="post" target="_top">
+      <input type="hidden" name="cmd" value="_donations" />
+      <input type="hidden" name="business" value="TT4G5X6GYRV6C" />
+      <input type="hidden" name="currency_code" value="BRL" />
+      <img src="pics/qrCode.png" alt="QR Code for paypal" style="width:60px;height:60px; margin-left: 20px;
+       margin-top: -21px;">&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="image" src="https://www.paypalobjects.com/pt_BR/BR/i/btn/btn_donateCC_LG.gif" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Faça doações com o botão do PayPal" style="margin-top: 20px" />
+      <img alt="" src="https://www.paypal.com/pt_BR/i/scr/pixel.gif" width="1" height="1" />
+      </form>
+      <h3 style="margin-top: 20px;">Muito obrigado!</h3>
     </div>`);
 
 const contactSwitch = $(` <div id="contact_text">
@@ -176,7 +186,7 @@ $("#port_btn").on("click", function () {
   $("label[for*='other']").text(" outro ");
 
   $("#surv_q2").replaceWith(ques_2_Switch);
-  $("#opt").text("Selecione sua idade");
+  $("#opt").text("Selecione");
 
   $("#surv_q3").replaceWith(ques_3_Switch);
   $("label[for*='y1']").text(" 0-1 anos ");
