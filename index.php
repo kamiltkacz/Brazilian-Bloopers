@@ -63,10 +63,10 @@ require_once('./dbconn.php');
    <button class="tablink" onclick="openPage('About', this);">
       <a href="#" class="active">About</a>
     </button>
-   <button class="tablink" onclick="openPage('TheQuiz', this);">
+   <button class="tablink" onclick="openPage('Quiz', this);">
       <a href="#" id="active_quiz" class="active">The Quiz</a>
     </button>
-   <button class="tablink" onclick="openPage('ContactUs', this);">
+   <button class="tablink" onclick="openPage('Contact', this);">
       <a href="#" class="active">Contact</a>
     </button>
    <img src="//bandidosnatv.com/plgns/gtranslate/flags/24/en-us.png" id="eng_btn" style="margin-top: 4px;" height="24" width="24" alt="English_flag">
@@ -146,7 +146,7 @@ require_once('./dbconn.php');
   </div> <!-- About -->
 
 
-  <div id="TheQuiz" class="tabcontent">
+  <div id="Quiz" class="tabcontent">
 
 
     <div class="container" id="steps">
@@ -186,7 +186,7 @@ require_once('./dbconn.php');
             <div id="question_2" class="cont_surv">
               <p id="surv_q2" class="surv_ques"><label id="bor_age">2) How old are you?<span id="span_age" style="color:#ff0000"></span></label></p><br>
               <select id="age" name="ageselect">
-                <option id="opt" value="0">Select your age</option>
+                <option id="opt" value="0">Select</option>
               </select>
             </div>
 
@@ -505,7 +505,7 @@ require_once('./dbconn.php');
             <p class="situation">10&nbsp; out of&nbsp; 30</p>
             <div class="dialos">
               <p>Marilia: What things do you like?</p>
-              <p>Gabriel: I'm a typical guy.<span class="error_style"><em>&nbsp;I like car.</em></span></p>
+              <p>Gabriel: I'm a typical guy.<span class="error_style"><br><em>&nbsp;I like car.</em></span></p>
             </div>
           </div>
           <hr>
@@ -666,7 +666,7 @@ require_once('./dbconn.php');
             <p class="situation">16&nbsp; out of&nbsp; 30</p>
             <div class="dialos">
               <p>Carla: Do you like pizza?</p>
-              <p>Joana: Oh, Yeah!<span class="error_style"><em>&nbsp;it's my preferred</em></span>&nbsp;food.</p>
+              <p>Joana: Oh, Yeah!<br><span class="error_style"><em>&nbsp;it's my preferred</em></span>&nbsp;food.</p>
             </div>
           </div>
           <hr>
@@ -692,7 +692,7 @@ require_once('./dbconn.php');
             <p class="situation">17&nbsp; out of&nbsp; 30</p>
             <div class="dialos">
               <p>Ana: Did your friend enjoy Rio?</p>
-              <p>Miguel: Yes, but&nbsp;<span class="error_style"><em>she was impressed with </em></span>violence in the favelas.</p>
+              <p>Miguel: Yes, but<br><span class="error_style"><em>she was impressed with</em></span><br>violence in the favelas.</p>
             </div>
           </div>
           <hr>
@@ -826,7 +826,7 @@ require_once('./dbconn.php');
             <p class="situation">22&nbsp; out of&nbsp; 30</p>
             <div class="dialos">
               <p>Jackie: How was training today?</p>
-              <p>Juliano: Good, but&nbsp;<span class="error_style"><em>I stayed tired</em></span>&nbsp;quickly.</p>
+              <p>Juliano: Good, but<br><span class="error_style"><em>I stayed tired</em></span>&nbsp;quickly.</p>
             </div>
           </div>
           <hr>
@@ -852,7 +852,7 @@ require_once('./dbconn.php');
             <p class="situation">23&nbsp; out of&nbsp; 30</p>
             <div class="dialos">
               <p>Tony: How do you feel?</p>
-              <p>Rafael: Not well.&nbsp;<span class="error_style"><em>I'm with a headache.</em></span></p>
+              <p>Rafael: Not well.<br><span class="error_style"><em>I'm with a headache.</em></span></p>
             </div>
           </div>
           <hr>
@@ -935,7 +935,7 @@ require_once('./dbconn.php');
             <p class="situation">26&nbsp; out of&nbsp; 30</p>
             <div class="dialos">
               <p>Robyn: Who is your number one singer?</p>
-              <p>Julio: Rihanna, I love all of&nbsp;<span class="error_style"><em>her musics.</em></span></p>
+              <p>Julio: Rihanna, I love all of<br><span class="error_style"><em>her musics.</em></span></p>
             </div>
           </div>
           <hr>
@@ -1039,7 +1039,7 @@ require_once('./dbconn.php');
             <p class="situation">30 out of&nbsp; 30</p>
             <div class="dialos">
               <p>Carol: What makes Brazil different in South America?</p>
-              <p>Jaciara:<span class="error_style"><em>&nbsp;It's the unique country</em></span>&nbsp;that speaks Portuguese.</p>
+              <p>Jaciara:<span class="error_style"><em>&nbsp;It's the unique country</em></span><br>that speaks Portuguese.</p>
             </div>
           </div>
           <hr>
@@ -1098,15 +1098,26 @@ require_once('./dbconn.php');
   </div> <!--Quiz tab-->
 
   <!--CONTACT FORM-->
-  <div id="ContactUs" class="tabcontent">
+  <div id="Contact" class="tabcontent">
     <div class="container" id="contact_cont">
     <div class="logo_div">
   <img src="pics\logo.png" id="logo_main" class="logo" style="width:60px;height:60px;">
   </div>
        <div id="feedback_div" style="text-align:center">
-        <h3 id="shoot_email">If you like the quiz say hi to me on<br><i class="fab fa-twitter"></i><a href="https://twitter.com/kamiltkacz" style="font-size: unset;">&nbsp;@kamiltkacz</a><br>shoot me an e-mail directly at</h3>
-        <h3><a href="mailto:hello@brazilianbloopers.com">hello@brazilianbloopers.com</a></h3>
-        <h3>or</h3>
+        <h3 id="shoot_email">If you liked the quiz, write me a message<br> below or say hi here:<br><i class="fab fa-twitter"></i><a href="https://twitter.com/kamiltkacz" style="font-size: unset;">&nbsp;@kamiltkacz</a></h3>
+        <h3><a href="mailto:hello@brazilianbloopers.com" style="font-size: unset;">hello@brazilianbloopers.com</a></h3>
+        <h3>or consider donating any amount to</h3>
+        <form action="https://www.paypal.com/donate" method="post" target="_top">
+        <input type="hidden" name="cmd" value="_donations" />
+        <input type="hidden" name="business" value="TT4G5X6GYRV6C" />
+        <input type="hidden" name="currency_code" value="BRL" />
+        <img src="pics/qrCode.png" alt="QR Code for paypal" style="width:60px;height:60px; margin-left: 20px;
+         margin-top: -21px;">&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="image" src="https://www.paypalobjects.com/pt_BR/BR/i/btn/btn_donateCC_LG.gif" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Faça doações com o botão do PayPal" style="margin-top: 20px" />
+        <img alt="" src="https://www.paypal.com/pt_BR/i/scr/pixel.gif" width="1" height="1" />
+        </form>
+
+        <h3 style="margin-top: 20px;">Thanks a lot!</h3>
       </div>
       <div class="row">
         <div class="column">
@@ -1133,7 +1144,7 @@ require_once('./dbconn.php');
 
   <script>
     function openPage(pageName, elmnt, color) {
-      var i, tabcontent, tablinks;
+      let i, tabcontent, tablinks;
 
       tabcontent = document.getElementsByClassName("tabcontent");
       for (i = 0; i < tabcontent.length; i++) {
