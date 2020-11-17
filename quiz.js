@@ -32,12 +32,12 @@ $("#start_quiz").on("click", function () {
 
     } else if ($("input[name='sub_it']:checked").val() == "corr") {
       score++;
-      console.log(score);
+
       $("#" + classNum).hide();
       $("#" + numNext).show();
       $(".score").text(score);
     } else {
-      console.log(score);
+
       $("#" + classNum).hide();
       $("#" + numNext).show();
       $(".score").text(score);
@@ -53,11 +53,11 @@ $("#start_quiz").on("click", function () {
 
     } else if ($("input[name='too']:checked").val() == "corr") {
       score++;
-      console.log(score);
+
       $("#" + classNum).hide();
       $("#" + numNext).show();
     } else {
-      console.log(score);
+
       $("#" + classNum).hide();
       $("#" + numNext).show();
     }
@@ -72,11 +72,11 @@ $("#start_quiz").on("click", function () {
 
     } else if ($("input[name='much']:checked").val() == "corr") {
       score++;
-      console.log(score);
+
       $("#" + classNum).hide();
       $("#" + numNext).show();
     } else {
-      console.log(score);
+
       $("#" + classNum).hide();
       $("#" + numNext).show();
     }
@@ -91,11 +91,11 @@ $("#start_quiz").on("click", function () {
 
     } else if ($("input[name='exist']:checked").val() == "corr") {
       score++;
-      console.log(score);
+
       $("#" + classNum).hide();
       $("#" + numNext).show();
     } else {
-      console.log(score);
+
       $("#" + classNum).hide();
       $("#" + numNext).show();
     }
@@ -110,11 +110,11 @@ $("#start_quiz").on("click", function () {
 
     } else if ($("input[name='two_sub']:checked").val() == "corr") {
       score++;
-      console.log(score);
+
       $("#" + classNum).hide();
       $("#" + numNext).show();
     } else {
-      console.log(score);
+
       $("#" + classNum).hide();
       $("#" + numNext).show();
     }
@@ -129,11 +129,11 @@ $("#start_quiz").on("click", function () {
 
     } else if ($("input[name='no_obj']:checked").val() == "corr") {
       score++;
-      console.log(score);
+
       $("#" + classNum).hide();
       $("#" + numNext).show();
     } else {
-      console.log(score);
+
       $("#" + classNum).hide();
       $("#" + numNext).show();
     }
@@ -148,11 +148,11 @@ $("#start_quiz").on("click", function () {
 
     } else if ($("input[name='for']:checked").val() == "corr") {
       score++;
-      console.log(score);
+
       $("#" + classNum).hide();
       $("#" + numNext).show();
     } else {
-      console.log(score);
+
       $("#" + classNum).hide();
       $("#" + numNext).show();
     }
@@ -167,11 +167,11 @@ $("#start_quiz").on("click", function () {
 
     } else if ($("input[name='h_age']:checked").val() == "corr") {
       score++;
-      console.log(score);
+
       $("#" + classNum).hide();
       $("#" + numNext).show();
     } else {
-      console.log(score);
+
       $("#" + classNum).hide();
       $("#" + numNext).show();
     }
@@ -186,11 +186,11 @@ $("#start_quiz").on("click", function () {
 
     } else if ($("input[name='guy']:checked").val() == "corr") {
       score++;
-      console.log(score);
+
       $("#" + classNum).hide();
       $("#" + numNext).show();
     } else {
-      console.log(score);
+
       $("#" + classNum).hide();
       $("#" + numNext).show();
     }
@@ -205,11 +205,11 @@ $("#start_quiz").on("click", function () {
 
     } else if ($("input[name='car']:checked").val() == "corr") {
       score++;
-      console.log(score);
+
       $("#" + classNum).hide();
       $("#" + numNext).show();
     } else {
-      console.log(score);
+
       $("#" + classNum).hide();
       $("#" + numNext).show();
     }
@@ -224,11 +224,11 @@ $("#start_quiz").on("click", function () {
 
     } else if ($("input[name='lose']:checked").val() == "corr") {
       score++;
-      console.log(score);
+
       $("#" + classNum).hide();
       $("#" + numNext).show();
     } else {
-      console.log(score);
+
       $("#" + classNum).hide();
       $("#" + numNext).show();
     }
@@ -243,11 +243,11 @@ $("#start_quiz").on("click", function () {
 
     } else if ($("input[name='diss']:checked").val() == "corr") {
       score++;
-      console.log(score);
+
       $("#" + classNum).hide();
       $("#" + numNext).show();
     } else {
-      console.log(score);
+
       $("#" + classNum).hide();
       $("#" + numNext).show();
     }
@@ -262,11 +262,11 @@ $("#start_quiz").on("click", function () {
 
     } else if ($("input[name='doubt']:checked").val() == "corr") {
       score++;
-      console.log(score);
+
       $("#" + classNum).hide();
       $("#" + numNext).show();
     } else {
-      console.log(score);
+
       $("#" + classNum).hide();
       $("#" + numNext).show();
     }
@@ -281,11 +281,11 @@ $("#start_quiz").on("click", function () {
 
     } else if ($("input[name='know']:checked").val() == "corr") {
       score++;
-      console.log(score);
+
       $("#" + classNum).hide();
       $("#" + numNext).show();
     } else {
-      console.log(score);
+
       $("#" + classNum).hide();
       $("#" + numNext).show();
     }
@@ -300,11 +300,11 @@ $("#start_quiz").on("click", function () {
 
     } else if ($("input[name='god']:checked").val() == "corr") {
       score++;
-      console.log(score);
+
       $("#" + classNum).hide();
       $("#" + numNext).show();
     } else {
-      console.log(score);
+
       $("#" + classNum).hide();
       $("#" + numNext).show();
     }
@@ -319,11 +319,11 @@ $("#start_quiz").on("click", function () {
 
     } else if ($("input[name='pref']:checked").val() == "corr") {
       score++;
-      console.log(score);
+
       $("#" + classNum).hide();
       $("#" + numNext).show();
     } else {
-      console.log(score);
+
       $("#" + classNum).hide();
       $("#" + numNext).show();
     }
@@ -338,11 +338,11 @@ $("#start_quiz").on("click", function () {
 
     } else if ($("input[name='impress']:checked").val() == "corr") {
       score++;
-      console.log(score);
+
       $("#" + classNum).hide();
       $("#" + numNext).show();
     } else {
-      console.log(score);
+
       $("#" + classNum).hide();
       $("#" + numNext).show();
     }
@@ -357,11 +357,11 @@ $("#start_quiz").on("click", function () {
 
     } else if ($("input[name='parent']:checked").val() == "corr") {
       score++;
-      console.log(score);
+
       $("#" + classNum).hide();
       $("#" + numNext).show();
     } else {
-      console.log(score);
+
       $("#" + classNum).hide();
       $("#" + numNext).show();
     }
@@ -376,11 +376,11 @@ $("#start_quiz").on("click", function () {
 
     } else if ($("input[name='gout']:checked").val() == "corr") {
       score++;
-      console.log(score);
+
       $("#" + classNum).hide();
       $("#" + numNext).show();
     } else {
-      console.log(score);
+
       $("#" + classNum).hide();
       $("#" + numNext).show();
     }
@@ -395,11 +395,11 @@ $("#start_quiz").on("click", function () {
 
     } else if ($("input[name='use']:checked").val() == "corr") {
       score++;
-      console.log(score);
+
       $("#" + classNum).hide();
       $("#" + numNext).show();
     } else {
-      console.log(score);
+
       $("#" + classNum).hide();
       $("#" + numNext).show();
     }
@@ -414,11 +414,11 @@ $("#start_quiz").on("click", function () {
 
     } else if ($("input[name='durat']:checked").val() == "corr") {
       score++;
-      console.log(score);
+
       $("#" + classNum).hide();
       $("#" + numNext).show();
     } else {
-      console.log(score);
+
       $("#" + classNum).hide();
       $("#" + numNext).show();
     }
@@ -433,11 +433,11 @@ $("#start_quiz").on("click", function () {
 
     } else if ($("input[name='stay']:checked").val() == "corr") {
       score++;
-      console.log(score);
+
       $("#" + classNum).hide();
       $("#" + numNext).show();
     } else {
-      console.log(score);
+
       $("#" + classNum).hide();
       $("#" + numNext).show();
     }
@@ -452,11 +452,11 @@ $("#start_quiz").on("click", function () {
 
     } else if ($("input[name='with']:checked").val() == "corr") {
       score++;
-      console.log(score);
+
       $("#" + classNum).hide();
       $("#" + numNext).show();
     } else {
-      console.log(score);
+
       $("#" + classNum).hide();
       $("#" + numNext).show();
     }
@@ -471,11 +471,11 @@ $("#start_quiz").on("click", function () {
 
     } else if ($("input[name='chap']:checked").val() == "corr") {
       score++;
-      console.log(score);
+
       $("#" + classNum).hide();
       $("#" + numNext).show();
     } else {
-      console.log(score);
+
       $("#" + classNum).hide();
       $("#" + numNext).show();
     }
@@ -490,11 +490,11 @@ $("#start_quiz").on("click", function () {
 
     } else if ($("input[name='notes']:checked").val() == "corr") {
       score++;
-      console.log(score);
+
       $("#" + classNum).hide();
       $("#" + numNext).show();
     } else {
-      console.log(score);
+
       $("#" + classNum).hide();
       $("#" + numNext).show();
     }
@@ -509,11 +509,11 @@ $("#start_quiz").on("click", function () {
 
     } else if ($("input[name='music']:checked").val() == "corr") {
       score++;
-      console.log(score);
+
       $("#" + classNum).hide();
       $("#" + numNext).show();
     } else {
-      console.log(score);
+
       $("#" + classNum).hide();
       $("#" + numNext).show();
     }
@@ -528,11 +528,11 @@ $("#start_quiz").on("click", function () {
 
     } else if ($("input[name='every']:checked").val() == "corr") {
       score++;
-      console.log(score);
+
       $("#" + classNum).hide();
       $("#" + numNext).show();
     } else {
-      console.log(score);
+
       $("#" + classNum).hide();
       $("#" + numNext).show();
     }
@@ -547,11 +547,11 @@ $("#start_quiz").on("click", function () {
 
     } else if ($("input[name='sym']:checked").val() == "corr") {
       score++;
-      console.log(score);
+
       $("#" + classNum).hide();
       $("#" + numNext).show();
     } else {
-      console.log(score);
+
       $("#" + classNum).hide();
       $("#" + numNext).show();
     }
@@ -566,11 +566,11 @@ $("#start_quiz").on("click", function () {
 
     } else if ($("input[name='support']:checked").val() == "corr") {
       score++;
-      console.log(score);
+
       $("#" + classNum).hide();
       $("#" + numNext).show();
     } else {
-      console.log(score);
+
       $("#" + classNum).hide();
       $("#" + numNext).show();
     }
@@ -596,10 +596,10 @@ $("#start_quiz").on("click", function () {
       return false;
     } else if ($("input[name='uniq']:checked").val() == "corr") {
       score++;
-      console.log(score);
+
       $(".score").text(score);
     } else {
-      console.log(score);
+
       $(".score").text(score);
     }
 
@@ -1541,207 +1541,207 @@ $("#start_quiz").on("click", function () {
     $(".bor_choose").css({ border: "" });
     $(".span_choose").text("");
 
-    console.log(score);
+
   });
 
   $("#back_2").on("click", function () {
     if ($("input[name='sub_it']:checked").val() == "corr") {
       score--;
-      console.log(score);
+
     }
   });
 
   $("#back_3").on("click", function () {
     if ($("input[name='too']:checked").val() == "corr") {
       score--;
-      console.log(score);
+
     }
   });
   $("#back_4").on("click", function () {
     if ($("input[name='much']:checked").val() == "corr") {
       score--;
-      console.log(score);
+
     }
   });
 
   $("#back_5").on("click", function () {
     if ($("input[name='exist']:checked").val() == "corr") {
       score--;
-      console.log(score);
+
     }
   });
 
   $("#back_6").on("click", function () {
     if ($("input[name='two_sub']:checked").val() == "corr") {
       score--;
-      console.log(score);
+
     }
   });
 
   $("#back_7").on("click", function () {
     if ($("input[name='no_obj']:checked").val() == "corr") {
       score--;
-      console.log(score);
+
     }
   });
   $("#back_8").on("click", function () {
     if ($("input[name='for']:checked").val() == "corr") {
       score--;
-      console.log(score);
+
     }
   });
 
   $("#back_9").on("click", function () {
     if ($("input[name='h_age']:checked").val() == "corr") {
       score--;
-      console.log(score);
+
     }
   });
 
   $("#back_10").on("click", function () {
     if ($("input[name='guy']:checked").val() == "corr") {
       score--;
-      console.log(score);
+
     }
   });
 
   $("#back_11").on("click", function () {
     if ($("input[name='car']:checked").val() == "corr") {
       score--;
-      console.log(score);
+
     }
   });
 
   $("#back_12").on("click", function () {
     if ($("input[name='lose']:checked").val() == "corr") {
       score--;
-      console.log(score);
+
     }
   });
 
   $("#back_13").on("click", function () {
     if ($("input[name='diss']:checked").val() == "corr") {
       score--;
-      console.log(score);
+
     }
   });
 
   $("#back_14").on("click", function () {
     if ($("input[name='doubt']:checked").val() == "corr") {
       score--;
-      console.log(score);
+
     }
   });
 
   $("#back_15").on("click", function () {
     if ($("input[name='know']:checked").val() == "corr") {
       score--;
-      console.log(score);
+
     }
   });
 
   $("#back_16").on("click", function () {
     if ($("input[name='god']:checked").val() == "corr") {
       score--;
-      console.log(score);
+
     }
   });
 
   $("#back_17").on("click", function () {
     if ($("input[name='pref']:checked").val() == "corr") {
       score--;
-      console.log(score);
+
     }
   });
 
   $("#back_18").on("click", function () {
     if ($("input[name='impress']:checked").val() == "corr") {
       score--;
-      console.log(score);
+
     }
   });
 
   $("#back_19").on("click", function () {
     if ($("input[name='parent']:checked").val() == "corr") {
       score--;
-      console.log(score);
+
     }
   });
 
   $("#back_20").on("click", function () {
     if ($("input[name='gout']:checked").val() == "corr") {
       score--;
-      console.log(score);
+
     }
   });
 
   $("#back_21").on("click", function () {
     if ($("input[name='use']:checked").val() == "corr") {
       score--;
-      console.log(score);
+
     }
   });
 
   $("#back_22").on("click", function () {
     if ($("input[name='durat']:checked").val() == "corr") {
       score--;
-      console.log(score);
+
     }
   });
 
   $("#back_23").on("click", function () {
     if ($("input[name='stay']:checked").val() == "corr") {
       score--;
-      console.log(score);
+
     }
   });
 
   $("#back_24").on("click", function () {
     if ($("input[name='with']:checked").val() == "corr") {
       score--;
-      console.log(score);
+
     }
   });
 
   $("#back_25").on("click", function () {
     if ($("input[name='chap']:checked").val() == "corr") {
       score--;
-      console.log(score);
+
     }
   });
 
   $("#back_26").on("click", function () {
     if ($("input[name='notes']:checked").val() == "corr") {
       score--;
-      console.log(score);
+
     }
   });
 
   $("#back_27").on("click", function () {
     if ($("input[name='music']:checked").val() == "corr") {
       score--;
-      console.log(score);
+
     }
   });
 
   $("#back_28").on("click", function () {
     if ($("input[name='every']:checked").val() == "corr") {
       score--;
-      console.log(score);
+
     }
   });
 
   $("#back_29").on("click", function () {
     if ($("input[name='sym']:checked").val() == "corr") {
       score--;
-      console.log(score);
+
     }
   });
 
   $("#back_30").on("click", function () {
     if ($("input[name='support']:checked").val() == "corr") {
       score--;
-      console.log(score);
+
     }
   });
 
