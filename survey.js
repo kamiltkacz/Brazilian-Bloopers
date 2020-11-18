@@ -16,9 +16,9 @@ $(".popup-close").on("click", function () {
   $("#footer").show();
 });
 
-$(document).ready(function () {
-  $("#start_quiz").prop("disabled", true);
-});
+// $(document).ready(function () {
+//   $("#start_quiz").prop("disabled", true);
+// });
 
 // Reset border color & text in span element for question1 validation
 $("input[type='radio'][name='gender']").click(function () {
