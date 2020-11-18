@@ -89,6 +89,12 @@ cursor:pointer;
 .tabs {
   float: right;
   display: flex;
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  line-height: 70px;
+  background-color: black;
+  padding-left: 100px;
 }
 
 .al_left {
@@ -346,16 +352,15 @@ label,
 }
 
 em {
-    background: radial-gradient(#ffc107, #000000);
-    color: whitesmoke;
-    padding: 6px;
-    font-weight: 600;
-    border-radius: 10px;
+  color: whitesmoke;
+  padding: 6px;
+  /* font-weight: 600; */
+  border-radius: 10px;
+  background: radial-gradient(#172f4a, #00000059);
+  border: solid #ffc107 1px;
 }
 
-.border-radius-0 {
-  border-radius: 0;
-}
+
 
 /*BUTTONS*/
 
@@ -363,9 +368,9 @@ em {
   background: radial-gradient(#ffc107, #00000059);
   color: whitesmoke;
   font-family: inherit;
-  font-size: 16px;
+  font-size: 22px;
   padding: 5px;
-  border-radius: 8px;
+  border-radius: 20px;
   cursor: pointer;
   text-align: center;
   position: relative;
@@ -381,9 +386,9 @@ em {
   background: radial-gradient(#ffc107, #00000059);
   color: whitesmoke;
   font-family: inherit;
-  font-size: 16px;
+  font-size: 22px;
   padding: 5px;
-  border-radius: 8px;
+  border-radius: 20px;
   cursor: pointer;
   text-align: center;
   position: relative;
@@ -424,7 +429,7 @@ p#instr {
   font-family: inherit;
   font-size: 14px;
   padding: 5px;
-  border-radius: 5px;
+  border-radius: 10px;
   cursor: help;
   position: fixed;
   left: 15px;
@@ -438,7 +443,7 @@ p#instr {
   font-family: inherit;
   font-size: 16px;
   padding: 4px;
-  border-radius: 8px;
+  border-radius: 15px;
   cursor: pointer;
   display: flex;
   right: 40px;
@@ -455,7 +460,7 @@ p#instr {
   font-family: inherit;
   font-size: 16px;
   padding: 4px;
-  border-radius: 8px;
+  border-radius: 15px;
   cursor: pointer;
   display: flex;
   margin-top: 35px;
@@ -467,12 +472,12 @@ p#instr {
 
 /* Submit Survey Button*/
 #submit_survey {
-  background: radial-gradient(#ffc107, #00000059);
+  background: radial-gradient(#daa60beb, #000000cf);
   color: whitesmoke;
   font-family: inherit;
-  font-size: 16px;
+  font-size: 22px;
   padding: 5px;
-  border-radius: 8px;
+  border-radius: 20px;
   cursor: pointer;
   margin-top: 25px;
   right: 12px;
@@ -501,15 +506,16 @@ p#instr {
 
 #submit_contact {
   background: radial-gradient(#ffc107, #00000059);
-
   color: whitesmoke;
   font-family: inherit;
-  font-size: 16px;
-  padding: 5px;
-  border-radius: 8px;
+  font-size: 22px;
+  padding: 6px 26px;
+  border-radius: 2px;
   cursor: pointer;
-  border-bottom: 3px solid rgba(0, 0, 0, 0.2);
-  border-right: 1px solid rgba(0, 0, 0, 0.2);
+  /* border-bottom: 3px solid rgba(0, 0, 0, 0.2); */
+  /* border-right: 1px solid rgba(0, 0, 0, 0.2); */
+  background: #65b992;
+  border: 1px solid #b9b9b9;
 }
 
 #check_res {
@@ -530,11 +536,11 @@ p#instr {
 /* MAIN CONTAINERS */
 
 .container {
-  border-radius: 50px;
+  border-radius: 3px;
   padding: 20px;
   text-align: center;
   margin-top: 30px;
-  background: radial-gradient(#2c00f7, #000000f2);
+  background: #171717a8;
 }
 
 .cont_surv {
@@ -586,7 +592,7 @@ p#instr {
 }
 
 .cont_answer {
-  font-size: 17px;
+  font-size: 21px;
   text-align: center;
   margin-bottom: 20px;
 }
@@ -661,13 +667,14 @@ textarea {
   padding: 12px;
   font-size: 20px;
   /* border: 2px solid #2c00f7; */
-  border-radius: 40px;
+  border-radius: 6px;
   box-sizing: border-box;
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
-  background: radial-gradient(#ffc107, #00000059);
+  /* background: radial-gradient(#ffc107, #00000059); */
   color: whitesmoke;
+  background: #3b4e65;
 }
 
 .field_about {
@@ -709,9 +716,11 @@ textarea {
   padding: 5px;
 }
 .span_exp {
-  background: radial-gradient(#2c00f7, #00000059);
   padding: 8px;
   border-radius: 10px;
+  background: radial-gradient(#172f4a, #00000059);
+  border: solid #ffc107 1px;
+  font-style: italic;
 }
 #score_span {
   background: radial-gradient(#533019, #0000006e);
