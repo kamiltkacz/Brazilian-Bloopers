@@ -30,7 +30,7 @@ const tabsSwitch = $(`<div class="tabs">
 
 const headerSwitch = $(`
   <header>
-    <h3 style="margin-top: 15px;">Olá, bem-vindo aos Brazilian Bloopers.<br> <br> Aqui nós contamos o que te trai como brasileiro!</h3>
+    <h4 style="margin-top: 15px;">Olá, bem-vindo aos Brazilian Bloopers.<br> <br> Aqui nós contamos o que te trai como brasileiro!</h4>
   </header>
   `);
 
@@ -44,7 +44,7 @@ const aboutSwitch = $(` <div id="About" class="tabcontent">
     <div class="container">
     <fieldset class="field_about">
       <h4 class="leg_highlight" id="leg_high_2" >Sobre os Bloopers</h4>
-      <p class="al_left">Vamos encarar. Aprender outro idioma e comunicar suas ideias nele não é tarefa fácil. O inglês, embora onipresente neste mundo, não é exceção. Estamos aqui para ajudar um pouco nisso.<br>Se você procurar a definição em inglês da palavra <a href="https://www.dictionary.com/browse/blooper" alt="to dictionary.com" style="background: radial-gradient(#ffc107, #00000059); border-radius: 20px; padding: 5px" target="_blank"><span>'blooper'</span></a>&nbsp;você receberá "um erro embaraçoso que você comete publicamente". Embora não achemos que os erros que você encontrará aqui sejam tão graves, acreditamos que corrigi-los é um grande passo em sua jornada de aprendizado de idiomas.<br><a href="#examples" id="a_examples" style="background: radial-gradient(#ffc107, #00000059);border-radius: 20px; padding: 5px">&nbsp;<span>Confira os exemplos abaixo.</span></a></p>
+      <p class="al_left">Vamos encarar. Aprender outro idioma e comunicar suas ideias nele não é tarefa fácil. O inglês, embora onipresente neste mundo, não é exceção. Estamos aqui para ajudar um pouco nisso.<br>Se você procurar a definição em inglês da palavra <a href="https://www.dictionary.com/browse/blooper" alt="to dictionary.com" style="background: radial-gradient(#ffc107b8, #000000e3); border-radius: 20px; padding: 5px" target="_blank"><span>'blooper'</span></a>&nbsp;você receberá "um erro embaraçoso que você comete publicamente". Embora não achemos que os erros que você encontrará aqui sejam tão graves, acreditamos que corrigi-los é um grande passo em sua jornada de aprendizado de idiomas.<br>&nbsp;Confira os exemplos<a href="#examples" id="a_examples" style="background: radial-gradient(#ffc107b8, #000000e3); border-radius: 20px; padding: 5px"><span>aqui.</span></a></p>
     </fieldset>
     </div>
 
@@ -52,7 +52,7 @@ const aboutSwitch = $(` <div id="About" class="tabcontent">
   <fieldset class="field_about">
      <h4 class="leg_highlight" id="leg_high_3">Sobre o Quiz</h4>
      <p class="al_left"> O teste é apenas em inglês, porque não pode ficar muito fácil, não é? A pesquisa, entretanto, é oferecida em inglês e português.
-     O quiz consiste em falsos cognatos, expressões idiomáticas, frases incompletas, etc. Você verá uma série de diálogos. Você deve usar seu bom senso ao escolher a única resposta correta.<br><br>&nbsp;Existem 30 questões que variam em dificuldade. Alguns erros são mais comuns e outros menos frequentes, mas todos eles compartilham a peculiaridade da língua portuguesa que não traduz bem para o inglês. Mesmo que muitos dos erros sejam inteligíveis para falantes nativos de inglês, seria melhor você encontrar uma alternativa mais comum.<br><br>&nbsp;Mas não seja tão duro consigo mesmo - Tudo bem se você tem um pedaço do Brasil que nunca sai do seu cérebro, e por que não deixar o gringo pensar um pouco?<br><br>Não se esqueça de aproveitar o processo!<br><br><a href="#" style="background: radial-gradient(#ffc107, #00000059); border-radius: 20px; padding: 5px", onclick="openPage('TheQuiz', this);">Pronto?</a></p>
+     O quiz consiste em falsos cognatos, expressões idiomáticas, frases incompletas, etc. Você verá uma série de diálogos. Você deve usar seu bom senso ao escolher a única resposta correta.<br><br>&nbsp;Existem 30 questões que variam em dificuldade. Alguns erros são mais comuns e outros menos frequentes, mas todos eles compartilham a peculiaridade da língua portuguesa que não traduz bem para o inglês. Mesmo que muitos dos erros sejam inteligíveis para falantes nativos de inglês, seria melhor você encontrar uma alternativa mais comum.<br><br>&nbsp;Mas não seja tão duro consigo mesmo - Tudo bem se você tem um pedaço do Brasil que nunca sai do seu cérebro, e por que não deixar os gringos pensarem um pouco?<br><br>Não se esqueça de aproveitar o processo!<br><br><a href="#" style="background: radial-gradient(#ffc107b8, #000000e3); border-radius: 20px; padding: 5px", onclick="openPage('Quiz', this);">Pronto?</a></p>
    </fieldset>
    </div>
    <div class="container">
@@ -78,7 +78,7 @@ const aboutSwitch = $(` <div id="About" class="tabcontent">
     </div>
     <div class="container">
     <h4 class="leg_highlight">Exemplo nº 2 de Bloopers no mainstream.</h4><br>
-      <p class="al_left">A entrevista de Marilia Gabriela com a única Madonna é claramente estranha, em parte devido à incapacidade do jornalista brasileiro de colocar seu inglês nos trilhos. Madonna claramente não era caridosa e estava com vontade de ajudar.</p>
+      <p class="al_left">A entrevista de Marília Gabriela com a única Madonna é claramente estranha, em parte devido à incapacidade do jornalista brasileiro de colocar seu inglês nos trilhos. Madonna claramente não era caridosa e estava com vontade de ajudar.</p>
         <div class="yt-resp">
           <iframe class="iframe-resp" src="https://www.youtube.com/embed/zHMhLd4MUC4" alt="youtube_link_3">
           </iframe>
@@ -86,6 +86,8 @@ const aboutSwitch = $(` <div id="About" class="tabcontent">
     </div>
 
 </div>`);
+
+
 
 let legStepsSwitch = $(
   `<h4 id="leg_steps">Siga estas 3 etapas simples:</h4>`
@@ -99,10 +101,13 @@ let clickStartSwitch = $(
 let haveFunSwitch = $(`<p id="have_fun">3.&nbsp;Divirta-se!</p>`);
 
 const feedbackSwitch = $(` <div id="feedback_div" style="text-align:center">
-      <h3 id="shoot_email">Se você gostou do teste,<br> escreva-me uma mensagem<br>abaixo ou diga oi aqui:<br><i class="fab fa-twitter"></i><a href="https://twitter.com/kamiltkacz" style="font-size: unset;">&nbsp;@kamiltkacz</a></h3>
-      <h3><a href="mailto:hello@brazilianbloopers.com">hello@brazilianbloopers.com</a></h3>
-      <h3>ou considere doar qualquer quantia para</h3>
-      <form action="https://www.paypal.com/donate" method="post" target="_top">
+<h4 id="shoot_email">Se você gostou do teste diga oi aqui:</h4><br>
+<div style="margin-top: -20px;">
+<i class="fab fa-twitter"></i><a href="https://twitter.com/kamiltkacz" style="font-size: unset;">&nbsp;@kamiltkacz</a><br>
+<a href="mailto:hello@brazilianbloopers.com" style="font-size: unset;">hello@brazilianbloopers.com</a>
+</div>
+<h3 style="margin-top: 20px;">ou se você quiser ajudar com qualquer quantia</h3>
+      <form action="https://www.paypal.com/donate" method="post" target="_blank">
       <input type="hidden" name="cmd" value="_donations" />
       <input type="hidden" name="business" value="TT4G5X6GYRV6C" />
       <input type="hidden" name="currency_code" value="BRL" />
