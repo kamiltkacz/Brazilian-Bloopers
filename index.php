@@ -82,10 +82,10 @@ require_once('./dbconn.php');
   <div id="Home" class="tabcontent">
     <div class="container" id="home">
     <div class="logo_div">
-  <img src="pics\logo.png" id="logo_main" class="logo" style="width:60px;height:60px;" alt="logo_boy">
+  <img src="pics\logo.png" id="logo_main" class="logo" style="width:80px;height:80px;" alt="logo_boy">
   </div>
     <header>
-      <h3 style="margin-top: 15px;">Hello, Welcome to Brazilian Bloopers.<br><br>Here we tell you what gives you away as a Brazilian!</h3>
+      <h4 style="margin-top: 15px;">Hello, Welcome to Brazilian Bloopers.<br><br>Here we tell you what gives you away as a Brazilian!</h4>
     </header>
     </div>
   </div>
@@ -96,33 +96,33 @@ require_once('./dbconn.php');
     <div class="container" id="about_us">
     <fieldset class="field_about">
        <h4 class="leg_highlight" id="leg_high_1">About Us</h4>
-        <p class="al_left">We are a couple of English teachers based in Brasilia, Brazil, who are determined to sharpen your skills. We've compiled this quiz based on years of experience.<br>One day, fascinated by various "Brazilianisms" students kept throwing at our ears, we decided this phenomenon deserves its own website. Thus, the project Brazilian Bloopers came to life.</p>
+        <p class="al_left">We are a couple of English teachers based in Brasília, Brazil, who are determined to sharpen your skills. We've compiled this quiz based on years of experience.<br>One day, fascinated by various "Brazilianisms" students kept throwing at our ears, we decided this phenomenon deserves its own website. Thus, the project Brazilian Bloopers came to life.</p>
     </fieldset>
     </div>
       <div class="container">
       <fieldset class="field_about">
         <h4 class="leg_highlight" id="leg_high_2">About the Bloopers</h4>
-        <p class="al_left">Let's face it. Learning another language and communicating your ideas in it, is no easy feat. English, however omnipresent in this world, is no exception. We're here to help a little with that.<br>If you look up English defintion of the word <a href="https://www.dictionary.com/browse/blooper" alt="to dictionary.com" style="background: radial-gradient(#ffc107, #00000059); border-radius: 20px; padding: 5px" target="_blank"><span>'blooper'</span></a>&nbsp;you'll get "an embarassing error you make publicly". Although we don't think the mistakes you'll find here are that bad, we do believe correcting them is a great step forward in your language learning journey.<br><a href="#examples" id="a_examples" style="background: radial-gradient(#ffc107, #00000059); border-radius: 20px; padding: 5px">&nbsp;<span>Check out the examples below.</span></a></p>
+        <p class="al_left">Let's face it. Learning another language and communicating your ideas in it is no easy feat. English, however omnipresent in this world, is no exception. We're here to help a little with that.<br>If you look up the English defintion of the word <a href="https://www.dictionary.com/browse/blooper" alt="to dictionary.com" style="background: radial-gradient(#ffc107b8, #000000e3); border-radius: 20px; padding: 5px" target="_blank"><span>'blooper'</span></a>&nbsp;you'll get "an embarassing error you make publicly". Although we don't think the mistakes you'll find here are that bad, we do believe correcting them is a great step forward in your language learning journey.<br>&nbsp;Check out the examples<a href="#examples" id="a_examples" style="background: radial-gradient(#ffc107b8, #000000e3); border-radius: 20px; padding: 5px"><span>here.</span></a></p>
       </fieldset>
       </div>
 
     <div class="container" id="about_qz">
     <fieldset class="field_about">
        <h4 class="leg_highlight" id="leg_high_3">About the Quiz</h4>
-       <p class="al_left"> The quiz is in English only, beacause you can't have it too easy, can you? The survey however, is offered in both English and  Portuguese. The quiz consists of false cognates, idiomatic expressions, incomplete phrases, etc. You'll be presented with a series of dialogues. You have to use your judgement when picking the only one correct answer.<br><br>&nbsp;There are 30 questions which vary in difficulty. Some mistakes are more common and some less frequent but all of them share the peculiarity of the Portuguese language that does not translate well into English. Even though many of the bloopers are intelligible to native English speakers, you would be better off finding a more common alternative.<br><br>&nbsp;But don't be too hard on yourself - It's okay if you have a piece of Brazil that never leaves your brain, plus why not let the gringo do some thinking?<br><br>Don't forget to enjoy the process! <br><br><a href="#" style="background: radial-gradient(#ffc107, #00000059); border-radius: 20px; padding: 5px", onclick="openPage('TheQuiz', this);">Ready?</a></p>
+       <p class="al_left"> The quiz is in English only, because you can't have it too easy, can you? The survey however, is offered in both English and  Portuguese. The quiz consists of false cognates, idiomatic expressions, incomplete phrases, etc. You'll be presented with a series of dialogues. You have to use your judgement when picking the only one correct answer.<br><br>&nbsp;There are 30 questions which vary in difficulty. Some mistakes are more common and some less frequent but all of them share the peculiarity of the Portuguese language that does not translate well into English. Even though many of the bloopers are intelligible to native English speakers, you would be better off finding a more common alternative.<br><br>&nbsp;But don't be too hard on yourself - It's okay if you have a piece of Brazil that never leaves your brain, plus why not let the gringos do some thinking?<br><br>Don't forget to enjoy the process! <br><br><a href="#" style="background: radial-gradient(#ffc107b8, #000000e3); border-radius: 20px; padding: 5px", onclick="openPage('Quiz', this);">Ready?</a></p>
      </fieldset>
      </div>
      <div class="container">
         <picture>
         <a id="examples"></a>
-          <h4 class="leg_highlight">Example of a Brazilian blooper in casual dialogue:</h4>
+          <h4 class="leg_highlight">Example of a Brazilian Blooper in a casual dialogue:</h4>
          <br><br><p>A) Did you like your trip?</p><br><p style="margin-top: -20px;">B)&nbsp;<span class="error_style"><em>More or less.</em></span></p><br><p style="margin-top: -20px;">A) Hmmm...&#129300;</p>
          <hr>
-          <p class="al_left">&nbsp;<span class="span_exp">Explanation:</span>&nbsp;In English we generally say "More or Less" to use it as an approximation of numbers, quantities, a "plus-minus". Ex. "It will cost you 40 reais, more or less."<br><br>We don't answer with "more or less" only to express value or our impression of something. If you thought the above mentioned trip could have been better, you answer "Not much". If you thought it could have been worse, you answer "It was okay." You should remember that answers like this are hugely context dependent, meaning, you will have to develop what you mean in more detail.</p>
+          <p class="al_left">&nbsp;<span class="span_exp">Explanation:</span>&nbsp;In English we generally say "More or Less" to use it as an approximation of numbers, quantities, a "plus-minus". Ex. "It will cost you 40 reais, more or less."<br><br>We don't answer with "more or less" only to express value or our impression of something. If you thought the above mentioned trip could have been better, you answer "Not much". If you thought it could have been worse, you answer "It was okay." You should remember that answers like this are hugely context dependent, meaning, you will have to explain what you mean in more detail.</p>
         </picture>
       </div>
       <div class="container">
-        <h4 class="leg_highlight">Example nr.1 of Bloopers in the mainstream.</h4><br>
+        <h4 class="leg_highlight">Example of Bloopers in the mainstream.</h4><br>
         <p class="al_left"> Michel Telo's hit, a hugely popular Brazilian song has a bit of a rough reading in English. Among other smaller bloopers the title "If I catch you" gives it away as something clumsily translated from Portuguese. Even the mainstream showbusiness is not free from an occasional blunder.</p>
         <div class="yt-resp">
           <iframe class="iframe-resp" src="https://www.youtube.com/embed/CwC5BFX7rqQ" alt="youtube_link_1">
@@ -135,8 +135,8 @@ require_once('./dbconn.php');
           </div>
       </div>
       <div class="container">
-      <h4 class="leg_highlight">Example nr.2 of Bloopers in the mainstream.</h4><br>
-        <p class="al_left">Marilia Gabriela's interview with the one and only Madonna is plainly awkward partially due to the inability of the Brazilian Journalist to get her English on track. Madonna clearly was not charitable and in the mood to help.
+      <h4 class="leg_highlight">Example of Bloopers in the mainstream.</h4><br>
+        <p class="al_left">Marília Gabriela's interview with the one and only Madonna is plainly awkward partially due to the Brazilian Journalist's inability to get her English on track. Madonna clearly was not charitable and in the mood to help.
           <div class="yt-resp">
             <iframe class="iframe-resp" src="https://www.youtube.com/embed/zHMhLd4MUC4" alt="youtube_link_3">
             </iframe>
@@ -151,7 +151,7 @@ require_once('./dbconn.php');
 
     <div class="container" id="steps">
     <div class="logo_div">
-    <img src="pics\logo.png" id="logo_main" class="logo" style="width:60px;height:60px; margin-bottom: 30px;">
+    <img src="pics\logo.png" id="logo_main" class="logo" style="width:80px;height:80px; margin-bottom: 30px;">
     </div>
 
         <h4 id="leg_steps">Follow these 3 simple steps:</h4>
@@ -264,7 +264,7 @@ require_once('./dbconn.php');
           <div class="cont_dial">
             <p class="situation">1&nbsp; out of&nbsp; 30</p>
               <p>Milene: How is the weather today?</p>
-              <p>Camile:<span class="error_style"><em>&nbsp;Is hot!</em></span></p>
+              <p>Camile:<span class="error_style"><em>Is hot!</em></span></p>
           </div>
           <hr>
           <div class="cont_answer">
@@ -1101,24 +1101,28 @@ require_once('./dbconn.php');
   <div id="Contact" class="tabcontent">
     <div class="container" id="contact_cont">
     <div class="logo_div">
-  <img src="pics\logo.png" id="logo_main" class="logo" style="width:60px;height:60px;">
+  <img src="pics\logo.png" id="logo_main" class="logo" style="width:80px;height:80px;">
   </div>
        <div id="feedback_div" style="text-align:center">
-        <h3 id="shoot_email">If you liked the quiz, write me a message<br> below or say hi here:<br><i class="fab fa-twitter"></i><a href="https://twitter.com/kamiltkacz" style="font-size: unset;">&nbsp;@kamiltkacz</a></h3>
-        <h3><a href="mailto:hello@brazilianbloopers.com" style="font-size: unset;">hello@brazilianbloopers.com</a></h3>
-        <h3>or consider donating any amount to</h3>
-        <form action="https://www.paypal.com/donate" method="post" target="_top">
+        <h4 id="shoot_email">If you enjoyed the quiz say hi here:</h4><br>
+        <div style="margin-top: -20px;">
+        <i class="fab fa-twitter"></i><a href="https://twitter.com/kamiltkacz" style="font-size: unset;">&nbsp;@kamiltkacz</a><br>
+        <a href="mailto:hello@brazilianbloopers.com" style="font-size: unset;">hello@brazilianbloopers.com</a>
+        </div>
+        <h3 style="margin-top: 20px;">or if you want to help with any amount</h3>
+        <form action="https://www.paypal.com/donate" method="post" target="_blank">
         <input type="hidden" name="cmd" value="_donations" />
         <input type="hidden" name="business" value="TT4G5X6GYRV6C" />
         <input type="hidden" name="currency_code" value="BRL" />
         <img src="pics/qrCode.png" alt="QR Code for paypal" style="width:60px;height:60px; margin-left: 20px;
          margin-top: -21px;">&nbsp;&nbsp;&nbsp;&nbsp;
-        <input type="image" src="https://www.paypalobjects.com/pt_BR/BR/i/btn/btn_donateCC_LG.gif" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Faça doações com o botão do PayPal" style="margin-top: 20px" />
-        <img alt="" src="https://www.paypal.com/pt_BR/i/scr/pixel.gif" width="1" height="1" />
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal" style="margin-top: 20px" />
+        <img alt="" src="https://www.paypal.com/en_BR/i/scr/pixel.gif" border="0" width="1" height="1" />
         </form>
 
         <h3 style="margin-top: 20px;">Thanks a lot!</h3>
       </div>
+
       <div class="row">
         <div class="column">
           <div id="labels_left">
