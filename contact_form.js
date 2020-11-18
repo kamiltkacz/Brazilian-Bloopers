@@ -45,7 +45,7 @@ $("#submit_contact").on("click", function () {
           border: "5px solid red",
         });
         $("#span_name").text(
-          ' must only contain letters and whitespace ex."Paulo Sousa"'
+          '(must only contain letters and whitespace ex."Paulo Sousa") '
         );
       }
       if (result.validFormEmail == "empty") {
@@ -53,21 +53,21 @@ $("#submit_contact").on("click", function () {
           border: "5px solid red",
         });
         $("#span_email").text(
-          ' enter a valid email address ex."paulo@brazil.com"'
+          '( enter a valid email address ex."paulo@brazil.com")'
         );
       }
       if (result.validFormMessage == "empty") {
         $("#bor_message").css({
           border: "5px solid red",
         });
-        $("#span_message").text(" type something, anything!");
+        $("#span_message").text(" (type something, anything!)");
       }
       if (result.validName == "no") {
         $("#bor_name").css({
           border: "5px solid red",
         });
         $("#span_name").text(
-          ' must only contain letters and whitespace ex."Paulo Sousa"'
+          ' (must only contain letters and whitespace ex."Paulo Sousa")'
         );
       }
       if (result.validEmail == "email0") {
@@ -75,7 +75,7 @@ $("#submit_contact").on("click", function () {
           border: "5px solid red",
         });
         $("#span_email").text(
-          ' enter a valid email address ex."paulo@brazil.com"'
+          '( enter a valid email address ex."paulo@brazil.com")'
         );
       }
 
@@ -108,7 +108,7 @@ $("#submit_contact").on("click", function () {
             border: "5px solid red",
           });
           $("#span_name").text(
-            ' Deve conter apenas letras e espaços em branco ex."Paulo Sousa"'
+            ' (Deve conter apenas letras e espaços em branco ex."Paulo Sousa")'
           );
         }
         if (result.validFormEmail == "empty") {
@@ -116,21 +116,21 @@ $("#submit_contact").on("click", function () {
             border: "5px solid red",
           });
           $("#span_email").text(
-            ' Digite um endereço de e-mail válido ex."paulo@brazil.com"'
+            '( Digite um endereço de e-mail válido ex."paulo@brazil.com")'
           );
         }
         if (result.validFormMessage == "empty") {
           $("#bor_message").css({
             border: "5px solid red",
           });
-          $("#span_message").text(" Digite algo, qualquer coisa!");
+          $("#span_message").text("( Digite algo, qualquer coisa!)");
         }
         if (result.validName == "no") {
           $("#bor_name").css({
             border: "5px solid red",
           });
           $("#span_name").text(
-            ' Deve conter apenas letras e espaços em branco ex."Paulo Sousa"'
+            '( Deve conter apenas letras e espaços em branco ex."Paulo Sousa")'
           );
         }
         if (result.validEmail == "email0") {
@@ -138,7 +138,7 @@ $("#submit_contact").on("click", function () {
             border: "5px solid red",
           });
           $("#span_email").text(
-            ' Digite um endereço de e-mail válido ex."paulo@brazil.com"'
+            ' (Digite um endereço de e-mail válido ex."paulo@brazil.com")'
           );
         }
       }
