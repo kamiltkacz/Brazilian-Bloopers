@@ -8,16 +8,15 @@ require_once('./dbconn.php');
 <head>
   <title>brazilianbloopers</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 
   <!-- JQuery -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
   <!-- JQuery UI -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha256-KM512VNnjElC30ehFwehXjx1YCHPiQkOPmqnrWtpccM=" crossorigin="anonymous"></script>
-  <!--JQuery lang plugin-->
-  <!-- <script src="src/languages/langs.min.js"></script>
-  <script src="src/languages/jquery.multilang.min.js"></script> -->
+ <!-- Load an icon library for burger menu on small screens -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
   <!--BOOTSTRAP-->
@@ -45,35 +44,56 @@ require_once('./dbconn.php');
    <!-- FontAwesome-->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
-  <!-- Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> -->
-
-
-
 
 
 </head>
 
 <body>
-
-
+<div id="mobile-container">
   <div class="tabs">
    <button id="defaultOpen" class="tablink" onclick="openPage('Home', this);">
       <a href="#" id="active_home" class="active">Home</a>
     </button>
-   <button class="tablink" onclick="openPage('About', this);">
-      <a href="#" class="active">About</a>
-    </button>
-   <button class="tablink" onclick="openPage('Quiz', this);">
-      <a href="#" id="active_quiz" class="active">The Quiz</a>
-    </button>
-   <button class="tablink" onclick="openPage('Contact', this);">
-      <a href="#" class="active">Contact</a>
-    </button>
-   <img src="//bandidosnatv.com/plgns/gtranslate/flags/24/en-us.png" id="eng_btn" style="margin-top: 4px;" height="24" width="24" alt="English_flag">
-  <img src="//bandidosnatv.com/plgns/gtranslate/flags/24/pt-br.png" id="port_btn" style="margin-top: 4px;" height="24" width="24" alt="Portuguese_flag">
+    <div id="myLinks">
+   <a class="tablink" onclick="openPage('About', this);">
+     About
+</a>
+   <a class="tablink" onclick="openPage('Quiz', this);">
+      Quiz
+</a>
+   <a class="tablink" onclick="openPage('Contact', this);">
+      Contact
+</a>
 
-
+   <img src="//bandidosnatv.com/plgns/gtranslate/flags/24/en-us.png" id="eng_btn" style="margin-top: 25px;" height="24" width="24" alt="English_flag">
+   <img src="//bandidosnatv.com/plgns/gtranslate/flags/24/pt-br.png" id="port_btn" style="margin-top: 25px;" height="24" width="24" alt="Portuguese_flag">
+   </div>
+     <!-- "burger menu -->
+  <a href="javascript:void(0);" class="icon" onclick="myBurger()">
+    <i class="fa fa-bars"></i>
+  </a>
   </div>
+</div>
+
+<!-- Simulate a smartphone / tablet
+<div class="mobile-container">
+
+<!-- Top Navigation Menu
+<div class="topnav">
+  <a href="#home" class="active">Logo</a>
+  <div id="myLinks">
+    <a href="#news">News</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+</div> <!-- End smartphone / tablet look -->
+
+
 
 
 
@@ -121,7 +141,7 @@ require_once('./dbconn.php');
           <p class="al_left">&nbsp;<span class="span_exp">Explanation:</span>&nbsp;In English we generally say "More or Less" to use it as an approximation of numbers, quantities, a "plus-minus". Ex. "It will cost you 40 reais, more or less."<br><br>We don't answer with "more or less" only to express value or our impression of something. If you thought the above mentioned trip could have been better, you answer "Not much". If you thought it could have been worse, you answer "It was okay." You should remember that answers like this are hugely context dependent, meaning, you will have to explain what you mean in more detail.</p>
         </picture>
       </div>
-      <div class="container">
+      <!-- <div class="container">
         <h4 class="leg_highlight">Example of Bloopers in the mainstream.</h4><br>
         <p class="al_left"> Michel Telo's hit, a hugely popular Brazilian song has a bit of a rough reading in English. Among other smaller bloopers the title "If I catch you" gives it away as something clumsily translated from Portuguese. Even the mainstream showbusiness is not free from an occasional blunder.</p>
         <div class="yt-resp">
@@ -141,7 +161,7 @@ require_once('./dbconn.php');
             <iframe class="iframe-resp" src="https://www.youtube.com/embed/zHMhLd4MUC4" alt="youtube_link_3">
             </iframe>
           </div>
-      </div>
+      </div> -->
 
   </div> <!-- About -->
 
@@ -169,7 +189,7 @@ require_once('./dbconn.php');
     <!--SURVEY-->
     <div class="popup" id="survey_popup" data-popup="popup-1">
       <div class="popup-inner">
-        <a class="popup-close" data-popup-close="popup-1" href="#">x</a>
+        <a class="popup-close" data-popup-close="popup-1" href="#">burger</a>
 
         <form id="survey" method="post" action="actions.php">
 
@@ -259,7 +279,7 @@ require_once('./dbconn.php');
       <form id="quiz_form" method="post" action="actions.php">
 
 
-        <a class="popup-close" id="popup_close_2" data-popup-close="popup-2" href="#">x</a>
+        <a class="popup-close" id="popup_close_2" data-popup-close="popup-2" href="#">burger</a>
         <div id="1" class="questions">
           <div class="cont_dial">
             <p class="situation">1&nbsp; out of&nbsp; 30</p>
@@ -1198,6 +1218,16 @@ require_once('./dbconn.php');
       $('#footer').show();
       $("#results").show();
     }
+
+    /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+      function myBurger() {
+        let burger = document.getElementById("myLinks");
+        if (burger.style.display === "block") {
+          burger.style.display = "none";
+        } else {
+          burger.style.display = "block";
+        }
+      }
 
 
 
