@@ -6,7 +6,7 @@ html {
   font-size: 20px;
   font-weight: 500px;
   color: whitesmoke;
-  background-image: url("pics/twokids.jpg");
+  background-image: url("pics/glassesdog.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -42,7 +42,7 @@ html {
 
 .tabs a.icon {
   background: black;
-  display: block;
+  display: none;
   position: absolute;
   right: 0;
   top: 0;
@@ -95,11 +95,19 @@ h3 {
 .logo {
   filter: grayscale(100%);
   opacity: 0.8;
+  width: 60px;
+  display: inline-flex;
 }
 
 #logo_surv {
   opacity: 0.5;
 }
+
+#logo_main {
+position: absolute;
+right: 0%;
+}
+
 
 #eng_btn {
 
@@ -394,11 +402,15 @@ label,
 
 em {
   color: whitesmoke;
-  padding: 6px;
-  /* font-weight: 600; */
+  /* padding: 6px;
+  /* font-weight: 600;
   border-radius: 10px;
   background: radial-gradient(#172f4a, #00000059);
-  border: solid #ffc107 1px;
+  border: solid #ffc107 1px; */
+  text-decoration: underline;
+
+    text-decoration-color: red;
+    text-decoration-style: solid;
 }
 
 
@@ -600,7 +612,7 @@ p#instr {
   max-width: 500px;
   max-height: 400px;
   width: 90%;
-  background: radial-gradient(#2c00f7, #000000b5);
+  /*background: radial-gradient(#2c00f7, #000000b5);*/
 }
 
 /* QUIZ CONTAINERS*/
@@ -626,7 +638,7 @@ p#instr {
 }
 .questions {
   position: relative;
-  background: radial-gradient(#2c00f7, #000000f2);
+  background: radial-gradient(#65b992, #000000f2);
   padding: 10px;
   border-radius: 25px;
   margin-bottom: 20px;
@@ -647,8 +659,11 @@ p#instr {
 }
 
 .cont_dial {
-  margin-top: 20px;
+   margin-top: 0;
+  text-align: left;
+  padding-left: 80px;
 }
+
 
 /*Contact form*/
 
@@ -799,6 +814,18 @@ textarea {
 
   } */
 
+  #logo_main {
+
+
+
+    margin-top: 10px;
+
+    position: absolute;
+    right: 20%;
+
+    width: 60px;
+    top: -5px;
+}
 
 
   .mobile-container {
