@@ -245,9 +245,9 @@ ol {
   background-size: 280px 280px;
 }
 #inner_2 {
-  max-width: 530px;
-  max-height: 800px;
-  width: 90%;
+  max-width: 830px;
+  max-height: 900px;
+ /* width: 90%;*/
   padding: 45px;
   position: absolute;
   top: 50%;
@@ -388,6 +388,7 @@ label,
   font-weight: normal;
   font-style: normal;
   text-shadow: 0 0 10px black;
+  font-size: 21px;
 }
 
 .p_corr {
@@ -476,34 +477,35 @@ em {
 }
 
 p#instr {
-  background: #4A444C;
-  color: whitesmoke;
-  font-family: inherit;
-  font-size: 14px;
-  padding: 5px;
-  border-radius: 5px;
-  cursor: help;
-  position: fixed;
-  left: 15px;
-  border-bottom: 3px solid rgba(0, 0, 0, 0.2);
-  border-right: 1px solid rgba(0, 0, 0, 0.2);
-  margin-top: 8px;
+    background: #4A444C;
+    color: whitesmoke;
+    font-family: inherit;
+    font-size: 14px;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: help;
+    position: fixed;
+    left: 48px;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.2);
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    margin-top: -17px;
 }
+
 .next {
-  background: #4A444C;
-  color: whitesmoke;
-  font-family: inherit;
-  font-size: 16px;
-  padding: 4px;
-  border-radius: 5px;
-  cursor: pointer;
-  display: flex;
-  right: 40px;
-  position: fixed;
-  margin-top: 35px;
-  margin-right: -20px;
-  border-bottom: 3px solid rgba(0, 0, 0, 0.2);
-  border-right: 1px solid rgba(0, 0, 0, 0.2);
+    background: #4A444C;
+    color: whitesmoke;
+    font-family: inherit;
+    font-size: 16px;
+    padding: 4px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    right: 46px;
+    position: fixed;
+    margin-top: 12px;
+    /* margin-right: -20px;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.2);
+    border-right: 1px solid rgba(0, 0, 0, 0.2);*/
 }
 
 .back {
@@ -515,11 +517,11 @@ p#instr {
   border-radius: 5px;
   cursor: pointer;
   display: flex;
-  margin-top: 35px;
-  right: 70px;
+  margin-top: 12px;
+  right: 90px;
   position: fixed;
-  border-bottom: 3px solid rgba(0, 0, 0, 0.2);
-  border-right: 1px solid rgba(0, 0, 0, 0.2);
+ /* border-bottom: 3px solid rgba(0, 0, 0, 0.2);
+  border-right: 1px solid rgba(0, 0, 0, 0.2);*/
 }
 
 /* Submit Survey Button*/
@@ -600,7 +602,7 @@ p#instr {
   padding: 14px;
   text-align: center;
   margin-top: 20px;
-  background: #56a580ed;
+  background: #56a580f2;
   border-radius: 5px;
 }
 
@@ -629,23 +631,24 @@ p#instr {
   padding: 8px;
   border-radius: 10px;
   text-align: center;
-  font-weight: normal;
+  font-size: 21px;
   color: whitesmoke;
   text-shadow: 0 0 10px black;
   word-wrap: break-word;
   display: inline-block;
   margin-top: 18px;
+  background: radial-gradient(black, transparent);
 }
 .questions {
   position: relative;
   background: radial-gradient(#65b992, #000000f2);
   padding: 10px;
-  border-radius: 25px;
+  border-radius: 12px;
   margin-bottom: 20px;
 }
 
 .cont_answer {
-  /*font-size: 21px;*/
+  font-size: 22px;
   text-align: center;
   margin-bottom: 20px;
 }
@@ -662,6 +665,7 @@ p#instr {
    margin-top: 0;
   text-align: left;
   padding-left: 80px;
+  font-size: 23px;
 }
 
 
@@ -899,7 +903,49 @@ textarea {
 
 
 }
+.cont_dial {
 
+  padding-left: 0px;
+}
+
+.situation {
+
+  font-size: 18px;
+}
+
+.cont_dial {
+
+  font-size: 20px;
+}
+
+.bor_choose {
+
+  font-size: 18px;
+
+
+}
+
+.cont_answer {
+
+  font-size: 19px;
+}
+
+
+
+
+
+}
+
+@media
+   (min-device-width: 375px),
+   (max-device-width: 667px),
+   (-webkit-min-device-pixel-ratio: 2) {
+
+
+    .cont_answer {
+
+      font-size: 10px;
+    }
 
 
 
