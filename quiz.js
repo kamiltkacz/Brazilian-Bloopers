@@ -1766,7 +1766,7 @@ $(function () {
 
   $("#instr").hover(
     function (e) {
-      $(this).css("background", "radial-gradient(#2c00f7, #000000bf)");
+      $(this).css("background", "#65b992");
       $("#inst_hov").show("slow");
     },
     function () {
@@ -1786,7 +1786,7 @@ $(function () {
 $(document).ready(function () {
   $(".next").hover(
     function () {
-      $(this).css({ background: "radial-gradient(#2c00f7, #000000bf)" });
+      $(this).css({ background: "#65b992" });
     },
     function () {
       $(this).css({ background: "" });
@@ -1794,7 +1794,7 @@ $(document).ready(function () {
   );
   $(".back").hover(
     function () {
-      $(this).css({ background: "radial-gradient(#2c00f7, #000000bf)"});
+      $(this).css({ background: "#65b992"});
     },
     function () {
       $(this).css({ background: "" });
@@ -1802,10 +1802,10 @@ $(document).ready(function () {
   );
   $(".hvr-grow").hover(
     function () {
-      $(this).css({ background: "radial-gradient(#2c00f7, #000000bf)" });
+      $(this).css({ background: "#65b992", color:"black" });
     },
     function () {
-      $(this).css({ background: "" });
+      $(this).css({ background: "", color: "" });
     }
   );
 });
