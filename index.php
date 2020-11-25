@@ -53,9 +53,6 @@ require_once('./dbconn.php');
 <div id="mobile-container">
 
  <div class="tabs">
-
-
-
   <a id="defaultOpen" class="tablink" onclick="openPage('Home', this);">Home</a>
   <div id="myLinks">
    <a class="tablink" onclick="openPage('About', this);">About</a>
@@ -66,8 +63,8 @@ require_once('./dbconn.php');
 
    <img src="//bandidosnatv.com/plgns/gtranslate/flags/24/en-us.png" id="eng_btn" style="margin-top: 15px;" height="24" width="24" alt="English_flag">
    <img src="//bandidosnatv.com/plgns/gtranslate/flags/24/pt-br.png" id="port_btn" style="margin-top: 15px;" height="24" width="24" alt="Portuguese_flag">
-   <img src="pics\logo.png" id="logo_main" class="logo"  alt="logo_boy">
   </div>
+  <img src="pics\logo.png" id="logo_main" class="logo" style="top: 1px;"  alt="logo_boy">
 
   <!-- "burger menu -->
   <a href="javascript:void(0);" class="icon" onclick="myBurger()">
@@ -99,14 +96,14 @@ require_once('./dbconn.php');
       <div class="container">
       <fieldset class="field_about">
         <h4 class="leg_highlight" id="leg_high_2">About the Bloopers</h4>
-        <p class="al_left">Let's face it. Learning another language and communicating your ideas in it is no easy feat. English, however omnipresent in this world, is no exception. We're here to help a little with that.<br>If you look up the English defintion of the word <a href="https://www.dictionary.com/browse/blooper" alt="to dictionary.com" style="background: radial-gradient(#ffc107b8, #000000e3); border-radius: 20px; padding: 5px" target="_blank"><span>'blooper'</span></a>&nbsp;you'll get "an embarassing error you make publicly". Although we don't think the mistakes you'll find here are that bad, we do believe correcting them is a great step forward in your language learning journey.<br>&nbsp;Check out the examples<a href="#examples" id="a_examples" style="background: radial-gradient(#ffc107b8, #000000e3); border-radius: 20px; padding: 5px"><span>here.</span></a></p>
+        <p class="al_left">Let's face it. Learning another language and communicating your ideas in it is no easy feat. English, however omnipresent in this world, is no exception. We're here to help a little with that.<br>If you look up the English defintion of the word <a href="https://www.dictionary.com/browse/blooper" alt="to dictionary.com" style="font-style: italic; font-weight: bolder" target="_blank"><span>'blooper'</span></a>&nbsp;you'll get "an embarassing error you make publicly". Although we don't think the mistakes you'll find here are that bad, we do believe correcting them is a great step forward in your language learning journey.<br>&nbsp;Check out the examples<a href="#examples" id="a_examples" style="font-style: italic; font-weight: bolder"><span>here.</span></a></p>
       </fieldset>
       </div>
 
     <div class="container" id="about_qz">
     <fieldset class="field_about">
        <h4 class="leg_highlight" id="leg_high_3">About the Quiz</h4>
-       <p class="al_left"> The quiz is in English only, because you can't have it too easy, can you? The survey however, is offered in both English and  Portuguese. The quiz consists of false cognates, idiomatic expressions, incomplete phrases, etc. You'll be presented with a series of dialogues. You have to use your judgement when picking the only one correct answer.<br><br>&nbsp;There are 30 questions which vary in difficulty. Some mistakes are more common and some less frequent but all of them share the peculiarity of the Portuguese language that does not translate well into English. Even though many of the bloopers are intelligible to native English speakers, you would be better off finding a more common alternative.<br><br>&nbsp;But don't be too hard on yourself - It's okay if you have a piece of Brazil that never leaves your brain, plus why not let the gringos do some thinking?<br><br>Don't forget to enjoy the process! <br><br><a href="#" style="background: radial-gradient(#ffc107b8, #000000e3); border-radius: 20px; padding: 5px", onclick="openPage('Quiz', this);">Ready?</a></p>
+       <p class="al_left"> The quiz is in English only, because you can't have it too easy, can you? The survey however, is offered in both English and  Portuguese. The quiz consists of false cognates, idiomatic expressions, incomplete phrases, etc. You'll be presented with a series of dialogues. You have to use your judgement when picking the only one correct answer.<br><br>&nbsp;There are 30 questions which vary in difficulty. Some mistakes are more common and some less frequent but all of them share the peculiarity of the Portuguese language that does not translate well into English. Even though many of the bloopers are intelligible to native English speakers, you would be better off finding a more common alternative.<br><br>&nbsp;But don't be too hard on yourself - It's okay if you have a piece of Brazil that never leaves your brain, plus why not let the gringos do some thinking?<br><br>Don't forget to enjoy the process! <br><br><a href="#" style="padding: 5px; font-style: italic; font-weight: bolder", onclick="openPage('Quiz', this);">Ready?</a></p>
      </fieldset>
      </div>
      <div class="container">
@@ -166,7 +163,7 @@ require_once('./dbconn.php');
     <!--SURVEY-->
     <div class="popup" id="survey_popup" data-popup="popup-1">
       <div class="popup-inner">
-        <a class="popup-close" data-popup-close="popup-1" href="#">burger</a>
+        <a class="popup-close" data-popup-close="popup-1" href="#">x</a>
 
         <form id="survey" method="post" action="actions.php">
 
@@ -256,7 +253,7 @@ require_once('./dbconn.php');
       <form id="quiz_form" method="post" action="actions.php">
 
 
-        <a class="popup-close" id="popup_close_2" data-popup-close="popup-2" href="#"></a>
+        <a class="popup-close" id="popup_close_2" data-popup-close="popup-2" href="#">x</a>
         <div id="1" class="questions">
 
             <p class="situation">1&nbsp; out of&nbsp; 30</p>
@@ -504,7 +501,7 @@ require_once('./dbconn.php');
             <p class="situation">10&nbsp; out of&nbsp; 30</p>
            <div class="cont_dial">
               <p>Marilia: What things do you like?</p>
-              <p>Gabriel: I'm a typical guy.<span class="error_style"><br><em>&nbsp;I like car.</em></span></p>
+              <p>Gabriel: I'm a typical guy.<span class="error_style"><em>&nbsp;I like car.</em></span></p>
 
           </div>
           <hr>
@@ -1103,12 +1100,12 @@ require_once('./dbconn.php');
   <!-- <img src="pics\logo.png" id="logo_main" class="logo" style="width:80px;height:80px;"> -->
   </div>
        <div id="feedback_div" style="text-align:center">
-        <h4 id="shoot_email">If you enjoyed the quiz say hi here:</h4><br>
+        <h4 id="shoot_email">If you enjoyed the quiz or got a question, say hi here:</h4><br>
         <div style="margin-top: -20px;">
         <i class="fab fa-twitter"></i><a href="https://twitter.com/kamiltkacz" style="font-size: unset;">&nbsp;@kamiltkacz</a><br>
         <a href="mailto:hello@brazilianbloopers.com" style="font-size: unset;">hello@brazilianbloopers.com</a>
         </div>
-        <h3 style="margin-top: 20px;">or if you want to help with any amount</h3>
+        <h3 style="margin-top: 20px;">or if you would like to contribute with any amount</h3>
         <form action="https://www.paypal.com/donate" method="post" target="_blank">
         <input type="hidden" name="cmd" value="_donations" />
         <input type="hidden" name="business" value="TT4G5X6GYRV6C" />
@@ -1203,8 +1200,10 @@ require_once('./dbconn.php');
         let burger = document.getElementById("myLinks");
         if (burger.style.display === "block") {
           burger.style.display = "none";
+          $("#logo_main").css({"top": "1px"});
         } else {
           burger.style.display = "block";
+          $("#logo_main").css({"top": "1px"});
         }
       }
 
