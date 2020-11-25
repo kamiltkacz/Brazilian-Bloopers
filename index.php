@@ -605,8 +605,8 @@ require_once('./dbconn.php');
 
             <p class="situation">14&nbsp; out of&nbsp; 30</p>
            <div class="cont_dial">
-              <p>Marcia: Who were you talking to?<br>I don't know him.</p>
-              <p>Livia: His name's Paulo.<br>&nbsp;<span class="error_style"><em>I knew him</em></span>&nbsp;last week at the gym.</p>
+              <p>Marcia: Who were you talking to?&nbsp;I don't know him.</p>
+              <p>Livia: His name's Paulo.&nbsp;<span class="error_style"><em>I knew him</em></span>&nbsp;last week at the gym.</p>
 
           </div>
           <hr>
@@ -634,7 +634,7 @@ require_once('./dbconn.php');
            <div class="cont_dial">
               <p>Gui: Martin had an accident.</p>
               <p>Vitor: Really?</p>
-              <p>Gui:<span class="error_style"><em>&nbsp;Thanks God</em></span>&nbsp;he's alright.</p>
+              <p>Gui:<span class="error_style"><em>&nbsp;Thanks God&nbsp;</em></span>&nbsp;he's alright.</p>
 
           </div>
           <hr>
@@ -662,7 +662,7 @@ require_once('./dbconn.php');
             <p class="situation">16&nbsp; out of&nbsp; 30</p>
            <div class="cont_dial">
               <p>Carla: Do you like pizza?</p>
-              <p>Joana: Oh, Yeah!<br><span class="error_style"><em>&nbsp;it's my preferred</em></span>&nbsp;food.</p>
+              <p>Joana: Oh, Yeah!<span class="error_style"><em>&nbsp;it's my preferred</em></span>&nbsp;food.</p>
 
           </div>
           <hr>
@@ -688,7 +688,7 @@ require_once('./dbconn.php');
             <p class="situation">17&nbsp; out of&nbsp; 30</p>
            <div class="cont_dial">
               <p>Ana: Did your friend enjoy Rio?</p>
-              <p>Miguel: Yes, but<br><span class="error_style"><em>she was impressed with</em></span><br>violence in the favelas.</p>
+              <p>Miguel: Yes, but<span class="error_style"><em>she was impressed with</em></span>&nbsp;violence in the favelas.</p>
 
           </div>
           <hr>
@@ -697,9 +697,9 @@ require_once('./dbconn.php');
 
                 <input type="radio" id="imp_1" class="rads" name="impress" value="err_2"><label for="imp_1" class="err_label">&nbsp;she was impressing </label><div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
                 <input type="radio" id="imp_2" class="rads" name="impress" value="err_ok"><label for="imp_2" class="err_label">&nbsp;she impressed</label><div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
-                <input type="radio" id="imp_3" class="rads" name="impress" value="corr"><label for="imp_3">&nbsp;she was astonished by</label><div class="d_corr" style="display:none">&nbsp;<i class="fas fa-check"></i></div><br>
+                <input type="radio" id="imp_3" class="rads" name="impress" value="corr"><label for="imp_3">&nbsp;she was schocked by</label><div class="d_corr" style="display:none">&nbsp;<i class="fas fa-check"></i></div><br>
 
-            <div class="exp" id="exp_17" style="display:none"><p class="par_exp"><span class="span_exp">Explanation</span>: We are "Impressed" when somebody or something arouses our interest or admiration. Ex."Messi's skills are impressive."<br> We can say "Astonished" when someone or something makes us surprised in a negative or threatning way. Ex."He was astonished by the stock market crash."</p>
+            <div class="exp" id="exp_17" style="display:none"><p class="par_exp"><span class="span_exp">Explanation</span>: We are "Impressed" when somebody or something arouses our interest or admiration. Ex."Messi's skills are impressive."<br> We can say "schocked" when someone or something makes us surprised in a negative or threatning way. Ex."He was shocked by the stock market crash."</p>
             <div class="resultMsg">
              <h4 class="scoreInfo" id="scoreInfo_17">Your score:&nbsp;</h4>
             </div>
@@ -822,7 +822,7 @@ require_once('./dbconn.php');
             <p class="situation">22&nbsp; out of&nbsp; 30</p>
            <div class="cont_dial">
               <p>Jackie: How was training today?</p>
-              <p>Juliano: Good, but<br><span class="error_style"><em>I stayed tired</em></span>&nbsp;quickly.</p>
+              <p>Juliano: Good, but<span class="error_style"><em>I stayed tired</em></span>&nbsp;quickly.</p>
 
           </div>
           <hr>
@@ -848,7 +848,7 @@ require_once('./dbconn.php');
             <p class="situation">23&nbsp; out of&nbsp; 30</p>
            <div class="cont_dial">
               <p>Tony: How do you feel?</p>
-              <p>Rafael: Not well.<br><span class="error_style"><em>I'm with a headache.</em></span></p>
+              <p>Rafael: Not well.<span class="error_style"><em>I'm with a headache.</em></span></p>
 
           </div>
           <hr>
@@ -1035,7 +1035,7 @@ require_once('./dbconn.php');
             <p class="situation">30 out of&nbsp; 30</p>
            <div class="cont_dial">
               <p>Carol: What makes Brazil different in South America?</p>
-              <p>Jaciara:<span class="error_style"><em>&nbsp;It's the unique country</em></span><br>that speaks Portuguese.</p>
+              <p>Jaciara:<span class="error_style"><em>&nbsp;It's the unique country</em></span>that speaks Portuguese.</p>
 
           </div>
           <hr>
