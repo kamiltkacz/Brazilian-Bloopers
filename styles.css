@@ -42,14 +42,14 @@ html {
 
 .tabs a.icon {
   background: black;
-  display: none;
+  display: block;
   position: absolute;
   right: 0;
   top: 0;
 }
 
 .tabs a:hover {
-  background-color: #ddd;
+  background-color: #65b992;
   color: black;
 }
 
@@ -63,7 +63,7 @@ html {
 
 
 /* All 'a' links */
-/* a {
+a {
   text-decoration: none;
   color: whitesmoke;
   font-weight: 400px;
@@ -74,15 +74,14 @@ html {
 
 a:hover {
   text-decoration: none;
-  color: rgb(255, 238, 34);
+  color: #65b992;
   transition: all 0, 5s;
   border: hidden;
-} */
+}
 
 #a_examples {
 
-  background: radial-gradient(#2c00f7, #00000059);
-  border-radius: 20px; padding: 5px;
+ padding: 5px;
 
 }
 
@@ -94,9 +93,9 @@ h3 {
 
 .logo {
   filter: grayscale(100%);
-  opacity: 0.8;
+ /* opacity: 0.8;*/
   width: 60px;
-  display: inline-flex;
+ /* display: inline-flex;*/
 }
 
 #logo_surv {
@@ -105,7 +104,7 @@ h3 {
 
 #logo_main {
 position: absolute;
-right: 0%;
+right: 5%;
 }
 
 
@@ -220,7 +219,7 @@ ol {
   position: fixed;
   top: 0px;
   left: 0px;
-  background: rgba(3, 3, 3, 0.75);
+  background: rgba(4, 4, 4, 0.90);
 }
 
 /* Inner */
@@ -279,7 +278,7 @@ ol {
   -webkit-transform: translate(50%, -50%);
   transform: translate(50%, -50%);
   border-radius: 10px;
-  background: radial-gradient(#ffc107, #00000059);
+ /* background: radial-gradient(#ffc107, #00000059);*/
   font-family: inherit;
   font-size: 15px;
   text-align: center;
@@ -312,7 +311,7 @@ ol {
   -webkit-transform: translate(50%, -50%);
   transform: translate(50%, -50%);
   border-radius: 10px;
-  background: radial-gradient(#ffc107, #00000059);
+  /*background: radial-gradient(#ffc107, #00000059);*/
   font-family: inherit;
   font-size: 15px;
   text-align: center;
@@ -325,7 +324,7 @@ ol {
 .popup-close:hover {
   -webkit-transform: translate(50%, -50%) rotate(180deg);
   transform: translate(50%, -50%) rotate(180deg);
-  background: radial-gradient(#2c00f7, #000000bf);
+  background: #65b992;
   text-decoration: none;
 }
 
@@ -357,7 +356,7 @@ label,
   font-size: 18px;
   font-family: inherit;
   color: whitesmoke;
-  background: #2c00f7;
+  background: #65b992;
 }
 
 #bor_country,
@@ -418,12 +417,11 @@ em {
 /*BUTTONS*/
 
 #start_survey {
-  background: radial-gradient(#ffc107, #00000059);
   color: whitesmoke;
   font-family: inherit;
   font-size: 22px;
   padding: 5px;
-  border-radius: 20px;
+  border-radius: 5px;
   cursor: pointer;
   text-align: center;
   position: relative;
@@ -431,17 +429,18 @@ em {
   border-right: 1px solid rgba(0, 0, 0, 0.2);
   margin-top: 25px;
   margin-bottom: 35px;
+  background: #4A444C;
 }
 
 #start_quiz {
   opacity: 0.5;
   top: -2px;
-  background: radial-gradient(#ffc107, #00000059);
+  background: #4A444C;
   color: whitesmoke;
   font-family: inherit;
   font-size: 22px;
   padding: 5px;
-  border-radius: 20px;
+  border-radius: 5px;
   cursor: pointer;
   text-align: center;
   position: relative;
@@ -473,16 +472,16 @@ em {
 .back:focus,
 .back:active {
   transform: scale(1.1);
-  background: #362317;
+
 }
 
 p#instr {
-  background: radial-gradient(#ffc107, #00000059);
+  background: #4A444C;
   color: whitesmoke;
   font-family: inherit;
   font-size: 14px;
   padding: 5px;
-  border-radius: 10px;
+  border-radius: 5px;
   cursor: help;
   position: fixed;
   left: 15px;
@@ -491,12 +490,12 @@ p#instr {
   margin-top: 8px;
 }
 .next {
-  background: radial-gradient(#ffc107, #00000059);
+  background: #4A444C;
   color: whitesmoke;
   font-family: inherit;
   font-size: 16px;
   padding: 4px;
-  border-radius: 15px;
+  border-radius: 5px;
   cursor: pointer;
   display: flex;
   right: 40px;
@@ -508,12 +507,12 @@ p#instr {
 }
 
 .back {
-  background: radial-gradient(#ffc107, #00000059);
+  background: #4A444C;
   color: whitesmoke;
   font-family: inherit;
   font-size: 16px;
   padding: 4px;
-  border-radius: 15px;
+  border-radius: 5px;
   cursor: pointer;
   display: flex;
   margin-top: 35px;
@@ -525,29 +524,30 @@ p#instr {
 
 /* Submit Survey Button*/
 #submit_survey {
-  background: radial-gradient(#daa60beb, #000000cf);
+
   color: whitesmoke;
   font-family: inherit;
   font-size: 22px;
   padding: 5px;
-  border-radius: 20px;
+  border-radius: 5px;
   cursor: pointer;
-  margin-top: 25px;
-  right: 12px;
-  position: inherit;
-
+  text-align: center;
+  position: relative;
   border-bottom: 3px solid rgba(0, 0, 0, 0.2);
   border-right: 1px solid rgba(0, 0, 0, 0.2);
+  margin-top: 25px;
+  margin-bottom: 35px;
+  background: #4A444C;
 }
 
 #sub_quiz {
   display: none;
-  background: radial-gradient(#ffc107, #00000059);
+  background: #4A444C;
   color: whitesmoke;
   font-family: inherit;
   font-size: 16px;
   padding: 5px;
-  border-radius: 8px;
+  border-radius: 5px;
   cursor: pointer;
   top: 15px;
   margin-right: 10px;
@@ -558,21 +558,21 @@ p#instr {
 }
 
 #submit_contact {
-  background: radial-gradient(#ffc107, #00000059);
+  background: #4A444C;
   color: whitesmoke;
   font-family: inherit;
   font-size: 22px;
   padding: 6px 26px;
-  border-radius: 2px;
+  border-radius: 5px;
   cursor: pointer;
   /* border-bottom: 3px solid rgba(0, 0, 0, 0.2); */
   /* border-right: 1px solid rgba(0, 0, 0, 0.2); */
-  background: #65b992;
+ /* background: #65b992;*/
   border: 1px solid #b9b9b9;
 }
 
 #check_res {
-  background: radial-gradient(#ffc107, #00000059);
+  background: #4A444C;
   color: whitesmoke;
   font-family: inherit;
   font-size: 16px;
@@ -589,7 +589,7 @@ p#instr {
 /* MAIN CONTAINERS */
 
 .container {
-  border-radius: 3px;
+  border-radius: 5px;
   padding: 20px;
   text-align: center;
   margin-top: 30px;
@@ -600,8 +600,8 @@ p#instr {
   padding: 14px;
   text-align: center;
   margin-top: 20px;
-  background: radial-gradient(#2c00f7, #000000f2);
-  border-radius: 20px;
+  background: #56a580ed;
+  border-radius: 5px;
 }
 
 #question_1 {
@@ -634,7 +634,7 @@ p#instr {
   text-shadow: 0 0 10px black;
   word-wrap: break-word;
   display: inline-block;
-  margin-top: -25px;
+  margin-top: 18px;
 }
 .questions {
   position: relative;
@@ -645,7 +645,7 @@ p#instr {
 }
 
 .cont_answer {
-  font-size: 21px;
+  /*font-size: 21px;*/
   text-align: center;
   margin-bottom: 20px;
 }
@@ -728,9 +728,9 @@ textarea {
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
-  /* background: radial-gradient(#ffc107, #00000059); */
   color: whitesmoke;
-  background: #3b4e65;
+ /* background: #3b4e65;*/
+  background: transparent;
 }
 
 .field_about {
@@ -772,11 +772,11 @@ textarea {
   padding: 5px;
 }
 .span_exp {
-  padding: 8px;
-  border-radius: 10px;
-  background: radial-gradient(#172f4a, #00000059);
-  border: solid #ffc107 1px;
-  font-style: italic;
+    padding: 5px;
+    border-radius: 4px;
+    background: radial-gradient(#172f4a, #00000059);
+
+    font-style: italic;
 }
 #score_span {
   background: radial-gradient(#533019, #0000006e);
@@ -892,6 +892,14 @@ textarea {
   margin-left: unset;
 
 }
+#inner_2 {
+
+  width: 450px;
+  height: 600px;
+
+
+}
+
 
 
 
