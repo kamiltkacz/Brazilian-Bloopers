@@ -924,12 +924,21 @@ textarea {
     .situation {
 
       font-size: 18px;
+      margin-left: 117px;
     }
+
+      #sit_14 {
+        margin-left: 140px;
+      }
 
     .cont_dial {
 
       font-size: 20px;
     }
+      #dial_14 {
+
+        padding-left: 60px;
+      }
 
     .bor_choose {
 
@@ -952,7 +961,11 @@ textarea {
 
 
 
-p#instr {
+
+
+/* BUTTONS */
+
+#instr {
 
   position: absolute;
   margin-top: -55px;
@@ -960,8 +973,6 @@ p#instr {
 
 
 }
-
-/* BUTTONS */
 
 .back {
 
