@@ -603,8 +603,8 @@ require_once('./dbconn.php');
            <div class="cont_dial">
            <img src="pics\logo.png" id="logo_quiz" class="logo" alt="logo_boy">
            <p class="situation">13&nbsp; out of&nbsp; 30</p>
-              <p>Student:<span class="error_style"><em>I have a doubt</em></span> about homework.<br>Can you help me?</p>
-              <p>Teacher: Sure.</p>
+              <p>Teacher:&nbsp;What's the matter?</p>
+              <p>Student:&nbsp;<span class="error_style"><em>I have a doubt</em></span> about homework.</p>
 
           </div>
            <hr class="hr_white">
@@ -612,10 +612,10 @@ require_once('./dbconn.php');
             <p class="p_corr"><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p><br>
 
                 <input type="radio" id="doub_1" class="rads" name="doubt" value="err_2"><label for="doub_1" class="err_label">&nbsp;I have question</label><div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
-                <input type="radio" id="doub_2" class="rads" name="doubt" value="err_ok"><label for="doub_2" class="err_label">&nbsp;I have a questioning</label><div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
+                <input type="radio" id="doub_2" class="rads" name="doubt" value="err_ok"><label for="doub_2" class="err_label">&nbsp;I have doubt</label><div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
                 <input type="radio" id="doub_3" class="rads" name="doubt" value="corr"><label for="doub_3">&nbsp;I have a question</label><div class="d_corr" style="display:none">&nbsp;<i class="fas fa-check"></i></div><br>
 
-            <div class="exp" id="exp_13" style="display:none"><p class="par_exp"><span class="span_exp">Explanation</span>: We say "I am in doubt" when you cannot decide about something. Ex. "I am in doubt as to what to do about my future".<br>We can say "I have a question" or "Something is not clear to me" when we want to ask a teacher for help. We don't say "I have a doubt" in English.</p>
+            <div class="exp" id="exp_13" style="display:none"><p class="par_exp"><span class="span_exp">Explanation</span>: Use "I am in doubt" when you cannot decide about something. Ex. "What should I choose next semester: biology or chemistry? I am in doubt!".<br>Use "I have a question" or "I'm not sure about something" when you want to ask a teacher for help. We don't say "I have a doubt" in English.</p>
             <div class="resultMsg">
              <h4 class="scoreInfo" id="scoreInfo_13">Your score:&nbsp;</h4>
             </div>
@@ -628,9 +628,9 @@ require_once('./dbconn.php');
       <div id="14" class="questions" style="display: none;">
 
 
-           <div class="cont_dial">
+           <div class="cont_dial" id="dial_14">
            <img src="pics\logo.png" id="logo_quiz" class="logo" alt="logo_boy">
-           <p class="situation">14&nbsp; out of&nbsp; 30</p>
+           <p class="situation" id="sit_14">14&nbsp; out of&nbsp; 30</p>
               <p>Marcia: Who were you talking to?&nbsp;I don't know him.</p>
               <p>Livia: His name's Paulo.&nbsp;<span class="error_style"><em>I knew him</em></span>&nbsp;last week at the gym.</p>
 
@@ -660,9 +660,8 @@ require_once('./dbconn.php');
            <div class="cont_dial">
            <img src="pics\logo.png" id="logo_quiz" class="logo" alt="logo_boy">
            <p class="situation">15&nbsp; out of&nbsp; 30</p>
-              <p>Gui: Martin had an accident.</p>
-              <p>Vitor: Really?</p>
-              <p>Gui:<span class="error_style"><em>&nbsp;Thanks God&nbsp;</em></span>&nbsp;he's alright.</p>
+              <p>Vitor: Are you okay? What happened?</p>
+              <p>Gui: Mys sister had an accident!<span class="error_style"><em>&nbsp;Thanks God&nbsp;</em></span>&nbsp;he's alright.</p>
 
           </div>
            <hr class="hr_white">
