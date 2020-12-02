@@ -956,7 +956,7 @@ textarea {
 
   .situation {
     /* margin-top: 18px; */
-    margin-left: 117px;
+   /* margin-left: 117px;*/
     background: radial-gradient(black, transparent);
     position: relative;
   }
@@ -1077,7 +1077,7 @@ textarea {
 
   .situation {
     /* margin-top: 18px; */
-    margin-left: 117px;
+   /* margin-left: 117px;*/
     background: radial-gradient(black, transparent);
     position: relative;
   }
@@ -1200,7 +1200,7 @@ textarea {
 
   .situation {
     /* margin-top: 18px; */
-    margin-left: 117px;
+   /* margin-left: 117px;*/
     background: radial-gradient(black, transparent);
     position: relative;
   }
@@ -1314,7 +1314,7 @@ textarea {
 
   .situation {
     /* margin-top: 18px; */
-    margin-left: 117px;
+   /* margin-left: 117px;*/
     background: radial-gradient(black, transparent);
     position: relative;
   }
@@ -1427,7 +1427,7 @@ textarea {
 
   .situation {
     /* margin-top: 18px; */
-    margin-left: 117px;
+   /* margin-left: 117px;*/
     background: radial-gradient(black, transparent);
     position: relative;
   }
@@ -1540,7 +1540,7 @@ textarea {
 
   .situation {
     /* margin-top: 18px; */
-    margin-left: 117px;
+   /* margin-left: 117px;*/
     background: radial-gradient(black, transparent);
     position: relative;
   }
@@ -1653,7 +1653,7 @@ textarea {
 
   .situation {
     /* margin-top: 18px; */
-    margin-left: 117px;
+   /* margin-left: 117px;*/
     background: radial-gradient(black, transparent);
     position: relative;
   }
@@ -1766,7 +1766,7 @@ textarea {
 
   .situation {
     /* margin-top: 18px; */
-    margin-left: 117px;
+  /*  margin-left: 117px;*/
     background: radial-gradient(black, transparent);
     position: relative;
   }
@@ -1879,7 +1879,7 @@ textarea {
 
   .situation {
     /* margin-top: 18px; */
-    margin-left: 117px;
+   /* margin-left: 117px;*/
     background: radial-gradient(black, transparent);
     position: relative;
   }
@@ -1921,7 +1921,7 @@ textarea {
 
   .situation {
     font-size: 15px;
-    margin-left: 185px;
+    margin-left: inherit;
     margin-top: 35px;
   }
 
@@ -1969,6 +1969,119 @@ textarea {
     font-size: 17px;
   }
 }
+
+@media (max-width: 320px) {
+  /* html, body {
+      height: 100%;
+
+  } */
+  /*
+  #logo_main {
+
+
+
+    margin-top: 10px;
+
+    position: absolute;
+    right: 20%;
+
+    width: 60px;
+    top: -5px;
+} */
+
+  .mobile-container {
+    max-width: 320px;
+    margin: auto;
+    background-color: #555;
+    height: 500px;
+    color: white;
+    border-radius: 10px;
+  }
+
+  .tabs {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+  }
+
+  .tabs #myLinks {
+    display: none;
+  }
+
+  .tabs a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+
+  .tabs a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .tabs a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  /* .tabs {
+    background-color: #4CAF50;
+    color: white;
+  } */
+
+  .tablink {
+    float: unset;
+  }
+
+  .leg_highlight {
+    margin-left: unset;
+    width: 100%;
+  }
+
+  #leg_steps {
+    width: 100%;
+    margin-left: unset;
+  }
+  /* #inner_2 {
+    width: 450px;
+    height: 600px;
+    top: 40%;
+  } */
+  .cont_dial {
+    padding-left: 0px;
+  }
+
+  /* .situation {
+    font-size: 18px;
+  } */
+
+  .cont_dial {
+    font-size: 20px;
+  }
+
+  .bor_choose {
+    font-size: 18px;
+  }
+
+  .cont_answer {
+    font-size: 19px;
+  }
+
+  p#instr {
+    margin-top: 73px;
+  }
+
+  /* .questions {
+
+  top: 90px;
+} */
+}
+
 
 @media (max-width: 480px) {
   /* html, body {
