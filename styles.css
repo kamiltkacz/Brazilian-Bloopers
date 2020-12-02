@@ -11,20 +11,18 @@ html {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
-
 }
 .tabs {
- /*float: right;*/
+  /*float: right;*/
 
- position: relative;
+  position: relative;
 
- /* height: 70px;
+  /* height: 70px;
   line-height: 70px;
 
  /* padding-left: 100px;*/
   overflow: hidden;
   background-color: black;
-
 }
 
 .tabs #myLinks {
@@ -32,7 +30,6 @@ html {
 }
 
 .tabs a {
-
   color: white;
   padding: 14px 16px;
   text-decoration: none;
@@ -54,13 +51,9 @@ html {
 }
 
 .active {
- /* background-color: #4CAF50;*/
+  /* background-color: #4CAF50;*/
   color: white;
 }
-
-
-
-
 
 /* All 'a' links */
 a {
@@ -69,7 +62,6 @@ a {
   font-weight: 400px;
   font-size: 20px;
   word-break: break-word;
-
 }
 
 a:hover {
@@ -80,9 +72,7 @@ a:hover {
 }
 
 #a_examples {
-
- padding: 5px;
-
+  padding: 5px;
 }
 
 h3 {
@@ -93,9 +83,9 @@ h3 {
 
 .logo {
   filter: grayscale(100%);
- /* opacity: 0.8;*/
+  /* opacity: 0.8;*/
   width: 60px;
- /* display: inline-flex;*/
+  /* display: inline-flex;*/
 }
 
 #logo_surv {
@@ -103,44 +93,40 @@ h3 {
 }
 
 #logo_main {
-position: absolute;
-right: 5%;
+  position: absolute;
+  right: 4%;
+  padding-right: 2px;
 }
 
-#logo_quiz {
-    position: absolute;
-    right: 4px;
-    top: 3px;
-    width: 80px;
+.logo_quiz {
+  position: absolute;
+  right: 4px;
+  top: 3px;
+  width: 80px;
+  filter: grayscale(100%);
 }
 .hr_white {
-
   border-top: 1px solid whitesmoke;
 }
 
-
-
 #eng_btn {
-
   display: none;
- /* margin-top: 4px;*/
+  /* margin-top: 4px;*/
 }
-
 
 #eng_btn:hover {
-
-  cursor:pointer;
-
-  }
-
-
-
-#port_btn:hover {
-cursor:pointer;
-
+  cursor: pointer;
 }
 
+#port_btn {
+  margin-top: 15px;
+  height: 24px;
+  width: 24px;
+}
 
+#port_btn:hover {
+  cursor: pointer;
+}
 
 /* Style tab links */
 .tablink {
@@ -153,25 +139,17 @@ cursor:pointer;
   font-size: x-small;
 }
 
-
-
-
-
 .al_left {
   text-align: left;
   margin-top: 20px;
 }
 
 .leg_highlight {
-
   cursor: default;
   font-family: inherit, cursive;
   padding: 5px;
   border-radius: 40px;
 }
-
-
-
 
 /* Style the tab content (and add height:100% for full page content) */
 .tabcontent {
@@ -182,8 +160,6 @@ cursor:pointer;
   text-align: center;
 }
 
-
-
 #leg_steps {
   font-size: 25px;
   cursor: default;
@@ -191,7 +167,6 @@ cursor:pointer;
   padding: 5px;
   border-radius: 40px;
   margin-bottom: 50px;
-
 }
 
 #remove_steps {
@@ -201,7 +176,6 @@ cursor:pointer;
 #have_fun {
   margin-top: 30px;
 }
-
 
 ol {
   list-style-position: outside;
@@ -231,7 +205,7 @@ ol {
   position: fixed;
   top: 0px;
   left: 0px;
-  background: rgba(4, 4, 4, 0.90);
+  background: rgba(4, 4, 4, 0.9);
 }
 
 /* Inner */
@@ -259,7 +233,7 @@ ol {
 #inner_2 {
   max-width: 830px;
   max-height: 900px;
- /* width: 90%;*/
+  /* width: 90%;*/
   padding: 45px;
   position: absolute;
   top: 50%;
@@ -290,23 +264,20 @@ ol {
   -webkit-transform: translate(50%, -50%);
   transform: translate(50%, -50%);
   border-radius: 10px;
- /* background: radial-gradient(#ffc107, #00000059);*/
+  /* background: radial-gradient(#ffc107, #00000059);*/
   font-family: inherit;
-  font-size: 15px;
+  font-size: 21px;
   text-align: center;
   line-height: 90%;
   color: #fff;
-  margin-top: -30px;
+  margin-top: -3px;
   left: -5px;
 }
 
-
 ::-webkit-scrollbar {
-
   width: 8px;
 
   height: 10px;
-
 }
 ::-webkit-scrollbar-thumb {
   border-radius: 8px;
@@ -406,6 +377,7 @@ label,
 .p_corr {
   display: inline-block;
   margin-left: -5px;
+  /* margin-bottom: 5px;*/
 }
 
 .rads {
@@ -421,11 +393,9 @@ em {
   border: solid #ffc107 1px; */
   text-decoration: underline;
 
-    text-decoration-color: red;
-    text-decoration-style: solid;
+  text-decoration-color: red;
+  text-decoration-style: solid;
 }
-
-
 
 /*BUTTONS*/
 
@@ -442,13 +412,13 @@ em {
   border-right: 1px solid rgba(0, 0, 0, 0.2);
   margin-top: 25px;
   margin-bottom: 35px;
-  background: #4A444C;
+  background: #4a444c;
 }
 
 #start_quiz {
   opacity: 0.5;
   top: -2px;
-  background: #4A444C;
+  background: #4a444c;
   color: whitesmoke;
   font-family: inherit;
   font-size: 22px;
@@ -485,60 +455,60 @@ em {
 .back:focus,
 .back:active {
   transform: scale(1.1);
-
 }
 
 #instr {
-    background: #4A444C;
-    color: whitesmoke;
-    font-family: inherit;
-    font-size: 20px;
-    padding: 5px;
-    border-radius: 5px;
-    cursor: help;
-    position: absolute;
-    left: 48px;
-    /* border-bottom: 3px solid rgba(0, 0, 0, 0.2);
+  background: #4a444c;
+  color: whitesmoke;
+  font-family: inherit;
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: help;
+  position: absolute;
+  left: 48px;
+  /* border-bottom: 3px solid rgba(0, 0, 0, 0.2);
     border-right: 1px solid rgba(0, 0, 0, 0.2); */
-    margin-top: -65px;
+  margin-top: -65px;
 }
 
 .next {
-    background: #4A444C;
-    color: whitesmoke;
-    font-family: inherit;
-    font-size: 22px;
-    padding: 4px;
-    border-radius: 5px;
-    cursor: pointer;
-    display: flex;
-    right: 0px;
-    position: absolute;
-    margin-top: -35px;
-    /* margin-right: -20px;
+  background: #4a444c;
+  color: whitesmoke;
+  font-family: inherit;
+  font-size: 26px;
+  padding: 10px;
+  border-radius: 7px;
+  cursor: pointer;
+  display: flex;
+  right: 0px;
+  position: absolute;
+  margin-top: -55px;
+
+  /* margin-right: -20px;
     border-bottom: 3px solid rgba(0, 0, 0, 0.2);
     border-right: 1px solid rgba(0, 0, 0, 0.2);*/
 }
 
 .back {
-  background: #4A444C;
+  background: #4a444c;
   color: whitesmoke;
   font-family: inherit;
-  font-size: 22px;
-  padding: 4px;
-  border-radius: 5px;
+  font-size: 26px;
+  padding: 10px;
+  border-radius: 7px;
   cursor: pointer;
   display: flex;
-  right: 55px;
+  left: 0px;
   position: absolute;
-  margin-top: -35px;
- /* border-bottom: 3px solid rgba(0, 0, 0, 0.2);
+  margin-top: -55px;
+
+  /* border-bottom: 3px solid rgba(0, 0, 0, 0.2);
   border-right: 1px solid rgba(0, 0, 0, 0.2);*/
 }
 
 /* Submit Survey Button*/
 #submit_survey {
-
   color: whitesmoke;
   font-family: inherit;
   font-size: 22px;
@@ -551,12 +521,12 @@ em {
   border-right: 1px solid rgba(0, 0, 0, 0.2);
   margin-top: 25px;
   margin-bottom: 35px;
-  background: #4A444C;
+  background: #4a444c;
 }
 
 #sub_quiz {
   display: none;
-  background: #4A444C;
+  background: #4a444c;
   color: whitesmoke;
   font-family: inherit;
   font-size: 16px;
@@ -572,7 +542,7 @@ em {
 }
 
 #submit_contact {
-  background: #4A444C;
+  background: #4a444c;
   color: whitesmoke;
   font-family: inherit;
   font-size: 22px;
@@ -581,12 +551,12 @@ em {
   cursor: pointer;
   /* border-bottom: 3px solid rgba(0, 0, 0, 0.2); */
   /* border-right: 1px solid rgba(0, 0, 0, 0.2); */
- /* background: #65b992;*/
+  /* background: #65b992;*/
   border: 1px solid #b9b9b9;
 }
 
 #check_res {
-  background: #4A444C;
+  background: #4a444c;
   color: whitesmoke;
   font-family: inherit;
   font-size: 16px;
@@ -676,12 +646,11 @@ em {
 }
 
 .cont_dial {
-   margin-top: 0;
+  margin-top: 0;
   text-align: left;
   padding-left: 80px;
   font-size: 23px;
 }
-
 
 /*Contact form*/
 
@@ -747,7 +716,7 @@ textarea {
   margin-bottom: 16px;
   resize: vertical;
   color: whitesmoke;
- /* background: #3b4e65;*/
+  /* background: #3b4e65;*/
   background: transparent;
 }
 
@@ -790,11 +759,11 @@ textarea {
   padding: 5px;
 }
 .span_exp {
-    padding: 5px;
-    border-radius: 4px;
-    background: radial-gradient(#172f4a, #00000059);
+  padding: 5px;
+  border-radius: 4px;
+  background: radial-gradient(#172f4a, #00000059);
 
-    font-style: italic;
+  font-style: italic;
 }
 #score_span {
   background: radial-gradient(#533019, #0000006e);
@@ -809,7 +778,6 @@ textarea {
 }
 
 @media (min-width: 1025px) {
-
   html,
   body {
     background-repeat: repeat;
@@ -822,384 +790,1192 @@ textarea {
   #score_msg {
     width: 100%;
   }
-
-
 }
 
-/* ----------- iPhone 4 and 4S ----------- */
 
-/* Portrait and Landscape */
-@media only screen
-  and (min-device-width: 320px)
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-
-}
-
-/* Portrait */
-@media only screen
-  and (min-device-width: 320px)
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) {
-}
-
-/* Landscape */
-@media only screen
-  and (min-device-width: 320px)
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: landscape) {
-
-}
 
 /* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
 
 /* Portrait and Landscape */
-@media only screen
-  and (min-device-width: 320px)
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
 }
 
 /* Portrait */
-@media only screen
-  and (min-device-width: 320px)
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+
+
+  #inner_2 {
+    width: 400px;
+    height: 600px;
+    top: 40%;
+ }
+  #logo_main {
+    position: absolute;
+    right: 15%;
+  }
+
+  .logo_quiz {
+    width: 60px;
+  }
+  #port_btn {
+    margin-left: 16px;
+  }
+
+  .questions {
+    top: 80px;
+  }
+
+  [id="11"],
+  [id="14"],
+  [id="30"] {
+    top: 50px;
+  }
+
+  .situation {
+
+    background: radial-gradient(black, transparent);
+    position: relative;
+      font-size: 17px;
+      margin-left: 95px;
+
+  }
+  /* Buttons */
+
+  /* #instr {
+  margin-top: 75px;
+  font-size: 14px;
+} */
+
+  .back {
+    font-size: 17px;
+    left: 1px;
+    margin-top: 13px;
+  }
+
+  .next {
+    font-size: 17px;
+    right: 1px;
+    margin-top: 13px;
+  }
 }
 
 /* Landscape */
-@media only screen
-  and (min-device-width: 320px)
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: landscape) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .logo_quiz {
+    width: 60px;
+    height: 60px;
+    top: 30px;
+  }
 
+  #logo_main {
+    position: absolute;
+    right: 7%;
+  }
+
+  .questions {
+    padding: 0%;
+  }
+
+  .situation {
+    font-size: 15px;
+    margin-left: 85px;
+    margin-top: 35px;
+
+  }
+
+
+  .cont_dial {
+    font-size: 20px;
+  }
+
+
+  .bor_choose {
+    font-size: 15px;
+  }
+
+  .cont_answer {
+    font-size: 17px;
+    margin: -5px;
+    padding-bottom: 20px;
+  }
+
+
+  .popup-close {
+    font-size: 17px;
+    margin-top: 40px;
+    left: -5px;
+  }
+
+  /* BUTTONS */
+
+  /* #instr {
+
+  position: absolute;
+  margin-top: -61px;
+  font-size: 15px;
+
+
+} */
+
+  .back {
+    margin-top: -60px;
+    font-size: 17px;
+  }
+
+  .next {
+    margin-top: -60px;
+    font-size: 17px;
+  }
 }
 
 /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
 
 /* Portrait and Landscape */
-@media only screen
-  and (min-device-width: 375px)
-  and (max-device-width: 667px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
 }
 
 /* Portrait */
-@media only screen
-  and (min-device-width: 375px)
-  and (max-device-width: 667px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) {
-.situation {
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  #logo_main {
+    position: absolute;
+    right: 15%;
+  }
+  #port_btn {
+    margin-left: 16px;
+  }
 
-  /* margin-top: 18px; */
-  margin-left: 117px;
-  background: radial-gradient(black, transparent);
-  position: relative;
+  .questions {
+    top: 80px;
+  }
 
+  [id="11"],
+  [id="14"],
+  [id="30"] {
+    top: 50px;
+  }
 
+  .situation {
+    /* margin-top: 18px; */
+    margin-left: 117px;
+    background: radial-gradient(black, transparent);
+    position: relative;
+  }
+  /* Buttons */
 
-}
+  /* #instr {
+  margin-top: 75px;
+  font-size: 14px;
+} */
 
+  .back {
+    font-size: inherit;
+    left: 1px;
+    margin-top: 13px;
+  }
+
+  .next {
+    font-size: inherit;
+    right: 1px;
+    margin-top: 13px;
+  }
 }
 
 /* Landscape */
-@media only screen
-  and (min-device-width: 375px)
-  and (max-device-width: 667px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: landscape) {
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .logo_quiz {
+    width: 60px;
+    height: 60px;
+    top: 30px;
+  }
 
-    .questions {
-      padding: 0%;
-      height: fit-content;
-    }
+  #logo_main {
+    position: absolute;
+    right: 7%;
+  }
 
-    .situation {
+  .questions {
+    padding: 0%;
+  }
 
-      font-size: 18px;
-      margin-left: 117px;
-    }
-
-      #sit_14 {
-        margin-left: 140px;
-      }
-
-    .cont_dial {
-
-      font-size: 20px;
-    }
-      #dial_14 {
-
-        padding-left: 60px;
-      }
-
-    .bor_choose {
-
-      font-size: 18px;
-
-    }
-
-    .cont_answer {
-
-      font-size: 19px;
-    }
-
-    /* #next_15, #next_20, #back_15, #back_20 {
-
-      margin-top: -59px;
+  .situation {
+    font-size: 15px;
+    margin-left: 127px;
+    margin-top: 35px;
+  }
 
 
-    } */
+  .cont_dial {
+    font-size: 20px;
+  }
 
 
+  .bor_choose {
+    font-size: 15px;
+  }
+
+  .cont_answer {
+    font-size: 17px;
+    margin: -5px;
+    padding-bottom: 20px;
+  }
 
 
+  .popup-close {
+    font-size: 17px;
+    margin-top: 30px;
+    left: -5px;
+  }
 
+  /* BUTTONS */
 
-/* BUTTONS */
-
-#instr {
+  /* #instr {
 
   position: absolute;
-  margin-top: -55px;
+  margin-top: -61px;
   font-size: 15px;
 
 
-}
+} */
 
-.back {
-
-
-    right: 45px;
-    position: absolute;
-    margin-top: -56px;
+  .back {
+    margin-top: -60px;
     font-size: 17px;
+  }
 
-}
-
-.next {
-
-  right: 0px;
-    position: absolute;
-    margin-top: -56px;
+  .next {
+    margin-top: -60px;
     font-size: 17px;
-}
-
+  }
 }
 
 /* ----------- iPhone 6+, 7+ and 8+ ----------- */
 
 /* Portrait and Landscape */
-@media only screen
-  and (min-device-width: 414px)
-  and (max-device-width: 736px)
-  and (-webkit-min-device-pixel-ratio: 3) {
-
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
 }
 
 /* Portrait */
-@media only screen
-  and (min-device-width: 414px)
-  and (max-device-width: 736px)
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: portrait) {
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+
+  #logo_main {
+    position: absolute;
+    right: 15%;
+  }
+  #port_btn {
+    margin-left: 16px;
+  }
+
+  .questions {
+    top: 80px;
+  }
+
+  [id="11"],
+  [id="14"],
+  [id="30"] {
+    top: 50px;
+  }
+
+  .situation {
+    /* margin-top: 18px; */
+    margin-left: 117px;
+    background: radial-gradient(black, transparent);
+    position: relative;
+  }
+  /* Buttons */
+
+  /* #instr {
+  margin-top: 75px;
+  font-size: 14px;
+} */
+
+  .back {
+    font-size: inherit;
+    left: 1px;
+    margin-top: 13px;
+  }
+
+  .next {
+    font-size: inherit;
+    right: 1px;
+    margin-top: 13px;
+  }
 
 }
 
 /* Landscape */
-@media only screen
-  and (min-device-width: 414px)
-  and (max-device-width: 736px)
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: landscape) {
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
 
+  .logo_quiz {
+    width: 60px;
+    height: 60px;
+    top: 30px;
+  }
+
+  #logo_main {
+    position: absolute;
+    right: 7%;
+  }
+
+  .questions {
+    padding: 0%;
+  }
+
+  .situation {
+    font-size: 15px;
+    margin-left: 127px;
+    margin-top: 35px;
+  }
+
+
+  .cont_dial {
+    font-size: 20px;
+  }
+
+
+  .bor_choose {
+    font-size: 15px;
+  }
+
+  .cont_answer {
+    font-size: 17px;
+    margin: -5px;
+    padding-bottom: 20px;
+  }
+
+
+
+  .popup-close {
+    font-size: 17px;
+    margin-top: 30px;
+    left: -5px;
+  }
+
+  /* BUTTONS */
+
+  /* #instr {
+
+  position: absolute;
+  margin-top: -61px;
+  font-size: 15px;
+
+
+} */
+
+  .back {
+    margin-top: -60px;
+    font-size: 17px;
+  }
+
+  .next {
+    margin-top: -60px;
+    font-size: 17px;
+  }
 }
 
 /* ----------- iPhone X ----------- */
 
 /* Portrait and Landscape */
-@media only screen
-  and (min-device-width: 375px)
-  and (max-device-width: 812px)
-  and (-webkit-min-device-pixel-ratio: 3) {
-
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
 }
 
 /* Portrait */
-@media only screen
-  and (min-device-width: 375px)
-  and (max-device-width: 812px)
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: portrait) {
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+  #logo_main {
+    position: absolute;
+    right: 15%;
+  }
+  #port_btn {
+    margin-left: 16px;
+  }
 
+  .questions {
+    top: 80px;
+  }
+
+  [id="11"],
+  [id="14"],
+  [id="30"] {
+    top: 50px;
+  }
+
+  .situation {
+    /* margin-top: 18px; */
+    margin-left: 117px;
+    background: radial-gradient(black, transparent);
+    position: relative;
+  }
+  /* Buttons */
+
+  /* #instr {
+  margin-top: 75px;
+  font-size: 14px;
+} */
+
+  .back {
+    font-size: inherit;
+    left: 1px;
+    margin-top: 13px;
+  }
+
+  .next {
+    font-size: inherit;
+    right: 1px;
+    margin-top: 13px;
+  }
 }
 
 /* Landscape */
-@media only screen
-  and (min-device-width: 375px)
-  and (max-device-width: 812px)
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: landscape) {
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  .logo_quiz {
+    width: 60px;
+    height: 60px;
+    top: 30px;
+  }
 
+  #logo_main {
+    position: absolute;
+    right: 7%;
+  }
+
+  .questions {
+    padding: 0%;
+  }
+
+  .situation {
+    font-size: 15px;
+    margin-left: 185px;
+    margin-top: 35px;
+  }
+
+
+  .cont_dial {
+    font-size: 20px;
+  }
+
+
+  .bor_choose {
+    font-size: 15px;
+  }
+
+  .cont_answer {
+    font-size: 17px;
+    margin: -5px;
+    padding-bottom: 20px;
+  }
+
+
+  .popup-close {
+    font-size: 17px;
+    margin-top: 30px;
+    left: -5px;
+  }
+
+  /* BUTTONS */
+
+  /* #instr {
+
+  position: absolute;
+  margin-top: -61px;
+  font-size: 15px;
+
+
+} */
+
+  .back {
+    margin-top: -60px;
+    font-size: 17px;
+  }
+
+  .next {
+    margin-top: -60px;
+    font-size: 17px;
+  }
 }
-
 
 /* iPhone 11 and iPhone XR , 1792x828px at 326ppi */
-@media only screen
-    and (device-width: 414px)
-    and (device-height: 896px)
-    and (-webkit-device-pixel-ratio: 2)
-    and (orientation : portrait)  {
+@media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait) {
+  #logo_main {
+    position: absolute;
+    right: 15%;
+  }
+  #port_btn {
+    margin-left: 16px;
+  }
 
+  .questions {
+    top: 80px;
+  }
 
-    }
+  [id="11"],
+  [id="14"],
+  [id="30"] {
+    top: 50px;
+  }
 
-    @media only screen
-    and (device-width: 414px)
-    and (device-height: 896px)
-    and (-webkit-device-pixel-ratio: 2)
-    and (orientation : landscape)  {
+  .situation {
+    /* margin-top: 18px; */
+    margin-left: 117px;
+    background: radial-gradient(black, transparent);
+    position: relative;
+  }
+  /* Buttons */
 
+  /* #instr {
+  margin-top: 75px;
+  font-size: 14px;
+} */
 
-    }
+  .back {
+    font-size: inherit;
+    left: 1px;
+    margin-top: 13px;
+  }
 
-
-
-/* iPhone 12 Mini, iPhone 11 Pro, iPhone Xs, and iPhone X, 2436x1125px at 458ppi */
-    @media only screen
-     and (device-width: 375px)
-     and (device-height: 812px)
-     and (-webkit-device-pixel-ratio: 3)
-     and (orientation : portrait) {
-
-
-
-    }
-
-    @media only screen
-    and (device-width: 375px)
-    and (device-height: 812px)
-    and (-webkit-device-pixel-ratio: 3)
-    and (orientation : landscape) {
-
-
-
-   }
-
-
-
-    /* This media query is for: iPhone 11 Pro Max and iPhone Xs Max, 2688x1242px at 458ppi */
-@media only screen
-and (device-width: 414px)
-and (device-height: 896px)
-and (-webkit-device-pixel-ratio: 3)
-and (orientation : portrait) {
-
-
- }
-
- @media only screen
-and (device-width: 414px)
-and (device-height: 896px)
-and (-webkit-device-pixel-ratio: 3)
-and (orientation : landscape) {
-
-
- }
-
-
- /* iPhone 12 Mini, iPhone 11 Pro, iPhone Xs, and iPhone X 2340x1080 pixels at 476ppi */
-@media only screen
-and (device-width: 375px)
-and (device-height: 812px)
-and (-webkit-device-pixel-ratio: 3)
-and (orientation : portrait) {
-
-
+  .next {
+    font-size: inherit;
+    right: 1px;
+    margin-top: 13px;
+  }
 }
 
-@media only screen
-and (device-width: 375px)
-and (device-height: 812px)
-and (-webkit-device-pixel-ratio: 3)
-and (orientation : landscape) {
+@media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape) {
+  .logo_quiz {
+    width: 60px;
+    height: 60px;
+    top: 30px;
+  }
+
+  #logo_main {
+    position: absolute;
+    right: 7%;
+  }
+
+  .questions {
+    padding: 0%;
+  }
+
+  .situation {
+    font-size: 15px;
+    margin-left: 185px;
+    margin-top: 35px;
+  }
 
 
+  .cont_dial {
+    font-size: 20px;
+  }
+
+
+  .bor_choose {
+    font-size: 15px;
+  }
+
+  .cont_answer {
+    font-size: 17px;
+    margin: -5px;
+    padding-bottom: 20px;
+  }
+
+
+  .popup-close {
+    font-size: 17px;
+    margin-top: 30px;
+    left: -5px;
+  }
+
+  /* BUTTONS */
+
+  /* #instr {
+
+  position: absolute;
+  margin-top: -61px;
+  font-size: 15px;
+
+
+} */
+
+  .back {
+    margin-top: -60px;
+    font-size: 17px;
+  }
+
+  .next {
+    margin-top: -60px;
+    font-size: 17px;
+  }
+}
+
+/* iPhone 12 Mini, iPhone 11 Pro, iPhone Xs, and iPhone X, 2436x1125px at 458ppi */
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+  #logo_main {
+    position: absolute;
+    right: 15%;
+  }
+  #port_btn {
+    margin-left: 16px;
+  }
+
+  .questions {
+    top: 80px;
+  }
+
+  [id="11"],
+  [id="14"],
+  [id="30"] {
+    top: 50px;
+  }
+
+  .situation {
+    /* margin-top: 18px; */
+    margin-left: 117px;
+    background: radial-gradient(black, transparent);
+    position: relative;
+  }
+  /* Buttons */
+
+  /* #instr {
+  margin-top: 75px;
+  font-size: 14px;
+} */
+
+  .back {
+    font-size: inherit;
+    left: 1px;
+    margin-top: 13px;
+  }
+
+  .next {
+    font-size: inherit;
+    right: 1px;
+    margin-top: 13px;
+  }
+}
+
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
+  .logo_quiz {
+    width: 60px;
+    height: 60px;
+    top: 30px;
+  }
+
+  #logo_main {
+    position: absolute;
+    right: 7%;
+  }
+
+  .questions {
+    padding: 0%;
+  }
+
+  .situation {
+    font-size: 15px;
+    margin-left: 185px;
+    margin-top: 35px;
+  }
+
+
+  .cont_dial {
+    font-size: 20px;
+  }
+
+
+  .bor_choose {
+    font-size: 15px;
+  }
+
+  .cont_answer {
+    font-size: 17px;
+    margin: -5px;
+    padding-bottom: 20px;
+  }
+
+
+  .popup-close {
+    font-size: 17px;
+    margin-top: 30px;
+    left: -5px;
+  }
+
+  /* BUTTONS */
+
+  /* #instr {
+
+  position: absolute;
+  margin-top: -61px;
+  font-size: 15px;
+
+
+} */
+
+  .back {
+    margin-top: -60px;
+    font-size: 17px;
+  }
+
+  .next {
+    margin-top: -60px;
+    font-size: 17px;
+  }
+}
+
+/* This media query is for: iPhone 11 Pro Max and iPhone Xs Max, 2688x1242px at 458ppi */
+@media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+  #logo_main {
+    position: absolute;
+    right: 15%;
+  }
+  #port_btn {
+    margin-left: 16px;
+  }
+
+  .questions {
+    top: 80px;
+  }
+
+  [id="11"],
+  [id="14"],
+  [id="30"] {
+    top: 50px;
+  }
+
+  .situation {
+    /* margin-top: 18px; */
+    margin-left: 117px;
+    background: radial-gradient(black, transparent);
+    position: relative;
+  }
+  /* Buttons */
+
+  /* #instr {
+  margin-top: 75px;
+  font-size: 14px;
+} */
+
+  .back {
+    font-size: inherit;
+    left: 1px;
+    margin-top: 13px;
+  }
+
+  .next {
+    font-size: inherit;
+    right: 1px;
+    margin-top: 13px;
+  }
+}
+
+@media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
+  .logo_quiz {
+    width: 60px;
+    height: 60px;
+    top: 30px;
+  }
+
+  #logo_main {
+    position: absolute;
+    right: 7%;
+  }
+
+  .questions {
+    padding: 0%;
+  }
+
+  .situation {
+    font-size: 15px;
+    margin-left: 185px;
+    margin-top: 35px;
+  }
+
+
+  .cont_dial {
+    font-size: 20px;
+  }
+
+
+  .bor_choose {
+    font-size: 15px;
+  }
+
+  .cont_answer {
+    font-size: 17px;
+    margin: -5px;
+    padding-bottom: 20px;
+  }
+
+
+  .popup-close {
+    font-size: 17px;
+    margin-top: 30px;
+    left: -5px;
+  }
+
+  /* BUTTONS */
+
+  /* #instr {
+
+  position: absolute;
+  margin-top: -61px;
+  font-size: 15px;
+
+
+} */
+
+  .back {
+    margin-top: -60px;
+    font-size: 17px;
+  }
+
+  .next {
+    margin-top: -60px;
+    font-size: 17px;
+  }
+}
+
+/* iPhone 12 Mini, iPhone 11 Pro, iPhone Xs, and iPhone X 2340x1080 pixels at 476ppi */
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+  #logo_main {
+    position: absolute;
+    right: 15%;
+  }
+  #port_btn {
+    margin-left: 16px;
+  }
+
+  .questions {
+    top: 80px;
+  }
+
+  [id="11"],
+  [id="14"],
+  [id="30"] {
+    top: 50px;
+  }
+
+  .situation {
+    /* margin-top: 18px; */
+    margin-left: 117px;
+    background: radial-gradient(black, transparent);
+    position: relative;
+  }
+  /* Buttons */
+
+  /* #instr {
+  margin-top: 75px;
+  font-size: 14px;
+} */
+
+  .back {
+    font-size: inherit;
+    left: 1px;
+    margin-top: 13px;
+  }
+
+  .next {
+    font-size: inherit;
+    right: 1px;
+    margin-top: 13px;
+  }
+}
+
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
+  .logo_quiz {
+    width: 60px;
+    height: 60px;
+    top: 30px;
+  }
+
+  #logo_main {
+    position: absolute;
+    right: 7%;
+  }
+
+  .questions {
+    padding: 0%;
+  }
+
+  .situation {
+    font-size: 15px;
+    margin-left: 185px;
+    margin-top: 35px;
+  }
+
+
+  .cont_dial {
+    font-size: 20px;
+  }
+
+
+  .bor_choose {
+    font-size: 15px;
+  }
+
+  .cont_answer {
+    font-size: 17px;
+    margin: -5px;
+    padding-bottom: 20px;
+  }
+
+
+  .popup-close {
+    font-size: 17px;
+    margin-top: 30px;
+    left: -5px;
+  }
+
+  /* BUTTONS */
+
+  /* #instr {
+
+  position: absolute;
+  margin-top: -61px;
+  font-size: 15px;
+
+
+} */
+
+  .back {
+    margin-top: -60px;
+    font-size: 17px;
+  }
+
+  .next {
+    margin-top: -60px;
+    font-size: 17px;
+  }
 }
 
 /* iPhone 12 and iPhone 12 Pro 2532x1170 pixels at 460ppi */
-@media only screen
-    and (device-width: 390px)
-    and (device-height: 844px)
-    and (-webkit-device-pixel-ratio: 3)
-    and (orientation : portrait) {
+@media only screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+  #logo_main {
+    position: absolute;
+    right: 15%;
+  }
+  #port_btn {
+    margin-left: 16px;
+  }
+
+  .questions {
+    top: 80px;
+  }
+
+  [id="11"],
+  [id="14"],
+  [id="30"] {
+    top: 50px;
+  }
+
+  .situation {
+    /* margin-top: 18px; */
+    margin-left: 117px;
+    background: radial-gradient(black, transparent);
+    position: relative;
+  }
+  /* Buttons */
+
+  /* #instr {
+  margin-top: 75px;
+  font-size: 14px;
+} */
+
+  .back {
+    font-size: inherit;
+    left: 1px;
+    margin-top: 13px;
+  }
+
+  .next {
+    font-size: inherit;
+    right: 1px;
+    margin-top: 13px;
+  }
+}
+
+@media only screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
+  .logo_quiz {
+    width: 60px;
+    height: 60px;
+    top: 30px;
+  }
+
+  #logo_main {
+    position: absolute;
+    right: 7%;
+  }
+
+  .questions {
+    padding: 0%;
+  }
+
+  .situation {
+    font-size: 15px;
+    margin-left: 185px;
+    margin-top: 35px;
+  }
 
 
-    }
-
-    @media only screen
-    and (device-width: 390px)
-    and (device-height: 844px)
-    and (-webkit-device-pixel-ratio: 3)
-    and (orientation : landscape) {
+  .cont_dial {
+    font-size: 20px;
+  }
 
 
-    }
+  .bor_choose {
+    font-size: 15px;
+  }
 
-    /* iPhone 12 Pro Max 2778x1284 pixels at 458ppi */
-     @media only screen
-     and (device-width: 428px)
-     and (device-height: 926px)
-     and (-webkit-device-pixel-ratio: 3)
-     and (orientation : portrait) {
-     }
-
-     @media only screen
-     and (device-width: 428px)
-     and (device-height: 926px)
-     and (-webkit-device-pixel-ratio: 3)
-     and (orientation : landscape) {
-     }
+  .cont_answer {
+    font-size: 17px;
+    margin: -5px;
+    padding-bottom: 20px;
+  }
 
 
+  .popup-close {
+    font-size: 17px;
+    margin-top: 30px;
+    left: -5px;
+  }
+
+  /* BUTTONS */
+
+  /* #instr {
+
+  position: absolute;
+  margin-top: -61px;
+  font-size: 15px;
 
 
+} */
+
+  .back {
+    margin-top: -60px;
+    font-size: 17px;
+  }
+
+  .next {
+    margin-top: -60px;
+    font-size: 17px;
+  }
+}
+
+/* iPhone 12 Pro Max 2778x1284 pixels at 458ppi */
+@media only screen and (device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+  #logo_main {
+    position: absolute;
+    right: 15%;
+  }
+  #port_btn {
+    margin-left: 16px;
+  }
+
+  .questions {
+    top: 80px;
+  }
+
+  [id="11"],
+  [id="14"],
+  [id="30"] {
+    top: 50px;
+  }
+
+  .situation {
+    /* margin-top: 18px; */
+    margin-left: 117px;
+    background: radial-gradient(black, transparent);
+    position: relative;
+  }
+  /* Buttons */
+
+  /* #instr {
+  margin-top: 75px;
+  font-size: 14px;
+} */
+
+  .back {
+    font-size: inherit;
+    left: 1px;
+    margin-top: 13px;
+  }
+
+  .next {
+    font-size: inherit;
+    right: 1px;
+    margin-top: 13px;
+  }
+}
+
+@media only screen and (device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
+  .logo_quiz {
+    width: 60px;
+    height: 60px;
+    top: 30px;
+  }
+
+  #logo_main {
+    position: absolute;
+    right: 7%;
+  }
+
+  .questions {
+    padding: 0%;
+  }
+
+  .situation {
+    font-size: 15px;
+    margin-left: 185px;
+    margin-top: 35px;
+  }
 
 
+  .cont_dial {
+    font-size: 20px;
+  }
 
 
+  .bor_choose {
+    font-size: 15px;
+  }
+
+  .cont_answer {
+    font-size: 17px;
+    margin: -5px;
+    padding-bottom: 20px;
+  }
 
 
+  .popup-close {
+    font-size: 17px;
+    margin-top: 30px;
+    left: -5px;
+  }
+
+  /* BUTTONS */
+
+  /* #instr {
+
+  position: absolute;
+  margin-top: -61px;
+  font-size: 15px;
 
 
+} */
 
+  .back {
+    margin-top: -60px;
+    font-size: 17px;
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-
+  .next {
+    margin-top: -60px;
+    font-size: 17px;
+  }
+}
 
 @media (max-width: 480px) {
   /* html, body {
       height: 100%;
 
   } */
-
+  /*
   #logo_main {
 
 
@@ -1211,8 +1987,7 @@ and (orientation : landscape) {
 
     width: 60px;
     top: -5px;
-}
-
+} */
 
   .mobile-container {
     max-width: 480px;
@@ -1254,8 +2029,6 @@ and (orientation : landscape) {
     color: black;
   }
 
-
-
   /* .tabs {
     background-color: #4CAF50;
     color: white;
@@ -1265,68 +2038,46 @@ and (orientation : landscape) {
     float: unset;
   }
 
+  .leg_highlight {
+    margin-left: unset;
+    width: 100%;
+  }
 
-.leg_highlight {
+  #leg_steps {
+    width: 100%;
+    margin-left: unset;
+  }
+  /* #inner_2 {
+    width: 450px;
+    height: 600px;
+    top: 40%;
+  } */
+  .cont_dial {
+    padding-left: 0px;
+  }
 
-  margin-left: unset;
-  width: 100%;
-}
+  /* .situation {
+    font-size: 18px;
+  } */
 
-#leg_steps {
+  .cont_dial {
+    font-size: 20px;
+  }
 
-  width: 100%;
-  margin-left: unset;
+  .bor_choose {
+    font-size: 18px;
+  }
 
-}
-#inner_2 {
+  .cont_answer {
+    font-size: 19px;
+  }
 
-  width: 450px;
-  height: 600px;
-  top: 40%;
+  p#instr {
+    margin-top: 73px;
+  }
 
-
-}
-.cont_dial {
-
-  padding-left: 0px;
-}
-
-.situation {
-
-  font-size: 18px;
-}
-
-.cont_dial {
-
-  font-size: 20px;
-}
-
-.bor_choose {
-
-  font-size: 18px;
-
-
-}
-
-.cont_answer {
-
-  font-size: 19px;
-}
-
-p#instr {
-
-  margin-top: 73px;
-}
-
-.questions {
+  /* .questions {
 
   top: 90px;
+} */
 }
-
-
-
-
-
-}
-
-
