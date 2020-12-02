@@ -584,7 +584,7 @@ $("#start_quiz").on("click", function () {
 
   // Next button changes to Submit and moves
   $("#next_30").text("Submit");
-  $("#back_30").css({ right: "78px" });
+ // $("#back_30").css({ right: "78px" });
 
   $("#next_30").on("click", function () {
     if (!$("input[name='uniq']:checked").val()) {
