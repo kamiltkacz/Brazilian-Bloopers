@@ -638,7 +638,7 @@ require_once('./dbconn.php');
          <div id="15" class="questions" style="display: none;">
          <a class="popup-close" data-popup-close="popup-2" href="#">x</a>
 
-           <div class="cont_dial">
+           <div class="cont_dial" id="dial_15">
            <img src="pics\logo.png" class="logo_quiz" alt="logo_boy">
            <p class="situation">15&nbsp; out of&nbsp; 30</p>
               <p>Vitor: Are you okay? What happened?</p>
@@ -646,7 +646,7 @@ require_once('./dbconn.php');
 
           </div>
            <hr class="hr_white">
-          <div class="cont_answer">
+          <div class="cont_answer" id="answer_15">
             <p class="p_corr"><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p><br>
 
                 <input type="radio" id="god_1" class="rads" name="god" value="corr"><label for="god_1">&nbsp;Thank God she's alright</label><div class="d_corr" style="display:none">&nbsp;<i class="fas fa-check"></i></div><br>
@@ -1076,7 +1076,7 @@ require_once('./dbconn.php');
 
           </div>
            <hr class="hr_white">
-          <div class="cont_answer">
+          <div class="cont_answer" id="answer_30">
             <p class="p_corr"><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p><br>
 
                 <input type="radio" id="unq_1" class="rads" name="uniq" value="corr"><label for="unq_1">&nbsp;it's the only country</label>
