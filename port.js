@@ -6,25 +6,27 @@
 
 
 
-const tabsSwitch = $(`<div class="tabs">
- <button id="defaultOpen" class="tablink" onclick="openPage('Home', this);">
-    <a href="#" id="active_home" class="active">Home</a>
-  </button>
- <button class="tablink" onclick="openPage('About', this);">
-    <a href="#" class="active">Sobre</a>
-  </button>
- <button class="tablink" onclick="openPage('Quiz', this);">
-    <a href="#" id="active_quiz" class="active">O Quiz</a>
-  </button>
- <button class="tablink" onclick="openPage('Contact', this);">
-    <a href="#" class="active">Contato</a>
-  </button>
+const tabsSwitch = $(`
+<div class="tabs">
+ <a id="defaultOpen" class="tablink" onclick="openPage('Home', this);">Home</a>
+ <div id="myLinks">
+  <a class="tablink" onclick="openPage('About', this);">Sobre</a>
 
-  <img src="//bandidosnatv.com/plgns/gtranslate/flags/24/en-us.png" id="eng_btn" height="24" width="24" alt="English_flag">
-  <div id="port_icon>
-  <img src="//bandidosnatv.com/plgns/gtranslate/flags/24/pt-br.png" id="port_btn" height="24" width="24" alt="Portuguese_flag">
+  <a class="tablink" onclick="openPage('Quiz', this);">Quiz</a>
+
+  <a class="tablink" onclick="openPage('Contact', this);">Contato</a>
+
+  <img src="//bandidosnatv.com/plgns/gtranslate/flags/24/en-us.png" id="eng_btn" alt="English_flag">
+  <img src="//bandidosnatv.com/plgns/gtranslate/flags/24/pt-br.png" id="port_btn" style="display: none" alt="Portuguese_flag">
  </div>
-</div>`);
+ <img src="logo.png" id="logo_main" class="logo" alt="logo_boy">
+
+ <!-- "burger menu" -->
+ <a href="javascript:void(0);" class="icon" onclick="myBurger()">
+   <i class="fa fa-bars"></i></a>
+</div>
+
+`);
 
 
 
@@ -44,7 +46,7 @@ const aboutSwitch = $(` <div id="About" class="tabcontent">
     <div class="container">
     <fieldset class="field_about">
       <h4 class="leg_highlight" id="leg_high_2" >Sobre os Bloopers</h4>
-      <p class="al_left">Vamos ser sinceros. Aprender outro idioma e comunicar suas idéias nele não é tarefa fácil. O inglês, embora onipresente neste mundo, não é exceção. Estamos aqui para ajudar um pouco nisso.<br>Se você procurar a definição em inglês da palavra <a href="https://www.dictionary.com/browse/blooper" alt="to dictionary.com" style="background: radial-gradient(#ffc107b8, #000000e3); border-radius: 20px; padding: 5px" target="_blank"><span>'blooper',</span></a>&nbsp;você achará: "um erro embaraçoso que você comete publicamente". Embora não achemos que os erros que você encontrará aqui sejam tão graves, acreditamos que corrigi-los seja um grande passo em sua jornada de aprendizado deste idioma.<br>&nbsp;Confira os exemplos<a href="#examples" id="a_examples" style="background: radial-gradient(#ffc107b8, #000000e3); border-radius: 20px; padding: 5px"><span>aqui.</span></a></p>
+      <p class="al_left">Vamos ser sinceros. Aprender outro idioma e comunicar suas idéias nele não é tarefa fácil. O inglês, embora onipresente neste mundo, não é exceção. Estamos aqui para ajudar um pouco nisso.<br>Se você procurar a definição em inglês da palavra <a href="https://www.dictionary.com/browse/blooper" alt="to dictionary.com" style="font-style: italic; font-weight: bolder" target="_blank"><span>'blooper'</span></a>&nbsp;você achará: "um erro embaraçoso que você comete publicamente". Embora não achemos que os erros que você encontrará aqui sejam tão graves, acreditamos que corrigi-los seja um grande passo em sua jornada de aprendizado deste idioma.<br>&nbsp;Confira os exemplos<a href="#examples" id="a_examples" style="font-style: italic; font-weight: bolder"><span>aqui.</span></a></p>
     </fieldset>
     </div>
 
@@ -52,37 +54,17 @@ const aboutSwitch = $(` <div id="About" class="tabcontent">
   <fieldset class="field_about">
      <h4 class="leg_highlight" id="leg_high_3">Sobre o Quiz</h4>
      <p class="al_left"> O teste é apenas em inglês, porque não pode ficar muito fácil, não é? A pesquisa, entretanto, é oferecida em inglês e português.
-     O quiz consiste em falsos cognatos, expressões idiomáticas, frases incompletas, etc. Você verá uma série de diálogos e deverá usar o seu bom senso ao escolher a única resposta correta.<br><br>&nbsp;Existem 30 questões que variam em graus de dificuldade. Alguns erros são mais comuns e outros menos frequentes, mas todos eles compartilham a peculiaridade da língua portuguesa que não traduz bem para o inglês. Mesmo que muitos dos erros sejam inteligíveis para falantes nativos de inglês, seria melhor você encontrar uma alternativa mais comum.<br><br>&nbsp;Mas não seja tão duro consigo mesmo - Tudo bem se você tem um pedaço do Brasil que nunca sai do seu cérebro, e por que não deixar os gringos pensarem um pouco?<br><br>Não se esqueça de se divertir no processo!<br><br><a href="#" style="background: radial-gradient(#ffc107b8, #000000e3); border-radius: 20px; padding: 5px", onclick="openPage('Quiz', this);">Pronto?</a></p>
+     O quiz consiste em falsos cognatos, expressões idiomáticas, frases incompletas, etc. Você verá uma série de diálogos e deverá usar o seu bom senso ao escolher a única resposta correta.<br><br>&nbsp;Existem 30 questões que variam em graus de dificuldade. Alguns erros são mais comuns e outros menos frequentes, mas todos eles compartilham a peculiaridade da língua portuguesa que não traduz bem para o inglês. Mesmo que muitos dos erros sejam inteligíveis para falantes nativos de inglês, seria melhor você encontrar uma alternativa mais comum.<br><br>&nbsp;Mas não seja tão duro consigo mesmo - Tudo bem se você tem um pedaço do Brasil que nunca sai do seu cérebro, e por que não deixar os gringos pensarem um pouco?<br><br>Não se esqueça de se divertir no processo!<br><br><a href="#" style="padding: 5px; font-style: italic; font-weight: bolder", onclick="openPage('Quiz', this);">Pronto?</a></p>
    </fieldset>
    </div>
    <div class="container">
       <picture>
-        <h4 class="leg_highlight"><a id="examples" style="font-size: 25px;">Exemplo de um erro brasileiro em um diálogo casual:</a></h4>
+        <a id="examples"></a>
+        <h4 class="leg_highlight">Exemplo de um erro brasileiro em um diálogo casual:</h4>
        <br><br><p>A) Did you like your trip?</p><br><p style="margin-top: -20px;">B)&nbsp;<span class="error_style"><em>More or less.</em></span></p><br><p style="margin-top: -20px;">A) Hmmm...&#129300;</p>
-       <hr>
-       <p class="al_left">&nbsp;<span class="span_exp">Explanation:</span>&nbsp;In English we generally say "More or Less" to use it as an approximation of numbers, quantities, a "plus-minus". Ex. "It will cost you 40 reais, more or less."<br><br>We don't answer with "more or less" only to express value or our impression of something. If you thought the above mentioned trip could have been better, you answer "Not much". If you thought it could have been worse, you answer "It was okay." You should remember that answers like this are hugely context dependent, meaning, you will have to develop what you mean in more detail.</p>
+       <hr class="hr_white">
+       <p class="al_left">&nbsp;<span class="span_exp">Explanation:</span>&nbsp;In English we generally say "More or Less" to use it as an approximation of numbers, quantities, a "plus-minus". Ex. "It will cost you 40 reais, more or less."<br><br>We don't answer with "more or less" only to express value or our impression of something. If you thought the above mentioned trip could have been better, you answer "Not much". If you thought it could have been worse, you answer "It was okay." You should remember that answers like this are hugely context dependent, meaning, you will have to explain what you mean in more detail.</p>
       </picture>
-    </div>
-    <div class="container">
-      <h4 class="leg_highlight">Exemplo nº 1 de Bloopers no mainstream.</h4><br>
-      <p class="al_left">O hit de Michel Telo, uma canção brasileira muito popular, tem uma leitura um pouco áspera em inglês. Entre outros erros menores, o título "Se eu te pegar" dá como algo traduzido do português de maneira desajeitada. Mesmo o showbusiness mainstream não está livre de erros ocasionais.</p>
-      <div class="yt-resp">
-        <iframe class="iframe-resp" src="https://www.youtube.com/embed/CwC5BFX7rqQ" alt="youtube_link_1">
-        </iframe>
-      </div>
-      <p class="al_left">Abaixo está uma versão muito melhor, onde o cantor americano Pitbull dá seu próprio toque às letras. "Se eu te pegar" torna-se "Se eu te pegar" e "assim você vai me matar" se traduz em "você está jogando duro para conseguir". Bom trabalho Pitbull</p>
-      <div class="yt-resp">
-        <iframe class="iframe-resp" src="https://www.youtube.com/embed/bMMnn2kA_HY" alt="youtube_link_2">
-        </iframe>
-        </div>
-    </div>
-    <div class="container">
-    <h4 class="leg_highlight">Exemplo nº 2 de Bloopers no mainstream.</h4><br>
-      <p class="al_left">A entrevista de Marília Gabriela com a única Madonna é claramente estranha, em parte devido à incapacidade do jornalista brasileiro de colocar seu inglês nos trilhos. Madonna claramente não era caridosa e estava com vontade de ajudar.</p>
-        <div class="yt-resp">
-          <iframe class="iframe-resp" src="https://www.youtube.com/embed/zHMhLd4MUC4" alt="youtube_link_3">
-          </iframe>
-        </div>
     </div>
 
 </div>`);
@@ -170,6 +152,7 @@ $("#port_btn").on("click", function () {
 
 
   $(".tabs").replaceWith(tabsSwitch);
+
   $("#eng_btn").show();
   $("header").replaceWith(headerSwitch);
   $("#About").replaceWith(aboutSwitch);
@@ -240,12 +223,6 @@ $("#port_btn").on("click", function () {
 
 
     });
-
-
-
-
-
-
 
 
   });
