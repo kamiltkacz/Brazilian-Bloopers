@@ -247,16 +247,18 @@ require_once('./dbconn.php');
            <hr class="hr_white">
           <div class="cont_answer">
             <p class="p_corr"><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p><br>
-          <!--<div class="radio_block">-->
+         <label class="radio-inline">
                 <input type="radio" id="i_1" class="rads" name="sub_it" value="err_ok"><label for="i_1" class="err_label">&nbsp;It hot!</label>
                 <div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
-
+         </label>
+         <label class="radio-inline">
                 <input type="radio" id="i_2" class="rads" name="sub_it" value="corr"><label for="i_2">&nbsp;It is hot!</label>
                 <div class="d_corr" style="display:none">&nbsp;<i class="fas fa-check"></i></div><br>
-
+                </label>
+                <label class="radio-inline">
                 <input type="radio" id="i_3" class="rads" name="sub_it" value="err_2"><label for="i_3" class="err_label">&nbsp;Is it hot!</label>
                 <div class="d_err" style="display:none">&nbsp;<i class="fas fa-times" aria-hidden="true"></i></div><br>
-         <!-- </div> -->
+                </label>
            <div class="exp" id="exp_1" style="display:none">
            <p class="par_exp"><span class="span_exp">Explanation</span>: In English every sentence needs the subject&nbsp;(He, She, It etc).<br>Ex.&nbsp;"It is important to drive responsibly."<br>Ex.&nbsp;"It doesn't rain much in Brasilia."</p>
             <div class="resultMsg">
@@ -802,8 +804,8 @@ require_once('./dbconn.php');
             </div>
            </div>
           </div>
-          <button id="next_20" class="next">next</button>
-          <button id="back_20" class="back">back</button>
+          <button id="next_20" class="next">Next</button>
+          <button id="back_20" class="back">Back</button>
         </div>
 
 
@@ -832,8 +834,8 @@ require_once('./dbconn.php');
             </div>
            </div>
           </div>
-          <button id="next_21" class="next">next</button>
-          <button id="back_21" class="back">back</button>
+          <button id="next_21" class="next">Next</button>
+          <button id="back_21" class="back">Back</button>
         </div>
 
         <div id="22" class="questions" style="display: none;">
@@ -860,8 +862,8 @@ require_once('./dbconn.php');
             </div>
            </div>
           </div>
-          <button id="next_22" class="next">next</button>
-          <button id="back_22" class="back">back</button>
+          <button id="next_22" class="next">Next</button>
+          <button id="back_22" class="back">Back</button>
         </div>
 
         <div id="23" class="questions" style="display: none;">
@@ -888,8 +890,8 @@ require_once('./dbconn.php');
             </div>
            </div>
           </div>
-          <button id="next_23" class="next">next</button>
-          <button id="back_23" class="back">back</button>
+          <button id="next_23" class="next">Next</button>
+          <button id="back_23" class="back">Back</button>
         </div>
 
         <div id="24" class="questions" style="display: none;">
@@ -921,8 +923,8 @@ require_once('./dbconn.php');
             </div>
           </div>
         </div>
-          <button id="next_24" class="next">next</button>
-          <button id="back_24" class="back">back</button>
+          <button id="next_24" class="next">Next</button>
+          <button id="back_24" class="back">Back</button>
       </div>
 
         <div id="25" class="questions" style="display: none;">
