@@ -24,7 +24,8 @@ require_once('./dbconn.php');
    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
   <!-- My CSS -->
-  <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="styles.css">
+
 
 
   <!--Londrina Font-->
@@ -52,7 +53,6 @@ require_once('./dbconn.php');
 <body>
 
 <div id="mobile-container">
-
  <div class="tabs">
   <a id="defaultOpen" class="tablink" onclick="openPage('Home', this);">Home</a>
   <div id="myLinks">
@@ -62,16 +62,15 @@ require_once('./dbconn.php');
 
    <a class="tablink" onclick="openPage('Contact', this);">Contact</a>
 
-   <img src="//bandidosnatv.com/plgns/gtranslate/flags/24/en-us.png" id="eng_btn" style="margin-top: 15px;" height="24" width="24" alt="English_flag">
+   <img src="//bandidosnatv.com/plgns/gtranslate/flags/24/en-us.png" id="eng_btn" alt="English_flag">
    <img src="//bandidosnatv.com/plgns/gtranslate/flags/24/pt-br.png" id="port_btn"  alt="Portuguese_flag">
   </div>
-  <img src="pics\logo.png" id="logo_main" class="logo" style="top: 1px;"  alt="logo_boy">
+  <img src="logo.png" id="logo_main" class="logo" alt="logo_boy">
 
-  <!-- "burger menu -->
+  <!-- "burger menu" -->
   <a href="javascript:void(0);" class="icon" onclick="myBurger()">
     <i class="fa fa-bars"></i></a>
  </div>
-
 </div>
 
 
@@ -112,7 +111,6 @@ require_once('./dbconn.php');
         <a id="examples"></a>
           <h4 class="leg_highlight">Example of a Brazilian Blooper in a casual dialogue:</h4>
          <br><br><p>A) Did you like your trip?</p><br><p style="margin-top: -20px;">B)&nbsp;<span class="error_style"><em>More or less.</em></span></p><br><p style="margin-top: -20px;">A) Hmmm...&#129300;</p>
-          <hr class="hr_white">
           <p class="al_left">&nbsp;<span class="span_exp">Explanation:</span>&nbsp;In English we generally say "More or Less" to use it as an approximation of numbers, quantities, a "plus-minus". Ex. "It will cost you 40 reais, more or less."<br><br>We don't answer with "more or less" only to express value or our impression of something. If you thought the above mentioned trip could have been better, you answer "Not much". If you thought it could have been worse, you answer "It was okay." You should remember that answers like this are hugely context dependent, meaning, you will have to explain what you mean in more detail.</p>
         </picture>
       </div>
@@ -124,9 +122,7 @@ require_once('./dbconn.php');
 
 
     <div class="container" id="steps">
-    <div class="logo_div">
-    <!-- <img src="pics\logo.png" id="logo_main" class="logo" style="width:80px;height:80px; margin-bottom: 30px;"> -->
-    </div>
+
 
         <h4 id="leg_steps">Follow these 3 simple steps:</h4>
             <div id="remove_steps">
@@ -143,7 +139,7 @@ require_once('./dbconn.php');
     <!--SURVEY-->
     <div class="popup" id="survey_popup" data-popup="popup-1">
       <div class="popup-inner">
-      <a class="popup-close" data-popup-close="popup-1" href="#">x</a>
+      <a class="popup-close" id="popup_close_1" data-popup-close="popup-1" href="#">x</a>
 
         <form id="survey" method="post" action="actions.php">
 
@@ -236,7 +232,7 @@ require_once('./dbconn.php');
 
 
         <div id="1" class="questions">
-        <a class="popup-close" data-popup-close="popup-2" href="#">x</a>
+         <a class="popup-close" id="popup_close_2" data-popup-close="popup-2" href="#">x</a>
 
             <div class="cont_dial">
             <img src="pics\logo.png" class="logo_quiz" alt="logo_boy">
@@ -272,7 +268,7 @@ require_once('./dbconn.php');
 
          <div id="2" class="questions" style="display: none;">
 
-         <a class="popup-close" data-popup-close="popup-2" href="#">x</a>
+          <a class="popup-close"id="popup_close_2" data-popup-close="popup-2" href="#">x</a>
           <div class="cont_dial">
           <img src="pics\logo.png" class="logo_quiz" alt="logo_boy">
           <p class="situation">2&nbsp; out of&nbsp; 30</p>
@@ -302,7 +298,7 @@ require_once('./dbconn.php');
         </div>
 
        <div id="3" class="questions" style="display: none;">
-       <a class="popup-close" data-popup-close="popup-2" href="#">x</a>
+        <a class="popup-close"id="popup_close_2" data-popup-close="popup-2" href="#">x</a>
 
              <div class="cont_dial">
              <img src="pics\logo.png" class="logo_quiz" alt="logo_boy">
@@ -330,7 +326,7 @@ require_once('./dbconn.php');
 
       <div id="4" class="questions" style="display: none;">
 
-      <a class="popup-close" data-popup-close="popup-2" href="#">x</a>
+       <a class="popup-close"id="popup_close_2" data-popup-close="popup-2" href="#">x</a>
            <div class="cont_dial">
            <img src="pics\logo.png" class="logo_quiz" alt="logo_boy">
            <p class="situation">4&nbsp; out of&nbsp; 30</p>
@@ -358,7 +354,7 @@ require_once('./dbconn.php');
 
 
        <div id="5" class="questions" style="display: none;">
-       <a class="popup-close" data-popup-close="popup-2" href="#">x</a>
+        <a class="popup-close"id="popup_close_2" data-popup-close="popup-2" href="#">x</a>
 
            <div class="cont_dial">
            <img src="pics\logo.png" class="logo_quiz" alt="logo_boy">
@@ -387,7 +383,7 @@ require_once('./dbconn.php');
 
         <div id="6" class="questions" style="display: none;">
 
-        <a class="popup-close" data-popup-close="popup-2" href="#">x</a>
+         <a class="popup-close"id="popup_close_2" data-popup-close="popup-2" href="#">x</a>
            <div class="cont_dial">
            <img src="pics\logo.png" class="logo_quiz" alt="logo_boy">
            <p class="situation">6&nbsp; out of&nbsp; 30</p>
@@ -414,7 +410,7 @@ require_once('./dbconn.php');
         </div>
 
       <div id="7" class="questions" style="display: none;">
-      <a class="popup-close" data-popup-close="popup-2" href="#">x</a>
+       <a class="popup-close"id="popup_close_2" data-popup-close="popup-2" href="#">x</a>
            <div class="cont_dial">
            <img src="pics\logo.png" class="logo_quiz" alt="logo_boy">
             <p class="situation">7&nbsp; out of &nbsp;30</p>
@@ -441,7 +437,7 @@ require_once('./dbconn.php');
         </div>
 
           <div id="8" class="questions" style="display: none;">
-          <a class="popup-close" data-popup-close="popup-2" href="#">x</a>
+           <a class="popup-close"id="popup_close_2" data-popup-close="popup-2" href="#">x</a>
            <div class="cont_dial">
            <img src="pics\logo.png" class="logo_quiz" alt="logo_boy">
             <p class="situation">8&nbsp;out of&nbsp; 30</p>
@@ -468,7 +464,7 @@ require_once('./dbconn.php');
         </div>
 
         <div id="9" class="questions" style="display: none;">
-        <a class="popup-close" data-popup-close="popup-2" href="#">x</a>
+         <a class="popup-close"id="popup_close_2" data-popup-close="popup-2" href="#">x</a>
 
            <div class="cont_dial">
            <img src="pics\logo.png" class="logo_quiz" alt="logo_boy">
@@ -497,7 +493,7 @@ require_once('./dbconn.php');
 
         <div id="10" class="questions" style="display: none;">
 
-        <a class="popup-close" data-popup-close="popup-2" href="#">x</a>
+         <a class="popup-close"id="popup_close_2" data-popup-close="popup-2" href="#">x</a>
            <div class="cont_dial">
            <img src="pics\logo.png" class="logo_quiz" alt="logo_boy">
            <p class="situation">10&nbsp; out of&nbsp; 30</p>
@@ -525,7 +521,7 @@ require_once('./dbconn.php');
 
 
       <div id="11" class="questions" style="display: none;">
-      <a class="popup-close" data-popup-close="popup-2" href="#">x</a>
+       <a class="popup-close"id="popup_close_2" data-popup-close="popup-2" href="#">x</a>
 
            <div class="cont_dial">
            <img src="pics\logo.png" class="logo_quiz" alt="logo_boy">
@@ -554,7 +550,7 @@ require_once('./dbconn.php');
 
          <div id="12" class="questions" style="display: none;">
 
-         <a class="popup-close" data-popup-close="popup-2" href="#">x</a>
+          <a class="popup-close"id="popup_close_2" data-popup-close="popup-2" href="#">x</a>
            <div class="cont_dial">
            <img src="pics\logo.png" class="logo_quiz" alt="logo_boy">
            <p class="situation">12&nbsp; out of&nbsp; 30</p>
@@ -581,7 +577,7 @@ require_once('./dbconn.php');
         </div>
 
          <div id="13" class="questions" style="display: none;">
-         <a class="popup-close" data-popup-close="popup-2" href="#">x</a>
+          <a class="popup-close"id="popup_close_2" data-popup-close="popup-2" href="#">x</a>
 
            <div class="cont_dial">
            <img src="pics\logo.png" class="logo_quiz" alt="logo_boy">
@@ -610,7 +606,7 @@ require_once('./dbconn.php');
 
       <div id="14" class="questions" style="display: none;">
 
-      <a class="popup-close" data-popup-close="popup-2" href="#">x</a>
+       <a class="popup-close"id="popup_close_2" data-popup-close="popup-2" href="#">x</a>
            <div class="cont_dial" id="dial_14">
            <img src="pics\logo.png" class="logo_quiz" alt="logo_boy">
            <p class="situation" id="sit_14">14&nbsp; out of&nbsp; 30</p>
@@ -638,7 +634,7 @@ require_once('./dbconn.php');
 
 
          <div id="15" class="questions" style="display: none;">
-         <a class="popup-close" data-popup-close="popup-2" href="#">x</a>
+          <a class="popup-close"id="popup_close_2" data-popup-close="popup-2" href="#">x</a>
 
            <div class="cont_dial" id="dial_15">
            <img src="pics\logo.png" class="logo_quiz" alt="logo_boy">
@@ -669,7 +665,7 @@ require_once('./dbconn.php');
 
         <div id="16" class="questions" style="display: none;">
 
-        <a class="popup-close" data-popup-close="popup-2" href="#">x</a>
+         <a class="popup-close"id="popup_close_2" data-popup-close="popup-2" href="#">x</a>
            <div class="cont_dial">
            <img src="pics\logo.png" class="logo_quiz" alt="logo_boy">
            <p class="situation">16&nbsp; out of&nbsp; 30</p>
@@ -697,7 +693,7 @@ require_once('./dbconn.php');
 
          <div id="17" class="questions" style="display: none;">
 
-         <a class="popup-close" data-popup-close="popup-2" href="#">x</a>
+          <a class="popup-close"id="popup_close_2" data-popup-close="popup-2" href="#">x</a>
            <div class="cont_dial">
            <img src="pics\logo.png" class="logo_quiz" alt="logo_boy">
            <p class="situation">17&nbsp; out of&nbsp; 30</p>
@@ -724,7 +720,7 @@ require_once('./dbconn.php');
         </div>
 
         <div id="18" class="questions" style="display: none;">
-        <a class="popup-close" data-popup-close="popup-2" href="#">x</a>
+         <a class="popup-close"id="popup_close_2" data-popup-close="popup-2" href="#">x</a>
 
            <div class="cont_dial">
            <img src="pics\logo.png" class="logo_quiz" alt="logo_boy">
@@ -753,7 +749,7 @@ require_once('./dbconn.php');
 
 
         <div id="19" class="questions" style="display: none;">
-        <a class="popup-close" data-popup-close="popup-2" href="#">x</a>
+         <a class="popup-close"id="popup_close_2" data-popup-close="popup-2" href="#">x</a>
 
            <div class="cont_dial">
            <img src="pics\logo.png" class="logo_quiz" alt="logo_boy">
@@ -782,7 +778,7 @@ require_once('./dbconn.php');
 
         <div id="20" class="questions" style="display: none;">
 
-        <a class="popup-close" data-popup-close="popup-2" href="#">x</a>
+         <a class="popup-close"id="popup_close_2" data-popup-close="popup-2" href="#">x</a>
            <div class="cont_dial">
            <img src="pics\logo.png" class="logo_quiz" alt="logo_boy">
            <p class="situation">20&nbsp; out of&nbsp; 30</p>
@@ -811,7 +807,7 @@ require_once('./dbconn.php');
 
 
         <div id="21" class="questions" style="display: none;">
-        <a class="popup-close" data-popup-close="popup-2" href="#">x</a>
+         <a class="popup-close"id="popup_close_2" data-popup-close="popup-2" href="#">x</a>
 
            <div class="cont_dial">
            <img src="pics\logo.png" class="logo_quiz" alt="logo_boy">
@@ -840,7 +836,7 @@ require_once('./dbconn.php');
 
         <div id="22" class="questions" style="display: none;">
 
-        <a class="popup-close" data-popup-close="popup-2" href="#">x</a>
+         <a class="popup-close"id="popup_close_2" data-popup-close="popup-2" href="#">x</a>
            <div class="cont_dial">
            <img src="pics\logo.png" class="logo_quiz" alt="logo_boy">
            <p class="situation">22&nbsp; out of&nbsp; 30</p>
@@ -868,7 +864,7 @@ require_once('./dbconn.php');
 
         <div id="23" class="questions" style="display: none;">
 
-        <a class="popup-close" data-popup-close="popup-2" href="#">x</a>
+         <a class="popup-close"id="popup_close_2" data-popup-close="popup-2" href="#">x</a>
            <div class="cont_dial">
            <img src="pics\logo.png" class="logo_quiz" alt="logo_boy">
            <p class="situation">23&nbsp; out of&nbsp; 30</p>
@@ -895,7 +891,7 @@ require_once('./dbconn.php');
         </div>
 
         <div id="24" class="questions" style="display: none;">
-        <a class="popup-close" data-popup-close="popup-2" href="#">x</a>
+         <a class="popup-close"id="popup_close_2" data-popup-close="popup-2" href="#">x</a>
 
            <div class="cont_dial">
            <img src="pics\logo.png" class="logo_quiz" alt="logo_boy">
@@ -929,7 +925,7 @@ require_once('./dbconn.php');
 
         <div id="25" class="questions" style="display: none;">
 
-        <a class="popup-close" data-popup-close="popup-2" href="#">x</a>
+         <a class="popup-close"id="popup_close_2" data-popup-close="popup-2" href="#">x</a>
            <div class="cont_dial">
            <img src="pics\logo.png" class="logo_quiz" alt="logo_boy">
            <p class="situation">25&nbsp; out of&nbsp; 30</p>
@@ -956,7 +952,7 @@ require_once('./dbconn.php');
         </div>
 
         <div id="26" class="questions" style="display: none;">
-        <a class="popup-close" data-popup-close="popup-2" href="#">x</a>
+         <a class="popup-close"id="popup_close_2" data-popup-close="popup-2" href="#">x</a>
 
            <div class="cont_dial">
            <img src="pics\logo.png" class="logo_quiz" alt="logo_boy">
@@ -985,7 +981,7 @@ require_once('./dbconn.php');
 
         <div id="27" class="questions" style="display: none;">
 
-        <a class="popup-close" data-popup-close="popup-2" href="#">x</a>
+         <a class="popup-close"id="popup_close_2" data-popup-close="popup-2" href="#">x</a>
            <div class="cont_dial">
            <img src="pics\logo.png" class="logo_quiz" alt="logo_boy">
            <p class="situation">27&nbsp; out of&nbsp; 30</p>
@@ -1012,7 +1008,7 @@ require_once('./dbconn.php');
         </div>
 
         <div id="28" class="questions" style="display: none;">
-        <a class="popup-close" data-popup-close="popup-2" href="#">x</a>
+         <a class="popup-close"id="popup_close_2" data-popup-close="popup-2" href="#">x</a>
 
            <div class="cont_dial">
            <img src="pics\logo.png" class="logo_quiz" alt="logo_boy">
@@ -1041,7 +1037,7 @@ require_once('./dbconn.php');
 
         <div id="29" class="questions" style="display: none;">
 
-        <a class="popup-close" data-popup-close="popup-2" href="#">x</a>
+         <a class="popup-close"id="popup_close_2" data-popup-close="popup-2" href="#">x</a>
            <div class="cont_dial">
            <img src="pics\logo.png" class="logo_quiz" alt="logo_boy">
            <p class="situation">29&nbsp; out of&nbsp; 30</p>
@@ -1068,7 +1064,7 @@ require_once('./dbconn.php');
         </div>
 
         <div id="30" class="questions" style="display: none;">
-        <a class="popup-close" data-popup-close="popup-2" href="#">x</a>
+         <a class="popup-close"id="popup_close_2" data-popup-close="popup-2" href="#">x</a>
 
            <div class="cont_dial" id="dial_30">
            <img src="pics\logo.png" class="logo_quiz" alt="logo_boy">
@@ -1136,7 +1132,6 @@ require_once('./dbconn.php');
   <div id="Contact" class="tabcontent">
     <div class="container" id="contact_cont">
     <div class="logo_div">
-  <!-- <img src="pics\logo.png" id="logo_main" class="logo" style="width:80px;height:80px;"> -->
   </div>
        <div id="feedback_div" style="text-align:center">
         <h4 id="shoot_email">If you enjoyed the quiz or got a question, say hi here:</h4><br>
@@ -1268,8 +1263,8 @@ require_once('./dbconn.php');
      <script src="quiz.js"></script>
      <!--JS Contactform -->
      <script src="contact_form.js"></script>
-       <!--JS Portuguese -->
-       <script src="port.js"></script>
+     <!--JS Portuguese -->
+     <script src="port.js"></script>
 
 
 
