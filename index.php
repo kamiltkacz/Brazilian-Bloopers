@@ -235,7 +235,7 @@ require_once('./dbconn.php');
          <a class="popup-close" id="popup_close_2" data-popup-close="popup-2" href="#">x</a>
 
             <div class="cont_dial">
-            <img src="pics\logo.png" class="logo_quiz" alt="logo_boy">
+            <img src="logo.png" class="logo_quiz" alt="logo_boy">
             <p class="situation">1&nbsp; out of&nbsp; 30</p>
               <p>Milene:&nbsp;How is the weather today?</p>
               <p>Camile:<span class="error_style"><em>&nbsp;Is hot!</em></span></p>
@@ -270,7 +270,7 @@ require_once('./dbconn.php');
 
           <a class="popup-close"id="popup_close_2" data-popup-close="popup-2" href="#">x</a>
           <div class="cont_dial">
-          <img src="pics\logo.png" class="logo_quiz" alt="logo_boy">
+          <img src="logo.png" class="logo_quiz" alt="logo_boy">
           <p class="situation">2&nbsp; out of&nbsp; 30</p>
               <p>Tiago: How was the party?</p>
               <p>Magda: Oh,<span class="error_style"><em>it was too good</em></span>.&nbsp;I danced all night.</p>
@@ -301,7 +301,7 @@ require_once('./dbconn.php');
         <a class="popup-close"id="popup_close_2" data-popup-close="popup-2" href="#">x</a>
 
              <div class="cont_dial">
-             <img src="pics\logo.png" class="logo_quiz" alt="logo_boy">
+             <img src="logo.png" class="logo_quiz" alt="logo_boy">
              <p class="situation">3&nbsp; out of&nbsp; 30</p>
               <p>Rudolfo: Do you like your teacher?</p>
               <p>Pedro: Yes, I love her.<span class="error_style"><em>She has much patience</em></span>&nbsp;with me.</p>
@@ -328,7 +328,7 @@ require_once('./dbconn.php');
 
        <a class="popup-close"id="popup_close_2" data-popup-close="popup-2" href="#">x</a>
            <div class="cont_dial">
-           <img src="pics\logo.png" class="logo_quiz" alt="logo_boy">
+           <img src="logo.png" class="logo_quiz" alt="logo_boy">
            <p class="situation">4&nbsp; out of&nbsp; 30</p>
               <p>Livia: Do you want to see a movie?</p>
               <p>Alex: Sure,<span class="error_style"><em>&nbsp;have many</em></span>&nbsp;good films on Netflix.</p>
@@ -357,7 +357,7 @@ require_once('./dbconn.php');
         <a class="popup-close"id="popup_close_2" data-popup-close="popup-2" href="#">x</a>
 
            <div class="cont_dial">
-           <img src="pics\logo.png" class="logo_quiz" alt="logo_boy">
+           <img src="logo.png" class="logo_quiz" alt="logo_boy">
            <p class="situation">5&nbsp; out of&nbsp; 30</p>
               <p>Sylvio: What's your mother's profession?</p>
               <p>Cristiano:<span class="error_style"><em>My mother, she is a dentist.</em></span></p>
@@ -385,7 +385,7 @@ require_once('./dbconn.php');
 
          <a class="popup-close"id="popup_close_2" data-popup-close="popup-2" href="#">x</a>
            <div class="cont_dial">
-           <img src="pics\logo.png" class="logo_quiz" alt="logo_boy">
+           <img src="logo.png" class="logo_quiz" alt="logo_boy">
            <p class="situation">6&nbsp; out of&nbsp; 30</p>
               <p>Mauricio: Did you like the movie?</p>
               <p>Beata: Yes,<span class="error_style"><em>I liked.</em></span></p>
@@ -412,7 +412,7 @@ require_once('./dbconn.php');
       <div id="7" class="questions" style="display: none;">
        <a class="popup-close"id="popup_close_2" data-popup-close="popup-2" href="#">x</a>
            <div class="cont_dial">
-           <img src="pics\logo.png" class="logo_quiz" alt="logo_boy">
+           <img src="logo.png" class="logo_quiz" alt="logo_boy">
             <p class="situation">7&nbsp; out of &nbsp;30</p>
               <p>Claudio: Where were you?</p>
               <p>Natalia: I went to the store<span class="error_style"><em>&nbsp;for buy some milk.</em></span></p>
@@ -439,7 +439,7 @@ require_once('./dbconn.php');
           <div id="8" class="questions" style="display: none;">
            <a class="popup-close"id="popup_close_2" data-popup-close="popup-2" href="#">x</a>
            <div class="cont_dial">
-           <img src="pics\logo.png" class="logo_quiz" alt="logo_boy">
+           <img src="logo.png" class="logo_quiz" alt="logo_boy">
             <p class="situation">8&nbsp;out of&nbsp; 30</p>
               <p>Joe: How old are you?</p>
               <p>Camilo:<span class="error_style"><em>I have 38 years.</em></span></p>
@@ -467,7 +467,7 @@ require_once('./dbconn.php');
          <a class="popup-close"id="popup_close_2" data-popup-close="popup-2" href="#">x</a>
 
            <div class="cont_dial">
-           <img src="pics\logo.png" class="logo_quiz" alt="logo_boy">
+           <img src="logo.png" class="logo_quiz" alt="logo_boy">
            <p class="situation">9&nbsp;out of&nbsp; 30</p>
               <p>Marcel: <span class="error_style"><em>Hey Guy,&nbsp;</em></span>how are you?</p>
               <p>Steven: I'm okay, thanks.</p>
@@ -495,7 +495,7 @@ require_once('./dbconn.php');
 
          <a class="popup-close"id="popup_close_2" data-popup-close="popup-2" href="#">x</a>
            <div class="cont_dial">
-           <img src="pics\logo.png" class="logo_quiz" alt="logo_boy">
+           <img src="logo.png" class="logo_quiz" alt="logo_boy">
            <p class="situation">10&nbsp; out of&nbsp; 30</p>
               <p>Marilia: What things do you like?</p>
               <p>Gabriel: I'm a typical guy.<span class="error_style"><em>&nbsp;I like car.</em></span></p>
@@ -524,7 +524,7 @@ require_once('./dbconn.php');
        <a class="popup-close"id="popup_close_2" data-popup-close="popup-2" href="#">x</a>
 
            <div class="cont_dial">
-           <img src="pics\logo.png" class="logo_quiz" alt="logo_boy">
+           <img src="logo.png" class="logo_quiz" alt="logo_boy">
            <p class="situation">11&nbsp; out of&nbsp; 30</p>
               <p>Rogerio: What time do I have to be at the airport?</p>
               <p>Sansa: 3.30. Hurry up or you will <span class="error_style"><em>lose your flight.</em></span></p>
@@ -552,7 +552,7 @@ require_once('./dbconn.php');
 
           <a class="popup-close"id="popup_close_2" data-popup-close="popup-2" href="#">x</a>
            <div class="cont_dial">
-           <img src="pics\logo.png" class="logo_quiz" alt="logo_boy">
+           <img src="logo.png" class="logo_quiz" alt="logo_boy">
            <p class="situation">12&nbsp; out of&nbsp; 30</p>
               <p>Sabrina: Why are you nervous?</p>
               <p>Nando:<span class="error_style"><em>&nbsp;I discussed with Marta about&nbsp;</em></span>politics.</p>
@@ -580,7 +580,7 @@ require_once('./dbconn.php');
           <a class="popup-close"id="popup_close_2" data-popup-close="popup-2" href="#">x</a>
 
            <div class="cont_dial">
-           <img src="pics\logo.png" class="logo_quiz" alt="logo_boy">
+           <img src="logo.png" class="logo_quiz" alt="logo_boy">
            <p class="situation">13&nbsp; out of&nbsp; 30</p>
               <p>Teacher:&nbsp;What's the matter?</p>
               <p>Student:&nbsp;<span class="error_style"><em>I have a doubt</em></span> about homework.</p>
@@ -608,7 +608,7 @@ require_once('./dbconn.php');
 
        <a class="popup-close"id="popup_close_2" data-popup-close="popup-2" href="#">x</a>
            <div class="cont_dial" id="dial_14">
-           <img src="pics\logo.png" class="logo_quiz" alt="logo_boy">
+           <img src="logo.png" class="logo_quiz" alt="logo_boy">
            <p class="situation" id="sit_14">14&nbsp; out of&nbsp; 30</p>
               <p>Marcia: Who were you talking to?&nbsp;I don't know him.</p>
               <p>Livia: Paulo.&nbsp;<span class="error_style"><em>I knew him</em></span>&nbsp;last week at the gym.</p>
@@ -637,7 +637,7 @@ require_once('./dbconn.php');
           <a class="popup-close"id="popup_close_2" data-popup-close="popup-2" href="#">x</a>
 
            <div class="cont_dial" id="dial_15">
-           <img src="pics\logo.png" class="logo_quiz" alt="logo_boy">
+           <img src="logo.png" class="logo_quiz" alt="logo_boy">
            <p class="situation">15&nbsp; out of&nbsp; 30</p>
               <p>Vitor: Are you okay? What happened?</p>
               <p>Gui: My sister had an accident!<span class="error_style"><em>&nbsp;Thanks God&nbsp;</em></span>&nbsp;she's alright.</p>
@@ -667,7 +667,7 @@ require_once('./dbconn.php');
 
          <a class="popup-close"id="popup_close_2" data-popup-close="popup-2" href="#">x</a>
            <div class="cont_dial">
-           <img src="pics\logo.png" class="logo_quiz" alt="logo_boy">
+           <img src="logo.png" class="logo_quiz" alt="logo_boy">
            <p class="situation">16&nbsp; out of&nbsp; 30</p>
               <p>Carla: Do you like pizza?</p>
               <p>Joana: Oh, Yeah!<span class="error_style"><em>&nbsp;it's my preferred</em></span>&nbsp;food.</p>
@@ -695,7 +695,7 @@ require_once('./dbconn.php');
 
           <a class="popup-close"id="popup_close_2" data-popup-close="popup-2" href="#">x</a>
            <div class="cont_dial">
-           <img src="pics\logo.png" class="logo_quiz" alt="logo_boy">
+           <img src="logo.png" class="logo_quiz" alt="logo_boy">
            <p class="situation">17&nbsp; out of&nbsp; 30</p>
               <p>Ana: Did your friend enjoy Rio?</p>
               <p>Miguel: Yes, but<span class="error_style"><em>she was impressed with</em></span>&nbsp;violence.</p>
@@ -723,7 +723,7 @@ require_once('./dbconn.php');
          <a class="popup-close"id="popup_close_2" data-popup-close="popup-2" href="#">x</a>
 
            <div class="cont_dial">
-           <img src="pics\logo.png" class="logo_quiz" alt="logo_boy">
+           <img src="logo.png" class="logo_quiz" alt="logo_boy">
            <p class="situation">18&nbsp; out of&nbsp; 30</p>
               <p>Gustavo: I'd like to visit Italy.</p>
               <p>Erik: Me too, I have a lot of&nbsp;<span class="error_style"><em>parents there.</em></span></p>
@@ -752,7 +752,7 @@ require_once('./dbconn.php');
          <a class="popup-close"id="popup_close_2" data-popup-close="popup-2" href="#">x</a>
 
            <div class="cont_dial">
-           <img src="pics\logo.png" class="logo_quiz" alt="logo_boy">
+           <img src="logo.png" class="logo_quiz" alt="logo_boy">
            <p class="situation">19&nbsp;out of&nbsp; 30</p>
               <p>Dani: Are you free at 6?</p>
               <p>Carlos: No,&nbsp;<span class="error_style"><em>I go out from</em></span>&nbsp;work at 7.</p>
@@ -780,7 +780,7 @@ require_once('./dbconn.php');
 
          <a class="popup-close"id="popup_close_2" data-popup-close="popup-2" href="#">x</a>
            <div class="cont_dial">
-           <img src="pics\logo.png" class="logo_quiz" alt="logo_boy">
+           <img src="logo.png" class="logo_quiz" alt="logo_boy">
            <p class="situation">20&nbsp; out of&nbsp; 30</p>
               <p>Magda: Do you enjoy working from home.</p>
               <p>Alex: Yes, I don't have to<span class="error_style"><em>&nbsp;use a suit!</em></span></p>
@@ -810,7 +810,7 @@ require_once('./dbconn.php');
          <a class="popup-close"id="popup_close_2" data-popup-close="popup-2" href="#">x</a>
 
            <div class="cont_dial">
-           <img src="pics\logo.png" class="logo_quiz" alt="logo_boy">
+           <img src="logo.png" class="logo_quiz" alt="logo_boy">
            <p class="situation">21&nbsp; out of&nbsp; 30</p>
               <p>Suzy: Hi Mariana, how are you?</p>
               <p>Mariana: I'm tired, I studied<span class="error_style"><em>&nbsp;during 3 hours.</em></span></p>
@@ -838,7 +838,7 @@ require_once('./dbconn.php');
 
          <a class="popup-close"id="popup_close_2" data-popup-close="popup-2" href="#">x</a>
            <div class="cont_dial">
-           <img src="pics\logo.png" class="logo_quiz" alt="logo_boy">
+           <img src="logo.png" class="logo_quiz" alt="logo_boy">
            <p class="situation">22&nbsp; out of&nbsp; 30</p>
               <p>Jackie: How was training today?</p>
               <p>Juliano: Good, but<span class="error_style"><em>I stayed tired</em></span>&nbsp;quickly.</p>
@@ -866,7 +866,7 @@ require_once('./dbconn.php');
 
          <a class="popup-close"id="popup_close_2" data-popup-close="popup-2" href="#">x</a>
            <div class="cont_dial">
-           <img src="pics\logo.png" class="logo_quiz" alt="logo_boy">
+           <img src="logo.png" class="logo_quiz" alt="logo_boy">
            <p class="situation">23&nbsp; out of&nbsp; 30</p>
               <p>Tony: How do you feel?</p>
               <p>Rafael: Not well.<span class="error_style"><em>I'm with a headache.</em></span></p>
@@ -894,7 +894,7 @@ require_once('./dbconn.php');
          <a class="popup-close"id="popup_close_2" data-popup-close="popup-2" href="#">x</a>
 
            <div class="cont_dial">
-           <img src="pics\logo.png" class="logo_quiz" alt="logo_boy">
+           <img src="logo.png" class="logo_quiz" alt="logo_boy">
            <p class="situation">24&nbsp; out of&nbsp; 30</p>
               <p>Luiza: What did you do last night?</p>
               <p>Breno: I saw 3<span class="error_style"><em>&nbsp;chapters</em></span> of "Friends".</p>
@@ -927,7 +927,7 @@ require_once('./dbconn.php');
 
          <a class="popup-close"id="popup_close_2" data-popup-close="popup-2" href="#">x</a>
            <div class="cont_dial">
-           <img src="pics\logo.png" class="logo_quiz" alt="logo_boy">
+           <img src="logo.png" class="logo_quiz" alt="logo_boy">
            <p class="situation">25&nbsp; out of&nbsp; 30</p>
               <p>Susan: What's wrong?</p>
               <p>Saulo: I got a<span class="error_style"><em>&nbsp;bad note</em></span>&nbsp;on my English test.</p>
@@ -955,7 +955,7 @@ require_once('./dbconn.php');
          <a class="popup-close"id="popup_close_2" data-popup-close="popup-2" href="#">x</a>
 
            <div class="cont_dial">
-           <img src="pics\logo.png" class="logo_quiz" alt="logo_boy">
+           <img src="logo.png" class="logo_quiz" alt="logo_boy">
            <p class="situation">26&nbsp; out of&nbsp; 30</p>
               <p>Robyn: Who is your number one singer?</p>
               <p>Julio: Rihanna, I love all of<span class="error_style"><em>her musics.</em></span></p>
@@ -983,7 +983,7 @@ require_once('./dbconn.php');
 
          <a class="popup-close"id="popup_close_2" data-popup-close="popup-2" href="#">x</a>
            <div class="cont_dial">
-           <img src="pics\logo.png" class="logo_quiz" alt="logo_boy">
+           <img src="logo.png" class="logo_quiz" alt="logo_boy">
            <p class="situation">27&nbsp; out of&nbsp; 30</p>
               <p>Marcus: What time do you usually get up?</p>
               <p>Fernanda:&nbsp;I get up&nbsp;<span class="error_style"><em>at 6 all day.</em></span></p>
@@ -1011,7 +1011,7 @@ require_once('./dbconn.php');
          <a class="popup-close"id="popup_close_2" data-popup-close="popup-2" href="#">x</a>
 
            <div class="cont_dial">
-           <img src="pics\logo.png" class="logo_quiz" alt="logo_boy">
+           <img src="logo.png" class="logo_quiz" alt="logo_boy">
            <p class="situation">28&nbsp; out of&nbsp; 30</p>
               <p>Sol: What do you think of your English teacher?</p>
               <p>Maria: He is very&nbsp;<span class="error_style"><em>symphatetic.</em></span></p>
@@ -1039,7 +1039,7 @@ require_once('./dbconn.php');
 
          <a class="popup-close"id="popup_close_2" data-popup-close="popup-2" href="#">x</a>
            <div class="cont_dial">
-           <img src="pics\logo.png" class="logo_quiz" alt="logo_boy">
+           <img src="logo.png" class="logo_quiz" alt="logo_boy">
            <p class="situation">29&nbsp; out of&nbsp; 30</p>
               <p>Ana: What kind of people don't you like?</p>
               <p>Julia: <span class="error_style"><em>I can't support</em></span>&nbsp;messy people.</p>
@@ -1067,7 +1067,7 @@ require_once('./dbconn.php');
          <a class="popup-close"id="popup_close_2" data-popup-close="popup-2" href="#">x</a>
 
            <div class="cont_dial" id="dial_30">
-           <img src="pics\logo.png" class="logo_quiz" alt="logo_boy">
+           <img src="logo.png" class="logo_quiz" alt="logo_boy">
            <p class="situation" id="sit_30">30 out of&nbsp; 30</p>
               <p>Carol: What makes Brazil different in South America?</p>
               <p>Jaciara:<span class="error_style"><em>&nbsp;It's the unique country</em></span>&nbsp;that speaks Portuguese.</p>
