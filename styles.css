@@ -13,14 +13,7 @@ html {
   background-size: 100% 100%;
 }
 .tabs {
-  /*float: right;*/
-
   position: relative;
-
-  /* height: 70px;
-  line-height: 70px;
-
- /* padding-left: 100px;*/
   overflow: hidden;
   background-color: black;
 }
@@ -51,7 +44,6 @@ html {
 }
 
 .active {
-  /* background-color: #4CAF50;*/
   color: white;
 }
 
@@ -83,9 +75,9 @@ h3 {
 
 .logo {
   filter: grayscale(100%);
-  /* opacity: 0.8;*/
+  cursor: auto;
   width: 60px;
-  /* display: inline-flex;*/
+
 }
 
 #logo_surv {
@@ -96,7 +88,9 @@ h3 {
   position: absolute;
   right: 4%;
   padding-right: 2px;
+  top: 1px;
 }
+
 
 .logo_quiz {
   position: absolute;
@@ -111,7 +105,10 @@ h3 {
 
 #eng_btn {
   display: none;
-  /* margin-top: 4px;*/
+  margin-top: 15px;
+  height: 24px;
+  width: 24px;
+
 }
 
 #eng_btn:hover {
@@ -177,25 +174,9 @@ h3 {
   margin-top: 30px;
 }
 
-ol {
+/* ol {
   list-style-position: outside;
-}
-
-/* CSS for Youtube*/
-.yt-resp {
-  position: relative;
-  overflow: hidden;
-  padding-top: 46.25%;
-}
-
-.iframe-resp {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 80%;
-  height: 80%;
-  border: 0;
-}
+} */
 
 
 
@@ -255,8 +236,9 @@ ol {
   background-size: 280px 280px;
 }
 
-/* Pop up Close Button */
-.popup-close {
+
+
+#popup_close_1 {
   width: 20px;
   height: 20px;
   padding-top: 5px;
@@ -266,25 +248,16 @@ ol {
   -webkit-transform: translate(50%, -50%);
   transform: translate(50%, -50%);
   border-radius: 10px;
-  /* background: radial-gradient(#ffc107, #00000059);*/
   font-family: inherit;
   font-size: 21px;
   text-align: center;
   line-height: 90%;
   color: #fff;
-  margin-top: -3px;
+  margin-top: -29px;
   left: -5px;
 }
 
-::-webkit-scrollbar {
-  width: 8px;
 
-  height: 10px;
-}
-::-webkit-scrollbar-thumb {
-  border-radius: 8px;
-  background: #c2c9d2;
-}
 
 #popup_close_2 {
   width: 20px;
@@ -296,21 +269,39 @@ ol {
   -webkit-transform: translate(50%, -50%);
   transform: translate(50%, -50%);
   border-radius: 10px;
-  /*background: radial-gradient(#ffc107, #00000059);*/
   font-family: inherit;
-  font-size: 15px;
+  font-size: 21px;
   text-align: center;
   line-height: 90%;
   color: #fff;
-  margin-top: -40px;
+  margin-top: 1px;
   left: -10px;
 }
 
-.popup-close:hover {
+#popup_close_1:hover {
   -webkit-transform: translate(50%, -50%) rotate(180deg);
   transform: translate(50%, -50%) rotate(180deg);
   background: #65b992;
   text-decoration: none;
+}
+
+ #popup_close_2:hover {
+  -webkit-transform: translate(50%, -50%) rotate(180deg);
+  transform: translate(50%, -50%) rotate(180deg);
+  background: #65b992;
+  text-decoration: none;
+}
+
+
+
+::-webkit-scrollbar {
+  width: 8px;
+
+  height: 10px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background: #c2c9d2;
 }
 
 #please_fill {
@@ -595,10 +586,11 @@ em {
 }
 
 #home {
-  max-width: 500px;
+  max-width: 800px;
   max-height: 400px;
   width: 90%;
-  /*background: radial-gradient(#2c00f7, #000000b5);*/
+  margin-top: -70px;
+
 }
 
 /* QUIZ CONTAINERS*/
@@ -731,7 +723,7 @@ textarea {
   font-size: 12px;
   width: 60%;
   display: block;
-  margin-top: 250px;
+  margin-top: 310px;
   padding: unset;
   background: transparent;
   border: unset;
@@ -779,12 +771,9 @@ textarea {
   display: inline;
 }
 
-
-
 /*  */
 
 @media (max-width: 320px) {
-
   #inner_2 {
     width: 370px;
     height: 600px;
@@ -792,20 +781,13 @@ textarea {
   }
 
   .popup-close {
-
     font-size: 17px;
   }
-
-
 
   .cont_dial {
     padding-left: 0px;
     font-size: 18px;
   }
-
-
-
-
 
   #logo_main {
     position: absolute;
@@ -814,6 +796,13 @@ textarea {
 
   .logo_quiz {
     width: 60px;
+  }
+
+  #port_btn, #eng_btn {
+    margin-top: 15px;
+    height: 24px;
+    width: 24px;
+    margin-left: 15px;
   }
 
   .mobile-container {
@@ -856,7 +845,6 @@ textarea {
     color: black;
   }
 
-
   .tablink {
     float: unset;
   }
@@ -871,14 +859,10 @@ textarea {
     margin-left: unset;
   }
 
-
   .situation {
-
-
     position: relative;
     font-size: 17px;
     margin-left: 75px;
-
   }
 
   .bor_choose {
@@ -893,31 +877,22 @@ textarea {
     margin-top: 73px;
   }
 
-   .questions {
+  .questions {
+    top: 90px;
+  }
 
-  top: 90px;
+  .next {
+    margin-top: 10px;
+    font-size: 17px;
+  }
+
+  .back {
+    margin-top: 10px;
+    font-size: 17px;
+  }
 }
 
-.next {
-
-  margin-top: 10px;
-  font-size: 17px;
-}
-
-.back {
-
-  margin-top: 10px;
-  font-size: 17px;
-}
-
-
-
-
-}
-
-
-@media (max-width: 480px) and (min-width: 321px){
-
+@media (max-width: 480px) and (min-width: 321px) {
   #inner_2 {
     width: 450px;
     height: 600px;
@@ -925,20 +900,13 @@ textarea {
   }
 
   .popup-close {
-
     font-size: 17px;
   }
-
-
 
   .cont_dial {
     padding-left: 0px;
     font-size: 18px;
   }
-
-
-
-
 
   #logo_main {
     position: absolute;
@@ -989,9 +957,15 @@ textarea {
     color: black;
   }
 
-
   .tablink {
     float: unset;
+  }
+
+  #port_btn, #eng_btn {
+    margin-top: 15px;
+    height: 24px;
+    width: 24px;
+    margin-left: 15px;
   }
 
   .leg_highlight {
@@ -1004,14 +978,10 @@ textarea {
     margin-left: unset;
   }
 
-
   .situation {
-
-
     position: relative;
     font-size: 17px;
     margin-left: 115px;
-
   }
 
   .bor_choose {
@@ -1026,41 +996,29 @@ textarea {
     margin-top: 73px;
   }
 
-   .questions {
+  .questions {
+    top: 90px;
+  }
 
-  top: 90px;
+  .next {
+    margin-top: 10px;
+    font-size: 17px;
+  }
+
+  .back {
+    margin-top: 10px;
+    font-size: 17px;
+  }
 }
-
-.next {
-
-  margin-top: 10px;
-  font-size: 17px;
-}
-
-.back {
-
-  margin-top: 10px;
-  font-size: 17px;
-}
-
-
-
-
-}
-@media (min-width: 481px) and (max-width:570px) {
-
-
+@media (min-width: 481px) and (max-width: 570px) {
   .cont_dial {
     font-size: 17px;
   }
 
   .cont_answer {
-
     font-size: 17px;
   }
   .situation {
-
-
     margin-left: 5px;
   }
 
@@ -1070,78 +1028,71 @@ textarea {
   .back {
     margin-top: -40px;
   }
-
 }
 
 @media (max-width: 600px) and (min-width: 570px) {
-
   .cont_dial {
     font-size: 19px;
-
   }
 
   .cont_answer {
     font-size: 19px;
   }
-    .situation {
-
-
+  .situation {
     margin-left: 65px;
   }
 
   .next {
-    margin-top: -60px
-
+    margin-top: -53px;
   }
 
   .back {
-    margin-top: -60px
+    margin-top: -53px;
+  }
+}
 
+@media (max-width: 668px) and (min-width: 601px) {
+  .situation {
+    margin-left: 85px;
   }
 
+  .next {
+    margin-top: -53px;
+  }
 
+  .back {
+    margin-top: -53px;
+  }
 }
 
-@media (max-width: 668px) and (min-width:601px) {
-
+@media (max-width: 917px) and (min-width: 668px) {
   .situation {
+    margin-left: 185px;
+  }
 
+  .next {
+    margin-top: -53px;
+  }
 
-   margin-left: 85px;
- }
-
- .next {
-margin-top: -60px;
-
- }
-
- .back {
-margin-top: -60px;
-
- }
-
-
+  .back {
+    margin-top: -53px;
+  }
 }
 
-@media (max-width: 917px) and (min-width:668px) {
+@media screen and (max-width: 686px) and (min-width: 480px) {
+  #logo_main {
+    position: absolute;
+    right: 9%;
+    padding-right: 2px;
+  }
+}
 
-  .situation {
-
-
-   margin-left: 185px;
- }
-
- .next {
-margin-top: -60px;
-
- }
-
- .back {
-margin-top: -60px;
-
- }
-
-
+@media screen and (max-width: 1082px) and (min-width: 686px) {
+  #logo_main {
+    position: absolute;
+    right: 6%;
+    padding-right: 2px;
+  }
 }
 
 @media (min-width: 1025px) {
@@ -1151,7 +1102,7 @@ margin-top: -60px;
   }
 
   .container {
-    width: 50%;
+    width: 65%;
   }
 
   #score_msg {
@@ -1159,15 +1110,10 @@ margin-top: -60px;
   }
 }
 
-
-@media screen and ( max-height: 320px ) {
-
+@media screen and (max-height: 320px) {
   #inner_2 {
-
-    background: blue;
     top: 50%;
     left: 50%;
-
   }
 
   .popup-close {
@@ -1175,106 +1121,85 @@ margin-top: -60px;
     font-size: 17px;
   }
 
-
-   .questions {
+  .questions {
     padding: 0px;
   }
 
-  [id="3"]
-  [id="15"],
+  [id="3"] [id="15"],
   [id="30"] {
     top: 10px;
   }
-
-
 
   .situation {
     margin-left: 120px;
     font-size: 17px;
-    /* margin-top: 40px; */
-}
+  }
 
-.logo_quiz {
-  width: 60px;
-  top: 6px;
-}
+  .logo_quiz {
+    width: 60px;
+    top: 6px;
+  }
 
-.cont_dial {
-  font-size: 17px;
-  margin-top: 40px;
-  margin-bottom: -15px;
+  .cont_dial {
+    font-size: 17px;
+    margin-top: 40px;
+    margin-bottom: -15px;
+  }
 
+  #dial_15 {
+    margin-top: 50px;
+    margin-bottom: -15px;
+  }
 
-}
+  #dial_30 {
+    margin-top: 30px;
+  }
 
-#dial_15  {
+  .bor_choose {
+    font-size: 17px;
+  }
 
-  margin-top: 50px;
-  margin-bottom: -15px;
-}
+  .cont_answer {
+    font-size: 17px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    padding-bottom: 15px;
+  }
 
-#dial_30 {
-  margin-top: 30px;
-}
+  #answer_15,
+  #answer_30 {
+    font-size: 16px;
 
-.bor_choose {
-
-  font-size: 17px;
-}
-
-.cont_answer {
-  font-size: 17px;
-  margin-bottom: 40px;
-  margin-top: 20px;
-  padding-bottom: 15px;
-}
-
-#answer_15, #answer_30 {
- font-size: 16px;
-    /* margin-bottom: 40px; */
     margin-top: -10px;
     padding-bottom: 15px;
+  }
 
-}
-
-/* BUTTONS*/
-.next {
-  margin-top: -90px;
+  /* BUTTONS*/
+  .next {
+    margin-top: -90px;
     font-size: 17px;
-}
+  }
 
-.back {
-  margin-top: -90px;
+  .back {
+    margin-top: -90px;
     font-size: 17px;
+  }
+
+  #back_15,
+  #back_30 {
+    margin-top: -92px;
+  }
+
+  #next_15,
+  #next_30 {
+    margin-top: -92px;
+  }
 }
 
-#back_15, #back_30 {
-  margin-top: -92px;
-}
-
-#next_15, #next_30 {
-
-  margin-top: -92px;
-}
-
-/* .radio-inline {
-
-
-  display: inline-block;
-
-} */
-
-}
-
-
-@media screen and ( max-height: 376px ) and (min-height: 321px){
-
+@media screen and (max-height: 376px) and (min-height: 321px) {
   #inner_2 {
-
-    background: green;
     top: 50%;
     left: 50%;
-
   }
 
   .popup-close {
@@ -1282,106 +1207,53 @@ margin-top: -60px;
     font-size: 17px;
   }
 
-
-   .questions {
+  .questions {
     padding: 0px;
   }
 
-  /* [id="3"]
-  [id="15"],
-  [id="30"] {
-    top: 10px;
-  } */
-
-
   .logo_quiz {
-  width: 60px;
-  top: 6px;
+    width: 60px;
+    top: 6px;
   }
 
   .cont_dial {
-  font-size: 17px;
-  margin-top: 40px;
-  margin-bottom: -15px;
-
-
+    font-size: 17px;
+    margin-top: 40px;
+    margin-bottom: -15px;
   }
 
-  /* #dial_15  {
-
-  margin-top: 50px;
-  margin-bottom: -15px;
-  } */
-
-  /* #dial_30 {
-  margin-top: 30px;
-  } */
-
   .bor_choose {
-
-  font-size: 17px;
+    font-size: 17px;
   }
 
   .cont_answer {
-  font-size: 17px;
-  margin-bottom: 40px;
-  margin-top: 20px;
-  padding-bottom: 15px;
-  }
-
-  /* #answer_15, #answer_30 {
-  font-size: 16px;
-    /* margin-bottom: 40px;
-    margin-top: -10px;
+    font-size: 17px;
+    margin-bottom: 40px;
+    margin-top: 20px;
     padding-bottom: 15px;
-
-  } */
+  }
 
   /* BUTTONS*/
   .next {
-  margin-top: -88px;
+    margin-top: -88px;
     font-size: 17px;
   }
 
   .back {
-  margin-top: -88px;
+    margin-top: -88px;
     font-size: 17px;
   }
 
-  /* #back_15, #back_30 {
-  margin-top: -92px;
-  } */
-
-  /* #next_15, #next_30 {
-
-  margin-top: -92px;
-  } */
-
-  /* .radio-inline {
-
-
-  display: inline-block;
-
-  } */
-
   .situation {
-
-    margin-left: 125px;
-
-
+    margin-left: 122px;
+    font-size: 17px;
   }
-
 }
 
-
-@media screen and ( max-height: 376px ) and (min-width: 668px){
-
+@media screen and (max-height: 376px) and (min-width: 668px) {
   #inner_2 {
-
-    background: yellow;
     top: 50%;
     left: 50%;
-
   }
 
   .popup-close {
@@ -1389,106 +1261,53 @@ margin-top: -60px;
     font-size: 17px;
   }
 
-
-   .questions {
+  .questions {
     padding: 0px;
   }
 
-  /* [id="3"]
-  [id="15"],
-  [id="30"] {
-    top: 10px;
-  } */
-
-
   .logo_quiz {
-  width: 60px;
-  top: 6px;
+    width: 60px;
+    top: 6px;
   }
 
   .cont_dial {
-  font-size: 17px;
-  margin-top: 40px;
-  margin-bottom: -15px;
-
-
+    font-size: 17px;
+    margin-top: 40px;
+    margin-bottom: -15px;
   }
 
-  /* #dial_15  {
-
-  margin-top: 50px;
-  margin-bottom: -15px;
-  } */
-
-  /* #dial_30 {
-  margin-top: 30px;
-  } */
-
   .bor_choose {
-
-  font-size: 17px;
+    font-size: 17px;
   }
 
   .cont_answer {
-  font-size: 17px;
-  margin-bottom: 40px;
-  margin-top: 20px;
-  padding-bottom: 15px;
-  }
-
-  /* #answer_15, #answer_30 {
-  font-size: 16px;
-    /* margin-bottom: 40px;
-    margin-top: -10px;
+    font-size: 17px;
+    margin-bottom: 40px;
+    margin-top: 20px;
     padding-bottom: 15px;
-
-  } */
+  }
 
   /* BUTTONS*/
   .next {
-  margin-top: -88px;
+    margin-top: -88px;
     font-size: 17px;
   }
 
   .back {
-  margin-top: -88px;
+    margin-top: -88px;
     font-size: 17px;
   }
 
-  /* #back_15, #back_30 {
-  margin-top: -92px;
-  } */
-
-  /* #next_15, #next_30 {
-
-  margin-top: -92px;
-  } */
-
-  /* .radio-inline {
-
-
-  display: inline-block;
-
-  } */
-
   .situation {
-
-    margin-left: 185px;
-
-
+    margin-left: 190px;
+    font-size: 17px;
   }
-
 }
 
-
-@media screen  and (min-height: 376px) and ( max-height: 428px ){
-
+@media screen and (min-height: 376px) and (max-height: 428px) {
   #inner_2 {
-
-    background: green;
     top: 50%;
     left: 50%;
-
   }
 
   .popup-close {
@@ -1496,95 +1315,45 @@ margin-top: -60px;
     font-size: 17px;
   }
 
-
-   .questions {
+  .questions {
     padding: 0px;
   }
 
-  /* [id="3"]
-  [id="15"],
-  [id="30"] {
-    top: 10px;
-  } */
-
-
-
   .situation {
-   margin-left: 165px;
+    margin-left: 157px;
     font-size: 17px;
-    /* margin-top: 40px; */
   }
 
   .logo_quiz {
-  width: 60px;
-  top: 6px;
+    width: 60px;
+    top: 6px;
   }
 
   .cont_dial {
-  font-size: 17px;
-  margin-top: 40px;
-  margin-bottom: -15px;
-
-
+    font-size: 17px;
+    margin-top: 40px;
+    margin-bottom: -15px;
   }
 
-  /* #dial_15  {
-
-  margin-top: 50px;
-  margin-bottom: -15px;
-  } */
-
-  /* #dial_30 {
-  margin-top: 30px;
-  } */
-
   .bor_choose {
-
-  font-size: 17px;
+    font-size: 17px;
   }
 
   .cont_answer {
-  font-size: 17px;
-  margin-bottom: 40px;
-  margin-top: 20px;
-  padding-bottom: 15px;
-  }
-
-  /* #answer_15, #answer_30 {
-  font-size: 16px;
-    /* margin-bottom: 40px;
-    margin-top: -10px;
+    font-size: 17px;
+    margin-bottom: 40px;
+    margin-top: 20px;
     padding-bottom: 15px;
-
-  } */
+  }
 
   /* BUTTONS*/
   .next {
-  margin-top: -88px;
+    margin-top: -88px;
     font-size: 17px;
   }
 
   .back {
-  margin-top: -88px;
+    margin-top: -88px;
     font-size: 17px;
   }
-
-  /* #back_15, #back_30 {
-  margin-top: -92px;
-  } */
-
-  /* #next_15, #next_30 {
-
-  margin-top: -92px;
-  } */
-
-  /* .radio-inline {
-
-
-  display: inline-block;
-
-  } */
-
-  }
-
-
+}
