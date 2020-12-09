@@ -32,6 +32,7 @@ $("#start_quiz").on("click", function () {
 
     } else if ($("input[name='sub_it']:checked").val() == "corr") {
       score++;
+      console.log(score);
 
       $("#" + classNum).hide();
       $("#" + numNext).show();
@@ -53,7 +54,7 @@ $("#start_quiz").on("click", function () {
 
     } else if ($("input[name='too']:checked").val() == "corr") {
       score++;
-
+      console.log(score);
       $("#" + classNum).hide();
       $("#" + numNext).show();
     } else {
@@ -72,7 +73,7 @@ $("#start_quiz").on("click", function () {
 
     } else if ($("input[name='much']:checked").val() == "corr") {
       score++;
-
+      console.log(score);
       $("#" + classNum).hide();
       $("#" + numNext).show();
     } else {
@@ -91,7 +92,7 @@ $("#start_quiz").on("click", function () {
 
     } else if ($("input[name='exist']:checked").val() == "corr") {
       score++;
-
+      console.log(score);
       $("#" + classNum).hide();
       $("#" + numNext).show();
     } else {
@@ -110,7 +111,7 @@ $("#start_quiz").on("click", function () {
 
     } else if ($("input[name='two_sub']:checked").val() == "corr") {
       score++;
-
+      console.log(score);
       $("#" + classNum).hide();
       $("#" + numNext).show();
     } else {
@@ -129,7 +130,7 @@ $("#start_quiz").on("click", function () {
 
     } else if ($("input[name='no_obj']:checked").val() == "corr") {
       score++;
-
+      console.log(score);
       $("#" + classNum).hide();
       $("#" + numNext).show();
     } else {
@@ -148,7 +149,7 @@ $("#start_quiz").on("click", function () {
 
     } else if ($("input[name='for']:checked").val() == "corr") {
       score++;
-
+      console.log(score);
       $("#" + classNum).hide();
       $("#" + numNext).show();
     } else {
@@ -167,7 +168,7 @@ $("#start_quiz").on("click", function () {
 
     } else if ($("input[name='h_age']:checked").val() == "corr") {
       score++;
-
+      console.log(score);
       $("#" + classNum).hide();
       $("#" + numNext).show();
     } else {
@@ -186,7 +187,7 @@ $("#start_quiz").on("click", function () {
 
     } else if ($("input[name='guy']:checked").val() == "corr") {
       score++;
-
+      console.log(score);
       $("#" + classNum).hide();
       $("#" + numNext).show();
     } else {
@@ -205,7 +206,7 @@ $("#start_quiz").on("click", function () {
 
     } else if ($("input[name='car']:checked").val() == "corr") {
       score++;
-
+      console.log(score);
       $("#" + classNum).hide();
       $("#" + numNext).show();
     } else {
@@ -224,7 +225,7 @@ $("#start_quiz").on("click", function () {
 
     } else if ($("input[name='lose']:checked").val() == "corr") {
       score++;
-
+      console.log(score);
       $("#" + classNum).hide();
       $("#" + numNext).show();
     } else {
@@ -243,7 +244,7 @@ $("#start_quiz").on("click", function () {
 
     } else if ($("input[name='diss']:checked").val() == "corr") {
       score++;
-
+      console.log(score);
       $("#" + classNum).hide();
       $("#" + numNext).show();
     } else {
@@ -262,7 +263,7 @@ $("#start_quiz").on("click", function () {
 
     } else if ($("input[name='doubt']:checked").val() == "corr") {
       score++;
-
+      console.log(score);
       $("#" + classNum).hide();
       $("#" + numNext).show();
     } else {
@@ -281,7 +282,7 @@ $("#start_quiz").on("click", function () {
 
     } else if ($("input[name='know']:checked").val() == "corr") {
       score++;
-
+      console.log(score);
       $("#" + classNum).hide();
       $("#" + numNext).show();
     } else {
@@ -300,7 +301,7 @@ $("#start_quiz").on("click", function () {
 
     } else if ($("input[name='god']:checked").val() == "corr") {
       score++;
-
+      console.log(score);
       $("#" + classNum).hide();
       $("#" + numNext).show();
     } else {
@@ -319,7 +320,7 @@ $("#start_quiz").on("click", function () {
 
     } else if ($("input[name='pref']:checked").val() == "corr") {
       score++;
-
+      console.log(score);
       $("#" + classNum).hide();
       $("#" + numNext).show();
     } else {
@@ -338,7 +339,7 @@ $("#start_quiz").on("click", function () {
 
     } else if ($("input[name='impress']:checked").val() == "corr") {
       score++;
-
+      console.log(score);
       $("#" + classNum).hide();
       $("#" + numNext).show();
     } else {
@@ -357,7 +358,7 @@ $("#start_quiz").on("click", function () {
 
     } else if ($("input[name='parent']:checked").val() == "corr") {
       score++;
-
+      console.log(score);
       $("#" + classNum).hide();
       $("#" + numNext).show();
     } else {
@@ -376,7 +377,7 @@ $("#start_quiz").on("click", function () {
 
     } else if ($("input[name='gout']:checked").val() == "corr") {
       score++;
-
+      console.log(score);
       $("#" + classNum).hide();
       $("#" + numNext).show();
     } else {
@@ -395,7 +396,7 @@ $("#start_quiz").on("click", function () {
 
     } else if ($("input[name='use']:checked").val() == "corr") {
       score++;
-
+      console.log(score);
       $("#" + classNum).hide();
       $("#" + numNext).show();
     } else {
@@ -414,7 +415,7 @@ $("#start_quiz").on("click", function () {
 
     } else if ($("input[name='durat']:checked").val() == "corr") {
       score++;
-
+      console.log(score);
       $("#" + classNum).hide();
       $("#" + numNext).show();
     } else {
@@ -433,7 +434,7 @@ $("#start_quiz").on("click", function () {
 
     } else if ($("input[name='stay']:checked").val() == "corr") {
       score++;
-
+      console.log(score);
       $("#" + classNum).hide();
       $("#" + numNext).show();
     } else {
@@ -452,7 +453,7 @@ $("#start_quiz").on("click", function () {
 
     } else if ($("input[name='with']:checked").val() == "corr") {
       score++;
-
+      console.log(score);
       $("#" + classNum).hide();
       $("#" + numNext).show();
     } else {
@@ -471,7 +472,7 @@ $("#start_quiz").on("click", function () {
 
     } else if ($("input[name='chap']:checked").val() == "corr") {
       score++;
-
+      console.log(score);
       $("#" + classNum).hide();
       $("#" + numNext).show();
     } else {
@@ -490,7 +491,7 @@ $("#start_quiz").on("click", function () {
 
     } else if ($("input[name='notes']:checked").val() == "corr") {
       score++;
-
+      console.log(score);
       $("#" + classNum).hide();
       $("#" + numNext).show();
     } else {
@@ -509,7 +510,7 @@ $("#start_quiz").on("click", function () {
 
     } else if ($("input[name='music']:checked").val() == "corr") {
       score++;
-
+      console.log(score);
       $("#" + classNum).hide();
       $("#" + numNext).show();
     } else {
@@ -528,7 +529,7 @@ $("#start_quiz").on("click", function () {
 
     } else if ($("input[name='every']:checked").val() == "corr") {
       score++;
-
+      console.log(score);
       $("#" + classNum).hide();
       $("#" + numNext).show();
     } else {
@@ -547,7 +548,7 @@ $("#start_quiz").on("click", function () {
 
     } else if ($("input[name='sym']:checked").val() == "corr") {
       score++;
-
+      console.log(score);
       $("#" + classNum).hide();
       $("#" + numNext).show();
     } else {
@@ -566,7 +567,7 @@ $("#start_quiz").on("click", function () {
 
     } else if ($("input[name='support']:checked").val() == "corr") {
       score++;
-
+      console.log(score);
       $("#" + classNum).hide();
       $("#" + numNext).show();
     } else {
@@ -596,7 +597,7 @@ $("#start_quiz").on("click", function () {
       return false;
     } else if ($("input[name='uniq']:checked").val() == "corr") {
       score++;
-
+      console.log(score);
       $(".score").text(score);
     } else {
 
@@ -625,15 +626,21 @@ $("#start_quiz").on("click", function () {
 
       success: function (result) {
         if (result.result == 1) {
-         // $("#steps").show();
+
 
           $("#instr, #30").hide();
           $("#score_msg").show();
           $(".score").show();
-          $("#popup-close").hide();
+          $(".popup-close").hide();
+          $(".next, .back, .logo_quiz").hide();
 
 
-          $(".situation").css({"background": "radial-gradient(#533019, transparent)"});
+
+          $(".situation").css({ background: "radial-gradient(rgb(27 24 22), transparent)", "margin-left": "auto"});
+          $(".questions").css({"text-align": "center"});
+
+
+
 
           $(document).ready(function () {
             let currentQuiz = $(".questions").contents();
@@ -709,7 +716,7 @@ $("#start_quiz").on("click", function () {
               $(".err_label").css({ "text-decoration": "line-through" });
               $(".d_corr").show().css({ display: "inline", color: "green" });
               $(".rads").css({ cursor: "auto" }).next().css({ cursor: "auto" });
-
+              resultScore++;
               $("#scoreInfo_3").append(resultScore);
             }
 
@@ -719,7 +726,7 @@ $("#start_quiz").on("click", function () {
               $(".d_corr").show().css({ display: "inline", color: "green" });
               $(".d_err").show().css({ display: "inline", color: "red" });
               $(".rads").css({ cursor: "auto" }).next().css({ cursor: "auto" });
-              resultScore++;
+
               $("#scoreInfo_3").append(resultScore);
             }
 
@@ -1028,7 +1035,7 @@ $("#start_quiz").on("click", function () {
               $(".err_label").css({ "text-decoration": "line-through" });
               $(".d_corr").show().css({ display: "inline", color: "green" });
               $(".rads").css({ cursor: "auto" }).next().css({ cursor: "auto" });
-
+              resultScore++;
               $("#scoreInfo_14").append(resultScore);
             }
 
@@ -1038,7 +1045,7 @@ $("#start_quiz").on("click", function () {
               $(".d_corr").show().css({ display: "inline", color: "green" });
               $(".d_err").show().css({ display: "inline", color: "red" });
               $(".rads").css({ cursor: "auto" }).next().css({ cursor: "auto" });
-              resultScore++;
+
               $("#scoreInfo_14").append(resultScore);
             }
 
@@ -1048,7 +1055,7 @@ $("#start_quiz").on("click", function () {
               $(".d_corr").show().css({ display: "inline", color: "green" });
               $(".d_err").show().css({ display: "inline", color: "red" });
               $(".rads").css({ cursor: "auto" }).next().css({ cursor: "auto" });
-
+              resultScore++;
               $("#scoreInfo_15").append(resultScore);
             }
 
@@ -1067,7 +1074,7 @@ $("#start_quiz").on("click", function () {
               $(".d_corr").show().css({ display: "inline", color: "green" });
               $(".d_err").show().css({ display: "inline", color: "red" });
               $(".rads").css({ cursor: "auto" }).next().css({ cursor: "auto" });
-              resultScore++;
+
               $("#scoreInfo_15").append(resultScore);
             }
 
@@ -1164,7 +1171,7 @@ $("#start_quiz").on("click", function () {
               $(".d_corr").show().css({ display: "inline", color: "green" });
               $(".d_err").show().css({ display: "inline", color: "red" });
               $(".rads").css({ cursor: "auto" }).next().css({ cursor: "auto" });
-
+              resultScore++;
               $("#scoreInfo_19").append(resultScore);
             }
 
@@ -1183,7 +1190,7 @@ $("#start_quiz").on("click", function () {
               $(".d_corr").show().css({ display: "inline", color: "green" });
               $(".d_err").show().css({ display: "inline", color: "red" });
               $(".rads").css({ cursor: "auto" }).next().css({ cursor: "auto" });
-              resultScore++;
+
               $("#scoreInfo_19").append(resultScore);
             }
 
@@ -1202,7 +1209,7 @@ $("#start_quiz").on("click", function () {
               $(".err_label").css({ "text-decoration": "line-through" });
               $(".d_corr").show().css({ display: "inline", color: "green" });
               $(".rads").css({ cursor: "auto" }).next().css({ cursor: "auto" });
-
+              resultScore++;
               $("#scoreInfo_20").append(resultScore);
             }
 
@@ -1212,7 +1219,7 @@ $("#start_quiz").on("click", function () {
               $(".d_corr").show().css({ display: "inline", color: "green" });
               $(".d_err").show().css({ display: "inline", color: "red" });
               $(".rads").css({ cursor: "auto" }).next().css({ cursor: "auto" });
-              resultScore++;
+
               $("#scoreInfo_20").append(resultScore);
             }
 
@@ -1231,7 +1238,7 @@ $("#start_quiz").on("click", function () {
               $(".err_label").css({ "text-decoration": "line-through" });
               $(".d_corr").show().css({ display: "inline", color: "green" });
               $(".rads").css({ cursor: "auto" }).next().css({ cursor: "auto" });
-
+              resultScore++;
               $("#scoreInfo_21").append(resultScore);
             }
 
@@ -1241,7 +1248,7 @@ $("#start_quiz").on("click", function () {
               $(".d_corr").show().css({ display: "inline", color: "green" });
               $(".d_err").show().css({ display: "inline", color: "red" });
               $(".rads").css({ cursor: "auto" }).next().css({ cursor: "auto" });
-              resultScore++;
+
               $("#scoreInfo_21").append(resultScore);
             }
 
@@ -1318,7 +1325,7 @@ $("#start_quiz").on("click", function () {
               $(".err_label").css({ "text-decoration": "line-through" });
               $(".d_corr").show().css({ display: "inline", color: "green" });
               $(".rads").css({ cursor: "auto" }).next().css({ cursor: "auto" });
-
+              resultScore++;
               $("#scoreInfo_24").append(resultScore);
             }
 
@@ -1328,7 +1335,7 @@ $("#start_quiz").on("click", function () {
               $(".d_corr").show().css({ display: "inline", color: "green" });
               $(".d_err").show().css({ display: "inline", color: "red" });
               $(".rads").css({ cursor: "auto" }).next().css({ cursor: "auto" });
-              resultScore++;
+
               $("#scoreInfo_24").append(resultScore);
             }
 
@@ -1347,7 +1354,7 @@ $("#start_quiz").on("click", function () {
               $(".err_label").css({ "text-decoration": "line-through" });
               $(".d_corr").show().css({ display: "inline", color: "green" });
               $(".rads").css({ cursor: "auto" }).next().css({ cursor: "auto" });
-
+              resultScore++;
               $("#scoreInfo_25").append(resultScore);
             }
 
@@ -1357,7 +1364,7 @@ $("#start_quiz").on("click", function () {
               $(".d_corr").show().css({ display: "inline", color: "green" });
               $(".d_err").show().css({ display: "inline", color: "red" });
               $(".rads").css({ cursor: "auto" }).next().css({ cursor: "auto" });
-              resultScore++;
+
               $("#scoreInfo_25").append(resultScore);
             }
 
@@ -1396,7 +1403,7 @@ $("#start_quiz").on("click", function () {
               $(".d_corr").show().css({ display: "inline", color: "green" });
               $(".d_err").show().css({ display: "inline", color: "red" });
               $(".rads").css({ cursor: "auto" }).next().css({ cursor: "auto" });
-
+              resultScore++;
               $("#scoreInfo_27").append(resultScore);
             }
 
@@ -1415,7 +1422,7 @@ $("#start_quiz").on("click", function () {
               $(".d_corr").show().css({ display: "inline", color: "green" });
               $(".d_err").show().css({ display: "inline", color: "red" });
               $(".rads").css({ cursor: "auto" }).next().css({ cursor: "auto" });
-              resultScore++;
+
               $("#scoreInfo_27").append(resultScore);
             }
 
@@ -1434,7 +1441,7 @@ $("#start_quiz").on("click", function () {
               $(".err_label").css({ "text-decoration": "line-through" });
               $(".d_corr").show().css({ display: "inline", color: "green" });
               $(".rads").css({ cursor: "auto" }).next().css({ cursor: "auto" });
-
+              resultScore++;
               $("#scoreInfo_28").append(resultScore);
             }
 
@@ -1444,7 +1451,7 @@ $("#start_quiz").on("click", function () {
               $(".d_corr").show().css({ display: "inline", color: "green" });
               $(".d_err").show().css({ display: "inline", color: "red" });
               $(".rads").css({ cursor: "auto" }).next().css({ cursor: "auto" });
-              resultScore++;
+
               $("#scoreInfo_28").append(resultScore);
             }
 
@@ -1454,7 +1461,7 @@ $("#start_quiz").on("click", function () {
               $(".d_corr").show().css({ display: "inline", color: "green" });
               $(".d_err").show().css({ display: "inline", color: "red" });
               $(".rads").css({ cursor: "auto" }).next().css({ cursor: "auto" });
-
+              resultScore++;
               $("#scoreInfo_29").append(resultScore);
             }
 
@@ -1473,7 +1480,7 @@ $("#start_quiz").on("click", function () {
               $(".d_corr").show().css({ display: "inline", color: "green" });
               $(".d_err").show().css({ display: "inline", color: "red" });
               $(".rads").css({ cursor: "auto" }).next().css({ cursor: "auto" });
-              resultScore++;
+
               $("#scoreInfo_29").append(resultScore);
             }
 
@@ -1520,13 +1527,15 @@ $("#start_quiz").on("click", function () {
             });
           }); // document ready - results
 
-          // $('.popup').hide();
-          // $('#start_quiz').off('click');
+
+         //  $('#start_quiz').off('click');
         }
 
         if (result.result == 2) {
           alert("oh, no! Something went wrong, Try again");
         }
+
+        window.localStorage.clear();
       }, //ajax, success function 2//
     }); //ajax 2//
   }); //submit on.click function 2//
