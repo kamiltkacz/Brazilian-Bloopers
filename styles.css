@@ -630,14 +630,7 @@ em {
   margin-bottom: 20px;
   margin-top: 30px;
 }
-.exp {
-  background: radial-gradient(#2c00f7, #000000bf);
-  padding: 25px;
-  border-radius: 15px;
-}
-.resultMsg {
-  text-align: right;
-}
+
 
 .cont_dial {
   margin-top: 0;
@@ -733,14 +726,16 @@ textarea {
   margin-top: 12px;
 }
 
+/* RESULTS CONTAINERS */
+
 #score_msg {
   display: none;
-  background: radial-gradient(#2c00f7, #000000bf);
+  background: radial-gradient(#65b992, #000000f2);
 }
 
 .score {
   display: none;
-  background: radial-gradient(#533019, #0000006e);
+  background: radial-gradient(#2a2725, #0000006e);
   padding: 0 3rem;
   line-height: 1;
   border-radius: 1rem;
@@ -748,24 +743,33 @@ textarea {
 }
 #results {
   display: none;
-  background: radial-gradient(#533019, #0000006e);
+  background: radial-gradient(#4a4f53, #0000006e);
   border-radius: 20px;
   padding: 5px;
 }
 .span_exp {
   padding: 5px;
   border-radius: 4px;
-  background: radial-gradient(#172f4a, #00000059);
+  /*background: radial-gradient(#172f4a, #00000059);*/
 
   font-style: italic;
 }
+
+.exp {
+  background: radial-gradient(#65b992, #000000f2);
+  padding: 25px;
+  border-radius: 15px;
+}
+.resultMsg {
+  text-align: right;
+}
 #score_span {
-  background: radial-gradient(#533019, #0000006e);
+  /*background: radial-gradient(#533019, #0000006e);*/
   padding: 10px;
   border-radius: 10px;
 }
 .scoreInfo {
-  background: radial-gradient(#533019, #0000006e);
+ /* background: radial-gradient(#533019, #0000006e);*/
   padding: 10px;
   border-radius: 10px;
   display: inline;
