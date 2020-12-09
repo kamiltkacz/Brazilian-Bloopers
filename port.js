@@ -19,7 +19,7 @@ const tabsSwitch = $(`
   <img src="//bandidosnatv.com/plgns/gtranslate/flags/24/en-us.png" id="eng_btn" alt="English_flag">
   <img src="//bandidosnatv.com/plgns/gtranslate/flags/24/pt-br.png" id="port_btn" style="display: none" alt="Portuguese_flag">
  </div>
- <img src="logo.png" id="logo_main" class="logo" alt="logo_boy">
+ <img src="pics/logo.png" id="logo_main" class="logo" alt="logo_boy">
 
  <!-- "burger menu" -->
  <a href="javascript:void(0);" class="icon" onclick="myBurger()">
