@@ -6,11 +6,12 @@ html {
   font-size: 20px;
   font-weight: 500px;
   color: whitesmoke;
-  background-image: url("pics/glassesdog.jpg");
+  background-color: black;
+  /* background-image: url("pics/glassesdog.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: 100% 100%;
+  background-size: 100% 100%; */
 }
 .tabs {
   position: relative;
@@ -39,7 +40,7 @@ html {
 }
 
 .tabs a:hover {
-  background-color: #65b992;
+  background-color:#67b060;
   color: black;
 }
 
@@ -58,7 +59,7 @@ a {
 
 a:hover {
   text-decoration: none;
-  color: #65b992;
+  color: #67b060;
   transition: all 0, 5s;
   border: hidden;
 }
@@ -155,6 +156,7 @@ h3 {
   padding: 100px 19px;
   max-width: 100%;
   text-align: center;
+
 }
 
 #leg_steps {
@@ -244,6 +246,7 @@ h3 {
   padding-top: 5px;
   display: inline-block;
   position: absolute;
+
   transition: ease 0.25s all;
   -webkit-transform: translate(50%, -50%);
   transform: translate(50%, -50%);
@@ -265,6 +268,7 @@ h3 {
   padding-top: 5px;
   display: inline-block;
   position: absolute;
+
   transition: ease 0.25s all;
   -webkit-transform: translate(50%, -50%);
   transform: translate(50%, -50%);
@@ -281,14 +285,14 @@ h3 {
 #popup_close_1:hover {
   -webkit-transform: translate(50%, -50%) rotate(180deg);
   transform: translate(50%, -50%) rotate(180deg);
-  background: #65b992;
+  background: #67b060;
   text-decoration: none;
 }
 
  #popup_close_2:hover {
   -webkit-transform: translate(50%, -50%) rotate(180deg);
   transform: translate(50%, -50%) rotate(180deg);
-  background: #65b992;
+  background: #4a444c;
   text-decoration: none;
 }
 
@@ -332,7 +336,7 @@ label,
   font-size: 18px;
   font-family: inherit;
   color: whitesmoke;
-  background: #65b992;
+  background: #67b060;
 }
 
 #bor_country,
@@ -542,9 +546,6 @@ em {
   padding: 6px 26px;
   border-radius: 5px;
   cursor: pointer;
-  /* border-bottom: 3px solid rgba(0, 0, 0, 0.2); */
-  /* border-right: 1px solid rgba(0, 0, 0, 0.2); */
-  /* background: #65b992;*/
   border: 1px solid #b9b9b9;
 }
 
@@ -570,20 +571,20 @@ em {
   padding: 20px;
   text-align: center;
   margin-top: 30px;
-  background: #171717a8;
+  background: #67b060;
 }
 
 .cont_surv {
   padding: 14px;
   text-align: center;
   margin-top: 20px;
-  background: #56a580f2;
+  background: #67b060;
   border-radius: 5px;
 }
 
-#question_1 {
+/* #question_1 {
   margin-top: -10px;
-}
+} */
 
 #home {
   max-width: 800px;
@@ -618,7 +619,7 @@ em {
 }
 .questions {
   position: relative;
-  background: radial-gradient(#65b992, #000000f2);
+  background:#67b060;
   padding: 10px;
   border-radius: 12px;
   margin-bottom: 20px;
@@ -730,7 +731,7 @@ textarea {
 
 #score_msg {
   display: none;
-  background: radial-gradient(#65b992, #000000f2);
+  background: #67b060;
 }
 
 .score {
@@ -756,7 +757,7 @@ textarea {
 }
 
 .exp {
-  background: radial-gradient(#65b992, #000000f2);
+  background: #67b060;
   padding: 25px;
   border-radius: 15px;
 }
@@ -775,9 +776,11 @@ textarea {
   display: inline;
 }
 
-/*  */
+/* MEDIA QUERIES  */
 
 @media (max-width: 320px) {
+
+
   #inner_2 {
     width: 370px;
     height: 600px;
@@ -786,6 +789,7 @@ textarea {
 
   .popup-close {
     font-size: 17px;
+    position:sticky;
   }
 
   .cont_dial {
@@ -812,7 +816,7 @@ textarea {
   .mobile-container {
     max-width: 320px;
     margin: auto;
-    background-color: #555;
+    background-color: black;
     height: 500px;
     color: white;
     border-radius: 10px;
@@ -826,10 +830,12 @@ textarea {
 
   .tabs #myLinks {
     display: none;
+    background-color: black;
   }
 
   .tabs a {
     color: white;
+    background-color: black;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
@@ -897,6 +903,28 @@ textarea {
 }
 
 @media (max-width: 480px) and (min-width: 321px) {
+
+
+ /* html, body {
+
+  background: black;
+
+ /* background-attachment: scroll;
+
+
+  }
+
+   .tabcontent {
+
+    background: radial-gradient(#65b992, #000000f2);
+
+
+  } */
+
+
+
+
+
   #inner_2 {
     width: 450px;
     height: 600px;
@@ -924,7 +952,7 @@ textarea {
   .mobile-container {
     max-width: 480px;
     margin: auto;
-    background-color: #555;
+    background-color: black;
     height: 500px;
     color: white;
     border-radius: 10px;
@@ -938,10 +966,12 @@ textarea {
 
   .tabs #myLinks {
     display: none;
+    background-color: black;
   }
 
   .tabs a {
     color: white;
+    background-color: black;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
@@ -957,7 +987,7 @@ textarea {
   }
 
   .tabs a:hover {
-    background-color: #ddd;
+    background-color: #67b060;
     color: black;
   }
 
@@ -1120,7 +1150,7 @@ textarea {
     left: 50%;
   }
 
-  .popup-close {
+  #popup_close_1 {
     margin-top: 10px;
     font-size: 17px;
   }
@@ -1206,7 +1236,7 @@ textarea {
     left: 50%;
   }
 
-  .popup-close {
+  #popup_close_1 {
     margin-top: 10px;
     font-size: 17px;
   }
@@ -1260,8 +1290,8 @@ textarea {
     left: 50%;
   }
 
-  .popup-close {
-    margin-top: 10px;
+  #popup_close_1 {
+    margin-top: unset;
     font-size: 17px;
   }
 
@@ -1314,8 +1344,8 @@ textarea {
     left: 50%;
   }
 
-  .popup-close {
-    margin-top: 10px;
+  #popup_close_1 {
+    margin-top: unset;
     font-size: 17px;
   }
 
