@@ -1254,8 +1254,7 @@ require_once('./dbconn.php');
    <!-- My Footer -->
    <div id="footer" class="container">
       <p id="p_footer">Author - Kamil Tkacz&nbsp;<a href="https://twitter.com/kamiltkacz" style="font-size: unset;">@kamiltkacz</a>&nbsp;<i class="fab fa-twitter"></i><br>
-        &copy;2020 BrazilianBloopers.com<br>
-        Photo by &nbsp;<a href="https://www.instagram.com/andrenoboa/?utm_medium=referral&utm_source=unsplash"style="font-size: unset;">@andrenoboa</a>&nbsp;<i class="fab fa-instagram"></i></p>
+        &copy;2020 BrazilianBloopers.com<br></p>
    </div>
 
      <!-- JS Survey -->
