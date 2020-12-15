@@ -2,9 +2,37 @@
 $("#start_quiz").on("click", function () {
   let score = 0;
 
+  $(".popup-close-fake").on("click", function () {
 
-  $('#steps').hide();
-  $('#footer').hide();
+    Swal.fire({
+      title: 'Are you sure you want to quit? All your data will be lost',
+      showCancelButton: true,
+      width: 400,
+      background: "#ffc107",
+      confirmButtonText: `No, I'm staying <i class="fa fa-thumbs-up"></i>`,
+      cancelButtonText: `Yes, I'm leaving <i class="fa fa-thumbs-down"></i>`,
+
+    }).then((result) => {
+
+      if (result.isConfirmed) {
+        return true;
+
+      } else {
+        window.location.href = 'index.php';
+
+      }
+    });
+
+
+  });
+
+
+
+  // $('#steps').hide();
+  // $('#footer').hide();
+
+
+
 
   // Reset border color & text in span element
   $("input[class='rads']").click(function () {
@@ -585,7 +613,7 @@ $("#start_quiz").on("click", function () {
 
   // Next button changes to Submit and moves
   $("#next_30").text("Submit");
- // $("#back_30").css({ right: "78px" });
+
 
   $("#next_30").on("click", function () {
     if (!$("input[name='uniq']:checked").val()) {
@@ -631,7 +659,65 @@ $("#start_quiz").on("click", function () {
           $("#instr, #30").hide();
           $("#score_msg").show();
           $(".score").show();
-          $(".popup-close").hide();
+          $(document).ready(function () {
+
+
+          if (score == 30) {
+
+            $("#score_opinion").html("<h4>Perfect Score! Are you even Brazilian?</h4>")
+
+          }
+
+          if (score == 25 && score <= 29) {
+
+            $("#score_opinion").html("<h4>Excellent Score! You almost never raise any eybrows</h4>")
+
+          }
+
+          if (score == 20 && score < 25) {
+
+            $("#score_opinion").html("<h4>Very Good Score! Most of the time you control your Bloopers</h4>")
+
+          }
+
+          if (score == 15 && score < 20) {
+
+            $("#score_opinion").html("<h4>Good Score! You have enough awarness to conquer the mistakes</h4>")
+
+          }
+
+
+          if (score == 10 && score < 15) {
+
+            $("#score_opinion").html("<h4>Okay Score! You make mistakes but you know about it</h4>")
+
+          }
+
+
+          if (score == 5 && score < 10) {
+
+            $("#score_opinion").html("<h4>Weak Score! You want the natives to speak your language</h4>")
+
+          }
+
+          if (score < 5) {
+
+            $("#score_opinion").html("<h4>Very Weak Score! You think the natives speak your language</h4>")
+
+          }
+
+        });
+
+
+
+
+
+
+
+
+
+
+          $(".popup-close-fake").hide();
           $(".next, .back, .logo_quiz").hide();
 
 
@@ -1515,7 +1601,7 @@ $("#start_quiz").on("click", function () {
             }
 
             $("#results").append(currentQuiz);
-
+            $(".cont_answer").css({"text-align": "left", "padding-left": "80px"});
             $(".exp").show();
 
             $(".cont_dial").prepend("<div class='divider'></div>");
@@ -1767,29 +1853,7 @@ $("#start_quiz").on("click", function () {
   }
 }); // (start_quiz) button
 
-/* Mousemove function for the instructions*/
 
-$(function () {
-  let moveLeft = 10;
-  let moveUp = 75;
-
-  $("#instr").hover(
-    function (e) {
-      $(this).css("background", "#7ed776");
-      $("#inst_hov").show("slow");
-    },
-    function () {
-      $(this).css("background", "");
-      $("#inst_hov").hide("slow");
-    }
-  );
-
-  $("#instr").mousemove(function (e) {
-    $("#inst_hov")
-      .css("top", e.pageY - moveUp)
-      .css("left", e.pageX + moveLeft);
-  });
-});
 
 /*Hover function for '.next and .back' buttons*/
 $(document).ready(function () {
