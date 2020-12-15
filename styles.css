@@ -16,7 +16,7 @@ html {
 .tabs {
   position: relative;
   overflow: hidden;
-  background-color: black;
+  background-color:#4a444c;
 }
 
 .tabs #myLinks {
@@ -32,7 +32,7 @@ html {
 }
 
 .tabs a.icon {
-  background: black;
+  background: #4a444c;
   display: block;
   position: absolute;
   right: 0;
@@ -59,9 +59,10 @@ a {
 
 a:hover {
   text-decoration: none;
-  color: #67b060;
+  /*color: #67b060;*/
   transition: all 0, 5s;
   border: hidden;
+  color: #0f1403;
 }
 
 #a_examples {
@@ -262,7 +263,7 @@ h3 {
 
 
 
-#popup_close_2 {
+.popup-close-fake {
   width: 20px;
   height: 20px;
   padding-top: 5px;
@@ -289,7 +290,7 @@ h3 {
   text-decoration: none;
 }
 
- #popup_close_2:hover {
+ .popup-close-fake:hover {
   -webkit-transform: translate(50%, -50%) rotate(180deg);
   transform: translate(50%, -50%) rotate(180deg);
   background: #4a444c;
@@ -462,11 +463,11 @@ em {
   padding: 5px;
   border-radius: 5px;
   cursor: help;
-  position: absolute;
-  left: 48px;
-  /* border-bottom: 3px solid rgba(0, 0, 0, 0.2);
-    border-right: 1px solid rgba(0, 0, 0, 0.2); */
-  margin-top: -65px;
+  position: relative;
+  left: 40px;
+  border-bottom: 3px solid rgba(0, 0, 0, 0.2);
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+  margin-top: -24px;
 }
 
 .next {
@@ -590,7 +591,7 @@ em {
   max-width: 800px;
   max-height: 400px;
   width: 90%;
-  margin-top: -70px;
+  margin-top: 100px;
 
 }
 
@@ -683,8 +684,8 @@ em {
   position: absolute;
   width: 400px;
   padding: 8px;
-  background: #eeeeee;
-  color: #0867b0;
+  background: #67b060;
+  color: white;
   border-radius: 20mm;
   border: 1px solid #1a1a1a;
   font-size: 60%;
@@ -971,7 +972,7 @@ textarea {
 
   .tabs a {
     color: white;
-    background-color: black;
+    background-color: #4a444c;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
@@ -979,7 +980,7 @@ textarea {
   }
 
   .tabs a.icon {
-    background: black;
+    background: #4a444c;
     display: block;
     position: absolute;
     right: 0;
@@ -1101,7 +1102,7 @@ textarea {
 
 @media (max-width: 917px) and (min-width: 668px) {
   .situation {
-    margin-left: 185px;
+    margin-left: 195px;
   }
 
   .next {
