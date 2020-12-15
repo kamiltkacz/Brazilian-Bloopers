@@ -11,14 +11,15 @@ $("#start_survey").on("click", function () {
   $("#footer").hide();
 });
 
-$(".popup-close").on("click", function () {
+$("#popup_close_1").on("click", function () {
+  alert("close survey");
   $("#steps").show();
   $("#footer").show();
 });
 
-// $(document).ready(function () {
-//   $("#start_quiz").prop("disabled", true);
-// });
+$(document).ready(function () {
+  $("#start_quiz").prop("disabled", true);
+});
 
 // Reset border color & text in span element for question1 validation
 $("input[type='radio'][name='gender']").click(function () {
