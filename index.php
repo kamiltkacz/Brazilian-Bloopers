@@ -96,14 +96,14 @@ require_once('./dbconn.php');
       <div class="container">
       <fieldset class="field_about">
         <h4 class="leg_highlight" id="leg_high_2">About the Bloopers</h4>
-        <p class="al_left">Let's face it. Learning another language and communicating your ideas in it is no easy feat. English, however omnipresent in this world, is no exception. We're here to help a little with that.<br>If you look up the English defintion of the word <a href="https://www.dictionary.com/browse/blooper" alt="to dictionary.com" style="font-style: italic; font-weight: bolder" target="_blank"><span>'blooper'</span></a>&nbsp;you'll get "an embarassing error you make publicly". Although we don't think the mistakes you'll find here are that bad, we do believe correcting them is a great step forward in your language learning journey.<br>&nbsp;Check out the examples<a href="#examples" id="a_examples" style="font-style: italic; font-weight: bolder"><span>here.</span></a></p>
+        <p class="al_left">Let's face it. Learning another language and communicating your ideas in it is no easy feat. English, however omnipresent in this world, is no exception. We're here to help a little with that.<br>If you look up the English defintion of the word <a href="https://www.dictionary.com/browse/blooper" alt="to dictionary.com" style="font-style: italic; font-weight: bolder; text-decoration: underline" target="_blank"><span>'blooper'</span></a>&nbsp;you'll get "an embarassing error you make publicly". Although we don't think the mistakes you'll find here are that bad, we do believe correcting them is a great step forward in your language learning journey.<br>&nbsp;Check out the example<a href="#examples" id="a_examples" style="font-style: italic; font-weight: bolder; text-decoration: underline" ><span>here.</span></a></p>
       </fieldset>
       </div>
 
     <div class="container" id="about_qz">
     <fieldset class="field_about">
        <h4 class="leg_highlight" id="leg_high_3">About the Quiz</h4>
-       <p class="al_left"> The quiz is in English only, because you can't have it too easy, can you? The survey however, is offered in both English and  Portuguese. The quiz consists of false cognates, idiomatic expressions, incomplete phrases, etc. You'll be presented with a series of dialogues. You have to use your judgement when picking the only one correct answer.<br><br>&nbsp;There are 30 questions which vary in difficulty. Some mistakes are more common and some less frequent but all of them share the peculiarity of the Portuguese language that does not translate well into English. Even though many of the bloopers are intelligible to native English speakers, you would be better off finding a more common alternative.<br><br>&nbsp;But don't be too hard on yourself - It's okay if you have a piece of Brazil that never leaves your brain, plus why not let the gringos do some thinking?<br><br>Don't forget to enjoy the process! <br><br><a href="#" style="padding: 5px; font-style: italic; font-weight: bolder", onclick="openPage('Quiz', this);">Ready?</a></p>
+       <p class="al_left"> The quiz is in English only, because you can't have it too easy, can you? The survey however, is offered in both English and  Portuguese. The quiz consists of false cognates, idiomatic expressions, incomplete phrases, etc. You'll be presented with a series of dialogues. You have to use your judgement when picking the only one correct answer.<br><br>&nbsp;There are 30 questions which vary in difficulty. Some mistakes are more common and some less frequent but all of them share the peculiarity of the Portuguese language that does not translate well into English. Even though many of the bloopers are intelligible to native English speakers, you would be better off finding a more common alternative.<br><br>&nbsp;After you finish, make sure to check the explanation section which is under each question. This section is where we put most work in this project. We hope you'll find it useful.&nbsp;<br>One last thing - remember not to be be too hard on yourself - It's okay if you have a piece of Brazil that never leaves your brain, plus why not let the gringos do some thinking?<br><br>Don't forget to enjoy the process! <br><br><a href="#" style="padding: 5px; font-style: italic; font-weight: bolder; text-decoration: underline", onclick="openPage('Quiz', this);">Ready?</a></p>
      </fieldset>
      </div>
      <div class="container">
@@ -232,7 +232,7 @@ require_once('./dbconn.php');
 
 
         <div id="1" class="questions">
-         <a class="popup-close" id="popup_close_2" data-popup-close="popup-2" href="#">x</a>
+        <a class="popup-close-fake" href="#">x</a>
 
             <div class="cont_dial">
             <img src="pics/logo.png" class="logo_quiz" alt="logo_boy">
@@ -268,7 +268,7 @@ require_once('./dbconn.php');
 
          <div id="2" class="questions" style="display: none;">
 
-          <a class="popup-close"id="popup_close_2" data-popup-close="popup-2" href="#">x</a>
+          <a class="popup-close-fake" href="#">x</a>
           <div class="cont_dial">
           <img src="pics/logo.png" class="logo_quiz" alt="logo_boy">
           <p class="situation">2&nbsp; out of&nbsp; 30</p>
@@ -298,7 +298,7 @@ require_once('./dbconn.php');
         </div>
 
        <div id="3" class="questions" style="display: none;">
-        <a class="popup-close"id="popup_close_2" data-popup-close="popup-2" href="#">x</a>
+        <a class="popup-close-fake" href="#">x</a>
 
              <div class="cont_dial">
              <img src="pics/logo.png" class="logo_quiz" alt="logo_boy">
@@ -327,7 +327,7 @@ require_once('./dbconn.php');
 
       <div id="4" class="questions" style="display: none;">
 
-       <a class="popup-close"id="popup_close_2" data-popup-close="popup-2" href="#">x</a>
+       <a class="popup-close-fake" href="#">x</a>
            <div class="cont_dial">
            <img src="pics/logo.png" class="logo_quiz" alt="logo_boy">
            <p class="situation">4&nbsp; out of&nbsp; 30</p>
@@ -355,7 +355,7 @@ require_once('./dbconn.php');
 
 
        <div id="5" class="questions" style="display: none;">
-        <a class="popup-close"id="popup_close_2" data-popup-close="popup-2" href="#">x</a>
+        <a class="popup-close-fake" href="#">x</a>
 
            <div class="cont_dial">
            <img src="pics/logo.png" class="logo_quiz" alt="logo_boy">
@@ -384,7 +384,7 @@ require_once('./dbconn.php');
 
         <div id="6" class="questions" style="display: none;">
 
-         <a class="popup-close"id="popup_close_2" data-popup-close="popup-2" href="#">x</a>
+         <a class="popup-close-fake" href="#">x</a>
            <div class="cont_dial">
            <img src="pics/logo.png" class="logo_quiz" alt="logo_boy">
            <p class="situation">6&nbsp; out of&nbsp; 30</p>
@@ -411,7 +411,7 @@ require_once('./dbconn.php');
         </div>
 
       <div id="7" class="questions" style="display: none;">
-       <a class="popup-close"id="popup_close_2" data-popup-close="popup-2" href="#">x</a>
+       <a class="popup-close-fake" href="#">x</a>
            <div class="cont_dial">
            <img src="pics/logo.png" class="logo_quiz" alt="logo_boy">
             <p class="situation">7&nbsp; out of &nbsp;30</p>
@@ -438,7 +438,7 @@ require_once('./dbconn.php');
         </div>
 
           <div id="8" class="questions" style="display: none;">
-           <a class="popup-close"id="popup_close_2" data-popup-close="popup-2" href="#">x</a>
+           <a class="popup-close-fake" href="#">x</a>
            <div class="cont_dial">
            <img src="pics/logo.png" class="logo_quiz" alt="logo_boy">
             <p class="situation">8&nbsp;out of&nbsp; 30</p>
@@ -465,7 +465,7 @@ require_once('./dbconn.php');
         </div>
 
         <div id="9" class="questions" style="display: none;">
-         <a class="popup-close"id="popup_close_2" data-popup-close="popup-2" href="#">x</a>
+         <a class="popup-close-fake" href="#">x</a>
 
            <div class="cont_dial">
            <img src="pics/logo.png" class="logo_quiz" alt="logo_boy">
@@ -494,7 +494,7 @@ require_once('./dbconn.php');
 
         <div id="10" class="questions" style="display: none;">
 
-         <a class="popup-close"id="popup_close_2" data-popup-close="popup-2" href="#">x</a>
+         <a class="popup-close-fake" href="#">x</a>
            <div class="cont_dial">
            <img src="pics/logo.png" class="logo_quiz" alt="logo_boy">
            <p class="situation">10&nbsp; out of&nbsp; 30</p>
@@ -522,7 +522,7 @@ require_once('./dbconn.php');
 
 
       <div id="11" class="questions" style="display: none;">
-       <a class="popup-close"id="popup_close_2" data-popup-close="popup-2" href="#">x</a>
+       <a class="popup-close-fake" href="#">x</a>
 
            <div class="cont_dial">
            <img src="pics/logo.png" class="logo_quiz" alt="logo_boy">
@@ -551,7 +551,7 @@ require_once('./dbconn.php');
 
          <div id="12" class="questions" style="display: none;">
 
-          <a class="popup-close"id="popup_close_2" data-popup-close="popup-2" href="#">x</a>
+          <a class="popup-close-fake" href="#">x</a>
            <div class="cont_dial">
            <img src="pics/logo.png" class="logo_quiz" alt="logo_boy">
            <p class="situation">12&nbsp; out of&nbsp; 30</p>
@@ -578,7 +578,7 @@ require_once('./dbconn.php');
         </div>
 
          <div id="13" class="questions" style="display: none;">
-          <a class="popup-close"id="popup_close_2" data-popup-close="popup-2" href="#">x</a>
+          <a class="popup-close-fake" href="#">x</a>
 
            <div class="cont_dial">
            <img src="pics/logo.png" class="logo_quiz" alt="logo_boy">
@@ -607,7 +607,7 @@ require_once('./dbconn.php');
 
       <div id="14" class="questions" style="display: none;">
 
-       <a class="popup-close"id="popup_close_2" data-popup-close="popup-2" href="#">x</a>
+       <a class="popup-close-fake" href="#">x</a>
            <div class="cont_dial" id="dial_14">
            <img src="pics/logo.png" class="logo_quiz" alt="logo_boy">
            <p class="situation" id="sit_14">14&nbsp; out of&nbsp; 30</p>
@@ -635,7 +635,7 @@ require_once('./dbconn.php');
 
 
          <div id="15" class="questions" style="display: none;">
-          <a class="popup-close"id="popup_close_2" data-popup-close="popup-2" href="#">x</a>
+          <a class="popup-close-fake" href="#">x</a>
 
            <div class="cont_dial" id="dial_15">
            <img src="pics/logo.png" class="logo_quiz" alt="logo_boy">
@@ -666,7 +666,7 @@ require_once('./dbconn.php');
 
         <div id="16" class="questions" style="display: none;">
 
-         <a class="popup-close"id="popup_close_2" data-popup-close="popup-2" href="#">x</a>
+         <a class="popup-close-fake" href="#">x</a>
            <div class="cont_dial">
            <img src="pics/logo.png" class="logo_quiz" alt="logo_boy">
            <p class="situation">16&nbsp; out of&nbsp; 30</p>
@@ -694,7 +694,7 @@ require_once('./dbconn.php');
 
          <div id="17" class="questions" style="display: none;">
 
-          <a class="popup-close"id="popup_close_2" data-popup-close="popup-2" href="#">x</a>
+          <a class="popup-close-fake" href="#">x</a>
            <div class="cont_dial">
            <img src="pics/logo.png" class="logo_quiz" alt="logo_boy">
            <p class="situation">17&nbsp; out of&nbsp; 30</p>
@@ -721,7 +721,7 @@ require_once('./dbconn.php');
         </div>
 
         <div id="18" class="questions" style="display: none;">
-         <a class="popup-close"id="popup_close_2" data-popup-close="popup-2" href="#">x</a>
+         <a class="popup-close-fake" href="#">x</a>
 
            <div class="cont_dial">
            <img src="pics/logo.png" class="logo_quiz" alt="logo_boy">
@@ -750,7 +750,7 @@ require_once('./dbconn.php');
 
 
         <div id="19" class="questions" style="display: none;">
-         <a class="popup-close"id="popup_close_2" data-popup-close="popup-2" href="#">x</a>
+         <a class="popup-close-fake" href="#">x</a>
 
            <div class="cont_dial">
            <img src="pics/logo.png" class="logo_quiz" alt="logo_boy">
@@ -779,7 +779,7 @@ require_once('./dbconn.php');
 
         <div id="20" class="questions" style="display: none;">
 
-         <a class="popup-close"id="popup_close_2" data-popup-close="popup-2" href="#">x</a>
+         <a class="popup-close-fake" href="#">x</a>
            <div class="cont_dial">
            <img src="pics/logo.png" class="logo_quiz" alt="logo_boy">
            <p class="situation">20&nbsp; out of&nbsp; 30</p>
@@ -808,7 +808,7 @@ require_once('./dbconn.php');
 
 
         <div id="21" class="questions" style="display: none;">
-         <a class="popup-close"id="popup_close_2" data-popup-close="popup-2" href="#">x</a>
+         <a class="popup-close-fake" href="#">x</a>
 
            <div class="cont_dial">
            <img src="pics/logo.png" class="logo_quiz" alt="logo_boy">
@@ -837,7 +837,7 @@ require_once('./dbconn.php');
 
         <div id="22" class="questions" style="display: none;">
 
-         <a class="popup-close"id="popup_close_2" data-popup-close="popup-2" href="#">x</a>
+         <a class="popup-close-fake" href="#">x</a>
            <div class="cont_dial">
            <img src="pics/logo.png" class="logo_quiz" alt="logo_boy">
            <p class="situation">22&nbsp; out of&nbsp; 30</p>
@@ -865,7 +865,7 @@ require_once('./dbconn.php');
 
         <div id="23" class="questions" style="display: none;">
 
-         <a class="popup-close"id="popup_close_2" data-popup-close="popup-2" href="#">x</a>
+         <a class="popup-close-fake" href="#">x</a>
            <div class="cont_dial">
            <img src="pics/logo.png" class="logo_quiz" alt="logo_boy">
            <p class="situation">23&nbsp; out of&nbsp; 30</p>
@@ -892,7 +892,7 @@ require_once('./dbconn.php');
         </div>
 
         <div id="24" class="questions" style="display: none;">
-         <a class="popup-close"id="popup_close_2" data-popup-close="popup-2" href="#">x</a>
+         <a class="popup-close-fake" href="#">x</a>
 
            <div class="cont_dial">
            <img src="pics/logo.png" class="logo_quiz" alt="logo_boy">
@@ -926,7 +926,7 @@ require_once('./dbconn.php');
 
         <div id="25" class="questions" style="display: none;">
 
-         <a class="popup-close"id="popup_close_2" data-popup-close="popup-2" href="#">x</a>
+         <a class="popup-close-fake" href="#">x</a>
            <div class="cont_dial">
            <img src="pics/logo.png" class="logo_quiz" alt="logo_boy">
            <p class="situation">25&nbsp; out of&nbsp; 30</p>
@@ -953,7 +953,7 @@ require_once('./dbconn.php');
         </div>
 
         <div id="26" class="questions" style="display: none;">
-         <a class="popup-close"id="popup_close_2" data-popup-close="popup-2" href="#">x</a>
+         <a class="popup-close-fake" href="#">x</a>
 
            <div class="cont_dial">
            <img src="pics/logo.png" class="logo_quiz" alt="logo_boy">
@@ -982,7 +982,7 @@ require_once('./dbconn.php');
 
         <div id="27" class="questions" style="display: none;">
 
-         <a class="popup-close"id="popup_close_2" data-popup-close="popup-2" href="#">x</a>
+         <a class="popup-close-fake" href="#">x</a>
            <div class="cont_dial">
            <img src="pics/logo.png" class="logo_quiz" alt="logo_boy">
            <p class="situation">27&nbsp; out of&nbsp; 30</p>
@@ -1009,7 +1009,7 @@ require_once('./dbconn.php');
         </div>
 
         <div id="28" class="questions" style="display: none;">
-         <a class="popup-close"id="popup_close_2" data-popup-close="popup-2" href="#">x</a>
+         <a class="popup-close-fake" href="#">x</a>
 
            <div class="cont_dial">
            <img src="pics/logo.png" class="logo_quiz" alt="logo_boy">
@@ -1038,7 +1038,7 @@ require_once('./dbconn.php');
 
         <div id="29" class="questions" style="display: none;">
 
-         <a class="popup-close"id="popup_close_2" data-popup-close="popup-2" href="#">x</a>
+         <a class="popup-close-fake" href="#">x</a>
            <div class="cont_dial">
            <img src="pics/logo.png" class="logo_quiz" alt="logo_boy">
            <p class="situation">29&nbsp; out of&nbsp; 30</p>
@@ -1065,7 +1065,7 @@ require_once('./dbconn.php');
         </div>
 
         <div id="30" class="questions" style="display: none;">
-         <a class="popup-close"id="popup_close_2" data-popup-close="popup-2" href="#">x</a>
+         <a class="popup-close-fake" href="#">x</a>
 
            <div class="cont_dial" id="dial_30">
            <img src="pics/logo.png" class="logo_quiz" alt="logo_boy">
@@ -1101,17 +1101,16 @@ require_once('./dbconn.php');
 
         <!--Hidden Msg -->
         <div id="score_msg" class="container">
-        <h4>Thanks for doing the quiz!<br>Your score is:</h4>
-        <h3><span class="score">0 points</span></h3>
-        <p>check your answers&nbsp;<button id="check_res" class="hvr-grow" onclick="checkResult()">HERE</button></p>
+        <h4 style="margin-bottom: 40px;">Thanks for doing the quiz!<br></h4>
+        <h4 style="margin-bottom: 40px;">Your score is:</h4>
+        <h3 style="margin-bottom: 40px;" ><span class="score">0 points</span></h3>
+        <h4 id="score_opinion">Verdict</h4>
+        <p style="margin-top: 40px;">Check your answers&nbsp;<button id="check_res" class="hvr-grow" onclick="checkResult()">HERE</button></p>
         </div>
 
-
-        <!-- <div id="div_instr">
-          <button id="instr" name="instructions">Instructions</button>
-          <button id="sub_quiz" type="submit">Submit</button>
-        </div> -->
       </form>
+
+
 
     </div><!--popup-inner2-->
   </div> <!-- popup2-->
@@ -1119,13 +1118,6 @@ require_once('./dbconn.php');
   <div id="results">
   <p id="urTest">Your test:</p><br>
   </div>
-
-  <!--mouseover instructions in CSS: Display None -->
-  <!-- <div id="inst_hov">
-   <br>
-      <p>* Read the dialogues and check the correct answer.<br></p>
-    <p>* After you finish check your score and the Explanation.</p>
-  </div> -->
 
   </div> <!--Quiz tab-->
 
