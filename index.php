@@ -256,7 +256,7 @@ require_once('./dbconn.php');
                 <div class="d_err" style="display:none">&nbsp;<i class="fas fa-times" aria-hidden="true"></i></div><br>
                 </label>
            <div class="exp" id="exp_1" style="display:none">
-           <p class="par_exp"><span class="span_exp">Explanation</span>: In English every sentence needs the subject&nbsp;(He, She, It etc).<br>Ex.&nbsp;"It is important to drive responsibly."<br>Ex.&nbsp;"It doesn't rain much in Brasilia."</p>
+           <p class="par_exp"><span class="span_exp">Explanation</span>: In English every sentence needs a subject&nbsp;(He, She, It etc).<br>Ex.&nbsp;"It is important to drive responsibly."<br>Ex.&nbsp;"It doesn't rain much in Brasilia."</p>
             <div class="resultMsg">
              <h4 class="scoreInfo" id="scoreInfo_1">Your score:&nbsp;</h4>
             </div>
@@ -273,21 +273,21 @@ require_once('./dbconn.php');
           <img src="pics/logo.png" class="logo_quiz" alt="logo_boy">
           <p class="situation">2&nbsp; out of&nbsp; 30</p>
               <p>Tiago: How was the party?</p>
-              <p>Magda: Oh,<span class="error_style"><em>it was too good</em></span>.&nbsp;I danced all night.</p>
+              <p>Magda: Oh,&nbsp;<span class="error_style"><em>it was too good</em></span>.&nbsp;I danced all night.</p>
 
           </div>
            <hr class="hr_white">
           <div class="cont_answer">
             <p class="p_corr"><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p><br>
 
-                <input type="radio" id="t_1" class="rads" name="too" value="corr"><label for="t_1">&nbsp;it was very good!</label>
+                <input type="radio" id="t_1" class="rads" name="too" value="corr"><label for="t_1">&nbsp;it was very good.</label>
                 <div class="d_corr" style="display:none">&nbsp;<i class="fas fa-check"></i></div><br>
-                <input type="radio" id="t_2" class="rads" name="too" value="err_ok"><label for="t_2" class="err_label">&nbsp;it were very good</label>
+                <input type="radio" id="t_2" class="rads" name="too" value="err_ok"><label for="t_2" class="err_label">&nbsp;it were very good.</label>
                 <div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
-                <input type="radio" id="t_3" class="rads" name="too" value="err_2"><label for="t_3" class="err_label">&nbsp;it was two good!</label>
+                <input type="radio" id="t_3" class="rads" name="too" value="err_2"><label for="t_3" class="err_label">&nbsp;it was two good.</label>
                 <div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
 
-            <div class="exp" id="exp_2" style="display:none"><p class="par_exp"><span class="span_exp">Explanation</span>: We say "Very" when we want to intensify something.&nbsp;Ex."The weather was very good on our trip".<br>We say "Too" to express negative excess of something, ex."It's 10 degrees. It is too cold to go to the beach."</p>
+            <div class="exp" id="exp_2" style="display:none"><p class="par_exp"><span class="span_exp">Explanation</span>: Use "Too + adjective" to express negative excess, which makes something impossible to happen. Ex."Mexican food is too spicy. We can't eat it!"</p><br>Use "Very + adjective" to intensify something.&nbsp;Ex."Mexican food is very spicy. We love it!".
             <div class="resultMsg">
              <h4 class="scoreInfo" id="scoreInfo_2">Your score:&nbsp;</h4>
             </div>
@@ -304,7 +304,7 @@ require_once('./dbconn.php');
              <img src="pics/logo.png" class="logo_quiz" alt="logo_boy">
              <p class="situation">3&nbsp; out of&nbsp; 30</p>
               <p>Rudolfo: Do you like your teacher?</p>
-              <p>Pedro: Yes, I love her.<span class="error_style"><em>She has much patience</em></span>&nbsp;with me.</p>
+              <p>Pedro: Yes, I love her.&nbsp;<span class="error_style"><em>She has much patience</em></span>&nbsp;with me.</p>
           </div>
            <hr class="hr_white">
           <div class="cont_answer">
@@ -315,7 +315,7 @@ require_once('./dbconn.php');
                 <input type="radio" id="m_3" class="rads" name="much" value="err_ok"><label for="m_3" class="err_label">&nbsp;a lot off patience</label><div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
 
 
-            <div class="exp" id="exp_3" style="display:none"><p class="par_exp"><span class="span_exp">Explanation</span>: We say "A lot of" in the affirmative when we want to express big quantity for non-countable nouns like patience, poluttion, water etc. Ex."There is a lot of pollution in China."<br> We say "Much" only in the negative or to intensify something ex."I don't drink much water.", "I like socccer very much."</p>
+            <div class="exp" id="exp_3" style="display:none"><p class="par_exp"><span class="span_exp">Explanation</span>:&nbsp;We use "Much" in interrogative and negative sentences. Ex."How much water do you drink? I don't drink much water." "Much" is also used in affirmative sentences when accompanied by "very", "so" or "too". Ex. "I like socccer very/so much." or "You're a workaholic, you work too much"</p> <br>  To express big quantity in affirmative sentences, we use "A lot of" or "Lots of". Ex."There is a lot of/ lots of pollution in China."
             <div class="resultMsg">
              <h4 class="scoreInfo" id="scoreInfo_3">Your score:&nbsp;</h4>
             </div>
@@ -331,7 +331,7 @@ require_once('./dbconn.php');
            <div class="cont_dial">
            <img src="pics/logo.png" class="logo_quiz" alt="logo_boy">
            <p class="situation">4&nbsp; out of&nbsp; 30</p>
-              <p>Livia: Do you want to see a movie?</p>
+              <p>Lívia: Do you want to see a movie?</p>
               <p>Alex: Sure,<span class="error_style"><em>&nbsp;have many</em></span>&nbsp;good films on Netflix.</p>
 
           </div>
@@ -343,7 +343,7 @@ require_once('./dbconn.php');
                 <input type="radio" id="ex_2" class="rads" name="exist" value="corr"><label for="ex_2">&nbsp;there are many</label><div class="d_corr" style="display:none">&nbsp;<i class="fas fa-check"></i></div><br>
                 <input type="radio" id="ex_3" class="rads" name="exist" value="err_2"><label for="ex_3" class="err_label">&nbsp;has many</label><div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
 
-            <div class="exp" id="exp_4" style="display:none"><p class="par_exp"><span class="span_exp">Explanation</span>: We say "There is/are" to express that something is or exists.<br> Ex. "There is a good restaurant in my block."<br>Ex."There are beautiful beaches in Brazil."</p>
+            <div class="exp" id="exp_4" style="display:none"><p class="par_exp"><span class="span_exp">Explanation</span>: We don't say "have" to express that something exists. Before "have", there`s always a subject. Ex. "We have 2 cars". <br>Use "There is/are" to express that something exists. Ex. "There is a good restaurant in my block."<br>Ex."There are beautiful beaches in Brazil."</p>
             <div class="resultMsg">
              <h4 class="scoreInfo" id="scoreInfo_4">Your score:&nbsp;</h4>
             </div>
@@ -361,7 +361,7 @@ require_once('./dbconn.php');
            <img src="pics/logo.png" class="logo_quiz" alt="logo_boy">
            <p class="situation">5&nbsp; out of&nbsp; 30</p>
               <p>Sylvio: What's your mother's profession?</p>
-              <p>Cristiano:<span class="error_style"><em>My mother, she is a dentist.</em></span></p>
+              <p>Cristiano:<span class="error_style"><em>&nbsp;My mother, she is a dentist.</em></span></p>
 
           </div>
            <hr class="hr_white">
@@ -370,9 +370,9 @@ require_once('./dbconn.php');
 
                 <input type="radio" id="tw_1" class="rads" name="two_sub" value="err_2"><label for="tw_1" class="err_label">&nbsp;my mother dentist</label><div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
                 <input type="radio" id="tw_2" class="rads" name="two_sub" value="corr"><label for="tw_2">&nbsp;my mother is a dentist</label><div class="d_corr" style="display:none">&nbsp;<i class="fas fa-check"></i></div><br>
-                <input type="radio" id="tw_3" class="rads" name="two_sub" value="err_ok"><label for="tw_3" class="err_label">&nbsp;my mothers is a dentist</label><div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
+                <input type="radio" id="tw_3" class="rads" name="two_sub" value="err_ok"><label for="tw_3" class="err_label">&nbsp;my mother's is a dentist</label><div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
 
-            <div class="exp" id="exp_5" style="display:none"><p class="par_exp"><span class="span_exp">Explanation</span>: Only one subject in necessary.<br>Ex."My brother is a student." or "He is a student."</p>
+            <div class="exp" id="exp_5" style="display:none"><p class="par_exp"><span class="span_exp">Explanation</span>: Only one subject is sufficient.<br>Ex."My brother is a student." or "He is a student."</p>
             <div class="resultMsg">
              <h4 class="scoreInfo" id="scoreInfo_5">Your score:&nbsp;</h4>
             </div>
@@ -388,8 +388,8 @@ require_once('./dbconn.php');
            <div class="cont_dial">
            <img src="pics/logo.png" class="logo_quiz" alt="logo_boy">
            <p class="situation">6&nbsp; out of&nbsp; 30</p>
-              <p>Mauricio: Did you like the movie?</p>
-              <p>Beata: Yes,<span class="error_style"><em>I liked.</em></span></p>
+              <p>Maurício: Did you like the movie?</p>
+              <p>Beata: Yes,<span class="error_style"><em>&nbsp;I liked.</em></span></p>
 
           </div>
            <hr class="hr_white">
@@ -400,7 +400,7 @@ require_once('./dbconn.php');
                 <input type="radio" id="ob_2" class="rads" name="no_obj" value="err_ok"><label for="ob_2" class="err_label">&nbsp;I liked this</label><div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
                 <input type="radio" id="ob_3" class="rads" name="no_obj" value="err_2"><label for="ob_3" class="err_label"&nbsp;>&nbsp;I liked its</label><div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
 
-            <div class="exp" id="exp_6" style="display:none"><p class="par_exp"><span class="span_exp">Explanation</span>: There are transitive and intransitive verbs in English. Intransitive verbs don't need an object. Examples of intransitive verbs: agree, arrive, come, cry, fly, exist, happen, live, rain, sleep, stay, walk. Ex." Birds fly", ex."Shit happens."<br>Transitive verbs are followed by an object. Commmon transitive verbs are: build, cut, find, like, make, need, send, use, want. Ex."The student needs a pen", "Mary is cutting the meat."<br>In the answers we also have to include the object. Ex."A: Did you see John?" B:Yes, I saw him."<br><br>Obs. Some verbs can be both: transitive and intransitive. Ex. "Tom studies philosophy." or "Tom studies."</p>
+            <div class="exp" id="exp_6" style="display:none"><p class="par_exp"><span class="span_exp">Explanation</span>: There are transitive and intransitive verbs in English. Intransitive verbs don't need an object. Examples of intransitive verbs: die, fly, happen, sleep. Ex." Birds fly", Ex."Shit happens."<br>Transitive verbs, on the other hand, are followed by an object or object pronoun (it, him, her, etc). Commmon transitive verbs are: like, make, use, want. Ex."Did you use the pen? Yes, I used "it". <br>Ex. "Don't worry about the cake, I'll make "it".
             <div class="resultMsg">
              <h4 class="scoreInfo" id="scoreInfo_6">Your score:&nbsp;</h4>
             </div>
@@ -415,8 +415,8 @@ require_once('./dbconn.php');
            <div class="cont_dial">
            <img src="pics/logo.png" class="logo_quiz" alt="logo_boy">
             <p class="situation">7&nbsp; out of &nbsp;30</p>
-              <p>Claudio: Where were you?</p>
-              <p>Natalia: I went to the store<span class="error_style"><em>&nbsp;for buy some milk.</em></span></p>
+              <p>Cláudio: Where were you?</p>
+              <p>Natália: I went to the store<span class="error_style"><em>&nbsp;&nbsp;for buy some milk.</em></span></p>
 
           </div>
            <hr class="hr_white">
@@ -427,7 +427,7 @@ require_once('./dbconn.php');
                 <input type="radio" id="for_2" class="rads" name="for" value="corr"><label for="for_2">&nbsp;to buy some milk</label><div class="d_corr" style="display:none">&nbsp;<i class="fas fa-check"></i></div><br>
                 <input type="radio" id="for_3" class="rads" name="for" value="err_2"><label for="for_3" class="err_label">&nbsp;for to buy some milk</label><div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
 
-            <div class="exp" id="exp_7" style="display:none"><p class="par_exp"><span class="span_exp">Explanation</span>: We say "in order to" to express purpose.  Use "In order to" with a verb to express purpose. "In order" is often omitted. Ex."She saves money in order to travel." or "She saves money to travel."<br> "For" can be used to express purpose, but it is a preposition and is followed by a noun. Ex. "I went online for some information." or "I went online (in order) to get some information."</p>
+            <div class="exp" id="exp_7" style="display:none"><p class="par_exp"><span class="span_exp">Explanation</span>: We say "in order to" or simply 'to' to express purpose/ objective. Ex."She saves money in order to travel." or "She saves money to travel."<br> The preposition "to" is followed by infinitive verbs, while the preposition "for" is followed by nouns. Compare: "She went online to look for information" x "She went online for some information"</p>
             <div class="resultMsg">
              <h4 class="scoreInfo" id="scoreInfo_7">Your score:&nbsp;</h4>
             </div>
@@ -443,7 +443,7 @@ require_once('./dbconn.php');
            <img src="pics/logo.png" class="logo_quiz" alt="logo_boy">
             <p class="situation">8&nbsp;out of&nbsp; 30</p>
               <p>Joe: How old are you?</p>
-              <p>Camilo:<span class="error_style"><em>I have 38 years.</em></span></p>
+              <p>Camilo:<span class="error_style"><em>&nbsp;I have 38 years.</em></span></p>
 
           </div>
            <hr class="hr_white">
@@ -452,7 +452,7 @@ require_once('./dbconn.php');
 
                 <input type="radio" id="age_1" class="rads" name="h_age" value="corr"><label for="age_1">&nbsp;I am 38 years old</label><div class="d_corr" style="display:none">&nbsp;<i class="fas fa-check"></i></div><br>
                 <input type="radio" id="age_2" class="rads" name="h_age" value="err_2"><label for="age_2" class="err_label">&nbsp;I have 38 years old</label><div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
-                <input type="radio" id="age_3" class="rads" name="h_age" value="err_ok"><label for="age_3" class="err_label">&nbsp;I am 38 old</label><div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
+                <input type="radio" id="age_3" class="rads" name="h_age" value="err_ok"><label for="age_3" class="err_label">&nbsp;I am 38 years</label><div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
 
             <div class="exp" id="exp_8" style="display:none"><p class="par_exp"><span class="span_exp">Explanation</span>: We use the verb "To be" to inform our age. Ex."She is 25."</p>
             <div class="resultMsg">
@@ -470,7 +470,7 @@ require_once('./dbconn.php');
            <div class="cont_dial">
            <img src="pics/logo.png" class="logo_quiz" alt="logo_boy">
            <p class="situation">9&nbsp;out of&nbsp; 30</p>
-              <p>Marcel: <span class="error_style"><em>Hey Guy,&nbsp;</em></span>how are you?</p>
+              <p>Marcel: <span class="error_style"><em>Hey, guy.&nbsp;</em></span>How are you?</p>
               <p>Steven: I'm okay, thanks.</p>
 
           </div>
@@ -478,9 +478,9 @@ require_once('./dbconn.php');
           <div class="cont_answer">
             <p class="p_corr"><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p><br>
 
-                <input type="radio" id="guy_1" class="rads" name="guy" value="err_ok"><label for="guy_1" class="err_label">&nbsp;Hey face</label><div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
-                <input type="radio" id="guy_2" class="rads" name="guy" value="err_2"><label for="guy_2" class="err_label">&nbsp;Hey male</label><div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
-                <input type="radio" id="guy_3" class="rads" name="guy" value="corr"><label for="guy_3">&nbsp;Hey man</label><div class="d_corr" style="display:none">&nbsp;<i class="fas fa-check"></i></div><br>
+                <input type="radio" id="guy_1" class="rads" name="guy" value="err_ok"><label for="guy_1" class="err_label">&nbsp;Hey, face.</label><div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
+                <input type="radio" id="guy_2" class="rads" name="guy" value="err_2"><label for="guy_2" class="err_label">&nbsp;Hey, male.</label><div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
+                <input type="radio" id="guy_3" class="rads" name="guy" value="corr"><label for="guy_3">&nbsp;Hey, man.</label><div class="d_corr" style="display:none">&nbsp;<i class="fas fa-check"></i></div><br>
 
             <div class="exp" id="exp_9" style="display:none"><p class="par_exp"><span class="span_exp">Explanation</span>: One of the ways to greet someone informally is "Hey man".&nbsp;We don't use "Hey guy" in English.</p>
             <div class="resultMsg">
@@ -498,7 +498,7 @@ require_once('./dbconn.php');
            <div class="cont_dial">
            <img src="pics/logo.png" class="logo_quiz" alt="logo_boy">
            <p class="situation">10&nbsp; out of&nbsp; 30</p>
-              <p>Marilia: What things do you like?</p>
+              <p>Marília: What kind of things do you like?</p>
               <p>Gabriel: I'm a typical guy.<span class="error_style"><em>&nbsp;I like car.</em></span></p>
 
           </div>
@@ -510,7 +510,7 @@ require_once('./dbconn.php');
                 <input type="radio" id="act_2" class="rads" name="car" value="corr"><label for="act_2">&nbsp;I like cars</label><div class="d_corr" style="display:none">&nbsp;<i class="fas fa-check"></i></div><br>
                 <input type="radio" id="act_3" class="rads" name="car" value="err_2"><label for="act_3" class="err_label">&nbsp;I like a car</label><div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
 
-            <div class="exp" id="exp_10" style="display:none"><p class="par_exp"><span class="span_exp">Explanation</span>: We use the plural with countable nouns to say we like something. Ex."I like dogs."<br> We use the singular with non-countable nouns. Ex."I like tennis."</p>
+            <div class="exp" id="exp_10" style="display:none"><p class="par_exp"><span class="span_exp">Explanation</span>: When we talk about objects in general, we use the plural form of countable nouns. Ex."I like films."<br>We use the singular form of countable nouns when we refer to a specific object, Ex. "I like this film" or, when we refer to a singular object. Ex. "I want to see a film tonight".</p>
             <div class="resultMsg">
              <h4 class="scoreInfo" id="scoreInfo_10">Your score:&nbsp;</h4>
             </div>
@@ -527,7 +527,7 @@ require_once('./dbconn.php');
            <div class="cont_dial">
            <img src="pics/logo.png" class="logo_quiz" alt="logo_boy">
            <p class="situation">11&nbsp; out of&nbsp; 30</p>
-              <p>Rogerio: What time do I have to be at the airport?</p>
+              <p>Rogério: What time do I have to be at the airport?</p>
               <p>Sansa: 3.30. Hurry up or you will <span class="error_style"><em>lose your flight.</em></span></p>
 
           </div>
@@ -539,7 +539,7 @@ require_once('./dbconn.php');
                 <input type="radio" id="los_2" class="rads" name="lose" value="corr"><label for="los_2">&nbsp;miss your flight</label><div class="d_corr" style="display:none">&nbsp;<i class="fas fa-check"></i></div><br>
                 <input type="radio" id="los_3" class="rads" name="lose" value="err_ok"><label for="los_3" class="err_label">&nbsp;loose your flight</label><div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
 
-            <div class="exp" id="exp_11" style="display:none"><p class="par_exp"><span class="span_exp">Explanation</span>: We say "To miss" when something is gone and it will not come back. Ex. "I missed my bus, I will take another one tomorrow."<br>We say "To lose" when we don't know where something is but there is a chance we will get it back. Ex. "I lost my keys last week."</p>
+            <div class="exp" id="exp_11" style="display:none"><p class="par_exp"><span class="span_exp">Explanation</span>: We say "To miss + object" when something is gone and it will not come back. Ex. "I missed my bus, I will take another one tomorrow."<br>We say "To lose + object" when soemthing belongs to us and we don't know where it is, but there is a chance we will find it. Ex. "I lost my keys/glasses last week."</p>
             <div class="resultMsg">
              <h4 class="scoreInfo" id="scoreInfo_11">Your score:&nbsp;</h4>
             </div>
@@ -556,7 +556,7 @@ require_once('./dbconn.php');
            <img src="pics/logo.png" class="logo_quiz" alt="logo_boy">
            <p class="situation">12&nbsp; out of&nbsp; 30</p>
               <p>Sabrina: Why are you nervous?</p>
-              <p>Nando:<span class="error_style"><em>&nbsp;I discussed with Marta about&nbsp;</em></span>politics.</p>
+              <p>Nando:<span class="error_style"><em>&nbsp;I discussed with Marta</em></span>&nbsp;about politics.</p>
 
           </div>
            <hr class="hr_white">
@@ -584,7 +584,7 @@ require_once('./dbconn.php');
            <img src="pics/logo.png" class="logo_quiz" alt="logo_boy">
            <p class="situation">13&nbsp; out of&nbsp; 30</p>
               <p>Teacher:&nbsp;What's the matter?</p>
-              <p>Student:&nbsp;<span class="error_style"><em>I have a doubt</em></span> about homework.</p>
+              <p>Student:&nbsp;<span class="error_style"><em>I have a doubt</em></span> about the homework.</p>
 
           </div>
            <hr class="hr_white">
@@ -611,8 +611,8 @@ require_once('./dbconn.php');
            <div class="cont_dial" id="dial_14">
            <img src="pics/logo.png" class="logo_quiz" alt="logo_boy">
            <p class="situation" id="sit_14">14&nbsp; out of&nbsp; 30</p>
-              <p>Marcia: Who were you talking to?&nbsp;I don't know him.</p>
-              <p>Livia: Paulo.&nbsp;<span class="error_style"><em>I knew him</em></span>&nbsp;last week at the gym.</p>
+              <p>Márcia: Who were you talking to?</p>
+              <p>Fátima: Paulo.&nbsp;<span class="error_style"><em>I knew him</em></span>&nbsp;last week at the gym.</p>
 
           </div>
            <hr class="hr_white">
@@ -651,10 +651,10 @@ require_once('./dbconn.php');
                 <input type="radio" id="god_1" class="rads" name="god" value="corr"><label for="god_1">&nbsp;Thank God she's alright</label><div class="d_corr" style="display:none">&nbsp;<i class="fas fa-check"></i></div><br>
                 <input type="radio" id="god_2" class="rads" name="god" value="err_2"><label for="god_2" class="err_label">&nbsp;Thanks, she alright</label>
                 <div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
-                <input type="radio" id="god_3" class="rads" name="god" value="err_ok"><label for="god_3" class="err_label">&nbsp;Thanks Gods, she's alright</label>
+                <input type="radio" id="god_3" class="rads" name="god" value="err_ok"><label for="god_3" class="err_label">&nbsp;Thank Gods she's alright</label>
                 <div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
 
-            <div class="exp" id="exp_15" style="display:none"><p class="par_exp"><span class="span_exp">Explanation</span>: We say "Thank God" when we express relief. We don't add "s" to "God". Ex. "Thank God it doesn't snow in Brazil. I hate cold weather."</p>
+            <div class="exp" id="exp_15" style="display:none"><p class="par_exp"><span class="span_exp">Explanation</span>: We use the expression "Thank God" when we express relief. We don't add "s" to "God" as we don't add "s" to "you" when we say "Thank you!"</p>
             <div class="resultMsg">
              <h4 class="scoreInfo" id="scoreInfo_15">Your score:&nbsp;</h4>
             </div>
@@ -699,7 +699,7 @@ require_once('./dbconn.php');
            <img src="pics/logo.png" class="logo_quiz" alt="logo_boy">
            <p class="situation">17&nbsp; out of&nbsp; 30</p>
               <p>Ana: Did your friend enjoy Rio?</p>
-              <p>Miguel: Yes, but<span class="error_style"><em>she was impressed with</em></span>&nbsp;violence.</p>
+              <p>Miguel: Yes, but<span class="error_style"><em>&nbsp;she was impressed with</em></span>&nbsp;the violence there.</p>
 
           </div>
            <hr class="hr_white">
@@ -710,7 +710,7 @@ require_once('./dbconn.php');
                 <input type="radio" id="imp_2" class="rads" name="impress" value="err_ok"><label for="imp_2" class="err_label">&nbsp;she impressed</label><div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
                 <input type="radio" id="imp_3" class="rads" name="impress" value="corr"><label for="imp_3">&nbsp;she was shocked by</label><div class="d_corr" style="display:none">&nbsp;<i class="fas fa-check"></i></div><br>
 
-            <div class="exp" id="exp_17" style="display:none"><p class="par_exp"><span class="span_exp">Explanation</span>: We are "Impressed" when somebody or something arouses our interest or admiration. Ex."Messi's skills are impressive."<br> We can say "schocked" when someone or something makes us surprised in a negative or threatning way. Ex."He was shocked by the stock market crash."</p>
+            <div class="exp" id="exp_17" style="display:none"><p class="par_exp"><span class="span_exp">Explanation</span>: We are "Impressed" when somebody or something arouses our interest or admiration. Ex."Messi's skills are impressive."<br> We can say "shocked" when someone or something makes us surprised in a negative or threatening way. Ex."He was shocked by the stock market crash."</p>
             <div class="resultMsg">
              <h4 class="scoreInfo" id="scoreInfo_17">Your score:&nbsp;</h4>
             </div>
@@ -756,7 +756,7 @@ require_once('./dbconn.php');
            <img src="pics/logo.png" class="logo_quiz" alt="logo_boy">
            <p class="situation">19&nbsp;out of&nbsp; 30</p>
               <p>Dani: Are you free at 6?</p>
-              <p>Carlos: No,&nbsp;<span class="error_style"><em>I go out from</em></span>&nbsp;work at 7.</p>
+              <p>Carlos: No,&nbsp;<span class="error_style"><em>I go out from work</em></span>&nbsp;at 7.</p>
 
           </div>
            <hr class="hr_white">
@@ -767,7 +767,7 @@ require_once('./dbconn.php');
                 <input type="radio" id="go_2" class="rads" name="gout" value="er_2"><label for="go_2" class="err_label">&nbsp;I go off work</label><div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
                 <input type="radio" id="go_3" class="rads" name="gout" value="err_ok"><label for="go_3" class="err_label">&nbsp;I live work</label><div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
 
-            <div class="exp" id="exp_19" style="display:none"><p class="par_exp"><span class="span_exp">Explanation</span>: We say "To go out" when we mean going to a nightclub or a bar and staying until late hours. Ex."Young people love to go out on weekends."<br>We say "To leave" when we mean to exit a place, relationship, group, etc. Ex. "I leave class earlier on Fridays beacuse I have to catch a bus." Ex. "She left the marrige due to his gambling habit."</p>
+            <div class="exp" id="exp_19" style="display:none"><p class="par_exp"><span class="span_exp">Explanation</span>: We say "To leave" when we mean to exit a place, relationship, group, etc. Ex. "I leave class earlier on Fridays because I have to catch a bus." Ex. "She left her marrige due to his gambling habit."<br>We say "To go out" when we mean going to a bar, a restaurant, etc, to drink, eat, talk and have fun. Ex."Young people love to go out on weekends."</p>
             <div class="resultMsg">
              <h4 class="scoreInfo" id="scoreInfo_19">Your score:&nbsp;</h4>
             </div>
@@ -813,8 +813,8 @@ require_once('./dbconn.php');
            <div class="cont_dial">
            <img src="pics/logo.png" class="logo_quiz" alt="logo_boy">
            <p class="situation">21&nbsp; out of&nbsp; 30</p>
-              <p>Suzy: Hi Mariana, how are you?</p>
-              <p>Mariana: I'm tired, I studied<span class="error_style"><em>&nbsp;during 3 hours.</em></span></p>
+              <p>Suzy: Hey, Mariana. How are you?</p>
+              <p>Mariana: I'm tired, I've studied<span class="error_style"><em>&nbsp;during 3 hours.</em></span></p>
 
           </div>
            <hr class="hr_white">
@@ -825,7 +825,7 @@ require_once('./dbconn.php');
                 <input type="radio" id="stu_2" class="rads" name="durat" value="corr"><label for="stu_2">&nbsp;for 3 hours</label><div class="d_corr" style="display:none">&nbsp;<i class="fas fa-check"></i></div><br>
                 <input type="radio" id="stu_3" class="rads" name="durat" value="err_2"><label for="stu_3" class="err_label">&nbsp;at 3 hours</label><div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
 
-            <div class="exp" id="exp_21" style="display:none"><p class="par_exp"><span class="span_exp">Explanation</span>: We say "For" when we mean duration of an activity. Ex. "I lived in the States for 7 years." We say "During" when we mean at some point or time of reference. Ex. "I read a lot during the pandemic."</p>
+            <div class="exp" id="exp_21" style="display:none"><p class="par_exp"><span class="span_exp">Explanation</span>: We say "For" when we refer to the duration of an activity, usually followed by numbers. Ex. "I lived in the States for 7 years." We say "During" when we refer to events or periods of time. Ex. "I've read a lot during the pandemic." "She slept during the conference"</p>
             <div class="resultMsg">
              <h4 class="scoreInfo" id="scoreInfo_21">Your score:&nbsp;</h4>
             </div>
@@ -842,7 +842,7 @@ require_once('./dbconn.php');
            <img src="pics/logo.png" class="logo_quiz" alt="logo_boy">
            <p class="situation">22&nbsp; out of&nbsp; 30</p>
               <p>Jackie: How was training today?</p>
-              <p>Juliano: Good, but<span class="error_style"><em>I stayed tired</em></span>&nbsp;quickly.</p>
+              <p>Juliano: Good, but<span class="error_style"><em>&nbsp;I stayed tired</em></span>&nbsp;quickly.</p>
 
           </div>
            <hr class="hr_white">
@@ -853,8 +853,8 @@ require_once('./dbconn.php');
                 <input type="radio" id="sta_2" class="rads" name="stay" value="err_2"><label for="sta_2" class="err_label">&nbsp;I became tired</label><div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
                 <input type="radio" id="sta_3" class="rads" name="stay" value="corr"><label for="sta_3">&nbsp;I got tired</label><div class="d_corr" style="display:none">&nbsp;<i class="fas fa-check"></i></div><br>
 
-            <div class="exp" id="exp_22" style="display:none"><p class="par_exp"><span class="span_exp">Explanation</span>: We say "get tired" when we mean our disposition changes from good condition to tired, in need of rest. Ex. "When I don't eat, I get tired quickly." We can say "stay tired" if you remain in the need of rest, chronically feel tired. Ex "I eat and sleep well but I stay (feel) tired most of the day." Still, "Feel tired" is more common.<br> Use "Get + Adjective" to express change in a state.<br>Use "Feel + Adjective" to express permanence of a state.</p>
-            <div class="resultMsg">
+            <div class="exp" id="exp_22" style="display:none"><p class="par_exp"><span class="span_exp">Explanation</span>: Use "Get + Adjective" to express a temporary change of state. Ex. "I got angry in traffic, but I'm calmer now". <br>Use "Stay + adjective" or "Feel + adjective" to express continuity of a state. You may say "stay tired" if you remain in the need of rest, chronically feel tired. Ex. "I eat and sleep well but I stay (feel) tired most of the day." However, "Feel tired" is more common.</p>
+             <div class="resultMsg">
              <h4 class="scoreInfo" id="scoreInfo_22">Your score:&nbsp;</h4>
             </div>
            </div>
@@ -870,7 +870,7 @@ require_once('./dbconn.php');
            <img src="pics/logo.png" class="logo_quiz" alt="logo_boy">
            <p class="situation">23&nbsp; out of&nbsp; 30</p>
               <p>Tony: How do you feel?</p>
-              <p>Rafael: Not well.<span class="error_style"><em>I'm with a headache.</em></span></p>
+              <p>Rafael: Not well.<span class="error_style"><em>&nbsp;I'm with a headache.</em></span></p>
 
           </div>
            <hr class="hr_white">
@@ -881,7 +881,7 @@ require_once('./dbconn.php');
                 <input type="radio" id="wit_2" class="rads" name="with" value="err_ok"><label for="wit_2" class="err_label">&nbsp;I'm headache</label><div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
                 <input type="radio" id="wit_3" class="rads" name="with" value="corr"><label for="wit_3">&nbsp;I have a headache</label><div class="d_corr" style="display:none">&nbsp;<i class="fas fa-check"></i></div><br>
 
-            <div class="exp" id="exp_23" style="display:none"><p class="par_exp"><span class="span_exp">Explanation</span>: We say "To have a headache" or any kind of pain or disease. Ex. "Jonh had a stomachache after he ate those grapes." Ex."Luis has a heart condition."<br> We say "To be with someone" when we mean their company, generally we use it just for people. Ex. "I was with Claire at the picnic."</p>
+            <div class="exp" id="exp_23" style="display:none"><p class="par_exp"><span class="span_exp">Explanation</span>: We say "To have a headache" or any kind of pain or disease. Ex. "Jonh had a stomachache after he ate those grapes." Ex."Luis has a fever."<br> We say "To be with someone", when we are in their company. Ex. "I was with Claire at the picnic."</p>
             <div class="resultMsg">
              <h4 class="scoreInfo" id="scoreInfo_23">Your score:&nbsp;</h4>
             </div>
@@ -898,7 +898,7 @@ require_once('./dbconn.php');
            <img src="pics/logo.png" class="logo_quiz" alt="logo_boy">
            <p class="situation">24&nbsp; out of&nbsp; 30</p>
               <p>Luiza: What did you do last night?</p>
-              <p>Breno: I saw 3<span class="error_style"><em>&nbsp;chapters</em></span> of "Friends".</p>
+              <p>Breno: I saw 3<span class="error_style"><em>&nbsp;chapters</em></span>  of "Friends".</p>
 
           </div>
            <hr class="hr_white">
@@ -931,15 +931,15 @@ require_once('./dbconn.php');
            <img src="pics/logo.png" class="logo_quiz" alt="logo_boy">
            <p class="situation">25&nbsp; out of&nbsp; 30</p>
               <p>Susan: What's wrong?</p>
-              <p>Saulo: I got a<span class="error_style"><em>&nbsp;bad note</em></span>&nbsp;on my English test.</p>
+              <p>Saulo: I got <span class="error_style"><em>&nbsp;a bad note</em></span>&nbsp; on my English test.</p>
 
           </div>
            <hr class="hr_white">
           <div class="cont_answer">
             <p class="p_corr"><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p><br>
 
-                <input type="radio" id="not_1" class="rads" name="notes" value="err_ok"><label for="not_1" class="err_label">&nbsp;bad grades</label><div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
-                <input type="radio" id="not_2" class="rads" name="notes" value="corr"><label for="not_2">&nbsp;bad grade</label><div class="d_corr" style="display:none">&nbsp;<i class="fas fa-check"></i></div><br>
+                <input type="radio" id="not_1" class="rads" name="notes" value="err_ok"><label for="not_1" class="err_label">&nbsp;a bad grades</label><div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
+                <input type="radio" id="not_2" class="rads" name="notes" value="corr"><label for="not_2">&nbsp;a bad grade</label><div class="d_corr" style="display:none">&nbsp;<i class="fas fa-check"></i></div><br>
                 <input type="radio" id="not_3" class="rads" name="notes" value="err_2"><label for="not_3" class="err_label">&nbsp;bad points</label><div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
 
             <div class="exp" id="exp_25" style="display:none"><p class="par_exp"><span class="span_exp">Explanation</span>: We say "Note" when we mean mostly a short comment, informal letter or written message. Ex. "He made a note on a piece of paper."<br> We say "Grade" when we mean a mark indicating the quality of a student's work. Ex."She got good grades in high school."</p>
@@ -959,7 +959,7 @@ require_once('./dbconn.php');
            <img src="pics/logo.png" class="logo_quiz" alt="logo_boy">
            <p class="situation">26&nbsp; out of&nbsp; 30</p>
               <p>Robyn: Who is your number one singer?</p>
-              <p>Julio: Rihanna, I love all of<span class="error_style"><em>her musics.</em></span></p>
+              <p>Júlio: Rihanna, I love all of<span class="error_style"><em>&nbsp;her musics.</em></span></p>
 
           </div>
            <hr class="hr_white">
@@ -1043,7 +1043,7 @@ require_once('./dbconn.php');
            <img src="pics/logo.png" class="logo_quiz" alt="logo_boy">
            <p class="situation">29&nbsp; out of&nbsp; 30</p>
               <p>Ana: What kind of people don't you like?</p>
-              <p>Julia: <span class="error_style"><em>I can't support</em></span>&nbsp;messy people.</p>
+              <p>Juliana: <span class="error_style"><em>I can't support&nbsp;</em></span>&nbsp;messy people.</p>
 
           </div>
            <hr class="hr_white">
@@ -1051,7 +1051,7 @@ require_once('./dbconn.php');
             <p class="p_corr"><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p><br>
 
                 <input type="radio" id="sup_1" class="rads" name="support" value="corr"><label for="sup_1">&nbsp;I can't stand</label><div class="d_corr" style="display:none">&nbsp;<i class="fas fa-check"></i></div><br>
-                <input type="radio" id="sup_2" class="rads" name="support" value="err_ok"><label for="sup_2" class="err_label">&nbsp;I cans stand</label> <div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
+                <input type="radio" id="sup_2" class="rads" name="support" value="err_ok"><label for="sup_2" class="err_label">&nbsp;I'm can't stand</label> <div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
                 <input type="radio" id="sup_3" class="rads" name="support" value="err_2"><label for="sup_3" class="err_label">&nbsp;I can't stand up</label><div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
 
             <div class="exp" id="exp_29" style="display:none"><p class="par_exp"><span class="span_exp">Explanation</span>: We say "Support" when we mean to help someone financially. Ex."I lost my job and now my parents support me."<br> We say "Can't stand" when we mean we strongly dislike something or somebody. Ex. "I can't stand country music."</p>
@@ -1214,13 +1214,18 @@ require_once('./dbconn.php');
      let scorePopup = document.getElementsByClassName("popup")[1];
      let hideSteps = document.getElementById("steps");
 
+
      setTimeout(function(){
        scorePopup.style.display = "none",
        hideSteps.style.display = "none";
+
       }, 1000);
+
       $('#footer').show();
       $("#results").show();
     }
+
+
 
     /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
       function myBurger() {
