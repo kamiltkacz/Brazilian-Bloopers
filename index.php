@@ -400,7 +400,7 @@ require_once('./dbconn.php');
                 <input type="radio" id="ob_2" class="rads" name="no_obj" value="err_ok"><label for="ob_2" class="err_label">&nbsp;I liked this</label><div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
                 <input type="radio" id="ob_3" class="rads" name="no_obj" value="err_2"><label for="ob_3" class="err_label"&nbsp;>&nbsp;I liked its</label><div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
 
-            <div class="exp" id="exp_6" style="display:none"><p class="par_exp"><span class="span_exp">Explanation</span>: There are transitive and intransitive verbs in English. Intransitive verbs don't need an object. Examples of intransitive verbs: die, fly, happen, sleep. Ex." Birds fly", Ex."Shit happens."<br>Transitive verbs, on the other hand, are followed by an object or object pronoun (it, him, her, etc). Commmon transitive verbs are: like, make, use, want. Ex."Did you use the pen? Yes, I used "it". <br>Ex. "Don't worry about the cake, I'll make "it".
+            <div class="exp" id="exp_6" style="display:none"><p class="par_exp"><span class="span_exp">Explanation</span>: There are transitive and intransitive verbs in English. Intransitive verbs don't need an object. Examples of intransitive verbs: die, fly, happen, sleep.<br> Ex." Birds fly", Ex."Shit happens."<br>Transitive verbs, on the other hand, are followed by an object or object pronoun (it, him, her, etc). Commmon transitive verbs are: like, make, use, want. Ex."Did you use the pen? Yes, I used "it". <br>Ex. "Don't worry about the cake, I'll make "it".
             <div class="resultMsg">
              <h4 class="scoreInfo" id="scoreInfo_6">Your score:&nbsp;</h4>
             </div>
@@ -942,7 +942,7 @@ require_once('./dbconn.php');
                 <input type="radio" id="not_2" class="rads" name="notes" value="corr"><label for="not_2">&nbsp;a bad grade</label><div class="d_corr" style="display:none">&nbsp;<i class="fas fa-check"></i></div><br>
                 <input type="radio" id="not_3" class="rads" name="notes" value="err_2"><label for="not_3" class="err_label">&nbsp;bad points</label><div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
 
-            <div class="exp" id="exp_25" style="display:none"><p class="par_exp"><span class="span_exp">Explanation</span>: We say "Note" when we mean mostly a short comment, informal letter or written message. Ex. "He made a note on a piece of paper."<br> We say "Grade" when we mean a mark indicating the quality of a student's work. Ex."She got good grades in high school."</p>
+            <div class="exp" id="exp_25" style="display:none"><p class="par_exp"><span class="span_exp">Explanation</span>: We say "Note" when we mean an informal letter or written message. Ex. "The boss left her a note."<br> "Grade" is a mark indicating the quality of a student's work. Ex."She got good grades in high school."</p>
             <div class="resultMsg">
              <h4 class="scoreInfo" id="scoreInfo_25">Your score:&nbsp;</h4>
             </div>
@@ -970,7 +970,7 @@ require_once('./dbconn.php');
                 <input type="radio" id="mus_2" class="rads" name="music" value="err_ok"><label for="mus_2" class="err_label">&nbsp;her song</label><div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
                 <input type="radio" id="mus_3" class="rads" name="music" value="corr"><label for="mus_3">&nbsp;her songs</label><div class="d_corr" style="display:none">&nbsp;<i class="fas fa-check"></i></div><br>
 
-            <div class="exp" id="exp_26" style="display:none"><p class="par_exp"><span class="span_exp">Explanation</span>: We say "Song(s)" when we mean a piece of a musical composition. Ex. "Garota de Ipanema" is a famous Brazilian song."<br> We don't use "music" in the plural.</p>
+            <div class="exp" id="exp_26" style="display:none"><p class="par_exp"><span class="span_exp">Explanation</span>: "Songs" are countable pieces of musical compositions. Ex. "'Garota de Ipanema' is a famous Brazilian song." or "There are 12 songs on his album" <br> "Music" is uncountable and refers to musical genders. Ex. "What's yoru favorite kind of music? It's rock".</p>
             <div class="resultMsg">
              <h4 class="scoreInfo" id="scoreInfo_26">Your score:&nbsp;</h4>
             </div>
@@ -998,7 +998,7 @@ require_once('./dbconn.php');
                 <input type="radio" id="ev_2" class="rads" name="every" value="err_ok"><label for="ev_2" class="err_label">&nbsp;every days</label><div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
                 <input type="radio" id="ev_3" class="rads" name="every" value="err_2"><label for="ev_3" class="err_label">&nbsp;all days</label><div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
 
-            <div class="exp" id="exp_27" style="display:none"><p class="par_exp"><span class="span_exp">Explanation</span>: We say "All day" when we mean from morning till evening.<br> Ex. "I cleaned my room all day yesterday."<br> We say "Every day" when we mean something happening daily (Monday, Tuesday, etc). Ex. "I don't watch the news every day."</p>
+            <div class="exp" id="exp_27" style="display:none"><p class="par_exp"><span class="span_exp">Explanation</span>: We say "All day" when we mean from morning till evening, it's about duration of facts.<br> Ex. "I cleaned my room all day yesterday."<br> We say "Every day" when we mean something happening daily (Monday, Tuesday, etc), it's about frequency. Ex. "I watch the news every day."</p>
             <div class="resultMsg">
              <h4 class="scoreInfo" id="scoreInfo_27">Your score:&nbsp;</h4>
             </div>
@@ -1054,7 +1054,7 @@ require_once('./dbconn.php');
                 <input type="radio" id="sup_2" class="rads" name="support" value="err_ok"><label for="sup_2" class="err_label">&nbsp;I'm can't stand</label> <div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
                 <input type="radio" id="sup_3" class="rads" name="support" value="err_2"><label for="sup_3" class="err_label">&nbsp;I can't stand up</label><div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
 
-            <div class="exp" id="exp_29" style="display:none"><p class="par_exp"><span class="span_exp">Explanation</span>: We say "Support" when we mean to help someone financially. Ex."I lost my job and now my parents support me."<br> We say "Can't stand" when we mean we strongly dislike something or somebody. Ex. "I can't stand country music."</p>
+            <div class="exp" id="exp_29" style="display:none"><p class="par_exp"><span class="span_exp">Explanation</span>: We say "Support" when we mean to give someone assistance, especially financial. Ex."I lost my job and now my parents are supporting me."<br> We say "Can't stand" when we mean we strongly dislike something or somebody. Ex. "I can't stand country music."</p>
             <div class="resultMsg">
              <h4 class="scoreInfo" id="scoreInfo_29">Your score:&nbsp;</h4>
             </div>
@@ -1101,6 +1101,7 @@ require_once('./dbconn.php');
 
         <!--Hidden Msg -->
         <div id="score_msg" class="container">
+        <img src="//bandidosnatv.com/plgns/gtranslate/flags/24/pt-br.png" id="port_btn_score"  alt="Portuguese_flag">
         <h4 style="margin-bottom: 40px;">Thanks for doing the quiz!<br></h4>
         <h4 style="margin-bottom: 40px;">Your score is:</h4>
         <h3 style="margin-bottom: 40px;" ><span class="score">0 points</span></h3>
@@ -1108,15 +1109,24 @@ require_once('./dbconn.php');
         <p style="margin-top: 40px;">Check your answers&nbsp;<button id="check_res" class="hvr-grow" onclick="checkResult()">HERE</button></p>
         </div>
 
-      </form>
+        <div id="score_msg_port" class="container">
+        <img src="//bandidosnatv.com/plgns/gtranslate/flags/24/en-us.png" id="eng_btn_score" alt="English_flag">
+       <h4 style="margin-bottom: 40px;">Obrigado por fazer o quiz!<br></h4>
+       <h4 style="margin-bottom: 40px;">Sua pontuação é:</h4>
+       <h3 style="margin-bottom: 40px;" ><span class="score">0 points</span></h3>
+       <h4 id="score_opinion_port">Verdicto</h4>
+       <p style="margin-top: 40px;">Verifique suas respostas&nbsp;<button id="check_res_port" class="hvr-grow" onclick="checkResult()">AQUI</button></p>
+       </div>
 
 
 
+
+      </form> <!--!!!-->
     </div><!--popup-inner2-->
   </div> <!-- popup2-->
 
   <div id="results">
-  <p id="urTest">Your test:</p><br>
+  <h2 id="urTest">Your test:</h2>
   </div>
 
   </div> <!--Quiz tab-->
