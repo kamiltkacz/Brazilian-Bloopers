@@ -735,6 +735,13 @@ textarea {
   background: #67b060;
 }
 
+#score_msg_port {
+  display: none;
+  background: #67b060;
+}
+
+
+
 .score {
   display: none;
   background: radial-gradient(#2a2725, #0000006e);
