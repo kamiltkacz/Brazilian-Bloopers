@@ -127,6 +127,10 @@ h3 {
   cursor: pointer;
 }
 
+#img_div {
+  text-align: left;
+}
+
 /* Style tab links */
 .tablink {
   float: left;
@@ -177,9 +181,6 @@ h3 {
   margin-top: 30px;
 }
 
-/* ol {
-  list-style-position: outside;
-} */
 
 
 
@@ -563,6 +564,22 @@ em {
   border-right: 1px solid rgba(0, 0, 0, 0.2);
 }
 
+#check_res_port {
+
+  background: #4a444c;
+  color: whitesmoke;
+  font-family: inherit;
+  font-size: 16px;
+  padding: 5px;
+  border-radius: 8px;
+  cursor: pointer;
+
+  border-bottom: 3px solid rgba(0, 0, 0, 0.2);
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+
+
+}
+
 /* END BUTTONS*/
 
 /* MAIN CONTAINERS */
@@ -726,6 +743,40 @@ textarea {
 
 #p_footer {
   margin-top: 12px;
+}
+
+
+
+.loader {
+  display: none;
+  border: 10px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 10px solid #67b060;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.wait_msg {
+  display: none;
+}
+
+#hid_wait_msg {
+  display: none;
+  margin-top: 300px;
+  text-align: left;
 }
 
 /* RESULTS CONTAINERS */
