@@ -284,7 +284,7 @@ require_once('./dbconn.php');
                 <div class="d_corr" style="display:none">&nbsp;<i class="fas fa-check"></i></div><br>
                 <input type="radio" id="t_2" class="rads" name="too" value="err_ok"><label for="t_2" class="err_label">&nbsp;it were very good.</label>
                 <div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
-                <input type="radio" id="t_3" class="rads" name="too" value="err_2"><label for="t_3" class="err_label">&nbsp;it was two good.</label>
+                <input type="radio" id="t_3" class="rads" name="too" value="err_2"><label for="t_3" class="err_label">&nbsp;it was to good.</label>
                 <div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
 
             <div class="exp" id="exp_2" style="display:none"><p class="par_exp"><span class="span_exp">Explanation</span>: Use "Too + adjective" to express negative excess, which makes something impossible to happen. Ex."Mexican food is too spicy. We can't eat it!"</p><br>Use "Very + adjective" to intensify something.&nbsp;Ex."Mexican food is very spicy. We love it!".
@@ -506,7 +506,7 @@ require_once('./dbconn.php');
           <div class="cont_answer">
             <p class="p_corr"><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p><br>
 
-                <input type="radio" id="act_1" class="rads" name="car" value="err_ok"><label for="act_1" class="err_label">&nbsp;I likes car</label><div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
+                <input type="radio" id="act_1" class="rads" name="car" value="err_ok"><label for="act_1" class="err_label">&nbsp;I liked car</label><div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
                 <input type="radio" id="act_2" class="rads" name="car" value="corr"><label for="act_2">&nbsp;I like cars</label><div class="d_corr" style="display:none">&nbsp;<i class="fas fa-check"></i></div><br>
                 <input type="radio" id="act_3" class="rads" name="car" value="err_2"><label for="act_3" class="err_label">&nbsp;I like a car</label><div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
 
@@ -678,7 +678,7 @@ require_once('./dbconn.php');
           <div class="cont_answer">
             <p class="p_corr"><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p><br>
 
-                <input type="radio" id="pref_1" class="rads" name="pref" value="err_2"><label for="pref_1" class="err_label">&nbsp;it's my prefer</label><div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
+                <input type="radio" id="pref_1" class="rads" name="pref" value="err_2"><label for="pref_1" class="err_label">&nbsp;it's my favor</label><div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
                 <input type="radio" id="pref_2" class="rads" name="pref" value="err_ok"><label for="pref_2" class="err_label">&nbsp;it's my preference</label><div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
                 <input type="radio" id="pref_3" class="rads" name="pref" value="corr"><label for="pref_3">&nbsp;it's my favorite</label><div class="d_corr" style="display:none">&nbsp;<i class="fas fa-check"></i></div><br>
 
@@ -699,7 +699,7 @@ require_once('./dbconn.php');
            <img src="pics/logo.png" class="logo_quiz" alt="logo_boy">
            <p class="situation">17&nbsp; out of&nbsp; 30</p>
               <p>Ana: Did your friend enjoy Rio?</p>
-              <p>Miguel: Yes, but<span class="error_style"><em>&nbsp;she was impressed with</em></span>&nbsp;the violence there.</p>
+              <p>Miguel: Yes, but<span class="error_style"><em>&nbsp;she was impressed with</em></span>&nbsp;the violence.</p>
 
           </div>
            <hr class="hr_white">
@@ -849,7 +849,7 @@ require_once('./dbconn.php');
           <div class="cont_answer">
             <p class="p_corr"><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p><br>
 
-                <input type="radio" id="sta_1" class="rads" name="stay" value="err_ok"><label for="sta_1" class="err_label">&nbsp;I tires</label><div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
+                <input type="radio" id="sta_1" class="rads" name="stay" value="err_ok"><label for="sta_1" class="err_label">&nbsp;I stay tire</label><div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
                 <input type="radio" id="sta_2" class="rads" name="stay" value="err_2"><label for="sta_2" class="err_label">&nbsp;I became tired</label><div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
                 <input type="radio" id="sta_3" class="rads" name="stay" value="corr"><label for="sta_3">&nbsp;I got tired</label><div class="d_corr" style="display:none">&nbsp;<i class="fas fa-check"></i></div><br>
 
@@ -948,8 +948,8 @@ require_once('./dbconn.php');
             </div>
            </div>
           </div>
-          <button id="next_25" class="next">next</button>
-          <button id="back_25" class="back">back</button>
+          <button id="next_25" class="next">Next</button>
+          <button id="back_25" class="back">Back</button>
         </div>
 
         <div id="26" class="questions" style="display: none;">
@@ -976,8 +976,8 @@ require_once('./dbconn.php');
             </div>
            </div>
           </div>
-          <button id="next_26" class="next">next</button>
-          <button id="back_26" class="back">back</button>
+          <button id="next_26" class="next">Next</button>
+          <button id="back_26" class="back">Back</button>
         </div>
 
         <div id="27" class="questions" style="display: none;">
@@ -1004,8 +1004,8 @@ require_once('./dbconn.php');
             </div>
            </div>
           </div>
-          <button id="next_27" class="next">next</button>
-          <button id="back_27" class="back">back</button>
+          <button id="next_27" class="next">Next</button>
+          <button id="back_27" class="back">Back</button>
         </div>
 
         <div id="28" class="questions" style="display: none;">
@@ -1032,8 +1032,8 @@ require_once('./dbconn.php');
             </div>
            </div>
           </div>
-          <button id="next_28" class="next">next</button>
-          <button id="back_28" class="back">back</button>
+          <button id="next_28" class="next">Next</button>
+          <button id="back_28" class="back">Back</button>
         </div>
 
         <div id="29" class="questions" style="display: none;">
@@ -1060,8 +1060,8 @@ require_once('./dbconn.php');
             </div>
            </div>
           </div>
-          <button id="next_29" class="next">next</button>
-          <button id="back_29" class="back">back</button>
+          <button id="next_29" class="next">Next</button>
+          <button id="back_29" class="back">Back</button>
         </div>
 
         <div id="30" class="questions" style="display: none;">
@@ -1093,36 +1093,49 @@ require_once('./dbconn.php');
             </div>
            </div>
           </div>
-          <button id="next_30" class="next">next</button>
-          <button id="back_30" class="back">back</button>
+          <button id="next_30" class="next">Next</button>
+          <button id="back_30" class="back">Back</button>
         </div>
 
-
-
-        <!--Hidden Msg -->
+        <!--Hidden Score Msg -->
         <div id="score_msg" class="container">
-        <img src="//bandidosnatv.com/plgns/gtranslate/flags/24/pt-br.png" id="port_btn_score"  alt="Portuguese_flag">
+        <div id="img_div">
+        <img src="//bandidosnatv.com/plgns/gtranslate/flags/24/pt-br.png" id="port_btn_score" style="margin-top: -20px;"  alt="Portuguese_flag">
+        </div>
         <h4 style="margin-bottom: 40px;">Thanks for doing the quiz!<br></h4>
         <h4 style="margin-bottom: 40px;">Your score is:</h4>
         <h3 style="margin-bottom: 40px;" ><span class="score">0 points</span></h3>
         <h4 id="score_opinion">Verdict</h4>
-        <p style="margin-top: 40px;">Check your answers&nbsp;<button id="check_res" class="hvr-grow" onclick="checkResult()">HERE</button></p>
+        <p style="margin-top: 40px;">Check your answers and the explanations&nbsp;<button id="check_res" class="hvr-grow" onclick="checkResult()">HERE</button></p>
         </div>
-
+         <!--Hidden Score Port Msg -->
         <div id="score_msg_port" class="container">
-        <img src="//bandidosnatv.com/plgns/gtranslate/flags/24/en-us.png" id="eng_btn_score" alt="English_flag">
+        <div id="img_div">
+        <img src="//bandidosnatv.com/plgns/gtranslate/flags/24/en-us.png" id="eng_btn_score" style="margin-top: -20px;" alt="English_flag">
+        </div>
        <h4 style="margin-bottom: 40px;">Obrigado por fazer o quiz!<br></h4>
        <h4 style="margin-bottom: 40px;">Sua pontuação é:</h4>
        <h3 style="margin-bottom: 40px;" ><span class="score">0 points</span></h3>
        <h4 id="score_opinion_port">Verdicto</h4>
-       <p style="margin-top: 40px;">Verifique suas respostas&nbsp;<button id="check_res_port" class="hvr-grow" onclick="checkResult()">AQUI</button></p>
+       <p style="margin-top: 40px;">Verifique suas respostas e as explicações&nbsp;<button id="check_res_port" class="hvr-grow" onclick="checkResult()">AQUI</button></p>
+
        </div>
+
+       <div class="container" id="hid_wait_msg">
+        <div class="loader"></div>
+        <h5>Just a sec..</h5>
+     </div>
 
 
 
 
       </form> <!--!!!-->
+
+
     </div><!--popup-inner2-->
+
+
+
   </div> <!-- popup2-->
 
   <div id="results">
