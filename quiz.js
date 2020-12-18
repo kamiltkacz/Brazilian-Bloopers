@@ -615,8 +615,7 @@ $("#start_quiz").on("click", function () {
   $("#next_30").text("Submit");
 
 
-  $("#next_30").on("click", function () {
-
+  $("#next_30").on("click", function()  {
 
 
 
@@ -632,24 +631,16 @@ $("#start_quiz").on("click", function () {
       score++;
       console.log(score);
       $(".score").text(score);
+
     } else {
 
       $(".score").text(score);
+
     }
 
-//     logoShow();
-
-//     function logoShow() {
-
-// let pop
-//    setTimeout (function() {
-
-//      $("#inner_2").show()
-
-//     }, 5000);
 
 
-//   }
+
 
 
     let surveyId = localStorage.getItem("surveyId");
@@ -674,128 +665,159 @@ $("#start_quiz").on("click", function () {
 
       success: function (result) {
 
+
+
+
+
         if (result.result == 1) {
 
-
-           $("#30").hide();
-           $("#score_msg").show();
-           $(".score").show();
-           $(".popup-close-fake").hide();
-           $(".next, .back").hide();
+          setTimeout(function(){
 
 
-           $("#port_btn_score").on("click", function(){
+            $("#30").hide();
+            $(".popup-close-fake").hide();
+            $(".next, .back, .logo_quiz").hide();
+            $("#score_msg").show();
+            $(".score").show();
+            $(".loader").hide();
+            $(".wait_msg").hide();
+            $("#hid_wait_msg").hide();
+            $("#inner_2").css({"padding": ""});
 
-           $("#score_msg").hide();
-            $("#score_msg_port").show();
 
 
 
-           });
+            $("#port_btn_score").on("click", function(){
 
-           console.log("here");
-           $("#eng_btn_score").on("click", function(){
-
-            $("#score_msg_port").hide();
-             $("#score_msg").show();
-
+            $("#score_msg").hide();
+             $("#score_msg_port").show();
 
 
 
             });
 
+            $("#eng_btn_score").on("click", function(){
 
-          // if ($("#score_msg").is(":contains('Check')")) {
-          if (score == 30) {
-
-            $("#score_opinion").html("<h4>Perfect Score! Are you even Brazilian?</h4>");
-
-          }
-
-          if (score == 25 && score <= 29) {
-
-            $("#score_opinion").html("<h4>Excellent Score! You almost never raise any eybrows</h4>");
-
-          }
-
-          if (score == 20 && score < 25) {
-
-            $("#score_opinion").html("<h4>Very Good Score! Most of the time you control your Bloopers</h4>");
-
-          }
-
-          if (score == 15 && score < 20) {
-
-            $("#score_opinion").html("<h4>Good Score! You have enough awareness to conquer the mistakes</h4>");
-
-          }
+             $("#score_msg_port").hide();
+              $("#score_msg").show();
 
 
-          if (score == 10 && score < 15) {
-
-            $("#score_opinion").html("<h4>Okay Score! You use Bloopers but you know about it</h4>");
-
-          }
 
 
-          if (score == 5 && score < 10) {
-
-            $("#score_opinion").html("<h4>Weak Score! Sorry, but you want the natives to speak your language</h4>");
-
-          }
-
-          if (score < 5) {
-
-            $("#score_opinion").html("<h4>Very Weak Score! Sorry, but you think the natives speak your language</h4>");
-
-          }
-      //  }
-
-        // if ($("#score_msg_port").is(":contains('Verifique')")) {
-        //   if (score == 30) {
-
-        //     $("#score_opinion_port").html("<h3>*Pontuação perfeita! Você é brasileiro mesmo?</h3>");
-
-        //   }
-
-        //   if (score == 25 && score <= 29) {
-
-        //     $("#score_opinion_port").html("<h3>Excelente pontuação! Você quase nunca levanta as sobrancelhas.</h3>");
-
-        //   }
-
-        //   if (score == 20 && score < 25) {
-
-        //     $("#score_opinion_port").html("<h3>*Pontuação muito boa! Na maioria das vezes você controla seus Bloopers.</h3>");
-
-        //   }
-
-        //   if (score == 15 && score < 20) {
-
-        //     $("#score_opinion_port").html("<h3>*Bom resultado! Você tem consciência suficiente para vencer os Bloopers.</h3>");
-
-        //   }
+             });
 
 
-        //   if (score == 10 && score < 15) {
 
-        //     $("#score_opinion_port").html("<h3>*Pontuação Ok! Você use os Bloopers, mas sabe sobre isso.</h3>");
+           if (score == 30) {
 
-        //   }
+             $("#score_opinion").html("<h6>Perfect Score! Are you even Brazilian?</h6>")
+
+           }
+
+           if (score > 25 && score <= 29) {
+
+             $("#score_opinion").html("<h6>Excellent Score! You almost never raise any eybrows.</h6>")
+
+           }
+
+           if (score > 20 && score <= 25) {
+
+             $("#score_opinion").html("<h6>Very Good Score! Most of the time you control your Bloopers.</h6>")
+
+           }
+
+           if (score > 15 && score <= 20) {
+
+             $("#score_opinion").html("<h6>Good Score! You have enough awareness to conquer the mistakes.</h6>")
+
+           }
 
 
-        //   if (score == 5 && score < 10) {
+           if (score > 10 && score <= 15) {
 
-        //     $("#score_opinion_port").html("<h3>*Pontuação fraca! Desculpe, mas parece que você quer que os nativos falem sua língua.</h3>");
+             $("#score_opinion").html("<h6>Okay Score! You use Bloopers but you know about it.</h6>")
 
-        //   }
+           }
 
-        //   if (score < 5) {
 
-        //     $("#score_opinion_port").html("<h3>*Pontuação muito fraca! Desculpe, mas parece que você acha que os nativos falam a sua língua.</h3>");
+           if (score > 5 && score <= 10) {
 
-        //   }
-        // }
+             $("#score_opinion").html("<h6>Weak Score! Sorry, but it seems like you want the natives to speak your language.</h6>")
+
+           }
+
+           if (score < 5) {
+
+             $("#score_opinion").html("<h6>Very Weak Score! Sorry, but it seems like you think the natives speak your language.</h6>")
+
+           }
+
+
+
+
+           if (score == 30) {
+
+             $("#score_opinion_port").html("<h6>Pontuação perfeita! Você é brasileiro mesmo?</h6>")
+
+           }
+
+           if (score > 25 && score <= 29) {
+
+             $("#score_opinion_port").html("<h6>Excelente pontuação! Você quase nunca levanta as sobrancelhas.</h6>")
+
+           }
+
+           if (score > 20 && score <= 25) {
+
+             $("#score_opinion_port").html("<h6>Pontuação muito boa! Na maioria das vezes você controla seus Bloopers.</h6>")
+
+           }
+
+           if (score > 15 && score <= 20) {
+
+             $("#score_opinion_port").html("<h6>Bom resultado! Você tem consciência suficiente para vencer os Bloopers.</h6>")
+
+           }
+
+
+           if (score > 10 && score <= 15) {
+
+             $("#score_opinion_port").html("<h6>Pontuação Ok! Você use os Bloopers, mas sabe sobre isso.</h6>")
+
+           }
+
+
+           if (score > 5 && score <= 10) {
+
+             $("#score_opinion_port").html("<h6>Pontuação fraca! Desculpe, mas parece que você quer que os nativos falem sua língua.</h6>")
+
+           }
+
+           if (score < 5) {
+
+             $("#score_opinion_port").html("<h6>Pontuação muito fraca! Desculpe, mas parece que você acha que os nativos falam a sua língua.</h6>")
+
+            }
+
+
+
+        }, 280000);
+
+            $(".loader").css({"display": "block"});
+            $("#inner_2").css({"padding": "140px"});
+            $(".wait_msg").show();
+            $("#hid_wait_msg").show();
+
+            $("#30").hide();
+            $("#score_msg").hide();
+            $(".score").hide();
+            $("#steps").hide();
+            $(".popup-close-fake").hide();
+            $(".next, .back, .logo_quiz").hide();
+
+
+
+
 
           /* RESULTS AND EXPLANATIONS*/
 
@@ -1698,7 +1720,7 @@ $("#start_quiz").on("click", function () {
         window.localStorage.clear();
       }, //ajax, success function 2//
     }); //ajax 2//
-  }); //submit on.click function 2//
+  }); //submit on.click function 2 - next_30//
 
   $(".back").click(function () {
     classNumRow = $(this).attr("id");
