@@ -621,7 +621,7 @@ require_once('./dbconn.php');
 
                 <input type="radio" id="met_1" class="rads" name="know" value="err_ok"><label for="met_1" class="err_label">&nbsp;I meat him</label><div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
                 <input type="radio" id="met_2" class="rads" name="know" value="corr"><label for="met_2">&nbsp;I met him</label><div class="d_corr" style="display:none">&nbsp;<i class="fas fa-check"></i></div><br>
-                <input type="radio" id="met_3" class="rads" name="know" value="err_2"><label for="met_3" class="err_label">&nbsp;I meet him</label><div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
+                <input type="radio" id="met_3" class="rads" name="know" value="err_2"><label for="met_3" class="err_label">&nbsp;I known him</label><div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
 
             <div class="exp" id="exp_14" style="display:none"><p class="par_exp"><span class="span_exp">Explanation</span>: We say "I know someone" when you mean you are familar with a person, place, or a thing. Ex. "I know the mayor." We say "I knew someone" when you had a past relationship with someone or something but you don't have it anymore. Ex."I knew her in high school. She was popular."<br>We say "I met someone" when we interact with someone for the first time. Ex."I met George in France on my vacation." Ex. "I'm a journalist so I meet many interesting people."</p>
             <div class="resultMsg">
@@ -706,7 +706,7 @@ require_once('./dbconn.php');
           <div class="cont_answer">
             <p class="p_corr"><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p><br>
 
-                <input type="radio" id="imp_1" class="rads" name="impress" value="err_2"><label for="imp_1" class="err_label">&nbsp;she was impressing </label><div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
+                <input type="radio" id="imp_1" class="rads" name="impress" value="err_2"><label for="imp_1" class="err_label">&nbsp;she shocked with</label><div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
                 <input type="radio" id="imp_2" class="rads" name="impress" value="err_ok"><label for="imp_2" class="err_label">&nbsp;she impressed</label><div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
                 <input type="radio" id="imp_3" class="rads" name="impress" value="corr"><label for="imp_3">&nbsp;she was shocked by</label><div class="d_corr" style="display:none">&nbsp;<i class="fas fa-check"></i></div><br>
 
@@ -1100,7 +1100,7 @@ require_once('./dbconn.php');
         <!--Hidden Score Msg -->
         <div id="score_msg" class="container">
         <div id="img_div">
-        <img src="//bandidosnatv.com/plgns/gtranslate/flags/24/pt-br.png" id="port_btn_score" style="margin-top: -20px;"  alt="Portuguese_flag">
+        <img src="//bandidosnatv.com/plgns/gtranslate/flags/24/pt-br.png" id="port_btn_score" alt="Portuguese_flag">
         </div>
         <h4 style="margin-bottom: 40px;">Thanks for doing the quiz!<br></h4>
         <h4 style="margin-bottom: 40px;">Your score is:</h4>
@@ -1111,7 +1111,7 @@ require_once('./dbconn.php');
          <!--Hidden Score Port Msg -->
         <div id="score_msg_port" class="container">
         <div id="img_div">
-        <img src="//bandidosnatv.com/plgns/gtranslate/flags/24/en-us.png" id="eng_btn_score" style="margin-top: -20px;" alt="English_flag">
+        <img src="//bandidosnatv.com/plgns/gtranslate/flags/24/en-us.png" id="eng_btn_score" alt="English_flag">
         </div>
        <h4 style="margin-bottom: 40px;">Obrigado por fazer o quiz!<br></h4>
        <h4 style="margin-bottom: 40px;">Sua pontuação é:</h4>
@@ -1123,7 +1123,7 @@ require_once('./dbconn.php');
 
        <div class="container" id="hid_wait_msg">
         <div class="loader"></div>
-        <h5>Just a sec..</h5>
+        <h5 id="h5_sec">Just a sec..</h5>
      </div>
 
 
