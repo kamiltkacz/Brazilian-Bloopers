@@ -801,7 +801,7 @@ $("#start_quiz").on("click", function () {
 
 
 
-        }, 280000);
+        }, 120000);
 
             $(".loader").css({"display": "block"});
             $("#inner_2").css({"padding": "140px"});
@@ -1697,7 +1697,25 @@ $("#start_quiz").on("click", function () {
             $(".questions").css({"text-align": "center"});
 
             $("#results").append(currentQuiz);
-            $(".cont_answer").css({"text-align": "left", "padding-left": "80px"});
+
+
+            if ($(window).width() < 480){
+
+              $(".cont_answer").css({"text-align": "left", "padding-left": "0px"});
+
+              } else if ($(window).width() > 480) {
+              console.log("here")
+                $(".cont_answer").css({"text-align": "left", "padding-left": "80px"});
+              } else {
+
+
+                $(".cont_answer").css({"text-align": "left", "padding-left": "60px"});
+
+              }
+
+
+
+
             $(".exp").show();
 
             $(".cont_dial").prepend("<div class='divider'></div>");
