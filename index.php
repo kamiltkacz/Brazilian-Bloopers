@@ -243,18 +243,16 @@ require_once('./dbconn.php');
            <hr class="hr_white">
           <div class="cont_answer">
             <p class="p_corr"><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p><br>
-         <label class="radio-inline">
+
                 <input type="radio" id="i_1" class="rads" name="sub_it" value="err_ok"><label for="i_1" class="err_label">&nbsp;It hot!</label>
                 <div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
-         </label>
-         <label class="radio-inline">
+
                 <input type="radio" id="i_2" class="rads" name="sub_it" value="corr"><label for="i_2">&nbsp;It is hot!</label>
                 <div class="d_corr" style="display:none">&nbsp;<i class="fas fa-check"></i></div><br>
-                </label>
-                <label class="radio-inline">
+
                 <input type="radio" id="i_3" class="rads" name="sub_it" value="err_2"><label for="i_3" class="err_label">&nbsp;Is it hot!</label>
                 <div class="d_err" style="display:none">&nbsp;<i class="fas fa-times" aria-hidden="true"></i></div><br>
-                </label>
+
            <div class="exp" id="exp_1" style="display:none">
            <p class="par_exp"><span class="span_exp">Explanation</span>: In English every sentence needs a subject&nbsp;(He, She, It etc).<br>Ex.&nbsp;"It is important to drive responsibly."<br>Ex.&nbsp;"It doesn't rain much in Brasilia."</p>
             <div class="resultMsg">
@@ -443,16 +441,16 @@ require_once('./dbconn.php');
            <img src="pics/logo.png" class="logo_quiz" alt="logo_boy">
             <p class="situation">8&nbsp;out of&nbsp; 30</p>
               <p>Joe: How old are you?</p>
-              <p>Camilo:<span class="error_style"><em>&nbsp;I have 38 years.</em></span></p>
+              <p>Camilo:<span class="error_style"><em>&nbsp;I have 39 years.</em></span></p>
 
           </div>
            <hr class="hr_white">
           <div class="cont_answer">
             <p class="p_corr"><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p><br>
 
-                <input type="radio" id="age_1" class="rads" name="h_age" value="corr"><label for="age_1">&nbsp;I am 38 years old</label><div class="d_corr" style="display:none">&nbsp;<i class="fas fa-check"></i></div><br>
-                <input type="radio" id="age_2" class="rads" name="h_age" value="err_2"><label for="age_2" class="err_label">&nbsp;I have 38 years old</label><div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
-                <input type="radio" id="age_3" class="rads" name="h_age" value="err_ok"><label for="age_3" class="err_label">&nbsp;I am 38 years</label><div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
+                <input type="radio" id="age_1" class="rads" name="h_age" value="corr"><label for="age_1">&nbsp;I am 39 years old</label><div class="d_corr" style="display:none">&nbsp;<i class="fas fa-check"></i></div><br>
+                <input type="radio" id="age_2" class="rads" name="h_age" value="err_2"><label for="age_2" class="err_label">&nbsp;I have 39 years old</label><div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
+                <input type="radio" id="age_3" class="rads" name="h_age" value="err_ok"><label for="age_3" class="err_label">&nbsp;I am 39 years</label><div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
 
             <div class="exp" id="exp_8" style="display:none"><p class="par_exp"><span class="span_exp">Explanation</span>: We use the verb "To be" to inform our age. Ex."She is 25."</p>
             <div class="resultMsg">
@@ -1127,8 +1125,6 @@ require_once('./dbconn.php');
      </div>
 
 
-
-
       </form> <!--!!!-->
 
 
@@ -1261,10 +1257,6 @@ require_once('./dbconn.php');
           $("#logo_main").css({"top": "1px"});
         }
       }
-
-
-
-
 
   </script>
 
