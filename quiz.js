@@ -1,38 +1,25 @@
-
 $("#start_quiz").on("click", function () {
   let score = 0;
 
   $(".popup-close-fake").on("click", function () {
-
     Swal.fire({
-      title: 'Are you sure you want to quit? All your data will be lost',
+      title: "Are you sure you want to quit? All your data will be lost",
       showCancelButton: true,
       width: 400,
       background: "#ffc107",
       confirmButtonText: `No, I'm staying <i class="fa fa-thumbs-up"></i>`,
       cancelButtonText: `Yes, I'm leaving <i class="fa fa-thumbs-down"></i>`,
-
     }).then((result) => {
-
       if (result.isConfirmed) {
         return true;
-
       } else {
-        window.location.href = 'index.php';
-
+        window.location.href = "index.php";
       }
     });
-
-
   });
-
-
 
   // $('#steps').hide();
   // $('#footer').hide();
-
-
-
 
   // Reset border color & text in span element
   $("input[class='rads']").click(function () {
@@ -57,16 +44,14 @@ $("#start_quiz").on("click", function () {
         "border-bottom": "5px solid red",
         padding: "10px",
       });
-
     } else if ($("input[name='sub_it']:checked").val() == "corr") {
       score++;
-      console.log(score);
+
 
       $("#" + classNum).hide();
       $("#" + numNext).show();
       $(".score").text(score);
     } else {
-
       $("#" + classNum).hide();
       $("#" + numNext).show();
       $(".score").text(score);
@@ -77,16 +62,14 @@ $("#start_quiz").on("click", function () {
     if (!$("input[name='too']:checked").val()) {
       $(".bor_choose").css({
         "border-bottom": "5px solid red",
-        padding:"",
+        padding: "",
       });
-
     } else if ($("input[name='too']:checked").val() == "corr") {
       score++;
-      console.log(score);
+
       $("#" + classNum).hide();
       $("#" + numNext).show();
     } else {
-
       $("#" + classNum).hide();
       $("#" + numNext).show();
     }
@@ -96,16 +79,14 @@ $("#start_quiz").on("click", function () {
     if (!$("input[name='much']:checked").val()) {
       $(".bor_choose").css({
         "border-bottom": "5px solid red",
-        padding:"",
+        padding: "",
       });
-
     } else if ($("input[name='much']:checked").val() == "corr") {
       score++;
-      console.log(score);
+
       $("#" + classNum).hide();
       $("#" + numNext).show();
     } else {
-
       $("#" + classNum).hide();
       $("#" + numNext).show();
     }
@@ -115,16 +96,14 @@ $("#start_quiz").on("click", function () {
     if (!$("input[name='exist']:checked").val()) {
       $(".bor_choose").css({
         "border-bottom": "5px solid red",
-        padding:"",
+        padding: "",
       });
-
     } else if ($("input[name='exist']:checked").val() == "corr") {
       score++;
-      console.log(score);
+
       $("#" + classNum).hide();
       $("#" + numNext).show();
     } else {
-
       $("#" + classNum).hide();
       $("#" + numNext).show();
     }
@@ -134,16 +113,14 @@ $("#start_quiz").on("click", function () {
     if (!$("input[name='two_sub']:checked").val()) {
       $(".bor_choose").css({
         "border-bottom": "5px solid red",
-        padding:"",
+        padding: "",
       });
-
     } else if ($("input[name='two_sub']:checked").val() == "corr") {
       score++;
-      console.log(score);
+
       $("#" + classNum).hide();
       $("#" + numNext).show();
     } else {
-
       $("#" + classNum).hide();
       $("#" + numNext).show();
     }
@@ -153,16 +130,14 @@ $("#start_quiz").on("click", function () {
     if (!$("input[name='no_obj']:checked").val()) {
       $(".bor_choose").css({
         "border-bottom": "5px solid red",
-        padding:"",
+        padding: "",
       });
-
     } else if ($("input[name='no_obj']:checked").val() == "corr") {
       score++;
-      console.log(score);
+
       $("#" + classNum).hide();
       $("#" + numNext).show();
     } else {
-
       $("#" + classNum).hide();
       $("#" + numNext).show();
     }
@@ -172,16 +147,14 @@ $("#start_quiz").on("click", function () {
     if (!$("input[name='for']:checked").val()) {
       $(".bor_choose").css({
         "border-bottom": "5px solid red",
-        padding:"",
+        padding: "",
       });
-
     } else if ($("input[name='for']:checked").val() == "corr") {
       score++;
-      console.log(score);
+
       $("#" + classNum).hide();
       $("#" + numNext).show();
     } else {
-
       $("#" + classNum).hide();
       $("#" + numNext).show();
     }
@@ -191,16 +164,14 @@ $("#start_quiz").on("click", function () {
     if (!$("input[name='h_age']:checked").val()) {
       $(".bor_choose").css({
         "border-bottom": "5px solid red",
-        padding:"",
+        padding: "",
       });
-
     } else if ($("input[name='h_age']:checked").val() == "corr") {
       score++;
-      console.log(score);
+
       $("#" + classNum).hide();
       $("#" + numNext).show();
     } else {
-
       $("#" + classNum).hide();
       $("#" + numNext).show();
     }
@@ -210,16 +181,14 @@ $("#start_quiz").on("click", function () {
     if (!$("input[name='guy']:checked").val()) {
       $(".bor_choose").css({
         "border-bottom": "5px solid red",
-        padding:"",
+        padding: "",
       });
-
     } else if ($("input[name='guy']:checked").val() == "corr") {
       score++;
-      console.log(score);
+
       $("#" + classNum).hide();
       $("#" + numNext).show();
     } else {
-
       $("#" + classNum).hide();
       $("#" + numNext).show();
     }
@@ -229,16 +198,14 @@ $("#start_quiz").on("click", function () {
     if (!$("input[name='car']:checked").val()) {
       $(".bor_choose").css({
         "border-bottom": "5px solid red",
-        padding:"",
+        padding: "",
       });
-
     } else if ($("input[name='car']:checked").val() == "corr") {
       score++;
-      console.log(score);
+
       $("#" + classNum).hide();
       $("#" + numNext).show();
     } else {
-
       $("#" + classNum).hide();
       $("#" + numNext).show();
     }
@@ -248,16 +215,14 @@ $("#start_quiz").on("click", function () {
     if (!$("input[name='lose']:checked").val()) {
       $(".bor_choose").css({
         "border-bottom": "5px solid red",
-        padding:"",
+        padding: "",
       });
-
     } else if ($("input[name='lose']:checked").val() == "corr") {
       score++;
-      console.log(score);
+
       $("#" + classNum).hide();
       $("#" + numNext).show();
     } else {
-
       $("#" + classNum).hide();
       $("#" + numNext).show();
     }
@@ -267,16 +232,14 @@ $("#start_quiz").on("click", function () {
     if (!$("input[name='diss']:checked").val()) {
       $(".bor_choose").css({
         "border-bottom": "5px solid red",
-        padding:"",
+        padding: "",
       });
-
     } else if ($("input[name='diss']:checked").val() == "corr") {
       score++;
-      console.log(score);
+
       $("#" + classNum).hide();
       $("#" + numNext).show();
     } else {
-
       $("#" + classNum).hide();
       $("#" + numNext).show();
     }
@@ -286,16 +249,14 @@ $("#start_quiz").on("click", function () {
     if (!$("input[name='doubt']:checked").val()) {
       $(".bor_choose").css({
         "border-bottom": "5px solid red",
-        padding:"",
+        padding: "",
       });
-
     } else if ($("input[name='doubt']:checked").val() == "corr") {
       score++;
-      console.log(score);
+
       $("#" + classNum).hide();
       $("#" + numNext).show();
     } else {
-
       $("#" + classNum).hide();
       $("#" + numNext).show();
     }
@@ -305,16 +266,14 @@ $("#start_quiz").on("click", function () {
     if (!$("input[name='know']:checked").val()) {
       $(".bor_choose").css({
         "border-bottom": "5px solid red",
-        padding:"",
+        padding: "",
       });
-
     } else if ($("input[name='know']:checked").val() == "corr") {
       score++;
-      console.log(score);
+
       $("#" + classNum).hide();
       $("#" + numNext).show();
     } else {
-
       $("#" + classNum).hide();
       $("#" + numNext).show();
     }
@@ -324,16 +283,14 @@ $("#start_quiz").on("click", function () {
     if (!$("input[name='god']:checked").val()) {
       $(".bor_choose").css({
         "border-bottom": "5px solid red",
-        padding:"",
+        padding: "",
       });
-
     } else if ($("input[name='god']:checked").val() == "corr") {
       score++;
-      console.log(score);
+
       $("#" + classNum).hide();
       $("#" + numNext).show();
     } else {
-
       $("#" + classNum).hide();
       $("#" + numNext).show();
     }
@@ -343,16 +300,14 @@ $("#start_quiz").on("click", function () {
     if (!$("input[name='pref']:checked").val()) {
       $(".bor_choose").css({
         "border-bottom": "5px solid red",
-        padding:"",
+        padding: "",
       });
-
     } else if ($("input[name='pref']:checked").val() == "corr") {
       score++;
-      console.log(score);
+
       $("#" + classNum).hide();
       $("#" + numNext).show();
     } else {
-
       $("#" + classNum).hide();
       $("#" + numNext).show();
     }
@@ -362,16 +317,14 @@ $("#start_quiz").on("click", function () {
     if (!$("input[name='impress']:checked").val()) {
       $(".bor_choose").css({
         "border-bottom": "5px solid red",
-        padding:"",
+        padding: "",
       });
-
     } else if ($("input[name='impress']:checked").val() == "corr") {
       score++;
-      console.log(score);
+
       $("#" + classNum).hide();
       $("#" + numNext).show();
     } else {
-
       $("#" + classNum).hide();
       $("#" + numNext).show();
     }
@@ -381,16 +334,14 @@ $("#start_quiz").on("click", function () {
     if (!$("input[name='parent']:checked").val()) {
       $(".bor_choose").css({
         "border-bottom": "5px solid red",
-        padding:"",
+        padding: "",
       });
-
     } else if ($("input[name='parent']:checked").val() == "corr") {
       score++;
-      console.log(score);
+
       $("#" + classNum).hide();
       $("#" + numNext).show();
     } else {
-
       $("#" + classNum).hide();
       $("#" + numNext).show();
     }
@@ -400,16 +351,14 @@ $("#start_quiz").on("click", function () {
     if (!$("input[name='gout']:checked").val()) {
       $(".bor_choose").css({
         "border-bottom": "5px solid red",
-        padding:"",
+        padding: "",
       });
-
     } else if ($("input[name='gout']:checked").val() == "corr") {
       score++;
-      console.log(score);
+
       $("#" + classNum).hide();
       $("#" + numNext).show();
     } else {
-
       $("#" + classNum).hide();
       $("#" + numNext).show();
     }
@@ -419,16 +368,14 @@ $("#start_quiz").on("click", function () {
     if (!$("input[name='use']:checked").val()) {
       $(".bor_choose").css({
         "border-bottom": "5px solid red",
-        padding:"",
+        padding: "",
       });
-
     } else if ($("input[name='use']:checked").val() == "corr") {
       score++;
-      console.log(score);
+
       $("#" + classNum).hide();
       $("#" + numNext).show();
     } else {
-
       $("#" + classNum).hide();
       $("#" + numNext).show();
     }
@@ -438,16 +385,14 @@ $("#start_quiz").on("click", function () {
     if (!$("input[name='durat']:checked").val()) {
       $(".bor_choose").css({
         "border-bottom": "5px solid red",
-        padding:"",
+        padding: "",
       });
-
     } else if ($("input[name='durat']:checked").val() == "corr") {
       score++;
-      console.log(score);
+
       $("#" + classNum).hide();
       $("#" + numNext).show();
     } else {
-
       $("#" + classNum).hide();
       $("#" + numNext).show();
     }
@@ -457,16 +402,14 @@ $("#start_quiz").on("click", function () {
     if (!$("input[name='stay']:checked").val()) {
       $(".bor_choose").css({
         "border-bottom": "5px solid red",
-        padding:"",
+        padding: "",
       });
-
     } else if ($("input[name='stay']:checked").val() == "corr") {
       score++;
-      console.log(score);
+
       $("#" + classNum).hide();
       $("#" + numNext).show();
     } else {
-
       $("#" + classNum).hide();
       $("#" + numNext).show();
     }
@@ -476,16 +419,14 @@ $("#start_quiz").on("click", function () {
     if (!$("input[name='with']:checked").val()) {
       $(".bor_choose").css({
         "border-bottom": "5px solid red",
-        padding:"",
+        padding: "",
       });
-
     } else if ($("input[name='with']:checked").val() == "corr") {
       score++;
-      console.log(score);
+
       $("#" + classNum).hide();
       $("#" + numNext).show();
     } else {
-
       $("#" + classNum).hide();
       $("#" + numNext).show();
     }
@@ -495,16 +436,14 @@ $("#start_quiz").on("click", function () {
     if (!$("input[name='chap']:checked").val()) {
       $(".bor_choose").css({
         "border-bottom": "5px solid red",
-        padding:"",
+        padding: "",
       });
-
     } else if ($("input[name='chap']:checked").val() == "corr") {
       score++;
-      console.log(score);
+
       $("#" + classNum).hide();
       $("#" + numNext).show();
     } else {
-
       $("#" + classNum).hide();
       $("#" + numNext).show();
     }
@@ -514,16 +453,14 @@ $("#start_quiz").on("click", function () {
     if (!$("input[name='notes']:checked").val()) {
       $(".bor_choose").css({
         "border-bottom": "5px solid red",
-        padding:"",
+        padding: "",
       });
-
     } else if ($("input[name='notes']:checked").val() == "corr") {
       score++;
-      console.log(score);
+
       $("#" + classNum).hide();
       $("#" + numNext).show();
     } else {
-
       $("#" + classNum).hide();
       $("#" + numNext).show();
     }
@@ -533,16 +470,14 @@ $("#start_quiz").on("click", function () {
     if (!$("input[name='music']:checked").val()) {
       $(".bor_choose").css({
         "border-bottom": "5px solid red",
-        padding:"",
+        padding: "",
       });
-
     } else if ($("input[name='music']:checked").val() == "corr") {
       score++;
-      console.log(score);
+
       $("#" + classNum).hide();
       $("#" + numNext).show();
     } else {
-
       $("#" + classNum).hide();
       $("#" + numNext).show();
     }
@@ -552,16 +487,14 @@ $("#start_quiz").on("click", function () {
     if (!$("input[name='every']:checked").val()) {
       $(".bor_choose").css({
         "border-bottom": "5px solid red",
-        padding:"",
+        padding: "",
       });
-
     } else if ($("input[name='every']:checked").val() == "corr") {
       score++;
-      console.log(score);
+
       $("#" + classNum).hide();
       $("#" + numNext).show();
     } else {
-
       $("#" + classNum).hide();
       $("#" + numNext).show();
     }
@@ -571,16 +504,14 @@ $("#start_quiz").on("click", function () {
     if (!$("input[name='sym']:checked").val()) {
       $(".bor_choose").css({
         "border-bottom": "5px solid red",
-        padding:"",
+        padding: "",
       });
-
     } else if ($("input[name='sym']:checked").val() == "corr") {
       score++;
-      console.log(score);
+
       $("#" + classNum).hide();
       $("#" + numNext).show();
     } else {
-
       $("#" + classNum).hide();
       $("#" + numNext).show();
     }
@@ -590,16 +521,14 @@ $("#start_quiz").on("click", function () {
     if (!$("input[name='support']:checked").val()) {
       $(".bor_choose").css({
         "border-bottom": "5px solid red",
-        padding:"",
+        padding: "",
       });
-
     } else if ($("input[name='support']:checked").val() == "corr") {
       score++;
-      console.log(score);
+
       $("#" + classNum).hide();
       $("#" + numNext).show();
     } else {
-
       $("#" + classNum).hide();
       $("#" + numNext).show();
     }
@@ -614,34 +543,21 @@ $("#start_quiz").on("click", function () {
   // Next button changes to Submit and moves
   $("#next_30").text("Submit");
 
-
-  $("#next_30").on("click", function()  {
-
-
-
-
+  $("#next_30").on("click", function () {
     if (!$("input[name='uniq']:checked").val()) {
       $(".bor_choose").css({
         "border-bottom": "5px solid red",
-        padding:"",
+        padding: "",
       });
 
       return false;
     } else if ($("input[name='uniq']:checked").val() == "corr") {
       score++;
-      console.log(score);
-      $(".score").text(score);
 
+      $(".score").text(score);
     } else {
-
       $(".score").text(score);
-
     }
-
-
-
-
-
 
     let surveyId = localStorage.getItem("surveyId");
     let formData = $("#quiz_form :input").serializeArray();
@@ -649,10 +565,10 @@ $("#start_quiz").on("click", function () {
       name: "action",
       value: "sub_quiz",
     };
-     formData[formData.length] = {
+    formData[formData.length] = {
       name: "surveyId",
-      value: surveyId
-   };
+      value: surveyId,
+    };
     formData.push({});
     console.log("dataQuiz");
 
@@ -664,16 +580,8 @@ $("#start_quiz").on("click", function () {
       async: true,
 
       success: function (result) {
-
-
-
-
-
         if (result.result == 1) {
-
-          setTimeout(function(){
-
-
+          setTimeout(function () {
             $("#30").hide();
             $(".popup-close-fake").hide();
             $(".next, .back, .logo_quiz").hide();
@@ -682,142 +590,114 @@ $("#start_quiz").on("click", function () {
             $(".loader").hide();
             $(".wait_msg").hide();
             $("#hid_wait_msg").hide();
-            $("#inner_2").css({"padding": ""});
+            $("#inner_2").css({ padding: "" });
 
-
-
-
-            $("#port_btn_score").on("click", function(){
-
-            $("#score_msg").hide();
-             $("#score_msg_port").show();
-
-
-
+            $("#port_btn_score").on("click", function () {
+              $("#score_msg").hide();
+              $("#score_msg_port").show();
             });
 
-            $("#eng_btn_score").on("click", function(){
-
-             $("#score_msg_port").hide();
+            $("#eng_btn_score").on("click", function () {
+              $("#score_msg_port").hide();
               $("#score_msg").show();
+            });
 
-
-
-
-             });
-
-
-
-           if (score == 30) {
-
-             $("#score_opinion").html("<h6>Perfect Score! Are you even Brazilian?</h6>")
-
-           }
-
-           if (score > 25 && score <= 29) {
-
-             $("#score_opinion").html("<h6>Excellent Score! You almost never raise any eybrows.</h6>")
-
-           }
-
-           if (score > 20 && score <= 25) {
-
-             $("#score_opinion").html("<h6>Very Good Score! Most of the time you control your Bloopers.</h6>")
-
-           }
-
-           if (score > 15 && score <= 20) {
-
-             $("#score_opinion").html("<h6>Good Score! You have enough awareness to conquer the mistakes.</h6>")
-
-           }
-
-
-           if (score > 10 && score <= 15) {
-
-             $("#score_opinion").html("<h6>Okay Score! You use Bloopers but you know about it.</h6>")
-
-           }
-
-
-           if (score > 5 && score <= 10) {
-
-             $("#score_opinion").html("<h6>Weak Score! Sorry, but it seems like you want the natives to speak your language.</h6>")
-
-           }
-
-           if (score < 5) {
-
-             $("#score_opinion").html("<h6>Very Weak Score! Sorry, but it seems like you think the natives speak your language.</h6>")
-
-           }
-
-
-
-
-           if (score == 30) {
-
-             $("#score_opinion_port").html("<h6>Pontuação perfeita! Você é brasileiro mesmo?</h6>")
-
-           }
-
-           if (score > 25 && score <= 29) {
-
-             $("#score_opinion_port").html("<h6>Excelente pontuação! Você quase nunca levanta as sobrancelhas.</h6>")
-
-           }
-
-           if (score > 20 && score <= 25) {
-
-             $("#score_opinion_port").html("<h6>Pontuação muito boa! Na maioria das vezes você controla seus Bloopers.</h6>")
-
-           }
-
-           if (score > 15 && score <= 20) {
-
-             $("#score_opinion_port").html("<h6>Bom resultado! Você tem consciência suficiente para vencer os Bloopers.</h6>")
-
-           }
-
-
-           if (score > 10 && score <= 15) {
-
-             $("#score_opinion_port").html("<h6>Pontuação Ok! Você use os Bloopers, mas sabe sobre isso.</h6>")
-
-           }
-
-
-           if (score > 5 && score <= 10) {
-
-             $("#score_opinion_port").html("<h6>Pontuação fraca! Desculpe, mas parece que você quer que os nativos falem sua língua.</h6>")
-
-           }
-
-           if (score < 5) {
-
-             $("#score_opinion_port").html("<h6>Pontuação muito fraca! Desculpe, mas parece que você acha que os nativos falam a sua língua.</h6>")
-
+            if (score == 30) {
+              $("#score_opinion").html(
+                "<h6>Perfect Score! Are you even Brazilian?</h6>"
+              );
             }
 
+            if (score > 25 && score <= 29) {
+              $("#score_opinion").html(
+                "<h6>Excellent Score! You almost never raise any eybrows.</h6>"
+              );
+            }
 
+            if (score > 20 && score <= 25) {
+              $("#score_opinion").html(
+                "<h6>Very Good Score! Most of the time you control your Bloopers.</h6>"
+              );
+            }
 
-        }, 6000);
+            if (score > 15 && score <= 20) {
+              $("#score_opinion").html(
+                "<h6>Good Score! You have enough awareness to conquer the mistakes.</h6>"
+              );
+            }
 
-            $(".loader").css({"display": "block"});
-            $("#inner_2").css({"padding": "140px"});
-            $(".wait_msg").show();
-            $("#hid_wait_msg").show();
+            if (score > 10 && score <= 15) {
+              $("#score_opinion").html(
+                "<h6>Okay Score! You use Bloopers but you know about it.</h6>"
+              );
+            }
 
-            $("#30").hide();
-            $("#score_msg").hide();
-            $(".score").hide();
-            $("#steps").hide();
-            $(".popup-close-fake").hide();
-            $(".next, .back, .logo_quiz").hide();
+            if (score > 5 && score <= 10) {
+              $("#score_opinion").html(
+                "<h6>Weak Score! Sorry, try harder next time and do the test again.</h6>"
+              );
+            }
 
+            if (score < 5) {
+              $("#score_opinion").html(
+                "<h6>Very Weak Score! Sorry, study some more and come back in some time.</h6>"
+              );
+            }
 
+            if (score == 30) {
+              $("#score_opinion_port").html(
+                "<h6>Pontuação perfeita! Você é brasileiro mesmo?</h6>"
+              );
+            }
 
+            if (score > 25 && score <= 29) {
+              $("#score_opinion_port").html(
+                "<h6>Excelente pontuação! Você quase nunca levanta as sobrancelhas.</h6>"
+              );
+            }
 
+            if (score > 20 && score <= 25) {
+              $("#score_opinion_port").html(
+                "<h6>Pontuação muito boa! Na maioria das vezes você controla seus Bloopers.</h6>"
+              );
+            }
+
+            if (score > 15 && score <= 20) {
+              $("#score_opinion_port").html(
+                "<h6>Bom resultado! Você tem consciência suficiente para vencer os Bloopers.</h6>"
+              );
+            }
+
+            if (score > 10 && score <= 15) {
+              $("#score_opinion_port").html(
+                "<h6>Pontuação Ok! Você use os Bloopers, mas sabe sobre isso.</h6>"
+              );
+            }
+
+            if (score > 5 && score <= 10) {
+              $("#score_opinion_port").html(
+                "<h6>Pontuação fraca! Que pena, tente se esforçar mais da próxima vez e faça o teste novamente.</h6>"
+              );
+            }
+
+            if (score < 5) {
+              $("#score_opinion_port").html(
+                "<h6>Pontuação muito fraca! Que pena, estude um pouco mais e volte em algum tempo.</h6>"
+              );
+            }
+          }, 3000);
+
+          $(".loader").css({ display: "block" });
+          $("#inner_2").css({ padding: "140px" });
+          $(".wait_msg").show();
+          $("#hid_wait_msg").show();
+
+          $("#30").hide();
+          $("#score_msg").hide();
+          $(".score").hide();
+          $("#steps").hide();
+          $(".popup-close-fake").hide();
+          $(".next, .back, .logo_quiz").hide();
 
           /* RESULTS AND EXPLANATIONS*/
 
@@ -1693,24 +1573,25 @@ $("#start_quiz").on("click", function () {
               $("#scoreInfo_30").append(resultScore);
             }
             /* THE LOOK OF THE QUIZ IN RESULTS */
-            $(".situation").css({ background: "radial-gradient(rgb(27 24 22), transparent)", "margin-left": "auto"});
-            $(".questions").css({"text-align": "center"});
+            $(".situation").css({
+              background: "radial-gradient(rgb(27 24 22), transparent)",
+              "margin-left": "auto",
+            });
+            $(".questions").css({ "text-align": "center" });
 
             $("#results").append(currentQuiz);
 
-
-            if ($(window).width() > 480){
-
-              $(".cont_answer").css({"text-align": "left", "padding-left": "0px"});
-
-              } else   {
-
-                $(".cont_answer").css({"text-align": "left", "padding-left": "80px"});
-
-              }
-
-
-
+            // if ($(window).width() > 480) {
+            //   $(".cont_answer").css({
+            //     "text-align": "left",
+            //     "padding-left": "0px",
+            //   });
+            // } else {
+            //   $(".cont_answer").css({
+            //     "text-align": "left",
+            //     "padding-left": "80px",
+            //   });
+            // }
 
             $(".exp").show();
 
@@ -1724,13 +1605,12 @@ $("#start_quiz").on("click", function () {
           }); // document ready - results
 
 
-         //  $('#start_quiz').off('click');
         } // (result.result == 1)
 
         if (result.result == 2) {
           alert("oh, no! Something went wrong, Try again");
         }
-      // CLEAR LOCAL STORAGE
+        // CLEAR LOCAL STORAGE
         window.localStorage.clear();
       }, //ajax, success function 2//
     }); //ajax 2//
@@ -1745,208 +1625,177 @@ $("#start_quiz").on("click", function () {
 
     $(".bor_choose").css({ border: "" });
     $(".span_choose").text("");
-
-
   });
 
   $("#back_2").on("click", function () {
     if ($("input[name='sub_it']:checked").val() == "corr") {
       score--;
-
     }
   });
 
   $("#back_3").on("click", function () {
     if ($("input[name='too']:checked").val() == "corr") {
       score--;
-
     }
   });
   $("#back_4").on("click", function () {
     if ($("input[name='much']:checked").val() == "corr") {
       score--;
-
     }
   });
 
   $("#back_5").on("click", function () {
     if ($("input[name='exist']:checked").val() == "corr") {
       score--;
-
     }
   });
 
   $("#back_6").on("click", function () {
     if ($("input[name='two_sub']:checked").val() == "corr") {
       score--;
-
     }
   });
 
   $("#back_7").on("click", function () {
     if ($("input[name='no_obj']:checked").val() == "corr") {
       score--;
-
     }
   });
   $("#back_8").on("click", function () {
     if ($("input[name='for']:checked").val() == "corr") {
       score--;
-
     }
   });
 
   $("#back_9").on("click", function () {
     if ($("input[name='h_age']:checked").val() == "corr") {
       score--;
-
     }
   });
 
   $("#back_10").on("click", function () {
     if ($("input[name='guy']:checked").val() == "corr") {
       score--;
-
     }
   });
 
   $("#back_11").on("click", function () {
     if ($("input[name='car']:checked").val() == "corr") {
       score--;
-
     }
   });
 
   $("#back_12").on("click", function () {
     if ($("input[name='lose']:checked").val() == "corr") {
       score--;
-
     }
   });
 
   $("#back_13").on("click", function () {
     if ($("input[name='diss']:checked").val() == "corr") {
       score--;
-
     }
   });
 
   $("#back_14").on("click", function () {
     if ($("input[name='doubt']:checked").val() == "corr") {
       score--;
-
     }
   });
 
   $("#back_15").on("click", function () {
     if ($("input[name='know']:checked").val() == "corr") {
       score--;
-
     }
   });
 
   $("#back_16").on("click", function () {
     if ($("input[name='god']:checked").val() == "corr") {
       score--;
-
     }
   });
 
   $("#back_17").on("click", function () {
     if ($("input[name='pref']:checked").val() == "corr") {
       score--;
-
     }
   });
 
   $("#back_18").on("click", function () {
     if ($("input[name='impress']:checked").val() == "corr") {
       score--;
-
     }
   });
 
   $("#back_19").on("click", function () {
     if ($("input[name='parent']:checked").val() == "corr") {
       score--;
-
     }
   });
 
   $("#back_20").on("click", function () {
     if ($("input[name='gout']:checked").val() == "corr") {
       score--;
-
     }
   });
 
   $("#back_21").on("click", function () {
     if ($("input[name='use']:checked").val() == "corr") {
       score--;
-
     }
   });
 
   $("#back_22").on("click", function () {
     if ($("input[name='durat']:checked").val() == "corr") {
       score--;
-
     }
   });
 
   $("#back_23").on("click", function () {
     if ($("input[name='stay']:checked").val() == "corr") {
       score--;
-
     }
   });
 
   $("#back_24").on("click", function () {
     if ($("input[name='with']:checked").val() == "corr") {
       score--;
-
     }
   });
 
   $("#back_25").on("click", function () {
     if ($("input[name='chap']:checked").val() == "corr") {
       score--;
-
     }
   });
 
   $("#back_26").on("click", function () {
     if ($("input[name='notes']:checked").val() == "corr") {
       score--;
-
     }
   });
 
   $("#back_27").on("click", function () {
     if ($("input[name='music']:checked").val() == "corr") {
       score--;
-
     }
   });
 
   $("#back_28").on("click", function () {
     if ($("input[name='every']:checked").val() == "corr") {
       score--;
-
     }
   });
 
   $("#back_29").on("click", function () {
     if ($("input[name='sym']:checked").val() == "corr") {
       score--;
-
     }
   });
 
   $("#back_30").on("click", function () {
     if ($("input[name='support']:checked").val() == "corr") {
       score--;
-
     }
   });
 
@@ -1963,8 +1812,6 @@ $("#start_quiz").on("click", function () {
   }
 }); // (start_quiz) button
 
-
-
 /*Hover function for '.next and .back' buttons*/
 $(document).ready(function () {
   $(".next").hover(
@@ -1977,7 +1824,7 @@ $(document).ready(function () {
   );
   $(".back").hover(
     function () {
-      $(this).css({ background: "#7ed776"});
+      $(this).css({ background: "#7ed776" });
     },
     function () {
       $(this).css({ background: "" });
@@ -1985,7 +1832,7 @@ $(document).ready(function () {
   );
   $(".hvr-grow").hover(
     function () {
-      $(this).css({ background: "#7ed776", color:"black" });
+      $(this).css({ background: "#7ed776", color: "black" });
     },
     function () {
       $(this).css({ background: "", color: "" });
