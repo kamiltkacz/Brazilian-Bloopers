@@ -570,7 +570,7 @@ $("#start_quiz").on("click", function () {
       value: surveyId,
     };
     formData.push({});
-    console.log("dataQuiz");
+
 
     $.ajax({
       type: "POST",
@@ -685,7 +685,7 @@ $("#start_quiz").on("click", function () {
                 "<h6>Pontuação muito fraca! Que pena, estude um pouco mais e volte em algum tempo.</h6>"
               );
             }
-          }, 3000);
+          }, 5000);
 
           $(".loader").css({ display: "block" });
           $("#inner_2").css({ padding: "140px" });
