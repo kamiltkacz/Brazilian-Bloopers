@@ -302,7 +302,7 @@ require_once('./dbconn.php');
              <img src="pics/logo.png" class="logo_quiz" alt="logo_boy">
              <p class="situation">3&nbsp; out of&nbsp; 30</p>
               <p>Rudolfo: Do you like your teacher?</p>
-              <p>Pedro: Yes, I love her.&nbsp;<span class="error_style"><em>She has much patience</em></span>&nbsp;with me.</p>
+              <p>Pedro: Yes,&nbsp;<span class="error_style"><em>She has much patience</em></span>&nbsp;with me.</p>
           </div>
            <hr class="hr_white">
           <div class="cont_answer">
@@ -341,7 +341,7 @@ require_once('./dbconn.php');
                 <input type="radio" id="ex_2" class="rads" name="exist" value="corr"><label for="ex_2">&nbsp;there are many</label><div class="d_corr" style="display:none">&nbsp;<i class="fas fa-check"></i></div><br>
                 <input type="radio" id="ex_3" class="rads" name="exist" value="err_2"><label for="ex_3" class="err_label">&nbsp;has many</label><div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
 
-            <div class="exp" id="exp_4" style="display:none"><p class="par_exp"><span class="span_exp">Explanation</span>: We don't say "have" to express that something exists. Before "have", there`s always a subject. Ex. "We have 2 cars". <br>Use "There is/are" to express that something exists. Ex. "There is a good restaurant in my block."<br>Ex."There are beautiful beaches in Brazil."</p>
+            <div class="exp" id="exp_4" style="display:none"><p class="par_exp"><span class="span_exp">Explanation</span>: We don't say "have" to express that something exists. Before "have", there's always a subject. Ex. "We have 2 cars". <br>Use "There is/are" to express that something exists. Ex. "There is a good restaurant in my block."<br>Ex."There are beautiful beaches in Brazil."</p>
             <div class="resultMsg">
              <h4 class="scoreInfo" id="scoreInfo_4">Your score:&nbsp;</h4>
             </div>
@@ -398,7 +398,7 @@ require_once('./dbconn.php');
                 <input type="radio" id="ob_2" class="rads" name="no_obj" value="err_ok"><label for="ob_2" class="err_label">&nbsp;I liked this</label><div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
                 <input type="radio" id="ob_3" class="rads" name="no_obj" value="err_2"><label for="ob_3" class="err_label"&nbsp;>&nbsp;I liked its</label><div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
 
-            <div class="exp" id="exp_6" style="display:none"><p class="par_exp"><span class="span_exp">Explanation</span>: There are transitive and intransitive verbs in English. Intransitive verbs don't need an object. Examples of intransitive verbs: die, fly, happen, sleep.<br> Ex." Birds fly", Ex."Shit happens."<br>Transitive verbs, on the other hand, are followed by an object or object pronoun (it, him, her, etc). Commmon transitive verbs are: like, make, use, want. Ex."Did you use the pen? Yes, I used "it". <br>Ex. "Don't worry about the cake, I'll make "it".
+            <div class="exp" id="exp_6" style="display:none"><p class="par_exp"><span class="span_exp">Explanation</span>: There are transitive and intransitive verbs in English. Intransitive verbs don't need an object. Examples of intransitive verbs: die, fly, happen, sleep.<br> Ex."Birds fly", Ex."Shit happens."<br>Transitive verbs, on the other hand, are followed by an object or object pronoun (it, him, her, etc). Commmon transitive verbs are: like, make, use, want. Ex."Did you use the pen? Yes, I used "it". <br>Ex. "Don't worry about the cake, I'll make "it".
             <div class="resultMsg">
              <h4 class="scoreInfo" id="scoreInfo_6">Your score:&nbsp;</h4>
             </div>
@@ -425,7 +425,7 @@ require_once('./dbconn.php');
                 <input type="radio" id="for_2" class="rads" name="for" value="corr"><label for="for_2">&nbsp;to buy some milk</label><div class="d_corr" style="display:none">&nbsp;<i class="fas fa-check"></i></div><br>
                 <input type="radio" id="for_3" class="rads" name="for" value="err_2"><label for="for_3" class="err_label">&nbsp;for to buy some milk</label><div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
 
-            <div class="exp" id="exp_7" style="display:none"><p class="par_exp"><span class="span_exp">Explanation</span>: We say "in order to" or simply 'to' to express purpose/ objective. Ex."She saves money in order to travel." or "She saves money to travel."<br> The preposition "to" is followed by infinitive verbs, while the preposition "for" is followed by nouns. Compare: "She went online to look for information" x "She went online for some information"</p>
+            <div class="exp" id="exp_7" style="display:none"><p class="par_exp"><span class="span_exp">Explanation</span>: We say "in order to" or simply 'to' to express purpose/objective. Ex."She saves money in order to travel." or "She saves money to travel."<br> The preposition "to" is followed by infinitive verbs, while the preposition "for" is followed by nouns. Compare: "She went online to look for information" x "She went online for some information"</p>
             <div class="resultMsg">
              <h4 class="scoreInfo" id="scoreInfo_7">Your score:&nbsp;</h4>
             </div>
@@ -448,11 +448,11 @@ require_once('./dbconn.php');
           <div class="cont_answer">
             <p class="p_corr"><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p><br>
 
-                <input type="radio" id="age_1" class="rads" name="h_age" value="corr"><label for="age_1">&nbsp;I am 39 years old</label><div class="d_corr" style="display:none">&nbsp;<i class="fas fa-check"></i></div><br>
-                <input type="radio" id="age_2" class="rads" name="h_age" value="err_2"><label for="age_2" class="err_label">&nbsp;I have 39 years old</label><div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
+                <input type="radio" id="age_1" class="rads" name="h_age" value="corr"><label for="age_1">&nbsp;I am 39.</label><div class="d_corr" style="display:none">&nbsp;<i class="fas fa-check"></i></div><br>
+                <input type="radio" id="age_2" class="rads" name="h_age" value="err_2"><label for="age_2" class="err_label">&nbsp;I have 39.</label><div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
                 <input type="radio" id="age_3" class="rads" name="h_age" value="err_ok"><label for="age_3" class="err_label">&nbsp;I am 39 years</label><div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
 
-            <div class="exp" id="exp_8" style="display:none"><p class="par_exp"><span class="span_exp">Explanation</span>: We use the verb "To be" to inform our age. Ex."She is 25."</p>
+            <div class="exp" id="exp_8" style="display:none"><p class="par_exp"><span class="span_exp">Explanation</span>: We use the verb "To be" to inform our age.<br> Ex."She is 25."</p>
             <div class="resultMsg">
              <h4 class="scoreInfo" id="scoreInfo_8">Your score:&nbsp;</h4>
             </div>
@@ -468,8 +468,8 @@ require_once('./dbconn.php');
            <div class="cont_dial">
            <img src="pics/logo.png" class="logo_quiz" alt="logo_boy">
            <p class="situation">9&nbsp;out of&nbsp; 30</p>
+              <p>Steven: Hi, Marcel!.</p>
               <p>Marcel: <span class="error_style"><em>Hey, guy.&nbsp;</em></span>How are you?</p>
-              <p>Steven: I'm okay, thanks.</p>
 
           </div>
            <hr class="hr_white">
@@ -621,7 +621,7 @@ require_once('./dbconn.php');
                 <input type="radio" id="met_2" class="rads" name="know" value="corr"><label for="met_2">&nbsp;I met him</label><div class="d_corr" style="display:none">&nbsp;<i class="fas fa-check"></i></div><br>
                 <input type="radio" id="met_3" class="rads" name="know" value="err_2"><label for="met_3" class="err_label">&nbsp;I known him</label><div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
 
-            <div class="exp" id="exp_14" style="display:none"><p class="par_exp"><span class="span_exp">Explanation</span>: We say "I know someone" when you mean you are familar with a person, place, or a thing. Ex. "I know the mayor." We say "I knew someone" when you had a past relationship with someone or something but you don't have it anymore. Ex."I knew her in high school. She was popular."<br>We say "I met someone" when we interact with someone for the first time. Ex."I met George in France on my vacation." Ex. "I'm a journalist so I meet many interesting people."</p>
+            <div class="exp" id="exp_14" style="display:none"><p class="par_exp"><span class="span_exp">Explanation</span>: We say "I know someone" when you mean you are familar with a person, place, or a thing. Ex. "I know the mayor." We say "I knew someone" when you had a past relationship with someone or something but you don't have it anymore. Ex."I knew her in high school. She was popular."<br>We usually say "I met someone" when we interact with someone whom we do not know. Ex."I met him in France on my vacation." Ex. "I'm a journalist so I meet many interesting people."</p>
             <div class="resultMsg">
              <h4 class="scoreInfo" id="scoreInfo_14">Your score:&nbsp;</h4>
             </div>
@@ -823,7 +823,7 @@ require_once('./dbconn.php');
                 <input type="radio" id="stu_2" class="rads" name="durat" value="corr"><label for="stu_2">&nbsp;for 3 hours</label><div class="d_corr" style="display:none">&nbsp;<i class="fas fa-check"></i></div><br>
                 <input type="radio" id="stu_3" class="rads" name="durat" value="err_2"><label for="stu_3" class="err_label">&nbsp;at 3 hours</label><div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
 
-            <div class="exp" id="exp_21" style="display:none"><p class="par_exp"><span class="span_exp">Explanation</span>: We say "For" when we refer to the duration of an activity, usually followed by numbers. Ex. "I lived in the States for 7 years." We say "During" when we refer to events or periods of time. Ex. "I've read a lot during the pandemic." "She slept during the conference"</p>
+            <div class="exp" id="exp_21" style="display:none"><p class="par_exp"><span class="span_exp">Explanation</span>: We say "For" when we refer to the duration of an activity, usually followed by numbers. Ex. "I lived in the States for 7 years."<br> We say "During" when we refer to events or periods of time. Ex. "I've read a lot during the pandemic." "She slept during the conference."</p>
             <div class="resultMsg">
              <h4 class="scoreInfo" id="scoreInfo_21">Your score:&nbsp;</h4>
             </div>
@@ -851,7 +851,7 @@ require_once('./dbconn.php');
                 <input type="radio" id="sta_2" class="rads" name="stay" value="err_2"><label for="sta_2" class="err_label">&nbsp;I became tired</label><div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
                 <input type="radio" id="sta_3" class="rads" name="stay" value="corr"><label for="sta_3">&nbsp;I got tired</label><div class="d_corr" style="display:none">&nbsp;<i class="fas fa-check"></i></div><br>
 
-            <div class="exp" id="exp_22" style="display:none"><p class="par_exp"><span class="span_exp">Explanation</span>: Use "Get + Adjective" to express a temporary change of state. Ex. "I got angry in traffic, but I'm calmer now". <br>Use "Stay + adjective" or "Feel + adjective" to express continuity of a state. You may say "stay tired" if you remain in the need of rest, chronically feel tired. Ex. "I eat and sleep well but I stay (feel) tired most of the day." However, "Feel tired" is more common.</p>
+            <div class="exp" id="exp_22" style="display:none"><p class="par_exp"><span class="span_exp">Explanation</span>:Use "Stay + adjective" or "Feel + adjective" to express continuity of a state. You may say "stay tired" if you remain in the need of rest, chronically feel tired. Ex. "I eat and sleep well but I stay (feel) tired most of the day." However, "Feel tired" is more common.<br> Use "Get + Adjective" to express a temporary change of state. Ex. "I got angry in traffic, but I'm calmer now".</p>
              <div class="resultMsg">
              <h4 class="scoreInfo" id="scoreInfo_22">Your score:&nbsp;</h4>
             </div>
@@ -879,7 +879,7 @@ require_once('./dbconn.php');
                 <input type="radio" id="wit_2" class="rads" name="with" value="err_ok"><label for="wit_2" class="err_label">&nbsp;I'm headache</label><div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
                 <input type="radio" id="wit_3" class="rads" name="with" value="corr"><label for="wit_3">&nbsp;I have a headache</label><div class="d_corr" style="display:none">&nbsp;<i class="fas fa-check"></i></div><br>
 
-            <div class="exp" id="exp_23" style="display:none"><p class="par_exp"><span class="span_exp">Explanation</span>: We say "To have a headache" or any kind of pain or disease. Ex. "Jonh had a stomachache after he ate those grapes." Ex."Luis has a fever."<br> We say "To be with someone", when we are in their company. Ex. "I was with Claire at the picnic."</p>
+            <div class="exp" id="exp_23" style="display:none"><p class="par_exp"><span class="span_exp">Explanation</span>: We say "To have a headache" or any kind of pain or disease. Ex. "Jonh had a stomachache after he ate those grapes." Ex."Luis has a fever."<br> We can use the preposition "with + health condition" only if it's preceded by a verb phrase. Ex. "To be coming down with a flu" or "He was hospitalized with Covid" </p>
             <div class="resultMsg">
              <h4 class="scoreInfo" id="scoreInfo_23">Your score:&nbsp;</h4>
             </div>
@@ -896,7 +896,7 @@ require_once('./dbconn.php');
            <img src="pics/logo.png" class="logo_quiz" alt="logo_boy">
            <p class="situation">24&nbsp; out of&nbsp; 30</p>
               <p>Luiza: What did you do last night?</p>
-              <p>Breno: I saw 3<span class="error_style"><em>&nbsp;chapters</em></span>  of "Friends".</p>
+              <p>Breno: I saw 3<span class="error_style"><em>&nbsp;chapters</em></span>of "Breaking Bad".</p>
 
           </div>
            <hr class="hr_white">
@@ -968,7 +968,7 @@ require_once('./dbconn.php');
                 <input type="radio" id="mus_2" class="rads" name="music" value="err_ok"><label for="mus_2" class="err_label">&nbsp;her song</label><div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
                 <input type="radio" id="mus_3" class="rads" name="music" value="corr"><label for="mus_3">&nbsp;her songs</label><div class="d_corr" style="display:none">&nbsp;<i class="fas fa-check"></i></div><br>
 
-            <div class="exp" id="exp_26" style="display:none"><p class="par_exp"><span class="span_exp">Explanation</span>: "Songs" are countable pieces of musical compositions. Ex. "'Garota de Ipanema' is a famous Brazilian song." or "There are 12 songs on his album" <br> "Music" is uncountable and refers to musical genders. Ex. "What's yoru favorite kind of music? It's rock".</p>
+            <div class="exp" id="exp_26" style="display:none"><p class="par_exp"><span class="span_exp">Explanation</span>: "Songs" are countable pieces of musical compositions. Ex. "'Garota de Ipanema' is a famous Brazilian song." or "There are 12 songs on her album." <br> "Music" is uncountable and refers to musical genders. Ex. "What's your favorite kind of music? It's Chillout".</p>
             <div class="resultMsg">
              <h4 class="scoreInfo" id="scoreInfo_26">Your score:&nbsp;</h4>
             </div>
@@ -996,7 +996,7 @@ require_once('./dbconn.php');
                 <input type="radio" id="ev_2" class="rads" name="every" value="err_ok"><label for="ev_2" class="err_label">&nbsp;every days</label><div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
                 <input type="radio" id="ev_3" class="rads" name="every" value="err_2"><label for="ev_3" class="err_label">&nbsp;all days</label><div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
 
-            <div class="exp" id="exp_27" style="display:none"><p class="par_exp"><span class="span_exp">Explanation</span>: We say "All day" when we mean from morning till evening, it's about duration of facts.<br> Ex. "I cleaned my room all day yesterday."<br> We say "Every day" when we mean something happening daily (Monday, Tuesday, etc), it's about frequency. Ex. "I watch the news every day."</p>
+            <div class="exp" id="exp_27" style="display:none"><p class="par_exp"><span class="span_exp">Explanation</span>: We say "All day" when we mean from morning till evening, it's about duration of action.<br> Ex. "I cleaned my room all day yesterday."<br> We say "Every day" when we mean something happening daily (Monday, Tuesday, etc), it's about frequency of action. Ex. "I watch the news every day."</p>
             <div class="resultMsg">
              <h4 class="scoreInfo" id="scoreInfo_27">Your score:&nbsp;</h4>
             </div>
@@ -1266,7 +1266,7 @@ require_once('./dbconn.php');
    <!-- My Footer -->
    <div id="footer" class="container">
       <p id="p_footer">Author - Kamil Tkacz&nbsp;<a href="https://twitter.com/kamiltkacz" style="font-size: unset;">@kamiltkacz</a>&nbsp;<i class="fab fa-twitter"></i><br>
-        &copy;2020 BrazilianBloopers.com<br></p>
+        &copy;2021 BrazilianBloopers.com<br></p>
    </div>
 
      <!-- JS Survey -->
@@ -1277,15 +1277,6 @@ require_once('./dbconn.php');
      <script src="contact_form.js"></script>
      <!--JS Portuguese -->
      <script src="port.js"></script>
-
-
-
-
-
-
-
-
-
 
 
 </body>
