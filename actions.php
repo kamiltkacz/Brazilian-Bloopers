@@ -185,13 +185,6 @@ if ($action == "sub_quiz") {
   }
 
 
-
-
-
-
-
-
-
   if ($action == "submit_contact") {
     $export = Array();
     $name = htmlspecialchars($_POST["name"]);
