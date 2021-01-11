@@ -7,16 +7,12 @@ html {
   font-weight: 500px;
   color: whitesmoke;
   background-color: black;
-  /* background-image: url("pics/glassesdog.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100% 100%; */
 }
+
 .tabs {
   position: relative;
   overflow: hidden;
-  background-color:#4a444c;
+  background-color: #4a444c;
 }
 
 .tabs #myLinks {
@@ -40,7 +36,7 @@ html {
 }
 
 .tabs a:hover {
-  background-color:#67b060;
+  background-color: #67b060;
   color: black;
 }
 
@@ -59,7 +55,6 @@ a {
 
 a:hover {
   text-decoration: none;
-  /*color: #67b060;*/
   transition: all 0, 5s;
   border: hidden;
   color: #0f1403;
@@ -79,7 +74,6 @@ h3 {
   filter: grayscale(100%);
   cursor: auto;
   width: 60px;
-
 }
 
 #logo_surv {
@@ -92,7 +86,6 @@ h3 {
   padding-right: 2px;
   top: 1px;
 }
-
 
 .logo_quiz {
   position: absolute;
@@ -110,7 +103,6 @@ h3 {
   margin-top: 15px;
   height: 24px;
   width: 24px;
-
 }
 
 #eng_btn:hover {
@@ -127,12 +119,11 @@ h3 {
   cursor: pointer;
 }
 
-#eng_btn_score, #port_btn_score {
-
+#eng_btn_score,
+#port_btn_score {
   margin-top: -20px;
   border-radius: 5px;
   background: radial-gradient(#2a2725, #0000006e);
-
 }
 
 #img_div {
@@ -169,7 +160,6 @@ h3 {
   padding: 100px 19px;
   max-width: 100%;
   text-align: center;
-
 }
 
 #leg_steps {
@@ -188,9 +178,6 @@ h3 {
 #have_fun {
   margin-top: 30px;
 }
-
-
-
 
 /* Outer */
 .popup {
@@ -219,7 +206,6 @@ h3 {
   border: 3px solid radial-gradient(#ffc107, #00000059);
   text-align: center;
   overflow-x: hidden;
-  /*overflow-y: scroll;*/
   background-image: url("pics/GreyLogo.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -228,7 +214,6 @@ h3 {
 #inner_2 {
   max-width: 830px;
   max-height: 900px;
-  /* width: 90%;*/
   padding: 45px;
   position: absolute;
   top: 50%;
@@ -244,11 +229,8 @@ h3 {
   background-image: url("pics/GreyLogo.png");
   background-position: center;
   background-repeat: no-repeat;
-  /* background-attachment: fixed;*/
   background-size: 280px 280px;
 }
-
-
 
 #popup_close_1 {
   width: 20px;
@@ -269,8 +251,6 @@ h3 {
   margin-top: -29px;
   left: -5px;
 }
-
-
 
 .popup-close-fake {
   width: 20px;
@@ -299,14 +279,12 @@ h3 {
   text-decoration: none;
 }
 
- .popup-close-fake:hover {
+.popup-close-fake:hover {
   -webkit-transform: translate(50%, -50%) rotate(180deg);
   transform: translate(50%, -50%) rotate(180deg);
   background: #4a444c;
   text-decoration: none;
 }
-
-
 
 ::-webkit-scrollbar {
   width: 8px;
@@ -393,13 +371,7 @@ label,
 
 em {
   color: whitesmoke;
-  /* padding: 6px;
-  /* font-weight: 600;
-  border-radius: 10px;
-  background: radial-gradient(#172f4a, #00000059);
-  border: solid #ffc107 1px; */
   text-decoration: underline;
-
   text-decoration-color: red;
   text-decoration-style: solid;
 }
@@ -464,7 +436,6 @@ em {
   transform: scale(1.1);
 }
 
-
 .next {
   background: #4a444c;
   color: whitesmoke;
@@ -477,10 +448,6 @@ em {
   right: -1px;
   position: absolute;
   margin-top: -52px;
-
-  /* margin-right: -20px;
-    border-bottom: 3px solid rgba(0, 0, 0, 0.2);
-    border-right: 1px solid rgba(0, 0, 0, 0.2);*/
 }
 
 .back {
@@ -495,9 +462,6 @@ em {
   left: -1px;
   position: absolute;
   margin-top: -52px;
-
-  /* border-bottom: 3px solid rgba(0, 0, 0, 0.2);
-  border-right: 1px solid rgba(0, 0, 0, 0.2);*/
 }
 
 /* Submit Survey Button*/
@@ -559,7 +523,6 @@ em {
 }
 
 #check_res_port {
-
   background: #4a444c;
   color: whitesmoke;
   font-family: inherit;
@@ -570,8 +533,6 @@ em {
 
   border-bottom: 3px solid rgba(0, 0, 0, 0.2);
   border-right: 1px solid rgba(0, 0, 0, 0.2);
-
-
 }
 
 /* END BUTTONS*/
@@ -594,16 +555,11 @@ em {
   border-radius: 5px;
 }
 
-/* #question_1 {
-  margin-top: -10px;
-} */
-
 #home {
   max-width: 800px;
   max-height: 400px;
   width: 90%;
   margin-top: 100px;
-
 }
 
 /* QUIZ CONTAINERS*/
@@ -631,7 +587,7 @@ em {
 }
 .questions {
   position: relative;
-  background:#67b060;
+  background: #67b060;
   padding: 10px;
   border-radius: 12px;
   margin-bottom: 20px;
@@ -643,7 +599,6 @@ em {
   margin-bottom: 20px;
   margin-top: 30px;
 }
-
 
 .cont_dial {
   margin-top: 0;
@@ -739,8 +694,6 @@ textarea {
   margin-top: 12px;
 }
 
-
-
 .loader {
   display: none;
   border: 10px solid #f3f3f3;
@@ -753,17 +706,23 @@ textarea {
   margin-left: 228px;
 }
 
-
-
 /* Safari */
 @-webkit-keyframes spin {
-  0% { -webkit-transform: rotate(0deg); }
-  100% { -webkit-transform: rotate(360deg); }
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .wait_msg {
@@ -775,7 +734,6 @@ textarea {
   margin-top: 420px;
   background: none;
   opacity: 0.6;
-
 }
 
 #h5_sec {
@@ -794,8 +752,6 @@ textarea {
   background: #67b060;
 }
 
-
-
 .score {
   display: none;
   background: radial-gradient(#2a2725, #0000006e);
@@ -813,8 +769,6 @@ textarea {
 .span_exp {
   padding: 5px;
   border-radius: 4px;
-  /*background: radial-gradient(#172f4a, #00000059);*/
-
   font-style: italic;
 }
 
@@ -822,17 +776,16 @@ textarea {
   background: #67b060;
   padding: 25px;
   border-radius: 15px;
+  text-align: left;
 }
 .resultMsg {
   text-align: right;
 }
 #score_span {
-  /*background: radial-gradient(#533019, #0000006e);*/
   padding: 10px;
   border-radius: 10px;
 }
 .scoreInfo {
- /* background: radial-gradient(#533019, #0000006e);*/
   padding: 10px;
   border-radius: 10px;
   display: inline;
@@ -841,8 +794,6 @@ textarea {
 /* MEDIA QUERIES  */
 
 @media (max-width: 320px) {
-
-
   #inner_2 {
     width: 370px;
     height: 600px;
@@ -851,7 +802,7 @@ textarea {
 
   .popup-close {
     font-size: 17px;
-    position:sticky;
+    position: sticky;
   }
 
   .cont_dial {
@@ -868,7 +819,8 @@ textarea {
     width: 60px;
   }
 
-  #port_btn, #eng_btn {
+  #port_btn,
+  #eng_btn {
     margin-top: 15px;
     height: 24px;
     width: 24px;
@@ -964,23 +916,14 @@ textarea {
   }
 
   .loader {
-
     margin-left: 15px;
     margin-top: -120px;
     width: 30px;
     height: 30px;
-}
-
-
-
-
+  }
 }
 
 @media (max-width: 480px) and (min-width: 321px) {
-
-
-
-
   #inner_2 {
     width: 450px;
     height: 600px;
@@ -1051,7 +994,8 @@ textarea {
     float: unset;
   }
 
-  #port_btn, #eng_btn {
+  #port_btn,
+  #eng_btn {
     margin-top: 15px;
     height: 24px;
     width: 24px;
@@ -1103,9 +1047,7 @@ textarea {
   .loader {
     margin-left: 30px;
     margin-top: -120px;
-
   }
-
 }
 @media (min-width: 481px) and (max-width: 570px) {
   .cont_dial {
@@ -1207,7 +1149,7 @@ textarea {
   }
 }
 
-@media screen and (max-height: 320px)  {
+@media screen and (max-height: 320px) {
   #inner_2 {
     top: 50%;
     left: 50%;
@@ -1295,7 +1237,6 @@ textarea {
   .loader {
     margin-left: -120px;
     margin-top: -20px;
-
   }
 
   #hid_wait_msg {
@@ -1303,14 +1244,12 @@ textarea {
     margin-top: 40px;
     background: none;
     opacity: 0.6;
-
   }
 
   #h5_sec {
     margin-top: -80px;
     margin-left: 280px;
-}
-
+  }
 }
 
 @media screen and (max-height: 376px) and (min-height: 321px) {
@@ -1376,11 +1315,11 @@ textarea {
     margin-top: -40px;
   }
 
- #hid_wait_msg {
+  #hid_wait_msg {
     display: none;
     margin-top: 90px;
     background: none;
-}
+  }
 }
 
 @media screen and (max-height: 376px) and (min-width: 668px) {
@@ -1490,5 +1429,3 @@ textarea {
     font-size: 17px;
   }
 }
-
-
