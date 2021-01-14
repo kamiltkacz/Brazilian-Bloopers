@@ -82,7 +82,7 @@ h3 {
 
 #logo_main {
   position: absolute;
-  right: 4%;
+  right: 1%;
   padding-right: 2px;
   top: 1px;
 }
@@ -941,7 +941,7 @@ textarea {
 
   #logo_main {
     position: absolute;
-    right: 15%;
+    right: 11%;
   }
 
   .logo_quiz {
@@ -1121,7 +1121,7 @@ textarea {
 @media screen and (max-width: 686px) and (min-width: 480px) {
   #logo_main {
     position: absolute;
-    right: 9%;
+    /*right: 9%;*/
     padding-right: 2px;
   }
 }
@@ -1129,7 +1129,7 @@ textarea {
 @media screen and (max-width: 1082px) and (min-width: 686px) {
   #logo_main {
     position: absolute;
-    right: 6%;
+    /*right: 6%;*/
     padding-right: 2px;
   }
 }
