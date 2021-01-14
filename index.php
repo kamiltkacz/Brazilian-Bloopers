@@ -1252,11 +1252,41 @@ require_once('./dbconn.php');
         if (burger.style.display === "block") {
           burger.style.display = "none";
           $("#logo_main").css({"top": "1px"});
+
+
+
         } else {
           burger.style.display = "block";
           $("#logo_main").css({"top": "1px"});
+
+
+
         }
       }
+
+    const iconHide = window.matchMedia( "(min-width: 480px)" );
+
+     if (iconHide.matches) {
+
+            $(".icon").hide();
+            $("#logo_main").css({"right": ""});
+     } else {
+
+          $(".icon").show();
+          $("#logo_main").css({"right": ""});
+
+     }
+     $(window).resize(function() {
+       if ($(window).width() > 480) {
+        $(".icon").hide();
+
+       } else {
+
+        $(".icon").show();
+        $("#logo_main").css({"right": ""});
+
+       }
+     });
 
   </script>
 
