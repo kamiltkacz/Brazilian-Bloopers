@@ -12,7 +12,7 @@ $("#start_survey").on("click", function () {
 });
 
 $("#popup_close_1").on("click", function () {
-  alert("close survey");
+
   $("#steps").show();
   $("#footer").show();
 });
