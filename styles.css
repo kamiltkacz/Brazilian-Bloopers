@@ -12,7 +12,7 @@ html {
 .tabs {
   position: relative;
   overflow: hidden;
-  background-color: #4a444c;
+  background-color: #67b060;
 }
 
 .tabs #myLinks {
@@ -28,7 +28,7 @@ html {
 }
 
 .tabs a.icon {
-  background: #4a444c;
+  background: #67b060;
   display: block;
   position: absolute;
   right: 0;
@@ -129,6 +129,8 @@ h3 {
 #img_div {
   text-align: left;
 }
+
+
 
 /* Style tab links */
 .tablink {
