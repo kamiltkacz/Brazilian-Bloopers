@@ -62,6 +62,7 @@ require_once('./dbconn.php');
 
    <a class="tablink" onclick="openPage('Contact', this);">Contact</a>
 
+
    <img src="//bandidosnatv.com/plgns/gtranslate/flags/24/en-us.png" id="eng_btn" alt="English_flag">
    <img src="//bandidosnatv.com/plgns/gtranslate/flags/24/pt-br.png" id="port_btn"  alt="Portuguese_flag">
   </div>
@@ -1264,29 +1265,41 @@ require_once('./dbconn.php');
         }
       }
 
-    const iconHide = window.matchMedia( "(min-width: 480px)" );
+      const iconHide = window.matchMedia( "(min-width: 480px)" );
 
-     if (iconHide.matches) {
+      function hideBurger() {
 
-            $(".icon").hide();
-            $("#logo_main").css({"right": ""});
-     } else {
+        if (iconHide.matches) {
 
-          $(".icon").show();
-          $("#logo_main").css({"right": ""});
+         $(".icon").hide();
+         $("#logo_main").css({"right": ""});
+         } else {
 
-     }
-     $(window).resize(function() {
-       if ($(window).width() > 480) {
-        $(".icon").hide();
+         $(".icon").show();
+         $("#logo_main").css({"right": ""});
 
-       } else {
+         }
+         $(window).resize(function() {
+         if ($(window).width() > 480) {
+         $(".icon").hide();
 
-        $(".icon").show();
-        $("#logo_main").css({"right": ""});
+         } else {
 
-       }
-     });
+         $(".icon").show();
+         $("#logo_main").css({"right": ""});
+
+         }
+         });
+      }
+      $(document).ready(hideBurger());
+
+    //   $("#port_btn").hover(function() {
+    //     $(this).css('cursor','pointer').attr('title', '.');
+    // }, function() {
+    //     $(this).css('cursor','auto');
+    // });
+
+
 
   </script>
 
