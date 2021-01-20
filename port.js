@@ -212,6 +212,10 @@ $("#port_btn").on("click", function () {
 
   $("#submit_survey").text("Enviar");
 
+  // Hide the burger menu
+  $(document).ready(hideBurger());
+
+
 
   $("#eng_btn").on("click", function () {
 
