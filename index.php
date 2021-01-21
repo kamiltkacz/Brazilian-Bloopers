@@ -62,9 +62,13 @@ require_once('./dbconn.php');
 
    <a class="tablink" onclick="openPage('Contact', this);">Contact</a>
 
-
-   <img src="//bandidosnatv.com/plgns/gtranslate/flags/24/en-us.png" id="eng_btn" alt="English_flag">
-   <img src="//bandidosnatv.com/plgns/gtranslate/flags/24/pt-br.png" id="port_btn"  alt="Portuguese_flag">
+   <div class="dropdown">
+    <p class="dropbtn"><img src="//bandidosnatv.com/plgns/gtranslate/flags/24/en-us.png" id="eng_btn_e" alt="English_flag">
+      <i class="fa fa-caret-down" style="margin-left: 5px;"></i></p>
+    <div class="dropdown-content">
+    <img src="//bandidosnatv.com/plgns/gtranslate/flags/24/pt-br.png" id="port_btn_e"  alt="Portuguese_flag">
+    </div>
+  </div>
   </div>
   <img src="pics/logo.png" id="logo_main" class="logo" alt="logo_boy">
 
