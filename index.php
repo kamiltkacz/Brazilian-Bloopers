@@ -78,8 +78,6 @@ require_once('./dbconn.php');
  </div>
 </div>
 
-
-
   <div id="Home" class="tabcontent">
     <div class="container" id="home">
 
@@ -101,14 +99,14 @@ require_once('./dbconn.php');
       <div class="container">
       <fieldset class="field_about">
         <h4 class="leg_highlight" id="leg_high_2">About the Bloopers</h4>
-        <p class="al_left">Let's face it. Learning another language and communicating your ideas in it is no easy feat. English, however omnipresent in this world, is no exception. We're here to help a little with that.<br>If you look up the English defintion of the word <a href="https://www.dictionary.com/browse/blooper" alt="to dictionary.com" style="font-style: italic; font-weight: bolder; text-decoration: underline" target="_blank"><span>'blooper'</span></a>&nbsp;you'll get "an embarassing error you make publicly". Although we don't think the mistakes you'll find here are that bad, we do believe correcting them is a great step forward in your language learning journey.<br>&nbsp;Check out the example<a href="#examples" id="a_examples" style="font-style: italic; font-weight: bolder; text-decoration: underline" ><span>here.</span></a></p>
+        <p class="al_left">Let's face it. Learning another language and communicating your ideas in it is no easy feat. English, however omnipresent in this world, is no exception. We're here to help a little with that.<br>If you look up the English defintion of the word <a href="https://www.dictionary.com/browse/blooper" alt="to dictionary.com" style="text-decoration: underline" target="_blank"><span>'blooper'</span></a>&nbsp;you'll get "an embarassing error you make publicly". Although we don't think the mistakes you'll find here are that bad, we do believe correcting them is a great step forward in your language learning journey.<br>&nbsp;Check out the example<a href="#examples" id="a_examples" style="text-decoration: underline" ><span>here.</span></a></p>
       </fieldset>
       </div>
 
     <div class="container" id="about_qz">
     <fieldset class="field_about">
        <h4 class="leg_highlight" id="leg_high_3">About the Quiz</h4>
-       <p class="al_left"> The quiz is in English only, because you can't have it too easy, can you? The survey however, is offered in both English and  Portuguese. The quiz consists of false cognates, idiomatic expressions, incomplete phrases, etc. You'll be presented with a series of dialogues. You have to use your judgement when picking the only one correct answer.<br><br>&nbsp;There are 30 questions which vary in difficulty. Some mistakes are more common and some less frequent but all of them share the peculiarity of the Portuguese language that does not translate well into English. Even though many of the bloopers are intelligible to native English speakers, you would be better off finding a more common alternative.<br><br>&nbsp;After you finish, make sure to check the explanation section which is under each question. This section is where we put most work in this project. We hope you'll find it useful.&nbsp;<br>One last thing - remember not to be be too hard on yourself - It's okay if you have a piece of Brazil that never leaves your brain, plus why not let the gringos do some thinking?<br><br>Don't forget to enjoy the process! <br><br><a href="#" style="padding: 5px; font-style: italic; font-weight: bolder; text-decoration: underline", onclick="openPage('Quiz', this);">Ready?</a></p>
+       <p class="al_left"> The quiz is in English only, because you can't have it too easy, can you? The survey however, is offered in both English and  Portuguese. The quiz consists of false cognates, idiomatic expressions, incomplete phrases, etc. You'll be presented with a series of dialogues. You have to use your judgement when picking the only one correct answer.<br><br>&nbsp;There are 30 questions which vary in difficulty. Some mistakes are more common and some less frequent but all of them share the peculiarity of the Portuguese language that does not translate well into English. Even though many of the bloopers are intelligible to native English speakers, you would be better off finding a more common alternative.<br><br>&nbsp;After you finish, make sure to check the explanation section which is under each question. This section is where we put most work in this project. We hope you'll find it useful.&nbsp;<br>One last thing - remember not to be be too hard on yourself - It's okay if you have a piece of Brazil that never leaves your brain, plus why not let the gringos do some thinking?<br><br>Don't forget to enjoy the process! <br><br><a href="#" style="padding: 5px; text-decoration: underline", onclick="openPage('Quiz', this);">Ready?</a></p>
      </fieldset>
      </div>
      <div class="container">
