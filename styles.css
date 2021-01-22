@@ -36,8 +36,8 @@ html {
 }
 
 .tabs a:hover {
-  background-color: #67b060;
-  color: black;
+  background-color: #4a444c;
+  color: white;
 }
 
 .active {
@@ -57,7 +57,7 @@ a:hover {
   text-decoration: none;
   transition: all 0, 5s;
   border: hidden;
-  color: #0f1403;
+  color: #4a444c;
 }
 
 #a_examples {
@@ -98,26 +98,37 @@ h3 {
   border-top: 1px solid whitesmoke;
 }
 
-#eng_btn {
-  display: none;
-  margin-top: 15px;
-  height: 24px;
-  width: 24px;
+#eng_btn_e {
+
+  margin-top: -3px;
+  height: 21px;
+  width: 21px;
 }
 
-#eng_btn:hover {
-  cursor: pointer;
+
+#port_btn_e {
+  margin-top: -5px;
+  height: 26px;
+  width: 26px;
 }
 
-#port_btn {
-  margin-top: 15px;
-  height: 24px;
-  width: 24px;
+
+
+#eng_btn_p {
+
+  margin-top: -5px;
+  height: 26px;
+  width: 26px;
 }
 
-#port_btn:hover {
-  cursor: pointer;
+
+
+#port_btn_p {
+  margin-top: -3px;
+  height: 21px;
+  width: 21px;
 }
+
 
 #eng_btn_score,
 #port_btn_score {
@@ -129,6 +140,50 @@ h3 {
 #img_div {
   text-align: left;
 }
+
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+/* .dropdown:hover .dropbtn {
+  background-color: black;
+} */
+
+.dropdown-content {
+  display: none;
+  position: fixed;
+  background-color: #4a444c;
+  min-width: 55px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  text-align: center;
+}
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -961,7 +1016,7 @@ textarea {
 
   .tabs {
     overflow: hidden;
-    background-color: #333;
+    background-color: #67b060;
     position: relative;
   }
 
