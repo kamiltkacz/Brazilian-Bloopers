@@ -40,7 +40,7 @@ const headerSwitch = $(`
   </header>
   `);
 
-const aboutSwitch = $(` <div id="About" class="tabcontent">
+let aboutSwitch = $(`<div id="About" class="tabcontent">
   <div class="container" id="about_us">
   <fieldset class="field_about">
      <h4 class="leg_highlight" id="leg_high_1">Sobre nós</h4>
@@ -49,7 +49,7 @@ const aboutSwitch = $(` <div id="About" class="tabcontent">
   </div>
     <div class="container">
     <fieldset class="field_about">
-      <h4 class="leg_highlight" id="leg_high_2" >Sobre os Bloopers</h4>
+      <h4 class="leg_highlight" id="leg_high_2">Sobre os Bloopers</h4>
       <p class="al_left">Vamos ser sinceros. Aprender outro idioma e comunicar suas idéias nele não é tarefa fácil. O inglês, embora onipresente neste mundo, não é exceção. Estamos aqui para ajudar um pouco nisso.<br>Se você procurar a definição em inglês da palavra <a href="https://www.dictionary.com/browse/blooper" alt="to dictionary.com" style="text-decoration: underline" target="_blank"><span>'blooper'</span></a>&nbsp;você achará: "um erro embaraçoso que você comete publicamente". Embora não achemos que os erros que você encontrará aqui sejam tão graves, acreditamos que corrigi-los seja um grande passo em sua jornada de aprendizado deste idioma.<br>&nbsp;Confira os exemplos<a href="#examples" id="a_examples" style="text-decoration: underline"><span>aqui.</span></a></p>
     </fieldset>
     </div>
@@ -58,17 +58,17 @@ const aboutSwitch = $(` <div id="About" class="tabcontent">
   <fieldset class="field_about">
      <h4 class="leg_highlight" id="leg_high_3">Sobre o Quiz</h4>
      <p class="al_left"> O teste é apenas em inglês, porque não pode ficar muito fácil, não é? A pesquisa, entretanto, é oferecida em inglês e português.
-     O quiz consiste em falsos cognatos, expressões idiomáticas, frases incompletas, etc. Você verá uma série de diálogos e deverá usar o seu bom senso ao escolher a única resposta correta.<br><br>&nbsp;Existem 30 questões que variam em graus de dificuldade. Alguns erros são mais comuns e outros menos frequentes, mas todos eles compartilham a peculiaridade da língua portuguesa que não traduz bem para o inglês. Mesmo que muitos dos erros sejam inteligíveis para falantes nativos de inglês, seria melhor você encontrar uma alternativa mais comum.<br><br>&nbsp;Mas não seja tão duro consigo mesmo - Tudo bem se você tem um pedaço do Brasil que nunca sai do seu cérebro, e por que não deixar os gringos pensarem um pouco?<br><br>Não se esqueça de se divertir no processo!<br><br><a href="#" style="padding: 5px; text-decoration: underline", onclick="openPage('Quiz', this);">Pronto?</a></p>
+     O quiz consiste em falsos cognatos, expressões idiomáticas, frases incompletas, etc. Você verá uma série de diálogos e deverá usar o seu bom senso ao escolher a única resposta correta.<br><br>&nbsp;Existem 30 questões que variam em graus de dificuldade. Alguns erros são mais comuns e outros menos frequentes, mas todos eles compartilham a peculiaridade da língua portuguesa que não traduz bem para o inglês. Mesmo que muitos dos erros sejam inteligíveis para falantes nativos de inglês, seria melhor você encontrar uma alternativa mais comum.<br><br>&nbsp;Mas não seja tão duro consigo mesmo - Tudo bem se você tem um pedaço do Brasil que nunca sai do seu cérebro, e por que não deixar os gringos pensarem um pouco?<br><br>Não se esqueça de se divertir no processo!<br><br><a href="#" style="padding: 5px; text-decoration: underline" onclick="openPage('Quiz', this);">Pronto?</a></p>
    </fieldset>
    </div>
    <div class="container">
-      <picture>
+
         <a id="examples"></a>
         <h4 class="leg_highlight">Exemplo de um erro brasileiro em um diálogo casual:</h4>
        <br><br><p>A) Did you like your trip?</p><br><p style="margin-top: -20px;">B)&nbsp;<span class="error_style"><em>More or less.</em></span></p><br><p style="margin-top: -20px;">A) Hmmm...&#129300;</p>
        <hr class="hr_white">
        <p class="al_left">&nbsp;<span class="span_exp">Explanation:</span>&nbsp;In English we generally say "More or Less" to use it as an approximation of numbers, quantities, a "plus-minus". Ex. "It will cost you 40 reais, more or less."<br><br>We don't answer with "more or less" only to express value or our impression of something. If you thought the above mentioned trip could have been better, you answer "Not much". If you thought it could have been worse, you answer "It was okay." You should remember that answers like this are hugely context dependent, meaning, you will have to explain what you mean in more detail.</p>
-      </picture>
+
     </div>
 
 </div>`);
