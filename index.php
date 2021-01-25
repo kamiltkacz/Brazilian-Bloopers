@@ -78,6 +78,8 @@ require_once('./dbconn.php');
  </div>
 </div>
 
+
+
   <div id="Home" class="tabcontent">
     <div class="container" id="home">
 
@@ -99,23 +101,22 @@ require_once('./dbconn.php');
       <div class="container">
       <fieldset class="field_about">
         <h4 class="leg_highlight" id="leg_high_2">About the Bloopers</h4>
-        <p class="al_left">Let's face it. Learning another language and communicating your ideas in it is no easy feat. English, however omnipresent in this world, is no exception. We're here to help a little with that.<br>If you look up the English defintion of the word <a href="https://www.dictionary.com/browse/blooper" alt="to dictionary.com" style="text-decoration: underline" target="_blank"><span>'blooper'</span></a>&nbsp;you'll get "an embarassing error you make publicly". Although we don't think the mistakes you'll find here are that bad, we do believe correcting them is a great step forward in your language learning journey.<br>&nbsp;Check out the example<a href="#examples" id="a_examples" style="text-decoration: underline" ><span>here.</span></a></p>
+        <p class="al_left">Let's face it. Learning another language and communicating your ideas in it is no easy feat. English, however omnipresent in this world, is no exception. We're here to help a little with that.<br>If you look up the English defintion of the word <a href="https://www.dictionary.com/browse/blooper" style="text-decoration: underline" target="_blank"><span>'blooper'</span></a>&nbsp;you'll get "an embarassing error you make publicly". Although we don't think the mistakes you'll find here are that bad, we do believe correcting them is a great step forward in your language learning journey.<br>&nbsp;Check out the example<a href="#examples" id="a_examples" style="text-decoration: underline"><span>here.</span></a></p>
       </fieldset>
       </div>
 
     <div class="container" id="about_qz">
     <fieldset class="field_about">
        <h4 class="leg_highlight" id="leg_high_3">About the Quiz</h4>
-       <p class="al_left"> The quiz is in English only, because you can't have it too easy, can you? The survey however, is offered in both English and  Portuguese. The quiz consists of false cognates, idiomatic expressions, incomplete phrases, etc. You'll be presented with a series of dialogues. You have to use your judgement when picking the only one correct answer.<br><br>&nbsp;There are 30 questions which vary in difficulty. Some mistakes are more common and some less frequent but all of them share the peculiarity of the Portuguese language that does not translate well into English. Even though many of the bloopers are intelligible to native English speakers, you would be better off finding a more common alternative.<br><br>&nbsp;After you finish, make sure to check the explanation section which is under each question. This section is where we put most work in this project. We hope you'll find it useful.&nbsp;<br>One last thing - remember not to be be too hard on yourself - It's okay if you have a piece of Brazil that never leaves your brain, plus why not let the gringos do some thinking?<br><br>Don't forget to enjoy the process! <br><br><a href="#" style="padding: 5px; text-decoration: underline", onclick="openPage('Quiz', this);">Ready?</a></p>
+       <p class="al_left"> The quiz is in English only, because you can't have it too easy, can you? The survey however, is offered in both English and  Portuguese. The quiz consists of false cognates, idiomatic expressions, incomplete phrases, etc. You'll be presented with a series of dialogues. You have to use your judgement when picking the only one correct answer.<br><br>&nbsp;There are 30 questions which vary in difficulty. Some mistakes are more common and some less frequent but all of them share the peculiarity of the Portuguese language that does not translate well into English. Even though many of the bloopers are intelligible to native English speakers, you would be better off finding a more common alternative.<br><br>&nbsp;After you finish, make sure to check the explanation section which is under each question. This section is where we put most work in this project. We hope you'll find it useful.&nbsp;<br>One last thing - remember not to be be too hard on yourself - It's okay if you have a piece of Brazil that never leaves your brain, plus why not let the gringos do some thinking?<br><br>Don't forget to enjoy the process! <br><br><a href="#" style="padding: 5px; text-decoration: underline" onclick="openPage('Quiz', this);">Ready?</a></p>
      </fieldset>
      </div>
      <div class="container">
-        <picture>
         <a id="examples"></a>
           <h4 class="leg_highlight">Example of a Brazilian Blooper in a casual dialogue:</h4>
          <br><br><p>A) Did you like your trip?</p><br><p style="margin-top: -20px;">B)&nbsp;<span class="error_style"><em>More or less.</em></span></p><br><p style="margin-top: -20px;">A) Hmmm...&#129300;</p>
           <p class="al_left">&nbsp;<span class="span_exp">Explanation:</span>&nbsp;In English we generally say "More or Less" to use it as an approximation of numbers, quantities, a "plus-minus". Ex. "It will cost you 40 reais, more or less."<br><br>We don't answer with "more or less" only to express value or our impression of something. If you thought the above mentioned trip could have been better, you answer "Not much". If you thought it could have been worse, you answer "It was okay." You should remember that answers like this are hugely context dependent, meaning, you will have to explain what you mean in more detail.</p>
-        </picture>
+
       </div>
 
   </div> <!-- About -->
@@ -399,7 +400,7 @@ require_once('./dbconn.php');
 
                 <input type="radio" id="ob_1" class="rads" name="no_obj" value="corr"><label for="ob_1">&nbsp;I liked it</label><div class="d_corr" style="display:none">&nbsp;<i class="fas fa-check"></i></div><br>
                 <input type="radio" id="ob_2" class="rads" name="no_obj" value="err_ok"><label for="ob_2" class="err_label">&nbsp;I liked this</label><div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
-                <input type="radio" id="ob_3" class="rads" name="no_obj" value="err_2"><label for="ob_3" class="err_label"&nbsp;>&nbsp;I liked its</label><div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
+                <input type="radio" id="ob_3" class="rads" name="no_obj" value="err_2"><label for="ob_3" class="err_label">&nbsp;I liked its</label><div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
 
             <div class="exp" id="exp_6" style="display:none"><p class="par_exp"><span class="span_exp">Explanation</span>: There are transitive and intransitive verbs in English. Intransitive verbs don't need an object. Examples of intransitive verbs: die, fly, happen, sleep.<br> Ex."Birds fly", Ex."Shit happens."<br>Transitive verbs, on the other hand, are followed by an object or object pronoun (it, him, her, etc). Commmon transitive verbs are: like, make, use, want. Ex."Did you use the pen? Yes, I used "it". <br>Ex. "Don't worry about the cake, I'll make "it".
             <div class="resultMsg">
@@ -792,7 +793,7 @@ require_once('./dbconn.php');
           <div class="cont_answer">
             <p class="p_corr"><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p><br>
 
-                <input type="radio" id="use_1" class="rads" name="use"value="err_2" ><label for="use_1">&nbsp;put a suit</label><div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
+                <input type="radio" id="use_1" class="rads" name="use" value="err_2"><label for="use_1">&nbsp;put a suit</label><div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
                 <input type="radio" id="use_2" class="rads" name="use" value="corr"><label for="use_2" class="err_label">&nbsp;wear a suit</label><div class="d_corr" style="display:none">&nbsp;<i class="fas fa-check"></i></div><br>
                 <input type="radio" id="use_3" class="rads" name="use" value="err_ok"><label for="use_3" class="err_label">&nbsp;take a suit</label><div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
 
@@ -1111,7 +1112,7 @@ require_once('./dbconn.php');
         </div>
          <!--Hidden Score Port Msg -->
         <div id="score_msg_port" class="container">
-        <div id="img_div">
+        <div id="img_div_p">
         <img src="//bandidosnatv.com/plgns/gtranslate/flags/24/en-us.png" id="eng_btn_score" alt="English_flag">
         </div>
        <h4 style="margin-bottom: 40px;">Obrigado por fazer o quiz!<br></h4>
@@ -1146,8 +1147,6 @@ require_once('./dbconn.php');
   <!--CONTACT FORM-->
   <div id="Contact" class="tabcontent">
     <div class="container" id="contact_cont">
-    <div class="logo_div">
-  </div>
        <div id="feedback_div" style="text-align:center">
         <h4 id="shoot_email">If you enjoyed the quiz or got a question, say hi here:</h4><br>
         <div style="margin-top: -20px;">
@@ -1170,9 +1169,9 @@ require_once('./dbconn.php');
 
       <div class="row">
         <div class="column">
-          <div id="labels_left">
-          <form id="contact" method="post" action="actions.php">
-          <div id ="contact_text">
+        <form id="contact" method="post" action="actions.php">
+        <div id="labels_left">
+          <div id="contact_text">
               <label for="name">Name*<span id="span_name"></span></label>
             <input type="text" id="bor_name" name="name" placeholder="Your name.." tabindex="0" font-family="cursive">
               <label for="email">E-mail*<span id="span_email"></span></label>
@@ -1262,8 +1261,6 @@ require_once('./dbconn.php');
           burger.style.display = "block";
           $("#logo_main").css({"top": "1px"});
 
-
-
         }
       }
 
@@ -1294,12 +1291,6 @@ require_once('./dbconn.php');
          });
       }
       $(document).ready(hideBurger());
-
-    //   $("#port_btn").hover(function() {
-    //     $(this).css('cursor','pointer').attr('title', '.');
-    // }, function() {
-    //     $(this).css('cursor','auto');
-    // });
 
 
 
