@@ -1256,7 +1256,6 @@ require_once('./dbconn.php');
           $("#logo_main").css({"top": "1px"});
 
 
-
         } else {
           burger.style.display = "block";
           $("#logo_main").css({"top": "1px"});
