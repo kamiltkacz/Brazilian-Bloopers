@@ -7,6 +7,7 @@
 
 
 const tabsSwitch = $(`
+<div id="mobile-container">
 <div class="tabs">
  <a id="defaultOpen" class="tablink" onclick="openPage('Home', this);">Home</a>
  <div id="myLinks">
@@ -30,6 +31,7 @@ const tabsSwitch = $(`
  <a href="javascript:void(0);" class="icon" onclick="myBurger()">
    <i class="fa fa-bars"></i></a>
 </div>
+</div>
 `);
 
 
@@ -40,7 +42,7 @@ const headerSwitch = $(`
   </header>
   `);
 
-let aboutSwitch = $(`<div id="About" class="tabcontent">
+const aboutSwitch = $(`<div id="About" class="tabcontent">
   <div class="container" id="about_us">
   <fieldset class="field_about">
      <h4 class="leg_highlight" id="leg_high_1">Sobre nós</h4>
@@ -156,7 +158,6 @@ $("#port_btn_e").on("click", function () {
 
 
   $(".tabs").replaceWith(tabsSwitch);
-
   $("header").replaceWith(headerSwitch);
   $("#About").replaceWith(aboutSwitch);
   $("#leg_steps").replaceWith(legStepsSwitch);
@@ -222,20 +223,12 @@ $("#port_btn_e").on("click", function () {
 
   $("#eng_btn_p").on("click", function () {
 
-
-
-     // openPage('Contact');
-     window.location.href = 'index.php';
-
-
-
-
-
+   window.location.href = 'index.php';
 
     });
 
-
   });
+
 
 
 
