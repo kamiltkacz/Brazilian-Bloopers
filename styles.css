@@ -103,6 +103,7 @@ h3 {
   margin-top: -3px;
   height: 21px;
   width: 21px;
+  cursor: default;
 }
 
 
@@ -158,9 +159,7 @@ h3 {
   margin: 0;
 }
 
-/* .dropdown:hover .dropbtn {
-  background-color: black;
-} */
+
 
 .dropdown-content {
   display: none;
@@ -170,12 +169,13 @@ h3 {
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
   text-align: center;
-  margin-top: 1px;
+  margin-top: 1.5px;
 }
 
 
 .dropdown:hover .dropdown-content {
   display: block;
+  cursor: pointer;
 }
 
 
