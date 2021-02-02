@@ -7,7 +7,7 @@
 
 
 const tabsSwitch = $(`
-<div id="mobile-container">
+
 <div class="tabs">
  <a id="defaultOpen" class="tablink" onclick="openPage('Home', this);">Home</a>
  <div id="myLinks">
@@ -31,7 +31,7 @@ const tabsSwitch = $(`
  <a href="javascript:void(0);" class="icon" onclick="myBurger()">
    <i class="fa fa-bars"></i></a>
 </div>
-</div>
+
 `);
 
 
