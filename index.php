@@ -33,7 +33,7 @@ require_once('./dbconn.php');
   <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@300&display=swap" rel="stylesheet">
   <!--SweetAlert2 -->
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
-  <script src="sweetalert2/dist/sweetalert2.all.min.js"></script>
+  <link href="sweetalert2/dist/sweetalert2.all.min.js"></script>
   <!-- Optional: include a polyfill for ES6 Promises for IE11 -->
   <script src="https://cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.js"></script>
 
@@ -42,9 +42,10 @@ require_once('./dbconn.php');
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/rome/3.0.2/rome.standalone.js"></script>
   <!--Popper-->
-  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script href="https://unpkg.com/@popperjs/core@2"></script>
    <!-- FontAwesome-->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
 
 
 
@@ -52,7 +53,7 @@ require_once('./dbconn.php');
 
 <body>
 
-<div id="mobile-container">
+<!-- <div id="mobile-container"> -->
  <div class="tabs">
   <a id="defaultOpen" class="tablink" onclick="openPage('Home', this);">Home</a>
   <div id="myLinks">
@@ -76,7 +77,7 @@ require_once('./dbconn.php');
   <a href="javascript:void(0);" class="icon" onclick="myBurger()">
     <i class="fa fa-bars"></i></a>
  </div>
-</div>
+<!-- </div> -->
 
 
 
@@ -1160,8 +1161,8 @@ require_once('./dbconn.php');
         <input type="hidden" name="currency_code" value="BRL" />
         <img src="pics/qrCode.png" alt="QR Code for paypal" style="width:60px;height:60px; margin-left: 20px;
          margin-top: -21px;">&nbsp;&nbsp;&nbsp;&nbsp;
-        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal" style="margin-top: 20px" />
-        <img alt="" src="https://www.paypal.com/en_BR/i/scr/pixel.gif" border="0" width="1" height="1" />
+        <input type="image" href="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal" style="margin-top: 20px" />
+        <img alt="" href="https://www.paypal.com/en_BR/i/scr/pixel.gif" border="0" width="1" height="1" />
         </form>
 
         <h3 style="margin-top: 20px;">Thanks a lot!</h3>
