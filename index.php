@@ -64,7 +64,7 @@ require_once('./dbconn.php');
    <a class="tablink" onclick="openPage('Contact', this);">Contact</a>
 
    <div class="dropdown">
-    <p class="dropbtn"><img src="//bandidosnatv.com/plgns/gtranslate/flags/24/en-us.png" id="eng_btn_e" alt="English_flag">
+    <p class="drop_btn"><img src="//bandidosnatv.com/plgns/gtranslate/flags/24/en-us.png" id="eng_btn_e" alt="English_flag">
       <i class="fa fa-caret-down" style="margin-left: 5px;"></i></p>
     <div class="dropdown-content">
     <img src="//bandidosnatv.com/plgns/gtranslate/flags/24/pt-br.png" id="port_btn_e"  alt="Portuguese_flag">
@@ -116,7 +116,7 @@ require_once('./dbconn.php');
         <a id="examples"></a>
           <h4 class="leg_highlight">Example of a Brazilian Blooper in a casual dialogue:</h4>
          <br><br><p>A) Did you like your trip?</p><br><p style="margin-top: -20px;">B)&nbsp;<span class="error_style"><em>More or less.</em></span></p><br><p style="margin-top: -20px;">A) Hmmm...&#129300;</p>
-          <p class="al_left">&nbsp;<span class="span_exp">Explanation:</span>&nbsp;In English we generally say "More or Less" to use it as an approximation of numbers, quantities, a "plus-minus". Ex. "It will cost you 40 reais, more or less."<br><br>We don't answer with "more or less" only to express value or our impression of something. If you thought the above mentioned trip could have been better, you answer "Not much". If you thought it could have been worse, you answer "It was okay." You should remember that answers like this are hugely context dependent, meaning, you will have to explain what you mean in more detail.</p>
+          <p class="al_left">&nbsp;<span class="span_exp">Explanation:</span>&nbsp;In English we generally say "More or Less" to use it as an approximation of numbers, quantities, etc. Ex. "It will cost you 40 reais, more or less."<br><br>We don't answer with "more or less" only to express value or our impression of something. If you thought the above mentioned trip could have been better, you answer "Not much". If you thought it could have been worse, you answer "It was okay." You should remember that answers like this are hugely context dependent, meaning, you will have to explain what you mean in more detail.</p>
 
       </div>
 
@@ -794,8 +794,8 @@ require_once('./dbconn.php');
           <div class="cont_answer">
             <p class="p_corr"><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p><br>
 
-                <input type="radio" id="use_1" class="rads" name="use" value="err_2"><label for="use_1">&nbsp;put a suit</label><div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
-                <input type="radio" id="use_2" class="rads" name="use" value="corr"><label for="use_2" class="err_label">&nbsp;wear a suit</label><div class="d_corr" style="display:none">&nbsp;<i class="fas fa-check"></i></div><br>
+                <input type="radio" id="use_1" class="rads" name="use" value="err_2"><label for="use_1" class="err_label">&nbsp;put a suit</label><div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
+                <input type="radio" id="use_2" class="rads" name="use" value="corr"><label for="use_2">&nbsp;wear a suit</label><div class="d_corr" style="display:none">&nbsp;<i class="fas fa-check"></i></div><br>
                 <input type="radio" id="use_3" class="rads" name="use" value="err_ok"><label for="use_3" class="err_label">&nbsp;take a suit</label><div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
 
             <div class="exp" id="exp_20" style="display:none"><p class="par_exp"><span class="span_exp">Explanation</span>: We say "To use" when we do something with an object in order to do a job or solve a problem. Ex."I use a blowdryer to dry my hair."<br> We say "To wear" when we have something on our body. Ex."She wears a lot of makeup." Ex."My friend wears braces."</p>
@@ -990,7 +990,7 @@ require_once('./dbconn.php');
            <img src="pics/logo.png" class="logo_quiz" alt="logo_boy">
            <p class="situation">27&nbsp; out of&nbsp; 30</p>
               <p>Marcus: What time do you usually get up?</p>
-              <p>Fernanda:&nbsp;I get up&nbsp;<span class="error_style"><em>at 6 all day.</em></span></p>
+              <p>Fernanda:&nbsp;I get up&nbsp;at 6<span class="error_style"><em> all day.</em></span></p>
 
           </div>
            <hr class="hr_white">
@@ -1161,8 +1161,8 @@ require_once('./dbconn.php');
         <input type="hidden" name="currency_code" value="BRL" />
         <img src="pics/qrCode.png" alt="QR Code for paypal" style="width:60px;height:60px; margin-left: 20px;
          margin-top: -21px;">&nbsp;&nbsp;&nbsp;&nbsp;
-        <input type="image" href="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal" style="margin-top: 20px" />
-        <img alt="" href="https://www.paypal.com/en_BR/i/scr/pixel.gif" border="0" width="1" height="1" />
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal" style="margin-top: 20px" />
+        <img src="https://www.paypal.com/en_BR/i/scr/pixel.gif" border="0" width="1" height="1" />
         </form>
 
         <h3 style="margin-top: 20px;">Thanks a lot!</h3>
