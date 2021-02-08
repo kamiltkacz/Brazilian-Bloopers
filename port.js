@@ -1,36 +1,32 @@
 
 
 
-
-
-
-
-
 const tabsSwitch = $(`
 
 <div class="tabs">
- <a id="defaultOpen" class="tablink" onclick="openPage('Home', this);">Home</a>
- <div id="myLinks">
-  <a class="tablink" onclick="openPage('About', this);">Sobre</a>
+  <a id="defaultOpen" class="tablink" onclick="openPage('Home', this);">Home</a>
+  <div id="myLinks">
+   <a class="tablink" onclick="openPage('About', this);">Sobre</a>
 
-  <a class="tablink" onclick="openPage('Quiz', this);">Quiz</a>
+   <a class="tablink" onclick="openPage('Quiz', this);">Quiz</a>
 
-  <a class="tablink" onclick="openPage('Contact', this);">Contato</a>
+   <a class="tablink" onclick="openPage('Contact', this);">Contato</a>
 
-  <div class="dropdown">
-  <p class="dropbtn"> <img src="//bandidosnatv.com/plgns/gtranslate/flags/24/pt-br.png" id="port_btn_p"  alt="Portuguese_flag">
-    <i class="fa fa-caret-down" style="margin-left: 5px;"></i></p>
-  <div class="dropdown-content">
-  <img src="//bandidosnatv.com/plgns/gtranslate/flags/24/en-us.png" id="eng_btn_p" alt="English_flag">
+   <div class="dropdown">
+    <p class="drop_btn"> <img src="//bandidosnatv.com/plgns/gtranslate/flags/24/pt-br.png" id="port_btn_p" alt="Bandeira Brazil">
+      <i class="fa fa-caret-down" style="margin-left: 5px;"></i></p>
+    <div class="dropdown-content">
+    <img src="//bandidosnatv.com/plgns/gtranslate/flags/24/en-us.png" id="eng_btn_p" alt="Bandeira Ingles">
+    </div>
   </div>
   </div>
+  <img src="pics/logo.png" id="logo_main" class="logo" alt="logo_boy">
+
+  <!-- "burger menu" -->
+  <a href="javascript:void(0);" class="icon" onclick="myBurger()">
+    <i class="fa fa-bars"></i></a>
  </div>
- <img src="pics/logo.png" id="logo_main" class="logo" alt="logo_boy">
 
- <!-- "burger menu" -->
- <a href="javascript:void(0);" class="icon" onclick="myBurger()">
-   <i class="fa fa-bars"></i></a>
-</div>
 
 `);
 
@@ -64,12 +60,11 @@ const aboutSwitch = $(`<div id="About" class="tabcontent">
    </fieldset>
    </div>
    <div class="container">
-
         <a id="examples"></a>
         <h4 class="leg_highlight">Exemplo de um erro brasileiro em um diálogo casual:</h4>
        <br><br><p>A) Did you like your trip?</p><br><p style="margin-top: -20px;">B)&nbsp;<span class="error_style"><em>More or less.</em></span></p><br><p style="margin-top: -20px;">A) Hmmm...&#129300;</p>
        <hr class="hr_white">
-       <p class="al_left">&nbsp;<span class="span_exp">Explanation:</span>&nbsp;In English we generally say "More or Less" to use it as an approximation of numbers, quantities, a "plus-minus". Ex. "It will cost you 40 reais, more or less."<br><br>We don't answer with "more or less" only to express value or our impression of something. If you thought the above mentioned trip could have been better, you answer "Not much". If you thought it could have been worse, you answer "It was okay." You should remember that answers like this are hugely context dependent, meaning, you will have to explain what you mean in more detail.</p>
+       <p class="al_left">&nbsp;<span class="span_exp">Explanation:</span>&nbsp;In English we generally say "More or Less" to use it as an approximation of numbers, quantities, Ex. "It will cost you 40 reais, more or less."<br><br>We don't answer with "more or less" only to express value or our impression of something. If you thought the above mentioned trip could have been better, you answer "Not much". If you thought it could have been worse, you answer "It was okay." You should remember that answers like this are hugely context dependent, meaning, you will have to explain what you mean in more detail.</p>
 
     </div>
 
@@ -153,8 +148,6 @@ const ques_7_Switch = $(
 
 
 $("#port_btn_e").on("click", function () {
-
-
 
 
   $(".tabs").replaceWith(tabsSwitch);
