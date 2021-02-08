@@ -148,7 +148,7 @@ h3 {
   overflow: hidden;
 }
 
-.dropdown .dropbtn {
+.dropdown .drop_btn {
   font-size: 16px;
   border: none;
   outline: none;
@@ -181,13 +181,6 @@ h3 {
 
 
 
-
-
-
-
-
-
-
 /* Style tab links */
 .tablink {
   float: left;
@@ -211,13 +204,14 @@ h3 {
   border-radius: 40px;
 }
 
-/* Style the tab content (and add height:100% for full page content) */
+
 .tabcontent {
   color: whitesmoke;
   display: none;
   padding: 100px 19px;
   max-width: 100%;
   text-align: center;
+ /* height: 100%;*/
 }
 
 #leg_steps {
@@ -420,7 +414,7 @@ label,
 .p_corr {
   display: inline-block;
   margin-left: -5px;
-  /* margin-bottom: 5px;*/
+
 }
 
 .rads {
@@ -1028,7 +1022,7 @@ textarea {
 
   .tabs a {
     color: white;
-    background-color: #4a444c;
+    background-color: #67b060;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
@@ -1036,7 +1030,7 @@ textarea {
   }
 
   .tabs a.icon {
-    background: #4a444c;
+    background: #67b060;
     display: block;
     position: absolute;
     right: 0;
