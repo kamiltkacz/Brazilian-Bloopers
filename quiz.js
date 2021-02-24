@@ -18,9 +18,6 @@ $("#start_quiz").on("click", function () {
     });
   });
 
-  // $('#steps').hide();
-  // $('#footer').hide();
-
   // Reset border color & text in span element
   $("input[class='rads']").click(function () {
     $("input[class='rads']").focus();
@@ -47,15 +44,17 @@ $("#start_quiz").on("click", function () {
     } else if ($("input[name='sub_it']:checked").val() == "corr") {
       score++;
 
-
       $("#" + classNum).hide();
       $("#" + numNext).show();
       $(".score").text(score);
+
     } else {
       $("#" + classNum).hide();
       $("#" + numNext).show();
       $(".score").text(score);
+
     }
+   // move();
   });
 
   $("#next_2").on("click", function () {
@@ -69,9 +68,11 @@ $("#start_quiz").on("click", function () {
 
       $("#" + classNum).hide();
       $("#" + numNext).show();
+
     } else {
       $("#" + classNum).hide();
       $("#" + numNext).show();
+
     }
   });
 
@@ -83,10 +84,10 @@ $("#start_quiz").on("click", function () {
       });
     } else if ($("input[name='much']:checked").val() == "corr") {
       score++;
-
       $("#" + classNum).hide();
       $("#" + numNext).show();
     } else {
+
       $("#" + classNum).hide();
       $("#" + numNext).show();
     }
@@ -1577,24 +1578,10 @@ $("#start_quiz").on("click", function () {
               background: "radial-gradient(rgb(27 24 22), transparent)",
               "margin-left": "auto",
             });
+
             $(".questions").css({ "text-align": "center" });
-
             $("#results").append(currentQuiz);
-
-            // if ($(window).width() > 480) {
-            //   $(".cont_answer").css({
-            //     "text-align": "left",
-            //     "padding-left": "0px",
-            //   });
-            // } else {
-            //   $(".cont_answer").css({
-            //     "text-align": "left",
-            //     "padding-left": "80px",
-            //   });
-            // }
-
             $(".exp").show();
-
             $(".cont_dial").prepend("<div class='divider'></div>");
 
             // Move The "divider" div
@@ -1839,3 +1826,25 @@ $(document).ready(function () {
     }
   );
 });
+
+// function move() {
+//   var elem = document.getElementsByClassName("situation");
+//   var width = 0;
+//   var id = setInterval(frame, 50);
+//   function frame() {
+//     if (width >= 100) {
+//       clearInterval(id);
+//     } else {
+//       width++;
+//       elem.style.width = width + '%';
+//       elem.innerHTML = width * 1  + '%';
+//     }
+//   }
+// }
+
+// pseudo code
+// function progressDivide() {
+//   100 / 29
+//   increase +1
+// }
+
