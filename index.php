@@ -253,10 +253,10 @@ require_once('./dbconn.php');
               <p>Milene:&nbsp;How is the weather today?</p>
               <p>Camile:<span class="error_style"><em>&nbsp;Is hot!</em></span></p>
           </div>
-         <!-- <div class="progress">
-            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+         <div class="progress" style="height: 0.5rem">
+            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:0%; background: #4a444c">
             </div>
-          </div> -->
+          </div>
           <div class="cont_answer">
             <p class="p_corr"><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p><br>
 
@@ -289,10 +289,10 @@ require_once('./dbconn.php');
               <p>Magda: Oh,&nbsp;<span class="error_style"><em>it was too good</em></span>.&nbsp;I danced all night.</p>
 
           </div>
-          <div class="progress">
-    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:3.4%; background: #4a444c;">
-    </div>
-     </div>
+          <div class="progress" style="height: 0.5rem">
+       <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:3%; background: #4a444c">
+       </div>
+        </div>
 
           <div class="cont_answer">
             <p class="p_corr"><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p><br>
@@ -323,10 +323,10 @@ require_once('./dbconn.php');
               <p>Rudolfo: Do you like your teacher?</p>
               <p>Pedro: Yes,&nbsp;<span class="error_style"><em>She has much patience</em></span>&nbsp;with me.</p>
           </div>
-         <!-- <div class="progress">
-            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+         <div class="progress" style="height: 0.5rem">
+            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:6%; background: #4a444c>
             </div>
-          </div> -->
+          </div>
           <div class="cont_answer">
             <p class="p_corr"><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p><br>
 
@@ -355,10 +355,10 @@ require_once('./dbconn.php');
               <p>Alex: Sure,<span class="error_style"><em>&nbsp;have many</em></span>&nbsp;good films on Netflix.</p>
 
           </div>
-         <!-- <div class="progress">
-            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+         <div class="progress" style="height: 0.5rem">
+            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:9%; background: #4a444c">
             </div>
-          </div> -->
+          </div>
           <div class="cont_answer">
             <p class="p_corr"><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p><br>
 
@@ -387,10 +387,10 @@ require_once('./dbconn.php');
               <p>Cristiano:<span class="error_style"><em>&nbsp;My mother, she is a dentist.</em></span></p>
 
           </div>
-         <!-- <div class="progress">
-            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+         <div class="progress" style="height: 0.5rem">
+            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:12%; background: #4a444c">
             </div>
-          </div> -->
+          </div>
           <div class="cont_answer">
             <p class="p_corr"><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p><br>
 
@@ -418,10 +418,10 @@ require_once('./dbconn.php');
               <p>Beata: Yes,<span class="error_style"><em>&nbsp;I liked.</em></span></p>
 
           </div>
-         <!-- <div class="progress">
-            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+         <div class="progress" style="height: 0.5rem">
+            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:15%; background: #4a444c">
             </div>
-          </div> -->
+          </div>
           <div class="cont_answer">
             <p class="p_corr"><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p><br>
 
@@ -448,10 +448,10 @@ require_once('./dbconn.php');
               <p>Natália: I went to the store<span class="error_style"><em>&nbsp;&nbsp;for buy some milk.</em></span></p>
 
           </div>
-         <!-- <div class="progress">
-            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+         <div class="progress" style="height: 0.5rem">
+            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:18%; background: #4a444c">
             </div>
-          </div> -->
+          </div>
           <div class="cont_answer">
             <p class="p_corr"><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p><br>
 
@@ -478,10 +478,10 @@ require_once('./dbconn.php');
               <p>Camilo:<span class="error_style"><em>&nbsp;I have 39 years.</em></span></p>
 
           </div>
-         <!-- <div class="progress">
-            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+         <div class="progress" style="height: 0.5rem">
+            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:21%; background: #4a444c">
             </div>
-          </div> -->
+          </div>
           <div class="cont_answer">
             <p class="p_corr"><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p><br>
 
@@ -509,10 +509,10 @@ require_once('./dbconn.php');
               <p>Marcel: <span class="error_style"><em>Hey, guy.&nbsp;</em></span>How are you?</p>
 
           </div>
-         <!-- <div class="progress">
-            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+         <div class="progress" style="height: 0.5rem">
+            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:24%; background: #4a444c">
             </div>
-          </div> -->
+          </div>
           <div class="cont_answer">
             <p class="p_corr"><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p><br>
 
@@ -540,10 +540,10 @@ require_once('./dbconn.php');
               <p>Gabriel: I'm a typical guy.<span class="error_style"><em>&nbsp;I like car.</em></span></p>
 
           </div>
-         <!-- <div class="progress">
-            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+         <div class="progress" style="height: 0.5rem">
+            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:27%; background: #4a444c">
             </div>
-          </div> -->
+          </div>
           <div class="cont_answer">
             <p class="p_corr"><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p><br>
 
@@ -572,10 +572,10 @@ require_once('./dbconn.php');
               <p>Sansa: 3.30. Hurry up or you will <span class="error_style"><em>lose your flight.</em></span></p>
 
           </div>
-         <!-- <div class="progress">
-            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+         <div class="progress" style="height: 0.5rem">
+            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:30%; background: #4a444c">
             </div>
-          </div> -->
+          </div>
           <div class="cont_answer">
             <p class="p_corr"><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p><br>
 
@@ -603,10 +603,10 @@ require_once('./dbconn.php');
               <p>Nando:<span class="error_style"><em>&nbsp;I discussed with Marta</em></span>&nbsp;about politics.</p>
 
           </div>
-         <!-- <div class="progress">
-            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+         <div class="progress" style="height: 0.5rem">
+            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:33%; background: #4a444c">
             </div>
-          </div> -->
+          </div>
           <div class="cont_answer">
             <p class="p_corr"><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p><br>
 
@@ -634,10 +634,10 @@ require_once('./dbconn.php');
               <p>Student:&nbsp;<span class="error_style"><em>I have a doubt</em></span> about the homework.</p>
 
           </div>
-         <!-- <div class="progress">
-            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+         <div class="progress" style="height: 0.5rem">
+            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:36%; background: #4a444c">
             </div>
-          </div> -->
+          </div>
           <div class="cont_answer">
             <p class="p_corr"><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p><br>
 
@@ -665,10 +665,10 @@ require_once('./dbconn.php');
               <p>Fátima: Paulo.&nbsp;<span class="error_style"><em>I knew him</em></span>&nbsp;last week at the gym.</p>
 
           </div>
-         <!-- <div class="progress">
-            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+         <div class="progress" style="height: 0.5rem">
+            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:39%; background: #4a444c">
             </div>
-          </div> -->
+          </div>
           <div class="cont_answer">
             <p class="p_corr"><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p><br>
 
@@ -697,10 +697,10 @@ require_once('./dbconn.php');
               <p>Gui: My sister had an accident!<span class="error_style"><em>&nbsp;Thanks God&nbsp;</em></span>&nbsp;she's alright.</p>
 
           </div>
-         <!-- <div class="progress">
-            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+         <div class="progress" style="height: 0.5rem">
+            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:42%; background: #4a444c">
             </div>
-          </div> -->
+          </div>
           <div class="cont_answer" id="answer_15">
             <p class="p_corr"><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p><br>
 
@@ -730,10 +730,10 @@ require_once('./dbconn.php');
               <p>Joana: Oh, Yeah!<span class="error_style"><em>&nbsp;it's my preferred</em></span>&nbsp;food.</p>
 
           </div>
-         <!-- <div class="progress">
-            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+         <div class="progress" style="height: 0.5rem">
+            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:45%; background: #4a444c">
             </div>
-          </div> -->
+          </div>
           <div class="cont_answer">
             <p class="p_corr"><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p><br>
 
@@ -761,10 +761,10 @@ require_once('./dbconn.php');
               <p>Miguel: Yes, but<span class="error_style"><em>&nbsp;she was impressed with</em></span>&nbsp;the violence.</p>
 
           </div>
-         <!-- <div class="progress">
-            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+         <div class="progress" style="height: 0.5rem">
+            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:48%; background: #4a444c">
             </div>
-          </div> -->
+          </div>
           <div class="cont_answer">
             <p class="p_corr"><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p><br>
 
@@ -792,10 +792,10 @@ require_once('./dbconn.php');
               <p>Erik: Me too, I have a lot of&nbsp;<span class="error_style"><em>parents there.</em></span></p>
 
           </div>
-         <!-- <div class="progress">
-            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+         <div class="progress" style="height: 0.5rem">
+            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:51%; background: #4a444c">
             </div>
-          </div> -->
+          </div>
           <div class="cont_answer">
             <p class="p_corr"><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p><br>
 
@@ -824,10 +824,10 @@ require_once('./dbconn.php');
               <p>Carlos: No,&nbsp;<span class="error_style"><em>I go out from work</em></span>&nbsp;at 7.</p>
 
           </div>
-         <!-- <div class="progress">
-            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+         <div class="progress" style="height: 0.5rem">
+            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:54%; background: #4a444c">
             </div>
-          </div> -->
+          </div>
           <div class="cont_answer">
             <p class="p_corr"><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p><br>
 
@@ -855,10 +855,10 @@ require_once('./dbconn.php');
               <p>Alex: Yes, I don't have to<span class="error_style"><em>&nbsp;use a suit.</em></span></p>
 
           </div>
-         <!-- <div class="progress">
-            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+         <div class="progress" style="height: 0.5rem">
+            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:57%; background: #4a444c">
             </div>
-          </div> -->
+          </div>
           <div class="cont_answer">
             <p class="p_corr"><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p><br>
 
@@ -888,10 +888,10 @@ require_once('./dbconn.php');
               <p>Mariana: I'm tired, I've studied<span class="error_style"><em>&nbsp;during 3 hours.</em></span></p>
 
           </div>
-         <!-- <div class="progress">
-            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+         <div class="progress" style="height: 0.5rem">
+            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:60%; background: #4a444c">
             </div>
-          </div> -->
+          </div>
           <div class="cont_answer">
             <p class="p_corr"><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p><br>
 
@@ -919,10 +919,10 @@ require_once('./dbconn.php');
               <p>Juliano: Good, but<span class="error_style"><em>&nbsp;I stayed tired</em></span>&nbsp;quickly.</p>
 
           </div>
-         <!-- <div class="progress">
-            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+         <div class="progress" style="height: 0.5rem">
+            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:63%; background: #4a444c">
             </div>
-          </div> -->
+          </div>
           <div class="cont_answer">
             <p class="p_corr"><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p><br>
 
@@ -950,10 +950,10 @@ require_once('./dbconn.php');
               <p>Rafael: Not well.<span class="error_style"><em>&nbsp;I'm with a headache.</em></span></p>
 
           </div>
-         <!-- <div class="progress">
-            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+         <div class="progress" style="height: 0.5rem">
+            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:66%; background: #4a444c">
             </div>
-          </div> -->
+          </div>
           <div class="cont_answer">
             <p class="p_corr"><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p><br>
 
@@ -981,10 +981,10 @@ require_once('./dbconn.php');
               <p>Breno: I saw 3<span class="error_style"><em>&nbsp;chapters</em></span>of "Breaking Bad".</p>
 
           </div>
-         <!-- <div class="progress">
-            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+         <div class="progress" style="height: 0.5rem">
+            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:69%; background: #4a444c">
             </div>
-          </div> -->
+          </div>
           <div class="cont_answer">
             <p class="p_corr"><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p><br>
 
@@ -1017,10 +1017,10 @@ require_once('./dbconn.php');
               <p>Saulo: I got <span class="error_style"><em>&nbsp;a bad note</em></span>&nbsp; on my English test.</p>
 
           </div>
-         <!-- <div class="progress">
-            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+         <div class="progress" style="height: 0.5rem">
+            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:72%; background: #4a444c">
             </div>
-          </div> -->
+          </div>
           <div class="cont_answer">
             <p class="p_corr"><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p><br>
 
@@ -1048,10 +1048,10 @@ require_once('./dbconn.php');
               <p>Júlio: Rihanna, I love all of<span class="error_style"><em>&nbsp;her musics.</em></span></p>
 
           </div>
-         <!-- <div class="progress">
-            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+         <div class="progress" style="height: 0.5rem">
+            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:75%; background: #4a444c">
             </div>
-          </div> -->
+          </div>
           <div class="cont_answer">
             <p class="p_corr"><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p><br>
 
@@ -1079,10 +1079,10 @@ require_once('./dbconn.php');
               <p>Fernanda:&nbsp;I get up&nbsp;at 6<span class="error_style"><em> all day.</em></span></p>
 
           </div>
-         <!-- <div class="progress">
-            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+         <div class="progress" style="height: 0.5rem">
+            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:80%; background: #4a444c">
             </div>
-          </div> -->
+          </div>
           <div class="cont_answer">
             <p class="p_corr"><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p><br>
 
@@ -1110,10 +1110,10 @@ require_once('./dbconn.php');
               <p>Maria: He is very&nbsp;<span class="error_style"><em>symphatetic.</em></span></p>
 
           </div>
-         <!-- <div class="progress">
-            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+         <div class="progress" style="height: 0.5rem">
+            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:86%; background: #4a444c">
             </div>
-          </div> -->
+          </div>
           <div class="cont_answer">
             <p class="p_corr"><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p><br>
 
@@ -1141,10 +1141,10 @@ require_once('./dbconn.php');
               <p>Juliana: <span class="error_style"><em>I can't support&nbsp;</em></span>&nbsp;messy people.</p>
 
           </div>
-         <!-- <div class="progress">
-            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+         <div class="progress" style="height: 0.5rem">
+            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:90%; background: #4a444c">
             </div>
-          </div> -->
+          </div>
           <div class="cont_answer">
             <p class="p_corr"><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p><br>
 
@@ -1172,10 +1172,10 @@ require_once('./dbconn.php');
               <p>Jaciara:<span class="error_style"><em>&nbsp;It's the unique country</em></span>&nbsp;that speaks Portuguese.</p>
 
           </div>
-         <!-- <div class="progress">
-            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+         <div class="progress" style="height: 0.5rem">
+            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:100%; background: #4a444c">
             </div>
-          </div> -->
+          </div>
           <div class="cont_answer" id="answer_30">
             <p class="p_corr"><label class="bor_choose">What is correct?<span class="span_choose" style="color:#ff0000"></span></label></p><br>
 
