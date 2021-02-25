@@ -227,3 +227,5 @@ $("#submit_survey").on("click", function () {
     }, //ajax, success function//
   }); //ajax//
 }); //submit on.click function//
+
+
