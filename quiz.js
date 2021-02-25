@@ -1842,9 +1842,13 @@ $(document).ready(function () {
 //   }
 // }
 
-// pseudo code
-// function progressDivide() {
-//   100 / 29
-//   increase +1
+
+// function progresDivide(){
+//   let i = 0;
+//   let theBar = $(".progress-bar");
+//   let questions = $(".questions");
+
+//   for (i = 0, i < questions.length, i++)
+
 // }
 
