@@ -33,6 +33,19 @@ $("#start_quiz").on("click", function () {
     classNum = classNumSplit[1];
 
     showTabs(classNum);
+
+
+      let questionsArray = document.querySelectorAll('.questions');
+
+      const arr = Array.from(questionsArray)
+      //const transformedArray = questionsarray.map(function(arr) {
+        //return arr.toUpperCase();
+
+     // });
+     // console.log(arr);
+
+
+
   });
 
   $("#next_1").on("click", function () {
@@ -54,7 +67,7 @@ $("#start_quiz").on("click", function () {
       $(".score").text(score);
 
     }
-   // move();
+
   });
 
   $("#next_2").on("click", function () {
@@ -1827,28 +1840,27 @@ $(document).ready(function () {
   );
 });
 
-// function move() {
-//   var elem = document.getElementsByClassName("situation");
-//   var width = 0;
-//   var id = setInterval(frame, 50);
-//   function frame() {
-//     if (width >= 100) {
-//       clearInterval(id);
-//     } else {
-//       width++;
-//       elem.style.width = width + '%';
-//       elem.innerHTML = width * 1  + '%';
-//     }
-//   }
-// }
+
 
 
 // function progresDivide(){
-//   let i = 0;
-//   let theBar = $(".progress-bar");
-//   let questions = $(".questions");
 
-//   for (i = 0, i < questions.length, i++)
+//   let theBar = document.getElementsByClassName("progress-bar");
+//   //let questions = document.getElementsByClassName("questions");
+//   let width = 0;
 
-// }
+//   //for (i = 0; i < questions.length; i++) {
+
+//     if (theBar.width >= 30) {
+//       alert("Hi");
+
+//     }
+//       width++;
+//       theBar.style.width = width + '%';
+//       theBar.innerHTML = width * 1 + '%';
+
+
+// //}
+
+//}
 
