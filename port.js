@@ -81,6 +81,7 @@ let clickSurveySwitch = $(
 let clickStartSwitch = $(
   `<p id="click_start">2.&nbsp;Em seguida, clique no botão "Iniciar" para iniciar o quiz.</p>`
 );
+//let start_span_port = $(`<span id="start_span></span>`)
 let haveFunSwitch = $(`<p id="have_fun">3.&nbsp;Divirta-se!</p>`);
 
 const feedbackSwitch = $(` <div id="feedback_div" style="text-align:center">
@@ -158,6 +159,11 @@ $("#port_btn_e").on("click", function () {
   $("#start_survey").text("Pesquisa");
   $("#click_start").replaceWith(clickStartSwitch);
   $("#start_quiz").text("Comece");
+
+  //$("#start_span_port").replaceWith(start_span_port);
+
+
+
   $("#have_fun").replaceWith(haveFunSwitch);
   $("#feedback_div").replaceWith(feedbackSwitch);
   $("#contact_text").replaceWith(contactSwitch);
@@ -209,6 +215,7 @@ $("#port_btn_e").on("click", function () {
 
   $("#submit_survey").text("Enviar");
 
+
   // Hide the burger menu
   $(document).ready(hideBurger());
 
@@ -221,6 +228,7 @@ $("#port_btn_e").on("click", function () {
     });
 
   });
+
 
 
 
