@@ -141,7 +141,8 @@ require_once('./dbconn.php');
              <button id="start_survey" class="hvr-grow" data-popup-open="popup-1">Survey</button>
             </div>
             <p id="click_start">2.&nbsp;Then, Click the "Start" button to begin the quiz.</p><br>
-            <button id="start_quiz" class="hvr-grow" data-popup-open="popup-2">Start</button>
+
+            <button id="start_quiz" class="hvr-grow" data-popup-open="popup-2"><span id="start_span_port"></span><span id="start_span">Start</span></button>
             <p id="have_fun">3.&nbsp;Have fun!</p>
 
     </div>
@@ -356,7 +357,7 @@ require_once('./dbconn.php');
 
           </div>
          <div class="progress" style="height: 0.5rem">
-            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:9%; background: #4a444c">
+            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:12%; background: #4a444c">
             </div>
           </div>
           <div class="cont_answer">
@@ -388,7 +389,7 @@ require_once('./dbconn.php');
 
           </div>
          <div class="progress" style="height: 0.5rem">
-            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:12%; background: #4a444c">
+            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:16%; background: #4a444c">
             </div>
           </div>
           <div class="cont_answer">
@@ -419,7 +420,7 @@ require_once('./dbconn.php');
 
           </div>
          <div class="progress" style="height: 0.5rem">
-            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:15%; background: #4a444c">
+            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:19%; background: #4a444c">
             </div>
           </div>
           <div class="cont_answer">
@@ -449,7 +450,7 @@ require_once('./dbconn.php');
 
           </div>
          <div class="progress" style="height: 0.5rem">
-            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:18%; background: #4a444c">
+            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:20%; background: #4a444c">
             </div>
           </div>
           <div class="cont_answer">
@@ -479,7 +480,7 @@ require_once('./dbconn.php');
 
           </div>
          <div class="progress" style="height: 0.5rem">
-            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:21%; background: #4a444c">
+            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:22%; background: #4a444c">
             </div>
           </div>
           <div class="cont_answer">
@@ -978,7 +979,7 @@ require_once('./dbconn.php');
            <img src="pics/logo.png" class="logo_quiz" alt="logo_boy">
            <p class="situation">24&nbsp; out of&nbsp; 30</p>
               <p>Luiza: What did you do last night?</p>
-              <p>Breno: I saw 3<span class="error_style"><em>&nbsp;chapters</em></span>of "Breaking Bad".</p>
+              <p>Breno: I saw 3<span class="error_style"><em>&nbsp;chapters</em></span>&nbsp;of "Breaking Bad".</p>
 
           </div>
          <div class="progress" style="height: 0.5rem">
@@ -1408,14 +1409,47 @@ require_once('./dbconn.php');
         &copy;2021 BrazilianBloopers.com<br></p>
    </div>
 
-     <!-- JS Survey -->
-     <script src="survey.js"></script>
+
+     <!-- Development Tippy/JS -->
+     <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+     <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+
+     <!-- Production -->
+     <script src="https://unpkg.com/@popperjs/core@2"></script>
+     <script src="https://unpkg.com/tippy.js@6"></script>
+
+     <script>
+     if ($("#start_quiz").is(":contains('Comece')")) {
+
+      tippy('#start_span_port', {
+        content: 'Faz a Pesquisa primeiro!',
+        duration: 3,
+        arrow: true,
+        delay: [0600, 100],
+        });
+      } else {
+
+      tippy('#start_span', {
+      content: 'Do the Survey first!',
+      duration: 3,
+      arrow: true,
+      delay: [0600, 100],
+      });
+
+    }
+     </script>
+
+      <!-- JS Survey -->
+      <script src="survey.js"></script>
      <!-- JS Quiz -->
      <script src="quiz.js"></script>
      <!--JS Contactform -->
      <script src="contact_form.js"></script>
      <!--JS Portuguese -->
      <script src="port.js"></script>
+
+
+
 
 
 </body>
