@@ -33,16 +33,34 @@ $("#start_quiz").on("click", function () {
     classNum = classNumSplit[1];
 
     showTabs(classNum);
+//    theProg();
+
+// function theProg(){
+
+//   let progress = $('.progress-bar');
+//   let width, i = 0;
+//   let questions = document.querySelectorAll('.questions');
+//  let progressBar =  $(".progress-bar").width();
 
 
-      let questionsArray = document.querySelectorAll('.questions');
 
-      const arr = Array.from(questionsArray)
-      //const transformedArray = questionsarray.map(function(arr) {
-        //return arr.toUpperCase();
+//   for (i = 0; i < questions.length; i++) {
 
-     // });
-     // console.log(arr);
+//     if(i < 30) {
+
+//       $('.progress-bar').css({width: ""})
+
+
+//     }
+
+//     console.log(progressBar)
+
+//   }
+
+
+// }
+
+
 
 
 
