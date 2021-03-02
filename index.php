@@ -325,7 +325,7 @@ require_once('./dbconn.php');
               <p>Pedro: Yes,&nbsp;<span class="error_style"><em>She has much patience</em></span>&nbsp;with me.</p>
           </div>
          <div class="progress" style="height: 0.5rem">
-            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 9%;background: #4a444c">
+            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 8%;background: #4a444c">
             </div>
           </div>
           <div class="cont_answer">
