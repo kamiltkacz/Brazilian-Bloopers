@@ -255,7 +255,7 @@ require_once('./dbconn.php');
               <p>Camile:<span class="error_style"><em>&nbsp;Is hot!</em></span></p>
           </div>
          <div class="progress" style="height: 0.5rem">
-            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 0%;background: #4a444c">
+            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
             </div>
           </div>
           <div class="cont_answer">
@@ -291,7 +291,7 @@ require_once('./dbconn.php');
 
           </div>
           <div class="progress" style="height: 0.5rem">
-       <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 4%; background: #4a444c">
+       <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
        </div>
         </div>
 
@@ -325,7 +325,7 @@ require_once('./dbconn.php');
               <p>Pedro: Yes,&nbsp;<span class="error_style"><em>She has much patience</em></span>&nbsp;with me.</p>
           </div>
          <div class="progress" style="height: 0.5rem">
-            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 8%;background: #4a444c">
+            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
             </div>
           </div>
           <div class="cont_answer">
@@ -357,7 +357,7 @@ require_once('./dbconn.php');
 
           </div>
          <div class="progress" style="height: 0.5rem">
-            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:12%; background: #4a444c">
+            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
             </div>
           </div>
           <div class="cont_answer">
@@ -389,7 +389,7 @@ require_once('./dbconn.php');
 
           </div>
          <div class="progress" style="height: 0.5rem">
-            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:16%; background: #4a444c">
+            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
             </div>
           </div>
           <div class="cont_answer">
@@ -420,7 +420,7 @@ require_once('./dbconn.php');
 
           </div>
          <div class="progress" style="height: 0.5rem">
-            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:19%; background: #4a444c">
+            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
             </div>
           </div>
           <div class="cont_answer">
@@ -450,7 +450,7 @@ require_once('./dbconn.php');
 
           </div>
          <div class="progress" style="height: 0.5rem">
-            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:20%; background: #4a444c">
+            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
             </div>
           </div>
           <div class="cont_answer">
@@ -480,7 +480,7 @@ require_once('./dbconn.php');
 
           </div>
          <div class="progress" style="height: 0.5rem">
-            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:22%; background: #4a444c">
+            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
             </div>
           </div>
           <div class="cont_answer">
@@ -511,7 +511,7 @@ require_once('./dbconn.php');
 
           </div>
          <div class="progress" style="height: 0.5rem">
-            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:24%; background: #4a444c">
+            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
             </div>
           </div>
           <div class="cont_answer">
@@ -542,7 +542,7 @@ require_once('./dbconn.php');
 
           </div>
          <div class="progress" style="height: 0.5rem">
-            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:27%; background: #4a444c">
+            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
             </div>
           </div>
           <div class="cont_answer">
@@ -574,7 +574,7 @@ require_once('./dbconn.php');
 
           </div>
          <div class="progress" style="height: 0.5rem">
-            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:30%; background: #4a444c">
+            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
             </div>
           </div>
           <div class="cont_answer">
@@ -605,7 +605,7 @@ require_once('./dbconn.php');
 
           </div>
          <div class="progress" style="height: 0.5rem">
-            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:33%; background: #4a444c">
+            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
             </div>
           </div>
           <div class="cont_answer">
@@ -636,7 +636,7 @@ require_once('./dbconn.php');
 
           </div>
          <div class="progress" style="height: 0.5rem">
-            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:39%; background: #4a444c">
+            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
             </div>
           </div>
           <div class="cont_answer">
@@ -667,7 +667,7 @@ require_once('./dbconn.php');
 
           </div>
          <div class="progress" style="height: 0.5rem">
-            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:45%; background: #4a444c">
+            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
             </div>
           </div>
           <div class="cont_answer">
@@ -699,7 +699,7 @@ require_once('./dbconn.php');
 
           </div>
          <div class="progress" style="height: 0.5rem">
-            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:50%; background: #4a444c">
+            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
             </div>
           </div>
           <div class="cont_answer" id="answer_15">
@@ -732,7 +732,7 @@ require_once('./dbconn.php');
 
           </div>
          <div class="progress" style="height: 0.5rem">
-            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:55%; background: #4a444c">
+            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
             </div>
           </div>
           <div class="cont_answer">
@@ -763,7 +763,7 @@ require_once('./dbconn.php');
 
           </div>
          <div class="progress" style="height: 0.5rem">
-            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:65%; background: #4a444c">
+            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
             </div>
           </div>
           <div class="cont_answer">
@@ -794,7 +794,7 @@ require_once('./dbconn.php');
 
           </div>
          <div class="progress" style="height: 0.5rem">
-            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:68%; background: #4a444c">
+            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
             </div>
           </div>
           <div class="cont_answer">
@@ -826,7 +826,7 @@ require_once('./dbconn.php');
 
           </div>
          <div class="progress" style="height: 0.5rem">
-            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:71%; background: #4a444c">
+            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
             </div>
           </div>
           <div class="cont_answer">
@@ -857,7 +857,7 @@ require_once('./dbconn.php');
 
           </div>
          <div class="progress" style="height: 0.5rem">
-            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:73%; background: #4a444c">
+            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
             </div>
           </div>
           <div class="cont_answer">
@@ -890,7 +890,7 @@ require_once('./dbconn.php');
 
           </div>
          <div class="progress" style="height: 0.5rem">
-            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:75%; background: #4a444c">
+            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
             </div>
           </div>
           <div class="cont_answer">
@@ -921,7 +921,7 @@ require_once('./dbconn.php');
 
           </div>
          <div class="progress" style="height: 0.5rem">
-            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:77%; background: #4a444c">
+            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
             </div>
           </div>
           <div class="cont_answer">
@@ -952,7 +952,7 @@ require_once('./dbconn.php');
 
           </div>
          <div class="progress" style="height: 0.5rem">
-            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:80%; background: #4a444c">
+            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
             </div>
           </div>
           <div class="cont_answer">
@@ -983,7 +983,7 @@ require_once('./dbconn.php');
 
           </div>
          <div class="progress" style="height: 0.5rem">
-            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:82%; background: #4a444c">
+            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
             </div>
           </div>
           <div class="cont_answer">
@@ -1019,7 +1019,7 @@ require_once('./dbconn.php');
 
           </div>
          <div class="progress" style="height: 0.5rem">
-            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:88%; background: #4a444c">
+            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
             </div>
           </div>
           <div class="cont_answer">
@@ -1050,7 +1050,7 @@ require_once('./dbconn.php');
 
           </div>
          <div class="progress" style="height: 0.5rem">
-            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:90%; background: #4a444c">
+            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
             </div>
           </div>
           <div class="cont_answer">
@@ -1081,7 +1081,7 @@ require_once('./dbconn.php');
 
           </div>
          <div class="progress" style="height: 0.5rem">
-            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:93%; background: #4a444c">
+            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
             </div>
           </div>
           <div class="cont_answer">
@@ -1112,7 +1112,7 @@ require_once('./dbconn.php');
 
           </div>
          <div class="progress" style="height: 0.5rem">
-            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:95%; background: #4a444c">
+            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
             </div>
           </div>
           <div class="cont_answer">
@@ -1143,7 +1143,7 @@ require_once('./dbconn.php');
 
           </div>
          <div class="progress" style="height: 0.5rem">
-            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:97%; background: #4a444c">
+            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
             </div>
           </div>
           <div class="cont_answer">
@@ -1174,7 +1174,7 @@ require_once('./dbconn.php');
 
           </div>
          <div class="progress" style="height: 0.5rem">
-            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:100%; background: #4a444c">
+            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
             </div>
           </div>
           <div class="cont_answer" id="answer_30">
