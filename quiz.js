@@ -33,35 +33,8 @@ $("#start_quiz").on("click", function () {
     classNum = classNumSplit[1];
 
     showTabs(classNum);
-//    theProg();
 
-// function theProg(){
-
-//   let progress = $('.progress-bar');
-//   let width, i = 0;
-//   let questions = document.querySelectorAll('.questions');
-//  let progressBar =  $(".progress-bar").width();
-
-
-
-//   for (i = 0; i < questions.length; i++) {
-
-//     if(i < 30) {
-
-//       $('.progress-bar').css({width: ""})
-
-
-//     }
-
-//     console.log(progressBar)
-
-//   }
-
-
-// }
-
-
-
+ theProg();
 
 
   });
@@ -74,7 +47,7 @@ $("#start_quiz").on("click", function () {
       });
     } else if ($("input[name='sub_it']:checked").val() == "corr") {
       score++;
-
+     // theProg();
       $("#" + classNum).hide();
       $("#" + numNext).show();
       $(".score").text(score);
@@ -83,7 +56,7 @@ $("#start_quiz").on("click", function () {
       $("#" + classNum).hide();
       $("#" + numNext).show();
       $(".score").text(score);
-
+     // theProg();
     }
 
   });
@@ -96,14 +69,14 @@ $("#start_quiz").on("click", function () {
       });
     } else if ($("input[name='too']:checked").val() == "corr") {
       score++;
-
+     // theProg();
       $("#" + classNum).hide();
       $("#" + numNext).show();
 
     } else {
       $("#" + classNum).hide();
       $("#" + numNext).show();
-
+     // theProg();
     }
   });
 
@@ -117,10 +90,12 @@ $("#start_quiz").on("click", function () {
       score++;
       $("#" + classNum).hide();
       $("#" + numNext).show();
+     // theProg();
     } else {
 
       $("#" + classNum).hide();
       $("#" + numNext).show();
+      //theProg();
     }
   });
 
@@ -1881,4 +1856,21 @@ $(document).ready(function () {
 // //}
 
 //}
+
+function theProg() {
+  let i = 0;
+  let questions = document.querySelectorAll(".questions");
+  //let progressBar =  document.getElementsByClassName('progress-bar');
+  //let ht = window.getComputedStyle(progressBar, null).getPropertyValue("width");
+
+  for (i = 0; i < questions.length; i++) {
+    $(".progress-bar")
+      .width(function (c) {
+        return c * 25;
+      })
+      .css({ background: "#4a444c" });
+
+    // console.log(ht)
+  }
+}
 
