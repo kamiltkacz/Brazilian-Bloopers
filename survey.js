@@ -84,8 +84,6 @@ $("input[type='radio'][name='country']").click(function () {
 });
 
 
-
-
 // Survey Data - on(click)
 $("#survey").submit(function () {
   return false;
