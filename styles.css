@@ -335,6 +335,7 @@ h3 {
   -webkit-transform: translate(50%, -50%) rotate(180deg);
   transform: translate(50%, -50%) rotate(180deg);
   background: #4a444c;
+  color:#fff;
   text-decoration: none;
 }
 
