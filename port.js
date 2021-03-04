@@ -1,7 +1,7 @@
 
 
 
-const tabsSwitch = $(`
+let tabsSwitch = $(`
 
 <div class="tabs">
   <a id="defaultOpen" class="tablink" onclick="openPage('Home', this);">Home</a>
@@ -32,13 +32,13 @@ const tabsSwitch = $(`
 
 
 
-const headerSwitch = $(`
+let headerSwitch = $(`
   <header>
-    <h4 style="margin-top: 15px;">Olá, bem-vindo ao Brazilian Bloopers.<br> <br> Aqui nós contamos o que te trai como brasileiro!</h4>
+    <h4 style="margin-top: 15px;">Olá, bem-vindo ao Brazilian Bloopers.<br><br> Aqui nós contamos o que te trai como brasileiro!</h4>
   </header>
   `);
 
-const aboutSwitch = $(`<div id="About" class="tabcontent">
+let aboutSwitch = $(`<div id="About" class="tabcontent">
   <div class="container" id="about_us">
   <fieldset class="field_about">
      <h4 class="leg_highlight" id="leg_high_1">Sobre nós</h4>
@@ -81,10 +81,12 @@ let clickSurveySwitch = $(
 let clickStartSwitch = $(
   `<p id="click_start">2.&nbsp;Em seguida, clique no botão "Iniciar" para iniciar o quiz.</p>`
 );
-//let start_span_port = $(`<span id="start_span></span>`)
+
 let haveFunSwitch = $(`<p id="have_fun">3.&nbsp;Divirta-se!</p>`);
 
-const feedbackSwitch = $(` <div id="feedback_div" style="text-align:center">
+
+
+let feedbackSwitch = $(` <div id="feedback_div" style="text-align:center">
 <h4 id="shoot_email">Se você gostou do teste ou ficou com alguma dúvida, diga oi aqui:</h4><br>
 <div style="margin-top: -20px;">
 <i class="fab fa-twitter"></i><a href="https://twitter.com/kamiltkacz" style="font-size: unset;">&nbsp;@kamiltkacz</a><br>
@@ -103,7 +105,7 @@ const feedbackSwitch = $(` <div id="feedback_div" style="text-align:center">
       <h3 style="margin-top: 20px;">Muito obrigado!</h3>
     </div>`);
 
-const contactSwitch = $(` <div id="contact_text">
+let contactSwitch = $(` <div id="contact_text">
             <label for="name">Nome*<span id="span_name"></span></label>
           <input type="text" id="bor_name" name="name" placeholder="Seu nome.." tabindex="0" font-family="cursive">
             <label for="email">E-mail*<span id="span_email"></span></label>
@@ -114,33 +116,33 @@ const contactSwitch = $(` <div id="contact_text">
           <textarea id="bor_message" name="message" placeholder="Escreva sua mensagem aqui!" style="height:170px" tabindex="0"></textarea>
           </div>`);
 
-const footerSwitch = $(`<div id="footer" class="container">
+let footerSwitch = $(`<div id="footer" class="container">
     <p id="p_footer">Autor - Kamil Tkacz&nbsp;<a href="https://twitter.com/kamiltkacz" style="font-size: unset;">@kamiltkacz</a>&nbsp;<i class="fab fa-twitter"></i><br>
       &copy;2021 BrazilianBloopers.com<br>
 
   </div>`);
 
-const ques_1_Switch = $(
+let ques_1_Switch = $(
   `<p class="surv_ques"><label id="bor_gender">1) Qual é o seu gênero?<span id="span_gender" style="color:#ff0000"></span></label></p><br>`
 );
 
-const ques_2_Switch = $(
+let ques_2_Switch = $(
   `<p class="surv_ques"><label id="bor_age">2) Quantos anos você tem?<span id="span_age" style="color:#ff0000"></span></label></p><br>`
 );
 
-const ques_3_Switch = $(
+let ques_3_Switch = $(
   ` <p class="surv_ques"><label id="bor_years">3) Estudante de inglês<span id="span_years" style="color:#ff0000"></span></label></p><br>`
 );
-const ques_4_Switch = $(
+let ques_4_Switch = $(
   ` <p class="surv_ques"><label id="bor_abroad">4) Experiência no exterior<span id="span_abroad" style="color:#ff0000"></span></label></p><br>`
 );
-const ques_5_Switch = $(
+let ques_5_Switch = $(
   `<p class="surv_ques"><label id="bor_way">5) Como você aprende?<span id="span_way" style="color:#ff0000"><br></span></label></p><br>`
 );
-const ques_6_Switch = $(
+let ques_6_Switch = $(
   `<p class="surv_ques"><label id="bor_others">6) Línguas estrangeiras<span id="span_others" style="color:#ff0000"></span></label></p><br>`
 );
-const ques_7_Switch = $(
+let ques_7_Switch = $(
   ` <p class="surv_ques"><label id="bor_country">7) Onde você mora?<span id="span_country" style="color:#ff0000"></span></label></p><br>`
 );
 
@@ -159,8 +161,6 @@ $("#port_btn_e").on("click", function () {
   $("#start_survey").text("Pesquisa");
   $("#click_start").replaceWith(clickStartSwitch);
   $("#start_quiz").text("Comece");
-
-  //$("#start_span_port").replaceWith(start_span_port);
 
 
 
