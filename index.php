@@ -57,7 +57,7 @@ require_once('./dbconn.php');
 
 <body>
 
-<!-- <div id="mobile-container"> -->
+
  <div class="tabs">
   <a id="defaultOpen" class="tablink" onclick="openPage('Home', this);">Home</a>
   <div id="myLinks">
@@ -81,7 +81,7 @@ require_once('./dbconn.php');
   <a href="javascript:void(0);" class="icon" onclick="myBurger()">
     <i class="fa fa-bars"></i></a>
  </div>
-<!-- </div> -->
+
 
 
 
@@ -142,7 +142,7 @@ require_once('./dbconn.php');
             </div>
             <p id="click_start">2.&nbsp;Then, Click the "Start" button to begin the quiz.</p><br>
 
-            <button id="start_quiz" class="hvr-grow" data-popup-open="popup-2"><span id="start_span_port"></span><span id="start_span">Start</span></button>
+            <button id="start_quiz" class="hvr-grow" data-popup-open="popup-2"><span id="start_span">Start</span></button>
             <p id="have_fun">3.&nbsp;Have fun!</p>
 
     </div>
@@ -255,7 +255,7 @@ require_once('./dbconn.php');
               <p>Camile:<span class="error_style"><em>&nbsp;Is hot!</em></span></p>
           </div>
          <div class="progress" style="height: 0.5rem">
-            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+            <div id="prog_1" class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
             </div>
           </div>
           <div class="cont_answer">
@@ -852,7 +852,7 @@ require_once('./dbconn.php');
            <div class="cont_dial">
            <img src="pics/logo.png" class="logo_quiz" alt="logo_boy">
            <p class="situation">20&nbsp; out of&nbsp; 30</p>
-              <p>Magda: Do you enjoy working from home.</p>
+              <p>Magda: Do you enjoy working from home?</p>
               <p>Alex: Yes, I don't have to<span class="error_style"><em>&nbsp;use a suit.</em></span></p>
 
           </div>
@@ -1317,6 +1317,7 @@ require_once('./dbconn.php');
 
 
 
+
     //MAIN POP UP
     $(function() {
       //----- OPEN
@@ -1410,33 +1411,21 @@ require_once('./dbconn.php');
    </div>
 
 
-     <!-- Development Tippy/JS -->
+     <!--Tippy/JS -->
      <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
      <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
 
-     <!-- Production -->
-     <script src="https://unpkg.com/@popperjs/core@2"></script>
-     <script src="https://unpkg.com/tippy.js@6"></script>
 
      <script>
-     if ($("#start_quiz").is(":contains('Comece')")) {
-
-      tippy('#start_span_port', {
-        content: 'Faz a Pesquisa primeiro!',
-        duration: 3,
-        arrow: true,
-        delay: [0600, 100],
-        });
-      } else {
 
       tippy('#start_span', {
       content: 'Do the Survey first!',
-      duration: 3,
+      duration: 2,
       arrow: true,
       delay: [0600, 100],
       });
 
-    }
+
      </script>
 
       <!-- JS Survey -->
@@ -1447,9 +1436,6 @@ require_once('./dbconn.php');
      <script src="contact_form.js"></script>
      <!--JS Portuguese -->
      <script src="port.js"></script>
-
-
-
 
 
 </body>
