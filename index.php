@@ -92,6 +92,10 @@ require_once('./dbconn.php');
       <h4 style="margin-top: 15px;">Hello, Welcome to Brazilian Bloopers.<br><br>Here we tell you what gives you away as a Brazilian!</h4>
     </header>
 
+    <a href="#" class="link link--elara">
+						<span style="display: none;">Studio</span>
+					</a>
+
 
     </div>
   </div>
