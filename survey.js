@@ -1,4 +1,5 @@
-// Age Select Menu
+
+// Age Select
 let selectElement = document.getElementById("age");
 if (selectElement !== undefined) {
   for (let agenum = 1; agenum <= 100; agenum++) {
