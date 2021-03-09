@@ -4,19 +4,19 @@
 let tabsSwitch = $(`
 
 <div class="tabs">
-  <a id="defaultOpen" class="tablink" onclick="openPage('Home', this);">Home</a>
+  <a id="defaultOpen" class="tablink" onclick="openPage('Home', this);"><span class="link link--elara">Home</span></a>
   <div id="myLinks">
-   <a class="tablink" onclick="openPage('About', this);">Sobre</a>
+   <a class="tablink" onclick="openPage('About', this);"><span class="link link--elara" >Sobre</span></a>
 
-   <a class="tablink" onclick="openPage('Quiz', this);">Quiz</a>
+   <a class="tablink" onclick="openPage('Quiz', this);"><span class="link link--elara">Quiz</span></a>
 
-   <a class="tablink" onclick="openPage('Contact', this);">Contato</a>
+   <a class="tablink" onclick="openPage('Contact', this);"><span class="link link--elara">Contato</span></a>
 
    <div class="dropdown">
-    <p class="drop_btn"> <img src="//bandidosnatv.com/plgns/gtranslate/flags/24/pt-br.png" id="port_btn_p" alt="Bandeira Brazil">
+    <p class="drop_btn"><img src="//bandidosnatv.com/plgns/gtranslate/flags/24/pt-br.png" id="port_btn_p" alt="English_flag">
       <i class="fa fa-caret-down" style="margin-left: 5px;"></i></p>
     <div class="dropdown-content">
-    <img src="//bandidosnatv.com/plgns/gtranslate/flags/24/en-us.png" id="eng_btn_p" alt="Bandeira Ingles">
+    <img src="//bandidosnatv.com/plgns/gtranslate/flags/24/en-us.png" id="eng_btn_p"  alt="Portuguese_flag">
     </div>
   </div>
   </div>
@@ -48,7 +48,7 @@ let aboutSwitch = $(`<div id="About" class="tabcontent">
     <div class="container">
     <fieldset class="field_about">
       <h4 class="leg_highlight" id="leg_high_2">Sobre os Bloopers</h4>
-      <p class="al_left">Vamos ser sinceros. Aprender outro idioma e comunicar suas idéias nele não é tarefa fácil. O inglês, embora onipresente neste mundo, não é exceção. Estamos aqui para ajudar um pouco nisso.<br>Se você procurar a definição em inglês da palavra <a href="https://www.dictionary.com/browse/blooper" alt="to dictionary.com" style="text-decoration: underline" target="_blank"><span>'blooper'</span></a>&nbsp;você achará: "um erro embaraçoso que você comete publicamente". Embora não achemos que os erros que você encontrará aqui sejam tão graves, acreditamos que corrigi-los seja um grande passo em sua jornada de aprendizado deste idioma.<br>&nbsp;Confira os exemplos<a href="#examples" id="a_examples" style="text-decoration: underline"><span>aqui.</span></a></p>
+      <p class="al_left">Vamos ser sinceros. Aprender outro idioma e comunicar suas idéias nele não é tarefa fácil. O inglês, embora onipresente neste mundo, não é exceção. Estamos aqui para ajudar um pouco nisso.<br>Se você procurar a definição em inglês da palavra <a href="https://www.dictionary.com/browse/blooper"  class="link link--elara" target="_blank"><span>'blooper'</span></a>&nbsp;você achará: "um erro embaraçoso que você comete publicamente". Embora não achemos que os erros que você encontrará aqui sejam tão graves, acreditamos que corrigi-los seja um grande passo em sua jornada de aprendizado deste idioma.<br>&nbsp;Confira os exemplos<a href="#examples" id="a_examples" class="link link--elara"><span>&nbsp;aqui.</span></a></p>
     </fieldset>
     </div>
 
@@ -56,7 +56,7 @@ let aboutSwitch = $(`<div id="About" class="tabcontent">
   <fieldset class="field_about">
      <h4 class="leg_highlight" id="leg_high_3">Sobre o Quiz</h4>
      <p class="al_left"> O teste é apenas em inglês, porque não pode ficar muito fácil, não é? A pesquisa, entretanto, é oferecida em inglês e português.
-     O quiz consiste em falsos cognatos, expressões idiomáticas, frases incompletas, etc. Você verá uma série de diálogos e deverá usar o seu bom senso ao escolher a única resposta correta.<br><br>&nbsp;Existem 30 questões que variam em graus de dificuldade. Alguns erros são mais comuns e outros menos frequentes, mas todos eles compartilham a peculiaridade da língua portuguesa que não traduz bem para o inglês. Mesmo que muitos dos erros sejam inteligíveis para falantes nativos de inglês, seria melhor você encontrar uma alternativa mais comum.<br><br>&nbsp;Mas não seja tão duro consigo mesmo - Tudo bem se você tem um pedaço do Brasil que nunca sai do seu cérebro, e por que não deixar os gringos pensarem um pouco?<br><br>Não se esqueça de se divertir no processo!<br><br><a href="#" style="padding: 5px; text-decoration: underline" onclick="openPage('Quiz', this);">Pronto?</a></p>
+     O quiz consiste em falsos cognatos, expressões idiomáticas, frases incompletas, etc. Você verá uma série de diálogos e deverá usar o seu bom senso ao escolher a única resposta correta.<br><br>&nbsp;Existem 30 questões que variam em graus de dificuldade. Alguns erros são mais comuns e outros menos frequentes, mas todos eles compartilham a peculiaridade da língua portuguesa que não traduz bem para o inglês. Mesmo que muitos dos erros sejam inteligíveis para falantes nativos de inglês, seria melhor você encontrar uma alternativa mais comum.<br><br>&nbsp;Mas não seja tão duro consigo mesmo - Tudo bem se você tem um pedaço do Brasil que nunca sai do seu cérebro, e por que não deixar os gringos pensarem um pouco?<br><br>Não se esqueça de se divertir no processo!<br><br><a href="#" class="link link--elara" style="text-decoration: underline;" onclick="openPage('Quiz', this);">Ready?</a></p>
    </fieldset>
    </div>
    <div class="container">
@@ -89,8 +89,8 @@ let haveFunSwitch = $(`<p id="have_fun">3.&nbsp;Divirta-se!</p>`);
 let feedbackSwitch = $(` <div id="feedback_div" style="text-align:center">
 <h4 id="shoot_email">Se você gostou do teste ou ficou com alguma dúvida, diga oi aqui:</h4><br>
 <div style="margin-top: -20px;">
-<i class="fab fa-twitter"></i><a href="https://twitter.com/kamiltkacz" style="font-size: unset;">&nbsp;@kamiltkacz</a><br>
-<a href="mailto:hello@brazilianbloopers.com" style="font-size: unset;">hello@brazilianbloopers.com</a>
+<i class="fab fa-twitter"></i><a href="https://twitter.com/kamiltkacz" class="link link--elara" style="font-size: unset;">&nbsp;@kamiltkacz</a><br>
+<a href="mailto:hello@brazilianbloopers.com" class="link link--elara" style="font-size: unset;">hello@brazilianbloopers.com</a>
 </div>
 <h3 style="margin-top: 20px;">ou se quiser contribuir com qualquer quantia,</h3>
       <form action="https://www.paypal.com/donate" method="post" target="_blank">
@@ -117,7 +117,7 @@ let contactSwitch = $(` <div id="contact_text">
           </div>`);
 
 let footerSwitch = $(`<div id="footer" class="container">
-    <p id="p_footer">Autor - Kamil Tkacz&nbsp;<a href="https://twitter.com/kamiltkacz" style="font-size: unset;">@kamiltkacz</a>&nbsp;<i class="fab fa-twitter"></i><br>
+    <p id="p_footer">Autor - Kamil Tkacz&nbsp;<a href="https://twitter.com/kamiltkacz" class="link link--elara" style="font-size: unset;">@kamiltkacz</a>&nbsp;<i class="fab fa-twitter"></i><br>
       &copy;2021 BrazilianBloopers.com<br>
 
   </div>`);
