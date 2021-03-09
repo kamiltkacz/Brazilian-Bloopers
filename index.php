@@ -59,13 +59,13 @@ require_once('./dbconn.php');
 
 
  <div class="tabs">
-  <a id="defaultOpen" class="tablink" onclick="openPage('Home', this);">Home</a>
+  <a id="defaultOpen" class="tablink" onclick="openPage('Home', this);"><span class="link link--elara">Home</span></a>
   <div id="myLinks">
-   <a class="tablink" onclick="openPage('About', this);">About</a>
+   <a class="tablink" onclick="openPage('About', this);"><span class="link link--elara" >About</span></a>
 
-   <a class="tablink" onclick="openPage('Quiz', this);">Quiz</a>
+   <a class="tablink" onclick="openPage('Quiz', this);"><span class="link link--elara">Quiz</span></a>
 
-   <a class="tablink" onclick="openPage('Contact', this);">Contact</a>
+   <a class="tablink" onclick="openPage('Contact', this);"><span class="link link--elara">Contact</span></a>
 
    <div class="dropdown">
     <p class="drop_btn"><img src="//bandidosnatv.com/plgns/gtranslate/flags/24/en-us.png" id="eng_btn_e" alt="English_flag">
@@ -91,12 +91,6 @@ require_once('./dbconn.php');
     <header>
       <h4 style="margin-top: 15px;">Hello, Welcome to Brazilian Bloopers.<br><br>Here we tell you what gives you away as a Brazilian!</h4>
     </header>
-
-    <a href="#" class="link link--elara">
-						<span style="display: none;">Studio</span>
-					</a>
-
-
     </div>
   </div>
 
@@ -113,14 +107,14 @@ require_once('./dbconn.php');
       <div class="container">
       <fieldset class="field_about">
         <h4 class="leg_highlight" id="leg_high_2">About the Bloopers</h4>
-        <p class="al_left">Let's face it. Learning another language and communicating your ideas in it is no easy feat. English, however omnipresent in this world, is no exception. We're here to help a little with that.<br>If you look up the English defintion of the word <a href="https://www.dictionary.com/browse/blooper" style="text-decoration: underline" target="_blank"><span>'blooper'</span></a>&nbsp;you'll get "an embarassing error you make publicly". Although we don't think the mistakes you'll find here are that bad, we do believe correcting them is a great step forward in your language learning journey.<br>&nbsp;Check out the example<a href="#examples" id="a_examples" style="text-decoration: underline"><span>here.</span></a></p>
+        <p class="al_left">Let's face it. Learning another language and communicating your ideas in it is no easy feat. English, however omnipresent in this world, is no exception. We're here to help a little with that.<br>If you look up the English defintion of the word <a href="https://www.dictionary.com/browse/blooper"  class="link link--elara" target="_blank"><span>'blooper'</span></a>&nbsp;you'll get "an embarassing error you make publicly". Although we don't think the mistakes you'll find here are that bad, we do believe correcting them is a great step forward in your language learning journey.<br>&nbsp;Check out the example<a href="#examples" id="a_examples" class="link link--elara"><span>&nbsp;here.</span></a></p>
       </fieldset>
       </div>
 
     <div class="container" id="about_qz">
     <fieldset class="field_about">
        <h4 class="leg_highlight" id="leg_high_3">About the Quiz</h4>
-       <p class="al_left"> The quiz is in English only, because you can't have it too easy, can you? The survey however, is offered in both English and  Portuguese. The quiz consists of false cognates, idiomatic expressions, incomplete phrases, etc. You'll be presented with a series of dialogues. You have to use your judgement when picking the only one correct answer.<br><br>&nbsp;There are 30 questions which vary in difficulty. Some mistakes are more common and some less frequent but all of them share the peculiarity of the Portuguese language that does not translate well into English. Even though many of the bloopers are intelligible to native English speakers, you would be better off finding a more common alternative.<br><br>&nbsp;After you finish, make sure to check the explanation section which is under each question. This section is where we put most work in this project. We hope you'll find it useful.&nbsp;<br>One last thing - remember not to be be too hard on yourself - It's okay if you have a piece of Brazil that never leaves your brain, plus why not let the gringos do some thinking?<br><br>Don't forget to enjoy the process! <br><br><a href="#" style="padding: 5px; text-decoration: underline" onclick="openPage('Quiz', this);">Ready?</a></p>
+       <p class="al_left"> The quiz is in English only, because you can't have it too easy, can you? The survey however, is offered in both English and  Portuguese. The quiz consists of false cognates, idiomatic expressions, incomplete phrases, etc. You'll be presented with a series of dialogues. You have to use your judgement when picking the only one correct answer.<br><br>&nbsp;There are 30 questions which vary in difficulty. Some mistakes are more common and some less frequent but all of them share the peculiarity of the Portuguese language that does not translate well into English. Even though many of the bloopers are intelligible to native English speakers, you would be better off finding a more common alternative.<br><br>&nbsp;After you finish, make sure to check the explanation section which is under each question. This section is where we put most work in this project. We hope you'll find it useful.&nbsp;<br>One last thing - remember not to be be too hard on yourself - It's okay if you have a piece of Brazil that never leaves your brain, plus why not let the gringos do some thinking?<br><br>Don't forget to enjoy the process! <br><br><a href="#" class="link link--elara" style="text-decoration: underline;" onclick="openPage('Quiz', this);">Ready?</a></p>
      </fieldset>
      </div>
      <div class="container">
@@ -1254,8 +1248,8 @@ require_once('./dbconn.php');
        <div id="feedback_div" style="text-align:center">
         <h4 id="shoot_email">If you enjoyed the quiz or got a question, say hi here:</h4><br>
         <div style="margin-top: -20px;">
-        <i class="fab fa-twitter"></i><a href="https://twitter.com/kamiltkacz" style="font-size: unset;">&nbsp;@kamiltkacz</a><br>
-        <a href="mailto:hello@brazilianbloopers.com" style="font-size: unset;">hello@brazilianbloopers.com</a>
+        <i class="fab fa-twitter"></i><a href="https://twitter.com/kamiltkacz" class="link link--elara" style="font-size: unset;">&nbsp;@kamiltkacz</a><br>
+        <a href="mailto:hello@brazilianbloopers.com" class="link link--elara" style="font-size: unset;">hello@brazilianbloopers.com</a>
         </div>
         <h3 style="margin-top: 20px;">or if you would like to contribute with any amount</h3>
         <form action="https://www.paypal.com/donate" method="post" target="_blank">
@@ -1410,7 +1404,7 @@ require_once('./dbconn.php');
 
    <!-- My Footer -->
    <div id="footer" class="container">
-      <p id="p_footer">Author - Kamil Tkacz&nbsp;<a href="https://twitter.com/kamiltkacz" style="font-size: unset;">@kamiltkacz</a>&nbsp;<i class="fab fa-twitter"></i><br>
+      <p id="p_footer">Author - Kamil Tkacz&nbsp;<a href="https://twitter.com/kamiltkacz" id="link_elara_footer" class="link link--elara" style="font-size: unset;">@kamiltkacz</a>&nbsp;<i class="fab fa-twitter"></i><br>
         &copy;2021 BrazilianBloopers.com<br></p>
    </div>
 
@@ -1426,7 +1420,7 @@ require_once('./dbconn.php');
       content: 'Do the Survey first!',
       duration: 2,
       arrow: true,
-      delay: [0600, 100],
+      delay: [0200, 100],
       });
 
 
