@@ -6,17 +6,17 @@ let tabsSwitch = $(`
 <div class="tabs">
   <a id="defaultOpen" class="tablink" onclick="openPage('Home', this);"><span class="link link--elara">Home</span></a>
   <div id="myLinks">
-   <a class="tablink" onclick="openPage('About', this);"><span class="link link--elara" >Sobre</span></a>
+   <a class="tablink" onclick="openPage('About', this);"><span class="link link--elara">Sobre</span></a>
 
    <a class="tablink" onclick="openPage('Quiz', this);"><span class="link link--elara">Quiz</span></a>
 
    <a class="tablink" onclick="openPage('Contact', this);"><span class="link link--elara">Contato</span></a>
 
    <div class="dropdown">
-    <p class="drop_btn"><img src="//bandidosnatv.com/plgns/gtranslate/flags/24/pt-br.png" id="port_btn_p" alt="English_flag">
+    <p class="drop_btn"><img src="//bandidosnatv.com/plgns/gtranslate/flags/24/pt-br.png" id="port_btn_p" alt="Portuguese_flag">
       <i class="fa fa-caret-down" style="margin-left: 5px;"></i></p>
     <div class="dropdown-content">
-    <img src="//bandidosnatv.com/plgns/gtranslate/flags/24/en-us.png" id="eng_btn_p"  alt="Portuguese_flag">
+    <img src="//bandidosnatv.com/plgns/gtranslate/flags/24/en-us.png" id="eng_btn_p"  alt="American_flag">
     </div>
   </div>
   </div>
@@ -152,7 +152,7 @@ let ques_7_Switch = $(
 
 $("#port_btn_e").on("click", function () {
 
-
+console.log("here");
   $(".tabs").replaceWith(tabsSwitch);
   $("header").replaceWith(headerSwitch);
   $("#About").replaceWith(aboutSwitch);
@@ -216,8 +216,9 @@ $("#port_btn_e").on("click", function () {
   $("#submit_survey").text("Enviar");
 
 
-  // Hide the burger menu
-  $(document).ready(hideBurger());
+
+ // Hide the burger menu
+ $(document).ready(hideBurger());
 
 
 
@@ -228,7 +229,6 @@ $("#port_btn_e").on("click", function () {
     });
 
   });
-
 
 
 
