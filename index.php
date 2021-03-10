@@ -61,14 +61,14 @@ require_once('./dbconn.php');
  <div class="tabs">
   <a id="defaultOpen" class="tablink" onclick="openPage('Home', this);"><span class="link link--elara">Home</span></a>
   <div id="myLinks">
-   <a class="tablink" onclick="openPage('About', this);"><span class="link link--elara" >About</span></a>
+   <a class="tablink" onclick="openPage('About', this);"><span class="link link--elara">About</span></a>
 
    <a class="tablink" onclick="openPage('Quiz', this);"><span class="link link--elara">Quiz</span></a>
 
    <a class="tablink" onclick="openPage('Contact', this);"><span class="link link--elara">Contact</span></a>
 
    <div class="dropdown">
-    <p class="drop_btn"><img src="//bandidosnatv.com/plgns/gtranslate/flags/24/en-us.png" id="eng_btn_e" alt="English_flag">
+    <p class="drop_btn"><img src="//bandidosnatv.com/plgns/gtranslate/flags/24/en-us.png" id="eng_btn_e" alt="American_flag">
       <i class="fa fa-caret-down" style="margin-left: 5px;"></i></p>
     <div class="dropdown-content">
     <img src="//bandidosnatv.com/plgns/gtranslate/flags/24/pt-br.png" id="port_btn_e"  alt="Portuguese_flag">
@@ -1320,13 +1320,13 @@ require_once('./dbconn.php');
     $(function() {
       //----- OPEN
       $('[data-popup-open]').on('click', function(e) {
-        var targeted_popup_class = $(this).attr('data-popup-open');
+        let targeted_popup_class = $(this).attr('data-popup-open');
         $('[data-popup="' + targeted_popup_class + '"]').fadeIn(350);
         e.preventDefault();
       });
       //----- CLOSE
       $('[data-popup-close]').on('click', function(e) {
-        var targeted_popup_class = $(this).attr('data-popup-close');
+        let targeted_popup_class = $(this).attr('data-popup-close');
         $('[data-popup="' + targeted_popup_class + '"]').fadeOut(350);
         e.preventDefault();
       });
