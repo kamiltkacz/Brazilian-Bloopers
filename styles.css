@@ -85,15 +85,12 @@ a:hover {
 
 .link::before {
   content: '';
-
-
  }
 
 
 .link--elara::before {
   transform-origin: 50% 100%;
-
-  transition: clip-path 0.3s, transform 0.3s cubic-bezier(0.2, 1, 0.8, 1);
+  transition: clip-path 0.5s, transform 0.3s cubic-bezier(0.2, 1, 0.8, 1);
   clip-path: polygon(0% 0%, 0% 100%, 0 100%, 0 0, 100% 0, 100% 100%, 0 100%, 0 100%, 100% 100%, 100% 0%);
 
 }
@@ -114,28 +111,6 @@ a:hover {
   transform: translate3d(0, -2px, 0);
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 h3 {
   font-size: inherit;
@@ -176,7 +151,7 @@ h3 {
   margin-top: -3px;
   height: 21px;
   width: 21px;
-  cursor: default;
+
 }
 
 
@@ -235,7 +210,8 @@ h3 {
 
 
 .dropdown-content {
-  display: none;
+
+   display: none;
   position: fixed;
   background-color: #b9ffc9;
   min-width: 55px;
@@ -284,7 +260,7 @@ h3 {
   padding: 100px 19px;
   max-width: 100%;
   text-align: center;
- /* height: 100%;*/
+
 }
 
 #leg_steps {
