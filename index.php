@@ -87,9 +87,8 @@ require_once('./dbconn.php');
 
   <div id="Home" class="tabcontent">
     <div class="container" id="home">
-
     <header>
-      <h4 style="margin-top: 15px;">Hello, Welcome to Brazilian Bloopers.<br><br>Here we tell you what gives you away as a Brazilian!</h4>
+      <h4 style="margin-top: 16px;">Hello, Welcome to Brazilian Bloopers.<br><br>Here we tell you what gives you away as a Brazilian!</h4>
     </header>
     </div>
   </div>
