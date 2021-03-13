@@ -280,6 +280,23 @@ h3 {
   margin-top: 30px;
 }
 
+
+#home {
+
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-delay: -2s;
+}
+
+@keyframes example {
+  0%   {background-color: #67b060; left:0px; top:0px;}
+  25%  {background-color:#54d448; left:200px; top:0px;}
+  50%  {background-color: #1fc70f; left:200px; top:200px;}
+  75%  {background-color: #0c5505; left:0px; top:200px;}
+  100% {background-color:#67b060; left:0px; top:0px;}
+}
+
 /* Outer */
 .popup {
   width: 100%;
