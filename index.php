@@ -833,7 +833,7 @@ require_once('./dbconn.php');
                 <input type="radio" id="go_2" class="rads" name="gout" value="er_2"><label for="go_2" class="err_label">&nbsp;I go off work</label><div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
                 <input type="radio" id="go_3" class="rads" name="gout" value="err_ok"><label for="go_3" class="err_label">&nbsp;I live work</label><div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
 
-            <div class="exp" id="exp_19" style="display:none"><p class="par_exp"><span class="span_exp">Explanation</span>: We say "To leave" when we mean to exit a place, relationship, group, etc. Ex. "I leave class earlier on Fridays because I have to catch a bus." Ex. "She left her marrige due to his gambling habit."<br>We say "To go out" when we mean going to a bar, a restaurant, etc, to drink, eat, talk and have fun. Ex."Young people love to go out on weekends."</p>
+            <div class="exp" id="exp_19" style="display:none"><p class="par_exp"><span class="span_exp">Explanation</span>: We say "To leave" when we mean to exit a place, relationship, group, etc. Ex. "I leave class earlier on Fridays because I have to catch a bus." Ex. "She left her marriage due to his gambling habit."<br>We say "To go out" when we mean going to a bar, a restaurant, etc, to drink, eat, talk and have fun. Ex."Young people love to go out on weekends."</p>
             <div class="resultMsg">
              <h4 class="scoreInfo" id="scoreInfo_19">Your score:&nbsp;</h4>
             </div>
@@ -1119,7 +1119,7 @@ require_once('./dbconn.php');
                 <input type="radio" id="sym_2" class="rads" name="sym" value="corr"><label for="sym_2">&nbsp;friendly</label><div class="d_corr" style="display:none">&nbsp;<i class="fas fa-check"></i></div><br>
                 <input type="radio" id="sym_3" class="rads" name="sym" value="err_ok"><label for="sym_3" class="err_label">&nbsp;friend</label><div class="d_err" style="display:none">&nbsp;<i class="fa fa-times" aria-hidden="true"></i></div><br>
 
-            <div class="exp" id="exp_28" style="display:none"><p class="par_exp"><span class="span_exp">Explanation</span>: We say "Symphatetic" when we are approving of somethig or somebody. Ex. "She was symphatetic to my views."<br>We say "Friendly", "Nice" when we mean someone whose company we find enjoyable, pleasant. Ex. "Brazilian people are friendly."</p>
+            <div class="exp" id="exp_28" style="display:none"><p class="par_exp"><span class="span_exp">Explanation</span>: We say "Symphatetic" when we are approving of something or somebody. Ex. "She was symphatetic to my views."<br>We say "Friendly", "Nice" when we mean someone whose company we find enjoyable, pleasant. Ex. "Brazilian people are friendly."</p>
             <div class="resultMsg">
              <h4 class="scoreInfo" id="scoreInfo_28">Your score:&nbsp;</h4>
             </div>
