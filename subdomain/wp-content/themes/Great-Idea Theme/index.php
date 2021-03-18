@@ -7,6 +7,6 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Great Idea Sample</h1>
+    <h1>Great Idea Sample Github Repo</h1>
 </body>
 </html>
