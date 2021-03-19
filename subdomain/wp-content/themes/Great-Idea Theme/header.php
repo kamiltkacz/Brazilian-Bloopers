@@ -7,5 +7,5 @@
     <title>Document</title> -->
     <?php wp_head();?>
 </head>
-<body>
+<body <?php body_class();?>>
     <h1>header</h1>
