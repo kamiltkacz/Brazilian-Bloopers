@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 
-//alert("hi Ossie");
+$('#logo').animate({left: '350px'});
 
 
 });
