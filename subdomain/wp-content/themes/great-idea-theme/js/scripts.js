@@ -1,7 +1,14 @@
 $(document).ready(function(){
 
 
-$('#logo').animate({left: '350px'});
+
+
+
+    let homeheadDiv = $(".homehead");
+    homeheadDiv.animate({top: '200px'}, "slow");
+    homeheadDiv.animate({fontSize: '3em'}, "slow");
+
+
 
 
 });
