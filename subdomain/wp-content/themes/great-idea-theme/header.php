@@ -33,28 +33,43 @@ array(
 
 </div>
 
+<div id="spinner">
+  <span>O
+  <span>t
+  <span>i
+  <span>m
+  <span>a
+  <span>-
+  <span>-
+  <span>-
+  <span>I
+  <span>d
+  <span>e
+  <span>a
+  <span>-
+  <span>-
+  <span>-
+</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+</div>
+
+<div class="container">
+<div class="homehead">
+  <div  class="homehead--center">
+<div class="homehead--center--text" style="transform: rotate(2deg);">Ola</div>
+<div class="homehead--center--text" style= "transform: rotate(-2deg);"> Sejam Bem Vindos no</div>
+<div class="homehead--center--text" style="transform: rotate(-4deg);">Otima Idea</div>
+  </div>
+ </div>
+</div>
+
+
 
 
 </header>
 
-<div class="row">
-    <div id="logo">
-
-</div>
-
-<div class="row">
-
-<div class="homehead">
-          <div  class="homehead--center"  offset-hover-max=".30" offset-hover-min=".30">
-
-            <div>Oi</div>
-<div>Sejam Bem Vindos no</div>
-<div>Otima Idea</div>
-</div>
 
 
 
-</div>
 
-</div>
+
 
