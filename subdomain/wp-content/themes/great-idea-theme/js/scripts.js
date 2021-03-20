@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 
-alert("hi Ossie");
+//alert("hi Ossie");
 
 
 });
