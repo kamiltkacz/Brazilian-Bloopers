@@ -41,3 +41,25 @@ wp_enqueue_script('myscripts');
 
 }
 add_action('wp_enqueue_scripts', 'carrega_js');
+
+// Adicionar Menus
+
+add_theme_support('menus');
+
+// Colocar Menus em cima
+
+register_nav_menus(
+
+    array(
+
+        'top-menu'  => __('Top Menu', 'theme'),
+
+        'footer-menu' => __('Footer Menu', 'theme')
+
+
+
+
+    )
+
+);
+
