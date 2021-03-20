@@ -5,7 +5,7 @@ Author: Kamil Tkacz para Otima Idea
 
 body {
 
-    background-color: grey;
+    background-color: black;
     color:#fff;
 }
 header {
@@ -15,29 +15,6 @@ header {
     width: 100%;
 }
 
-#logo  {
-   /* float: ;*/
-   position: relative;
-    background: url(https://cdn.shortpixel.ai/client/q_glossy,ret_img/https://www.otimaideia.com.br/wp-content/themes/otimaideia/css/../img/logo.png) no-repeat center top;
-    text-indent: -999999px;
-    background-size: 100% 100%;
-    width: 38.6vw;
-    height: 10vw;
-}
-
-@keyframes example {
-    from {background-color: red;}
-    to {background-color: yellow;}
-  }
-
-
-  #logo {
-    width: 100px;
-    height: 100px;
-    background-color: red;
-    animation-name: example;
-    animation-duration: 4s;
-  }
 
   .homehead {
     min-height: 10vh;
@@ -58,9 +35,60 @@ header {
 }
 
   .homehead--center {
-    font-size: 8vw;
+    font-size: 6vw;
     color:#fff;
     text-align: center;
     line-height: 1;
-    opacity: 0;
+   /* opacity: 0;*/
+
 }
+
+@keyframes wiggle {
+    0% { transform: rotate(-2deg); }
+   80% { transform: rotate(0deg); }
+   85% { transform: rotate(5deg); }
+   95% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.homehead--center--text {
+
+  animation: wiggle 3.5s 5s;
+}
+
+.homehead--center--text:hover {
+  animation: none;
+}
+
+#spinner {
+    position: absolute;
+    width: 26rem;
+    height: 26rem;
+    top:0;left:0;bottom:0;right:0;
+    margin: auto;
+    border-radius: 50%;
+    animation: giro 24s infinite linear;
+  }
+  #spinner > span:first-child {
+    transform: translatex(13rem);
+  }
+  span {
+    width: 0;
+    height: 26rem;
+    position: absolute;
+    top: 0rem;
+    left: 0;
+    font-size: 4rem;
+    color: #fff;
+    text-align: left;
+    text-shadow: 0 -10px 15px #000;
+    line-height: 0;
+    transform: rotate(24deg);
+    vertical-align: top;
+    transform-style: preserve-3d;
+    font-family: inherit;
+  }
+
+  @keyframes giro {
+    100% {transform: rotate(1turn)}
+  }
