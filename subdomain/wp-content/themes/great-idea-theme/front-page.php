@@ -1,5 +1,4 @@
 <?php get_header();?>
-
-Howdy
+<h1>Welcome to my website</h1>
 
 <?php get_footer();?>
