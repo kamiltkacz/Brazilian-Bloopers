@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- charset -->
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- respon -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- infos -->
     <title>Otima Idea Wordpress</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- wphead -->
     <?php  wp_head();?>
 </head>
+
 <body <?php body_class();?>>
 
 <header class="sticky-top">
@@ -31,3 +36,25 @@ array(
 
 
 </header>
+
+<div class="row">
+    <div id="logo">
+
+</div>
+
+<div class="row">
+
+<div class="homehead">
+          <div  class="homehead--center"  offset-hover-max=".30" offset-hover-min=".30">
+
+            <div>Oi</div>
+<div>Sejam Bem Vindos no</div>
+<div>Otima Idea</div>
+</div>
+
+
+
+</div>
+
+</div>
+
