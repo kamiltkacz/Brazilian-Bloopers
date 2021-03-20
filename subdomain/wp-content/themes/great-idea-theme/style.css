@@ -5,5 +5,11 @@ Author: Kamil Tkacz para Otima Idea
 
 body {
 
-    background-color: black;
+    background-color: grey;
+}
+header {
+
+    background-color: honeydew;
+    height: 100px;
+    width: 100%;
 }
