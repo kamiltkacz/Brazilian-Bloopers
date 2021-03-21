@@ -64,6 +64,12 @@ array(
 </div>
 <div id="third_column">
  </div>
+ <div id="fourth_column">
+ </div>
+ <div id="fifth_column">
+ </div>
+ <div id="sixth_column">
+ </div>
 
 
 
