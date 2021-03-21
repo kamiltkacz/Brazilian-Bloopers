@@ -10,8 +10,12 @@ $(document).ready(function(){
     homeheadDiv.animate({top: ''}, "slow");
     homeheadDiv.animate({top: '320px'}, "slow");
 
+    let footerheadDiv = $(".footerhead");
 
-
+    footerheadDiv.animate({bottom: '310px'}, "slow");
+    footerheadDiv.animate({fontSize: '3em'}, "slow");
+    footerheadDiv.animate({bottom: ''}, "slow");
+    footerheadDiv.animate({bottom: '110px'}, "slow");
 
 
 
