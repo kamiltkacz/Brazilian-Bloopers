@@ -10,9 +10,13 @@ body {
 }
 header {
 
-    background-color: honeydew;
     height: 100px;
     width: 100%;
+}
+
+.navigation a {
+
+    color:#fff;
 }
 
 
@@ -34,7 +38,7 @@ header {
 }
 
   .homehead--center {
-    font-size: 6vw;
+    font-size: 4vw;
     color:#fff;
     text-align: center;
     line-height: 1;
@@ -61,12 +65,13 @@ header {
 
 #spinner {
     position: absolute;
-    width: 22rem;
-    height: 22rem;
+    width: 24rem;
+    height: 24rem;
     top:0;left:0;bottom:0;right:0;
     margin: auto;
-    border-radius: 60%;
+    border-radius: 50%;
     animation: giro 24s infinite linear;
+    display: block;
   }
   #spinner > span:first-child {
     transform: translatex(13rem);
@@ -81,7 +86,7 @@ header {
     color: #fff;
     text-align: left;
     text-shadow: 0 -10px 15px #000;
-    line-height: 3;
+    line-height: 5;
     transform: rotate(24deg);
     vertical-align: top;
     transform-style: preserve-3d;
@@ -91,6 +96,8 @@ header {
   @keyframes giro {
     80% {transform: rotate(1turn)}
   }
+
+
 
   .parallax {
     background-image: url("https://brazilianbloopers.com/subdomain/wp-content/uploads/2021/03/clark-van-der-beken-IF0g-TIBCKg-unsplash.jpg");
@@ -107,5 +114,5 @@ header {
     width:50%;
     margin:0 auto;
     color:#FFF;
-    padding-top:50px;
+    padding-top:100px;
     }
