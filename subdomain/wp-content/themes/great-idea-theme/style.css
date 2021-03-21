@@ -63,39 +63,7 @@ header {
   animation: none;
 }
 
-#spinner {
-    position: absolute;
-    width: 24rem;
-    height: 24rem;
-    top:0;left:0;bottom:0;right:0;
-    margin: auto;
-    border-radius: 50%;
-    animation: giro 24s infinite linear;
-    display: block;
-  }
-  #spinner > span:first-child {
-    transform: translatex(13rem);
-  }
-  span {
-    width: 0;
-    height: 26rem;
-    position: absolute;
-    top: 0rem;
-    left: 0;
-    font-size: 4rem;
-    color: #fff;
-    text-align: left;
-    text-shadow: 0 -10px 15px #000;
-    line-height: 5;
-    transform: rotate(24deg);
-    vertical-align: top;
-    transform-style: preserve-3d;
-    font-family: inherit;
-  }
 
-  @keyframes giro {
-    80% {transform: rotate(1turn)}
-  }
 
 
 
@@ -115,4 +83,55 @@ header {
     margin:0 auto;
     color:#FFF;
     padding-top:100px;
+    }
+
+    #first_column {
+
+        background-image: url("https://brazilianbloopers.com/subdomain/wp-content/uploads/2021/03/clark-van-der-beken-IF0g-TIBCKg-unsplash.jpg");
+        height: 123%;
+        width: 40%;
+        padding: 30px 0 0 0;
+        float: left;
+        margin-top: 400px;
+
+    background-position: center;
+
+    background-size: cover;
+
+    }
+
+
+
+    #second_column {
+
+        background-color: white;
+        color: black;
+        width: 60%;
+        padding: 30px 0 0 0;
+        float: right;
+        margin-top: 400px;
+
+
+    }
+
+    .text_style {
+
+        padding-left: 10.3333333333%;
+    padding-right: 10.333333333%;
+    font-weight: 800;
+    }
+
+    #third_column {
+
+        background-image: url("https://brazilianbloopers.com/subdomain/wp-content/uploads/2021/03/rodion-kutsaev-IJ25m7fXqtk-unsplash-3.jpg");
+        height: 101%;
+        width: 100%;
+        padding: 300px 0 0 0;
+        float: left;
+
+
+    background-position: center;
+
+    background-size: cover;
+
     }
