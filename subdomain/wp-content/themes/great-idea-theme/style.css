@@ -87,10 +87,11 @@ header {
 
     #first_column {
 
-        background-image: url("https://brazilianbloopers.com/subdomain/wp-content/uploads/2021/03/clark-van-der-beken-IF0g-TIBCKg-unsplash.jpg");
+       /* background-image: url("https://brazilianbloopers.com/subdomain/wp-content/uploads/2021/03/clark-van-der-beken-IF0g-TIBCKg-unsplash.jpg");*/
+       background-color: #F5C302;
         height: 123%;
         width: 40%;
-        padding: 52px 0 0 0;
+        padding: 81px 0 0 0;
         float: left;
         margin-top: 400px;
 
@@ -118,6 +119,7 @@ header {
 
         padding-left: 10.3333333333%;
     padding-right: 10.333333333%;
+    padding-bottom: 5%;
     font-weight: 800;
     }
 
@@ -129,11 +131,13 @@ header {
         width: 65%;
         padding: 397px 0 0 0;
         float: left;
+        display: block;
 
 
     background-position: center;
 
     background-size: cover;
+    object-fit: cover;
 
     }
     #fourth_column {
@@ -143,6 +147,8 @@ header {
       padding: 250px 0 0 0;
       float: right;
       background-size: cover;
+      display: block;
+      object-fit: cover;
 
     }
 
@@ -152,14 +158,84 @@ header {
       width: 35%;
       padding: 250px 0 0 0;
       float: right;
-      background-size: cover;
+        background-size: cover;
+        display: block;
+        object-fit: cover;
     }
 
     #sixth_column {
+      background-image: url("https://brazilianbloopers.com/subdomain/wp-content/uploads/2021/03/vista-aerea-praia-grande-sp.jpg");
       background-color: black;
       width: 100%;
       height: 101%;
       padding: 400px 0 0 0;
       float: left;
+      background-size: cover;
+      background-position: center;
+      display: block;
+      object-fit: cover;
     }
+
+    #seventh_column {
+
+      background-color: black;
+      width: 100%;
+      height: 101%;
+      padding: 400px 0 0 0;
+      float: left;
+      display: block;
+      object-fit: cover;
+    }
+
+    .row {
+
+      margin: auto;
+      width: 60%;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .footerhead {
+      min-height: 10vh;
+      color: #fff;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      position: relative;
+      font-family: Fabrik,"Helvetica Neue",Helvetica,Arial,sans-serif;
+      font-weight: 700;
+  }
+
+    .footerhead--center {
+      font-size: 4vw;
+      color:#fff;
+      text-align: center;
+      line-height: 1;
+     /* opacity: 0;*/
+
+  }
+
+  @keyframes wiggle {
+      0% { transform: rotate(-2deg); }
+     80% { transform: rotate(0deg); }
+     85% { transform: rotate(5deg); }
+     95% { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
+  }
+
+  .footerhead--center--text {
+
+    animation: wiggle 3.5s 5s;
+  }
+
+  .footerhead--center--text:hover {
+    animation: none;
+  }
+
 
