@@ -68,12 +68,31 @@ array(
  </div>
  <div id="fifth_column">
  </div>
+ <div class="row"><button>Veja Mas Casos de Succeso</button></div>
  <div id="sixth_column">
  </div>
 
+ <div class="container">
+
+<div id="seventh_column">
+ <div class="container">
+  <div class="footerhead">
+   <div  class="footerhead--center">
+<div class="footerhead--center--text" style="transform: rotate(2deg);">Entre emContato</div>
+<div class="footerhead--center--text" style= "transform: rotate(-2deg);">Ótima Ideia Praia Grande</div>
+<div class="footerhead--center--text" style= "transform: rotate(-3deg);">13 3491.2059</div>
+<div class="footerhead--center--text" style="transform: rotate(-4deg);">R. Jaú, 1275 - Boqueirão, Praia Grande - SP</div>
+   </div>
+  </div>
+ </div>
+</div>
 
 
 </header>
+
+
+
+
 
 
 
