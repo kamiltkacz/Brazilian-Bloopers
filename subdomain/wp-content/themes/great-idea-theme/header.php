@@ -18,24 +18,6 @@
 
 <header class="sticky-top">
 
-<!-- <div id="spinner">
-	<span>O
-	<span>t
-	<span>i
-	<span>m
-	<span>a
-	<span>-
-	<span>-
-	<span>-
-	<span>I
-	<span>d
-	<span>e
-	<span>a
-	<span>-
-	<span>-
-	<span>-
-</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
-</div> -->
 
 
 <div class="container">
@@ -65,21 +47,24 @@ array(
 <div class="homehead--center--text" style= "transform: rotate(-2deg);"> Sejam Bem Vindos no</div>
 <div class="homehead--center--text" style="transform: rotate(-4deg);">Otima Idea</div>
 
-<i style="color: white;" class="fas fa-angle-down"></i>
+<i style="color: white;" id="arrow-icon" class="fas fa-angle-down"></i>
   </div>
  </div>
 </div>
 
-<div class="container">
-
-<div class="parallax">
+<!-- <div class="parallax">
 <div class="parallax-content">
+</div>
+</div> -->
 
-Your content goes here...
+<div id="first_column">
+ </div>
+<div id="second_column">
+<h3 class="text_style">Somos uma equipe altamente qualificada e competente, que em apenas 7 (sete) anos produziu mais de uma centena de soluções em Marketing Digital. Temos grandes cases durante essa trajetória e parceiros satisfeitos que acreditaram em nosso conhecimento.</h3>
+</div>
+<div id="third_column">
+ </div>
 
-</div>
-</div>
-</div>
 
 
 </header>
