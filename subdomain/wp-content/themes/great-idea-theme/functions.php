@@ -3,6 +3,8 @@
 function carrega_stylesheets() {
 
 
+
+
 wp_register_style('stylesheet', get_template_directory_uri() . "/css/boootstrap/min.css", array(), false, 'all');
 
 wp_enqueue_style('stylesheet');
@@ -10,6 +12,8 @@ wp_enqueue_style('stylesheet');
 wp_register_style('mystyle', get_template_directory_uri() . "/style.css", array(), false, 'all');
 
 wp_enqueue_style('mystyle');
+
+
 
 
 }
@@ -61,3 +65,11 @@ register_nav_menus(
 
 );
 
+// function tekst_wrapper($content) {
+//     // match any p tags
+//     $pattern = '~<p.*?</p>~';
+//     return preg_replace_callback($pattern, function($matches) {
+//         return '<div>' . $matches[0] . '</div>';
+//     }, $content);
+// }
+// add_filter('the_content', 'tekst_wrapper');
