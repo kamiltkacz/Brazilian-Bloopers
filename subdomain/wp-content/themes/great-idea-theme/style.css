@@ -1,12 +1,14 @@
 /*
 Theme Name: Test Theme
 Author: Kamil Tkacz para Otima Idea
+Tags: responsive
 */
 
 body {
 
     background-color: black;
     color:#fff;
+    font-family: Arial, Helvetica, sans-serif,"Helvetica Neue";
 }
 header {
 
@@ -14,13 +16,81 @@ header {
     width: 100%;
 }
 
-.navigation a {
+.navigation > ul  {
 
     color:#fff;
+    font-family: inherit;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+
+}
+
+.navigation > ul a {
+
+  color:#fff;
+  font-family: inherit;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+}
+
+.navigation > ul a:hover {
+
+  color:black;
+  background-color: whitesmoke;
+  font-family: inherit;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+}
+
+.sobre {
+
+  font-size: 2vw;
+  padding: 0px 60px 0px 60px;
+
+  border-radius: 50px;
+}
+
+.contato {
+
+  font-size: 2vw;
+  padding: 0px 60px 0px 60px;
+
+  border-radius: 50px;
+  text-align: center;
+
+
 }
 
 
-  .homehead {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.homehead {
     min-height: 10vh;
     color: #fff;
     display: -webkit-box;
@@ -33,7 +103,7 @@ header {
     -ms-flex-pack: center;
     justify-content: center;
     position: relative;
-    font-family: Fabrik,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: inherit;
     font-weight: 700;
 }
 
@@ -237,5 +307,8 @@ header {
   .footerhead--center--text:hover {
     animation: none;
   }
+
+
+
 
 
