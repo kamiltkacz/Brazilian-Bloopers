@@ -8,13 +8,35 @@
 <!-- infos -->
     <title>Otima Idea Wordpress</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
 <!-- wphead -->
     <?php  wp_head();?>
+
 </head>
 
 <body <?php body_class();?>>
 
-<header>
+<header class="sticky-top">
+
+<!-- <div id="spinner">
+	<span>O
+	<span>t
+	<span>i
+	<span>m
+	<span>a
+	<span>-
+	<span>-
+	<span>-
+	<span>I
+	<span>d
+	<span>e
+	<span>a
+	<span>-
+	<span>-
+	<span>-
+</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+</div> -->
+
 
 <div class="container">
 
@@ -26,27 +48,11 @@ array(
     'menu_class' => 'navigation'
 
 
+
 )
+
 );?>
 
-<div id="spinner">
-  <span>O
-  <span>t
-  <span>i
-  <span>m
-  <span>a
-  <span>-
-  <span>-
-  <span>-
-  <span>I
-  <span>d
-  <span>e
-  <span>a
-  <span>-
-  <span>-
-  <span>-
-</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
-</div>
 
 
 </div>
