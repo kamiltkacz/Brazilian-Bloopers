@@ -4,14 +4,14 @@
 
 <h1>Front Page</h1>
 
-<div class="container">
+<div class="container" id="homehead-cont">
 <div class="homehead">
   <div  class="homehead--center">
 <div class="homehead--center--text" style="transform: rotate(2deg);">Ola</div>
 <div class="homehead--center--text" style= "transform: rotate(-2deg);"> Sejam Bem Vindos no</div>
 <div class="homehead--center--text" style="transform: rotate(-4deg);">Otima Idea</div>
 
-<i style="color: white;" id="arrow-icon" class="fas fa-angle-down"></i>
+<a href="#examples" id="a_examples"><i id="arrow-icon-1" class="fas fa-angle-down"></i></a>
   </div>
  </div>
 </div>
@@ -21,24 +21,37 @@
 </div>
 </div> -->
 
-<div id="first_column">
+ <div id="col-1" class="container">
+   <div id="arrow-div">
+  <i id="arrow-icon-2" class="fas fa-angle-left"></i>
+  </div>
  </div>
-<div id="second_column">
-<h3 class="text_style">Somos uma equipe altamente qualificada e competente, que em apenas 7 (sete) anos produziu mais de uma centena de soluções em Marketing Digital. Temos grandes cases durante essa trajetória e parceiros satisfeitos que acreditaram em nosso conhecimento.</h3>
+
+<div id="col-2" class="container">
+<a id="examples"></a>
+<h4 class="text_style">Somos uma equipe altamente qualificada e competente, que em apenas 7 (sete) anos produziu mais de uma centena de soluções em Marketing Digital. Temos grandes cases durante essa trajetória e parceiros satisfeitos que acreditaram em nosso conhecimento.</h4>
 </div>
-<div id="third_column">
+
+
+<div id="col-3" class="container">
+
+  <span id="hovertext-1">CVC-Agencia de Turimso</span>
+
  </div>
- <div id="fourth_column">
+
+ <div id="col-4" class="container">
+ <!-- <span class="tooltiptext">Subamrino - Agenica dos descontos</span> -->
  </div>
- <div id="fifth_column">
+ <div id="col-5" class="container">
+ <!-- <span class="tooltiptext">Chilli Beans - Os oculos legais</span> -->
  </div>
- <div class="row"><button>Veja Mas Casos de Succeso</button></div>
- <div id="sixth_column">
+ <!-- <div><button id="b-sucesso">Veja Mas Casos de Succeso</button></div> -->
+ <div id="col-6" class="container">
  </div>
 
  <div class="container">
 
-<div id="seventh_column">
+<div id="col-7">
  <div class="container">
   <div class="footerhead">
    <div  class="footerhead--center">
