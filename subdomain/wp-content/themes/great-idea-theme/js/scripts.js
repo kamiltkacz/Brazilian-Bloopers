@@ -8,7 +8,7 @@ $(document).ready(function(){
     homeheadDiv.animate({top: '320px'}, "slow");
     homeheadDiv.animate({fontSize: '3em'}, "slow");
     homeheadDiv.animate({top: ''}, "slow");
-    homeheadDiv.animate({top: '320px'}, "slow");
+    homeheadDiv.animate({top: '100px'}, "slow");
 
     let footerheadDiv = $(".footerhead");
 
@@ -19,16 +19,40 @@ $(document).ready(function(){
 
 
 
-});
-
-$("#arrow-icon").click(function(){
-
-
-alert("hi");
-
-
-
-
 
 });
+
+$("#arrow-icon-1").click(function(){
+
+    let columnTwo = $("#col-2");
+    columnTwo.animate({
+    height: '100%',
+    width: '100%'
+    }, "slow");
+
+    $("#col-1").hide();
+
+
+ });
+
+ $("#arrow-icon-2").click(function(){
+
+    let columnTwo = $("#col-2");
+    columnTwo.animate({
+    height: '100%',
+    width: '100%'
+    }, "slow");
+
+    $("#col-1").hide();
+
+
+ });
+// $(document).ready(function() {
+//  $("#col-3").hover(function(){
+// $(this).css({"opacity": "0.8"});
+
+//     }, function(){
+//     $(this).css({"opacity": "" });
+//   });
+// });
 
