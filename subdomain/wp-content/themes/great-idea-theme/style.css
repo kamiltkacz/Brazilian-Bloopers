@@ -66,6 +66,12 @@ header {
 
 
 }
+#arrow-icon-1, #arrow-icon-2 {
+
+  color: white;
+  font-size:60px;
+
+}
 
 
 
@@ -133,11 +139,19 @@ header {
   animation: none;
 }
 
+/* #homehead-cont {
+
+  background-color: aliceblue;
+
+
+
+} */
 
 
 
 
-  .parallax {
+
+  /* .parallax {
     background-image: url("https://brazilianbloopers.com/subdomain/wp-content/uploads/2021/03/clark-van-der-beken-IF0g-TIBCKg-unsplash.jpg");
     height: 100%;
     background-attachment: fixed;
@@ -153,27 +167,35 @@ header {
     margin:0 auto;
     color:#FFF;
     padding-top:100px;
-    }
+    } */
+/*
+    .container {
 
-    #first_column {
+      overflow: hidden;
+    } */
 
-       /* background-image: url("https://brazilianbloopers.com/subdomain/wp-content/uploads/2021/03/clark-van-der-beken-IF0g-TIBCKg-unsplash.jpg");*/
-       background-color: #F5C302;
-        height: 123%;
+     #col-1 {
+
+
+       /* background-color: #F5C302; */
+        height: 101%;
         width: 40%;
-        padding: 81px 0 0 0;
+        padding: 256px 0 0 0;
         float: left;
         margin-top: 400px;
 
-    background-position: center;
 
-    background-size: cover;
+    }
 
+    #arrow-div {
+
+      margin-top: -200px;
+    margin-left: 200px;
     }
 
 
 
-    #second_column {
+    #col-2 {
 
         background-color: white;
         color: black;
@@ -181,27 +203,60 @@ header {
         padding: 30px 0 0 0;
         float: right;
         margin-top: 400px;
+        animation: skew 10s 10s;
 
 
+    }
+
+
+
+    @keyframes skew {
+      0% { transform: skewY(3deg); }
+     80% { transform: skewY(4deg); }
+     85% { transform: skewY(0deg); }
+     95% { transform: skewY(-2deg); }
+    100% { transform: skewY(0deg); }
+  }
+
+    .text_style {
+
+      padding-left: 10.3333333333%;
+      padding-right: 10.333333333%;
+      padding-bottom: 5%;
+      padding-top: 3%;
+      font-weight: 800;
+      margin-block-start: 0.13em;
+      margin-block-end: 0.13em;
+      margin-inline-start: 5px;
+      margin-inline-end: 0px;
     }
 
     .text_style {
 
-        padding-left: 10.3333333333%;
-    padding-right: 10.333333333%;
-    padding-bottom: 5%;
-    font-weight: 800;
+      animation: wiggle 3.5s 20s;
+
     }
 
-    #third_column {
+    @keyframes wiggle {
+      0% { transform: rotate(-2deg); }
+     80% { transform: rotate(0deg); }
+     85% { transform: rotate(5deg); }
+     95% { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
+
+  }
+
+
+
+    #col-3 {
 
        /* background-image: url("https://brazilianbloopers.com/subdomain/wp-content/uploads/2021/03/rodion-kutsaev-IJ25m7fXqtk-unsplash-3.jpg");*/
        background-image: url("https://cdn.shortpixel.ai/client/to_avif,q_glossy,ret_img,w_270,h_194/https://www.otimaideia.com.br/wp-content/uploads/2021/03/CVC-270x194.png");
         height: 101%;
         width: 65%;
-        padding: 397px 0 0 0;
+        padding: 479px 0 0 0;
         float: left;
-        display: block;
+
 
 
     background-position: center;
@@ -210,7 +265,49 @@ header {
     object-fit: cover;
 
     }
-    #fourth_column {
+
+
+    #col-3 {
+
+      opacity: 0.7;
+    }
+
+
+    /* Tooltip container */
+#col-3 {
+  position: relative;
+  display: inline-block;
+
+}
+
+/* Tooltip text */
+#col-3 #hovertext-1 {
+  visibility: hidden;
+  width: 220px;
+  height: 100px;
+  /* background-color: black; */
+  color: #fff;
+  text-align: left;
+  padding: 5px 5px;
+  border-radius: 2px;
+  font-size: 4vw;
+  font-family: Arial, Helvetica, sans-serif;
+  animation: wiggle 1.5s infinite;
+
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+  bottom: 180px;
+  left: 40%;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+#col-3:hover #hovertext-1 {
+  visibility: visible;
+}
+
+
+    #col-4 {
       background-color: #BEB1B2;
       background-image: url("https://cdn.shortpixel.ai/client/to_avif,q_glossy,ret_img,w_270,h_194/https://www.otimaideia.com.br/wp-content/uploads/2021/03/Submarino-1-270x194.png");
       width: 35%;
@@ -222,18 +319,20 @@ header {
 
     }
 
-    #fifth_column {
+
+
+    #col-5 {
       background-color: #874F09;
       background-image: url("https://cdn.shortpixel.ai/client/to_avif,q_glossy,ret_img,w_270,h_194/https://www.otimaideia.com.br/wp-content/uploads/2021/03/Chilli-Beans-270x194.png");
       width: 35%;
-      padding: 250px 0 0 0;
+      padding: 240px 0 29px 0;
       float: right;
         background-size: cover;
         display: block;
         object-fit: cover;
     }
 
-    #sixth_column {
+    #col-6 {
       background-image: url("https://brazilianbloopers.com/subdomain/wp-content/uploads/2021/03/vista-aerea-praia-grande-sp.jpg");
       background-color: black;
       width: 100%;
@@ -242,11 +341,11 @@ header {
       float: left;
       background-size: cover;
       background-position: center;
-      display: block;
       object-fit: cover;
+      margin-top: -40px;
     }
 
-    #seventh_column {
+    #col-7 {
 
       background-color: black;
       width: 100%;
@@ -255,6 +354,10 @@ header {
       float: left;
       display: block;
       object-fit: cover;
+    }
+
+    #b-sucesso {
+      position: relative;
     }
 
     .row {
@@ -310,5 +413,35 @@ header {
 
 
 
+  @media only screen and (max-width: 660px) {
+
+  #col-1, #col-2, #col-3, #col-4, #col-5, #col-6, #col-7 {
+
+      float: none;
+      width: 100%;
+      margin-top: 0px;
 
 
+  }
+
+  .homehead {
+
+    padding-bottom: 400px;
+  }
+
+  #arrow-icon-1, #arrow-icon-2 {
+
+    font-size: 30px;
+  }
+
+   #col-3 {
+
+    background-size: contain;
+
+
+  }
+
+
+
+
+  }
