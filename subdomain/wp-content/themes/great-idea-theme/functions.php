@@ -65,11 +65,4 @@ register_nav_menus(
 
 );
 
-// function tekst_wrapper($content) {
-//     // match any p tags
-//     $pattern = '~<p.*?</p>~';
-//     return preg_replace_callback($pattern, function($matches) {
-//         return '<div>' . $matches[0] . '</div>';
-//     }, $content);
-// }
-// add_filter('the_content', 'tekst_wrapper');
+
