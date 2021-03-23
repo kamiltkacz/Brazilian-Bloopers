@@ -7,9 +7,9 @@
 <div class="container" id="homehead-cont">
 <div class="homehead">
   <div  class="homehead--center">
-<div class="homehead--center--text" style="transform: rotate(2deg);">Ola</div>
-<div class="homehead--center--text" style= "transform: rotate(-2deg);"> Sejam Bem Vindos no</div>
-<div class="homehead--center--text" style="transform: rotate(-4deg);">Otima Idea</div>
+<div class="homehead--center--text" style="transform: rotate(2deg);">Olá</div>
+<div class="homehead--center--text" style= "transform: rotate(-2deg);"> Sejam Bem Vindos ao</div>
+<div class="homehead--center--text" style="transform: rotate(-4deg);">Ótima Ideia</div>
 
 <a href="#down-1" id="a-down-1"><i id="arrow-icon-1" class="fas fa-angle-down"></i></a>
   </div>
@@ -37,7 +37,7 @@
 
 
 <div id="overlay" onclick="offOverlay()">
-  <div class="text">Trabalhamos com maiores marcas do Brasil</div>
+  <div class="text">Trabalhamos com as maiores marcas do Brasil</div>
   </div>
 
 
@@ -54,13 +54,13 @@
  <span id="hovertext-3"><a href="https://loja.chillibeans.com.br/" class="a_brand" alt="link do Chilli Beans" target="_blank">Chilli Beans<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i id="arrow-icon-7" class="fas fa-angle-right"></i></a></span>
  </div>
 
- <div id="col-6" class="container">
- </div>
+
  <div id="arrow-div-2" class="container"><a href="#down-2" id="a-down-2"><i id="arrow-icon-3" class="fas fa-angle-down"></i></a></div>
 
-<a id="down-2"></a>
+
 <div id="col-7">
  <div class="container">
+ <a id="down-2"></a>
   <div class="footerhead">
    <div  class="footerhead--center">
 <div class="footerhead--center--text" style="transform: rotate(2deg);">Entre em Contato</div>
@@ -73,7 +73,8 @@
 </div>
 
 
-
+<div id="col-6" class="container">
+ </div>
 
 
 
