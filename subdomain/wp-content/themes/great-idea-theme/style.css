@@ -381,8 +381,11 @@ left: 50%;
 
 
     #col-4 {
-      background-color: #BEB1B2;
+
       background-image: url("https://cdn.shortpixel.ai/client/to_avif,q_glossy,ret_img,w_270,h_194/https://www.otimaideia.com.br/wp-content/uploads/2021/03/Submarino-1-270x194.png");
+      background-position: 0 -100px -10px;
+
+      background-repeat: no-repeat;
       width: 35%;
       padding: 250px 0 0 0;
       float: right;
@@ -639,6 +642,45 @@ left: 50%;
     font-size: 10vw;
     background-color: none;
   }
+
+
+
+
+  }
+
+  @media only screen and (min-width: 1020px) {
+
+    #col-4 {
+
+      background-origin: border-box;
+      background-position: 0% 0%;
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 35%;
+      padding: 250px 0 0 0;
+      float: right;
+
+
+    }
+
+    #col-5 {
+
+      background-origin: border-box;
+      background-position: 100% 0%;
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 35%;
+      padding: 250px 0 0 0;
+      float: right;
+
+
+
+
+
+
+    }
+
+
 
 
 
