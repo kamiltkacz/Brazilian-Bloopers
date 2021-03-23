@@ -34,6 +34,7 @@ header {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  text-decoration: none;
 
 }
 
@@ -45,6 +46,7 @@ header {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  opacity: 0.8;
 
 }
 
@@ -66,11 +68,39 @@ header {
 
 
 }
-#arrow-icon-1, #arrow-icon-2 {
+#arrow-icon-1,
+#arrow-icon-2,
+#arrow-icon-3
+              {
 
   color: white;
   font-size:60px;
 
+}
+
+#arrow-icon-1:hover,
+#arrow-icon-2:hover,
+#arrow-icon-3:hover,
+#arrow-icon-4:hover,
+#arrow-icon-5:hover,
+#arrow-icon-6:hover,
+#arrow-icon-7:hover {
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+
+#arrow-div-2 {
+  margin-left: 700px;
+}
+
+.a_brand {
+
+  text-decoration: none;
+  font-family: inherit;
+  font-size: 2vw;
+  color: white;
+  font-weight: bolder;
 }
 
 
@@ -203,7 +233,7 @@ header {
         padding: 30px 0 0 0;
         float: right;
         margin-top: 400px;
-        animation: skew 10s 10s;
+        animation: skew 5s 10s;
 
 
     }
@@ -256,6 +286,7 @@ header {
         width: 65%;
         padding: 479px 0 0 0;
         float: left;
+        margin-bottom: 40px;
 
 
 
@@ -267,43 +298,85 @@ header {
     }
 
 
-    #col-3 {
-
-      opacity: 0.7;
-    }
 
 
-    /* Tooltip container */
-#col-3 {
+
+
+ #col-3 {
   position: relative;
   display: inline-block;
 
 }
 
-/* Tooltip text */
-#col-3 #hovertext-1 {
-  visibility: hidden;
-  width: 220px;
-  height: 100px;
-  /* background-color: black; */
-  color: #fff;
-  text-align: left;
-  padding: 5px 5px;
-  border-radius: 2px;
-  font-size: 4vw;
-  font-family: Arial, Helvetica, sans-serif;
-  animation: wiggle 1.5s infinite;
+ #col-3:hover {
+opacity: 0.8;
 
-  /* Position the tooltip text - see examples below! */
+    }
+
+
+ #col-3 #hovertext-1 {
+  visibility: hidden;
+  width: 120px;
+  height: 60px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 2px 2px;
+  border-radius: 20px;
+  font-size: 3vw;
+  font-family: Arial, Helvetica, sans-serif;
+  animation: wiggle 1.5s 10s;
+
+
+
   position: absolute;
   z-index: 1;
   bottom: 180px;
   left: 40%;
 }
 
-/* Show the tooltip text when you mouse over the tooltip container */
+
 #col-3:hover #hovertext-1 {
   visibility: visible;
+
+}
+
+#overlay {
+
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 100px;
+  left: 0;
+  right: 0;
+  bottom: 200px;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+
+.text{
+position: relative;
+top: 30px;
+left: 50%;
+  font-size: 50px;
+  color: white;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  animation: skew 2s, 30s;
+
+}
+
+.text:hover {
+  opacity: 0.8;
+}
+
+@keyframes skew {
+  0% { transform: skewY(2deg); }
+ 80% { transform: skewY(8deg); }
+ 85% { transform: skewY(2deg); }
+ 95% { transform: skewY(-6deg); }
+100% { transform: skewY(0deg); }
 }
 
 
@@ -319,18 +392,94 @@ header {
 
     }
 
+    #col-4:hover {
+
+      opacity: 0.8;
+    }
+
+
+    /* Tooltip container */
+#col-4 {
+  position: relative;
+
+
+}
+
+
+ #col-4 #hovertext-2 {
+  visibility: hidden;
+  width: 170px;
+  height: 70px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 2px 2px;
+  border-radius: 20px;
+  font-size: 2vw;
+  font-family: Arial, Helvetica, sans-serif;
+  animation: wiggle 1.5s 10s;
+  position: absolute;
+  z-index: 1;
+  top: 100px;
+  left: 30%;
+}
+
+
+#col-4:hover #hovertext-2 {
+  visibility: visible;
+}
+
 
 
     #col-5 {
-      background-color: #874F09;
+
       background-image: url("https://cdn.shortpixel.ai/client/to_avif,q_glossy,ret_img,w_270,h_194/https://www.otimaideia.com.br/wp-content/uploads/2021/03/Chilli-Beans-270x194.png");
       width: 35%;
-      padding: 240px 0 29px 0;
+      padding: 200px 0 29px 0;
       float: right;
         background-size: cover;
         display: block;
         object-fit: cover;
+        margin-bottom: 40px;
     }
+
+    #col-5:hover {
+
+      opacity: 0.8;
+    }
+
+
+
+#col-5 {
+  position: relative;
+
+
+}
+
+
+#col-5 #hovertext-3 {
+  visibility: hidden;
+  width: 100px;
+  height: 110px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 2px 2px;
+  border-radius: 20px;
+  font-size: 2vw;
+  font-family: Arial, Helvetica, sans-serif;
+  animation: wiggle 1.5s 10s;
+  position: absolute;
+  z-index: 1;
+  top: 80px;
+  left: 40%;
+}
+
+
+#col-5:hover #hovertext-3 {
+  visibility: visible;
+}
+
 
     #col-6 {
       background-image: url("https://brazilianbloopers.com/subdomain/wp-content/uploads/2021/03/vista-aerea-praia-grande-sp.jpg");
@@ -357,7 +506,19 @@ header {
     }
 
     #b-sucesso {
+
       position: relative;
+      margin-left: 400px;
+      padding: 20px;
+      background: black;
+    color: white;
+    border-radius: 2px;
+    font-size: 2vw;
+    }
+
+    #b-sucesso:hover {
+
+      opacity: 0.8;
     }
 
     .row {
@@ -411,15 +572,22 @@ header {
     animation: none;
   }
 
+  @media only screen and (max-width: 1020px) and (min-width: 660px) {
+
+    #arrow-div-2 {
+
+      margin-left: 400px;
+    }
 
 
+  }
   @media only screen and (max-width: 660px) {
 
   #col-1, #col-2, #col-3, #col-4, #col-5, #col-6, #col-7 {
 
       float: none;
       width: 100%;
-      margin-top: 0px;
+      margin: 0;
 
 
   }
@@ -429,7 +597,7 @@ header {
     padding-bottom: 400px;
   }
 
-  #arrow-icon-1, #arrow-icon-2 {
+  #arrow-icon-1, #arrow-icon-2, #arrow-icon-3 {
 
     font-size: 30px;
   }
@@ -439,6 +607,37 @@ header {
     background-size: contain;
 
 
+  }
+
+  #arrow-div-2 {
+    margin-left: 150px;
+  }
+
+  #arrow-div {
+
+    display: none;
+  }
+
+  #b-sucesso {
+
+    width:100%;
+
+  }
+
+  #footer {
+
+    margin-top: 50px !important;
+    margin-left: 50px !important;
+
+
+
+  }
+
+  #col-3 #hovertext-1:hover,
+  #col-4 #hovertext-2:hover,
+  #col-5 #hovertext-3:hover {
+    font-size: 10vw;
+    background-color: none;
   }
 
 
