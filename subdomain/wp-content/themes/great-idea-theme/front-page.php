@@ -27,19 +27,17 @@
   </div>
  </div>
 
+
+
+
 <div id="col-2" class="container">
 <a id="down-1"></a>
 <h4 class="text_style">Somos uma equipe altamente qualificada e competente, que em apenas 7 (sete) anos produziu mais de uma centena de soluções em Marketing Digital. Temos grandes cases durante essa trajetória e parceiros satisfeitos que acreditaram em nosso conhecimento.</h4>
 <div><button id="b-sucesso" onclick="onOverlay()">Casos de Succeso&nbsp;&nbsp;<i id="arrow-icon-4" class="fas fa-angle-down"></i></button></div>
 </div>
-
-
-
-
 <div id="overlay" onclick="offOverlay()">
   <div class="text">Trabalhamos com as maiores marcas do Brasil</div>
   </div>
-
 
 <div id="col-3" class="container">
 
