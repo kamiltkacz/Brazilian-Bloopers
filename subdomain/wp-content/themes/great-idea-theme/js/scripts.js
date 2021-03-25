@@ -67,48 +67,48 @@ $("#arrow-1").click(function () {
 
 /* SCROLL FUNCTION */
 
-// $(document).ready(function () {
-//   $(window).scroll(function () {
-//     $(document).ready(function () {
-//       function colTwo() {
-//         let columnTwo = $("#col-2");
-//         columnTwo.animate(
-//           {
-//             height: "100%",
-//             width: "100%",
-//           },
-//           "slow"
-//         );
-//         $("#col-1").hide();
-//       }
-//       setTimeout(colTwo, 4000);
-//     });
+$(document).ready(function () {
+  $(window).scroll(function () {
+    $(document).ready(function () {
+      function colTwo() {
+        let columnTwo = $("#col-2");
+        columnTwo.animate(
+          {
+            height: "100%",
+            width: "100%",
+          },
+          "slow"
+        );
+        $("#col-1").hide();
+      }
+      setTimeout(colTwo, 4000);
+    });
 
-//     $(document).ready(function () {
-//       function cvc() {
-//         $("#col-3").show("slow").css({ display: "flex" });
-//         $("#b-sucesso").show("slow");
-//       }
-//       setTimeout(cvc, 6000);
-//     });
+    $(document).ready(function () {
+      function cvc() {
+        $("#col-3").show("slow").css({ display: "flex" });
+        $("#b-sucesso").show("slow");
+      }
+      setTimeout(cvc, 6000);
+    });
 
-//     $(document).ready(function () {
-//       function submarino() {
-//         $("#col-4").show("slow").css({ display: "flex" });
-//       }
-//       setTimeout(submarino, 7000);
-//     });
+    $(document).ready(function () {
+      function submarino() {
+        $("#col-4").show("slow").css({ display: "flex" });
+      }
+      setTimeout(submarino, 7000);
+    });
 
-//     $(document).ready(function () {
-//       function chilli() {
-//         $("#col-5").show("slow").css({ display: "flex" });
+    $(document).ready(function () {
+      function chilli() {
+        $("#col-5").show("slow").css({ display: "flex" });
 
-//         $("#otima-logo").animate({ marginTop: "-20px" }, "slow");
-//       }
-//       setTimeout(chilli, 8000);
-//     });
-//   });
-// });
+        $("#otima-logo").animate({ marginTop: "-20px" }, "slow");
+      }
+      setTimeout(chilli, 8000);
+    });
+  });
+});
 
 /* END OF SCROLL FUNCTION */
 
