@@ -5,163 +5,175 @@ Tags: responsive
 */
 
 body {
-
-    background-color: black;
-    color:#fff;
-    font-family: Arial, Helvetica, sans-serif,"Helvetica Neue";
+  background-color: black;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif, "Helvetica Neue";
 }
 header {
-
-    height: 100px;
-    width: 100%;
+  height: 100px;
+  width: 100%;
 }
 
-.navigation > ul  {
-
-    color:#fff;
-    font-family: inherit;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    font-weight: 600;
-
+.navigation > ul {
+  color: #fff;
+  font-family: inherit;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  font-size: 2vw;
 }
 
 .navigation > ul a {
-
-  color:#fff;
+  color: #fff;
   font-family: inherit;
   list-style-type: none;
   margin: 0;
   padding: 0;
   text-decoration: none;
-
 }
 
 .navigation > ul a:hover {
 
-  color:black;
-  background-color: whitesmoke;
   font-family: inherit;
   list-style-type: none;
   margin: 0;
   padding: 0;
   opacity: 0.8;
 
+
+}
+ .navigation > ul:first-child:hover {
+
+  transform: rotate(-4deg);
 }
 
+
+/* WORDPRESS TAB */
 .sobre {
-
   font-size: 2vw;
-  padding: 0px 60px 0px 60px;
-
+  padding: 100px 60px 0px 60px;
+  text-indent: 50px;
   border-radius: 50px;
 }
 
 .contato {
-
   font-size: 2vw;
   padding: 0px 60px 0px 60px;
 
   border-radius: 50px;
   text-align: center;
-
-
 }
-#arrow-icon-1,
-#arrow-icon-2,
-#arrow-icon-3
-              {
 
+#entre-contato {
+  padding: 50px;
+}
+
+/*END WORDPRESS TAB */
+
+#otima-logo {
+  background-image: url("https://brazilianbloopers.com/subdomain/wp-content/uploads/2021/03/otima-logo.png");
+  height: 100%;
+  padding: 100px;
+  background: cover;
+  background: contain;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 20px;
+  margin-top: -70px;
+}
+
+#arrow-1
+ {
   color: white;
-  font-size:60px;
-
+  font-size: 100px;
 }
 
-#arrow-icon-1:hover,
-#arrow-icon-2:hover,
-#arrow-icon-3:hover,
-#arrow-icon-4:hover,
-#arrow-icon-5:hover,
-#arrow-icon-6:hover,
-#arrow-icon-7:hover {
+
+#arrow-1:hover
+ {
   opacity: 0.3;
   cursor: pointer;
+  transform: rotate(-180deg);
+
 }
 
+#arrow-4 {
+  font-size: 20px;
+}
 
-#arrow-div-2 {
-  margin-left: 700px;
+#arrow-4:hover {
+  cursor: text !important;
+}
+
+#arrow-5:hover,
+#arrow-6:hover,
+#arrow-7:hover {
+  transform: rotate(-50deg);
 }
 
 .a_brand {
-
   text-decoration: none;
   font-family: inherit;
-  font-size: 2vw;
+  font-size: 10vw;
   color: white;
   font-weight: bolder;
 }
 
+.a_brand:hover {
+  opacity: 1;
+  cursor: pointer;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#arrow-1-box {
+  margin-top: 150px;
+}
 
 
 .homehead {
-    min-height: 10vh;
-    color: #fff;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    position: relative;
-    font-family: inherit;
-    font-weight: 700;
+  min-height: 10vh;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative;
+  font-family: inherit;
+  font-weight: 700;
 }
 
-  .homehead--center {
-    font-size: 4vw;
-    color:#fff;
-    text-align: center;
-    line-height: 1;
-   /* opacity: 0;*/
-
+.homehead--center {
+  font-size: 5vw;
+  color: #fff;
+  text-align: center;
+  line-height: 1;
 }
 
 @keyframes wiggle {
-    0% { transform: rotate(-2deg); }
-   80% { transform: rotate(0deg); }
-   85% { transform: rotate(5deg); }
-   95% { transform: rotate(-5deg); }
-  100% { transform: rotate(0deg); }
+  0% {
+    transform: rotate(-2deg);
+  }
+  80% {
+    transform: rotate(0deg);
+  }
+  85% {
+    transform: rotate(5deg);
+  }
+  95% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 .homehead--center--text {
-
   animation: wiggle 3.5s 5s;
 }
 
@@ -169,152 +181,96 @@ header {
   animation: none;
 }
 
-/* #homehead-cont {
+/* COLUMNS */
 
-  background-color: aliceblue;
-
-
-
-} */
-
-
-
-
-
-  /* .parallax {
-    background-image: url("https://brazilianbloopers.com/subdomain/wp-content/uploads/2021/03/clark-van-der-beken-IF0g-TIBCKg-unsplash.jpg");
-    height: 100%;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-left:-410px;
-    margin-right:-410px;
-    }
-
-    .parallax-content {
-    width:50%;
-    margin:0 auto;
-    color:#FFF;
-    padding-top:100px;
-    } */
-/*
-    .container {
-
-      overflow: hidden;
-    } */
-
-     #col-1 {
-
-
-       /* background-color: #F5C302; */
-        height: 101%;
-        width: 40%;
-        padding: 256px 0 0 0;
-        float: left;
-        margin-top: 400px;
-
-
-    }
-
-    #arrow-div {
-
-      margin-top: -200px;
-    margin-left: 200px;
-    }
-
-
-
-    #col-2 {
-
-        background-color: white;
-        color: black;
-        width: 60%;
-        padding: 30px 0 0 0;
-        float: right;
-        margin-top: 400px;
-        animation: skew 5s 10s;
-
-
-    }
-
-
-
-    @keyframes skew {
-      0% { transform: skewY(3deg); }
-     80% { transform: skewY(4deg); }
-     85% { transform: skewY(0deg); }
-     95% { transform: skewY(-2deg); }
-    100% { transform: skewY(0deg); }
-  }
-
-    .text_style {
-
-      padding-left: 10.3333333333%;
-      padding-right: 10.333333333%;
-      padding-bottom: 5%;
-      padding-top: 3%;
-      font-weight: 800;
-      margin-block-start: 0.13em;
-      margin-block-end: 0.13em;
-      margin-inline-start: 5px;
-      margin-inline-end: 0px;
-    }
-
-    .text_style {
-
-      animation: wiggle 3.5s 20s;
-
-    }
-
-    @keyframes wiggle {
-      0% { transform: rotate(-2deg); }
-     80% { transform: rotate(0deg); }
-     85% { transform: rotate(5deg); }
-     95% { transform: rotate(-5deg); }
-    100% { transform: rotate(0deg); }
-
-  }
-
-
-
-    #col-3 {
-
-       display: none;
-       background-image: url("https://cdn.shortpixel.ai/client/to_avif,q_glossy,ret_img,w_270,h_194/https://www.otimaideia.com.br/wp-content/uploads/2021/03/CVC-270x194.png");
-        height: 101%;
-        width: 65%;
-        padding: 479px 0 0 0;
-        float: left;
-        margin-bottom: 40px;
-        margin-top: 80px;
-        background-size: cover;
-
-
-    }
-
-
-
-
-
-
- #col-3 {
-  position: relative;
-
-
+#col-2 {
+  background-color: white;
+  color: black;
+  width: 60%;
+  padding: 30px 0 0 0;
+  float: right;
+  margin-top: 400px;
+  animation: skew 5s 10s;
 }
 
- #col-3:hover {
-opacity: 0.8;
+@keyframes skew {
+  0% {
+    transform: skewY(3deg);
+  }
+  80% {
+    transform: skewY(4deg);
+  }
+  85% {
+    transform: skewY(0deg);
+  }
+  95% {
+    transform: skewY(-2deg);
+  }
+  100% {
+    transform: skewY(0deg);
+  }
+}
 
-    }
+.text_equipe {
+  padding-left: 10.3333333333%;
+  padding-right: 10.333333333%;
+  padding-bottom: 5%;
+  padding-top: 3%;
+  font-weight: 800;
+  margin-block-start: 0.13em;
+  margin-block-end: 0.13em;
+  margin-inline-start: 5px;
+  margin-inline-end: 0px;
+  font-size: 25px;
+  text-indent: 20px;
+}
 
+.text_equipe {
+  animation: wiggle 3.5s 20s;
+}
 
- #col-3 #hovertext-1 {
+@keyframes wiggle {
+  0% {
+    transform: rotate(-2deg);
+  }
+  80% {
+    transform: rotate(0deg);
+  }
+  85% {
+    transform: rotate(5deg);
+  }
+  95% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+#col-3 {
+  display: none;
+  background-image: url("https://cdn.shortpixel.ai/client/to_avif,q_glossy,ret_img,w_270,h_194/https://www.otimaideia.com.br/wp-content/uploads/2021/03/CVC-270x194.png");
+  width: 33.33333333%;
+  background-origin: border-box;
+  padding: 370px 0 0 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 86% 6%;
+  margin-top: 0%;
+  float: left;
+}
+
+#col-3 {
+  position: relative;
+}
+
+#col-3:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+#col-3 #hovertext-1 {
   visibility: hidden;
-  width: 120px;
-  height: 60px;
-  background-color: black;
   color: #fff;
   text-align: center;
   padding: 2px 2px;
@@ -328,87 +284,34 @@ opacity: 0.8;
   left: 30%;
 }
 
-
 #col-3:hover #hovertext-1 {
   visibility: visible;
-
 }
 
-#overlay {
 
+
+#col-4 {
   display: none;
-  width: 100%;
-  height: 100%;
-  top: 100px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0,0,0,0.5);
-  z-index: 2;
-  cursor: pointer;
+  background-image: url("https://cdn.shortpixel.ai/client/to_avif,q_glossy,ret_img,w_270,h_194/https://www.otimaideia.com.br/wp-content/uploads/2021/03/Submarino-1-270x194.png");
+  background-origin: border-box;
+  background-position: 0% 0%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 33.3333333333%;
+  padding: 370px 0 0 0;
+  float: right;
 }
 
-.text{
-position: relative;
-top: 30px;
-left: 50%;
-  font-size: 50px;
-  color: white;
-  transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
-  animation: skew 2s, 30s;
-
-}
-
-.text:hover {
+#col-4:hover {
   opacity: 0.8;
 }
 
-@keyframes skew {
-  0% { transform: skewY(2deg); }
- 80% { transform: skewY(8deg); }
- 85% { transform: skewY(2deg); }
- 95% { transform: skewY(-6deg); }
-100% { transform: skewY(0deg); }
-}
-
-
-    #col-4 {
-
-
-
-      display: none;
-      background-image: url("https://cdn.shortpixel.ai/client/to_avif,q_glossy,ret_img,w_270,h_194/https://www.otimaideia.com.br/wp-content/uploads/2021/03/Submarino-1-270x194.png");
-      background-position: 0 -100px -10px;
-      background-repeat: no-repeat;
-      width: 35%;
-      padding: 250px 0 0 0;
-      float: right;
-      background-size: cover;
-      display: block;
-      object-fit: cover;
-
-    }
-
-    #col-4:hover {
-
-      opacity: 0.8;
-    }
-
-
-    /* Tooltip container */
 #col-4 {
   position: relative;
-
-
 }
 
-
- #col-4 #hovertext-2 {
+#col-4 #hovertext-2 {
   visibility: hidden;
-  width: 170px;
-  height: 70px;
-  background-color: black;
   color: #fff;
   text-align: center;
   padding: 2px 2px;
@@ -418,51 +321,36 @@ left: 50%;
   animation: wiggle 1.5s 10s;
   position: absolute;
   z-index: 1;
-  top: 100px;
-  left: 30%;
+  bottom: 100px;
+  left: -15%;
 }
-
 
 #col-4:hover #hovertext-2 {
   visibility: visible;
 }
 
+#col-5 {
+  display: none;
+  background-image: url("https://cdn.shortpixel.ai/client/to_avif,q_glossy,ret_img,w_270,h_194/https://www.otimaideia.com.br/wp-content/uploads/2021/03/Chilli-Beans-270x194.png");
+  background-origin: border-box;
+  background-position: 100% 0%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 33.3333333333%;
+  padding: 370px 0 0 0;
+  float: right;
+}
 
-
-    #col-5 {
-
-
-
-      display: none;
-      background-image: url("https://cdn.shortpixel.ai/client/to_avif,q_glossy,ret_img,w_270,h_194/https://www.otimaideia.com.br/wp-content/uploads/2021/03/Chilli-Beans-270x194.png");
-      width: 35%;
-      padding: 200px 0 29px 0;
-      float: right;
-        background-size: cover;
-        display: block;
-
-        margin-bottom: 40px;
-    }
-
-    #col-5:hover {
-
-      opacity: 0.8;
-    }
-
-
+#col-5:hover {
+  opacity: 0.8;
+}
 
 #col-5 {
   position: relative;
-
-
 }
-
 
 #col-5 #hovertext-3 {
   visibility: hidden;
-  width: 100px;
-  height: 110px;
-  background-color: black;
   color: #fff;
   text-align: center;
   padding: 2px 2px;
@@ -472,166 +360,160 @@ left: 50%;
   animation: wiggle 1.5s 10s;
   position: absolute;
   z-index: 1;
-  top: 80px;
-  left: 40%;
+  bottom: 100px;
+  left: 1%;
 }
-
 
 #col-5:hover #hovertext-3 {
   visibility: visible;
 }
 
+#col-6 {
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  padding: 400px 0 0 0;
+  float: left;
+  display: block;
+}
 
-    #col-6 {
-      background-image: url("https://brazilianbloopers.com/subdomain/wp-content/uploads/2021/03/vista-aerea-praia-grande-sp.jpg");
-      background-color: black;
-      width: 100%;
-      height: 101%;
-      padding: 400px 0 0 0;
-      float: left;
-      background-size: cover;
-      background-position: center;
-      object-fit: cover;
-      margin-top: -40px;
-    }
 
-    #col-7 {
+#col-7 {
+  background-image: url("https://brazilianbloopers.com/subdomain/wp-content/uploads/2021/03/vista-aerea-praia-grande-sp.jpg");
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  padding: 400px 0 0 0;
+  float: left;
+  background-size: cover;
+  background-position: center;
 
-      background-color: black;
-      width: 100%;
-      height: 101%;
-      padding: 400px 0 0 0;
-      float: left;
-      display: block;
-      object-fit: cover;
-    }
+  margin-top: -40px;
+}
 
-    #b-sucesso {
-display:none;
-      position: relative;
-      margin-left: 400px;
-      padding: 20px;
-      background: black;
-    color: white;
-    border-radius: 2px;
-    font-size: 2vw;
-    }
 
-    #b-sucesso:hover {
+#b-sucesso {
+  display: none;
+  position: relative;
+  padding: 10px;
+  background: black;
+  color: white;
+  border-radius: 2px;
+  font-size: 2vw;
+  font-family: inherit;
+}
 
-      opacity: 0.8;
-    }
+#b-sucesso:hover {
+  cursor: text !important;
+}
 
-    .row {
+.row {
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+  text-align: center;
+}
 
-      margin: auto;
-      width: 60%;
-      padding: 10px;
-      text-align: center;
-    }
+.footerhead {
+  min-height: 10vh;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative;
+  font-family: inherit;
+  font-weight: 700;
+}
 
-    .footerhead {
-      min-height: 10vh;
-      color: #fff;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-      position: relative;
-      font-family: Fabrik,"Helvetica Neue",Helvetica,Arial,sans-serif;
-      font-weight: 700;
+.footerhead--center {
+  font-size: 4vw;
+  color: #fff;
+  text-align: center;
+  line-height: 1;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(-2deg);
+  }
+  80% {
+    transform: rotate(0deg);
+  }
+  85% {
+    transform: rotate(5deg);
+  }
+  95% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.footerhead--center--text {
+  animation: wiggle 3.5s 5s;
+}
+
+.footerhead--center--text:hover {
+  animation: none;
+}
+
+@media only screen and (max-width: 480px) {
+  #col-2,
+  #col-3,
+  #col-4,
+  #col-5,
+  #col-6,
+  #col-7 {
+    float: none;
+    width: 100%;
+    margin: 0;
   }
 
-    .footerhead--center {
-      font-size: 4vw;
-      color:#fff;
-      text-align: center;
-      line-height: 1;
-     /* opacity: 0;*/
-
+  #col-3 {
+    margin-top: -10px;
   }
 
-  @keyframes wiggle {
-      0% { transform: rotate(-2deg); }
-     80% { transform: rotate(0deg); }
-     85% { transform: rotate(5deg); }
-     95% { transform: rotate(-5deg); }
-    100% { transform: rotate(0deg); }
+  #col-4 {
+    margin-top: -120px;
   }
 
-  .footerhead--center--text {
-
-    animation: wiggle 3.5s 5s;
-  }
-
-  .footerhead--center--text:hover {
-    animation: none;
-  }
-
-  @media only screen and (max-width: 1020px) and (min-width: 660px) {
-
-    #arrow-div-2 {
-
-      margin-left: 400px;
-    }
-
-
-  }
-  @media only screen and (max-width: 660px) {
-
-  #col-1, #col-2, #col-3, #col-4, #col-5, #col-6, #col-7 {
-
-      float: none;
-      width: 100%;
-      margin: 0;
-
-
+  #col-5 {
+    margin-top: -120px;
   }
 
   .homehead {
-
     padding-bottom: 400px;
   }
 
-  #arrow-icon-1, #arrow-icon-2, #arrow-icon-3 {
+  #otima-logo {
 
+    padding: 80px;
+  }
+
+  #arrow-1 {
     font-size: 30px;
   }
 
-   #col-3 {
-
+  #col-3,
+  #col-4,
+  #col-5 {
     background-size: contain;
-
-
   }
 
-  #arrow-div-2 {
-    margin-left: 150px;
-  }
-
-  #arrow-div {
-
-    display: none;
+  #arrow-4 {
+    font-size: 10px;
   }
 
   #b-sucesso {
-
-    width:100%;
-
-  }
-
-  #footer {
-
-    margin-top: 50px !important;
-    margin-left: 50px !important;
-
-
-
+    font-size: 3vw;
+    padding: 5px;
   }
 
   #col-3 #hovertext-1:hover,
@@ -640,130 +522,150 @@ display:none;
     font-size: 10vw;
     background-color: none;
   }
+}
 
-
-
-
+@media only screen and (min-width: 1280px) {
+  #col-4 {
+    display: none;
+    background-origin: border-box;
+    background-position: 0% 0%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 33.3333333333%;
+    padding: 370px 0 0 0;
+    float: right;
   }
 
-  @media only screen and (min-width: 1020px) {
+  #col-5 {
+    display: none;
+    background-origin: border-box;
+    background-position: 100% 0%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 33.3333333333%;
+    padding: 370px 0 0 0;
+    float: right;
+  }
 
-
-    #col-4 {
-display: none;
-      background-origin: border-box;
-      background-position: 0% 0%;
-      background-size: cover;
-      background-repeat: no-repeat;
-      width: 33.3333333333%;
-      padding: 250px 0 0 0;
-      float: right;
-
-
-    }
-
-    #col-5 {
-
-      display: none;
-      background-origin: border-box;
-      background-position: 100% 0%;
-      background-size: cover;
-      background-repeat: no-repeat;
-      width: 33.3333333333%;
-      padding: 250px 0 0 0;
-      float: right;
-
-
-    }
-
-   #col-3 {
-
-
+  #col-3 {
     display: none;
     width: 33.33333333%;
 
     background-origin: border-box;
-    padding: 250px 0 0 0;
+    padding: 370px 0 0 0;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 0% 0%;
+    background-position: 86% 6%;
     margin-top: 0%;
     float: left;
-    display: none;
-
-
-   }
-
-
-
-
-
-
-
-
-
-
   }
-    @media only screen and (min-width: 660px) and (max-width: 960px){
+}
 
-      #col-4 {
+@media only screen and (min-width: 660px) and (max-width: 820px) {
+  #col-4 {
+    display: none;
+    background-origin: border-box;
+    background-position: 0% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 70%;
+    padding: 420px 0 0 0;
+    float: none;
+  }
 
-        background-origin: border-box;
-        background-position: 0% 0%;
-        background-size: contain;
-        background-repeat: no-repeat;
-        width: 33.3333333333%;
-        padding: 250px 0 0 0;
-        float: right;
+  #col-5 {
+    display: none;
+    background-origin: border-box;
+    background-position: 10% 45%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 70%;
+    padding: 420px 0 0 0;
+    float: none;
+  }
 
+  #col-3 {
+    display: none;
+    width: 70%;
+    background-origin: border-box;
+    padding: 370px 0 0 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 6% 45%;
+    margin-top: 0%;
+    float: none;
+  }
+}
 
-      }
+@media only screen and (min-width: 480px) and (max-width: 660px) {
+  #col-4 {
+    display: none;
+    background-origin: border-box;
+    background-position: 0% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding: 420px 0 0 0;
+    float: none;
+  }
 
-      #col-5 {
+  #col-5 {
+    display: none;
+    background-origin: border-box;
+    background-position: 10% 45%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding: 420px 0 0 0;
+    float: none;
+  }
 
-        background-origin: border-box;
-        background-position: 100% 0%;
-        background-size: contain;
-        background-repeat: no-repeat;
-        width: 33.3333333333%;
-        padding: 228px 0 0 0;
-        float: right;
+  #col-3 {
+    display: none;
+    width: 100%;
+    background-origin: border-box;
+    padding: 370px 0 0 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 6% 45%;
+    margin-top: 0%;
+    float: none;
+  }
+}
 
+@media only screen and (min-width: 820px) and (max-width: 1280px) {
+  #col-4 {
+    display: none;
+    background-origin: border-box;
+    background-position: 0% 0%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 33.3333333333%;
+    padding: 370px 0 0 0;
+    float: right;
+  }
 
+  #col-5 {
+    display: none;
+    background-origin: border-box;
+    background-position: 100% 0%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 33.3333333333%;
+    padding: 370px 0 0 0;
+    float: right;
+  }
 
-      }
+  #col-3 {
+    display: none;
+    width: 33.33333333%;
 
-     #col-3 {
-
-      left: 0;
-      width: 33.33333333%;
-      padding: 19 8px 0 0px 0;
-      float: left;
-
-      height: 100%;
-      background-origin: border-box;
-      /* padding: 197px 0 0 0; */
-      background-size: contain;
-      background-repeat: no-repeat;
-
-      background-position: 0% 0%;
-      margin-top: 5%;
-
-
-     }
-
-
-
-
-
-
-
-
-    }
-
-
-
-
-
-
-
+    background-origin: border-box;
+    padding: 370px 0 0 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 86% 6%;
+    margin-top: 0%;
+    float: left;
+  }
+}
