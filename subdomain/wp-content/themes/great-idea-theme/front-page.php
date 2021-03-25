@@ -16,35 +16,23 @@
  </div>
 </div>
 
- <div id="col-1" class="container">
- </div>
+
 <div id="col-2" class="container">
 <a id="down-1"></a>
-<h4 class="text_style">Somos uma equipe altamente qualificada e competente, que em apenas 7 (sete) anos produziu mais de uma centena de soluções em Marketing Digital. Temos grandes cases durante essa trajetória e parceiros satisfeitos que acreditaram em nosso conhecimento.</h4>
+<h4 class="text_equipe">Somos uma equipe altamente qualificada e competente, que em apenas 7 (sete) anos produziu mais de uma centena de soluções em Marketing Digital. Temos grandes cases durante essa trajetória e parceiros satisfeitos que acreditaram em nosso conhecimento.</h4>
 <div id="otima-logo"></div>
-<div><button id="b-sucesso" onclick="onOverlay()">Casos de Succeso&nbsp;&nbsp;<i id="arrow-4" class="fas fa-angle-down"></i></button></div>
+<div><button id="b-sucesso">Casos de Succeso&nbsp;&nbsp;<i id="arrow-4" class="fas fa-angle-down"></i></button></div>
 </div>
-<div id="overlay" onclick="offOverlay()">
-  <div class="text">Trabalhamos com as maiores marcas do Brasil</div>
-  </div>
 
 <div id="col-3" class="container">
-
   <span id="hovertext-1"><a href="https://www.cvc.com.br/" class="a_brand" alt="link do CVC" target="_blank">&nbsp;&nbsp;<i id="arrow-5" class="fas fa-angle-right"></i></a></span>
-
  </div>
-
  <div id="col-4" class="container">
  <span id="hovertext-2"><a href="https://www.submarinoviagens.com.br/" class="a_brand" alt="link do Submarino" target="_blank"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i id="arrow-6" class="fas fa-angle-right"></i></a></span>
  </div>
  <div id="col-5" class="container">
  <span id="hovertext-3"><a href="https://loja.chillibeans.com.br/" class="a_brand" alt="link do Chilli Beans" target="_blank"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i id="arrow-7" class="fas fa-angle-right"></i></a></span>
  </div>
-
-
-
-
-
 <div id="col-6">
  <div class="container">
  <a id="down-2"></a>
@@ -62,8 +50,6 @@
 
 <div id="col-7" class="container">
  </div>
-
-
 
 
 
