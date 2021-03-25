@@ -21,7 +21,7 @@
 <a id="down-1"></a>
 <h4 class="text_equipe">Somos uma equipe altamente qualificada e competente, que em apenas 7 (sete) anos produziu mais de uma centena de soluções em Marketing Digital. Temos grandes cases durante essa trajetória e parceiros satisfeitos que acreditaram em nosso conhecimento.</h4>
 <div id="otima-logo"></div>
-<div><button id="b-sucesso">Casos de Succeso&nbsp;&nbsp;<i id="arrow-4" class="fas fa-angle-down"></i></button></div>
+<div><button id="b-sucesso">Casos de Sucesso&nbsp;&nbsp;<i id="arrow-4" class="fas fa-angle-down"></i></button></div>
 </div>
 
 <div id="col-3" class="container">
