@@ -15,9 +15,9 @@ header {
 }
 
 .navigation > ul {
-  color: #fff;
+  color: #fff !important;
   font-family: inherit;
-  list-style-type: none;
+  list-style-type: none !important;
   margin: 0;
   padding: 0;
   font-weight: 600;
@@ -25,18 +25,18 @@ header {
 }
 
 .navigation > ul a {
-  color: #fff;
+  color: #fff !important;
   font-family: inherit;
-  list-style-type: none;
+  list-style-type: none !important;
   margin: 0;
   padding: 0;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 .navigation > ul a:hover {
 
   font-family: inherit;
-  list-style-type: none;
+  list-style-type: none !important;
   margin: 0;
   padding: 0;
   opacity: 0.8;
@@ -45,20 +45,20 @@ header {
 }
  .navigation > ul:first-child:hover {
 
-  transform: rotate(-4deg);
+  transform: rotate(-4deg) !important;
 }
 
 
 /* WORDPRESS TAB */
 .sobre {
-  font-size: 2vw;
+  font-size: 2vw !important;
   padding: 100px 60px 0px 60px;
   text-indent: 50px;
   border-radius: 50px;
 }
 
 .contato {
-  font-size: 2vw;
+  font-size: 2vw !important;
   padding: 0px 60px 0px 60px;
 
   border-radius: 50px;
