@@ -1,0 +1,83 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: Ambiance Pro 1.1.4\n"
+"POT-Creation-Date: 2019-06-20 10:04-0400\n"
+"PO-Revision-Date: 2019-06-20 10:00-0400\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: style.css\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#. Theme Name of the plugin/theme
+#: functions.php:15
+msgid "Ambiance Pro"
+msgstr ""
+
+#: functions.php:130
+msgid "No Content"
+msgstr ""
+
+#: functions.php:162
+msgid "Header Menu"
+msgstr ""
+
+#: functions.php:162
+msgid "Footer Menu"
+msgstr ""
+
+#: functions.php:287
+msgid "Welcome Message"
+msgstr ""
+
+#: functions.php:288
+msgid ""
+"Widgets in this section will display above posts at the top of the homepage."
+msgstr ""
+
+#: lib/customize.php:49
+msgid "Accent Color"
+msgstr ""
+
+#: lib/customize.php:50
+msgid "Change the default accent color for links and buttons."
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "http://my.studiopress.com/themes/ambiance/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"If your website is a party, then you're the host. And you need a theme that "
+"gives your readers what they want most: you. Your images. Your words. Your "
+"character."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "StudioPress"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://www.studiopress.com/"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Blog"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Landing"
+msgstr ""

@@ -1,0 +1,513 @@
+# <!=Copyright (C) 2020 StudioPress
+# This file is distributed under the GPL-2.0-or-later.=!>
+msgid ""
+msgstr ""
+"Project-Id-Version: Academy Pro 1.0.7\n"
+"Report-Msgid-Bugs-To: StudioPress <translations@studiopress.com>\n"
+"POT-Creation-Date: 2020-04-15 19:34:35+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2020-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Country: United States\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: "
+"__;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;_n_noop:1,2;_nx_noop:1,2,3c;esc_"
+"attr__;esc_html__;esc_attr_e;esc_html_e;esc_attr_x:1,2c;esc_html_x:1,2c;\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-Bookmarks: \n"
+"X-Textdomain-Support: yes\n"
+
+#: front-page.php:166
+msgid "Main Content"
+msgstr ""
+
+#: functions.php:147
+msgid "Menu"
+msgstr ""
+
+#: functions.php:149
+msgid "Submenu"
+msgstr ""
+
+#: functions.php:223
+msgid "Home - Large Portrait"
+msgstr ""
+
+#: functions.php:276
+msgid "Skip to footer"
+msgstr ""
+
+#: functions.php:287
+msgid "Header Menu"
+msgstr ""
+
+#: functions.php:288
+msgid "Footer Menu"
+msgstr ""
+
+#: functions.php:403
+msgid "Continue Reading"
+msgstr ""
+
+#: functions.php:501 functions.php:663
+msgid "Footer CTA"
+msgstr ""
+
+#: functions.php:606
+msgid "Close Top Banner"
+msgstr ""
+
+#: functions.php:621
+msgid "Front Page 1"
+msgstr ""
+
+#: functions.php:622
+msgid "This is the front page 1 section."
+msgstr ""
+
+#: functions.php:628
+msgid "Front Page 2"
+msgstr ""
+
+#: functions.php:629
+msgid "This is the front page 2 section."
+msgstr ""
+
+#: functions.php:635
+msgid "Front Page 3"
+msgstr ""
+
+#: functions.php:636
+msgid "This is the front page 3 section."
+msgstr ""
+
+#: functions.php:642
+msgid "Front Page 4"
+msgstr ""
+
+#: functions.php:643
+msgid "This is the front page 4 section."
+msgstr ""
+
+#: functions.php:649
+msgid "Front Page 5"
+msgstr ""
+
+#: functions.php:650
+msgid "This is the front page 5 section."
+msgstr ""
+
+#: functions.php:656
+msgid "Front Page 6"
+msgstr ""
+
+#: functions.php:657
+msgid "This is the front page 6 section."
+msgstr ""
+
+#: functions.php:664
+msgid "This is the bottom call to action section."
+msgstr ""
+
+#: lib/customizer/customize.php:30
+msgid "Set up the Academy Pro settings and defaults."
+msgstr ""
+
+#: lib/customizer/customize.php:32
+msgid "Academy Pro Settings"
+msgstr ""
+
+#: lib/customizer/customize.php:40
+msgid "Modify the Academy Pro Theme basic settings."
+msgstr ""
+
+#: lib/customizer/customize.php:41
+msgid "Basic Settings"
+msgstr ""
+
+#: lib/customizer/customize.php:58
+msgid "Show the front page hero section?"
+msgstr ""
+
+#: lib/customizer/customize.php:59
+msgid "Check the box to display the hero section on the top of the front page."
+msgstr ""
+
+#: lib/customizer/customize.php:78
+msgid "Enable the \"intro\" paragraph style on single posts?"
+msgstr ""
+
+#: lib/customizer/customize.php:79
+msgid ""
+"Check the box to automatically apply the \"intro\" font size and style to "
+"the first paragraph of all single posts."
+msgstr ""
+
+#: lib/customizer/customize.php:98
+msgid "Show featured image on posts?"
+msgstr ""
+
+#: lib/customizer/customize.php:99
+msgid ""
+"Check the box if you would like to display the featured image above the "
+"content on single posts."
+msgstr ""
+
+#: lib/customizer/customize.php:110
+msgid "Modify the settings for the top banner section."
+msgstr ""
+
+#: lib/customizer/customize.php:110
+msgid ""
+"Each time the customizer is opened, the top banner will be displayed in the "
+"live preview so you can easily customize the content."
+msgstr ""
+
+#: lib/customizer/customize.php:111
+msgid "Top Banner Settings"
+msgstr ""
+
+#: lib/customizer/customize.php:128
+msgid "Check the box to display a dismissible banner at the top of all pages."
+msgstr ""
+
+#: lib/customizer/customize.php:129
+msgid "Show Top Banner?"
+msgstr ""
+
+#: lib/customizer/customize.php:149
+msgid "Change the text for the dismissible banner (allows HTML)."
+msgstr ""
+
+#: lib/customizer/customize.php:150
+msgid "Top Banner Text"
+msgstr ""
+
+#: lib/customizer/customize.php:174
+msgid "Modify the text settings for the front page hero section."
+msgstr ""
+
+#: lib/customizer/customize.php:175
+msgid "Hero Text Settings"
+msgstr ""
+
+#: lib/customizer/customize.php:194
+msgid "Change the title text for the front page hero section."
+msgstr ""
+
+#: lib/customizer/customize.php:195
+msgid "Hero Title"
+msgstr ""
+
+#: lib/customizer/customize.php:227
+msgid "Change the description text for the front page hero section."
+msgstr ""
+
+#: lib/customizer/customize.php:228
+msgid "Hero Intro Paragraph"
+msgstr ""
+
+#: lib/customizer/customize.php:252
+msgid "Modify the button text and link settings in the front page hero section."
+msgstr ""
+
+#: lib/customizer/customize.php:253
+msgid "Hero Button Settings"
+msgstr ""
+
+#: lib/customizer/customize.php:272
+msgid "Change the text for the colored button in the front page hero section."
+msgstr ""
+
+#: lib/customizer/customize.php:273
+msgid "Hero Colored Button Text"
+msgstr ""
+
+#: lib/customizer/customize.php:290
+msgid "Change the url for the colored button in the front page hero section."
+msgstr ""
+
+#: lib/customizer/customize.php:291
+msgid "Hero Colored Button URL"
+msgstr ""
+
+#: lib/customizer/customize.php:309
+msgid "Change the text for the underlined button in the front page hero section."
+msgstr ""
+
+#: lib/customizer/customize.php:310
+msgid "Hero Underlined Button Text"
+msgstr ""
+
+#: lib/customizer/customize.php:327
+msgid "Change the url for the underlined button in the front page hero section."
+msgstr ""
+
+#: lib/customizer/customize.php:328
+msgid "Hero Underlined Button URL"
+msgstr ""
+
+#: lib/customizer/customize.php:364
+msgid "Modify the video settings for the front page hero section."
+msgstr ""
+
+#: lib/customizer/customize.php:365
+msgid "Hero Video Settings"
+msgstr ""
+
+#: lib/customizer/customize.php:383
+msgid ""
+"If you are using a video that is hosted with a third party service "
+"(examples: YouTube, Vimeo, etc.), enter the video URL here. If you will be "
+"hosting the video on your site instead, leave this field empty."
+msgstr ""
+
+#: lib/customizer/customize.php:383
+msgid "Example: https://player.vimeo.com/video/228990326"
+msgstr ""
+
+#: lib/customizer/customize.php:384
+msgid "Hosted Video URL"
+msgstr ""
+
+#: lib/customizer/customize.php:418
+msgid "Video Upload"
+msgstr ""
+
+#: lib/customizer/customize.php:419
+msgid ""
+"If you're not using a third party video hosting service, click Select File "
+"to upload a video or choose an already uploaded video from the media "
+"library."
+msgstr ""
+
+#: lib/customizer/customize.php:423 lib/customizer/customize.php:428
+msgid "Select File"
+msgstr ""
+
+#: lib/customizer/customize.php:424
+msgid "Change File"
+msgstr ""
+
+#: lib/customizer/customize.php:425
+msgid "Default"
+msgstr ""
+
+#: lib/customizer/customize.php:426
+msgid "Remove"
+msgstr ""
+
+#: lib/customizer/customize.php:427
+msgid "No file selected"
+msgstr ""
+
+#: lib/customizer/customize.php:429
+msgid "Choose File"
+msgstr ""
+
+#: lib/customizer/customize.php:449
+msgid "Select an image for the video thumbnail."
+msgstr ""
+
+#: lib/customizer/customize.php:450
+msgid "Hero Video Thumbnail Image"
+msgstr ""
+
+#: lib/customizer/customize.php:461
+msgid "Modify the settings for the front page logo section."
+msgstr ""
+
+#: lib/customizer/customize.php:462
+msgid "Hero Logo Settings"
+msgstr ""
+
+#: lib/customizer/customize.php:481
+msgid ""
+"Change the heading text that displays above the logo section if any logos "
+"are uploaded."
+msgstr ""
+
+#: lib/customizer/customize.php:482
+msgid "Hero Logos Heading Text"
+msgstr ""
+
+#: lib/customizer/customize.php:507
+msgid "Hero Logo Images"
+msgstr ""
+
+#: lib/customizer/customize.php:508
+msgid "You can upload and crop up to 5 logo images."
+msgstr ""
+
+#: lib/customizer/customize.php:509
+msgid ""
+"Each logo will be displayed at a maximum size of 160px by 40px. The "
+"recommended logo size is 320px wide by 80px tall."
+msgstr ""
+
+#: lib/customizer/customize.php:518
+msgid "Logo 1"
+msgstr ""
+
+#: lib/customizer/customize.php:519
+msgid "Logo 2"
+msgstr ""
+
+#: lib/customizer/customize.php:520
+msgid "Logo 3"
+msgstr ""
+
+#: lib/customizer/customize.php:521
+msgid "Logo 4"
+msgstr ""
+
+#: lib/customizer/customize.php:522
+msgid "Logo 5"
+msgstr ""
+
+#: lib/customizer/customize.php:540
+#. translators: %s is replaced with a label representing the logo image number,
+#. such as "Logo 3"
+msgid "Select an image to display for %s."
+msgstr ""
+
+#: lib/customizer/customize.php:568
+msgid ""
+"Change the default primary color (i.e. linked titles, menu links, post info "
+"links, buttons, and more)."
+msgstr ""
+
+#: lib/customizer/customize.php:569
+msgid "Primary Color"
+msgstr ""
+
+#: lib/customizer/customize.php:582
+msgid "Grid Layout Options"
+msgstr ""
+
+#: lib/customizer/customize.php:583
+msgid "These options apply to the Grid Layout if selected for categories and tags."
+msgstr ""
+
+#: lib/customizer/customize.php:603
+msgid "Apply the grid layout as the default layout for categories and tags?"
+msgstr ""
+
+#: lib/customizer/customize.php:622
+msgid "Display the featured image above the title?"
+msgstr ""
+
+#: lib/customizer/customize.php:641
+msgid "Select one of the following"
+msgstr ""
+
+#: lib/customizer/customize.php:647
+msgid "Entry content"
+msgstr ""
+
+#: lib/customizer/customize.php:648
+msgid "Entry excerpts"
+msgstr ""
+
+#: lib/customizer/customize.php:664
+msgid "Limit content to how many characters? (Enter 0 for no limit)"
+msgstr ""
+
+#: lib/customizer/customize.php:683
+msgid "Grid Layout Posts Per Page"
+msgstr ""
+
+#: lib/grid-layout.php:15
+msgid "Three-column Grid"
+msgstr ""
+
+#: lib/helper-functions.php:36
+msgid ""
+"Limited Time Offer - Try the course right now, <a href=\"#\">FREE for 14 "
+"days</a>!"
+msgstr ""
+
+#: lib/helper-functions.php:49
+msgid "Build Your Online Training Business the Smarter Way"
+msgstr ""
+
+#: lib/helper-functions.php:62
+msgid ""
+"Discover how you can build a profitable online training business in record "
+"time. Create, launch, and scale online courses even if you have never made "
+"a dollar online, created a single lesson, or have no marketing list."
+msgstr ""
+
+#: lib/helper-functions.php:75
+msgid "Join Now"
+msgstr ""
+
+#: lib/helper-functions.php:88
+msgid "Get More Info"
+msgstr ""
+
+#: lib/helper-functions.php:101
+msgid "As Featured In:"
+msgstr ""
+
+#: lib/woocommerce/woocommerce-notice.php:55
+#. translators: %s: child theme name
+msgid ""
+"Please install and activate <a "
+"href=\"https://wordpress.org/plugins/genesis-connect-woocommerce/\" "
+"target=\"_blank\">Genesis Connect for WooCommerce</a> to <strong>enable "
+"WooCommerce support for %s</strong>."
+msgstr ""
+
+#: lib/woocommerce/woocommerce-notice.php:72
+msgid "install and activate Genesis Connect for WooCommerce"
+msgstr ""
+
+#: lib/woocommerce/woocommerce-notice.php:76
+#. translators: 1: plugin install prompt presented as link, 2: child theme name
+msgid "Please %1$s to <strong>enable WooCommerce support for %2$s</strong>."
+msgstr ""
+
+#: lib/woocommerce/woocommerce-setup.php:101
+msgid "Previous Page"
+msgstr ""
+
+#: lib/woocommerce/woocommerce-setup.php:102
+msgid "Next Page"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "Academy Pro"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "https://my.studiopress.com/themes/academy/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"The theme for online course creators, membership site owners, and "
+"educational content marketers."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "StudioPress"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://www.studiopress.com/"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Landing"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Pricing"
+msgstr ""

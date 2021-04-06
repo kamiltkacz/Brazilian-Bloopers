@@ -1,0 +1,39 @@
+/*
+Genesis AMP styling.
+This currently loads only on AMP pages.
+*/
+
+html {
+	scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+	html {
+		scroll-behavior: auto;
+	}
+
+}
+
+.gb-block-container {
+	overflow: hidden;
+}
+
+.gb-block-spacer hr {
+	min-height: 30px;
+}
+
+/* Reveals the submenu upon tabbing with keyboard.
+--------------------------------------------- */
+
+/*
+ * :focus-within needs its own selector.
+ * Why? If the event a browser does not recognize this pseudo-class, only this
+ * selector and its declarations are ignored. Isolating it ensures the submenu
+ * animation works on :hover.
+ */
+.menu .menu-item:focus-within > .sub-menu {
+	transform: scaleY(1);
+	left: auto;
+	opacity: 1;
+}

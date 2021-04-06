@@ -1,0 +1,842 @@
+body {
+	color: #333;
+	font-family: "Libre Baskerville", Georgia, serif;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 1.75;
+}
+
+p,
+ul,
+ol,
+dl {
+	font-size: 16px;
+	line-height: 1.75;
+}
+
+/* Regular content width.
+---------------------------------------------------------------------------- */
+
+.wp-block {
+	max-width: 680px;
+}
+
+/* Width of "wide" blocks
+---------------------------------------------------------------------------- */
+
+.wp-block[data-align="full"] .wp-block[data-align="wide"],
+.wp-block[data-align="wide"] .wp-block[data-align="wide"],
+.wp-block[data-align="wide"] {
+	max-width: 1200px;
+}
+
+.wp-block[data-align="full"],
+.wp-block[data-align="wide"] .wp-block,
+.wp-block[data-align="full"] .wp-block {
+	max-width: none;
+}
+
+/* Width of inner blocks
+---------------------------------------------------------------------------- */
+
+.wp-block[data-align="wide"] .wp-block,
+.wp-block[data-align="full"] .wp-block {
+	max-width: none;
+}
+
+/* Alignment
+---------------------------------------------------------------------------- */
+
+.has-text-align-center {
+	text-align: center;
+}
+
+.has-text-align-left {
+	text-align: left;
+}
+
+.has-text-align-right {
+	text-align: right;
+}
+
+/* Typography
+---------------------------------------------------------------------------- */
+
+a {
+	color: #000cff;
+	text-decoration: underline;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: #111;
+	font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+	font-weight: 900;
+	line-height: 1.2;
+	margin: 0 0 20px;
+}
+
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 700;
+}
+
+h1 {
+	font-size: 56px;
+	letter-spacing: -0.03em;
+	line-height: 1;
+}
+
+h2 {
+	font-size: 40px;
+	letter-spacing: -0.02em;
+	line-height: 1.1;
+}
+
+h3 {
+	color: #111;
+	font-size: 28px;
+	letter-spacing: -0.01em;
+	line-height: 1.23;
+}
+
+h2,
+h3,
+h4 {
+	margin-bottom: 20px;
+	margin-top: 40px;
+}
+
+
+h4 {
+	color: #000cff;
+	font-size: 24px;
+	line-height: 1.2;
+}
+
+h5,
+h6 {
+	color: #000cff;
+	font-size: 18px;
+	letter-spacing: 0.1em;
+	line-height: 1.5;
+	text-transform: uppercase;
+}
+
+h6 {
+	color: #555;
+}
+
+.editor-post-title__block .editor-post-title__input {
+	color: #111;
+	font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+	line-height: 1.2;
+	font-size: 42px;
+	font-weight: 900;
+	margin: 0 0 20px;
+}
+
+p.has-drop-cap:not(:focus)::first-letter {
+	font-size: 7.5em;
+	margin: 0.16em 0.08em 0 -0.035em;
+}
+
+.bold-heading-text {
+	font-size: 32px;
+	letter-spacing: -0.02em;
+	line-height: 1;
+	margin-bottom: 35px;
+}
+
+.authority-subtitle {
+	color: #000cff;
+	display: block;
+	font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+	font-size: 13px;
+	font-weight: 700;
+	letter-spacing: 0.07em;
+	line-height: 1.5;
+	margin-bottom: 24px;
+	text-transform: uppercase;
+}
+
+.entry-title a {
+	color: #111;
+	text-decoration: none;
+}
+
+.entry-title a:focus,
+.entry-title a:hover {
+	color: #000cff;
+}
+
+.logos-section-header {
+	color: #111;
+	font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	letter-spacing: 0.1em;
+	line-height: 1.5;
+	margin-bottom: 30px;
+	margin-top: 10px;
+	text-transform: uppercase;
+}
+
+@media only screen and (min-width: 1514px) {
+
+	.bold-heading-text {
+		font-size: 52px;
+		margin-left: 0;
+		margin-bottom: 35px;
+		margin-top: 60px;
+	}
+
+	.block-content-indent {
+		margin-left: 35px;
+	}
+
+	.wp-block-buttons.block-content-indent {
+		margin-left: 31px;
+	}
+
+}
+
+/* Background Color
+---------------------------------------------------------------------------- */
+
+p.has-background {
+	padding: 25px 30px;
+}
+
+p.has-text-color a,
+p.has-background a {
+	color: inherit;
+}
+
+p.has-text-color a:focus,
+p.has-background a:focus,
+p.has-text-color a:hover,
+p.has-background a:hover {
+	color: inherit;
+	text-decoration: none;
+}
+
+/* Blockquotes and captions
+---------------------------------------------------------------------------- */
+
+.wp-block[data-align="wide"] .wp-block-pullquote blockquote::before,
+.wp-block-pullquote blockquote::before,
+.wp-block-quote::before {
+	color: #ccc;
+	content: "\201C";
+	display: block;
+	font-family: "Libre Baskerville", Georgia, serif;
+	font-size: 40px;
+	font-style: italic;
+	font-weight: 500;
+	height: 0;
+	left: -0.5em;
+	line-height: 1;
+	position: relative;
+	text-align: left;
+	top: 0;
+}
+
+.wp-block[data-align="wide"] .wp-block-pullquote blockquote::before,
+.wp-block-quote.is-style-large::before {
+	font-size: 80px;
+	top: -10px;
+}
+
+.wp-block-pullquote blockquote::before {
+	font-size: 60px;
+	height: 1em;
+	left: 0;
+	text-align: center;
+}
+
+.wp-block-pullquote.is-style-solid-color blockquote::before {
+	color: inherit;
+	padding-top: 16px;
+}
+
+.wp-block-pullquote blockquote.has-text-color::before {
+	color: currentColor;
+}
+
+.wp-block-quote,
+.wp-block-pullquote {
+	border: none;
+	margin: 24px 0 36px;
+}
+
+.wp-block-pullquote.alignleft {
+	margin: 0 2em 1.5em 0;
+}
+
+.wp-block-pullquote.alignright {
+	margin: 0 0 1.5em 2em;
+}
+
+.wp-block-pullquote.is-style-solid-color blockquote {
+	max-width: 80%;
+}
+
+.wp-block-pullquote.is-style-solid-color:not(.has-text-color) blockquote {
+	color: #fff;
+}
+
+.wp-block-quote:not(.is-large):not(.is-style-large) {
+	border: none;
+}
+
+.wp-block-pullquote:not(.is-style-solid-color)[style*="border-color"] {
+	border: 2px solid;
+	border-left: none;
+	border-right: none;
+}
+
+.wp-block-quote p,
+.wp-block-pullquote p {
+	color: inherit;
+	font-size: 18px;
+	font-style: italic;
+	line-height: 1.8;
+	margin-bottom: 42px;
+}
+
+.wp-block-pullquote p {
+	text-align: center;
+}
+
+.wp-block-pullquote p,
+.wp-block-pullquote.is-style-solid-color blockquote p,
+.wp-block-quote.is-style-large p {
+	font-size: 22px;
+}
+
+.wp-block-quote .wp-block-quote__citation,
+.wp-block-pullquote .wp-block-pullquote__citation {
+	color: inherit;
+	display: block;
+	font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 900;
+	letter-spacing: 0.08em;
+	margin-top: -25px;
+	text-align: inherit;
+	text-transform: uppercase;
+}
+
+.wp-block-pullquote .wp-block-pullquote__citation {
+	margin-top: 40px;
+	text-align: center;
+}
+
+.wp-block-pullquote.is-style-solid-color .wp-block-pullquote__citation {
+	text-transform: uppercase;
+}
+
+.wp-block figcaption {
+	font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	letter-spacing: 0.1em;
+	line-height: 1.5;
+	margin-bottom: 30px;
+	margin-top: 10px;
+	text-transform: uppercase;
+}
+
+.blocks-gallery-caption {
+	color: #111;
+}
+
+.blocks-gallery-item figcaption {
+	margin-bottom: 0;
+}
+
+.wp-block-quote[class*="align"] .wp-block-quote__citation,
+.wp-block-pullquote[class*="align"] .wp-block-pullquote__citation {
+	text-align: center;
+}
+
+/* Cover Image
+---------------------------------------------------------------------------- */
+
+.wp-block-cover .wp-block-cover-text {
+	color: #fff;
+	font-size: 36px;
+}
+
+/* Lists
+---------------------------------------------------------------------------- */
+
+[data-type="core/list"] li {
+	line-height: 1.625;
+	margin-bottom: 0;
+}
+
+/* Preformatted elements
+---------------------------------------------------------------------------- */
+
+.wp-block-verse pre,
+.wp-block-preformatted pre {
+	font-family: monospace;
+	font-size: 18px;
+	line-height: 1.625 !important;
+}
+
+/* Separators
+---------------------------------------------------------------------------- */
+
+hr.wp-block-separator {
+	border: none;
+	border-bottom: 1px solid currentColor;
+	color: #eee;
+	margin: 1.65em auto;
+}
+
+.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots) {
+	height: 1px;
+}
+
+hr.wp-block-separator.is-style-dots {
+	border-width: 0;
+	color: #111;
+}
+
+/* Tables
+---------------------------------------------------------------------------- */
+
+table {
+	width: 100%;
+}
+
+.wp-block-table {
+	line-height: 2;
+}
+
+.wp-block-table td,
+.wp-block-table th,
+.wp-block-table tr {
+	border: none;
+	vertical-align: top;
+}
+
+.wp-block-table th {
+	font-weight: 700;
+}
+
+.wp-block-table tr {
+	border-top: 1px solid #eee;
+}
+
+.wp-block-table tr:last-of-type {
+	border-bottom: 1px solid #eee;
+}
+
+.wp-block-table tbody {
+	border-bottom: 1px solid #eee;
+}
+
+.wp-block-table.is-style-stripes {
+	border-bottom-width: 0;
+}
+
+/* Buttons
+---------------------------------------------------------------------------- */
+
+.gb-button,
+.wp-block-button .wp-block-button__link {
+	transition: background-color 0.25s ease-in, border-color ease-in, transform 0.75s cubic-bezier(0.44, 0.51, 0.24, 0.99), box-shadow 1s cubic-bezier(0.44, 0.51, 0.24, 0.99);
+}
+
+.gb-button {
+	background-color: #000cff;
+	font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+	font-weight: 700;
+	transform: translate3d(0, 0, 0);
+}
+
+.wp-block-button .wp-block-button__link {
+	background-color: #000cff;
+	border: none;
+	border-radius: 0;
+	color: #fff;
+	cursor: pointer;
+	font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+	font-size: 16px;
+	padding: 16px 24px;
+	transform: translate3d(0, 0, 0);
+	white-space: normal;
+}
+
+/* Button Variations */
+.wp-block-button.is-style-outline .wp-block-button__link {
+	background-color: transparent;
+	border: 2px solid currentColor;
+	padding: 14px 28px;
+}
+
+.gb-button:focus,
+.gb-button:hover,
+.wp-block-button .wp-block-button__link:focus,
+.wp-block-button .wp-block-button__link:hover,
+.wp-block-button.is-style-outline .wp-block-button__link:focus,
+.wp-block-button.is-style-outline .wp-block-button__link:hover {
+	box-shadow: inset 0 0 200px rgba(230, 230, 230, 0.25), 0 6px 24px rgba(0, 0, 0, 0.14);
+	transform: translate3d(0, -3px, 0);
+}
+
+/* Galleries
+---------------------------------------------------------------------------- */
+
+.wp-block-gallery .blocks-gallery-item {
+	margin-bottom: 16px;
+}
+
+/* WooCommerce Product
+---------------------------------------------------------------------------- */
+
+.product-price {
+	font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+	font-size: 20px;
+}
+
+.product-price ins {
+	font-weight: 700;
+	text-decoration: none;
+}
+
+.product-title {
+	color: #111;
+	font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+	font-size: 16px;
+	font-weight: 900;
+}
+
+.product-add-to-cart {
+	background-color: #fff;
+	border: 2px solid #000cff;
+	border-radius: 0;
+	box-shadow: 0 0 0 rgba(0, 0, 0, 0.24);
+	color: #000cff;
+	cursor: pointer;
+	display: inline-block;
+	font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 1;
+	padding: 16px 20px;
+	text-align: center;
+	text-decoration: none;
+	transform: translate3d(0, 0, 0);
+	white-space: normal;
+	width: auto;
+}
+
+.product-preview {
+	text-align: left;
+}
+
+/* Media and Image Blocks
+---------------------------------------------------------------------------- */
+
+.wp-block-image.image-border img {
+	border: 10px solid #fff;
+	box-shadow: 0 20px 80px rgba(0, 0, 0, 0.2);
+}
+
+.wp-block-image.stylized-background img {
+	max-width: 400px;
+	width: 100%;
+}
+
+.wp-block-media-text {
+	position: relative;
+}
+
+.wp-block-media-text .block-library-media-text__media-container img {
+	box-shadow: 0 20px 80px rgba(0, 0, 0, 0.2);
+	border: 10px solid #fff;
+	max-width: 400px;
+	vertical-align: middle;
+	width: 100%;
+}
+
+.wp-block-media-text .block-library-media-text__media-container > * {
+	margin-left: 0;
+}
+
+@media only screen and (min-width: 1290px) {
+
+	.wp-block-image.stylized-background {
+		padding: 0 40px;
+	}
+
+	.wp-block-media-text .editor-inner-blocks {
+		margin-left: 20%;
+		padding: 0;
+	}
+
+	.wp-block-media-text.has-media-on-the-right .editor-inner-blocks {
+		margin-left: 0;
+		margin-right: 20%;
+	}
+
+	.wp-block-media-text .block-library-media-text__media-container > * {
+		margin-left: 50px;
+	}
+
+	.wp-block-image.stylized-background::before {
+		background: #f4f4f4;
+		content: "";
+		display: block;
+		right: 0;
+		height: calc(100% - 160px);
+		position: absolute;
+		top: 50px;
+		width: 142%;
+		z-index: -1;
+	}
+
+	.wp-block-media-text .block-library-media-text__media-container::before {
+		background: #f4f4f4;
+		content: "";
+		display: block;
+		left: 0;
+		height: calc(100% - 100px);
+		position: absolute;
+		top: 50px;
+		width: 150%;
+		z-index: -1;
+	}
+
+	.wp-block-image.stylized-background::after,
+	.wp-block-media-text .block-library-media-text__media-container::after {
+		background-color: #000cff;
+		content: "";
+		display: block;
+		height: 5px;
+		position: absolute;
+		left: 0;
+		top: 105px;
+		transform: translateX(-50%);
+		width: 40px;
+	}
+
+	.wp-block-image.stylized-background::before,
+	.wp-block-media-text.has-media-on-the-right .block-library-media-text__media-container::before {
+		right: 0;
+		left: auto;
+	}
+
+	.wp-block-image.stylized-background::after,
+	.wp-block-media-text.has-media-on-the-right .block-library-media-text__media-container::after {
+		right: -35px;
+		left: auto;
+		transform: translateX(-50%);
+	}
+
+	.wp-block-media-text.has-media-on-the-right .block-library-media-text__media-container > * {
+		margin-left: -50px;
+	}
+
+}
+
+/* Category Block
+---------------------------------------------------------------------------- */
+
+.wp-block-categories ul {
+	margin-left: 0;
+	padding-left: 0;
+}
+
+.wp-block-categories li {
+	list-style-type: none;
+}
+
+.wp-block[data-align="right"] .wp-block-categories__list {
+	text-align: right;
+}
+
+.wp-block[data-align="full"] .wp-block-categories__list {
+	padding: 0 30px;
+}
+
+/* Latest Posts Block
+---------------------------------------------------------------------------- */
+
+.wp-block-latest-posts {
+	margin-left: 0;
+	padding-left: 0;
+}
+
+.wp-block-latest-posts li {
+	list-style-type: none;
+}
+
+.wp-block[data-align="center"] .wp-block-latest-posts {
+	text-align: center;
+}
+
+.wp-block[data-align="full"] .wp-block-latest-posts {
+	padding: 0 30px;
+}
+
+/* Genesis Blocks
+---------------------------------------------------------------------------- */
+
+.gb-block-post-grid .is-grid,
+.gb-block-post-grid .is-list article {
+	grid-gap: 0 4.5em;
+}
+
+.gb-block-post-grid .is-grid article {
+	min-width: 0;
+}
+
+.gb-block-post-grid-image a {
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+}
+
+.gb-block-post-grid-image a::before {
+	background: #f4f4f4;
+	content: "";
+	left: -30px;
+	height: calc(100% + 10px);
+	position: absolute;
+	top: 30px;
+	width: calc(100% + 60px);
+	z-index: -1;
+}
+
+.gb-block-post-grid-image img {
+	box-shadow: 0 16px 65px rgba(0, 0, 0, 0.18);
+	vertical-align: middle;
+}
+
+.gb-block-post-grid-image img {
+	transition: transform 0.5s cubic-bezier(0.44, 0.51, 0.24, 0.99), box-shadow 0.75s cubic-bezier(0.44, 0.51, 0.24, 0.99);
+	transform: translate3d(0, 0, 0);
+}
+
+.gb-block-post-grid-image a:focus img,
+.gb-block-post-grid-image a:hover img {
+	box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+	transform: translate3d(0, 10px, 0);
+}
+
+.gb-block-post-grid-header {
+	margin-bottom: 24px;
+}
+
+.gb-block-post-grid header .gb-block-post-grid-title a {
+	color: #111;
+	text-decoration: none;
+}
+
+.gb-block-post-grid .gb-block-post-grid-header .gb-block-post-grid-byline,
+.gb-block-post-grid .gb-block-post-grid-header .gb-block-post-grid-byline a {
+	color: #555;
+	font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 700;
+	letter-spacing: 0.08em;
+	line-height: 1.5;
+	text-transform: uppercase;
+	margin: 0 5px 0 0;
+}
+
+.gb-block-post-grid-text {
+	position: relative;
+	z-index: 2;
+}
+
+.gb-block-post-grid a.gb-block-post-grid-more-link {
+	color: #000cff;
+}
+
+.gb-block-post-grid a.gb-block-post-grid-more-link:hover {
+	color: #333;
+}
+
+.gb-block-post-grid a.gb-block-post-grid-more-link,
+.gb-block-post-grid a.gb-block-post-grid-more-link:hover {
+	border-bottom: 1px solid currentColor;
+	display: inline;
+	font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+	font-size: 13px;
+	font-weight: 700;
+	letter-spacing: 0.08em;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.gb-block-post-grid-more-link::after {
+	content: "\2192";
+}
+
+.gb-block-newsletter {
+	position: relative;
+}
+
+.gb-block-newsletter-label,
+.gb-newsletter-email-address-label {
+	color: #707070;
+	display: block;
+	font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+	font-size: 13px;
+	font-weight: 700;
+	letter-spacing: 0.08em;
+	margin-top: 24px;
+	text-transform: uppercase;
+}
+
+.gb-block-newsletter input:not([type="submit"]) {
+	background: #fff;
+	border: 1px solid #f4f4f4;
+	box-shadow: 0 10px 60px rgba(0, 0, 0, 0.14);
+	padding: 23px 24px;
+	-webkit-appearance: none;
+	transition: box-shadow 0.15s cubic-bezier(0.44, 0.51, 0.24, 0.99);
+}
+
+.gb-block-newsletter input:not([type="submit"]):focus {
+	box-shadow: 0 3px 20px rgba(0, 0, 0, 0.1);
+}
+
+.gb-block-newsletter.inline-submit .gb-block-button {
+	bottom: 8px;
+	font-size: 16px;
+	margin-bottom: 4px;
+	position: absolute;
+	right: 8px;
+	text-align: center;
+	width: -webkit-max-content;
+	width: max-content;
+}
+
+.gb-pricing-table-price,
+.gb-pricing-table-title {
+	font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+}
+
+.gb-pricing-table-price strong {
+	font-weight: 900;
+}
+
+.pricing-featured .gb-block-pricing-table-inside {
+	box-shadow: 0 20px 80px rgba(0, 0, 0, 0.2);
+}

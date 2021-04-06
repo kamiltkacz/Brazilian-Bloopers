@@ -1,0 +1,525 @@
+body {
+	color: #000;
+	font-family: "Noto Serif SC", serif;
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 1.875;
+}
+
+p,
+ul,
+ol,
+dl {
+	font-size: 18px;
+	line-height: 1.875;
+}
+
+/* Alignment
+---------------------------------------------------------------------------- */
+
+.has-text-align-center {
+	text-align: center;
+}
+
+.has-text-align-left {
+	text-align: left;
+}
+
+.has-text-align-right {
+	text-align: right;
+}
+
+/* Regular content width.
+/* 640px + 30px to match paragraph width on front-end and editor.
+---------------------------------------------------------------------------- */
+
+.wp-block {
+	max-width: 670px;
+}
+
+/* Width of "wide" blocks
+/* 960px + 30px so wide images match width in front-end and editor.
+/* 960px = default column width of 640px + .alignwide negative margin of 320px
+---------------------------------------------------------------------------- */
+
+.wp-block[data-align="wide"],
+.wp-block[data-align="full"] .wp-block[data-align="wide"],
+.wp-block[data-align="wide"] .wp-block[data-align="wide"] {
+	max-width: 990px;
+}
+
+.wp-block[data-align="full"],
+.wp-block[data-align="wide"] .wp-block,
+.wp-block[data-align="full"] .wp-block {
+	max-width: none;
+}
+
+/* Typography
+---------------------------------------------------------------------------- */
+
+a {
+	box-shadow: inset 0 -7px 0 0 #eee;
+	border-bottom: 1px solid #ddd;
+	color: #000;
+	transition: all 0.2s ease-in-out;
+}
+
+
+a:hover {
+	box-shadow: inset 0 -25px 0 0 #eee;
+	color: #000;
+}
+
+a,
+a:hover {
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Playfair Display", serif;
+	font-weight: 700;
+	line-height: 1.25;
+	margin: 0 0 10px;
+}
+
+h1 {
+	font-size: 60px;
+}
+
+h2 {
+	font-size: 48px;
+	margin-top: 40px;
+}
+
+h3 {
+	font-size: 30px;
+	margin-top: 40px;
+}
+
+h4 {
+	font-size: 28px;
+	margin-top: 40px;
+}
+
+h5 {
+	font-size: 24px;
+}
+
+h6 {
+	font-size: 20px;
+}
+
+.editor-post-title__block .editor-post-title__input {
+	font-family: "Playfair Display", serif;
+	font-size: 48px;
+	font-weight: 700;
+	line-height: 1.2;
+	margin: 0 0 20px;
+	text-align: center;
+}
+
+.editor-post-title::after {
+	border-bottom: 1px solid #000;
+	content: "";
+	display: block;
+	margin-bottom: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 40px;
+	width: 2.5%;
+}
+
+.has-drop-cap:not(:focus)::first-letter {
+	margin: 0.1em 0.08em 0 -0.08em;
+}
+
+.has-larger-font-size.has-drop-cap:not(:focus)::first-letter,
+.has-small-font-size.has-drop-cap:not(:focus)::first-letter {
+	margin-right: 0.01em;
+}
+
+/* Background Color
+---------------------------------------------------------------------------- */
+
+p.has-background {
+	padding: 25px 30px;
+}
+
+p.box-shadow {
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+p.has-text-color a,
+p.has-background a {
+	color: inherit;
+}
+
+p.has-background a {
+	border-width: 0;
+	box-shadow: none;
+	text-decoration: underline;
+}
+
+p.has-background a:focus,
+p.has-background a:hover,
+p.has-text-color a:focus,
+p.has-text-color a:hover {
+	color: inherit;
+	text-decoration: none;
+}
+
+/* Blockquotes and captions
+---------------------------------------------------------------------------- */
+
+.wp-block-pullquote,
+.wp-block-quote {
+	border: none;
+	margin: 30px 0;
+}
+
+.wp-block-quote:not(.is-large):not(.is-style-large) {
+	border: none;
+	padding: 0;
+}
+
+.wp-block-pullquote.alignleft {
+	margin: 0 20px 20px 0;
+}
+
+.wp-block-pullquote.alignright {
+	margin: 0 0 20px 20px;
+}
+
+.wp-block-pullquote p,
+.wp-block-quote p {
+	font-family: "Playfair Display", serif;
+	font-size: 24px !important;
+	font-style: italic;
+	font-weight: 700;
+	line-height: 1.75;
+	margin-bottom: 10px;
+}
+
+.wp-block-pullquote p,
+.wp-block-quote.is-style-large p {
+	font-size: 30px !important;
+}
+
+.wp-block-pullquote.is-style-solid-color p {
+	color: #fff;
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+.wp-block-pullquote.is-style-solid-color {
+	background-color: #000;
+}
+
+.wp-block-pullquote.is-style-solid-color.alignleft blockquote,
+.wp-block-pullquote.is-style-solid-color.alignright blockquote {
+	max-width: 80%;
+}
+
+.wp-block-pullquote:not(.is-style-solid-color)[style*="border-color"] {
+	border: 2px solid;
+	border-left: none;
+	border-right: none;
+}
+
+.wp-block-pullquote .wp-block-pullquote__citation,
+.wp-block-quote .wp-block-quote__citation {
+	color: #000;
+	display: block;
+	font-family: Poppins, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 400;
+	letter-spacing: 0.5px;
+	text-align: inherit;
+	text-transform: uppercase;
+}
+
+.wp-block-pullquote .wp-block-pullquote__citation {
+	text-align: center;
+}
+
+.wp-block-pullquote.is-style-solid-color .wp-block-pullquote__citation {
+	color: #fff;
+	font-style: italic;
+}
+
+.wp-block-pullquote .has-text-color .wp-block-pullquote__citation,
+.wp-block-pullquote .has-text-color p {
+	color: currentColor;
+}
+
+figcaption {
+	color: #000;
+	font-size: 14px;
+	font-weight: 600;
+	margin: 0;
+	text-align: center;
+}
+
+.wp-block-pullquote[class*="align"] .wp-block-pullquote__citation,
+.wp-block-quote[class*="align"] .wp-block-quote__citation {
+	text-align: center;
+}
+
+/* Cover Image
+---------------------------------------------------------------------------- */
+
+.wp-block-cover .wp-block-cover-text {
+	color: #fff;
+	font-size: 48px;
+}
+
+/* Font Sizes
+---------------------------------------------------------------------------- */
+
+.has-small-font-size {
+	font-size: 14px;
+}
+
+.has-regular-font-size {
+	font-size: 18px;
+}
+
+.has-large-font-size {
+	font-size: 20px;
+}
+
+.has-larger-font-size {
+	font-size: 24px;
+}
+
+/* Lists
+---------------------------------------------------------------------------- */
+
+.editor-block-list__block li {
+	line-height: 1.625;
+	margin-bottom: 0;
+}
+
+/* Preformatted elements
+---------------------------------------------------------------------------- */
+
+.wp-block-preformatted pre,
+.wp-block-verse pre {
+	font-family: monospace;
+	font-size: 18px;
+	line-height: 1.625 !important;
+}
+
+/* Separators
+---------------------------------------------------------------------------- */
+
+hr.wp-block-separator {
+	border: none;
+	border-top: 1px solid currentColor;
+	color: #eee;
+	margin: 1.65em auto;
+}
+
+.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots) {
+	height: 1px;
+}
+
+hr.wp-block-separator.is-style-dots {
+	border: none;
+}
+
+/* Tables
+---------------------------------------------------------------------------- */
+
+table {
+	width: 100%;
+}
+
+.wp-block-table {
+	line-height: 2;
+}
+
+.wp-block-table td,
+.wp-block-table th,
+.wp-block-table tr {
+	border: none;
+	vertical-align: top;
+}
+
+.wp-block-table th {
+	font-weight: 700;
+}
+
+.wp-block-table tr {
+	border-top: 1px solid #eee;
+}
+
+.wp-block-table tr:last-of-type {
+	border-bottom: 1px solid #eee;
+}
+
+.wp-block-table tbody {
+	border-bottom: 1px solid #eee;
+}
+
+.wp-block-table.is-style-stripes {
+	border-bottom-width: 0;
+}
+
+/* Buttons
+---------------------------------------------------------------------------- */
+
+a.wp-block-button__link,
+a.wp-block-button__link:hover {
+	color: #fff;
+}
+
+.editor-rich-text .button,
+.editor-rich-text__tinymce:focus a.button[data-mce-selected],
+.wp-block-button .wp-block-button__link {
+	border-width: 0;
+	border-radius: 5px;
+	cursor: pointer;
+	font-family: Poppins, sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	height: auto;
+	letter-spacing: 0.5px;
+	line-height: 24px;
+	padding: 15px 30px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	white-space: normal;
+	width: auto;
+}
+
+.wp-block-button.is-style-outline .wp-block-button__link:focus,
+.wp-block-button.is-style-outline .wp-block-button__link:hover {
+	color: #000 !important;
+}
+
+.wp-block-button.is-style-outline .wp-block-button__link {
+	background-color: transparent;
+	border: 2px solid currentColor;
+	padding: 13px 28px;
+}
+
+.editor-rich-text .button:focus,
+.editor-rich-text .button:hover,
+.editor-rich-text__tinymce:focus a.button[data-mce-selected]:focus,
+.editor-rich-text__tinymce:focus a.button[data-mce-selected]:hover,
+.wp-block-button .wp-block-button__link:focus,
+.wp-block-button .wp-block-button__link:hover,
+.wp-block-button.is-style-outline .wp-block-button__link:focus,
+.wp-block-button.is-style-outline .wp-block-button__link:hover {
+	box-shadow: inset 0 0 200px rgba(230, 230, 230, 0.25);
+}
+
+/* Galleries
+---------------------------------------------------------------------------- */
+
+.wp-block-gallery .blocks-gallery-item {
+	margin-bottom: 16px;
+}
+
+/* Category Block
+---------------------------------------------------------------------------- */
+
+.wp-block-categories ul {
+	margin-left: 0;
+	padding-left: 0;
+}
+
+.wp-block-categories li {
+	list-style-type: none;
+}
+
+.wp-block[data-align="right"] .wp-block-categories__list {
+	text-align: right;
+}
+
+.wp-block[data-align="full"] .wp-block-categories__list {
+	padding: 0 30px;
+}
+
+/* Latest Posts Block
+---------------------------------------------------------------------------- */
+
+.wp-block-latest-posts {
+	margin-left: 0;
+	padding-left: 0;
+}
+
+.wp-block-latest-posts li {
+	list-style-type: none;
+}
+
+.wp-block[data-align="center"] .wp-block-latest-posts {
+	text-align: center;
+}
+
+.wp-block[data-align="full"] .wp-block-latest-posts {
+	padding: 0 30px;
+}
+
+/* Columns Block
+---------------------------------------------------------------------------- */
+
+.wp-block[data-align="full"] .wp-block-columns > .editor-inner-blocks {
+	padding: 0 30px;
+}
+
+/* Genesis Blocks
+---------------------------------------------------------------------------- */
+
+.gb-button {
+	font-family: Poppins, sans-serif;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+.gb-block-container.boxshadow {
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Match to GB styling on front-end */
+.gb-block-post-grid h2 {
+	font-size: 28px;
+}
+
+.gb-block-post-grid h2 a {
+	border-width: 0;
+}
+
+.gb-block-post-grid h2 a:hover {
+	box-shadow: none;
+	border-bottom: 1px solid #ddd;
+}
+
+a.gb-text-link,
+.gb-block-post-grid h2 a,
+.gb-block-post-grid h2 a:hover,
+.gb-block-post-grid .gb-block-post-grid-author a,
+.gb-block-post-grid .gb-block-post-grid-byline {
+	color: #000;
+}
+
+.gb-block-post-grid .gb-block-post-grid-author a,
+.gb-block-post-grid a.gb-text-link {
+	border-bottom: 1px solid #ddd;
+	box-shadow: inset 0 -7px 0 0 #eee;
+}
+
+.gb-block-post-grid .gb-block-post-grid-link:hover,
+.gb-block-post-grid .gb-block-post-grid-author a:hover,
+.gb-block-post-grid a.gb-text-link:hover {
+	color: #000;
+	box-shadow: inset 0 -25px 0 0 #eee;
+}
