@@ -1673,6 +1673,7 @@ figcaption,
 
 .no-off-screen-menu .header-left input[type="search"] {
 	text-align: right;
+	display: none;
 }
 
 .no-off-screen-menu .header-left .search-form::before {
@@ -1683,6 +1684,7 @@ figcaption,
 	position: absolute;
 	top: 12px;
 	right: 0;
+	display: none;
 }
 
 /* Header Hero
