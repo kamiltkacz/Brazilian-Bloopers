@@ -539,3 +539,6 @@ genesis_register_sidebar(
 		'description' => __( 'This is the call to action section above the footer.', 'essence-pro' ),
 	]
 );
+
+// // Add Custom Template File
+// include_once( get_stylesheet_directory() . '/form-custom.php' );
