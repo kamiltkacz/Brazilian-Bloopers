@@ -445,7 +445,7 @@ label,
   color: whitesmoke;
   background: #67b060;
 }
-
+/* Change to :is operator*/
 #bor_country,
 #bor_others,
 #bor_abroad,
@@ -681,7 +681,7 @@ em {
   margin-top: 100px;
 }
 
-/* QUIZ CONTAINERS*/
+/* QUIZ CONTAINERS* MAke shake when change the tab*/
 .count {
   background: antiquewhite;
   color: #0f1403;
