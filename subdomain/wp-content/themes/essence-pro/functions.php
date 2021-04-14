@@ -542,3 +542,5 @@ genesis_register_sidebar(
 
 // // Add Custom Template File
 // include_once( get_stylesheet_directory() . '/form-custom.php' );
+
+// Add social media icons, Align them up top
