@@ -1549,10 +1549,10 @@ figcaption,
 --------------------------------------------- */
 
 .title-area {
-	float: left;
+	/* float: left; */
 	padding: 10px 0;
 	text-align: center;
-	width: 50%;
+	/* width: 50%; */
 }
 
 .site-title {
@@ -1604,7 +1604,9 @@ figcaption,
 }
 
 .no-off-screen-menu.wp-custom-logo .custom-logo {
-	float: left;
+	/* float: left; */
+	opacity: 0.8;
+    width: 30%;
 }
 
 /* Header Widget Areas
