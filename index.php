@@ -1430,6 +1430,8 @@ require_once('./dbconn.php');
      <script src="contact_form.js"></script>
      <!--JS Portuguese -->
      <script src="port.js"></script>
+     <!--JS Container Animations-->
+     <script src="cont.js"></script>
 
 
 </body>
