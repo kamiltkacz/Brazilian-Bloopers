@@ -1809,23 +1809,23 @@ $("#start_quiz").on("click", function () {
 $(document).ready(function () {
   $(".next").hover(
     function () {
-      $(this).css({ background: "#7ed776" });
+      $(this).css({ background: "#b9ffc9", color: "black" });
     },
     function () {
-      $(this).css({ background: "" });
+      $(this).css({ background: "", color: "" });
     }
   );
   $(".back").hover(
     function () {
-      $(this).css({ background: "#7ed776" });
+      $(this).css({ background: "#b9ffc9", color: "black" });
     },
     function () {
-      $(this).css({ background: "" });
+      $(this).css({ background: "", color: "" });
     }
   );
   $(".hvr-grow").hover(
     function () {
-      $(this).css({ background: "#7ed776", color: "black" });
+      $(this).css({ background: "#b9ffc9", color: "black" });
     },
     function () {
       $(this).css({ background: "", color: "" });
