@@ -83,7 +83,7 @@ require_once('./dbconn.php');
  </div>
 
 
-
+ <!-- <img class="test-vector" src="pics/test-vector.png" alt=""> -->
 
   <div id="Home" class="tabcontent">
     <div class="container" id="home">
