@@ -1133,7 +1133,7 @@ textarea {
   }
 
   .tabs a.icon {
-    background: #67b060;
+    /* background: #67b060; */
     display: block;
     position: absolute;
     right: 0;
