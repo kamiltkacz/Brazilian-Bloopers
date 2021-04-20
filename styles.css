@@ -12,7 +12,7 @@ html {
 
 .tabs {
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
   /* background-color: #67b060; */
 }
 
@@ -144,6 +144,34 @@ h3 {
   top: 1px;
 }
 
+#logo_main:hover{
+  -webkit-animation: spin 5s infinite;
+   animation: spin 5s infinite;
+}
+
+@-webkit-keyframes spin{
+  from {
+    -webkit-transform: rotateY(0deg);
+  }
+  to {
+    -webkit-transform: rotateY(-360deg);
+  }
+}
+
+@keyframes spin{
+  from {
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+
+  to {
+    -moz-transform: rotateY(-360deg);
+    -ms-transform: rotateY(-360deg);
+    transform: rotateY(-360deg);
+  }
+
+}
 .logo_quiz {
   position: absolute;
   right: 4px;
@@ -292,12 +320,121 @@ h3 {
 
 
 #home {
-  display: none;
+
   position: relative;
-  animation-name: example;
+  /* animation-name: example;
   animation-duration: 4s;
-  animation-delay: -2s;
+  animation-delay: -2s; */
+  min-height: 10vh;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-family: inherit;
+  font-weight: 700;
+  display: none;
+
 }
+
+.homehead--center {
+  font-size: 4vw;
+  color: #fff;
+  text-align: center;
+  line-height: 1;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(-2deg);
+  }
+
+  60% {
+    transform: rotate(-8deg);
+  }
+  80% {
+    transform: rotate(0deg);
+  }
+  85% {
+    transform: rotate(5deg);
+  }
+  95% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.homehead--center--text {
+  animation: wiggle 10s 3s;
+
+}
+
+#text--1 {
+  transform: rotate(2deg);
+}
+#text--2 {
+  transform: rotate(-2deg);
+}
+
+#text--3 {
+  transform: rotate(-4deg);
+}
+
+
+#text--1:hover, #text--2:hover, #text--3:hover {
+
+  transform: rotate(0deg);
+}
+
+@keyframes wigglestop {
+
+  50% {
+    transform: rotate(0deg);
+  }
+
+
+}
+
+.homehead--center--text:hover {
+  animation: wigglestop infinite;
+}
+
+@keyframes spinarrow {
+  0% {
+    transform: rotate(-80deg);
+  }
+
+  60% {
+    transform: rotate(-30deg);
+  }
+  80% {
+    transform: rotate(0deg);
+  }
+  85% {
+    transform: rotate(50deg);
+  }
+  95% {
+    transform: rotate(-180deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+#arrow-1:hover
+ {
+  opacity: 0.3;
+animation: spinarrow 5s;
+
+
+}
+
 
 /* @keyframes example {
   0%   {background-color: #67b060; left:0px; top:0px;}
@@ -966,7 +1103,7 @@ textarea {
   }
 
   #logo_main {
-    position: absolute;
+    /* position: absolute; */
     right: 15%;
   }
 
@@ -1095,7 +1232,7 @@ textarea {
   }
 
   #logo_main {
-    position: absolute;
+    /* position: absolute; */
     right: 11%;
   }
 
@@ -1275,7 +1412,7 @@ textarea {
 
 @media screen and (max-width: 686px) and (min-width: 480px) {
   #logo_main {
-    position: absolute;
+    /* position: absolute; */
     /*right: 9%;*/
     padding-right: 2px;
   }
@@ -1283,7 +1420,7 @@ textarea {
 
 @media screen and (max-width: 1082px) and (min-width: 686px) {
   #logo_main {
-    position: absolute;
+    /* position: absolute; */
     /*right: 6%;*/
     padding-right: 2px;
   }
