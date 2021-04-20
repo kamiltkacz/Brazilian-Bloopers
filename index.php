@@ -69,7 +69,7 @@ require_once('./dbconn.php');
 
    <div class="dropdown">
     <p class="drop_btn"><img src="//bandidosnatv.com/plgns/gtranslate/flags/24/en-us.png" id="eng_btn_e" alt="American_flag">
-      <i class="fa fa-caret-down" style="margin-left: 5px;"></i></p>
+      <i class="fas fa-angle-down" style="margin-left: 5px;"></i></p>
     <div class="dropdown-content">
     <img src="//bandidosnatv.com/plgns/gtranslate/flags/24/pt-br.png" id="port_btn_e"  alt="Portuguese_flag">
     </div>
@@ -87,10 +87,13 @@ require_once('./dbconn.php');
 
   <div id="Home" class="tabcontent">
     <div class="container" id="home">
-    <header>
-      <h4 style="margin-top: 16px;">Hello, Welcome to Brazilian Bloopers.<br><br>Here we tell you what gives you away as a Brazilian!</h4>
-    </header>
+    <div class="homehead--center">
+      <div class="homehead--center--text" id="text--1">Hello,</div><br>
+     <div class="homehead--center--text" id="text--2">Welcome to Brazilian Bloopers.</div><br>
+     <div class="homehead--center--text" id="text--3">Here we tell you what gives you away as a Brazilian!</div>
     </div>
+    </div>
+    <a href="#" onclick="openPage('About', this);"><i id="arrow-1" class="fas fa-angle-right" style="font-size: 5vw; display: none"></i></a>
   </div>
 
 
