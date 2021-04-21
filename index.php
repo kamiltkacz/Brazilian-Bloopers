@@ -1273,13 +1273,13 @@ require_once('./dbconn.php');
         <div id="labels_left">
           <div id="contact_text">
               <label for="name">Name*<span id="span_name"></span></label>
-            <input type="text" id="bor_name" name="name" placeholder="Your name.." tabindex="0" font-family="cursive">
+            <input type="text" id="bor_name" name="name" placeholder="Your name.." tabindex="0" font-family="cursive" maxlength="100">
               <label for="email">E-mail*<span id="span_email"></span></label>
-            <input type="text" id="bor_email" name="email" placeholder="Your e-mail.." tabindex="0">
+            <input type="text" id="bor_email" name="email" placeholder="Your e-mail.." tabindex="0" maxlength="50">
               <label for="subject">Subject</label>
-            <input type="text" id="bor_subject" name="subject" placeholder="suggestion, comment, etc." tabindex="0">
+            <input type="text" id="bor_subject" name="subject" placeholder="suggestion, comment, etc." tabindex="0" maxlength="100">
               <label for="message">Message*<span id="span_message"></span></label>
-            <textarea id="bor_message" name="message" placeholder="Write your message here!" tabindex="0" style="height:170px"></textarea>
+            <textarea id="bor_message" name="message" placeholder="Write your message here!" tabindex="0" style="height:170px" maxlength="400"></textarea>
             </div>
             </div>
             <button id="submit_contact" class="hvr-grow" type="submit" name="submitcontact">Submit</button>
