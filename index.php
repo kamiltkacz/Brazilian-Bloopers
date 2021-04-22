@@ -90,7 +90,7 @@ require_once('./dbconn.php');
     <div class="homehead--center">
       <div class="homehead--center--text" id="text--1">Hello,</div><br>
      <div class="homehead--center--text" id="text--2">Welcome to Brazilian Bloopers.</div><br>
-     <div class="homehead--center--text" id="text--3">Here we tell you what gives you away as a Brazilian!</div>
+     <div class="homehead--center--text" id="text--3">Here we tell you what gives you away as a Brazilian.</div>
     </div>
     </div>
     <a href="#" onclick="openPage('About', this);"><i id="arrow-1" class="fas fa-angle-right" style="font-size: 5vw; display: none"></i></a>
