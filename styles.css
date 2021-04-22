@@ -47,12 +47,9 @@ html {
   color: white;
 }
 
-.test-vector {
-  position: absolute;
-  width: 160px;
-  top: .5rem;
-  left: .5rem;
-}
+
+
+
 
 
 /* All 'a' links */
@@ -129,7 +126,7 @@ h3 {
 
 .logo {
   filter: grayscale(100%);
-  cursor: auto;
+  cursor: pointer;
   width: 60px;
 }
 
