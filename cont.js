@@ -16,25 +16,41 @@ $(document).ready(function () {
     setTimeout(sucesso, 3000);
   });
 
-//   $(document).bind('mousemove', function(e){
-//     var width = $('#logo_main').width();
-//     $('#logo_main').css({
-//        left:  e.pageX-width,
-//        top:   e.pageY
-//     });
+  let pageWidth = $('#logo_main').width();
 
-// });
+  $('#logo_main').hover(function(e){
 
-// $(document).click(function(){
+    $('#logo_main').css({
+       left:  e.pageX - pageWidth,
+       top:   e.pageY
 
-//   $(this).unbind('mousemove');
-//   $('#logo_main').css({
-//     left:  "",
-//     top:   ""
-//  });
+    });
+
+   });
 
 
-//  });
+$(document).click(function(){
+
+  $(this).unbind('mousemove');
+  $('#logo_main').css({
+    left:  "",
+    top:   ""
+ });
+
+ });
+
+ $('#home, #myLinks').hover(function () {
+
+  $(this).unbind('mousemove');
+  $('#logo_main').css({
+    left:  "",
+    top:   ""
+ });
+
+
+
+});
+
 
 
 
