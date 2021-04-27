@@ -127,7 +127,7 @@ h3 {
 .logo {
   filter: grayscale(100%);
   cursor: pointer;
-  width: 60px;
+  width: 5rem;
 }
 
 #logo_surv {
@@ -144,6 +144,7 @@ h3 {
 #logo_main:hover{
   -webkit-animation: spin 5s infinite;
    animation: spin 5s infinite;
+
 }
 
 @-webkit-keyframes spin{
@@ -1126,7 +1127,7 @@ textarea {
   }
 
   .tabs {
-    overflow: hidden;
+    /* overflow: hidden; */
     background-color: #333;
     position: relative;
   }
@@ -1231,6 +1232,7 @@ textarea {
   #logo_main {
     /* position: absolute; */
     right: 11%;
+    width: 3rem;
   }
 
   .logo_quiz {
@@ -1247,7 +1249,7 @@ textarea {
   }
 
   .tabs {
-    overflow: hidden;
+    /* overflow: hidden; */
     /* background-color: #67b060; */
     position: relative;
   }
