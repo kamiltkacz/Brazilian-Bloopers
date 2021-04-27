@@ -34,7 +34,7 @@ $("#start_quiz").on("click", function () {
 
     showTabs(classNum);
 
- theProg();
+    theProg();
 
 
   });
