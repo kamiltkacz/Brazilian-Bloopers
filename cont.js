@@ -20,11 +20,15 @@ $(document).ready(function () {
 
   $('#logo_main').hover(function(e){
 
-    $('#logo_main').css({
-       left:  e.pageX - pageWidth,
-       top:   e.pageY
 
-    });
+
+      $('#logo_main').css({
+        left:  e.pageX - pageWidth,
+        top:   e.pageY
+
+     });
+
+
 
    });
 
