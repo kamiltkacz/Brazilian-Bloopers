@@ -8,6 +8,7 @@ html {
   color: whitesmoke;
   background-color: black;
   background: linear-gradient(90deg, #2d2323 0,#08080a 58%);
+  scroll-behavior: smooth;
 }
 
 .tabs {
