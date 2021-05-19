@@ -3,29 +3,27 @@ html {
   height: 100%;
   margin: 0;
   font-family: "Londrina Solid", cursive;
-  font-size: 20px;
+  font-size: 1.5em;
   font-weight: 500px;
   color: whitesmoke;
   background-color: black;
-  /* background: linear-gradient(90deg, #2d2323 0,#08080a 58%); */
   scroll-behavior: smooth;
 }
 
 .tabs {
   position: relative;
-  /* overflow: hidden; */
-  /* background-color: #67b060; */
+
 }
 
-.tabs #myLinks {
+/* .tabs #myLinks {
   display: flex;
-}
+} */
 
 .tabs a {
   color: white;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 0.7em;
   display: flex;
 
 }
@@ -40,17 +38,13 @@ html {
 
 .tabs a:hover {
 
-  color: #b9ffc9;
+  color: #ccff15;
 
 }
 
 .active {
   color: white;
 }
-
-
-
-
 
 
 /* All 'a' links */
@@ -66,7 +60,7 @@ a:hover {
   text-decoration: none;
   transition: all 0, 5s;
   border: hidden;
-  color: #b9ffc9;
+  color: #ccff15;
 }
 
 
@@ -112,6 +106,7 @@ a:hover {
   display: inline-block;
   transition: transform 0.3s cubic-bezier(0.2, 1, 0.8, 1);
   color: #b9ffc9;
+  font-size: 1.7em;
 }
 
 .link--elara:hover span {
@@ -174,27 +169,6 @@ h3 {
 }
 
 
-/* @keyframes wiggle {
-  0% {
-    transform: rotate(-4deg);
-  }
-
-  60% {
-    transform: rotate(-4deg);
-  }
-  80% {
-    transform: rotate(-4deg);
-  }
-  85% {
-    transform: rotate(-5deg);
-  }
-  95% {
-    transform: rotate(-6deg);
-  }
-  100% {
-    transform: rotate(-7deg);
-  }
-} */
 .logo_quiz {
   position: absolute;
   right: 4px;
@@ -257,27 +231,27 @@ h3 {
 }
 
 .dropdown .drop_btn {
-  font-size: 16px;
+  font-size: 0.5em;
   border: none;
   outline: none;
   color: white;
   padding: 14px 16px;
   background-color: inherit;
   font-family: inherit;
-  margin: 0;
+  margin-top: 8px;
 }
 
 
 
 .dropdown-content {
 
-   display: none;
+  display: none;
   position: fixed;
   min-width: 55px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
   text-align: center;
-  margin-top: 1.5px;
+  margin-top: -20px;
   background: rgb(39 39 39 / 70%);
 
 }
@@ -325,7 +299,7 @@ h3 {
 }
 
 #leg_steps {
-  font-size: 25px;
+
   cursor: default;
   font-family: inherit, cursive;
   padding: 5px;
@@ -345,9 +319,6 @@ h3 {
 #home {
 
   position: relative;
-  /* animation-name: example;
-  animation-duration: 4s;
-  animation-delay: -2s; */
   min-height: 10vh;
   color: #fff;
   display: -webkit-box;
@@ -459,13 +430,7 @@ animation: spinarrow 5s;
 }
 
 
-/* @keyframes example {
-  0%   {background-color: #67b060; left:0px; top:0px;}
-  25%  {background-color:#54d448; left:200px; top:0px;}
-  50%  {background-color: #1fc70f; left:200px; top:200px;}
-  75%  {background-color: #17810d; left:0px; top:200px;}
-  100% {background-color:#67b060; left:0px; top:0px;}
-} */
+
 
 /* Outer */
 .popup {
@@ -498,6 +463,7 @@ animation: spinarrow 5s;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 280px 280px;
+  font-size: 0.7em;
 }
 #inner_2 {
   max-width: 830px;
@@ -518,6 +484,7 @@ animation: spinarrow 5s;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 280px 280px;
+  font-size: 0.7em;
 }
 
 #popup_close_1 {
@@ -563,14 +530,14 @@ animation: spinarrow 5s;
 #popup_close_1:hover {
   -webkit-transform: translate(50%, -50%) rotate(180deg);
   transform: translate(50%, -50%) rotate(180deg);
-  background: #b9ffc9;;
+  background: #ccff15;
   text-decoration: none;
 }
 
 .popup-close-fake:hover {
   -webkit-transform: translate(50%, -50%) rotate(180deg);
   transform: translate(50%, -50%) rotate(180deg);
-  background: #b9ffc9;
+  background: #ccff15;
   color:#fff;
   text-decoration: none;
 }
@@ -853,7 +820,7 @@ em {
   padding: 14px;
   text-align: center;
   margin-top: 20px;
-  background: #67b060;
+
   border-radius: 5px;
   background: rgb(39 39 39 / 70%);
     -webkit-backdrop-filter: blur(10px);
@@ -945,7 +912,7 @@ em {
 }
 
 #shoot_email {
-  font-size: 25px;
+
   margin-top: 20px;
 }
 
