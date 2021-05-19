@@ -1809,7 +1809,7 @@ $("#start_quiz").on("click", function () {
 $(document).ready(function () {
   $(".next").hover(
     function () {
-      $(this).css({ background: "#b9ffc9", color: "black" });
+      $(this).css({ background: "#ccff15", color: "black" });
     },
     function () {
       $(this).css({ background: "", color: "" });
@@ -1817,7 +1817,7 @@ $(document).ready(function () {
   );
   $(".back").hover(
     function () {
-      $(this).css({ background: "#b9ffc9", color: "black" });
+      $(this).css({ background: "#ccff15", color: "black" });
     },
     function () {
       $(this).css({ background: "", color: "" });
@@ -1825,7 +1825,7 @@ $(document).ready(function () {
   );
   $(".hvr-grow").hover(
     function () {
-      $(this).css({ background: "#b9ffc9", color: "black" });
+      $(this).css({ background: "#ccff15", color: "black" });
     },
     function () {
       $(this).css({ background: "", color: "" });
