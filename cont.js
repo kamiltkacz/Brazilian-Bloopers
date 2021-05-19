@@ -43,7 +43,7 @@ $(document).click(function(){
 
  });
 
- $('#home, #myLinks').hover(function () {
+ $('.container, #myLinks').hover(function () {
 
   $(this).unbind('mousemove');
   $('#logo_main').css({
