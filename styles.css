@@ -7,7 +7,7 @@ html {
   font-weight: 500px;
   color: whitesmoke;
   background-color: black;
-  background: linear-gradient(90deg, #2d2323 0,#08080a 58%);
+  /* background: linear-gradient(90deg, #2d2323 0,#08080a 58%); */
   scroll-behavior: smooth;
 }
 
