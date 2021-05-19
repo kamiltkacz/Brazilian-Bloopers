@@ -168,7 +168,15 @@ $("#submit_survey").on("click", function () {
 
         // Start Button Show
 
-        $("#start_quiz").prop("disabled", false).css({ opacity: "1" });
+        $("#start_quiz").prop("disabled", false).css({ opacity: "1"});
+
+
+        // Tippy.js diable
+
+       $("#start_span").hide();
+       $("#start_quiz").text("Start");
+
+
 
         if ($(".surv_ques").is(":contains('Estudante')")) {
           Swal.fire({
@@ -206,8 +214,8 @@ $("#submit_survey").on("click", function () {
         $(".popup").slideUp();
         $("#steps").show();
         $("#footer").show();
-        $("#leg_steps").text("Follow these 2 simple steps");
-        $(legStepsSwitch).text("Siga estas 2 simples etapas");
+        $("#leg_steps").text("Follow these 2 simple steps:");
+        $(legStepsSwitch).text("Siga estas 2 simples etapas:");
         $("#remove_steps").hide();
         $("#click_start").text('1. Click "Start" button to begin the quiz.');
         $("#have_fun").text("2. Have fun!");
