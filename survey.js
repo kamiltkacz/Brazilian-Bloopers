@@ -164,6 +164,7 @@ $("#submit_survey").on("click", function () {
       // After data submitted do stuff here
 
       if (result.result == 1) {
+
         localStorage.setItem("surveyId", result.id);
 
         // Start Button Show
