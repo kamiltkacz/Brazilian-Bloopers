@@ -286,6 +286,7 @@ h3 {
   font-family: inherit, cursive;
   padding: 5px;
   border-radius: 40px;
+  animation: wiggle 10s 3s;
 }
 
 
