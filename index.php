@@ -20,6 +20,19 @@ require_once('./dbconn.php');
  <!-- Load an icon library for burger menu on small screens -->
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+ <!-- In the head of your document with your other CSS includes... -->
+<!-- Video.js base CSS -->
+<link
+  href="https://unpkg.com/video.js@7/dist/video-js.min.css"
+  rel="stylesheet"
+/>
+
+<!-- City -->
+<link
+  href="https://unpkg.com/@videojs/themes@1/dist/city/index.css"
+  rel="stylesheet"
+/>
+
 
 
 
@@ -89,6 +102,8 @@ require_once('./dbconn.php');
 
   <div id="Home" class="tabcontent">
     <div class="container" id="home">
+
+
     <div class="homehead--center">
       <div class="homehead--center--text" id="text--1">Hello,</div><br>
      <div class="homehead--center--text" id="text--2">Welcome to Brazilian Bloopers.</div><br>
@@ -96,6 +111,23 @@ require_once('./dbconn.php');
     </div>
     </div>
     <a href="#" onclick="openPage('About', this);"><i id="arrow-1" class="fas fa-angle-right" style="font-size: 5vw; display: none"></i></a>
+    <video class="video-js vjs-theme-city">
+    <div id="player" style="background: black" width="640" height="600">
+    <iframe class="iframe" src="https://www.youtube-nocookie.com/embed/7tNtU5XFwrU?rel=0&autohide=1&showsearch=0&controls=1&autoplay=1" title="Player do evento Teste CHAT Gabriel" width="640" height="600" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+      </video>
+    </div>
+
+      <!-- <div class="plyr__video-embed" id="player">
+  <iframe
+    src="https://www.youtube.com/embed/bTqVqk7FSmY?origin=https://plyr.io&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1"
+    allowfullscreen
+    allowtransparency
+    allow="autoplay"
+  ></iframe>
+</div> -->
+
+
+      <!-- <iframe  allow="autoplay; fullscreen" allowfullscreen="" frameborder="0" height="564" id="vid" src="https://www.youtube.com/embed/YOUR_VIDEO_ID?autoplay=1&version=3&enablejsapi=1&showinfo=0&controls=0&rel=0&showinfo=0&disablekb=1&iv_load_policy=3&modestbranding=1" width="640"></iframe> -->
   </div>
 
 
