@@ -13,10 +13,10 @@ let tabsSwitch = $(`
    <a class="tablink" onclick="openPage('Contact', this);"><span class="link link--elara">Contato</span></a>
 
    <div class="dropdown">
-    <p class="drop_btn"><img src="//bandidosnatv.com/plgns/gtranslate/flags/24/pt-br.png" id="port_btn_p" alt="Portuguese_flag">
+    <p class="drop_btn"><img src="pics/BRASIL.png" id="port_btn_p" alt="Portuguese_flag">
       <i class="fa fa-caret-down" style="margin-left: 5px;"></i></p>
     <div class="dropdown-content">
-    <img src="//bandidosnatv.com/plgns/gtranslate/flags/24/en-us.png" id="eng_btn_p"  alt="American_flag">
+    <img src="pics/EUA.png" id="eng_btn_p"  alt="American_flag">
     </div>
   </div>
   </div>
@@ -32,10 +32,21 @@ let tabsSwitch = $(`
 
 
 
-let headerSwitch = $(`
-  <header>
-    <h4 style="margin-top: 15px;">Olá, bem-vindo ao Brazilian Bloopers.<br><br> Aqui nós contamos o que te trai como brasileiro!</h4>
-  </header>
+let homeSwitch = $(`
+
+  <div id="Home" class="tabcontent">
+  <div class="container" id="home">
+
+
+  <div class="homehead--center">
+    <div class="homehead--center--text" id="text--1">Olá,</div><br>
+   <div class="homehead--center--text" id="text--2">Bem-vindo ao Brazilian Bloopers</div><br>
+   <div class="homehead--center--text" id="text--3">Aqui nós contamos o que te trai como brasileiro!</div>
+  </div>
+  </div>
+  <a href="#" onclick="openPage('About', this);"><i id="arrow-1" class="fas fa-angle-right" style="font-size: 5vw; display: none"></i></a>
+
+  </div>
   `);
 
 let aboutSwitch = $(`<div id="About" class="tabcontent">
@@ -154,7 +165,7 @@ $("#port_btn_e").on("click", function () {
 
 console.log("here");
   $(".tabs").replaceWith(tabsSwitch);
-  $("header").replaceWith(headerSwitch);
+  $("#home").replaceWith(homeSwitch);
   $("#About").replaceWith(aboutSwitch);
   $("#leg_steps").replaceWith(legStepsSwitch);
   $("#click_survey").replaceWith(clickSurveySwitch);
