@@ -22,16 +22,16 @@ require_once('./dbconn.php');
 
  <!-- In the head of your document with your other CSS includes... -->
 <!-- Video.js base CSS -->
-<link
+<!-- <link
   href="https://unpkg.com/video.js@7/dist/video-js.min.css"
   rel="stylesheet"
 />
 
 <!-- City -->
-<link
+<!-- <link
   href="https://unpkg.com/@videojs/themes@1/dist/city/index.css"
   rel="stylesheet"
-/>
+/> -->
 
 
 
@@ -83,10 +83,10 @@ require_once('./dbconn.php');
    <a class="tablink" onclick="openPage('Contact', this);"><span class="link link--elara">Contact</span></a>
 
    <div class="dropdown">
-    <p class="drop_btn"><img src="//bandidosnatv.com/plgns/gtranslate/flags/24/en-us.png" id="eng_btn_e" alt="American_flag">
+    <p class="drop_btn"><img src="pics/EUA.png" id="eng_btn_e" alt="American_flag">
       <i class="fas fa-angle-down" style="margin-left: 5px;"></i></p>
     <div class="dropdown-content">
-    <img src="//bandidosnatv.com/plgns/gtranslate/flags/24/pt-br.png" id="port_btn_e"  alt="Portuguese_flag">
+    <img src="pics/BRASIL.png" id="port_btn_e"  alt="Portuguese_flag">
     </div>
   </div>
   </div>
@@ -111,10 +111,7 @@ require_once('./dbconn.php');
     </div>
     </div>
     <a href="#" onclick="openPage('About', this);"><i id="arrow-1" class="fas fa-angle-right" style="font-size: 5vw; display: none"></i></a>
-    <video class="video-js vjs-theme-city">
-    <div id="player" style="background: black" width="640" height="600">
-    <iframe class="iframe" src="https://www.youtube-nocookie.com/embed/7tNtU5XFwrU?rel=0&autohide=1&showsearch=0&controls=1&autoplay=1" title="Player do evento Teste CHAT Gabriel" width="640" height="600" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-      </video>
+
     </div>
 
       <!-- <div class="plyr__video-embed" id="player">
