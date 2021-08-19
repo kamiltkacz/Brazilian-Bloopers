@@ -20,21 +20,6 @@ require_once('./dbconn.php');
  <!-- Load an icon library for burger menu on small screens -->
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
- <!-- In the head of your document with your other CSS includes... -->
-<!-- Video.js base CSS -->
-<!-- <link
-  href="https://unpkg.com/video.js@7/dist/video-js.min.css"
-  rel="stylesheet"
-/>
-
-<!-- City -->
-<!-- <link
-  href="https://unpkg.com/@videojs/themes@1/dist/city/index.css"
-  rel="stylesheet"
-/> -->
-
-
-
 
 
   <!--BOOTSTRAP-->
