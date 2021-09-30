@@ -2,8 +2,8 @@
 // Age Select
 let selectElement = document.getElementById("age");
 if (selectElement !== undefined) {
-  for (let agenum = 1; agenum <= 100; agenum++) {
-    selectElement.add(new Option(agenum));
+  for (let agenumb= 1; agenumb <= 100; agenumb++) {
+    selectElement.add(new Option(agenumb));
   }
 }
 
