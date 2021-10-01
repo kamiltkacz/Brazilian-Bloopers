@@ -118,6 +118,15 @@ h3 {
   font-size: inherit;
 }
 
+/* Checkboxes accent-color */
+
+:root {
+  accent-color: #ccff15;
+}
+
+
+
+
 /* LOGO */
 
 .logo {
